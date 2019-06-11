@@ -26,7 +26,7 @@ Set-Refresh-Token: <Refresh-Token>
 ```
 
 {% hint style="info" %}
-[Autentication OpenAPI specification](https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) in yaml format
+[Authentication OpenAPI specification](https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) in yaml format
 {% endhint %}
 
 ##  Using a token
