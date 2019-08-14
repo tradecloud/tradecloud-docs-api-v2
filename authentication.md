@@ -57,8 +57,8 @@ When correctly authenticated, the response will return 200 and in this example s
 
 ## Refreshing a token
 
-The token will expire after one week. You will to have log in again after expiration.  
-The authentication refresh token API is not implemented yet \(ticket [TC-4734](https://tradecloud.atlassian.net/browse/TC-4734)\).
+The token will expire after one week. You have either to log in again or use the refresh token.  
+To be tested and documented, ticket [TC-4734](https://tradecloud.atlassian.net/browse/TC-4734)
 
 
 
