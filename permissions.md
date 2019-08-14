@@ -10,6 +10,12 @@ in our platform.
 ## Scopes
 TODO: explanation of scopes
 
+Scope | Explanation
+--- | ---
+Platform | All entities within the Tradecloud1 platform (across companies).
+Company | All entities within your company.
+User | All entities within the user's account.
+
 ## User Permissions
 
 #### Dashboard
@@ -45,4 +51,4 @@ Update User Profile | User | TODO | TODO
 ### Admin Permissions   
 
 
-TODO
+TODO - Provide permission tables just like the ones above with data for Admin users
