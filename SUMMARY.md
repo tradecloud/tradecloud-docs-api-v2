@@ -2,4 +2,5 @@
 
 * [Initial page](README.md)
 * [Authentication](authentication.md)
+* [Permissions](permissions.md)
 
