@@ -37,7 +37,7 @@ Description | Scope | Read Permission | Write Permission
 --- | --- | --- | ---
 Connection details | Company | TODO - See all connected companies | TODO (verify)
 Create a new connection | Platform | TODO + scope | TODO + scope
-Team | Company | TODO | TODO
+Team | Company | TODO | TODO - investigate 
 Settings | Company | TOOD | TODO
 Activity | Company | See [Dashboard](#dashboard) | See [Dashboard](#dashboard)
 
