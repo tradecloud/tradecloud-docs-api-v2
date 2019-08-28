@@ -18,31 +18,86 @@ TODO: explanation of scopes
 
 #### Dashboard
 
-| Description | Scope | Read Permission | Write Permission |
-| :--- | :--- | :--- | :--- |
-| Supply Chain Activity | Company | See all activities | - |
-| Order performance metrics | Company | See all Order performance metrics | - |
+| Description | Scope | Role | Read Permission | Write Permission |
+| :--- | :--- | :--- | :--- | :--- |
+| Supply Chain Activity | Company | n/a | See all activities | n/a |
+| Order performance metrics | Company | n/a | See all Order performance metrics | n/a |
 
 #### Orders
 
-| Description | Scope | Read Permission | Write Permission |
-| :--- | :--- | :--- | :--- |
-| Order \(line\) details | Company | See all order \(line\) details | TODO |
-| Order \(line\) activity | Company | See all order \(line\) activities | TODO |
-| Order \(line\) conversations | Company | See all order \(line\) conversation messages | TODO |
-| Order \(line\) tasks | Company | See all order \(line\) tasks | TODO |
+| Description | Scope | Role | Read Permission | Write Permission |
+| :--- | :--- | :--- | :--- | :--- |
+| Order \(line\) | Company | Buyer | See all order \(line\) fields | Execute all "ByBuyer" action \(aka commands\) |
+| Order \(line\) | Company | Supplier | See all order \(line\) fields | Execute all "BySupplier" actions \(aka commands\) |
+| Order \(line\) activity | Company | n/a | See all order \(line\) activities | n/a |
+| Order \(line\) conversations | Company | n/a | See all order \(line\) conversation messages | Create message |
+| Order \(line\) tasks | Company | n/a | See all order \(line\) tasks | Execute all tasks |
 
 #### My Company
 
-| Description | Scope | Read Permission | Write Permission |
-| :--- | :--- | :--- | :--- |
-| Connection details | Company | TODO - See all connected companies | TODO \(verify\) |
-| Create a new connection | Platform | TODO + scope | TODO + scope |
-| Team | Company | TODO | TODO - investigate |
-| Settings | Company | TOOD | TODO |
-| Activity | Company | See [Dashboard](permissions.md#dashboard) | See [Dashboard](permissions.md#dashboard) |
-
-#### My Profile
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Scope</th>
+      <th style="text-align:left">Read Permission</th>
+      <th style="text-align:left">Write Permission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Connection details</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">See all connected companies</td>
+      <td style="text-align:left">Not allowed</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Invite a new connection</td>
+      <td style="text-align:left">Platform</td>
+      <td style="text-align:left">Find any user (limited fields)</td>
+      <td style="text-align:left">n/a</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Validate a new connection</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">Received e-mail</td>
+      <td style="text-align:left">
+        <p>Request link</p>
+        <p>(with Validation token?)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Team</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">See all team members</td>
+      <td style="text-align:left">Not allowed</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Invite a new user</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Invite any user</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Validate a new user</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">Received e-mail</td>
+      <td style="text-align:left">Validation token</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Settings</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">Not allowed</td>
+      <td style="text-align:left">Not allowed</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Activity</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">See all activities</td>
+      <td style="text-align:left">n/a</td>
+    </tr>
+  </tbody>
+</table>#### My Profile
 
 | Description | Scope | Read Permission | Write Permission |
 | :--- | :--- | :--- | :--- |
@@ -51,9 +106,29 @@ TODO: explanation of scopes
 
 ## Admin Permissions
 
+Permissions in addition to above User permissions.
+
 TODO - Provide permission tables just like the ones above with data for Admin users
+
+
+
+
+
+amend account code 
+
+
 
 ## Superuser Permissions
 
+Superuser only permissions \(A superuser does NOT have above User permissions\)
+
 TODO - Provide permission tables just like the ones above with data for Superuser users
+
+create connection \(API only\)
+
+create user \(API only\)
+
+create company \(API only\)
+
+
 
