@@ -6,9 +6,9 @@ description: How to use JSON Web Tokens
 
 ## Getting a token
 
-Log in using an Basic Authorization  HTTP header with a base 64 encoded email and password:
+Log in using an Basic Authorization HTTP header with a base 64 encoded email and password:
 
-```
+```text
 // Request method and URI
 GET https://api.accp.tradecloud1.com/v2/authentication/_login
 // Request headers:
@@ -17,7 +17,7 @@ Authorization: Basic <<Email>:<Password> base64 encoded>
 
 When correctly authenticated, the response will return 200 and contain a token and a refresh token:
 
-```
+```text
 // Response code:
 200 
 // Response headers:
@@ -29,7 +29,7 @@ Set-Refresh-Token: <Refresh-Token>
 [Authentication OpenAPI specification](https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) in yaml format
 {% endhint %}
 
-##  Using a token
+## Using a token
 
 Use a Bearer Authorization HTTP header with the Token in each request:
 
@@ -59,6 +59,4 @@ When correctly authenticated, the response will return 200 and in this example s
 
 The token will expire after one week. You have either to log in again or use the refresh token.  
 To be tested and documented, ticket [TC-4734](https://tradecloud.atlassian.net/browse/TC-4734)
-
-
 
