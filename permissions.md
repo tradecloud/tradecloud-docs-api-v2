@@ -97,7 +97,9 @@ TODO: explanation of scopes
       <td style="text-align:left">n/a</td>
     </tr>
   </tbody>
-</table>#### My Profile
+</table>
+
+#### My Profile
 
 | Description | Scope | Read Permission | Write Permission |
 | :--- | :--- | :--- | :--- |
@@ -110,13 +112,73 @@ Permissions in addition to above User permissions.
 
 TODO - Provide permission tables just like the ones above with data for Admin users
 
-
-
-
-
 amend account code 
 
+#### My Company
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Scope</th>
+      <th style="text-align:left">Read Permission</th>
+      <th style="text-align:left">Write Permission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Connection details</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">See all connected companies</td>
+      <td style="text-align:left">Not allowed</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Invite a new connection</td>
+      <td style="text-align:left">Platform</td>
+      <td style="text-align:left">Find any user (limited fields)</td>
+      <td style="text-align:left">n/a</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Validate a new connection</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">Received e-mail</td>
+      <td style="text-align:left">
+        <p>Request link</p>
+        <p>(with Validation token?)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Team</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">See all team members</td>
+      <td style="text-align:left">Not allowed</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Invite a new user</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Invite any user</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Validate a new user</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">Received e-mail</td>
+      <td style="text-align:left">Validation token</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Settings</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">Not allowed</td>
+      <td style="text-align:left">Not allowed</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Activity</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">See all activities</td>
+      <td style="text-align:left">n/a</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Superuser Permissions
 
@@ -130,5 +192,21 @@ create user \(API only\)
 
 create company \(API only\)
 
-
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Scope</th>
+      <th style="text-align:left">Read Permission</th>
+      <th style="text-align:left">Write Permission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">bla/td>
+      <td style="text-align:left">bla</td>
+      <td style="text-align:left">bla</td>
+      <td style="text-align:left">bla</td>
+    </tr>
+  </tbody>
+</table>
