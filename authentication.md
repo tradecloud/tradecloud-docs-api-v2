@@ -57,8 +57,34 @@ When correctly authenticated, the response will return 200 and in this example s
 
 ## Refreshing a token
 
-The token will expire after one week. You have either to log in again or use the refresh token.  
-To be tested and documented, ticket [TC-4734](https://tradecloud.atlassian.net/browse/TC-4734)
+Access token will expire after 1 hour, refresh token after 24 hours.
+If access token expires you have either to log in again or use the refresh token.
+If refresh token expires you have to log in again.
+
+To refresh token:
+Make http call to `/refresh` endpoint using Refresh-Token header:
+```text
+// Example request method and URI
+GET https://api.accp.tradecloud1.com/v2/authentication/_refresh
+// Request headers:
+Refresh-Token: <Refresh-Token>
+```
+
+When refresh token is valid, the response will return 200 and contain new token pairs, otherwise you will get 401 "Not authenticated".
+The old ones are discarded and cannot be used any more.
+
+```
+// Response code:
+200 
+// Response headers:
+Set-Authorization: <Token>
+Set-Refresh-Token: <Refresh-Token>
+```
+Also there are some special cases:
+1) If you call `/refresh` providing valid token in Authorization header you will get 200 OK without new access/refresh tokens, regardless you provide Refresh-Token
+2) If you call `/refresh` providing corrupted token in Authorization header, you will always get 401 even if Refresh-Token is valid.  
+
+
 
 
 
