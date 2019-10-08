@@ -71,7 +71,7 @@ Refresh-Token: <Refresh-Token>
 
 When the refresh token is valid, the API will return 200 and contain a new token pair, containing a new access token and a new refresh token. 
 Otherwise, the API will return 401 - "Not authenticated".
-Access tokens and refresh tokens cannot be used once they are expired or a new access token is generated.
+Refresh token cannot be used once it is expired or a new refresh token is generated.
 
 ```
 // Response code:
