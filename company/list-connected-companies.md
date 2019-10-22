@@ -7,7 +7,7 @@ Yoc can find all connected companies using `connected=true` parameter
 
 ## Request
 
-% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/connection-search"%} 
+{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/connection-search"%} 
 {% api-method-summary %} Search company connections {% endapi-method-summary %}
 {% api-method-spec %} 
 {% api-method-request %} 
