@@ -10,7 +10,7 @@ Update your profile and settings:
 
 ## Request
 
-{% api-method method="put" host="" path="https://api.accp.tradecloud1.com/v2/:id" %} {% api-method-summary %} Uodate company by id (UUID) {% endapi-method-summary %}
+{% api-method method="put" host="" path="https://api.accp.tradecloud1.com/v2/company/:id" %} {% api-method-summary %} Update company by id (UUID) {% endapi-method-summary %}
 
 ### Body
 

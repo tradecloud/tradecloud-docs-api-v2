@@ -8,7 +8,7 @@ Get your company name, roles, profile and settings:
 
 ## Request
 
-{% api-method method="get" host="" path="https://api.accp.tradecloud1.com/v2/:id" %} {% api-method-summary %} Find company by id (UUID) {% endapi-method-summary %}
+{% api-method method="get" host="" path="https://api.accp.tradecloud1.com/v2/company/:id" %} {% api-method-summary %} Find company by id (UUID) {% endapi-method-summary %}
 
 ## Response
 
