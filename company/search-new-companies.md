@@ -8,7 +8,7 @@ You can search for new companies providing role that is opposite to your user (b
 
 ## Request
 
-{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="user-search/_suggest"%} 
+{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/user-search/_suggest"%} 
 {% api-method-summary %} Suggest users {% endapi-method-summary %}
 {% api-method-spec %} 
 {% api-method-request %} 
