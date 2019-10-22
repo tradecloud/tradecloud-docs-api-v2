@@ -18,7 +18,7 @@ Update your profile and settings:
 {% api-method-parameter name="Authorization" type="string" required=true %} Authentication token {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-path-parameters %} 
-{% api-method-parameter name="id" type="uuid" %} ID company to update. {% endapi-method-parameter %}
+{% api-method-parameter name="id" type="uuid" required=true %} ID company to update. {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 {% endapi-method-spec %}
