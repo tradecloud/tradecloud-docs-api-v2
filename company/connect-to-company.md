@@ -20,7 +20,7 @@ You can request connection to another company:
 {% api-method-parameter name="otherCompanyId" type="uuid" required=true %} Request connection to company id {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% api-method-body-parameters %} 
-{% api-method-parameter name="otherUserId" type="string" required=true %} Request connection to user id {% endapi-method-parameter %}
+{% api-method-parameter name="otherUserId" type="uuid" required=true %} Request connection to user id {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% endapi-method-spec %}
