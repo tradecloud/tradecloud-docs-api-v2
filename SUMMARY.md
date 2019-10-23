@@ -11,7 +11,7 @@
 * [Your users](user/overview.md)
   * [List your company's users](user/list.md)
   * [Invite a new user](user/invite-new.md)
-  * [Update an user](user/update-user.md)
+  * [Update an user](user/update.md)
 * [Buyer order process](order/buyer/overview.md)
   * [(Re)issue an order](order/buyer/issue.md)
     * [Attach document to an order](order/buyer/attach-document.md)
