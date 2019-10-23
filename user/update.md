@@ -17,7 +17,7 @@ description: How to update your user's profile and settings.
 {% api-method-parameter name="id" type="uuid" required=true %} User id {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% api-method-body-parameters %} 
-{% api-method-parameter name="body" type="object" required=true %} Update user body. See the request body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/user/specs.yaml#/user/updateUserRoute) {% endapi-method-parameter %}
+{% api-method-parameter name="body" type="object" required=true %} Update user body {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %} 
@@ -30,3 +30,7 @@ description: How to update your user's profile and settings.
 {% endapi-method-response %} 
 {% endapi-method-spec %}
 {% endapi-method %}
+
+### Body
+
+See the request body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/updateCompanyRoute)
