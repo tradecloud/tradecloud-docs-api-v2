@@ -23,9 +23,15 @@ You can request connection to another company:
 {% api-method-parameter name="otherUserId" type="uuid" required=true %} Request connection to user id {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
+{% api-method-response %} 
+{% api-method-response-example httpCode=200 %} 
+{% api-method-response-example-description %} Connection requested {% endapi-method-response-example-description %}
+{
+   "ok" : true
+}
+{% endapi-method-response-example %}
+{% endapi-method-response %} 
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Response
-
-Only a HTTP status code will be returned
+See the full description in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/requestConnectionRoute)
