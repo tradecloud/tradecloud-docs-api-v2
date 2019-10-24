@@ -9,7 +9,7 @@ You can invite new user to your company:
 ## Request
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/user"%} 
-{% api-method-summary %} Update user {% endapi-method-summary %}
+{% api-method-summary %} Create user {% endapi-method-summary %}
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
