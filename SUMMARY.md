@@ -30,7 +30,7 @@
   * [Accept an order](order/supplier/accept.md)
     * [Attach document to an order response](order/supplier/attach-document.md)
   * [Reject an order](order/supplier/reject.md)
-  * [Propose order changes](order/supplier/propose-changes)
+  * [Propose order changes](order/supplier/propose-changes.md)
   * [Ship goods](order/supplier/ship-goods.md)
   * [Request to reopen an order](order/supplier/request-reopen.md)
   * [Request to cancel an order](order/supplier/request-cancel.md)
