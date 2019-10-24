@@ -4,6 +4,8 @@ description: How to update your user's profile and settings.
 
 # Update user profile and settings
 
+User companyId and roles cannot be updated.
+
 ## Request
 
 {% api-method method="put" host="https://api.accp.tradecloud1.com/v2" path="/user/:id"%} 
