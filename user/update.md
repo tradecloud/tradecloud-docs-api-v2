@@ -4,7 +4,8 @@ description: How to update your user's profile and settings.
 
 # Update user profile and settings
 
-User companyId and roles cannot be updated.
+You can update user profile and settings.
+Note that user companyId and roles cannot be updated.
 
 ## Request
 

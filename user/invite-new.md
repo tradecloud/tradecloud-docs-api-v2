@@ -4,7 +4,7 @@ description: How to invite a new user
 
 # Invite user
 
-You can invite new user to your company:
+You can invite a new user to your company:
 
 ## Request
 
