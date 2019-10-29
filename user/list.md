@@ -4,7 +4,7 @@ description: How to list your company's users
 
 # List users
 
-You can search for users of your company:
+Search for users of your company.
 
 ## Request
 
@@ -13,11 +13,14 @@ You can search for users of your company:
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Authentication token {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-query-parameters %} 
 {% api-method-parameter name="companyId" type="uuid" required=true %} Company Id {% endapi-method-parameter %}
-{% api-method-parameter name="query" type="string" required=false %} Query string {% endapi-method-parameter %}
+{% api-method-parameter name="query" type="string" required=false %}
+Free text value. 
+For now search by user's email, first name, last name and company name is supported.
+{% endapi-method-parameter %}
 {% api-method-parameter name="role" type="string" required=false %} User role {% endapi-method-parameter %}
 {% api-method-parameter name="offset" type="integer" required=false %} Search offset {% endapi-method-parameter %}
 {% api-method-parameter name="limit" type="integer" required=false %} Search limit {% endapi-method-parameter %}

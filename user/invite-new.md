@@ -4,7 +4,8 @@ description: How to invite a new user
 
 # Invite user
 
-You can invite a new user to your company:
+You can invite a new user to your company.
+An invitation email will be send to this user.
 
 ## Request
 
@@ -13,7 +14,7 @@ You can invite a new user to your company:
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Authentication token {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-body-parameters %} 
 {% api-method-parameter name="body" type="object" required=true %} Create user body {% endapi-method-parameter %}

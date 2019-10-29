@@ -14,7 +14,7 @@ Note that user companyId and roles cannot be updated.
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Authentication token {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-path-parameters %} 
 {% api-method-parameter name="id" type="uuid" required=true %} User id {% endapi-method-parameter %}
