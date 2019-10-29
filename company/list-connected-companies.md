@@ -3,7 +3,7 @@ description: How to list your connections with other companies
 ---
 
 # List your connections
-Yoc can find all connected companies using `connected=true` parameter
+Yoc can find all your connected companies using the `connected=true` parameter
 
 ## Request
 
@@ -12,11 +12,14 @@ Yoc can find all connected companies using `connected=true` parameter
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Authentication token {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-query-parameters %} 
 {% api-method-parameter name="companyId" type="uuid" required=true %} Company Id {% endapi-method-parameter %}
-{% api-method-parameter name="query" type="string" required=false %} Query string {% endapi-method-parameter %}
+{% api-method-parameter name="query" type="string" required=false %} 
+Free text value. 
+For now only search by company name is supported
+Currently company name is supported {% endapi-method-parameter %}
 {% api-method-parameter name="connected" type="boolean" required=false %} Search for connected connections {% endapi-method-parameter %}
 {% api-method-parameter name="requested" type="boolean" required=false %} Search for requested connections {% endapi-method-parameter %}
 {% api-method-parameter name="offset" type="integer" required=false %} Search offset {% endapi-method-parameter %}

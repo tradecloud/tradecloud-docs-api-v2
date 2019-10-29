@@ -4,7 +4,9 @@ description: How to connect to another company
 
 # Connect to another company
 
-You can request connection to another company:
+Use [Search for companies to connect](search-new-companies.md) to search for known users at companies you want to connect with.
+When you found a user and company to connect with, you can request a connection to the other company and user.
+The other user will receive an invitation email to connect with you and your company.
 
 ## Request
 
@@ -13,7 +15,7 @@ You can request connection to another company:
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Authentication token {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-path-parameters %} 
 {% api-method-parameter name="companyId" type="uuid" required=true %} Request connection for company id {% endapi-method-parameter %}

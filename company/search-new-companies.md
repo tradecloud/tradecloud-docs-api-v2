@@ -4,7 +4,11 @@ description: How to search for new companies to connect with
 
 # Search for companies to connect
 
-You can search for new companies providing role that is opposite to your user (buyer for supplier and vice versa) 
+Search for known users at companies you want to connect with.
+You may search on user's email, first name, last name and company name.
+
+The user should have the opposite role to your user (buyer for supplier and vice versa).
+Use [invite new connection](connect-to-company.md) to connect to the company you have found.
 
 ## Request
 
@@ -13,11 +17,14 @@ You can search for new companies providing role that is opposite to your user (b
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Authentication token {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-query-parameters %} 
 {% api-method-parameter name="companyId" type="uuid" required=true %} Company Id {% endapi-method-parameter %}
-{% api-method-parameter name="query" type="string" required=false %} Query string {% endapi-method-parameter %}
+{% api-method-parameter name="query" type="string" required=false %}
+Free text value. 
+For now search by user's email, first name, last name and company name is supported.
+{% endapi-method-parameter %}
 {% api-method-parameter name="role" type="string" required=false %} User role {% endapi-method-parameter %}
 {% api-method-parameter name="offset" type="integer" required=false %} Search offset {% endapi-method-parameter %}
 {% api-method-parameter name="limit" type="integer" required=false %} Search limit {% endapi-method-parameter %}
