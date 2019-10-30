@@ -18,7 +18,7 @@ Yoc can find all your connected companies using the `connected=true` parameter
 {% api-method-parameter name="companyId" type="uuid" required=true %} Company Id {% endapi-method-parameter %}
 {% api-method-parameter name="query" type="string" required=false %} 
 Free text value. 
-For now only search by company name is supported
+You may search on requesting or accepting company's name.
 Currently company name is supported {% endapi-method-parameter %}
 {% api-method-parameter name="connected" type="boolean" required=false %} Search for connected connections {% endapi-method-parameter %}
 {% api-method-parameter name="requested" type="boolean" required=false %} Search for requested connections {% endapi-method-parameter %}
