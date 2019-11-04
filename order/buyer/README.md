@@ -1,5 +1,5 @@
 ---
-description: 'Overview of buyer order processes available.'
+description: 'Overview of buyer order process pages available.'
 ---
 
-# Overview
+# Buyer order proces pages

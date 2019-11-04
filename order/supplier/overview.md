@@ -1,5 +1,5 @@
 ---
-description: 'Overview of supplier order processes available.'
+description: 'Overview of the supplier order proces.'
 ---
 
-# Overview
+# Supplier order proces overview

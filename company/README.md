@@ -1,5 +1,5 @@
 ---
-description: 'Overview of company, connection and account API articles available.'
+description: 'Overview of company, connection and account API pages available.'
 ---
 
-Company articles
+# Company pages
