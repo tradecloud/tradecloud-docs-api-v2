@@ -1,5 +1,5 @@
 ---
-description: 'Overview of user API resources available.'
+description: 'Overview of user API pages available.'
 ---
 
-# Overview
+# User API pages
