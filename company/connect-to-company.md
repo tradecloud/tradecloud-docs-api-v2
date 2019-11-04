@@ -15,7 +15,7 @@ The other user will receive an invitation email to connect with you and your com
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer Access-Token {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-path-parameters %} 
 {% api-method-parameter name="companyId" type="uuid" required=true %} Request connection for company id {% endapi-method-parameter %}

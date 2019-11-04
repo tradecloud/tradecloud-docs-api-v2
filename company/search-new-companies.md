@@ -17,7 +17,7 @@ Use [invite new connection](connect-to-company.md) to connect to the company you
 {% api-method-spec %} 
 {% api-method-request %} 
 {% api-method-headers %} 
-{% api-method-parameter name="Authorization" type="string" required=true %} Bearer <Authentication token> {% endapi-method-parameter %} 
+{% api-method-parameter name="Authorization" type="string" required=true %} Bearer Access-Token {% endapi-method-parameter %} 
 {% endapi-method-headers %}
 {% api-method-query-parameters %} 
 {% api-method-parameter name="companyId" type="uuid" required=true %} Company Id {% endapi-method-parameter %}
