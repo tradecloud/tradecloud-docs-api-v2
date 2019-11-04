@@ -1,5 +1,5 @@
 ---
-description: 'Overview of buyer and supplier processes available.'
+description: 'Overview of API v2 articles available.'
 ---
 
-# Overview
+# Articles

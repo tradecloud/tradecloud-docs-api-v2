@@ -21,7 +21,7 @@ When correctly authenticated, the response will return 200 and contain a token a
 // Response code:
 200
 // Response headers:
-Set-Authorization: <Token>
+Set-Authorization: <Access-Token>
 Set-Refresh-Token: <Refresh-Token>
 ```
 
@@ -31,13 +31,13 @@ Set-Refresh-Token: <Refresh-Token>
 
 ## Using a token
 
-Use a Bearer Authorization HTTP header with the Token in each request:
+Use a Bearer Authorization HTTP header with the Access Token in each request:
 
 ```text
 // Example request method and URI
 GET https://api.accp.tradecloud1.com/v2/user?email=<Email>
 // Request headers:
-Authorization: Bearer <Token>
+Authorization: Bearer <Access-Token>
 ```
 
 When correctly authenticated, the response will return 200 and in this example some user info.
@@ -78,9 +78,10 @@ Refresh token cannot be used once it is expired or a new refresh token is genera
 // Response code:
 200
 // Response headers:
-Set-Authorization: <Token>
+Set-Authorization: <Access-Token>
 Set-Refresh-Token: <Refresh-Token>
-```text
+```
+
 In addition, consider the following:
 1) If you place a request to  `/_refresh` providing a valid access token in the Authorization header, the API will return 200 - OK, without a new token pair. This is regardless of whether you provided a valid refresh token or not.
 2) If you place a request to `/_refresh` providing a corrupted access token in the Authorization header, the API will always return 401 - Not authenticated. This is regardless of whether you provided a valid refresh token or not.

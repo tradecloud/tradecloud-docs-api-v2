@@ -2,7 +2,8 @@
 
 * [Overview](README.md)
 * [Authentication](authentication.md)
-* [Your company](company/overview.md)
+* [Your company](company/README.md)
+  * [Company overview](company/overview.md)
   * [Get your company](company/get.md)
   * [Update your company](company/update.md)
   * [List connected companies](company/list-connected-companies.md)
