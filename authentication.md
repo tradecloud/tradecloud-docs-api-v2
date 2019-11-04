@@ -70,7 +70,7 @@ GET https://api.accp.tradecloud1.com/v2/authentication/_refresh
 Refresh-Token: <Refresh-Token>
 ```
 
-When the refresh token is valid, the API will return 200 and contain a new token pair, containing a new access token and a new refresh token. 
+When the refresh token is valid, the API will return 200 and contain a new token pair, containing a new access token and a new refresh token.
 Otherwise, the API will return 401 - "Not authenticated".
 Refresh token cannot be used once it is expired or a new refresh token is generated.
 
