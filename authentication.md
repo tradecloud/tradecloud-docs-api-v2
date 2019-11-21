@@ -10,7 +10,7 @@ Log in using an Basic Authorization  HTTP header with a base 64 encoded email an
 
 ```text
 // Request method and URI
-GET https://api.accp.tradecloud1.com/v2/authentication/_login
+GET https://api.accp.tradecloud1.com/v2/authentication/login
 // Request headers:
 Authorization: Basic <<Email>:<Password> base64 encoded>
 ```
@@ -45,7 +45,7 @@ When correctly authenticated, the response will return 200 and in this example s
 ```text
 // Response code:
 200
-// Reponse body:
+// Response body:
 {
     "id": "<uuid>",
     "email": "<Email>",
@@ -61,11 +61,11 @@ An access token will expire after 1 hour, a refresh token after 24 hours.
 When your access token expires you have either to log in again or use the refresh token.
 If your refresh token expires you have to log in again.
 
-You can refresh your access token by placing an HTTP request to `/authentication/_refresh`, using the Refresh-Token header:
+You can refresh your access token by placing an HTTP request to `/authentication/refresh`, using the Refresh-Token header:
 
 ```text
 // Example request method and URI
-GET https://api.accp.tradecloud1.com/v2/authentication/_refresh
+GET https://api.accp.tradecloud1.com/v2/authentication/refresh
 // Request headers:
 Refresh-Token: <Refresh-Token>
 ```
@@ -83,5 +83,6 @@ Set-Refresh-Token: <Refresh-Token>
 ```
 
 In addition, consider the following:
-1) If you place a request to  `/_refresh` providing a valid access token in the Authorization header, the API will return 200 - OK, without a new token pair. This is regardless of whether you provided a valid refresh token or not.
-2) If you place a request to `/_refresh` providing a corrupted access token in the Authorization header, the API will always return 401 - Not authenticated. This is regardless of whether you provided a valid refresh token or not.
+
+1) If you place a request to  `/refresh` providing a valid access token in the Authorization header, the API will return 200 - OK, without a new token pair. This is regardless of whether you provided a valid refresh token or not.
+2) If you place a request to `/refresh` providing a corrupted access token in the Authorization header, the API will always return 401 - Not authenticated. This is regardless of whether you provided a valid refresh token or not.
