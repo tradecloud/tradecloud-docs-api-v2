@@ -47,9 +47,13 @@ After processing the order lines will have order process status `Issued`
 - `supplierAccountNumber`: the supplier account number as known in your ERP system
 - `purchaseOrderNumber`: the purchase order number as in your ERP system
 - `destination`: the order delivery destination code and address as in your ERP system
+
+#### Secondary order fields
+
 - `terms`: the order terms as agreed with your supplier
+- `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
+- `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
 - `contact`: the employee responsible for this order. You can either send his/her email or userName as known in you ERP system
-- `lines`: provide at least one or multiple purchase order lines.
 
 {% hint style="warn" %}
 `supplierAccountNumber`, `purchaseOrderNumber` and `destination.code` should be unique within your company and never change. Never renumber or re-use numbers or code's.
@@ -61,6 +65,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 #### Lines
 
+- `lines`: provide at least one or multiple purchase order lines.
 - `position`: the line position within the purchase order
 
 {% hint style="warn" %}
@@ -100,6 +105,15 @@ Never renumber or re-use `item.number`s.
 `deliverySchedule.position` should be unique within the schedule line and never change.
 Never renumber or re-use `deliverySchedule.position`s.
 {% endhint %}
+
+#### Secondary line fields
+
+- `terms`: TO DO
+- `projectNumber`:  TO DO
+- `productionNumber`:  TO DO
+- `salesOrderNumber`:  TO DO
+- `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for line breaks.
+- `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
 
 #### New order meta data
 
