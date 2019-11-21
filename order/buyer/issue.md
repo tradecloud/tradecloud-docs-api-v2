@@ -49,18 +49,18 @@ After processing the order lines will have order process status `Issued`
 - `destination`: the order delivery destination code and address as in your ERP system
 - `contact`: the employee responsible for this order. You can either send his/her email or userName as known in you ERP system
   
-{% hint style="warn" %}
+{% hint style="danger" %}
 `supplierAccountNumber`, `purchaseOrderNumber`, `destination.code`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="danger" %}
 The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or at any time in the connection overview in the portal.
 {% endhint %}
 
 #### Secondary order fields
 
 - `terms`: the order terms as agreed with your supplier
-- `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
+- `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks in the value.
 - `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
 - `documents`: contain meta data and link of attached documents. See [Attach a document to an order](order/buyer/attach-document.md)
 
@@ -69,7 +69,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 - `lines`: provide at least one or multiple purchase order lines.
 - `position`: the line position within the purchase order
 
-{% hint style="warn" %}
+{% hint style="danger" %}
 `lines.position` should be unique within the order and never change.
 Never renumber or re-use `position` numbers.
 {% endhint %}
@@ -81,7 +81,7 @@ Never renumber or re-use `position` numbers.
 - `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000, typical example is `pcs`
 - `lines.item.supplierItemNumber`: the item number as known at the supplier. Advised in case of wholesale suppliers.
 
-{% hint style="warn" %}
+{% hint style="danger" %}
 `item.number` should be unique within your company and never change.
 Never renumber or re-use `item.number`s.
 {% endhint %}
@@ -102,7 +102,7 @@ Never renumber or re-use `item.number`s.
 - `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format
 - `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
-{% hint style="warn" %}
+{% hint style="danger" %}
 `deliverySchedule.position` should be unique within the schedule line and never change.
 Never renumber or re-use `deliverySchedule.position`s.
 {% endhint %}
@@ -115,7 +115,7 @@ Never renumber or re-use `deliverySchedule.position`s.
 - `projectNumber`: Your project number reference
 - `productionNumber`:  Your production number reference
 - `salesOrderNumber`:  Your sales order reference (not be confused with the supplier sales order number)
-- `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for line breaks.
+- `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for line breaks in the value.
 - `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
 - `documents`: contain meta data and link of attached documents. See [Attach a document to a line](order/buyer/attach-document.md)
 
@@ -128,8 +128,8 @@ Never renumber or re-use `deliverySchedule.position`s.
 
 As a buyer you can send an updated purchase order to Tradecloud.
 
-{% hint style="warn" %}
-Most supplier ERP integrations do not have the capability to automatically process an updated order. But it will processed manually by the supplier, but the order will have a longer human response time.
+{% hint style="danger" %}
+Most supplier ERP integrations do not have the capability to automatically process an updated order. It will processed manually by the supplier and the order will have a longer human response time.
 {% endhint %}
 
 {% hint style="info" %}
@@ -143,7 +143,7 @@ In case of any other status like `Completed` or `Cancelled` the order update wil
 
 The `/order-integration/order` API method is the same as above with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will update or add lines based on the `lines.position` and will update or add delivery schedule and history based on `deliverySchedule.position` and `deliveryHistory.position`.
 
-{% hint style="info" %}
+{% hint style="tip" %}
 The update is event oriented, eg. you only have to send the lines affected (updated, added or some command or  indicator set). But you can also send all lines.
 {% endhint %}
 

@@ -12,7 +12,7 @@ You can attach documents in three ways:
 
 ## 1. Attach a document using the Tradecloud object-storage
 
-{% hint style="warn" %}
+{% hint style="working" %}
 This feature is planned. Ticket [TC-5060](https://tradecloud.atlassian.net/browse/TC-5060) As a user I want to attach documents to an order (line) and be able to download
 {% endhint %}
 
@@ -56,7 +56,7 @@ Link the uploaded document objectId with the order or line and send the order
     ],
 ```
 
-Send the order with the `document` using [(Re)issue an order](order/buyer/issue.md)
+Send the order with the `document` using [(Re)issue an order](issue.md)
 
 ## 2. Attach a document using your company's content server
 
@@ -77,7 +77,7 @@ Add a `document` to the `order` or `lines` JSON object, example:
     ],
 ```
 
-Send the order with the `document` using [(Re)issue an order](order/buyer/issue.md)
+Send the order with the `document` using [(Re)issue an order](issue.md)
 
 ## 3. Only provide document meta data
 
@@ -93,4 +93,4 @@ Add a `document` to the `order` or `lines` JSON object, example:
     ],
 ```
 
-Send the order with the `document` using [(Re)issue an order](order/buyer/issue.md)
+Send the order with the `document` using [(Re)issue an order](issue.md)
