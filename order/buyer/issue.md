@@ -10,7 +10,7 @@ As buyer you can send either a new or updated purchase order to Tradecloud.
 
 As a buyer you can send a new purchase order to Tradecloud.
 
-When the API method returns HTTP status code 200, the order was successfully queued to be processed by Tradecloud. Processing takes usually less then a second, after which to order is available in the portal and is forwarded to the supplier ERP integration.
+When the `/order-integration/order` API method returns HTTP status code 200, the order was successfully queued to be processed by Tradecloud. Processing takes usually less then a second, after which to order is available in the portal and is forwarded to the supplier ERP integration.
 
 {% hint style="info" %}
 After processing the order lines will have order process status `Issued`
@@ -47,21 +47,22 @@ After processing the order lines will have order process status `Issued`
 - `supplierAccountNumber`: the supplier account number as known in your ERP system
 - `purchaseOrderNumber`: the purchase order number as in your ERP system
 - `destination`: the order delivery destination code and address as in your ERP system
+- `contact`: the employee responsible for this order. You can either send his/her email or userName as known in you ERP system
+  
+{% hint style="warn" %}
+`supplierAccountNumber`, `purchaseOrderNumber`, `destination.code`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
+{% endhint %}
+
+{% hint style="info" %}
+The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or at any time in the connection overview in the portal.
+{% endhint %}
 
 #### Secondary order fields
 
 - `terms`: the order terms as agreed with your supplier
 - `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
 - `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
-- `contact`: the employee responsible for this order. You can either send his/her email or userName as known in you ERP system
-
-{% hint style="warn" %}
-`supplierAccountNumber`, `purchaseOrderNumber` and `destination.code` should be unique within your company and never change. Never renumber or re-use numbers or code's.
-{% endhint %}
-
-{% hint style="info" %}
-The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or at any time in the connection overview in the portal.
-{% endhint %}
+- `documents`: contain meta data and link of attached documents. See [Attach a document to an order](order/buyer/attach-document.md)
 
 #### Lines
 
@@ -108,17 +109,20 @@ Never renumber or re-use `deliverySchedule.position`s.
 
 #### Secondary line fields
 
-- `terms`: TO DO
-- `projectNumber`:  TO DO
-- `productionNumber`:  TO DO
-- `salesOrderNumber`:  TO DO
+- `terms`: the line terms as agreed with your supplier
+- `terms.contractNumber`: the agreed framework contract number
+- `terms.contractPosition`: the related position within the framework contract
+- `projectNumber`: Your project number reference
+- `productionNumber`:  Your production number reference
+- `salesOrderNumber`:  Your sales order reference (not be confused with the supplier sales order number)
 - `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for line breaks.
 - `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
+- `documents`: contain meta data and link of attached documents. See [Attach a document to a line](order/buyer/attach-document.md)
 
 #### New order meta data
 
-- `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has any ISO 8601 date/time (UTC or with time zone) format, such as `yyyy-MM-ddThh:mm:ssZ` and `yyyy-MM-ddThh:mm:ss+01:00`. When using a time zone it changes during daylight saving.
-- `erpIssuedBy`: the user name as known in your ERP system which issued this order
+- `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`
+- `erpIssuedBy`: the user name as known in your ERP system who issued this order
 
 ## Send an updated order to Tradecloud
 
@@ -137,7 +141,7 @@ In case of any other status like `Completed` or `Cancelled` the order update wil
 
 ### Send updated order API method
 
-The API method is the same as above with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will update or add lines based on the `lines.position` and will update or add delivery schedule and history based on `deliverySchedule.position` and `deliveryHistory.position`.
+The `/order-integration/order` API method is the same as above with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will update or add lines based on the `lines.position` and will update or add delivery schedule and history based on `deliverySchedule.position` and `deliveryHistory.position`.
 
 {% hint style="info" %}
 The update is event oriented, eg. you only have to send the lines affected (updated, added or some command or  indicator set). But you can also send all lines.
@@ -151,5 +155,5 @@ The update is event oriented, eg. you only have to send the lines affected (upda
 
 #### Updated order meta data
 
-- `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. `DateTime` has any ISO 8601 date/time format.
-- `erpLastChangedBy`: the user name as known in your ERP system which updated this order
+- `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`
+- `erpLastChangedBy`: the user name as known in your ERP system who updated this order
