@@ -1,5 +1,5 @@
 ---
-description: How to isue and reissue an order as a buyer
+description: How to issue and reissue an order as a buyer
 ---
 
 # Issue and reissue order
@@ -10,7 +10,7 @@ As buyer you can send either a new or updated purchase order to Tradecloud.
 
 As a buyer you can send a new purchase order to Tradecloud.
 
-When the api method returns HTTP status code 200, the order was succesfully queued to be processed by Tradecloud. Processing takes normally less then a second, after which to order is forwarded to the supplier and visible in the portal.
+When the API method returns HTTP status code 200, the order was successfully queued to be processed by Tradecloud. Processing takes usually less then a second, after which to order is forwarded to the supplier and visible in the portal.
 
 {% hint style="info" %}
 After processing the order lines will have order process status `Issued`
@@ -18,7 +18,7 @@ After processing the order lines will have order process status `Issued`
 
 ### Send order API method
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order"%}
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order-integration/order"%}
 {% api-method-summary %}Send order by buyer{% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
@@ -27,7 +27,7 @@ After processing the order lines will have order process status `Issued`
 {% api-method-parameter name="Content-Type" type="string" required=true %} application/json {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %} Order JSON body {% endapi-method-parameter %}
+{% api-method-parameter name="body" type="object" required=true %} [Order JSON body](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute) {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
@@ -37,17 +37,15 @@ After processing the order lines will have order process status `Issued`
 {% endapi-method-spec %}
 {% endapi-method %}
 
-See the order JSON body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute)
-
 ### JSON objects
 
 #### Order
 
 - `companyId`: your Tradecloud company id
 - `supplierAccountNumber`: targetted supplier account number as known in your ERP system
-- `purchaseOrderNumber`: the puchase order number as in your ERP system
-- `destination`: the order delivery destination code and address
-- `terms`: the order terms as already agreed with your supplier
+- `purchaseOrderNumber`: the purchase order number as in your ERP system
+- `destination`: the order delivery destination code and address as in your ERP system
+- `terms`: the order terms as agreed with your supplier
 - `indicators`: the order is `complete`, completely `delivered` or there is `noDeliveryExpected` anymore
 - `contact`: the employee responsible for this order. You can either send his/her email or userName as in you ERP system
 - `lines`: provide at least one or multiple purchase order lines.
