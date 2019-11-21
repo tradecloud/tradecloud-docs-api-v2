@@ -41,8 +41,6 @@ After processing the order lines will have order process status `Issued`
 
 ### Order body JSON objects
 
-Relevant fields for new orders
-
 #### Order
 
 - `companyId`: your Tradecloud company id
@@ -54,16 +52,16 @@ Relevant fields for new orders
 - `lines`: provide at least one or multiple purchase order lines.
 
 {% hint style="warn" %}
-`supplierAccountNumber`s, `purchaseOrderNumber`s and `destination.code`s should be unique within your company and never change. Never renumber or re-use numbers or code's.
+`supplierAccountNumber`, `purchaseOrderNumber` and `destination.code` should be unique within your company and never change. Never renumber or re-use numbers or code's.
 {% endhint %}
 
 {% hint style="info" %}
-The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
+The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or at any time in the connection overview in the portal.
 {% endhint %}
 
 #### Lines
 
-- `position`: the line position within the purchase order number
+- `position`: the line position within the purchase order
 
 {% hint style="warn" %}
 `lines.position` should be unique within the order and never change.
@@ -87,7 +85,7 @@ Never renumber or re-use `item.number`s.
 - `lines.prices`: the requested price(s). Provide either `netPrice`, used by most buyers or alternatively `grossPrice` together with `discountPercentage`. Price has a decimal `1234.56` format with any number of digits.
 - `priceInLocalCurrency`: at least provide a price in the local currency of the supplier, like `CNY` in China.
 - `priceInBaseCurrency`: if available provide a price in your base currency, like `EUR` in the EU.
-- `currencyIso`: the 3-letter currency codes according to ISO 4217:2015, like `EUR`, `USD` and `CNY`
+- `currencyIso`: the 3-letter currency codes according to ISO 4217, like `EUR`, `USD` and `CNY`
 - `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000. The purchase unit and price unit may be different.
 - `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items)
 
@@ -99,41 +97,45 @@ Never renumber or re-use `item.number`s.
 - `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 {% hint style="warn" %}
-`deliverySchedule.position` should be unique within the line and never change.
+`deliverySchedule.position` should be unique within the schedule line and never change.
 Never renumber or re-use `deliverySchedule.position`s.
 {% endhint %}
 
 #### New order meta data
 
-- `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. DateTime has any ISO 8601 date/time (UTC or with time zone) format, examples `yyyy-MM-ddThh:mm:ssZ` or `yyyy-MM-ddThh:mm:ss+01:00`. When using a time zone it changes during daylight saving.
+- `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has any ISO 8601 date/time (UTC or with time zone) format, such as `yyyy-MM-ddThh:mm:ssZ` and `yyyy-MM-ddThh:mm:ss+01:00`. When using a time zone it changes during daylight saving.
 - `erpIssuedBy`: the user name as known in your ERP system which issued this order
 
 ## Send an updated order to Tradecloud
 
 As a buyer you can send an updated purchase order to Tradecloud.
 
+{% hint style="warn" %}
+Most supplier ERP integrations do not have the capability to automatically process an updated order. But it will processed manually by the supplier, but the order will have a longer human response time.
+{% endhint %}
+
 {% hint style="info" %}
 If an order line has order process status `Issued` or `In Progress` it will be `Reissued` and keep the same status.
-
 If the line has status `Rejected` (by supplier) it will be `Reissued` and become `In Progress`.
 If the line has status `Confirmed` it will be `Reopened` and become `In Progress`.
-
 In case of any other status like `Completed` or `Cancelled` the order update will be ignored.
 {% endhint %}
 
 ### Send updated order API method
 
-The request is the same as above. Tradecloud will update the order based on the `purchaseOrderNumber` and will update or add lines based on the `lines.position` and will update or add delivery schedule and history based on `deliverySchedule.position` and `deliveryHistory.position`.
+The API method is the same as above with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will update or add lines based on the `lines.position` and will update or add delivery schedule and history based on `deliverySchedule.position` and `deliveryHistory.position`.
 
 {% hint style="info" %}
 The update is event oriented, eg. you only have to send the lines affected (updated, added or some command or  indicator set). But you can also send all lines.
 {% endhint %}
 
+### Additional order body JSON objects
+
 #### Historical actual delivery schedule
 
-- `line.deliveryHistory`: the historic actual delivery schedule. This will be used to calculate if a line is overdue. Fields similar as in `line.deliverySchedule`
+- `lines.deliveryHistory`: the historic actual delivery schedule. This will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
 
 #### Updated order meta data
 
-- `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. DateTime has any ISO 8601 date/time format.
+- `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. `DateTime` has any ISO 8601 date/time format.
 - `erpLastChangedBy`: the user name as known in your ERP system which updated this order
