@@ -124,6 +124,12 @@ TODO: explanation of scopes
         <p>Change password</p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left">User profile</td>
+      <td style="text-align:left">Company</td>
+      <td style="text-align:left">View co-workers profile</td>
+      <td style="text-align:left">Not allowed</td>
+    </tr>
   </tbody>
 </table>## Admin Permissions
 
