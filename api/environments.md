@@ -11,11 +11,9 @@ Tradecloud has two physical separated infrastructure:
 
 Tradecloud has three environments:
 
-- [Environments](#environments)
-  - [Test environments](#test-environments)
-  - [Acceptance test environment](#acceptance-test-environment)
-  - [Production environment](#production-environment)
-  - [Planned maintenance](#planned-maintenance)
+- [Test environments](#test-environments)
+- [Acceptance test environment](#acceptance-test-environment)
+- [Production environment](#production-environment)
 
 ## Test environments
 
