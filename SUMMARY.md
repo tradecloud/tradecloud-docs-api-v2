@@ -2,6 +2,7 @@
 
 * [Overview](README.md)
 * [Authentication](authentication.md)
+* [Authorization](permissions.md)
 * [Your company](company/README.md)
   * [Company overview](company/overview.md)
   * [Get your company](company/get.md)

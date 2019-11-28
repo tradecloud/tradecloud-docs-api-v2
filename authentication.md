@@ -6,7 +6,7 @@ description: How to use JSON Web Tokens
 
 ## Getting a token
 
-Log in using an Basic Authorization  HTTP header with a base 64 encoded email and password:
+Log in using an Basic Authorization HTTP header with a base 64 encoded email and password:
 
 ```text
 // Request method and URI
