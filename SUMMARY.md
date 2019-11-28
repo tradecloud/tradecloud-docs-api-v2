@@ -3,7 +3,7 @@
 * [Overview](README.md)
 * [API](api/README.md)  
   * [requests](api/requests.md)
-  * [environments](api/environments.msd)
+  * [environments](api/environments.md)
   * [standards](api/standards.md)
 * [Security](security/README.md)
   * [Security overview](security/overview.md)

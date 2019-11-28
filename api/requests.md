@@ -2,7 +2,7 @@
 description: 'How to use API requests'
 ---
 
-# How to use the API
+# Requests
 
 ## Making request
 
@@ -11,7 +11,7 @@ An API request consist of:
 - [HTTP method](#HTTP-method): `GET`, `POST`, `PUT` or `DELETE`
 - [HTTP headers](#HTTP-headers): authorization and content type
 - [URL](#URL): HTTPS, environment, service, method and parameters
-- [JSON](#json) body (in case of POST and PUT)
+- [JSON](#json) body
 
 ## HTTP method
 

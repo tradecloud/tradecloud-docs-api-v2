@@ -2,7 +2,7 @@
 description: 'Tradecloud API environments available'
 ---
 
-# Environments available
+# Environments
 
 Tradecloud has two physical separated infrastructure:
 
@@ -11,7 +11,7 @@ Tradecloud has two physical separated infrastructure:
 
 Tradecloud has three environments:
 
-- [Environments available](#environments-available)
+- [Environments](#environments)
   - [Test environments](#test-environments)
   - [Acceptance test environment](#acceptance-test-environment)
   - [Production environment](#production-environment)

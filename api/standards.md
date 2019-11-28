@@ -2,7 +2,7 @@
 description: 'Overview of standards supported by the Tradecloud API'
 ---
 
-# Standards used
+# Standards
 
 ## Basic HTTP authentication
 
