@@ -1,8 +1,9 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Authentication](authentication.md)
-* [Authorization](permissions.md)
+* [Security](security/README.md)
+  * [Authentication](security/authentication.md)
+  * [Authorization](security/authorization.md)
 * [Your company](company/README.md)
   * [Company overview](company/overview.md)
   * [Get your company](company/get.md)
