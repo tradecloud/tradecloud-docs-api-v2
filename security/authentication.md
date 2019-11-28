@@ -4,6 +4,10 @@ description: How to use JSON Web Tokens
 
 # Authentication
 
+The API supports the "Basic" HTTP authentication scheme [RFC 7617](https://tools.ietf.org/html/rfc7617) with [JSON Web Tokens](https://jwt.io/) [RFC 7519](https://tools.ietf.org/html/rfc7519)
+
+[Oauth 2.0](https://oauth.net/2/) is on the [Tradecloud product road map](https://trello.com/b/CQomIRLJ/tradecloud-product-roadmap) and expected in 2020.
+
 ## Getting a token
 
 Log in using an Basic Authorization HTTP header with a base 64 encoded email and password:
