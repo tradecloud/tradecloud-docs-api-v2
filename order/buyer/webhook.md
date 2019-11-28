@@ -1,5 +1,5 @@
 ---
-description: How to receive an order response sent by supplier
+description: How to receive an order response sent by the supplier
 ---
 
 # Order response webhook

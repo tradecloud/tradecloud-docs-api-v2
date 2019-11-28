@@ -1,5 +1,5 @@
 ---
-description: 'How to use API requests'
+description: 'How to make API requests'
 ---
 
 # Requests
