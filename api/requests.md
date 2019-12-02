@@ -4,7 +4,7 @@ description: 'How to make API requests'
 
 # Requests
 
-## Making request
+## Making an API request
 
 An API request consist of:
 

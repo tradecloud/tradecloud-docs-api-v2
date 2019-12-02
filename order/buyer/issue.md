@@ -47,7 +47,7 @@ After processing the order lines will have order process status `Issued`
 - `supplierAccountNumber`: the supplier account number as known in your ERP system
 - `purchaseOrderNumber`: the purchase order number as in your ERP system
 - `destination`: the order delivery destination code and address as in your ERP system
-- `contact`: the employee responsible for this order. You can either send his/her email or userName as known in you ERP system
+- `contact`: the employee responsible for this order. You can either send his/her email or userName as known in your ERP system
   
 {% hint style="danger" %}
 `supplierAccountNumber`, `purchaseOrderNumber`, `destination.code`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
@@ -60,6 +60,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 #### Secondary order fields
 
 - `terms`: the order terms as agreed with your supplier
+- `indicators`: see [indicators](indicators.md)
 - `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks in the value.
 - `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
 - `documents`: contain meta data and link of attached documents. See [Attach a document to an order](order/buyer/attach-document.md)
@@ -76,10 +77,12 @@ Never renumber or re-use `position` numbers.
 
 #### Item
 
-- `lines.item.number`: the item number as in your ERP
+- `lines.item`: the item (or article, goods) to be delivered
+- `lines.item.number`: the free format item code or number as known in your ERP
+- `lines.item.revision`: the free format evision (or version) of this item number
 - `lines.item.name`: the item short name
-- `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000, typical example is `pcs`
-- `lines.item.supplierItemNumber`: the item number as known at the supplier. Advised in case of wholesale suppliers.
+- `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000, typical example is `PCE`
+- `lines.item.supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
 
 {% hint style="danger" %}
 `item.number` should be unique within your company and never change.
@@ -115,6 +118,7 @@ Never renumber or re-use `deliverySchedule.position`s.
 - `projectNumber`: Your project number reference
 - `productionNumber`:  Your production number reference
 - `salesOrderNumber`:  Your sales order reference (not be confused with the supplier sales order number)
+- `indicators`: see [indicators](indicators.md)
 - `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for line breaks in the value.
 - `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
 - `documents`: contain meta data and link of attached documents. See [Attach a document to a line](order/buyer/attach-document.md)
