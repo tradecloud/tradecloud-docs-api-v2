@@ -43,10 +43,10 @@ After processing the order lines will have order process status `Issued`
 
 #### Order
 
-- `companyId`: your Tradecloud company id
+- `companyId`: your Tradecloud company identifier
 - `supplierAccountNumber`: the supplier account number as known in your ERP system
-- `purchaseOrderNumber`: the purchase order number as in your ERP system
-- `destination`: the order delivery destination code and address as in your ERP system
+- `purchaseOrderNumber`: the purchase order number as known in your ERP system
+- `destination`: the delivery destination of this order as known in your ERP system
 - `contact`: the employee responsible for this order. You can either send his/her email or userName as known in your ERP system
   
 {% hint style="danger" %}
@@ -59,6 +59,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 #### Secondary order fields
 
+- `description`: a free format additional description of this order
 - `terms`: the order terms as agreed with your supplier
 - `indicators`: see [indicators](indicators.md)
 - `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks in the value.
@@ -67,11 +68,12 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 #### Lines
 
-- `lines`: provide at least one or multiple purchase order lines.
+- `lines`: a purchase order contains one or multiple lines
+- `line`: a purchase order line contains at least the position, item and delivery schedule
 - `position`: the line position within the purchase order
 
 {% hint style="danger" %}
-`lines.position` should be unique within the order and never change.
+`lines.position` should be unique within the order and immutable.
 Never renumber or re-use `position` numbers.
 {% endhint %}
 
@@ -81,22 +83,13 @@ Never renumber or re-use `position` numbers.
 - `lines.item.number`: the free format item code or number as known in your ERP
 - `lines.item.revision`: the free format evision (or version) of this item number
 - `lines.item.name`: the item short name
-- `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000, typical example is `PCE`
+- `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000-1, a typical example is `PCE`
 - `lines.item.supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
 
 {% hint style="danger" %}
 `item.number` should be unique within your company and never change.
 Never renumber or re-use `item.number`s.
 {% endhint %}
-
-#### Requested prices
-
-- `lines.prices`: the requested price(s). Provide either `netPrice`, used by most buyers or alternatively `grossPrice` together with `discountPercentage`. Price has a decimal `1234.56` format with any number of digits.
-- `priceInLocalCurrency`: at least provide a price in the local currency of the supplier, like `CNY` in China.
-- `priceInBaseCurrency`: if available provide a price in your base currency, like `EUR` in the EU.
-- `currencyIso`: the 3-letter currency codes according to ISO 4217, like `EUR`, `USD` and `CNY`
-- `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000. The purchase unit and price unit may be different.
-- `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items)
 
 #### Requested planned delivery schedule
 
@@ -110,8 +103,18 @@ Never renumber or re-use `item.number`s.
 Never renumber or re-use `deliverySchedule.position`s.
 {% endhint %}
 
+#### Requested prices
+
+- `lines.prices`: the requested price. Provide either `netPrice`, used by most buyers or alternatively `grossPrice` together with `discountPercentage`. Price has a decimal `1234.56` format with any number of digits.
+- `priceInLocalCurrency`: at least provide a price in the local currency of the supplier, like `CNY` in China.
+- `priceInBaseCurrency`: if available provide a price in your base currency, like `EUR` in the EU.
+- `currencyIso`: the 3-letter currency codes according to ISO 4217, like `EUR`, `USD` and `CNY`
+- `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+- `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items)
+
 #### Secondary line fields
 
+- `description`: a free format additional description of this line
 - `terms`: the line terms as agreed with your supplier
 - `terms.contractNumber`: the agreed framework contract number
 - `terms.contractPosition`: the related position within the framework contract
