@@ -1,5 +1,5 @@
 ---
-description: How to issue and reissue an order as a buyer
+description: How to reissue an order as a buyer
 ---
 
 # Reissue order
@@ -26,7 +26,7 @@ In case of any other status like `Completed` or `Cancelled` the order update wil
 The `/order-integration/order` API method is the same as when [sending a new order](issue.md) with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will update or add lines based on the `lines.position` and will update or add delivery schedule and history based on `deliverySchedule.position` and `deliveryHistory.position`.
 
 {% hint style="tip" %}
-The update is event oriented, eg. you only have to send the lines affected (updated, added or some indicator set). But you can also send all lines anyway.
+The update is event oriented, you only have to send the lines new or updated. But you can also send all lines anyway.
 {% endhint %}
 
 ### Additional order body JSON objects
@@ -34,7 +34,7 @@ The update is event oriented, eg. you only have to send the lines affected (upda
 #### Historical actual delivery schedule
 
 - `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery schedule lines. These will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
-- `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` and `deliveryHistory.position` do not have to be the same.
+- `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` versus `deliveryHistory.position` do not have to use the same values.
 - `deliveryHistory.date`: the actual delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format
 - `deliveryHistory.quantity`: the actual delivered quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
@@ -46,4 +46,4 @@ Never renumber or re-use `deliveryHistory.position`s.
 #### Updated order meta data
 
 - `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`
-- `erpLastChangedBy`: the user name as known in your ERP system who updated this order
+- `erpLastChangedBy`: he user email or user name as known in your ERP system who updated this order

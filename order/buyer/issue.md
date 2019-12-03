@@ -61,10 +61,10 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 - `description`: a free format additional description of this order
 - `terms`: the order terms as agreed with your supplier
-- `indicators`: see [indicators](indicators.md)
-- `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks in the value.
-- `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
-- `documents`: contain meta data and link of attached documents. See [Attach a document to an order](order/buyer/attach-document.md)
+- `indicators`: see [Indicators](indicators.md)
+- `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
+- `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
+- `documents`: contain meta data and link of attached documents. See [Attach a document to an order](attach-document.md)
 
 #### Lines
 
@@ -73,15 +73,15 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 - `position`: the line position within the purchase order
 
 {% hint style="danger" %}
-`lines.position` should be unique within the order and immutable.
+`lines.position` should be unique within the order and never change.
 Never renumber or re-use `position` numbers.
 {% endhint %}
 
 #### Item
 
 - `lines.item`: the item (or article, goods) to be delivered
-- `lines.item.number`: the free format item code or number as known in your ERP
-- `lines.item.revision`: the free format evision (or version) of this item number
+- `lines.item.number`: the item code or number as known in your ERP
+- `lines.item.revision`: the revision (or version) of this item number
 - `lines.item.name`: the item short name
 - `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000-1, a typical example is `PCE`
 - `lines.item.supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
@@ -122,12 +122,12 @@ Never renumber or re-use `deliverySchedule.position`s.
 - `projectNumber`: Your project number reference
 - `productionNumber`:  Your production number reference
 - `salesOrderNumber`:  Your sales order reference (not be confused with the supplier sales order number)
-- `indicators`: see [indicators](indicators.md)
-- `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for line breaks in the value.
-- `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for line breaks.
-- `documents`: contain meta data and link of attached documents. See [Attach a document to a line](order/buyer/attach-document.md)
+- `indicators`: see [Indicators](indicators.md)
+- `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
+- `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
+- `documents`: contain meta data and link of attached documents. See [Attach a document to a line](attach-document.md)
 
 #### New order meta data
 
 - `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`
-- `erpIssuedBy`: the user name as known in your ERP system who issued this order
+- `erpIssuedBy`: the user email or user name as known in your ERP system who issued this order

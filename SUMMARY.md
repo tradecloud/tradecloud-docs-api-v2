@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Support](support.md)
 * [API](api/README.md)  
   * [requests](api/requests.md)
   * [environments](api/environments.md)
@@ -25,7 +26,7 @@
   * [Invite a new user](user/invite-new.md)
 * [Buyer order process](order/buyer/README.md)
   * [Buyer order process overview](order/buyer/overview.md)
-  * [Issue an order](order/buyer/issue.md)
+  * [Issue a new order](order/buyer/issue.md)
     * [Attach a document to an order](order/buyer/attach-document.md)
   * [Reissue an order](order/buyer/reissue.md)
   * [Approve order changes proposed by supplier](order/buyer/approve-proposal.md)
