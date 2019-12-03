@@ -105,10 +105,11 @@ Never renumber or re-use `deliverySchedule.position`s.
 
 #### Requested prices
 
-- `lines.prices`: the requested price. Provide either `netPrice`, used by most buyers or alternatively `grossPrice` together with `discountPercentage`. Price has a decimal `1234.56` format with any number of digits.
+- `lines.prices`: the requested price. Provide either `netPrice`, used by most buyers or alternatively `grossPrice` together with `discountPercentage`. 
 - `priceInLocalCurrency`: at least provide a price in the local currency of the supplier, like `CNY` in China.
 - `priceInBaseCurrency`: if available provide a price in your base currency, like `EUR` in the EU.
-- `currencyIso`: the 3-letter currency codes according to ISO 4217, like `EUR`, `USD` and `CNY`
+- `value`: the price value has a decimal `1234.56` format with any number of digits.
+- `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 - `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 - `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items)
 
@@ -158,7 +159,7 @@ The update is event oriented, eg. you only have to send the lines affected (upda
 
 #### Historical actual delivery schedule
 
-- `lines.deliveryHistory`: the historic actual delivery schedule. This will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
+- `lines.deliveryHistory`: the historical actual delivery schedule. This will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
 
 #### Updated order meta data
 
