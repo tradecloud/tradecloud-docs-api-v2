@@ -16,7 +16,7 @@ Some pages to get you started:
 
 ## As a buyer
 
-[Issue an order](order/buyer/issue.md)
+[Issue a new order](order/buyer/issue.md)
 
 [Receive an order response](order/buyer/webhook.md)
 

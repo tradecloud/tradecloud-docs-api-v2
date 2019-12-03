@@ -1,10 +1,10 @@
 ---
-description: How to issue and reissue an order as a buyer
+description: How to issue a new order as a buyer
 ---
 
-# Issue and reissue order
+# Issue a new order
 
-As buyer you can send either a new or updated purchase order to Tradecloud.
+As buyer you can send either a new or [updated](reissue.md) purchase order to Tradecloud.
 
 ## Send a new order to Tradecloud
 
@@ -43,7 +43,7 @@ After processing the order lines will have order process status `Issued`
 
 #### Order
 
-- `companyId`: your Tradecloud company identifier
+- `companyId`: your Tradecloud company identifier. You can find your company id in the URL when selecting "My company" in the portal dropdown menu. For example in `https://portal.accp.tradecloud1.com/company/06893bba-e131-4268-87c9-7fae64e16ee9` the last part `06893bba-e131-4268-87c9-7fae64e16ee9` is the company id.
 - `supplierAccountNumber`: the supplier account number as known in your ERP system
 - `purchaseOrderNumber`: the purchase order number as known in your ERP system
 - `destination`: the delivery destination of this order as known in your ERP system
@@ -99,13 +99,13 @@ Never renumber or re-use `item.number`s.
 - `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 {% hint style="danger" %}
-`deliverySchedule.position` should be unique within the schedule line and never change.
+`deliverySchedule.position` should be unique within the delivery schedule and never change.
 Never renumber or re-use `deliverySchedule.position`s.
 {% endhint %}
 
 #### Requested prices
 
-- `lines.prices`: the requested price. Provide either `netPrice`, used by most buyers or alternatively `grossPrice` together with `discountPercentage`. 
+- `lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
 - `priceInLocalCurrency`: at least provide a price in the local currency of the supplier, like `CNY` in China.
 - `priceInBaseCurrency`: if available provide a price in your base currency, like `EUR` in the EU.
 - `value`: the price value has a decimal `1234.56` format with any number of digits.
@@ -131,37 +131,3 @@ Never renumber or re-use `deliverySchedule.position`s.
 
 - `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`
 - `erpIssuedBy`: the user name as known in your ERP system who issued this order
-
-## Send an updated order to Tradecloud
-
-As a buyer you can send an updated purchase order to Tradecloud.
-
-{% hint style="danger" %}
-Most supplier ERP integrations do not have the capability to automatically process an updated order. It will processed manually by the supplier and the order will have a longer human response time.
-{% endhint %}
-
-{% hint style="info" %}
-If an order line has order process status `Issued` or `In Progress` it will be `Reissued` and keep the same status.
-If the line has status `Rejected` (by supplier) it will be `Reissued` and become `In Progress`.
-If the line has status `Confirmed` it will be `Reopened` and become `In Progress`.
-In case of any other status like `Completed` or `Cancelled` the order update will be ignored.
-{% endhint %}
-
-### Send updated order API method
-
-The `/order-integration/order` API method is the same as above with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will update or add lines based on the `lines.position` and will update or add delivery schedule and history based on `deliverySchedule.position` and `deliveryHistory.position`.
-
-{% hint style="tip" %}
-The update is event oriented, eg. you only have to send the lines affected (updated, added or some command or  indicator set). But you can also send all lines.
-{% endhint %}
-
-### Additional order body JSON objects
-
-#### Historical actual delivery schedule
-
-- `lines.deliveryHistory`: the historical actual delivery schedule. This will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
-
-#### Updated order meta data
-
-- `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`
-- `erpLastChangedBy`: the user name as known in your ERP system who updated this order
