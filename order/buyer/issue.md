@@ -10,8 +10,6 @@ As buyer you can send either a new or [updated](reissue.md) purchase order to Tr
 
 As a buyer you can send a new purchase order to Tradecloud.
 
-When the `/order-integration/order` API method returns HTTP status code 200, the order was successfully queued to be processed by Tradecloud. Processing takes usually less then a second, after which to order is available in the portal and is forwarded to the supplier ERP integration.
-
 {% hint style="info" %}
 After processing the order lines will have order process status `Issued`
 {% endhint %}
@@ -69,7 +67,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 #### Lines
 
 - `lines`: a purchase order contains one or multiple lines
-- `line`: a purchase order line contains at least the position, item and delivery schedule
+- `line`: a purchase order line which contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
 - `position`: the line position within the purchase order
 
 {% hint style="danger" %}
@@ -95,7 +93,7 @@ Never renumber or re-use `item.number`s.
 
 - `line.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
 - `deliverySchedule.position`: the position in the delivery schedule. Not to be confused with the `line.position`
-- `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format
+- `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 - `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 {% hint style="danger" %}
@@ -129,5 +127,11 @@ Never renumber or re-use `deliverySchedule.position`s.
 
 #### New order meta data
 
-- `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`
+- `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../../api/standards.md).
 - `erpIssuedBy`: the user email or user name as known in your ERP system who issued this order
+
+## Response
+
+Only a HTTP status code will be returned
+
+When the `/order-integration/order` API method returns HTTP status code 200, the order was successfully queued to be processed by Tradecloud. Processing takes usually less then a second, after which the order is available in the portal and is forwarded to the supplier ERP integration.

@@ -11,7 +11,11 @@ An API request consist of:
 - [HTTP method](#HTTP-method): `GET`, `POST`, `PUT` or `DELETE`
 - [HTTP headers](#HTTP-headers): authorization and content type
 - [URL](#URL): HTTPS, environment, service, method and parameters
-- [JSON](#json) body
+- [JSON body](#json-body) which contains the payload
+
+
+For an example see:
+{% page-ref page="..\complete\get.md" %}
 
 ## HTTP method
 
@@ -93,7 +97,7 @@ A GET request can have a query parameter such as a `query` in `company-search`:
 
 [`GET /company-search?query=name`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company-search/specs.yaml#/company-search/CompanySearchRoute)
 
-#### JSON body
+### JSON body
 
 A POST request has a [JSON](#json) body (payload) such as a purchase order  in `order-integration` service `order` method:
 
@@ -109,7 +113,7 @@ A POST request has a [JSON](#json) body (payload) such as a purchase order  in `
         ...
 ```
 
-## JSON
+{% page-ref page="..\order\buyer\issue.md" %}
 
 JSON is a standard published as [RFC 8259](https://tools.ietf.org/html/rfc8259) and [ECMA-404](https://www.ecma-international.org/publications/standards/Ecma-404.htm) [(PDF)](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)
 

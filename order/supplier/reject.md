@@ -8,7 +8,7 @@ As a supplier you can reject specific line of order:
 
 ## Request
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/:id/line/:position/_reject"%} 
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/:id/line/:position/reject"%} 
 {% api-method-summary %} Reject order line {% endapi-method-summary %}
 {% api-method-spec %} 
 {% api-method-request %} 

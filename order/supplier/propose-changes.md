@@ -8,7 +8,7 @@ As a supplier you can propose changes of order line:
 
 ## Request
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/:id/line/:position/_propose"%} 
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/:id/line/:position/propose"%} 
 {% api-method-summary %} Propose order line changes {% endapi-method-summary %}
 {% api-method-spec %} 
 {% api-method-request %} 

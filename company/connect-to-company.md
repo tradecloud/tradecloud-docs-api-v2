@@ -10,7 +10,7 @@ The other user will receive an invitation email to connect with you and your com
 
 ## Request
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/company/:companyId/connection/:otherCompanyId/_request"%}
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/company/:companyId/connection/:otherCompanyId/request"%}
 {% api-method-summary %} Request company connection {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
