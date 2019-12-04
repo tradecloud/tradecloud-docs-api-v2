@@ -5,7 +5,7 @@ description: How to invite a new user
 # Invite user
 
 You can invite a new user to your company.
-An invitation email will be send to this user.
+An invitation email will be sent to this user.
 
 ## Request
 

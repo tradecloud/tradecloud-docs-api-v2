@@ -20,7 +20,7 @@ HTTP 2.0 is published as [RFC 7540](https://tools.ietf.org/html/rfc7540)
 
 ## ISO Date/Time
 
-Dor date/time values [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date format `YYYY-MM-DD` or local date/time format `YYYY-MM-DDThh:mm:ss` is used
+Date/time values use [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date format `YYYY-MM-DD` or local date/time format `YYYY-MM-DDThh:mm:ss`
 
 Published as [ISO 8601-1:2019](https://www.iso.org/standard/70907.htm)
 
