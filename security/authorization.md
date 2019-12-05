@@ -1,4 +1,4 @@
-# Permissions
+# Authorization
 
 In the Tradecloud1 API, almost all endpoints are protected with permission-based checks that ensure that the request is only processed if the authenticated user is authorized to execute this operation.
 
@@ -187,4 +187,3 @@ Superuser only permissions \(A superuser does NOT have above User permissions\)
     </tr>
   </tbody>
 </table>
-
