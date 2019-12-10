@@ -2,4 +2,5 @@
 description: How to reject an order change proposal by a supplier
 ---
 
-# Reject order change proposal
+# Reject order changes proposed by supplier
+

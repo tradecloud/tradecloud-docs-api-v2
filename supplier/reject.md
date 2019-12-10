@@ -1,16 +1,16 @@
 ---
-description: How to update your user's profile and settings.
+description: How to reject an order or line sent by a buyer
 ---
 
-# Update an user
+# Reject an order
 
-You can update user profile and settings. Note that user companyId and roles cannot be updated.
+As a supplier you can reject specific line of order:
 
 ## Request
 
-{% api-method method="put" host="https://api.accp.tradecloud1.com/v2" path="/user/:id" %}
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/:id/line/:position/reject" %}
 {% api-method-summary %}
-Update user
+Reject order line
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -21,19 +21,27 @@ Update user
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="uuid" required=true %}
-User id
+Order id
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="position" type="string" required=true %}
+Order line position
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
+Authentication token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-Update user body
+{% api-method-parameter name="reason" type="string" required=true %}
+Rejection reason
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="version" type="integer" required=true %}
+Order version
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -41,7 +49,7 @@ Update user body
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-User updated \(HTTP status code and user id will be returned\)
+Acknowledge
 {% endapi-method-response-example-description %}
 
 ```
@@ -52,11 +60,5 @@ User updated \(HTTP status code and user id will be returned\)
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Body
-
-See the request body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/updateCompanyRoute)
-
-## Response
-
-Only a HTTP status code will be returned
+See the full description in [Swagger UI](https://swagger-ui.test.tradecloud1.com/?url=https://master.test.tradecloud1.com/v2/order/specs.yaml#/order/rejectOrderLineRoute)
 

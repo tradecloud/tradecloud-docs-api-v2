@@ -1,5 +1,6 @@
 ---
-description: 'Overview of security pages available.'
+description: Overview of security pages available.
 ---
 
-# Security pages
+# Security
+

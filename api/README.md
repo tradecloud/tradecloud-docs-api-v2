@@ -1,5 +1,2 @@
----
-description: 'Overview of API pages available.'
----
+# API
 
-# General API pages

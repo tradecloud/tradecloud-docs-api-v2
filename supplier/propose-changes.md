@@ -1,16 +1,16 @@
 ---
-description: How to update your user's profile and settings.
+description: How to propose changes to an order or line sent by a buyer
 ---
 
-# Update an user
+# Propose order changes
 
-You can update user profile and settings. Note that user companyId and roles cannot be updated.
+As a supplier you can propose changes of order line:
 
 ## Request
 
-{% api-method method="put" host="https://api.accp.tradecloud1.com/v2" path="/user/:id" %}
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/:id/line/:position/propose" %}
 {% api-method-summary %}
-Update user
+Propose order line changes
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -21,19 +21,23 @@ Update user
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="uuid" required=true %}
-User id
+Order id
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="position" type="string" required=true %}
+Order line position
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
+Authentication token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
-Update user body
+Propose order line changes body
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -41,7 +45,7 @@ Update user body
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-User updated \(HTTP status code and user id will be returned\)
+Acknowledge
 {% endapi-method-response-example-description %}
 
 ```
@@ -54,9 +58,5 @@ User updated \(HTTP status code and user id will be returned\)
 
 ### Body
 
-See the request body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/updateCompanyRoute)
-
-## Response
-
-Only a HTTP status code will be returned
+See the request body and full api description in [Swagger UI](https://swagger-ui.test.tradecloud1.com/?url=https://master.test.tradecloud1.com/v2/order/specs.yaml#/order/proposeChangesOrderLineRoute)
 

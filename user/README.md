@@ -1,5 +1,6 @@
 ---
-description: 'Overview of user API pages available.'
+description: Overview of user API pages available.
 ---
 
-# User API pages
+# Your users
+

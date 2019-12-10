@@ -1,5 +1,5 @@
 ---
-description: 'API v2 welcome page.'
+description: API v2 welcome page.
 ---
 
 # Welcome
@@ -16,20 +16,21 @@ Some pages to get you started:
 
 ## As a buyer
 
-[Issue a new order](order/buyer/issue.md)
+[Issue a new order](buyer/issue/)
 
-[Receive an order response](order/buyer/webhook.md)
+[Receive an order response](buyer/webhook/)
 
-[The buyer order process](order/buyer/overview.md)
+[The buyer order process](buyer/overview.md)
 
 ## As a supplier
 
-[Receive an order](order/supplier/webhook.md)
+[Receive an order](supplier/webhook/)
 
-[Accept an order](order/supplier/accept.md)
+[Accept an order](supplier/accept/)
 
-[The supplier order process](order/supplier/overview.md)
+[The supplier order process](supplier/overview.md)
 
 ## Support
 
 If you get stuck, ask [support](support.md) a question.
+
