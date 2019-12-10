@@ -12,7 +12,7 @@ Published as [RFC 7617](https://tools.ietf.org/html/rfc7617)
 
 ## HTTP 1.1 and 2.0
 
-The [Hypertext Transfer Protocol \(HTTP\)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is a stateless application-level protocol for distributed, collaborative, hypertext information systems.
+The [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is a stateless application-level protocol for distributed, collaborative, hypertext information systems.
 
 HTTP 1.1. is published as [RFC 7230](https://tools.ietf.org/html/rfc7230) and RFC 7231 to 7237.
 
@@ -26,11 +26,11 @@ Published as [ISO 8601-1:2019](https://www.iso.org/standard/70907.htm)
 
 ## JSON
 
-JavaScript Object Notation \(JSON\) is a lightweight, text-based, language-independent data interchange format.
+JavaScript Object Notation is a lightweight, text-based, language-independent data interchange format.
 
 Published as [RFC 8259](https://tools.ietf.org/html/rfc8259) and [ECMA-404](https://www.ecma-international.org/publications/standards/Ecma-404.htm) [\(PDF\)](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)
 
-## JSON Web Tokens
+## JWT
 
 [JSON Web Tokens](https://jwt.io/) are an open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties.
 
@@ -40,7 +40,11 @@ The [OpenAPI Version 2.0 Specification \(OAS 2.0\)](https://swagger.io/specifica
 
 ## REST
 
-[Representational state transfer \(REST\)](https://en.wikipedia.org/wiki/Representational_state_transfer%20) is not a standard but a software architectural style that defines a set of constraints to be used for creating Web services. The API additionally uses a command and query style.
+[Representational state transfer \(REST\)](https://en.wikipedia.org/wiki/Representational_state_transfer%20) is not a standard but a software architectural style that defines a set of constraints to be used for creating Web services. The Tradecloud API additionally uses a command and query style.
+
+## TLS v1.2
+
+[Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network. The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) published as [RFC 5246](https://tools.ietf.org/html/rfc5246).
 
 ## UTF-8
 
