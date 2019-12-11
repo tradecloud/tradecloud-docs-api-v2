@@ -72,7 +72,7 @@ Order JSON body
 The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or at any time in the connection overview in the portal.
 {% endhint %}
 
-#### Secondary order fields
+#### Other order fields
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier
@@ -125,7 +125,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
-#### Secondary line fields
+#### Other line fields
 
 * `description`: a free format additional description of this line
 * `terms`: the line terms as agreed with your supplier

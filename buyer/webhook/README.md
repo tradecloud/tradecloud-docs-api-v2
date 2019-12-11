@@ -11,7 +11,14 @@ A supplier will confirm an order line by either accepting or rejecting it, or pr
 To receive an order response you will need to use the [webhook connector](https://tradecloud.gitbook.io/connectors/webhook-connector).  
 When an order response is new or has been changed at Tradecloud, we will trigger your webhook.
 
-You can either choose to receive the order id and GET the order yourself or to receive the order event.   
+You can either choose to receive the order id and GET the order yourself or to receive the order event.
+
+{% hint style="warning" %}
+When you **GET the order yourself** you will get **ALL** the order lines. 
+
+When you **use the order event** it will **ONLY** contain the lines **affected** by the order event.
+{% endhint %}
+
 In either case you will use the GET order JSON body:
 
 {% hint style="info" %}
@@ -23,12 +30,21 @@ In either case you will use the GET order JSON body:
 #### Order
 
 * `id`: the Tradecloud order identifier
+* `buyerOrder`: the buyer part of the order
+* `supplierOrder`: the supplier part of the order, see below
+* `indicators.deliveryOverdue` is true when all order lines are overdue
+* `status.processStatus`: is the aggregate of all lines process status, see below
+* `status.logisticsStatus`: is the aggregate of all lines logistics status, see below
+* `version`: the  Tradecloud order version number
+* `eventDates`: some key order event date/times
 
-#### buyerOrder
+#### Buyer order part
 
-This part is an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
+`buyerOrder` is an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
 
-#### supplierOrder
+#### Supplier order part
+
+`supplierOrder` contains the supplier order fields:
 
 * `companyId`: the supplier's Tradecloud company identifier. 
 * `buyerAccountNumber`: your account number as known in the supplier's ERP system
@@ -37,24 +53,99 @@ This part is an echo of your order fields as explained in [Issue a new order](..
 * `properties`: are key-value based custom fields, added by the supplier
 * `notes`: are simple custom fields, added by the supplier
 * `documents`: contain meta data and link of attached documents by the supplier.  See [Download a document attached to an order response](download-document.md) 
-* `indicators`: `deliveryOverdue` is true when all order lines are overdue
-* `status`: 
-* `version`: order Tradecloud version number
-* `eventDates`: some key event date/times
 
-#### lines
+#### Order lines
+
+`lines` contains one or more order lines:
 
 * `id`: the Tradecloud line identifier
+* `buyerLine`: the buyer part of the order line
+* `supplierLine`: the supplier part of the order line, see below
+* `confirmedLine`: the order line as agreed between buyer and supplier, see below
+* `indicators.deliveryOverdue` is true when all order lines are overdue
+* `status.processStatus`: the order line process status
+* `status.logisticsStatus`: the order line logistics status
+* `eventDates`: some key line event date/times
 
-#### buyerLine
+#### Order and line status
 
-This part is an echo of your line fields as explained in [Issue a new order](../issue/#lines)
+{% hint style="info" %}
+Order and line **process** status is one of:
 
-**supplierLine**
+* `Issued`:  \(re\)issued by the buyer.
+* `InProgress`: under negotiation between buyer and supplier
+* `Confirmed`: agreed between buyer and supplier
+* `Rejected`: rejected by supplier
+* `Completed`: completed at the buyer
+* `Cancelled`: cancelled by either buyer or supplier
+{% endhint %}
 
-* aaa
+{% hint style="info" %}
+Order and line **logistics** status is one of:
 
+* `Open`: not shipped or delivered
+* `Shipped`: shipped by the supplier
+* `Delivered`: delivered at the buyer
+{% endhint %}
 
+#### Buyer line part
+
+`buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
+
+**Supplier line part**
+
+`supplierLine` contains the supplier order line fields:
+
+* `salesOrderNumber`: the sales order number as known in the supplier's ERP system
+* `position`: the position within the supplier's sales order
+* `description`: a free format additional description of this line by the supplier
+* `proposal`: the supplier can propose a different delivery schedule and prices, see below
+* `properties`: are key-value based custom fields, added by the supplier
+* `notes`: are simple custom fields, added by the supplier
+* `documents`: contain meta data and link of attached documents by the supplier.  See [Download a document attached to an order response](download-document.md) 
+
+#### Supplier proposal
+
+`proposal`: in stead of accepting or rejecting an order line, the supplier can alternatively propose a different delivery schedule and prices. 
+
+{% hint style="warning" %}
+If the proposal status is `Proposed`the buyer should approve or reject it.
+{% endhint %}
+
+* `deliverySchedule`: proposed alternative delivery schedule, see below
+* `prices`:proposed alternative prices, see below
+* `reason`: the reason of this proposal given by the supplier
+* `status`: one of`Proposed`by the supplier, or `Approved` or `Rejected` by the buyer.
+
+Confirmed line
+
+`confirmedLine`: the agreed order line between buyer and supplier. 
+
+{% hint style="warning" %}
+Only if the process status is `Confirmed` the line is agreed between buyer and supplier
+{% endhint %}
+
+* `deliverySchedule`: agreed delivery schedule, see below
+* `prices`: agreed prices, see below
+
+#### Confirmed or proposed delivery schedule
+
+`deliverySchedule`: the confirmed or proposed planned delivery schedule. 
+
+* `deliverySchedule.position`: the position in the delivery schedule. Not to be confused with the `line.position`
+* `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+
+#### Confirmed or proposed prices
+
+`prices`: the confirmed or proposed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
+
+* `priceInLocalCurrency`: the  price in the local currency of the supplier, like `CNY` in China.
+* `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
+* `value`: the price value has a decimal `1234.56` format with any number of digits.
+* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+* `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
 
 
