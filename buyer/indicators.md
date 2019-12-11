@@ -2,74 +2,101 @@
 description: How to use order and line indicators as a buyer
 ---
 
-# Indicators
+# Buyer indicators overview
+
+## Indicators
 
 When sending a purchase order to Tradecloud you can optionally set indicators on both order and line levels.
 
 {% hint style="info" %}
-Line indicators have precedence over (overrule) order indicators.
+Line indicators have precedence over \(overrule\) order indicators.
 {% endhint %}
 
-## Order indicators
+### No delivery expected
 
-- `order.indicators.noDeliveryExpected`: no goods of any line are expected to be delivered to the buyer.
+`noDeliveryExpected`: no goods of are expected to be delivered to the buyer.
 
 {% hint style="info" %}
 Order lines having `noDeliveryExpected` set will NEVER become `overdue`
 {% endhint %}
 
-- `order.indicators.shipped`: all goods of every line are completely shipped by the supplier. Usually this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
+### Shipped by supplier
+
+`shipped`: all goods of the order or line are completely shipped by the supplier. 
+
+{% hint style="warning" %}
+Usually this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
+{% endhint %}
 
 {% hint style="info" %}
 Order lines having logistics status `Open` will become `Shipped`
+
+You cannot ship a delivered line.
 {% endhint %}
-  
-- `order.indicators.delivered`: all goods of every line are completely delivered at the buyer.
+
+### Delivered at buyer
+
+`delivered`: all goods of the order or line are completely delivered at the buyer.
 
 {% hint style="info" %}
 Order lines having logistics status `Open` or `Shipped` will become `Delivered`
 {% endhint %}
 
-- `order.indicators.completed`: all lines are completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.
+### Completed at buyer
+
+`completed`: the order or line is completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.
+
+{% hint style="warning" %}
+You cannot complete a `Cancelled` line
+{% endhint %}
 
 {% hint style="info" %}
 Order lines having process status `Issued`, `In Progress` or `Confirmed` will become `Completed`
 {% endhint %}
 
-- `order.indicators.cancelled`: all lines are cancelled by the buyer. 
+
+
+### Reopened at buyer
+
+{% hint style="danger" %}
+his feature is planned. 
+{% endhint %}
+
+`reopened`: the order or line is reopened at the buyer
+
+{% hint style="warning" %}
+This is a request to the supplier to reopen an already agreed order or line. 
+
+The supplier has to approve the reopen request.
+{% endhint %}
+
+{% hint style="warning" %}
+You cannot reopen a `Completed` or `Cancelled` order or line
+{% endhint %}
+
+{% hint style="info" %}
+Order lines having process status `Confirmed` will become `InProgress`
+{% endhint %}
+
+### Cancelled at buyer
+
+{% hint style="danger" %}
+his feature is planned. 
+{% endhint %}
+
+`cancelled`: the order or line is cancelled at the buyer
+
+{% hint style="warning" %}
+This is a request to the supplier to cancel an order or line. 
+
+The supplier has to approve the cancel request.
+{% endhint %}
+
+{% hint style="warning" %}
+You cannot cancel a `Completed` line
+{% endhint %}
 
 {% hint style="info" %}
 Order lines having process status `Issued`, `In Progress` or `Confirmed` will become `Cancelled`
 {% endhint %}
 
-## Line indicators
-
-- `order.indicators.noDeliveryExpected`: no goods of any line are expected to be delivered to the buyer.
-
-{% hint style="info" %}
-An order line having `noDeliveryExpected` set will NEVER become `overdue`
-{% endhint %}
-
-- `order.indicators.shipped`: all goods of every line are completely shipped by the supplier. Usual this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
-
-{% hint style="info" %}
-An order line having logistics status `Open` will become `Shipped`
-{% endhint %}
-
-- `order.indicators.delivered`: all goods of every line are completely delivered at the buyer.
-
-{% hint style="info" %}
-An Order line having logistics status `Open` or `Shipped` will become `Delivered`
-{% endhint %}
-
-- `order.indicators.completed`: all lines are completed at the buyer. Usual this indicator is set when the invoice is received and approved by buyer.
-
-{% hint style="info" %}
-An order line having process status `Issued`, `In Progress` or `Confirmed` will become `Completed`
-{% endhint %}
-
-- `order.indicators.cancelled`: all lines are cancelled by the buyer. 
-
-{% hint style="info" %}
-An order line having process status `Issued`, `In Progress` or `Confirmed` will become `Cancelled`
-{% endhint %}

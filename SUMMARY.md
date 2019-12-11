@@ -38,7 +38,7 @@
   * [Complete an order](buyer/complete.md)
   * [Request to reopen an order](buyer/request-reopen.md)
   * [Request to cancel an order](buyer/request-cancel.md)
-  * [Indicators overview](buyer/indicators.md)
+  * [Buyer indicators overview](buyer/indicators.md)
 * [Supplier order process](supplier/README.md)
   * [Supplier order process overview](supplier/overview.md)
   * [Receive an order](supplier/webhook/README.md)

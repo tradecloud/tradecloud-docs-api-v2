@@ -76,7 +76,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier
-* `indicators`: see Indicators \(TO DO broken link\)
+* `indicators`: see [Indicators](../indicators.md)
 * `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `documents`: contain meta data and link of attached documents. See [Attach a document to an order](attach-document.md)
@@ -134,7 +134,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `projectNumber`: Your project number reference
 * `productionNumber`:  Your production number reference
 * `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)
-* `indicators`: see [Indicators](https://github.com/tradecloud/tradecloud-docs-api-v2/tree/4d31c4cec4e1fe076995f1ccf8b7a83bf56cc193/order/buyer/indicators.md)
+* `indicators`: see [Indicators](../indicators.md)
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
 * `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `documents`: contain meta data and link of attached documents. See [Attach a document to a line](attach-document.md)
