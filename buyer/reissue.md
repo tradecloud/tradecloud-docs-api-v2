@@ -35,7 +35,7 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 * `deliveryHistory.date`: the actual delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../api/standards.md).
 * `deliveryHistory.quantity`: the actual delivered quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 `deliveryHistory.position` should be unique within the delivery history and never change. Never renumber or re-use `deliveryHistory.position`s.
 {% endhint %}
 

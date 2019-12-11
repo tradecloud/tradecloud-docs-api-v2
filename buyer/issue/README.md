@@ -4,7 +4,7 @@ description: How to issue a new order as a buyer
 
 # Issue a new order
 
-As buyer you can send either a new or [updated](../reissue.md) purchase order to Tradecloud.
+As buyer you can send either a new or [updated](../reissue.md) purchase order to your supplier.
 
 ## Send a new order to Tradecloud
 
@@ -50,7 +50,9 @@ Order JSON body
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
 [Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute)
+{% endhint %}
 
 ### Order body JSON objects
 
@@ -62,11 +64,11 @@ Order JSON body
 * `destination`: the delivery destination of this order as known in your ERP system
 * `contact`: the employee responsible for this order. You can either send his/her email or userName as known in your ERP system
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 `supplierAccountNumber`, `purchaseOrderNumber`, `destination.code`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or at any time in the connection overview in the portal.
 {% endhint %}
 
@@ -74,7 +76,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier
-* `indicators`: see [Indicators](https://github.com/tradecloud/tradecloud-docs-api-v2/tree/4d31c4cec4e1fe076995f1ccf8b7a83bf56cc193/order/buyer/indicators.md)
+* `indicators`: see Indicators \(TO DO broken link\)
 * `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `documents`: contain meta data and link of attached documents. See [Attach a document to an order](attach-document.md)
@@ -85,7 +87,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `line`: a purchase order line which contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
 * `position`: the line position within the purchase order
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 `lines.position` should be unique within the order and never change. Never renumber or re-use `position` numbers.
 {% endhint %}
 
@@ -98,7 +100,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000-1, a typical example is `PCE`
 * `lines.item.supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 `item.number` should be unique within your company and never change. Never renumber or re-use `item.number`s.
 {% endhint %}
 
@@ -109,7 +111,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 `deliverySchedule.position` should be unique within the delivery schedule and never change. Never renumber or re-use `deliverySchedule.position`s.
 {% endhint %}
 
