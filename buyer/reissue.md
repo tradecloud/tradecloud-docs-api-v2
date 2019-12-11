@@ -2,7 +2,7 @@
 description: How to reissue an order as a buyer
 ---
 
-# Reissue an order
+# Reissue an existing order
 
 As buyer you can send either a [new](issue/) or updated purchase order to Tradecloud.
 
