@@ -24,6 +24,12 @@ The supplier can either accept or reject the issued line or alternatively **prop
 
 As a buyer you should **approve or reject** an order change proposal.
 
+{% hint style="info" %}
+This is an optional step, only if your ERP system supports automatic approving or rejecting.
+
+Most buyers approve or reject order change proposals using portal workflow tasks.
+{% endhint %}
+
 [Approve a proposal](approve-proposal.md) from the supplier
 
 [Reject a proposal](reject-proposal.md)  from the supplier

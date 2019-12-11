@@ -4,7 +4,7 @@ description: How to receive an order response sent by the supplier
 
 # Receive an order response
 
-A supplier will confirm an order line by either accepting or rejecting it, or propose an alternative delivery schedule or prices. By accepting, rejecting or proposing the supplier sends a order response to the buyer.
+A supplier will response to an issued order line by either accepting or rejecting it, or propose a changed  delivery schedule or changed prices. When accepting, rejecting or proposing the supplier sends a order response to the buyer.
 
 ## Receive an order response from Tradecloud
 
