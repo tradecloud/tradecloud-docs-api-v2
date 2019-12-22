@@ -4,13 +4,11 @@ description: How to reject an order change proposal by a supplier
 
 # Reject order changes proposed by supplier
 
-{% hint style="danger" %}
-This feature is planned. 
+{% hint style="info" %}
+This eature is available, but to be documented.
 {% endhint %}
 
-To be documented.
+Use order service reject proposal method.
 
-Add proposalRejected indicator to order
-
-Alternatively use order service rejet proposal method.
+Future extension: reject by using an indicator in reissue an order
 

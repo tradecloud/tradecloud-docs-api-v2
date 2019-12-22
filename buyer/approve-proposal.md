@@ -4,13 +4,11 @@ description: How to approve an order change proposal by a supplier
 
 # Approve order changes proposed by supplier
 
-{% hint style="danger" %}
-this feature is planned. 
+{% hint style="info" %}
+This feature is available, but to be documented.
 {% endhint %}
 
-To be documented.
+Use order service approve proposal method.
 
-Add proposalAccepted indicator to order
-
-Alternatively use order service approve proposal method.
+Future extension: approve by using an indicator in reissue an order
 

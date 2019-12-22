@@ -28,7 +28,7 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ### Additional order body JSON objects
 
-#### Historical actual delivery schedule
+#### Actual delivery schedule
 
 * `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery schedule lines. These will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
 * `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` versus `deliveryHistory.position` do not have to use the same values.

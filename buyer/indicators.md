@@ -36,6 +36,10 @@ You cannot ship a delivered line.
 
 ### Delivered at buyer
 
+{% hint style="warning" %}
+This feature is planned. 
+{% endhint %}
+
 `delivered`: all goods of the order or line are completely delivered at the buyer.
 
 {% hint style="info" %}
@@ -43,6 +47,10 @@ Order lines having logistics status `Open` or `Shipped` will become `Delivered`
 {% endhint %}
 
 ### Completed at buyer
+
+{% hint style="warning" %}
+This feature is planned.  Ticket [TC-5186](https://tradecloud.atlassian.net/browse/TC-5186) As a buyer I want to complete orders and lines
+{% endhint %}
 
 `completed`: the order or line is completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.
 
@@ -54,18 +62,16 @@ You cannot complete a `Cancelled` line
 Order lines having process status `Issued`, `In Progress` or `Confirmed` will become `Completed`
 {% endhint %}
 
-
-
 ### Reopened at buyer
 
-{% hint style="danger" %}
-his feature is planned. 
+{% hint style="warning" %}
+This feature is planned. Ticket TC-4480 As a buyer I want to reopen an order line using a reopen request workflow
 {% endhint %}
 
 `reopened`: the order or line is reopened at the buyer
 
 {% hint style="warning" %}
-This is a request to the supplier to reopen an already agreed order or line. 
+This is a **request** to the supplier to reopen an already agreed order or line. 
 
 The supplier has to approve the reopen request.
 {% endhint %}
@@ -80,14 +86,14 @@ Order lines having process status `Confirmed` will become `InProgress`
 
 ### Cancelled at buyer
 
-{% hint style="danger" %}
-his feature is planned. 
+{% hint style="warning" %}
+This feature is planned. Ticket [TC-4479](https://tradecloud.atlassian.net/browse/TC-4479) As a buyer I want to cancel an order line using a cancel request workflow.
 {% endhint %}
 
 `cancelled`: the order or line is cancelled at the buyer
 
 {% hint style="warning" %}
-This is a request to the supplier to cancel an order or line. 
+This is a **request** to the supplier to cancel an order or line. 
 
 The supplier has to approve the cancel request.
 {% endhint %}

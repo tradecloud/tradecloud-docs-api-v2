@@ -4,11 +4,25 @@ description: How to announce the buyer has received goods
 
 # Receive goods
 
-{% hint style="danger" %}
-This feature is planned. 
+There are two ways to announce the buyer has received goods. Using the actual delivery schedule is preferred over the delivered indicator, as it is more precise regarding partial deliveries.
+
+## Actual delivery schedule
+
+This schedule contains the actual physical deliveries. With the actual deliveries versus the planned deliveries Tradecloud can calculate which goods should still be delivered or are even overdue.
+
+The actual delivery schedule can be send by [reissue an order](reissue.md) and setting `lines.deliveryHistory`
+
+{% page-ref page="reissue.md" %}
+
+## Delivered indicator
+
+{% hint style="warning" %}
+This feature is planned, 
 {% endhint %}
 
-Delivered indicator to be documented.
+When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by [reissue an order](reissue.md) and setting `indicators.delivered`on either order or line level.
 
-See [Indicators](indicators.md)
+{% page-ref page="indicators.md" %}
+
+
 
