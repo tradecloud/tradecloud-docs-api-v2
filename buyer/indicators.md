@@ -16,6 +16,10 @@ Line indicators have precedence over \(overrule\) order indicators.
 
 `noDeliveryExpected`: no goods of are expected to be delivered to the buyer.
 
+{% hint style="warning" %}
+This feature is planned. Ticket [TC-5564](https://tradecloud.atlassian.net/browse/TC-5564) As a buyer I want to set a "No delivery expected" indicator
+{% endhint %}
+
 {% hint style="info" %}
 Order lines having `noDeliveryExpected` set will NEVER become `overdue`
 {% endhint %}
