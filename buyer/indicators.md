@@ -29,6 +29,10 @@ Order lines having `noDeliveryExpected` set will NEVER become `overdue`
 `shipped`: all goods of the order or line are completely shipped by the supplier. 
 
 {% hint style="warning" %}
+This feature is planned. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to see order lines receive the logistical status ''Shipped/Delivered'' when they have the status "shipped/Delivered" in my ERP system.
+{% endhint %}
+
+{% hint style="warning" %}
 Usually this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
 {% endhint %}
 
@@ -41,7 +45,7 @@ You cannot ship a delivered line.
 ### Delivered at buyer
 
 {% hint style="warning" %}
-This feature is planned. 
+This feature is planned. [TC-5121 ](https://tradecloud.atlassian.net/browse/TC-5121)As buyer I want to see order lines receive the logistical status ''Shipped/Delivered'' when they have the status "shipped/Delivered" in my ERP system.
 {% endhint %}
 
 `delivered`: all goods of the order or line are completely delivered at the buyer.
