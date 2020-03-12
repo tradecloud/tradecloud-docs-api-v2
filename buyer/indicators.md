@@ -29,7 +29,7 @@ Order lines having `noDeliveryExpected` set will NEVER become `overdue`
 `shipped`: all goods of the order or line are completely shipped by the supplier. 
 
 {% hint style="warning" %}
-This feature is planned. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to see order lines receive the logistical status ''Shipped/Delivered'' when they have the status "shipped/Delivered" in my ERP system.
+This feature is planned. Ticket [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status ''Shipped'' when they have the status "shipped" in my ERP system.
 {% endhint %}
 
 {% hint style="warning" %}

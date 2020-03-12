@@ -5,7 +5,7 @@ description: How to announce the supplier has shipped goods
 # Ship goods
 
 {% hint style="warning" %}
-This feature is planned. No ticket yet.
+This feature is planned. Ticket [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status ''Shipped'' when they have the status "shipped" in my ERP system.
 {% endhint %}
 
 When an order or line is completely shipped by the supplier, it can can be marked as shipped by [reissue an order](reissue.md) and setting `indicators.shipped`on either order or line level.
