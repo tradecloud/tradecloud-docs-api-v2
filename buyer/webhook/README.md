@@ -140,7 +140,7 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 `prices`: the confirmed or proposed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
 
-* `priceInLocalCurrency`: the  price in the local currency of the supplier, like `CNY` in China.
+* `priceInTransactionCurrency`: the  price in the transaction currency of the supplier, like `CNY` in China.
 * `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
 * `value`: the price value has a decimal `1234.56` format with any number of digits.
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
