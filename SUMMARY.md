@@ -29,6 +29,7 @@
   * [Invite a new user](user/invite-new.md)
 * [Buyer order process](buyer/README.md)
   * [Buyer order process overview](buyer/overview.md)
+  * [Rules](buyer/rules.md)
   * [Issue a new order](buyer/issue/README.md)
     * [Attach a document to an order](buyer/issue/attach-document.md)
   * [Reissue an existing order](buyer/reissue.md)
