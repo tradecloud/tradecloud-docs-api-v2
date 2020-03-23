@@ -10,27 +10,35 @@ For successful onboarding you need to have experience with these [standards](api
 
 ## Some pages to get you started
 
-[How to make a API request](api/requests.md)
+{% page-ref page="api/requests.md" %}
 
-[Authentication](security/authentication.md)
+{% page-ref page="security/authentication.md" %}
+
+{% page-ref page="api/tools2/" %}
 
 ## As a buyer
 
-[Send a order](buyer/issue/)
+{% page-ref page="buyer/issue/" %}
 
-[Receive an order response](buyer/webhook/)
+{% page-ref page="buyer/webhook/" %}
 
-[The buyer order process](buyer/overview.md)
+{% page-ref page="buyer/overview.md" %}
 
 ## As a supplier
 
 [Receive an order](supplier/webhook/)
 
-[Send an order response](supplier/accept/)
+{% page-ref page="supplier/webhook/" %}
 
-[The supplier order process](supplier/overview.md)
+TO DO [Send an order response](supplier/accept/)
+
+{% page-ref page="supplier/overview.md" %}
 
 ## Support
 
-If you get stuck, ask [support](support.md) a question.
+If you get stuck just ask support:
+
+{% page-ref page="support.md" %}
+
+
 
