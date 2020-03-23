@@ -8,7 +8,7 @@ Use [Search for companies to connect](search-new-companies.md) to search for kno
 
 ## Request
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/company/:companyId/connection/:otherCompanyId/request" %}
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/company/:companyId/connection/:otherCompanyId/\_request" %}
 {% api-method-summary %}
 Request company connection
 {% endapi-method-summary %}

@@ -4,7 +4,7 @@ description: How to list your connections with other companies
 
 # List connected companies
 
-You can find all your connected companies through the `connection-search`, by using `connected=true` as parameter
+Yoc can find all your connected companies using the `connected=true` parameter
 
 ## Request
 

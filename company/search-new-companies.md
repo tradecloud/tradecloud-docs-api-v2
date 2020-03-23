@@ -10,7 +10,7 @@ The user should have the opposite role to your user \(buyer for supplier and vic
 
 ## Request
 
-{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/user-search/suggest" %}
+{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/user-search/\_suggest" %}
 {% api-method-summary %}
 Suggest users
 {% endapi-method-summary %}

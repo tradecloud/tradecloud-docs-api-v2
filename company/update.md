@@ -4,7 +4,9 @@ description: How to update your company's profile and settings.
 
 # Update your company
 
-You can update your company profile and settings as described below. Note that your company name or roles cannot be updated.
+Name and roles cannot be updated.
+
+Update your profile and settings:
 
 ## Request
 
@@ -21,7 +23,7 @@ Update company by id
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="uuid" required=true %}
-Company id to update.
+ID company to update.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -52,7 +54,7 @@ In the request body you may update:
 
 * profile fields
 * integration settings, either webhook or ftp
-* as the PUT method will overwrite the complete company profile and settings object, copy remaining fields from [Get company profile and settings](get.md)
+* copy unchanged fields from [Get company profile and settings](get.md)
 
 See the request body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/updateCompanyRoute)
 

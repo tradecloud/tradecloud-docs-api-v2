@@ -18,7 +18,7 @@ Your company has a profile, containing your company name, logo, info and setting
 
 [Update profile and settings](update.md)
 
-[Upload company logo](overview.md) \(_To be documented_\)
+TO DO: Upload company logo
 
 ### Your connections
 
@@ -42,7 +42,7 @@ Each connection has an account code. This is the debitor/creditor/relation code 
 
 The account code is needed when you want to trade with your connection using an ERP integration, either API or connector. Tradecloud uses this account code to route the order, shipment, forecast to the connection.
 
-> To be documented
+TO DO: Add account code
 
 ## OpenAPI specs
 
