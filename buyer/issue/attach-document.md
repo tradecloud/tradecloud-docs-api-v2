@@ -4,30 +4,29 @@ description: How to attach a document to an order or line
 
 # Attach a document to an order
 
-You can attach documents using three methods:
+You can attach documents in three ways:
 
-1. Upload your document to the Tradecloud object-storage and attach the objectId to the order or line
-2. Upload your document to your company's content server and attach the url to the order line
-3. Only attach document meta data, such as document code/number, revision and name
+1. Upload your document to the Tradecloud object-storage and link it by objectId to the order or line
+2. Upload your document to your company's content server and link it by url to the order line
+3. Only provide document meta data, such as document code/number, revision and name
 
-## Method 1. Attach a document using the Tradecloud object-storage
+## 1. Attach a document using the Tradecloud object-storage
 
-{% hint style="warning" %}
-This feature is in progress. Below documentation may change.
-
-Ticket [TC-5566](https://tradecloud.atlassian.net/browse/TC-5566) As a buyer I want documents attached through the order integration API  
-Ticket [TC-5631](https://tradecloud.atlassian.net/browse/TC-5631) As a supplier I want documents attached through the order-response integration API
+{% hint style="info" %}
+This feature is planned. Ticket [TC-5060](https://tradecloud.atlassian.net/browse/TC-5060) As a user I want to attach documents to an order \(line\) and be able to download
 {% endhint %}
 
 ### Step 1. Upload a document to the Tradecloud object-storage
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/object-storage/document" %}
+Upload the document to the Tradecloud object-storage and remember the returned objectId.
+
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/object-storage/upload" %}
 {% api-method-summary %}
-Upload a new document
+Upload a new object and associated metadata
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Upload the document to Tradecloud's object storage which return an object id
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -51,131 +50,63 @@ Document body
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Document upload successful, returning the object id
-{% endapi-method-response-example-description %}
-
-```
-{
-  "id": "40fef20d-8769-4a0b-aa2d-90a0b00750b4"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=413 %}
-{% api-method-response-example-description %}
-Document upload failed, the document size exceeds 100 MB
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% hint style="info" %}
-[Upload document OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument)
-{% endhint %}
+[Upload object OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/upload)
 
-### Step 2. Attach the uploaded document objectId to the order or line
+### Step 2. Link the uploaded document objectId to the order or line
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/documents" %}
-{% api-method-summary %}
+Link the uploaded document objectId with the order or line and send the order
 
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Attach the uploaded document objectId to the order or line.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
-Bearer Access-Token
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="string" required=true %}
-See OpenAPI specs
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+```javascript
+  "documents": [
+      {
+        "code": "123456789",
+        "revision": "2",
+        "name": "Tradecloud API Manual",
+        "objectId": "40fef20d-8769-4a0b-aa2d-90a0b00750b4"
+      }
+    ],
 ```
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+Send the order with the `document` using [\(Re\)issue an order](./)
 
-{% hint style="info" %}
-[Attach order documents by buyer OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/attachOrderDocumentsByBuyerRoute)
-{% endhint %}
-
-### Order documents body JSON objects
-
-### Order
-
-* `companyId`: your Tradecloud company identifier. You can find your company id in the URL when selecting "My company" in the portal dropdown menu. For example in `https://portal.accp.tradecloud1.com/company/06893bba-e131-4268-87c9-7fae64e16ee9` the last part `06893bba-e131-4268-87c9-7fae64e16ee9` is the company id.
-* `supplierAccountNumber`: the supplier account number as known in your ERP system
-* `purchaseOrderNumber`: the purchase order number as known in your ERP system
-* `documents`: the documents to be attached to this order
-
-### Lines
-
-* `lines`: the purchase order lines having a new document attached
-* `position`: the line position within the purchase order
-* `documents`: the documents to be attached to this line
-
-### Documents
-
-* `code` : Optional document code or number. The document code should be unique within your company and immutable.
-* `revision`: Optional document revision \(or version\) code or number
-* `name` : Optional document short \(file\) name
-* `description` : Optional document description or long name
-* `type`: Optional document business type
-* `objectId`: Optional Tradecloud object identifier which was returned by the Tradecloud object-storage upload
-
-## Method 2. Attach a document using your company's content server
+## 2. Attach a document using your company's content server
 
 ### Step 1. Upload to your company's content server
 
-Upload documents to your company's content server and remember the returned document url.
+Upload to your company's content server and remember the returned document url.
 
-### Step 2. Attach uploaded document url to the order or line
+### Step 2. Link the uploaded document url to the order or line
 
-Use Step 2. in method 1, but use `url` instead of `objectId`
+Add a `document` to the `order` or `lines` JSON object, example:
 
-{% hint style="info" %}
-[Attach order documents by buyer OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/attachOrderDocumentsByBuyerRoute)
-{% endhint %}
+```javascript
+  "documents": [
+      {
+        "name": "Tradecloud API Manual",
+        "url": "https://your-content-server.company.com/123456789/2"
+      }
+    ],
+```
 
-### Order documents body JSON objects
+Send the order with the `document` using [\(Re\)issue an order](./)
 
-* `url`: Optional location of the document if is not stored in Tradecloud.
+## 3. Only provide document meta data
 
-## Method 3. Only provide document meta data
+Add a `document` to the `order` or `lines` JSON object, example:
 
-Only provide document meta data like code, revision, name, description and type.
+```javascript
+  "documents": [
+      {
+        "code": "123456789",
+        "revision": "2",
+        "name": "Tradecloud API Manual"
+      }
+    ],
+```
 
-Use Step 2. in method 1, but do not provide an `url` or `objectId`
-
-{% hint style="info" %}
-[Attach order documents by buyer OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/attachOrderDocumentsByBuyerRoute)
-{% endhint %}
+Send the order with the `document` using [\(Re\)issue an order](./)
 

@@ -6,9 +6,9 @@ description: API v2 welcome page.
 
 If you want to use the Tradecloud API v2 you are at the right place.
 
-For successful onboarding you need to have experience with these [standards](api/standards.md).
+For a successful project you need to have experience with these [standards](api/standards.md).
 
-## Some pages to get you started
+Some pages to get you started:
 
 [How to make a API request](api/requests.md)
 
@@ -16,7 +16,7 @@ For successful onboarding you need to have experience with these [standards](api
 
 ## As a buyer
 
-[Send a order](buyer/issue/)
+[Issue a new order](buyer/issue/)
 
 [Receive an order response](buyer/webhook/)
 
@@ -26,11 +26,11 @@ For successful onboarding you need to have experience with these [standards](api
 
 [Receive an order](supplier/webhook/)
 
-[Send an order response](supplier/accept/)
+[Accept an order](supplier/accept/)
 
 [The supplier order process](supplier/overview.md)
 
 ## Support
 
-If you get stuck, ask [support](support.md) a question.
+If you get stuck, ask [support](https://github.com/tradecloud/tradecloud-docs-api-v2/tree/d7ca8bf431f6fd185b8d65a10de70456cb2c6ab9/support.md) a question.
 

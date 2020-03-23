@@ -2,7 +2,7 @@
 description: How to reissue an order as a buyer
 ---
 
-# Reissue an existing order
+# Reissue an order
 
 As buyer you can send either a [new](issue/) or updated purchase order to Tradecloud.
 
@@ -28,14 +28,14 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ### Additional order body JSON objects
 
-#### Actual delivery schedule
+#### Historical actual delivery schedule
 
 * `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery schedule lines. These will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
 * `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` versus `deliveryHistory.position` do not have to use the same values.
 * `deliveryHistory.date`: the actual delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../api/standards.md).
 * `deliveryHistory.quantity`: the actual delivered quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 `deliveryHistory.position` should be unique within the delivery history and never change. Never renumber or re-use `deliveryHistory.position`s.
 {% endhint %}
 

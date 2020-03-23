@@ -2,7 +2,7 @@
 description: How to make API requests
 ---
 
-# Requests
+# requests
 
 ## Making an API request
 

@@ -1,5 +1,5 @@
 ---
-description: Overview of supplier order process pages available.
+description: Overview of supplier order proces pages available.
 ---
 
 # Supplier order process
