@@ -14,7 +14,7 @@ For successful onboarding you need to have experience with these [standards](api
 
 {% page-ref page="security/authentication.md" %}
 
-{% page-ref page="api/tools2/" %}
+{% page-ref page="api/tools/" %}
 
 ## As a buyer
 
