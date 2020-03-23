@@ -56,7 +56,3 @@ User updated \(HTTP status code and user id will be returned\)
 
 See the request body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/updateCompanyRoute)
 
-## Response
-
-Only a HTTP status code will be returned
-

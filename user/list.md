@@ -8,7 +8,7 @@ Search for users of your company.
 
 ## Request
 
-{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/user-search/search" %}
+{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/user-search/\_search" %}
 {% api-method-summary %}
 Search users
 {% endapi-method-summary %}
