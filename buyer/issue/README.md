@@ -119,7 +119,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
 * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
-* `priceInBaseCurrency`: if available provide a price in your base currency, like `EUR` in the EU.
+* `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
 * `value`: the price value has a decimal `1234.56` format with any number of digits.
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
