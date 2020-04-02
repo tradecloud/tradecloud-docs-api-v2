@@ -9,6 +9,7 @@
   * [Tools](api/tools/README.md)
     * [Swagger UI](api/tools/swagger-ui.md)
     * [Postman](api/tools/postman.md)
+    * [.NET SDK](api/tools/.net-sdk.md)
 * [Security](security/README.md)
   * [Security overview](security/security-overview.md)
   * [Authentication](security/authentication.md)
