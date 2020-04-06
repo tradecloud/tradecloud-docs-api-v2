@@ -12,13 +12,6 @@ You can attach documents using three methods:
 
 ## Method 1. Attach a document using the Tradecloud object-storage
 
-{% hint style="warning" %}
-This feature is in progress. Below documentation may change.
-
-Ticket [TC-5566](https://tradecloud.atlassian.net/browse/TC-5566) As a buyer I want documents attached through the order integration API  
-Ticket [TC-5631](https://tradecloud.atlassian.net/browse/TC-5631) As a supplier I want documents attached through the order-response integration API
-{% endhint %}
-
 ### Step 1. Upload a document to the Tradecloud object-storage
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/object-storage/document" %}

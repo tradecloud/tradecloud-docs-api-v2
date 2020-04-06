@@ -4,7 +4,7 @@ description: How to receive an order response sent by the supplier
 
 # Receive an order response
 
-A supplier will response to an issued order line by either accepting or rejecting it, or propose a changed  delivery schedule or changed prices. When accepting, rejecting or proposing the supplier sends a order response to the buyer.
+A supplier will response to an issued order line by either accepting or rejecting it, or propose a changed delivery schedule or changed prices. When accepting, rejecting or proposing the supplier sends a order response to the buyer.
 
 ## Receive an order response from Tradecloud
 
@@ -14,15 +14,21 @@ When an order response is new or has been changed at Tradecloud, we will trigger
 You can either choose to receive the order id and GET the order yourself or to receive the order event.
 
 {% hint style="warning" %}
-When you **GET the order yourself** you will get **ALL** the order lines. 
+When you **GET the order yourself** you will get **ALL** the order lines.
 
-When you **use the order event** it will **ONLY** contain the lines **affected** by the order event.
+When you use **the order event** it will **ONLY** contain the lines **affected** by the order event.
 {% endhint %}
 
-In either case you will use the GET order JSON body:
+In case of a **GET webhook**, using the **order id** you can fetch the actual order from Tradecloud:
 
 {% hint style="info" %}
 [API v2 GET order specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
+{% endhint %}
+
+In case of **POST** or **PUT** **webhook** you can use the **order event** inside the request JSON body:
+
+{% hint style="info" %}
+[POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
 {% endhint %}
 
 ### Order body JSON objects <a id="order-body-json-objects"></a>
@@ -52,7 +58,9 @@ In either case you will use the GET order JSON body:
 * `contact`: the supplier employee responsible for this order. 
 * `properties`: are key-value based custom fields, added by the supplier
 * `notes`: are simple custom fields, added by the supplier
-* `documents`: contain meta data and link of attached documents by the supplier.  See [Download a document attached to an order response](download-document.md) 
+* `documents`: contain meta data and link of attached documents by the supplier.  
+
+{% page-ref page="download-document.md" %}
 
 #### Order lines
 
@@ -102,11 +110,13 @@ Order and line **logistics** status is one of:
 * `proposal`: the supplier can propose a different delivery schedule and prices, see below
 * `properties`: are key-value based custom fields, added by the supplier
 * `notes`: are simple custom fields, added by the supplier
-* `documents`: contain meta data and link of attached documents by the supplier.  See [Download a document attached to an order response](download-document.md) 
+* `documents`: contain meta data and link of attached documents by the supplier.  
+
+{% page-ref page="download-document.md" %}
 
 #### Supplier proposal
 
-`proposal`: in stead of accepting or rejecting an order line, the supplier can alternatively propose a different delivery schedule and prices. 
+`proposal`: in stead of accepting or rejecting an order line, the supplier can alternatively propose a different delivery schedule and prices.
 
 {% hint style="warning" %}
 If the proposal status is `Proposed`the buyer should approve or reject it.
@@ -119,7 +129,7 @@ If the proposal status is `Proposed`the buyer should approve or reject it.
 
 Confirmed line
 
-`confirmedLine`: the agreed order line between buyer and supplier. 
+`confirmedLine`: the agreed order line between buyer and supplier.
 
 {% hint style="warning" %}
 Only if the process status is `Confirmed` the line is agreed between buyer and supplier
@@ -130,7 +140,7 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 #### Confirmed or proposed delivery schedule
 
-`deliverySchedule`: the confirmed or proposed planned delivery schedule. 
+`deliverySchedule`: the confirmed or proposed planned delivery schedule.
 
 * `deliverySchedule.position`: the position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
@@ -138,7 +148,7 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 #### Confirmed or proposed prices
 
-`prices`: the confirmed or proposed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
+`prices`: the confirmed or proposed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
 
 * `priceInTransactionCurrency`: the  price in the transaction currency of the supplier, like `CNY` in China.
 * `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
@@ -146,18 +156,4 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
