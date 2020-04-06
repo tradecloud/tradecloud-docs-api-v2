@@ -6,12 +6,12 @@ description: How to download a document from an order or line response
 
 You can download documents using two methods:
 
-1. If the webhook order or line document contains an objectId:  Download the supplier's document from the Tradecloud object-storage using the objectId and URL
-2. If the webhook order or line document contains an url: 
+1. If the webhook order or line `document` contains an `objectId`: Download the supplier's document from the Tradecloud object-storage using the `objectId` and `donwloadUrl`
+2. If the webhook order or line `document` contains an `url`: Download the document from the supplier's content server.
 
-   Download the document from the supplier's content server.
-
-If the webhook order or line document contains only meta data, no document is available for download.
+{% hint style="info" %}
+If both `objectId` and `url` are missing in the `document`, no file is available for download.
+{% endhint %}
 
 ## Method 1. Download the document from the Tradecloud object-storage
 
@@ -95,7 +95,7 @@ In this example the `downloadUrl` is:
 https://tradecloud-accp-documents.s3.eu-central-1.amazonaws.com/67aa8ece-5d41-496f-a94c-483e360b833b?response-content-disposition=attachment%3B%20filename%3Dtest.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200406T203728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=59&X-Amz-Credential=AKIAUXFSTTRHS7FN2JKY%2F20200406%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=8bda9e2b4d810e0d7650e363373874c4f2e52aa53f1e46d82c5bf3eaf907832d
 ```
 
-### Step 3. Download the document using the downloadUrl
+### Step 3. Download the document using the `downloadUrl`
 
 Just GET the `downloadUrl`
 
@@ -105,5 +105,32 @@ This a Amazon AWS S3 presigned url which expires within 1 minute.
 
 ## Method 2. Download the document from the supplier content server
 
-To be documented.
+### Step 1. Retrieve the `url` from the document
+
+```text
+"documents": [
+  {
+    "code": "123456789",
+    "revision": "B",
+    "name": "Tradecloud API Manual",
+    "url": "http://supplier.com/content/manual.pdf",
+    "type": "General",
+    "description": "General document"
+  }
+],
+```
+
+Please check the `documents` fields in:
+
+{% page-ref page="./" %}
+
+In this example the `url` is:
+
+```text
+http://supplier.com/content/manual.pdf
+```
+
+### Step 2. Download the document using the `url`
+
+Just GET the `url`
 
