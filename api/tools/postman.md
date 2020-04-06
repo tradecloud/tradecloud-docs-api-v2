@@ -23,10 +23,11 @@ At the start of each session, you first need to login to obtain an authorization
 To login and obtain a token:
 
 1. Open the "Login" request in the "Tradecloud Buyer Demo" collection.
-2. Go to the "Authorization" tab.
+2. Go to the **Authorization** tab.
 3. Fill out the **Username** and **Password** fields with your Tradecloud credentials. If you don't have any credentials yet, please ask us to set up an account for you.
-4. Click "Send". If your login is successful, the API should return a `200 - OK` response. 
-5. The last step in obtaining your token is now to switch to the "Headers" tab of the _response_ and copy the value of of the **Set-Authentication** header. This is the token you need to use as authorization for all following requests.
+4. Click **Send**. The API should return a `200 - OK` response. 
+5. Switch to the **Headers** tab of the _response_ and copy the value of the **Set-Authentication** header.  
+  This is the token you need to use as authorization for all following requests.
 
 ![Sending a Login request](../../.gitbook/assets/postman-login-1.png)
 
@@ -41,13 +42,15 @@ With Postman you can easily send a request to the API once you've obtained your 
    1. Set the Type to **Bearer Token**.
    2. Paste your Authorization Token in the **Token** field. 
 3. Check the body of your request and change the request data where needed.
-4. Send! 
+4. Send!
+
+Want to perform a different API operation? You can easily add new requests to the collection. Always make sure that you check the **method**, **Request URL**, **Authorization** and **body** of a request against [our OpenAPI Specs](https://api.accp.tradecloud1.com/). 
 
 ![Set the Authorization Token](../../.gitbook/assets/postman-issue-1.png)
 
 ![Send the Request](../../.gitbook/assets/postman-issue-2.png)
 
-Want to perform a different API operation? You can easily add new requests to the collection. Always make sure that you check the **method**, **Request URL**, **Authorization** and **body** of a request against [our OpenAPI Specs](https://api.accp.tradecloud1.com/).
+
 
 {% hint style="info" %}
 Did you know that you can also send requests to our API right from the Swagger UI? Check out our [Swagger UI documentation](swagger-ui.md)
