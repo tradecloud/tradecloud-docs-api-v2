@@ -49,10 +49,3 @@ Want to perform a different API operation? You can easily add new requests to th
 ![Set the Authorization Token](../../.gitbook/assets/postman-issue-1.png)
 
 ![Send the Request](../../.gitbook/assets/postman-issue-2.png)
-
-
-
-{% hint style="info" %}
-Did you know that you can also send requests to our API right from the Swagger UI? Check out our [Swagger UI documentation](swagger-ui.md)
-{% endhint %}
-
