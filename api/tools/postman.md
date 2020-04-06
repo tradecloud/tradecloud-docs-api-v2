@@ -24,7 +24,14 @@ At the start of each session, you first need to login to obtain a token. You'll 
 
 To login and obtain a token:
 
-1. TODO...
+1. Open the "Login" request in the "Tradecloud Buyer Demo" collection.
+
+2. Go to the "Authorization" tab of the request and fill out the **Username** and **Password** fields with your Tradecloud credentials.  
+If you don't have any credentials yet, please ask your contact at Tradecloud to set up an account for you.
+
+3. Click "Send". If your login is successful, the API should return a `200 - OK` response.
+
+4. The last step in obtaining your token is now to switch to the ...TODO
 
 
 TO DO some screenshots with a little text
