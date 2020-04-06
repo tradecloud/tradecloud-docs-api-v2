@@ -4,7 +4,7 @@ description: Using Swagger UI for API client development
 
 # Postman
 
-This shows how to use the [Postman API Client](https://www.postman.com/product/api-client) to explore and test the Tradecloud API.  
+This page shows how to use the [Postman API Client](https://www.postman.com/product/api-client) to explore and test the Tradecloud API.  
 For more information about how to use Postman in general, see the [Postman documentation](https://learning.postman.com/docs/postman/launching-postman/introduction/).
 
 ## Importing the Tradecloud Postman Collection
