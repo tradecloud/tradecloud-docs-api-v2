@@ -2,6 +2,7 @@
 
 * [Welcome](README.md)
 * [Support](support.md)
+* [Release notes](release-notes.md)
 * [API](api/README.md)
   * [Requests](api/requests.md)
   * [Environments](api/environments.md)
