@@ -10,17 +10,21 @@ There are two ways to announce the buyer has received goods. Using the actual de
 
 This schedule contains the actual physical deliveries. With the actual deliveries versus the planned deliveries Tradecloud can calculate which goods should still be delivered or are even overdue.
 
-The actual delivery schedule can be send by [reissue an order](reissue.md) and setting `lines.deliveryHistory`
+The actual delivery schedule can be send by setting `lines.deliveryHistory` and reissue the order:
 
 {% page-ref page="reissue.md" %}
 
 ## Delivered indicator
 
 {% hint style="warning" %}
-This feature is planned, 
+This feature is planned
 {% endhint %}
 
-When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by [reissue an order](reissue.md) and setting `indicators.delivered`on either order or line level.
+When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered`on either order or line level an reissue the order:
+
+{% page-ref page="reissue.md" %}
+
+See also:
 
 {% page-ref page="indicators.md" %}
 
