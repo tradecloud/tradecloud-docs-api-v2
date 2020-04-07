@@ -28,9 +28,5 @@ You cannot cancel a `Completed` line
 Order lines having process status `Issued`, `In Progress` or `Confirmed` will become `Cancelled`
 {% endhint %}
 
-See also:
-
-{% page-ref page="indicators.md" %}
-
 
 
