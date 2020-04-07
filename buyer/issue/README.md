@@ -76,7 +76,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier
-* `indicators`: see No delivery expected:
+* `indicators`: 
 
 {% page-ref page="no-delivery-expected.md" %}
 
@@ -139,7 +139,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `projectNumber`: Your project number reference
 * `productionNumber`:  Your production number reference
 * `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)
-* `indicators`: see No delivery expected:
+* `indicators`:
 
 {% page-ref page="no-delivery-expected.md" %}
 
