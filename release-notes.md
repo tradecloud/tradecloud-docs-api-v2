@@ -13,6 +13,7 @@ description: API and webhook connector release notes
 ### Improvement
 
 * \[TC-5716\] Make priceInBaseCurrency mandatory in order integration API
+* \[TC-5688\] As user I want that downloaded documents are named after the fileName instead of the document: ObjectId
 
 ### Bugfix
 
