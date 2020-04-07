@@ -6,7 +6,7 @@ description: How to download a document from an order or line response
 
 You can download documents using two methods:
 
-1. If the webhook order or line `document` contains an `objectId`: Download the supplier's document from the Tradecloud object-storage using the `objectId` and `donwloadUrl`
+1. If the webhook order or line `document` contains an `objectId`: Download the supplier's document from the Tradecloud object-storage using the `objectId` and `downloadUrl`
 2. If the webhook order or line `document` contains an `url`: Download the document from the supplier's content server.
 
 {% hint style="info" %}
