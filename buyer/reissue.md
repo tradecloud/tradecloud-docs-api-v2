@@ -39,6 +39,20 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 `deliveryHistory.position` should be unique within the delivery history and never change. Never renumber or re-use `deliveryHistory.position`s.
 {% endhint %}
 
+#### Additional order and line indicators
+
+* `indicators`: 
+
+{% page-ref page="ship-goods.md" %}
+
+{% page-ref page="receive-goods.md" %}
+
+{% page-ref page="complete.md" %}
+
+{% page-ref page="request-cancel.md" %}
+
+{% page-ref page="request-reopen.md" %}
+
 #### Updated order meta data
 
 * `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../api/standards.md).
