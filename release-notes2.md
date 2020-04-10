@@ -1,6 +1,5 @@
 ---
 description: API and webhook connector changelog and release notes (Fri Apr 10 13:35:51 CEST 2020)
----
 output:
   revealjs::revealjs_presentation:
     css: styles.css
