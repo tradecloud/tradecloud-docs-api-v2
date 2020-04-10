@@ -72,7 +72,7 @@ A company is in the lead during a**n** event that's why users are n/a relating t
     </tr>
     <tr>
       <td style="text-align:left">Your supplier company</td>
-      <td style="text-align:left">See all order (line) fields</td>
+      <td style="text-align:left">See all order (line) fields + download attach documents</td>
       <td style="text-align:left">
         <p></p>
         <p>Execute all &quot;BySupplier&quot; actions (aka commands) + communication
@@ -82,7 +82,7 @@ A company is in the lead during a**n** event that's why users are n/a relating t
     </tr>
     <tr>
       <td style="text-align:left">Your buyer company</td>
-      <td style="text-align:left">See all order (line) fields</td>
+      <td style="text-align:left">See all order (line) fields + download attach documents</td>
       <td style="text-align:left">Execute all &quot;ByBuyer&quot; action (aka commands) + communication
         <br
         />&amp; attach documents</td>
