@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "afa0b11a-9ea8-4ebe-83c3-8377294ed1c5",
+		"name": "Tradecloud Buyer Demo",
+		"description": "This collection contains requests illustrating how to use the Tradecloud API as a Buyer.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "replacethispassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "johndoe@company.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.accp.tradecloud1.com/v2/authentication/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"accp",
+						"tradecloud1",
+						"com"
+					],
+					"path": [
+						"v2",
+						"authentication",
+						"login"
+					]
+				},
+				"description": "See also [the authentication API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml#/authentication/login)"
+			},
+			"response": []
+		},
+		{
+			"name": "Issue an order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"order\": {\n    \"companyId\": \"22d1033f-5372-4cd5-abf9-be4f0673d185\",\n    \"supplierAccountNumber\": \"123456\",\n    \"purchaseOrderNumber\": \"PO1234\",\n    \"description\": \"This is a demo order using Postman\",\n    \"destination\": {\n      \"code\": \"AC-1\",\n      \"names\": [\n        \"Blue Sailboats Main Assembly Center\",\n        \"Dock 12\"\n      ],\n      \"addressLines\": [\n        \"Street 123\",\n        \"Area 52\"\n      ],\n      \"postalCode\": \"1234 AB\",\n      \"city\": \"Delft\",\n      \"countryCodeIso2\": \"NL\",\n      \"countryName\": \"The Netherlands\",\n      \"locationType\": \"assembly-center\"\n    },\n    \"terms\": {\n      \"incotermsCode\": \"CIF\",\n      \"incoterms\": \"ECT Rotterdam\",\n      \"paymentTermsCode\": \"30D\",\n      \"paymentTerms\": \"30 days\"\n    },\n    \"indicators\": {\n      \"noDeliveryExpected\": false,\n      \"shipped\": false,\n      \"delivered\": false,\n      \"completed\": false,\n      \"cancelled\": false\n    },\n    \"properties\": [\n      {\n        \"key\": \"department\",\n        \"value\": \"Assembly and construction\"\n      }\n    ],\n    \"notes\": [\n      \"Needed for Boaty McBoatFace\"\n    ],\n    \"contact\": {\n      \"email\": \"sales@ocean-electronics-example.com\"\n    }\n  },\n  \"lines\": [\n    {\n      \"position\": \"0001\",\n      \"description\": \"Hull tubes\",\n      \"item\": {\n        \"number\": \"P123\",\n        \"revision\": \"2020.58\",\n        \"name\": \"Round tube ø60x45\",\n        \"description\": \"Very nice round tube ø60 x 45\",\n        \"purchaseUnitOfMeasureIso\": \"PCE\",\n        \"supplierItemNumber\": \"67890\"\n      },\n      \"deliverySchedule\": [\n        {\n          \"position\": \"01\",\n          \"date\": \"2020-08-31\",\n          \"quantity\": 125,\n          \"locationType\": \"harbor\",\n          \"locationName\": \"ECT Rotterdam\"\n        }\n      ],\n      \"deliveryHistory\": [],\n      \"prices\": {\n        \"grossPrice\": {\n          \"priceInTransactionCurrency\": {\n            \"value\": 1250.00,\n            \"currencyIso\": \"USD\"\n          },\n          \"priceInBaseCurrency\": {\n            \"value\": 1144.50,\n            \"currencyIso\": \"EUR\"\n          }\n        },\n        \"discountPercentage\": 50,\n        \"netPrice\": {\n          \"priceInTransactionCurrency\": {\n            \"value\": 1040.56,\n            \"currencyIso\": \"USD\"\n          },\n          \"priceInBaseCurrency\": {\n            \"value\": 952.94,\n            \"currencyIso\": \"EUR\"\n          }\n        },\n        \"priceUnitOfMeasureIso\": \"PCE\",\n        \"priceUnitQuantity\": 100\n      },\n      \"terms\": {\n        \"contractNumber\": \"20200101.v2\",\n        \"contractPosition\": \"0001\"\n      },\n      \"projectNumber\": \"PROJ12345\",\n      \"productionNumber\": \"PROD12345\",\n      \"salesOrderNumber\": \"SO123456789\",\n      \"indicators\": {\n        \"noDeliveryExpected\": false,\n        \"shipped\": false,\n        \"delivered\": false,\n        \"completed\": false,\n        \"cancelled\": false\n      },\n      \"properties\": [],\n      \"notes\": []\n    }\n  ],\n  \"erpIssueDateTime\": \"2020-04-02T10:11:12\",\n  \"erpIssuedBy\": {\n    \"email\": \"john@blue-boats-example.com\",\n    \"userName\": \"johndoe\"\n  },\n  \"erpLastChangeDateTime\": \"2020-04-02T10:30:00\",\n  \"erpLastChangedBy\": {\n    \"email\": \"dee@blue-boats-example.com\",\n    \"userName\": \"deecaffari\"\n  }\n}"
+				},
+				"url": {
+					"raw": "https://api.accp.tradecloud1.com/v2/order-integration/order",
+					"protocol": "https",
+					"host": [
+						"api",
+						"accp",
+						"tradecloud1",
+						"com"
+					],
+					"path": [
+						"v2",
+						"order-integration",
+						"order"
+					]
+				},
+				"description": "Before sending this request:\n\n1. Make sure you are logged in as a Buyer and the Bearer Token is set in the Authorization header.\n2. Make sure the `companyId` and `supplierAccountNumber` are set correctly.\n3. Choose a unique `purchaseOrderNumber` to issue a new order. Otherwise, the order will be reissued.\n\nSee also [the order-integration API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute)"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "75eb00bf-b614-484b-ab11-95b5183bc055",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1c39fbe0-24e2-4b0b-9120-0d30c2f16c5c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
