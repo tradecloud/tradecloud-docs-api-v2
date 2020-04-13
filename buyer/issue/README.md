@@ -76,10 +76,15 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier
-* `indicators`: see [Indicators](../indicators.md)
+* `indicators`: 
+
+{% page-ref page="no-delivery-expected.md" %}
+
 * `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
-* `documents`: contain meta data and link of attached documents. See [Attach a document to an order](attach-document.md)
+* `documents`: contain meta data and link of attached documents, see:
+
+{% page-ref page="attach-document.md" %}
 
 #### Lines
 
@@ -134,10 +139,15 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `projectNumber`: Your project number reference
 * `productionNumber`:  Your production number reference
 * `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)
-* `indicators`: see [Indicators](../indicators.md)
+* `indicators`:
+
+{% page-ref page="no-delivery-expected.md" %}
+
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
 * `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
-* `documents`: contain meta data and link of attached documents. See [Attach a document to a line](attach-document.md)
+* `documents`: contain meta data and link of attached documents, see:
+
+{% page-ref page="attach-document.md" %}
 
 #### New order meta data
 

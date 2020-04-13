@@ -2,6 +2,7 @@
 
 * [Welcome](README.md)
 * [Support](support.md)
+* [Release notes](release-notes.md)
 * [API](api/README.md)
   * [Requests](api/requests.md)
   * [Environments](api/environments.md)
@@ -33,6 +34,7 @@
   * [Rules](buyer/rules.md)
   * [Issue a new order](buyer/issue/README.md)
     * [Attach a document to an order](buyer/issue/attach-document.md)
+    * [No delivery expected](buyer/issue/no-delivery-expected.md)
   * [Reissue an existing order](buyer/reissue.md)
   * [Receive an order response](buyer/webhook/README.md)
     * [Download a document attached to an order response](buyer/webhook/download-document.md)
@@ -43,7 +45,6 @@
   * [Complete an order](buyer/complete.md)
   * [Request to reopen an order](buyer/request-reopen.md)
   * [Request to cancel an order](buyer/request-cancel.md)
-  * [Buyer indicators overview](buyer/indicators.md)
 * [Supplier order process](supplier/README.md)
   * [Supplier order process overview](supplier/overview.md)
   * [Receive an order](supplier/webhook/README.md)
