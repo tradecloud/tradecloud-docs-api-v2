@@ -26,7 +26,7 @@ To login and obtain a token:
 2. Go to the **Authorization** tab.
 3. Fill out the **Username** and **Password** fields with your Tradecloud credentials. If you don't have any credentials yet, please ask us to set up an account for you.
 4. Click **Send**. The API should return a `200 - OK` response. 
-5. Switch to the **Headers** tab of the _response_ and copy the value of the **Set-Authentication** header.  
+5. Switch to the **Headers** tab of the _response_ and copy the value of the **Set-Authorization** header.  
   This is the token you need to use as authorization for all following requests.
 
 ![Sending a Login request](../../.gitbook/assets/postman-login-1.png)
