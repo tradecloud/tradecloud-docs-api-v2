@@ -32,7 +32,7 @@ When you reissue an order and change `delivery schedule` or `prices`, Tradecloud
 
 ## Forced reopen request
 
-If you want the change other values, like the delivery address, you can force a reopen request by setting `indicators.reopened`on either order or line level and reissue the order.
+If you want the change other values, like the delivery address, you can force a reopen request by setting `indicators.reopenRequest`on either order or line level and reissue the order.
 
 {% page-ref page="reissue.md" %}
 
