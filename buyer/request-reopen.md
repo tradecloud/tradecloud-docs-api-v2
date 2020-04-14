@@ -11,7 +11,7 @@ This feature is planned.
 If an order or line is confirmed \(both parties agreed on the delivery of goods\) then the buyer should  request to `reopen` the order / line. Tradecloud will create a reopen workflow task which the supplier can approve, reject or propose an alternative.
 
 {% hint style="warning" %}
-This is a **request** to the supplier to reopen an already agreed order or line. 
+This is a **request** to the supplier to reopen an already confirmed order or line. 
 
 The supplier has to **approve** the reopen request before Tradecloud accepts it.
 {% endhint %}
