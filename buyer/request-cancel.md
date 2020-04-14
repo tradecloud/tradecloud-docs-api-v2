@@ -5,7 +5,7 @@ description: How to request the supplier to cancel an order or line
 # Request to cancel an order
 
 {% hint style="warning" %}
-This feature is planned. Ticket [TC-4479](https://tradecloud.atlassian.net/browse/TC-4479) As a buyer I want to cancel an order line using a cancel request workflow.
+This feature is planned.
 {% endhint %}
 
 If an order or line is confirmed \(both parties agreed on the delivery of goods\) then the buyer should  request to cancel the order / line.
