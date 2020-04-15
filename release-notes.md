@@ -1,28 +1,35 @@
 ---
-description: API and webhook connector changelog and release notes (Wed Apr 15 10:38:43 CEST 2020)
+description: API and webhook connector changelog and release notes (Wed Apr 15 10:46:09 CEST 2020)
 ---
 
 
+## Breaking changes
+
+1. [N/A](#)
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 15-Apr-2020 10:45:31 CEST | #278 | [TC-4467][TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
+
 ## Open Pull Requests
 
-1. [TC-5048](#)
+1. [N/A](#)
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 15-Apr-2020 10:45:31 CEST | #278 | [TC-4467][TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
+| 2 | Web Portal | 15-Apr-2020 08:35:58 CEST | #373 | TC-5798 enable login 2fa | @TizianoPerrucci |  |
+| 3 | Services (Scala) | 14-Apr-2020 15:35:02 CEST | #1153 | WIP: TC-5800 disable 2fa | @TizianoPerrucci |  |
+| 4 | Services (Scala) | 14-Apr-2020 15:26:21 CEST | #1158 | [TC-4467][TC-5840] Support reindexing of users | @roy-tc |  |
+| 5 | Services (Scala) | 14-Apr-2020 12:50:45 CEST | #1151 | TC-5798 enable login 2fa | @TizianoPerrucci |  |
+
+2. [TC-5048](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 10:34:19 CEST | #1152 | - add update order line item API | @olegtradecloud |  |
 
-2. [TC-4467](#)
+3. [TC-4467](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 09:14:04 CEST | #1157 | Remove WorkflowTaskViewUpdated and add superuser OpenAPI specs | @roy-tc |  |
-
-3. [N/A](#)
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Apr-2020 08:35:58 CEST | #373 | TC-5798 enable login 2fa | @TizianoPerrucci |  |
-| 2 | Services (Go) | 14-Apr-2020 15:46:49 CEST | #278 | [TC-4467][TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
-| 3 | Services (Scala) | 14-Apr-2020 15:35:02 CEST | #1153 | WIP: TC-5800 disable 2fa | @TizianoPerrucci |  |
-| 4 | Services (Scala) | 14-Apr-2020 15:26:21 CEST | #1158 | [TC-4467][TC-5840] Support reindexing of users | @roy-tc |  |
-| 5 | Services (Scala) | 14-Apr-2020 12:50:45 CEST | #1151 | TC-5798 enable login 2fa | @TizianoPerrucci |  |
 
 4. [TC-4862](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
