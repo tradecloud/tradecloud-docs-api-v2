@@ -1,5 +1,5 @@
 ---
-description: API and webhook connector changelog and release notes (Wed Apr 15 10:28:10 CEST 2020)
+description: API and webhook connector changelog and release notes (Wed Apr 15 10:30:01 CEST 2020)
 ---
 
 
@@ -14,7 +14,7 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Portal | 15-Apr-2020 08:35:58 CEST | #373 | TC-5798 enable login 2fa | @TizianoPerrucci |  |
-| 2 |  | 14-Apr-2020 15:46:49 CEST | #278 | [TC-4467][TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+| 2 | tradecloud-microservices-go | 14-Apr-2020 15:46:49 CEST | #278 | [TC-4467][TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
 | 3 | Scala | 14-Apr-2020 15:35:02 CEST | #1153 | WIP: TC-5800 disable 2fa | @TizianoPerrucci |  |
 | 4 | Scala | 14-Apr-2020 15:26:21 CEST | #1158 | [TC-4467][TC-5840] Support reindexing of users | @roy-tc |  |
 | 5 | Scala | 14-Apr-2020 12:50:45 CEST | #1151 | TC-5798 enable login 2fa | @TizianoPerrucci |  |
@@ -66,7 +66,7 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 | 10 | Portal | 26-Mar-2020 10:30:20 CET | #359 | Logout user if refresh token fails. | @jpuri |  |
 | 11 | Portal | 24-Mar-2020 11:33:16 CET | #353 | Fix issue with application not loading data after short inactive period. | @jpuri |  |
 | 12 | Scala | 19-Mar-2020 16:26:06 CET | #1100 | [TC-5655]: Added implementation based on *ing patterns. Extended tests | @dmytrozheliuk |  |
-| 13 |  | 19-Mar-2020 14:41:43 CET | #251 | [TC-5524]- handle OutgoingOrderDocumentsAttached events | @olegtradecloud |  |
+| 13 | tradecloud-microservices-go | 19-Mar-2020 14:41:43 CET | #251 | [TC-5524]- handle OutgoingOrderDocumentsAttached events | @olegtradecloud |  |
 | 14 | Portal | 19-Mar-2020 12:04:03 CET | #351 | Style improvements in task chat. | @jpuri |  |
 | 15 | Portal | 18-Mar-2020 19:00:21 CET | #350 | Bump acorn from 6.1.1 to 6.4.1 | @dependabot[bot] |  |
 
@@ -79,16 +79,16 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Scala | 14-Apr-2020 09:11:03 CEST | #1159 | Rename sbt project &#39;shared&#39; to &#39;microservices-shared&#39; | @vovinacci |  |
-| 2 |  | 09-Apr-2020 10:35:39 CEST | #274 | Reflect new shared/util package function naming | @vovinacci |  |
+| 2 | tradecloud-microservices-go | 09-Apr-2020 10:35:39 CEST | #274 | Reflect new shared/util package function naming | @vovinacci |  |
 | 3 | Scala | 08-Apr-2020 10:32:23 CEST | #1146 | Deployment: simplify secrets | @vovinacci |  |
 | 4 | Scala | 19-Mar-2020 12:37:35 CET | #1104 | UAT: Fix concurrency issue | @vovinacci |  |
-| 5 |  | 19-Mar-2020 12:37:12 CET | #258 | UAT: Fix concurrency issue | @vovinacci |  |
-| 6 |  | 18-Mar-2020 19:55:55 CET | #257 | Deployment: Fix service version in proper place | @vovinacci |  |
+| 5 | tradecloud-microservices-go | 19-Mar-2020 12:37:12 CET | #258 | UAT: Fix concurrency issue | @vovinacci |  |
+| 6 | tradecloud-microservices-go | 18-Mar-2020 19:55:55 CET | #257 | Deployment: Fix service version in proper place | @vovinacci |  |
 | 7 | Scala | 18-Mar-2020 19:53:13 CET | #1103 | Deployment: Fix service version in proper place | @vovinacci |  |
 | 8 | Portal | 18-Mar-2020 18:52:05 CET | #356 | Deployment: Fix service version in proper place | @vovinacci |  |
 | 9 | Scala | 18-Mar-2020 18:10:29 CET | #1102 | Deployment: Fix allowed character set in service version | @vovinacci |  |
 | 10 | Portal | 18-Mar-2020 18:10:09 CET | #354 | Deployment: Fix allowed character set in service version | @vovinacci |  |
-| 11 |  | 18-Mar-2020 18:09:52 CET | #256 | Deployment: Fix allowed character set in service version | @vovinacci |  |
+| 11 | tradecloud-microservices-go | 18-Mar-2020 18:09:52 CET | #256 | Deployment: Fix allowed character set in service version | @vovinacci |  |
 
 5. [TC-5839](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -99,10 +99,10 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 6. [TC-4218](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 13-Apr-2020 15:16:43 CEST | #276 | Updated logging mechanism for services | @aShevc |  |
+| 1 | tradecloud-microservices-go | 13-Apr-2020 15:16:43 CEST | #276 | Updated logging mechanism for services | @aShevc |  |
 | 2 | Scala | 10-Apr-2020 10:52:57 CEST | #1119 | Enrich supplier side order events in company service | @aShevc |  |
-| 3 |  | 09-Apr-2020 17:24:51 CEST | #262 | Supplier webhook | @marcmatt |  |
-| 4 |  | 01-Apr-2020 16:24:07 CEST | #265 | Updated Kafka env variables | @aShevc |  |
+| 3 | tradecloud-microservices-go | 09-Apr-2020 17:24:51 CEST | #262 | Supplier webhook | @marcmatt |  |
+| 4 | tradecloud-microservices-go | 01-Apr-2020 16:24:07 CEST | #265 | Updated Kafka env variables | @aShevc |  |
 | 5 | Scala | 01-Apr-2020 16:15:08 CEST | #1126 | Update Kafka env variables | @aShevc |  |
 
 7. [TC-5494](#)
@@ -130,31 +130,31 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 11. [TC-5660](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 09-Apr-2020 08:51:28 CEST | #275 | Fix &#39;x509: certificate signed by unknown authority&#39; | @vovinacci |  |
+| 1 | tradecloud-microservices-go | 09-Apr-2020 08:51:28 CEST | #275 | Fix &#39;x509: certificate signed by unknown authority&#39; | @vovinacci |  |
 
 12. [TC-5812](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 08-Apr-2020 21:55:15 CEST | #273 | Kafka: Update Confluent Kafka to 1.4.0 | @vovinacci |  |
+| 1 | tradecloud-microservices-go | 08-Apr-2020 21:55:15 CEST | #273 | Kafka: Update Confluent Kafka to 1.4.0 | @vovinacci |  |
 
 13. [TC-4391](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 07-Apr-2020 23:36:27 CEST | #271 | Fix missing accp/prod Kafka secrets, remove unused cmd flag parsing | @vovinacci |  |
-| 2 |  | 07-Apr-2020 22:32:16 CEST | #270 | Use newline when printing SSL related files | @vovinacci |  |
-| 3 |  | 07-Apr-2020 22:20:49 CEST | #268 | Kafka: Add SSL support | @vovinacci |  |
+| 1 | tradecloud-microservices-go | 07-Apr-2020 23:36:27 CEST | #271 | Fix missing accp/prod Kafka secrets, remove unused cmd flag parsing | @vovinacci |  |
+| 2 | tradecloud-microservices-go | 07-Apr-2020 22:32:16 CEST | #270 | Use newline when printing SSL related files | @vovinacci |  |
+| 3 | tradecloud-microservices-go | 07-Apr-2020 22:20:49 CEST | #268 | Kafka: Add SSL support | @vovinacci |  |
 
 14. [TC-5642](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 03-Apr-2020 13:14:07 CEST | #267 | - Fix &#39;tcinfra&#39; usage | @denys-kondartiuk |  |
+| 1 | tradecloud-microservices-go | 03-Apr-2020 13:14:07 CEST | #267 | - Fix &#39;tcinfra&#39; usage | @denys-kondartiuk |  |
 | 2 | Scala | 03-Apr-2020 13:04:06 CEST | #1137 | Deployment: Remove debugging | @vovinacci |  |
 | 3 | Scala | 03-Apr-2020 12:52:49 CEST | #1136 | Deployment: Simplify quotation | @vovinacci |  |
 | 4 | Scala | 03-Apr-2020 12:42:41 CEST | #1135 | Deployment: Fix quoting | @vovinacci |  |
 | 5 | Portal | 03-Apr-2020 11:59:32 CEST | #367 | - Fix &#39;tcinfra&#39; call | @denys-kondartiuk |  |
 | 6 | Portal | 03-Apr-2020 11:39:45 CEST | #366 | - Reverse order for tcinfra arguments | @denys-kondartiuk |  |
 | 7 | Portal | 03-Apr-2020 11:06:42 CEST | #365 | - Portal Regression | @denys-kondartiuk |  |
-| 8 |  | 01-Apr-2020 19:33:30 CEST | #266 | - Use &#39;tcinfra&#39; instead fo &#39;deploy_microservices.py&#39; to dep… | @denys-kondartiuk |  |
+| 8 | tradecloud-microservices-go | 01-Apr-2020 19:33:30 CEST | #266 | - Use &#39;tcinfra&#39; instead fo &#39;deploy_microservices.py&#39; to dep… | @denys-kondartiuk |  |
 | 9 | Portal | 01-Apr-2020 19:25:24 CEST | #364 | - Use &#39;tcinfra&#39; instead fo &#39;deploy_microservices.py&#39; to dep… | @denys-kondartiuk |  |
 | 10 | Scala | 01-Apr-2020 19:10:24 CEST | #1128 | - Use &#39;tcinfra&#39; instead of &#39;deploy_microservices.py&#39; for ac… | @denys-kondartiuk |  |
 
@@ -207,23 +207,23 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 24. [TC-5644](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 25-Mar-2020 15:16:41 CET | #263 | - Fix regression | @denys-kondartiuk |  |
+| 1 | tradecloud-microservices-go | 25-Mar-2020 15:16:41 CET | #263 | - Fix regression | @denys-kondartiuk |  |
 | 2 | Scala | 25-Mar-2020 15:15:59 CET | #1112 | - Fix regression | @denys-kondartiuk |  |
 | 3 | Portal | 25-Mar-2020 15:14:41 CET | #361 | - Fix regression | @denys-kondartiuk |  |
-| 4 |  | 24-Mar-2020 20:07:46 CET | #261 | - GitHub labels PR flow | @denys-kondartiuk |  |
+| 4 | tradecloud-microservices-go | 24-Mar-2020 20:07:46 CET | #261 | - GitHub labels PR flow | @denys-kondartiuk |  |
 | 5 | Scala | 24-Mar-2020 19:44:08 CET | #1111 | - New GitHub PR flow | @denys-kondartiuk |  |
 | 6 | Portal | 24-Mar-2020 19:28:37 CET | #358 | - New GitHub labels PR flow | @denys-kondartiuk |  |
 
 25. [TC-5712](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 20-Mar-2020 17:22:45 CET | #259 | - Make service versions consistent when running accp tests on Jenkins | @denys-kondartiuk |  |
+| 1 | tradecloud-microservices-go | 20-Mar-2020 17:22:45 CET | #259 | - Make service versions consistent when running accp tests on Jenkins | @denys-kondartiuk |  |
 | 2 | Scala | 20-Mar-2020 17:22:09 CET | #1107 | - Make service versions consistent when running accp tests on Jenkins | @denys-kondartiuk |  |
 
 26. [TC-5714](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 20-Mar-2020 16:33:07 CET | #260 | - set webhook request content type | @olegtradecloud |  |
+| 1 | tradecloud-microservices-go | 20-Mar-2020 16:33:07 CET | #260 | - set webhook request content type | @olegtradecloud |  |
 
 27. [TC-5658](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -245,7 +245,7 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Scala | 18-Mar-2020 11:51:10 CET | #1101 | Deployment: Address TODO list | @vovinacci |  |
 | 2 | Portal | 17-Mar-2020 16:32:57 CET | #352 | Deployment: Address TODO list | @vovinacci |  |
-| 3 |  | 17-Mar-2020 14:17:52 CET | #255 | Deployment: Address TODO list | @vovinacci |  |
+| 3 | tradecloud-microservices-go | 17-Mar-2020 14:17:52 CET | #255 | Deployment: Address TODO list | @vovinacci |  |
 
 31. [TC-5526](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -255,5 +255,5 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 32. [TC-5659](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 |  | 17-Mar-2020 11:17:39 CET | #254 | Kafka: Bump shared package, chores | @vovinacci |  |
+| 1 | tradecloud-microservices-go | 17-Mar-2020 11:17:39 CET | #254 | Kafka: Bump shared package, chores | @vovinacci |  |
 
