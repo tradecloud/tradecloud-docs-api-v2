@@ -1,5 +1,5 @@
 ---
-description: API and webhook connector changelog and release notes (Wed Apr 15 11:21:04 CEST 2020)
+description: API and webhook connector changelog and release notes (Wed Apr 15 11:35:26 CEST 2020)
 ---
 
 
@@ -12,21 +12,21 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 
 ## Open Pull Requests
 
-1. [TC-4751](#)
+1. [TC-5048](#)
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Apr-2020 11:34:15 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
+
+2. [TC-4751](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 11:00:30 CEST | #772 |  add a flattened event index for kibana | @snevyd |  |
 
-2. [TC-5798](#)
+3. [TC-5798](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 11:00:03 CEST | #1151 |  enable login 2fa | @TizianoPerrucci |  |
 | 2 | Web Portal | 15-Apr-2020 10:58:24 CEST | #373 |  enable login 2fa | @TizianoPerrucci |  |
-
-3. [TC-5048](#)
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2020 10:59:44 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
 
 4. [TC-5800](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
