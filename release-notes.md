@@ -1,5 +1,5 @@
 ---
-description: API and webhook connector changelog and release notes (Wed Apr 15 10:58:34 CEST 2020)
+description: API and webhook connector changelog and release notes (Wed Apr 15 11:21:04 CEST 2020)
 ---
 
 
@@ -12,45 +12,50 @@ description: API and webhook connector changelog and release notes (Wed Apr 15 1
 
 ## Open Pull Requests
 
-1. [TC-5798](#)
+1. [TC-4751](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Apr-2020 10:58:24 CEST | #373 |  enable login 2fa | @TizianoPerrucci |  |
+| 1 | Services (Scala) | 15-Apr-2020 11:00:30 CEST | #772 |  add a flattened event index for kibana | @snevyd |  |
 
-2. [TC-4467](#)
+2. [TC-5798](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 15-Apr-2020 10:57:45 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
-| 2 | Services (Scala) | 15-Apr-2020 09:14:04 CEST | #1157 |  Remove WorkflowTaskViewUpdated and add superuser OpenAPI specs | @roy-tc |  |
-| 3 | Services (Scala) | 14-Apr-2020 15:26:21 CEST | #1158 | [TC-5840] Support reindexing of users | @roy-tc |  |
+| 1 | Services (Scala) | 15-Apr-2020 11:00:03 CEST | #1151 |  enable login 2fa | @TizianoPerrucci |  |
+| 2 | Web Portal | 15-Apr-2020 10:58:24 CEST | #373 |  enable login 2fa | @TizianoPerrucci |  |
 
 3. [TC-5048](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2020 10:48:03 CEST | #1152 |  - add update order line item API | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Apr-2020 10:59:44 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
 
-4. [N/A](#)
+4. [TC-5800](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Apr-2020 15:35:02 CEST | #1153 | WIP: TC-5800 disable 2fa | @TizianoPerrucci |  |
-| 2 | Services (Scala) | 14-Apr-2020 12:50:45 CEST | #1151 | TC-5798 enable login 2fa | @TizianoPerrucci |  |
+| 1 | Services (Scala) | 15-Apr-2020 10:59:27 CEST | #1153 |  disable 2fa | @TizianoPerrucci |  |
 
-5. [TC-4862](#)
+5. [TC-4467](#)
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Apr-2020 10:58:54 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
+| 2 | Services (Go) | 15-Apr-2020 10:57:45 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
+| 3 | Services (Scala) | 15-Apr-2020 09:14:04 CEST | #1157 |  Remove WorkflowTaskViewUpdated and add superuser OpenAPI specs | @roy-tc |  |
+
+6. [TC-4862](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Apr-2020 15:58:03 CEST | #989 |  Proposal for routes cleanup | @roy-tc |  |
 
-6. [TC-5767](#)
+7. [TC-5767](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Apr-2020 13:40:02 CEST | #1143 |  Add migration whitelist, remove roles based rules | @marcmatt |  |
 
-7. [TC-5789](#)
+8. [TC-5789](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Apr-2020 15:15:29 CEST | #1138 |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-8. [TC-5737](#)
+9. [TC-5737](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Mar-2020 10:38:21 CEST | #1117 |  - Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
