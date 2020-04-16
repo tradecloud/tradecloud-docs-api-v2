@@ -7,6 +7,7 @@
   * [Requests](api/requests.md)
   * [Environments](api/environments.md)
   * [Standards](api/standards.md)
+  * [Compatibility](api/compatibility.md)
   * [Tools](api/tools/README.md)
     * [Swagger UI](api/tools/swagger-ui.md)
     * [Postman](api/tools/postman.md)
