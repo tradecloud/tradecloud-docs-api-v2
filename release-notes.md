@@ -1,5 +1,5 @@
 ---
-description: API and webhook connector changelog and release notes (Thu Apr 16 13:22:30 CEST 2020)
+description: API and webhook connector changelog and release notes (Thu Apr 16 13:30:35 CEST 2020)
 ---
 
 
@@ -15,7 +15,7 @@ description: API and webhook connector changelog and release notes (Thu Apr 16 1
 1. [TC-4467](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Apr-2020 13:16:04 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
+| 1 | Services (Scala) | 16-Apr-2020 13:26:33 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
 | 2 | Services (Go) | 16-Apr-2020 13:06:46 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
 
 2. [TC-5743](#)
