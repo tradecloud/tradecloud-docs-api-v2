@@ -1,5 +1,5 @@
 ---
-description: API and webhook connector changelog and release notes (Thu Apr 16 13:39:53 CEST 2020)
+description: API and webhook connector changelog and release notes (Thu Apr 16 20:34:12 CEST 2020)
 ---
 
 
@@ -8,36 +8,36 @@ description: API and webhook connector changelog and release notes (Thu Apr 16 1
 1. [TC-4467](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Apr-2020 13:30:32 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
+| 1 | Services (Go) | 16-Apr-2020 16:09:13 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
 
 ## Open Pull Requests
 
-1. [TC-4467](#)
+1. [TC-5798](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Apr-2020 13:30:32 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
-| 2 | Services (Scala) | 16-Apr-2020 13:26:33 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
+| 1 | Services (Scala) | 16-Apr-2020 20:15:55 CEST | #1151 |  enable login 2fa | @TizianoPerrucci |  |
+| 2 | Web Portal | 15-Apr-2020 14:56:53 CEST | #373 |  enable login 2fa | @TizianoPerrucci |  |
 
-2. [TC-5743](#)
+2. [TC-4467](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Apr-2020 12:24:56 CEST | #374 |  Development: create checkbox column with possibility select… | @bohdantrc |  |
+| 1 | Services (Scala) | 16-Apr-2020 19:00:47 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
+| 2 | Services (Go) | 16-Apr-2020 16:09:13 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
 
 3. [TC-5048](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2020 20:46:10 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
+| 1 | Services (Scala) | 16-Apr-2020 14:51:00 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
 
-4. [TC-5698](#)
+4. [TC-5743](#)
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 16-Apr-2020 12:24:56 CEST | #374 |  Development: create checkbox column with possibility select… | @bohdantrc |  |
+
+5. [TC-5698](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 16:27:06 CEST | #1161 |  Investigate service stability when keyspaces are missing | @roy-tc |  |
-
-5. [TC-5798](#)
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2020 15:45:38 CEST | #1151 |  enable login 2fa | @TizianoPerrucci |  |
-| 2 | Web Portal | 15-Apr-2020 14:56:53 CEST | #373 |  enable login 2fa | @TizianoPerrucci |  |
 
 6. [N/A](#)
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
