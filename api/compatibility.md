@@ -7,7 +7,7 @@
 The API and web hook request are compatible with previous versions of itself, which means:
 
 * Fields will not be removed, renamed or become mandatory
-* Values will not be removed or renamed or become mandatory
+* Values will not be removed, renamed or become mandatory
 
 ## Forward compatibility
 
@@ -17,7 +17,7 @@ The API and web hook request are compatible with future versions of itself, whic
 
 * Fields can be added in the future
 * Values can be added in the future
-* Events can be added to the webhook in the future
+* Events can be added to the web hook in the future
 
 In practice:
 
