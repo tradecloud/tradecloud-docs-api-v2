@@ -1,5 +1,5 @@
 ---
-description: API and webhook connector changelog and release notes (Fri Apr 17 10:31:34 CEST 2020)
+description: API and webhook connector changelog and release notes (Fri Apr 17 11:31:06 CEST 2020)
 ---
 
 
@@ -12,63 +12,59 @@ description: API and webhook connector changelog and release notes (Fri Apr 17 1
 
 ## Open Pull Requests
 
-1. [TC-5833](#) Resolve replay Cluster Health persistence replay warnings 
+1. [TC-5048](#) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Apr-2020 09:58:42 CEST | #1164 |  Investigate - Trigger build | @roy-tc |  |
+| 1 | Services (Go) | 17-Apr-2020 11:23:47 CEST | #281 |  - update API spec | @olegtradecloud |  |
+| 2 | Services (Scala) | 17-Apr-2020 07:54:12 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
 
-2. [TC-5048](#) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Apr-2020 07:54:12 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
-
-3. [TC-4467](#) As a DevOps I want to be able to re-build a search index 
+2. [TC-4467](#) As a DevOps I want to be able to re-build a search index 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Apr-2020 19:00:47 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
 | 2 | Services (Go) | 16-Apr-2020 16:09:13 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
 
-4. [TC-5743](#) FE: Support bulk actions for multiple order lines 
+3. [TC-5743](#) FE: Support bulk actions for multiple order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Apr-2020 12:24:56 CEST | #374 |  Development: create checkbox column with possibility select… | @bohdantrc |  |
 
-5. [TC-5698](#) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
+4. [TC-5698](#) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 16:27:06 CEST | #1161 |  Investigate service stability when keyspaces are missing | @roy-tc |  |
 
-6. [N/A](#)  
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 14:37:24 CEST | #1162 | DO NOT MERGE | @denys-kondartiuk |  |
 
-7. [TC-5800](#) Disable 2FA API [Planned release 23-Apr-2020]
+6. [TC-5800](#) Disable 2FA API [Planned release 23-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 12:16:53 CEST | #1153 |  disable 2fa | @TizianoPerrucci |  |
 
-8. [TC-4751](#) Add a flattened line event index usable by Kibana 
+7. [TC-4751](#) Add a flattened line event index usable by Kibana 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 11:00:30 CEST | #772 |  add a flattened event index for kibana | @snevyd |  |
 
-9. [TC-4862](#) Remove `/` path in API&#39;s 
+8. [TC-4862](#) Remove `/` path in API&#39;s 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Apr-2020 15:58:03 CEST | #989 |  Proposal for routes cleanup | @roy-tc |  |
 
-10. [TC-5767](#) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
+9. [TC-5767](#) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Apr-2020 13:40:02 CEST | #1143 |  Add migration whitelist, remove roles based rules | @marcmatt |  |
 
-11. [TC-5789](#) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+10. [TC-5789](#) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Apr-2020 15:15:29 CEST | #1138 |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-12. [TC-5737](#) Incorrect line id if position contains special symbols 
+11. [TC-5737](#) Incorrect line id if position contains special symbols 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Mar-2020 10:38:21 CEST | #1117 |  - Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
