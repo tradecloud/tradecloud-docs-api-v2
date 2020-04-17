@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 17 16:01:53 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 17 16:13:57 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-Apr-2020 16:00:31 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |  - update API spec | @olegtradecloud |  |
+| 1 | Services (Go) | 17-Apr-2020 16:02:27 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |  - update API spec | @olegtradecloud |  |
 | 2 | Services (Scala) | 17-Apr-2020 07:54:12 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item API | @olegtradecloud |  |
 
 2. [N/A](#)  
