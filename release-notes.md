@@ -1,5 +1,5 @@
 ---
-description: API and webhook connector changelog and release notes (Fri Apr 17 14:07:02 CEST 2020)
+description: API and webhook connector changelog and release notes (Fri Apr 17 15:31:03 CEST 2020)
 ---
 
 
@@ -311,5 +311,4 @@ description: API and webhook connector changelog and release notes (Fri Apr 17 1
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 18-Mar-2020 11:51:10 CET | [#1101](https://github.com/tradecloud/tradecloud-microservices/pull/1101) |  Deployment: Address TODO list | @vovinacci |  |
 | 2 | Web Portal | 17-Mar-2020 16:32:57 CET | [#352](https://github.com/tradecloud/tradecloud-portal-angular/pull/352) |  Deployment: Address TODO list | @vovinacci |  |
-| 3 | Services (Go) | 17-Mar-2020 14:17:52 CET | [#255](https://github.com/tradecloud/tradecloud-microservices-go/pull/255) |  Deployment: Address TODO list | @vovinacci |  |
 
