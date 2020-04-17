@@ -1,11 +1,11 @@
 ---
-description: API and webhook connector changelog and release notes (Fri Apr 17 14:05:16 CEST 2020)
+description: API and webhook connector changelog and release notes (Fri Apr 17 14:07:02 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A]()  
+1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Apr-2020 13:34:11 CEST | [#1162](https://github.com/tradecloud/tradecloud-microservices/pull/1162) | DO NOT MERGE | @denys-kondartiuk |  |
@@ -146,7 +146,7 @@ description: API and webhook connector changelog and release notes (Fri Apr 17 1
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Apr-2020 17:27:28 CEST | [#368](https://github.com/tradecloud/tradecloud-portal-angular/pull/368) |  enable 2fa | @RobinNagpal |  |
 
-13. [N/A]()  
+13. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Apr-2020 13:25:39 CEST | [#1108](https://github.com/tradecloud/tradecloud-microservices/pull/1108) | TC-5494 enable 2fa | @TizianoPerrucci |  |
