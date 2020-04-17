@@ -1,33 +1,26 @@
 ---
-description: API and webhook connector changelog and release notes (Fri Apr 17 12:16:43 CEST 2020)
+description: API and webhook connector changelog and release notes (Fri Apr 17 12:56:37 CEST 2020)
 ---
 
 
-## Breaking changes
+## Open Pull Requests
 
 1. [TC-4467](#) As a DevOps I want to be able to re-build a search index 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Apr-2020 16:09:13 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
+| 1 | Services (Go) | 17-Apr-2020 12:55:11 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+| 2 | Services (Scala) | 16-Apr-2020 19:00:47 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
 
-## Open Pull Requests
-
-1. [TC-5789](#) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+2. [TC-5789](#) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Apr-2020 11:54:04 CEST | #1138 |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-2. [TC-5048](#) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
+3. [TC-5048](#) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 17-Apr-2020 11:23:47 CEST | #281 |  - update API spec | @olegtradecloud |  |
 | 2 | Services (Scala) | 17-Apr-2020 07:54:12 CEST | #1152 |  add update order line item API | @olegtradecloud |  |
-
-3. [TC-4467](#) As a DevOps I want to be able to re-build a search index 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Apr-2020 19:00:47 CEST | #1158 |  [TC-5840] Support reindexing of users | @roy-tc |  |
-| 2 | Services (Go) | 16-Apr-2020 16:09:13 CEST | #278 |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  BREAKING CHANGE! |
 
 4. [TC-5743](#) FE: Support bulk actions for multiple order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -324,9 +317,4 @@ description: API and webhook connector changelog and release notes (Fri Apr 17 1
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Mar-2020 11:56:26 CET | #349 |  Add details of attached document to activity. | @jpuri |  |
-
-42. [TC-5659](#) Refactor Kafka tests in shared library to use with Confluent Kafka 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-Mar-2020 11:17:39 CET | #254 |  Kafka: Bump shared package, chores | @vovinacci |  |
 
