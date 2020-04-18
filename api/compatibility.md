@@ -2,18 +2,18 @@
 
 ## Backward compatibility
 
-**Tradecloud** promises and is responsible that the API and web hook request is backward compatible.
+**Tradecloud** promises and is responsible that the **order integration API** and **web hook request URL and body** are **backwards** compatible. **Other API's may change without notice.**
 
-The API and web hook request are compatible with previous versions of itself, which means:
+The ****order integration API and web hook request URL and body are compatible with previous versions of itself, which means
 
 * Fields will not be removed, renamed or become mandatory
 * Values will not be removed, renamed or become mandatory
 
 ## Forward compatibility
 
-The **customer** is responsible that the API client and web hook service is forward compatible.  
+The **customer** is responsible that the **API client** and **web hook service** is **forward** compatible.  
   
-The API and web hook request are compatible with future versions of itself, which means:
+The API client and web hook service are compatible with future versions of itself, which means:
 
 * Fields can be added in the future
 * Values can be added in the future
