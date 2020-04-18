@@ -1,3 +1,7 @@
+---
+description: Backward and forward compatibility responsibilities
+---
+
 # Compatibility
 
 ## Backward compatibility
