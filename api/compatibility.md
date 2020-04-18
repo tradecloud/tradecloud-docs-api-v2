@@ -6,9 +6,9 @@ description: Backward and forward compatibility responsibilities
 
 ## Backward compatibility
 
-**Tradecloud** promises and is responsible that the **order integration API** and **web hook request URL and body** are **backwards** compatible. **Other API's may change without notice.**
+**Tradecloud** promises and is responsible that the **API** and **web hook request** are **backwards** compatible. 
 
-The ****order integration API and web hook request URL and body are compatible with previous versions of itself, which means
+The ****API and web hook request compatible with previous versions of itself, which means:
 
 * Fields will not be removed, renamed or become mandatory
 * Values will not be removed, renamed or become mandatory
