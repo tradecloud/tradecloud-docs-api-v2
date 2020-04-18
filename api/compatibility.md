@@ -11,7 +11,7 @@ The ****order integration API and web hook request URL and body are compatible w
 
 ## Forward compatibility
 
-The **customer** is responsible that the **API client** and **web hook service** is **forward** compatible.  
+The Tradecloud **customer** is responsible that the **API client** and **web hook service** is **forward** compatible.  
   
 The API client and web hook service are compatible with future versions of itself, which means:
 
