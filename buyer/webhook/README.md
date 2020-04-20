@@ -72,10 +72,6 @@ In case of **POST** or **PUT** **webhook** you can use the **order event** insid
 * `confirmedLine`: the order line as agreed between buyer and supplier, see below
 * `indicators.deliveryOverdue` is true when all order lines are overdue
 * `status.processStatus`: the order line process status
-* `status.logisticsStatus`: the order line logistics status
-* `eventDates`: some key line event date/times
-
-#### Order and line status
 
 {% hint style="info" %}
 Order and line **process** status is one of:
@@ -88,6 +84,8 @@ Order and line **process** status is one of:
 * `Cancelled`: cancelled by either buyer or supplier
 {% endhint %}
 
+* `status.logisticsStatus`: the order line logistics status
+
 {% hint style="info" %}
 Order and line **logistics** status is one of:
 
@@ -95,6 +93,25 @@ Order and line **logistics** status is one of:
 * `Shipped`: shipped by the supplier
 * `Delivered`: delivered at the buyer
 {% endhint %}
+
+* `eventDates`: some key line event date/times
+* `mergedItemDetails`: detailed part information provided by both buyer and supplier.
+
+#### Item details
+
+{% hint style="info" %}
+The buyer may send item details to inform the supplier about part information.  
+The supplier may check, change and add item details if they are not correct or incomplete.  
+`mergedItemDetails` will contain the original item details added by the buyer merged with the changed or added item details by the supplier.
+{% endhint %}
+
+* `countryOfOriginCodeIso2`: The ISO 3166-1 alpha-2 country code of manufacture, production, or growth where an article or product comes from.
+* `combinedNomenclatureCode`: A tool for classifying goods, set up to meet the requirements both of the Common Customs Tariff and of the EU's external trade statistics.
+* `netWeight`: Net weight of one item.
+* `netWeightUnitOfMeasureIso`: Net weight unit according to ISO 80000-1.
+* `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that identify dangerous goods, hazardous substances and articles in the framework of international transport.
+* `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
+* `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer
 
 #### Buyer line part
 

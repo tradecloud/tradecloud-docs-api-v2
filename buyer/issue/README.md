@@ -102,7 +102,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `lines.item.number`: the item code or number as known in your ERP
 * `lines.item.revision`: the revision \(or version\) of this item number
 * `lines.item.name`: the item short name
-* `lines.item.purchaseUnitOfMeasureIso`: the 3-letter purchase unit according to ISO 80000-1, a typical example is `PCE`
+* `lines.item.purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
 * `lines.item.supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
 
 {% hint style="warning" %}
@@ -111,7 +111,22 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 #### Item details
 
-* 
+* `lines.itemDetails`: detailed part information initially provided by buyer.
+
+{% hint style="info" %}
+The buyer may send item details to inform the supplier about part information.  
+The supplier may check, change and add item details if they are not correct or incomplete.  
+The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the merged original item details added by the buyer merged with the changed or added item details by the supplier.
+{% endhint %}
+
+* `countryOfOriginCodeIso2`: The ISO 3166-1 alpha-2 country code of manufacture, production, or growth where an article or product comes from.
+* `combinedNomenclatureCode`: A tool for classifying goods, set up to meet the requirements both of the Common Customs Tariff and of the EU's external trade statistics.
+* `netWeight`: Net weight of one item.
+* `netWeightUnitOfMeasureIso`: Net weight unit according to ISO 80000-1.
+* `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that identify dangerous goods, hazardous substances and articles in the framework of international transport.
+* `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
+* `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer
+
 #### Requested planned delivery schedule
 
 * `line.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
@@ -130,7 +145,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 * `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
 * `value`: the price value has a decimal `1234.56` format with any number of digits.
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
-* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+* `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
 #### Other line fields
