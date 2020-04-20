@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 20 11:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 20 13:30:58 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Apr-2020 11:27:20 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 20-Apr-2020 11:39:42 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
 
 2. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
