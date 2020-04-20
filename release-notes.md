@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 20 17:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 20 19:30:55 CEST 2020)
 ---
 
 
@@ -275,15 +275,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 4 | Services (Go) | 24-Mar-2020 20:07:46 CET | [#261](https://github.com/tradecloud/tradecloud-microservices-go/pull/261) |  - GitHub labels PR flow | @denys-kondartiuk |  |
 | 5 | Services (Scala) | 24-Mar-2020 19:44:08 CET | [#1111](https://github.com/tradecloud/tradecloud-microservices/pull/1111) |  - New GitHub PR flow | @denys-kondartiuk |  |
 | 6 | Web Portal | 24-Mar-2020 19:28:37 CET | [#358](https://github.com/tradecloud/tradecloud-portal-angular/pull/358) |  - New GitHub labels PR flow | @denys-kondartiuk |  |
-
-35. [TC-5712](https://tradecloud.atlassian.net/browse/TC-5712) Make service versions consistent when running accp tests on Jenkins 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 20-Mar-2020 17:22:45 CET | [#259](https://github.com/tradecloud/tradecloud-microservices-go/pull/259) |  - Make service versions consistent when running accp tests on Jenkins | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 20-Mar-2020 17:22:09 CET | [#1107](https://github.com/tradecloud/tradecloud-microservices/pull/1107) |  - Make service versions consistent when running accp tests on Jenkins | @denys-kondartiuk |  |
-
-36. [TC-5714](https://tradecloud.atlassian.net/browse/TC-5714) Webhook HTTP POST/PUT should send HTTP header Content-Type application/json 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 20-Mar-2020 16:33:07 CET | [#260](https://github.com/tradecloud/tradecloud-microservices-go/pull/260) |  - set webhook request content type | @olegtradecloud |  |
 
