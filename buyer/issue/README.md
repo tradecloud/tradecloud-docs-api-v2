@@ -109,6 +109,9 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 `item.number` should be unique within your company and never change. Never renumber or re-use `item.number`s.
 {% endhint %}
 
+#### Item details
+
+* 
 #### Requested planned delivery schedule
 
 * `line.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.

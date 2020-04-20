@@ -105,7 +105,7 @@ Order and line **logistics** status is one of:
 `supplierLine` contains the supplier order line fields:
 
 * `salesOrderNumber`: the sales order number as known in the supplier's ERP system
-* `position`: the position within the supplier's sales order
+* `salesOrderPosition`: the position within the supplier's sales order
 * `description`: a free format additional description of this line by the supplier
 * `proposal`: the supplier can propose a different delivery schedule and prices, see below
 * `properties`: are key-value based custom fields, added by the supplier
