@@ -17,7 +17,7 @@ The actual delivery schedule can be send by setting `lines.deliveryHistory` and 
 ## Delivered indicator
 
 {% hint style="warning" %}
-This feature is planned
+This feature is planned and API and documentation may change. 
 {% endhint %}
 
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered`on either order or line level an reissue the order:

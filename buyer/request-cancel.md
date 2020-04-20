@@ -5,7 +5,7 @@ description: How to request the supplier to cancel an order or line
 # Request to cancel an order
 
 {% hint style="warning" %}
-This feature is planned.
+This feature is planned and API and documentation may change. 
 {% endhint %}
 
 If an order or line is confirmed \(both parties agreed on the delivery of goods\) then the buyer should  request to cancel the order / line.
