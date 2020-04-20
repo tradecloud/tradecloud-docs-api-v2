@@ -1,54 +1,63 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 17 21:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 20 09:31:28 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
+1. [TC-5800](https://tradecloud.atlassian.net/browse/TC-5800) Disable 2FA API [Planned release 23-Apr-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 19-Apr-2020 18:48:35 CEST | [#1153](https://github.com/tradecloud/tradecloud-microservices/pull/1153) |  disable 2fa | @TizianoPerrucci |  |
+
+2. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-Apr-2020 17:18:21 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
+
+3. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-Apr-2020 11:05:19 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
+
+4. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Apr-2020 20:15:56 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
 
-2. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Apr-2020 18:42:50 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) | Added order-response endpoint | @aShevc |  |
-| 2 | Services (Scala) | 17-Apr-2020 13:34:11 CEST | [#1162](https://github.com/tradecloud/tradecloud-microservices/pull/1162) | DO NOT MERGE | @denys-kondartiuk |  |
-
-3. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index 
+5. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 17-Apr-2020 18:34:42 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
 | 2 | Services (Scala) | 16-Apr-2020 19:00:47 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
 
-4. [TC-5743](https://tradecloud.atlassian.net/browse/TC-5743) FE: Support bulk actions for multiple order lines 
+6. [TC-5743](https://tradecloud.atlassian.net/browse/TC-5743) FE: Support bulk actions for multiple order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Apr-2020 17:41:18 CEST | [#374](https://github.com/tradecloud/tradecloud-portal-angular/pull/374) |  Development: create checkbox column with possibility select… | @bohdantrc |  |
 
-5. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
+7. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 24-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 17-Apr-2020 16:02:27 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |  - update API spec | @olegtradecloud |  |
 | 2 | Services (Scala) | 17-Apr-2020 07:54:12 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item API | @olegtradecloud |  |
 
-6. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+8. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 17-Apr-2020 13:34:11 CEST | [#1162](https://github.com/tradecloud/tradecloud-microservices/pull/1162) | DO NOT MERGE | @denys-kondartiuk |  |
+
+9. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Apr-2020 11:54:04 CEST | [#1138](https://github.com/tradecloud/tradecloud-microservices/pull/1138) |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-7. [TC-5698](https://tradecloud.atlassian.net/browse/TC-5698) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
+10. [TC-5698](https://tradecloud.atlassian.net/browse/TC-5698) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 16:27:06 CEST | [#1161](https://github.com/tradecloud/tradecloud-microservices/pull/1161) |  Investigate service stability when keyspaces are missing | @roy-tc |  |
 
-8. [TC-5800](https://tradecloud.atlassian.net/browse/TC-5800) Disable 2FA API [Planned release 23-Apr-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2020 12:16:53 CEST | [#1153](https://github.com/tradecloud/tradecloud-microservices/pull/1153) |  disable 2fa | @TizianoPerrucci |  |
-
-9. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+11. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Mar-2020 10:38:21 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  - Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
@@ -68,14 +77,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 2 | Services (Scala) | 14-Apr-2020 09:11:03 CEST | [#1159](https://github.com/tradecloud/tradecloud-microservices/pull/1159) |  Rename sbt project &#39;shared&#39; to &#39;microservices-shared&#39; | @vovinacci |  |
 | 3 | Services (Go) | 09-Apr-2020 10:35:39 CEST | [#274](https://github.com/tradecloud/tradecloud-microservices-go/pull/274) |  Reflect new shared/util package function naming | @vovinacci |  |
 | 4 | Services (Scala) | 08-Apr-2020 10:32:23 CEST | [#1146](https://github.com/tradecloud/tradecloud-microservices/pull/1146) |  Deployment: simplify secrets | @vovinacci |  |
-| 5 | Services (Scala) | 19-Mar-2020 12:37:35 CET | [#1104](https://github.com/tradecloud/tradecloud-microservices/pull/1104) |  UAT: Fix concurrency issue | @vovinacci |  |
-| 6 | Services (Go) | 19-Mar-2020 12:37:12 CET | [#258](https://github.com/tradecloud/tradecloud-microservices-go/pull/258) |  UAT: Fix concurrency issue | @vovinacci |  |
-| 7 | Services (Go) | 18-Mar-2020 19:55:55 CET | [#257](https://github.com/tradecloud/tradecloud-microservices-go/pull/257) |  Deployment: Fix service version in proper place | @vovinacci |  |
-| 8 | Services (Scala) | 18-Mar-2020 19:53:13 CET | [#1103](https://github.com/tradecloud/tradecloud-microservices/pull/1103) |  Deployment: Fix service version in proper place | @vovinacci |  |
-| 9 | Web Portal | 18-Mar-2020 18:52:05 CET | [#356](https://github.com/tradecloud/tradecloud-portal-angular/pull/356) |  Deployment: Fix service version in proper place | @vovinacci |  |
-| 10 | Services (Scala) | 18-Mar-2020 18:10:29 CET | [#1102](https://github.com/tradecloud/tradecloud-microservices/pull/1102) |  Deployment: Fix allowed character set in service version | @vovinacci |  |
-| 11 | Web Portal | 18-Mar-2020 18:10:09 CET | [#354](https://github.com/tradecloud/tradecloud-portal-angular/pull/354) |  Deployment: Fix allowed character set in service version | @vovinacci |  |
-| 12 | Services (Go) | 18-Mar-2020 18:09:52 CET | [#256](https://github.com/tradecloud/tradecloud-microservices-go/pull/256) |  Deployment: Fix allowed character set in service version | @vovinacci |  |
 
 3. [TC-5798](https://tradecloud.atlassian.net/browse/TC-5798) 2FA login api 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -285,35 +286,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Mar-2020 12:55:47 CET | [#1098](https://github.com/tradecloud/tradecloud-microservices/pull/1098) |  Support order line positions with hyphens | @roy-tc |  |
-
-38. [TC-5655](https://tradecloud.atlassian.net/browse/TC-5655) BE: improve tests and implementation for document attachments 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Mar-2020 16:26:06 CET | [#1100](https://github.com/tradecloud/tradecloud-microservices/pull/1100) | : Added implementation based on *ing patterns. Extended tests | @dmytrozheliuk |  |
-
-39. [TC-5524](https://tradecloud.atlassian.net/browse/TC-5524) BE: implement webhook trigger for attached documents 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Mar-2020 14:44:37 CET | [#1084](https://github.com/tradecloud/tradecloud-microservices/pull/1084) |  - add enrichment of OrderDocumentsEvent in company service | @olegtradecloud |  |
-| 2 | Services (Go) | 19-Mar-2020 14:41:43 CET | [#251](https://github.com/tradecloud/tradecloud-microservices-go/pull/251) | - handle OutgoingOrderDocumentsAttached events | @olegtradecloud |  |
-
-40. [TC-4806](https://tradecloud.atlassian.net/browse/TC-4806) As a user I want to see the last couple of messages in a conversation task. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 19-Mar-2020 12:04:03 CET | [#351](https://github.com/tradecloud/tradecloud-portal-angular/pull/351) |  Style improvements in task chat. | @jpuri |  |
-
-41. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-Mar-2020 19:00:21 CET | [#350](https://github.com/tradecloud/tradecloud-portal-angular/pull/350) | Bump acorn from 6.1.1 to 6.4.1 | @dependabot[bot] |  |
-
-42. [TC-5665](https://tradecloud.atlassian.net/browse/TC-5665) Workflow IndexRequest failed for large documents 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Mar-2020 17:48:21 CET | [#1099](https://github.com/tradecloud/tradecloud-microservices/pull/1099) |  IndexRequest exception logging | @roy-tc |  |
-
-43. [TC-5641](https://tradecloud.atlassian.net/browse/TC-5641) As DevOps I want to resolve TODO list in service repositories related to deployment 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Mar-2020 11:51:10 CET | [#1101](https://github.com/tradecloud/tradecloud-microservices/pull/1101) |  Deployment: Address TODO list | @vovinacci |  |
 
