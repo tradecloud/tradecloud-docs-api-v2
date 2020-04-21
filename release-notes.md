@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 21 17:31:10 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Apr 21 19:30:57 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
+1. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2020 17:29:24 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
-
-2. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2020 13:35:51 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
+| 1 | Services (Scala) | 21-Apr-2020 18:50:53 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
 | 2 | Services (Go) | 20-Apr-2020 10:57:01 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |  Update API spec | @olegtradecloud |  |
+
+2. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Apr-2020 18:32:04 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
 
 3. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
