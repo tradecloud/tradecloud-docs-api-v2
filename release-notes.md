@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 21 13:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Apr 21 15:31:00 CEST 2020)
 ---
 
 
@@ -8,19 +8,19 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2020 13:20:12 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
+| 1 | Services (Scala) | 21-Apr-2020 14:52:17 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
 
-2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index 
+2. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Apr-2020 13:35:51 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
+| 2 | Services (Go) | 20-Apr-2020 10:57:01 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |  Update API spec | @olegtradecloud |  |
+
+3. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Apr-2020 12:00:19 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
 | 2 | Services (Go) | 21-Apr-2020 11:59:35 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
-
-3. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2020 10:39:00 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
-| 2 | Services (Go) | 20-Apr-2020 10:57:01 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |  Update API spec | @olegtradecloud |  |
 
 4. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
