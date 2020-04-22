@@ -1,36 +1,36 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 22 09:31:27 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 22 11:30:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
+1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Apr-2020 09:28:29 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
+| 1 | Services (Go) | 22-Apr-2020 11:12:35 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+| 2 | Services (Scala) | 22-Apr-2020 11:04:38 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
 
-2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+2. [TC-5800](https://tradecloud.atlassian.net/browse/TC-5800) Disable 2FA API [Planned release 23-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Apr-2020 09:20:44 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
-| 2 | Services (Go) | 22-Apr-2020 09:18:15 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+| 1 | Services (Scala) | 22-Apr-2020 11:00:24 CEST | [#1153](https://github.com/tradecloud/tradecloud-microservices/pull/1153) |  disable 2fa | @TizianoPerrucci |  |
 
 3. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Apr-2020 04:30:17 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
+| 1 | Services (Scala) | 22-Apr-2020 10:54:26 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
 
-4. [N/A](#)  
+4. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 22-Apr-2020 09:28:29 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
+
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Apr-2020 21:29:20 CEST | [#376](https://github.com/tradecloud/tradecloud-portal-angular/pull/376) | feature(2FA)[TC-5800] - add code and tests for disable 2FA | @RobinNagpal |  |
 | 2 | Services (Scala) | 17-Apr-2020 13:34:11 CEST | [#1162](https://github.com/tradecloud/tradecloud-microservices/pull/1162) | DO NOT MERGE | @denys-kondartiuk |  |
-
-5. [TC-5800](https://tradecloud.atlassian.net/browse/TC-5800) Disable 2FA API [Planned release 23-Apr-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2020 21:23:39 CEST | [#1153](https://github.com/tradecloud/tradecloud-microservices/pull/1153) |  disable 2fa | @TizianoPerrucci |  |
 
 6. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -70,19 +70,21 @@ description: Tradecloud services and portal open pull requests and changelog (We
 
 ## Changelog
 
-1. [TC-5853](https://tradecloud.atlassian.net/browse/TC-5853) Move keyspaces creation from &#39;cli&#39; to &#39;tcinfra&#39; 
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 22-Apr-2020 11:28:39 CEST | [#284](https://github.com/tradecloud/tradecloud-microservices-go/pull/284) |  - Fix compose network issue | @denys-kondartiuk |  |
+| 2 | Services (Scala) | 22-Apr-2020 11:25:23 CEST | [#1169](https://github.com/tradecloud/tradecloud-microservices/pull/1169) |  - Fix compose network issue | @denys-kondartiuk |  |
+| 3 | Services (Go) | 17-Apr-2020 15:51:57 CEST | [#282](https://github.com/tradecloud/tradecloud-microservices-go/pull/282) |  Pin &#39;protoc-gen-go&#39; to v1.3.5, bump shared | @vovinacci |  |
+| 4 | Services (Scala) | 14-Apr-2020 09:11:03 CEST | [#1159](https://github.com/tradecloud/tradecloud-microservices/pull/1159) |  Rename sbt project &#39;shared&#39; to &#39;microservices-shared&#39; | @vovinacci |  |
+| 5 | Services (Go) | 09-Apr-2020 10:35:39 CEST | [#274](https://github.com/tradecloud/tradecloud-microservices-go/pull/274) |  Reflect new shared/util package function naming | @vovinacci |  |
+| 6 | Services (Scala) | 08-Apr-2020 10:32:23 CEST | [#1146](https://github.com/tradecloud/tradecloud-microservices/pull/1146) |  Deployment: simplify secrets | @vovinacci |  |
+
+2. [TC-5853](https://tradecloud.atlassian.net/browse/TC-5853) Move keyspaces creation from &#39;cli&#39; to &#39;tcinfra&#39; 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 17-Apr-2020 18:31:09 CEST | [#283](https://github.com/tradecloud/tradecloud-microservices-go/pull/283) |  - Update keyspaces creation | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 17-Apr-2020 18:30:47 CEST | [#1165](https://github.com/tradecloud/tradecloud-microservices/pull/1165) |  - Update keyspaces creation | @denys-kondartiuk |  |
-
-2. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-Apr-2020 15:51:57 CEST | [#282](https://github.com/tradecloud/tradecloud-microservices-go/pull/282) |  Pin &#39;protoc-gen-go&#39; to v1.3.5, bump shared | @vovinacci |  |
-| 2 | Services (Scala) | 14-Apr-2020 09:11:03 CEST | [#1159](https://github.com/tradecloud/tradecloud-microservices/pull/1159) |  Rename sbt project &#39;shared&#39; to &#39;microservices-shared&#39; | @vovinacci |  |
-| 3 | Services (Go) | 09-Apr-2020 10:35:39 CEST | [#274](https://github.com/tradecloud/tradecloud-microservices-go/pull/274) |  Reflect new shared/util package function naming | @vovinacci |  |
-| 4 | Services (Scala) | 08-Apr-2020 10:32:23 CEST | [#1146](https://github.com/tradecloud/tradecloud-microservices/pull/1146) |  Deployment: simplify secrets | @vovinacci |  |
 
 3. [TC-5798](https://tradecloud.atlassian.net/browse/TC-5798) 2FA login api 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
