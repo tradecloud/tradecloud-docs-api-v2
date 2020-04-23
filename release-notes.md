@@ -1,32 +1,33 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 23 19:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 23 21:31:00 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
+1. [TC-5840](https://tradecloud.atlassian.net/browse/TC-5840) Implement rebuilding user index 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 23-Apr-2020 17:14:28 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |   -order item details | @olegtradecloud |  |
+| 1 | Services (Scala) | 23-Apr-2020 21:01:54 CEST | [#1175](https://github.com/tradecloud/tradecloud-microservices/pull/1175) |  DO NOT MERGE - Test PR | @roy-tc |  |
+| 2 | Services (Go) | 23-Apr-2020 15:10:00 CEST | [#286](https://github.com/tradecloud/tradecloud-microservices-go/pull/286) |  DO NOT MERGE - Test PR | @roy-tc |  |
+
+2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Apr-2020 20:58:09 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
+| 2 | Services (Scala) | 23-Apr-2020 20:51:32 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
+| 3 | Services (Go) | 23-Apr-2020 12:26:36 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+
+3. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 23-Apr-2020 20:33:04 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |   -order item details | @olegtradecloud |  |
 | 2 | Services (Scala) | 23-Apr-2020 16:16:32 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
 
-2. [TC-5888](https://tradecloud.atlassian.net/browse/TC-5888) BE: Add enrichment  and webhook support of OrderLinesItemChangedBySupplier event 
+4. [TC-5888](https://tradecloud.atlassian.net/browse/TC-5888) BE: Add enrichment  and webhook support of OrderLinesItemChangedBySupplier event 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Apr-2020 17:04:07 CEST | [#1176](https://github.com/tradecloud/tradecloud-microservices/pull/1176) |   - order item details enrichment | @olegtradecloud |  |
-
-3. [TC-5840](https://tradecloud.atlassian.net/browse/TC-5840) Implement rebuilding user index 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 23-Apr-2020 15:10:00 CEST | [#286](https://github.com/tradecloud/tradecloud-microservices-go/pull/286) |  DO NOT MERGE - Test PR | @roy-tc |  |
-| 2 | Services (Scala) | 23-Apr-2020 15:07:36 CEST | [#1175](https://github.com/tradecloud/tradecloud-microservices/pull/1175) |  DO NOT MERGE - Test PR | @roy-tc |  |
-
-4. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Apr-2020 13:58:27 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
-| 2 | Services (Go) | 23-Apr-2020 12:26:36 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+| 1 | Services (Scala) | 23-Apr-2020 20:31:16 CEST | [#1176](https://github.com/tradecloud/tradecloud-microservices/pull/1176) |   - order item details enrichment | @olegtradecloud |  |
 
 5. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
