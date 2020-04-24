@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 24 13:31:09 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 24 15:30:59 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. [Planned release 30-Apr-2020]
+1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Apr-2020 13:29:03 CEST | [#1173](https://github.com/tradecloud/tradecloud-microservices/pull/1173) |  Lower access token life time to 10 mins | @marcmatt |  |
-| 2 | Services (Go) | 24-Apr-2020 09:26:37 CEST | [#287](https://github.com/tradecloud/tradecloud-microservices-go/pull/287) |  rename apiKey to accessToken | @marcmatt |  |
+| 1 | Services (Scala) | 24-Apr-2020 15:24:26 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
 
-2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+2. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. [Planned release 30-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Apr-2020 13:07:31 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
+| 1 | Services (Scala) | 24-Apr-2020 14:50:41 CEST | [#1173](https://github.com/tradecloud/tradecloud-microservices/pull/1173) |  Lower access token life time to 10 mins | @marcmatt |  |
+| 2 | Services (Go) | 24-Apr-2020 09:26:37 CEST | [#287](https://github.com/tradecloud/tradecloud-microservices-go/pull/287) |  rename apiKey to accessToken | @marcmatt |  |
 
 3. [TC-5743](https://tradecloud.atlassian.net/browse/TC-5743) FE: Support bulk actions for multiple order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 24-Apr-2020 13:05:49 CEST | [#374](https://github.com/tradecloud/tradecloud-portal-angular/pull/374) |  Development: create checkbox column with possibility select… | @bohdantrc |  |
+| 1 | Web Portal | 24-Apr-2020 14:44:15 CEST | [#374](https://github.com/tradecloud/tradecloud-portal-angular/pull/374) |  Development: create checkbox column with possibility select… | @bohdantrc |  |
 | 2 | Services (Scala) | 24-Apr-2020 12:44:16 CEST | [#1178](https://github.com/tradecloud/tradecloud-microservices/pull/1178) | : Quanity fixes for bulk propose action | @dmytrozheliuk |  |
 
 4. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Apr-2020 12:40:41 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
+| 1 | Services (Scala) | 24-Apr-2020 14:19:19 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
 | 2 | Services (Go) | 24-Apr-2020 11:03:46 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |   -order item details | @olegtradecloud |  |
 
 5. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 15-May-2020]
