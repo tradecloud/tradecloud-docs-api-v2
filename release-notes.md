@@ -1,54 +1,55 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 23 21:31:00 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 24 09:31:32 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5840](https://tradecloud.atlassian.net/browse/TC-5840) Implement rebuilding user index 
+1. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. [Planned release 30-Apr-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Apr-2020 09:29:43 CEST | [#1173](https://github.com/tradecloud/tradecloud-microservices/pull/1173) |  Lower access token life time to 10 mins | @marcmatt |  |
+| 2 | Services (Go) | 24-Apr-2020 09:26:37 CEST | [#287](https://github.com/tradecloud/tradecloud-microservices-go/pull/287) |  rename apiKey to accessToken | @marcmatt |  |
+
+2. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 23-Apr-2020 22:18:47 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |   -order item details | @olegtradecloud |  |
+| 2 | Services (Scala) | 23-Apr-2020 22:16:12 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
+
+3. [TC-5888](https://tradecloud.atlassian.net/browse/TC-5888) BE: Add enrichment  and webhook support of OrderLinesItemChangedBySupplier event 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Apr-2020 22:15:56 CEST | [#1176](https://github.com/tradecloud/tradecloud-microservices/pull/1176) |   - order item details enrichment | @olegtradecloud |  |
+
+4. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Apr-2020 21:41:35 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
+| 2 | Services (Scala) | 23-Apr-2020 20:51:32 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
+| 3 | Services (Go) | 23-Apr-2020 12:26:36 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+
+5. [TC-5840](https://tradecloud.atlassian.net/browse/TC-5840) Implement rebuilding user index 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2020 21:01:54 CEST | [#1175](https://github.com/tradecloud/tradecloud-microservices/pull/1175) |  DO NOT MERGE - Test PR | @roy-tc |  |
 | 2 | Services (Go) | 23-Apr-2020 15:10:00 CEST | [#286](https://github.com/tradecloud/tradecloud-microservices-go/pull/286) |  DO NOT MERGE - Test PR | @roy-tc |  |
 
-2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Apr-2020 20:58:09 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
-| 2 | Services (Scala) | 23-Apr-2020 20:51:32 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
-| 3 | Services (Go) | 23-Apr-2020 12:26:36 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
-
-3. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 23-Apr-2020 20:33:04 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |   -order item details | @olegtradecloud |  |
-| 2 | Services (Scala) | 23-Apr-2020 16:16:32 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
-
-4. [TC-5888](https://tradecloud.atlassian.net/browse/TC-5888) BE: Add enrichment  and webhook support of OrderLinesItemChangedBySupplier event 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Apr-2020 20:31:16 CEST | [#1176](https://github.com/tradecloud/tradecloud-microservices/pull/1176) |   - order item details enrichment | @olegtradecloud |  |
-
-5. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 15-May-2020]
+6. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2020 12:02:16 CEST | [#1168](https://github.com/tradecloud/tradecloud-microservices/pull/1168) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 | 2 | Services (Scala) | 22-Apr-2020 16:17:49 CEST | [#1170](https://github.com/tradecloud/tradecloud-microservices/pull/1170) | [TC-5874] Refactor proposal to SupplierLineException | @roy-tc |  |
 
-6. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
+7. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2020 11:28:46 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
 
-7. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
+8. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2020 11:14:51 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
-
-8. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. [Planned release 30-Apr-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Apr-2020 10:57:19 CEST | [#1173](https://github.com/tradecloud/tradecloud-microservices/pull/1173) |  Lower access token life time to 10 mins | @marcmatt |  |
 
 9. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
