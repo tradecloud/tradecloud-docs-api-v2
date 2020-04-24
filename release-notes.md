@@ -1,21 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 24 19:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 24 21:30:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
+1. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. [Planned release 30-Apr-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Apr-2020 20:30:22 CEST | [#1173](https://github.com/tradecloud/tradecloud-microservices/pull/1173) |  Lower access token life time to 10 mins | @marcmatt |  |
+| 2 | Services (Go) | 24-Apr-2020 09:26:37 CEST | [#287](https://github.com/tradecloud/tradecloud-microservices-go/pull/287) |  rename apiKey to accessToken | @marcmatt |  |
+
+2. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page [Planned release 01-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Apr-2020 17:42:55 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
 | 2 | Services (Go) | 24-Apr-2020 11:03:46 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |   -order item details | @olegtradecloud |  |
-
-2. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. [Planned release 30-Apr-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Apr-2020 17:29:57 CEST | [#1173](https://github.com/tradecloud/tradecloud-microservices/pull/1173) |  Lower access token life time to 10 mins | @marcmatt |  |
-| 2 | Services (Go) | 24-Apr-2020 09:26:37 CEST | [#287](https://github.com/tradecloud/tradecloud-microservices-go/pull/287) |  rename apiKey to accessToken | @marcmatt |  |
 
 3. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -308,7 +308,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Go) | 25-Mar-2020 15:16:41 CET | [#263](https://github.com/tradecloud/tradecloud-microservices-go/pull/263) |  - Fix regression | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 25-Mar-2020 15:15:59 CET | [#1112](https://github.com/tradecloud/tradecloud-microservices/pull/1112) |  - Fix regression | @denys-kondartiuk |  |
 | 3 | Web Portal | 25-Mar-2020 15:14:41 CET | [#361](https://github.com/tradecloud/tradecloud-portal-angular/pull/361) |  - Fix regression | @denys-kondartiuk |  |
-| 4 | Services (Go) | 24-Mar-2020 20:07:46 CET | [#261](https://github.com/tradecloud/tradecloud-microservices-go/pull/261) |  - GitHub labels PR flow | @denys-kondartiuk |  |
-| 5 | Services (Scala) | 24-Mar-2020 19:44:08 CET | [#1111](https://github.com/tradecloud/tradecloud-microservices/pull/1111) |  - New GitHub PR flow | @denys-kondartiuk |  |
-| 6 | Web Portal | 24-Mar-2020 19:28:37 CET | [#358](https://github.com/tradecloud/tradecloud-portal-angular/pull/358) |  - New GitHub labels PR flow | @denys-kondartiuk |  |
 
