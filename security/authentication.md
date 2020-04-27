@@ -87,7 +87,7 @@ Set-Refresh-Token: <Refresh-Token>
 
 Log out will **invalidate the refresh token immediately**. The access token will expire after 10 minutes.
 
-You can refresh your refresh token by placing an HTTP request to `/authentication/logout`, using   
+You can invalidate your refresh token by placing an HTTP request to `/authentication/logout`, using   
 **only** **the Refresh-Token header.** **Do NOT use the Authorization header**.
 
 ```text
