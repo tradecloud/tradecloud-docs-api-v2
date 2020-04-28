@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 28 15:31:01 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Apr 28 17:31:01 CEST 2020)
 ---
 
 
@@ -8,27 +8,28 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2020 15:05:21 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
+| 1 | Services (Scala) | 28-Apr-2020 17:26:58 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
 
 2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2020 14:42:50 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
+| 1 | Services (Scala) | 28-Apr-2020 17:02:33 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 
-3. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
+3. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 28-Apr-2020 16:00:32 CEST | [#1180](https://github.com/tradecloud/tradecloud-microservices/pull/1180) |  Update FutureUtils  | @aShevc |  |
+| 2 | Services (Go) | 27-Apr-2020 10:01:57 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
+
+4. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-Apr-2020 14:06:36 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
 
-4. [TC-5327](https://tradecloud.atlassian.net/browse/TC-5327) Change FTP settings header to FTPS/SFTP [Planned release 30-Apr-2020]
+5. [TC-5327](https://tradecloud.atlassian.net/browse/TC-5327) Change FTP settings header to FTPS/SFTP [Planned release 30-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-Apr-2020 11:08:07 CEST | [#379](https://github.com/tradecloud/tradecloud-portal-angular/pull/379) |  Development: change text from FTP to FTPS/SFTP | @bohdantrc |  |
-
-5. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 27-Apr-2020 10:01:57 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
 
 6. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -68,26 +69,36 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 
 ## Changelog
 
-1. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page 
+1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 28-Apr-2020 16:59:24 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
+| 2 | Services (Go) | 24-Apr-2020 12:52:53 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
+| 3 | Services (Scala) | 24-Apr-2020 12:51:34 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
+| 4 | Services (Scala) | 15-Apr-2020 14:29:36 CEST | [#1157](https://github.com/tradecloud/tradecloud-microservices/pull/1157) |  Remove WorkflowTaskViewUpdated and add superuser OpenAPI specs | @roy-tc |  |
+| 5 | Services (Scala) | 13-Apr-2020 08:56:18 CEST | [#1122](https://github.com/tradecloud/tradecloud-microservices/pull/1122) | [TC-5739] Reindex persisted entities | @roy-tc |  |
+| 6 | Services (Scala) | 03-Apr-2020 12:02:19 CEST | [#1133](https://github.com/tradecloud/tradecloud-microservices/pull/1133) |  Simplify signature of TestKit | @roy-tc |  |
+
+2. [TC-5048](https://tradecloud.atlassian.net/browse/TC-5048) As Damen I want to display part data in the order line detail page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-Apr-2020 13:43:16 CEST | [#1152](https://github.com/tradecloud/tradecloud-microservices/pull/1152) |  add update order line item support | @olegtradecloud |  |
 | 2 | Services (Go) | 28-Apr-2020 09:51:54 CEST | [#281](https://github.com/tradecloud/tradecloud-microservices-go/pull/281) |  Order item details | @olegtradecloud |  |
 
-2. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. 
+3. [TC-5873](https://tradecloud.atlassian.net/browse/TC-5873) As DevOps I want to lower the access token lifetime from 1 hour to 10 mins. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 27-Apr-2020 22:42:22 CEST | [#287](https://github.com/tradecloud/tradecloud-microservices-go/pull/287) |  rename apiKey to accessToken | @marcmatt |  |
 | 2 | Services (Scala) | 27-Apr-2020 22:05:59 CEST | [#1173](https://github.com/tradecloud/tradecloud-microservices/pull/1173) |  Lower access token life time to 10 mins | @marcmatt |  |
 
-3. [TC-5743](https://tradecloud.atlassian.net/browse/TC-5743) FE: Support bulk actions for multiple order lines 
+4. [TC-5743](https://tradecloud.atlassian.net/browse/TC-5743) FE: Support bulk actions for multiple order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Apr-2020 14:51:41 CEST | [#1178](https://github.com/tradecloud/tradecloud-microservices/pull/1178) |  Quantity fixes for bulk propose action | @dmytrozheliuk |  |
 | 2 | Web Portal | 24-Apr-2020 16:50:46 CEST | [#374](https://github.com/tradecloud/tradecloud-portal-angular/pull/374) |  Development: create checkbox column with possibility select… | @bohdantrc |  |
 | 3 | Web Portal | 23-Apr-2020 10:15:44 CEST | [#378](https://github.com/tradecloud/tradecloud-portal-angular/pull/378) |  Development: bulk actions | @bohdantrc |  |
 
-4. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+5. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Apr-2020 08:43:36 CEST | [#1179](https://github.com/tradecloud/tradecloud-microservices/pull/1179) |  Address issue with a legacy user synced processed before the company synced. | @vovinacci |  |
@@ -97,15 +108,6 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 5 | Services (Scala) | 14-Apr-2020 09:11:03 CEST | [#1159](https://github.com/tradecloud/tradecloud-microservices/pull/1159) |  Rename sbt project &#39;shared&#39; to &#39;microservices-shared&#39; | @vovinacci |  |
 | 6 | Services (Go) | 09-Apr-2020 10:35:39 CEST | [#274](https://github.com/tradecloud/tradecloud-microservices-go/pull/274) |  Reflect new shared/util package function naming | @vovinacci |  |
 | 7 | Services (Scala) | 08-Apr-2020 10:32:23 CEST | [#1146](https://github.com/tradecloud/tradecloud-microservices/pull/1146) |  Deployment: simplify secrets | @vovinacci |  |
-
-5. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 24-Apr-2020 12:52:53 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
-| 2 | Services (Scala) | 24-Apr-2020 12:51:34 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
-| 3 | Services (Scala) | 15-Apr-2020 14:29:36 CEST | [#1157](https://github.com/tradecloud/tradecloud-microservices/pull/1157) |  Remove WorkflowTaskViewUpdated and add superuser OpenAPI specs | @roy-tc |  |
-| 4 | Services (Scala) | 13-Apr-2020 08:56:18 CEST | [#1122](https://github.com/tradecloud/tradecloud-microservices/pull/1122) | [TC-5739] Reindex persisted entities | @roy-tc |  |
-| 5 | Services (Scala) | 03-Apr-2020 12:02:19 CEST | [#1133](https://github.com/tradecloud/tradecloud-microservices/pull/1133) |  Simplify signature of TestKit | @roy-tc |  |
 
 6. [TC-5888](https://tradecloud.atlassian.net/browse/TC-5888) BE: Add enrichment  and webhook support of OrderLinesItemChangedBySupplier event 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
