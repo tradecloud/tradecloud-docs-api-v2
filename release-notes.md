@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 29 09:31:30 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 29 11:31:02 CEST 2020)
 ---
 
 
@@ -8,33 +8,33 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Apr-2020 06:31:50 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
+| 1 | Services (Scala) | 29-Apr-2020 11:16:57 CEST | [#1166](https://github.com/tradecloud/tradecloud-microservices/pull/1166) |  Added order-response endpoint | @aShevc |  |
 
-2. [TC-5896](https://tradecloud.atlassian.net/browse/TC-5896) Portal should logout should send the refresh token [Planned release 30-Apr-2020]
+2. [TC-5890](https://tradecloud.atlassian.net/browse/TC-5890) user profile setting changes fail until you manually change the profile picture.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Apr-2020 22:00:20 CEST | [#380](https://github.com/tradecloud/tradecloud-portal-angular/pull/380) |  logout with refresh token | @bohdantrc |  |
+| 1 | Services (Scala) | 29-Apr-2020 11:14:11 CEST | [#1182](https://github.com/tradecloud/tradecloud-microservices/pull/1182) |  - fix user profile update | @olegtradecloud |  |
 
-3. [TC-5890](https://tradecloud.atlassian.net/browse/TC-5890) user profile setting changes fail until you manually change the profile picture.  
+3. [TC-5896](https://tradecloud.atlassian.net/browse/TC-5896) Portal should logout should send the refresh token [Planned release 30-Apr-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2020 19:05:39 CEST | [#1182](https://github.com/tradecloud/tradecloud-microservices/pull/1182) |  - fix user profile update | @olegtradecloud |  |
+| 1 | Web Portal | 29-Apr-2020 11:12:46 CEST | [#380](https://github.com/tradecloud/tradecloud-portal-angular/pull/380) |  logout with refresh token | @bohdantrc |  |
 
-4. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+4. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 29-Apr-2020 10:05:07 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
+
+5. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-Apr-2020 17:02:33 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 
-5. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+6. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-Apr-2020 16:00:32 CEST | [#1180](https://github.com/tradecloud/tradecloud-microservices/pull/1180) |  Update FutureUtils  | @aShevc |  |
 | 2 | Services (Go) | 27-Apr-2020 10:01:57 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
-
-6. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2020 14:06:36 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
 
 7. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
