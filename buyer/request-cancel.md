@@ -10,7 +10,7 @@ This feature is planned and API and documentation may change.
 
 If an order or line is confirmed \(both parties agreed on the delivery of goods\) then the buyer should  request to cancel the order / line.
 
-You can request to cancel by setting `indicators.cancelRequest`on either order or line level and reissue the order:
+The buyer can request to cancel by setting `indicators.cancelRequest`on either order or line level and reissue the order:
 
 {% page-ref page="reissue.md" %}
 

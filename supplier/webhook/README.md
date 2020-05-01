@@ -95,6 +95,11 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 * `supplierLine`: the supplier part of the order line
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [confirmed line](./#confirmed-line) below.
 * `indicators.deliveryOverdue` is true when the order line is overdue
+
+{% hint style="warning" %}
+The`deliveryOverdue`feature is planned and API and documentation may change. 
+{% endhint %}
+
 * `status.processStatus`: the order line process status, see [status](./#status) below.
 * `status.logisticsStatus`: the order line logistics status, see [status](./#status) below.
 * `eventDates`: some key line event date/times

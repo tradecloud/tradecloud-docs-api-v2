@@ -4,8 +4,6 @@ description: How to request the supplier to reopen an order line
 
 # Request to reopen an order
 
-
-
 {% hint style="warning" %}
 This feature is under development and API and documentation may change. 
 {% endhint %}
@@ -28,7 +26,7 @@ An order line having process status `Confirmed` will become `InProgress`
 
 ## Automatic reopen request
 
-When you reissue a line and change line `item`, `delivery schedule` or `prices`, Tradecloud will automatically create line level reopen workflow task for the supplier. In this case you do not have to set `indicators.reopened`
+When you reissue an order line with  **requested** `delivery schedule` and `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create a line level reopen workflow task for the supplier. In this case you do not have to set `indicators.reopened`
 
 {% page-ref page="reissue.md" %}
 
