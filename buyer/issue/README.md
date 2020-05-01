@@ -14,8 +14,6 @@ As a buyer you can send a new purchase order to Tradecloud.
 After processing the order lines will have order process status `Issued`
 {% endhint %}
 
-### Send order API method
-
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order-integration/order" %}
 {% api-method-summary %}
 Send order by buyer
@@ -54,9 +52,7 @@ Order JSON body
 [Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute)
 {% endhint %}
 
-### Order body JSON objects
-
-#### Order
+## Order
 
 * `companyId`: your Tradecloud company identifier. You can find your company id in the URL when selecting "My company" in the portal dropdown menu. For example in `https://portal.accp.tradecloud1.com/company/06893bba-e131-4268-87c9-7fae64e16ee9` the last part `06893bba-e131-4268-87c9-7fae64e16ee9` is the company id.
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
@@ -86,7 +82,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 {% page-ref page="attach-document.md" %}
 
-#### Lines
+## Lines
 
 * `lines`: a purchase order contains one or multiple lines
 * `line`: a purchase order line which contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
@@ -96,7 +92,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 `lines.position` should be unique within the order and never change. Never renumber or re-use `position` numbers.
 {% endhint %}
 
-#### Item
+### Item
 
 * `lines.item`: the item \(or article, goods\) to be delivered
 * `lines.item.number`: the item code or number as known in your ERP
@@ -109,7 +105,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 `item.number` should be unique within your company and never change. Never renumber or re-use `item.number`s.
 {% endhint %}
 
-#### Item details
+### Item details
 
 * `lines.itemDetails`: detailed part information initially provided by buyer.
 
@@ -127,7 +123,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 * `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
 * `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer
 
-#### Requested planned delivery schedule
+### Requested planned delivery schedule
 
 * `line.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
 * `deliverySchedule.position`: the position in the delivery schedule. Not to be confused with the `line.position`
@@ -138,7 +134,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 `deliverySchedule.position` should be unique within the delivery schedule and never change. Never renumber or re-use `deliverySchedule.position`s.
 {% endhint %}
 
-#### Requested prices
+### Requested prices
 
 * `lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
 * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
@@ -167,7 +163,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 {% page-ref page="attach-document.md" %}
 
-#### New order meta data
+### New order meta data
 
 * `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../../api/standards.md).
 * `erpIssuedBy`: the user email or user name as known in your ERP system who issued this order

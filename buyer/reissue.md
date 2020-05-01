@@ -26,9 +26,9 @@ The `/order-integration/order` API method is the same as when [sending a new ord
 The update is event oriented, you only have to send the lines new or updated. But you can also send all lines anyway.
 {% endhint %}
 
-### Additional order body JSON objects
+## Additional fields
 
-#### Actual delivery schedule
+### Actual delivery schedule
 
 * `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery schedule lines. These will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
 * `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` versus `deliveryHistory.position` do not have to use the same values.
@@ -39,7 +39,7 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 `deliveryHistory.position` should be unique within the delivery history and never change. Never renumber or re-use `deliveryHistory.position`s.
 {% endhint %}
 
-#### Additional order and line indicators
+### Additional order and line indicators
 
 * `indicators`: 
 
@@ -53,7 +53,7 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 {% page-ref page="request-reopen.md" %}
 
-#### Updated order meta data
+### Updated order meta data
 
 * `erpLastChangeDateTime`: Date and time the order was updated in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../api/standards.md).
 * `erpLastChangedBy`: he user email or user name as known in your ERP system who updated this order
