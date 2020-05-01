@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 1 15:31:06 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 1 17:30:57 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+1. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 01-May-2020 17:05:14 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
+
+2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-May-2020 15:00:12 CEST | [#1191](https://github.com/tradecloud/tradecloud-microservices/pull/1191) | [TC-5859] DO NOT MERGE - Test PR | @roy-tc |  |
 | 2 | Services (Scala) | 01-May-2020 14:57:04 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 
-2. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) BE: Add changes to the domain model for new activity design 
+3. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) BE: Add changes to the domain model for new activity design 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-May-2020 14:17:11 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
-
-3. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-May-2020 11:29:11 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
 
 4. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 13-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -233,8 +233,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Go) | 13-Apr-2020 15:16:43 CEST | [#276](https://github.com/tradecloud/tradecloud-microservices-go/pull/276) |  Updated logging mechanism for services | @aShevc |  |
 | 2 | Services (Scala) | 10-Apr-2020 10:52:57 CEST | [#1119](https://github.com/tradecloud/tradecloud-microservices/pull/1119) |  Enrich supplier side order events in company service | @aShevc |  |
 | 3 | Services (Go) | 09-Apr-2020 17:24:51 CEST | [#262](https://github.com/tradecloud/tradecloud-microservices-go/pull/262) |  Supplier webhook | @marcmatt |  |
-| 4 | Services (Go) | 01-Apr-2020 16:24:07 CEST | [#265](https://github.com/tradecloud/tradecloud-microservices-go/pull/265) |  Updated Kafka env variables | @aShevc |  |
-| 5 | Services (Scala) | 01-Apr-2020 16:15:08 CEST | [#1126](https://github.com/tradecloud/tradecloud-microservices/pull/1126) |  Update Kafka env variables | @aShevc |  |
 
 28. [TC-5494](https://tradecloud.atlassian.net/browse/TC-5494) Basic 2FA 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -319,9 +317,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Apr-2020 17:24:04 CEST | [#363](https://github.com/tradecloud/tradecloud-portal-angular/pull/363) |  Deployment: set correct API path for reset and recovery pas… | @bohdantrc |  |
-
-42. [TC-4591](https://tradecloud.atlassian.net/browse/TC-4591) As Delaware SAP consultant I want to rearrange Voortman&#39;s SAP function modules 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Apr-2020 16:55:13 CEST | [#1127](https://github.com/tradecloud/tradecloud-microservices/pull/1127) |  Re-enable Voortman ztradecloud_interfaces in prod env | @marcmatt |  |
 
