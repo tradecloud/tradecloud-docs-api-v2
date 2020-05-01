@@ -65,7 +65,7 @@ Order JSON body
 {% endhint %}
 
 {% hint style="warning" %}
-The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or at any time in the connection overview in the portal.
+The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
 #### Other order fields
@@ -126,7 +126,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 ### Requested planned delivery schedule
 
 * `line.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
-* `deliverySchedule.position`: the position in the delivery schedule. Not to be confused with the `line.position`
+* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
@@ -159,11 +159,8 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
 * `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
-* `documents`: contain meta data and link of attached documents, see:
 
-{% page-ref page="attach-document.md" %}
-
-### New order meta data
+## New order meta data
 
 * `erpIssueDateTime`: Date and time the order was originally issued in your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../../api/standards.md).
 * `erpIssuedBy`: the user email or user name as known in your ERP system who issued this order

@@ -44,7 +44,7 @@
   * [Ship goods](buyer/ship-goods.md)
   * [Receive goods](buyer/receive-goods.md)
   * [Complete an order](buyer/complete.md)
-  * [Request to reopen a line](buyer/request-reopen.md)
+  * [Request to reopen an order](buyer/request-reopen.md)
   * [Request to cancel an order](buyer/request-cancel.md)
 * [Supplier order process](supplier/README.md)
   * [Supplier order process overview](supplier/overview.md)
