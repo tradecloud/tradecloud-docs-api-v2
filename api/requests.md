@@ -13,8 +13,6 @@ An API request consist of:
 * [URL](requests.md#URL): HTTPS, environment, service, method and parameters
 * [JSON body](requests.md#json-body) which contains the payload
 
-For an example see:
-
 ## HTTP method
 
 The API supports
