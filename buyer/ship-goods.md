@@ -8,7 +8,7 @@ description: How to announce the supplier has shipped goods
 This feature is planned and API and documentation may change. 
 {% endhint %}
 
-When an order or line is completely shipped by the supplier, it can be marked as shipped by setting `indicators.shipped`on either order or line level and reissue the order:
+When an order or line is completely shipped by the supplier, it can can be marked as shipped by setting `indicators.shipped`on either order or line level and reissue the order:
 
 {% page-ref page="reissue.md" %}
 

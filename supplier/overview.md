@@ -4,8 +4,6 @@ description: Overview of the supplier order process.
 
 # Supplier order process overview
 
-
-
 ## Step 1. Receive an order
 
 As a supplier you can [Receive an order](webhook/)

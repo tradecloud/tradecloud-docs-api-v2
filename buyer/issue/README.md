@@ -167,5 +167,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 ## Response
 
-When the `/order-integration/order` API method returns HTTP status code 200, the order was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order is available in the portal and is forwarded to the supplier ERP integration.
+Only a HTTP status code will be returned
+
+When the `/order-integration/order` API method returns HTTP status code 200, the order was successfully queued to be processed by Tradecloud. Processing takes usually less then a second, after which the order is available in the portal and is forwarded to the supplier ERP integration.
 
