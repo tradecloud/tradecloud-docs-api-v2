@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 1 17:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 1 19:30:58 CEST 2020)
 ---
 
 
@@ -300,8 +300,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 6 | Web Portal | 03-Apr-2020 11:39:45 CEST | [#366](https://github.com/tradecloud/tradecloud-portal-angular/pull/366) |  - Reverse order for tcinfra arguments | @denys-kondartiuk |  |
 | 7 | Web Portal | 03-Apr-2020 11:06:42 CEST | [#365](https://github.com/tradecloud/tradecloud-portal-angular/pull/365) |  - Portal Regression | @denys-kondartiuk |  |
 | 8 | Services (Go) | 01-Apr-2020 19:33:30 CEST | [#266](https://github.com/tradecloud/tradecloud-microservices-go/pull/266) |  - Use &#39;tcinfra&#39; instead fo &#39;deploy_microservices.py&#39; to dep… | @denys-kondartiuk |  |
-| 9 | Web Portal | 01-Apr-2020 19:25:24 CEST | [#364](https://github.com/tradecloud/tradecloud-portal-angular/pull/364) |  - Use &#39;tcinfra&#39; instead fo &#39;deploy_microservices.py&#39; to dep… | @denys-kondartiuk |  |
-| 10 | Services (Scala) | 01-Apr-2020 19:10:24 CEST | [#1128](https://github.com/tradecloud/tradecloud-microservices/pull/1128) |  - Use &#39;tcinfra&#39; instead of &#39;deploy_microservices.py&#39; for ac… | @denys-kondartiuk |  |
 
 39. [TC-5773](https://tradecloud.atlassian.net/browse/TC-5773) Object filename and contentType are switched in meta data 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
