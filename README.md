@@ -30,7 +30,7 @@ For successful onboarding you need to have experience with these [standards](api
 
 {% page-ref page="supplier/webhook/" %}
 
-TO DO [Send an order response](supplier/accept/)
+{% page-ref page="supplier/send-order-response/" %}
 
 {% page-ref page="supplier/overview.md" %}
 

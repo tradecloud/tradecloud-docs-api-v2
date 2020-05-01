@@ -1,5 +1,5 @@
 ---
-description: How to issue a new order as a buyer
+description: How to issue a new purchase order as a buyer
 ---
 
 # Issue a new order

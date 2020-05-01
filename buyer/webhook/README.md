@@ -1,5 +1,5 @@
 ---
-description: How to receive an order response sent by the supplier
+description: How to receive a purchase order response sent by the supplier
 ---
 
 # Receive an order response
@@ -11,7 +11,7 @@ A supplier will response to an issued order line by either accepting or rejectin
 To receive an order response you will need to use the [webhook connector](https://tradecloud.gitbook.io/connectors/webhook-connector).  
 When an order response is new or has been changed at Tradecloud, we will trigger your webhook.
 
-You can either choose to receive the order id and GET the order yourself or to receive the order event.
+You can either choose to receive the order id and GET the order yourself or alternatively to receive the order event which contains the affected lines.
 
 {% hint style="warning" %}
 When you **GET the order yourself** you will get **ALL** the order lines.
@@ -22,7 +22,8 @@ When you use **the order event** it will **ONLY** contain the lines **affected**
 In case of a **GET webhook**, using the **order id** you can fetch the actual order from Tradecloud:
 
 {% hint style="info" %}
-[API v2 GET order specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
+[GET webhook eindpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookGet)  
+[API v2 GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
 {% endhint %}
 
 In case of **POST** or **PUT** **webhook** you can use the **order event** inside the request JSON body:
@@ -31,7 +32,20 @@ In case of **POST** or **PUT** **webhook** you can use the **order event** insid
 [POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
 {% endhint %}
 
-### Order body JSON objects <a id="order-body-json-objects"></a>
+### Body JSON objects <a id="order-body-json-objects"></a>
+
+#### Event
+
+In case of an **POST or PUT webhook** the body will contain:
+
+* `eventName:`The event name summarizes what happened, one of:
+  * `OrderLinesAcceptedBySupplier`: Supplier has accepted order lines.
+  * `OrderLinesRejectedBySupplier`: Supplier has rejected order lines.
+  * `OrderChangesProposalApprovedByBuyer`: Buyer has approved proposed order lines.
+  * `OrderLinesItemDetailsChangedBySupplier`: Supplier changed item details.
+  * `OrderDocumentsAttachedBySupplier`: Supplier[ attached documents](download-document.md) to order or line.
+  * `OrderSynced`: Order has been synced from the legacy platform.
+* `orderEvent`: The actual order event, see **Order** below.
 
 #### Order
 
@@ -46,7 +60,9 @@ In case of **POST** or **PUT** **webhook** you can use the **order event** insid
 
 #### Buyer order part
 
-`buyerOrder` is an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
+`buyerOrder` is mostly an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
+
+* `supplierAccountNumber`: the supplier account number as known in your ERP system
 
 #### Supplier order part
 

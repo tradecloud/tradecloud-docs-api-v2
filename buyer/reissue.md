@@ -1,5 +1,5 @@
 ---
-description: How to reissue an order as a buyer
+description: How to reissue an existing purchase order as a buyer
 ---
 
 # Reissue an existing order
