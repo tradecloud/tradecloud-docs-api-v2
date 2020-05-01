@@ -32,26 +32,22 @@ In case of **POST** or **PUT** **webhook** you can use the **order event** insid
 [POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
 {% endhint %}
 
-## Event
+### Body JSON objects <a id="order-body-json-objects"></a>
+
+#### Event
 
 In case of an **POST or PUT webhook** the body will contain:
 
-* `eventName:`The event name summarizes what has happened.
+* `eventName:`The event name summarizes what happened, one of:
+  * `OrderLinesAcceptedBySupplier`: Supplier has accepted order lines.
+  * `OrderLinesRejectedBySupplier`: Supplier has rejected order lines.
+  * `OrderChangesProposalApprovedByBuyer`: Buyer has approved proposed order lines.
+  * `OrderLinesItemDetailsChangedBySupplier`: Supplier changed item details.
+  * `OrderDocumentsAttachedBySupplier`: Supplier[ attached documents](download-document.md) to order or line.
+  * `OrderSynced`: Order has been synced from the legacy platform.
+* `orderEvent`: The actual order event, see **Order** below.
 
-{% hint style="info" %}
-The **event name** is one of:
-
-* `OrderLinesAcceptedBySupplier`: Supplier has accepted order lines.
-* `OrderLinesRejectedBySupplier`: Supplier has rejected order lines.
-* `OrderChangesProposalApprovedByBuyer`: Buyer has approved proposed order lines.
-* `OrderLinesItemDetailsChangedBySupplier`: Supplier changed item details.
-* `OrderDocumentsAttachedBySupplier`: Supplier[ attached documents](download-document.md) to order or line.
-* `OrderSynced`: Order has been synced from the legacy platform.
-{% endhint %}
-
-* `orderEvent`: The actual order event:
-
-## Order
+#### Order
 
 * `id`: the Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order
@@ -62,13 +58,13 @@ The **event name** is one of:
 * `version`: the  Tradecloud order version number
 * `eventDates`: some key order event date/times
 
-### Buyer order part
+#### Buyer order part
 
 `buyerOrder` is mostly an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
 
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
 
-### Supplier order part
+#### Supplier order part
 
 `supplierOrder` contains the supplier order fields:
 
@@ -80,9 +76,9 @@ The **event name** is one of:
 * `notes`: are simple custom fields, added by the supplier
 * `documents`: contain meta data and link of attached documents by the supplier.  
 
-  {% page-ref page="download-document.md" %}
+{% page-ref page="download-document.md" %}
 
-## Order lines
+#### Order lines
 
 `lines` contains one or more order lines:
 
@@ -91,12 +87,7 @@ The **event name** is one of:
 * `supplierLine`: the supplier part of the order line, see below
 * `confirmedLine`: the order line as agreed between buyer and supplier, see below
 * `indicators.deliveryOverdue` is true when all order lines are overdue
-* `status.processStatus`: the order line process status, see [status](./#status).
-* `status.logisticsStatus`: the order line logistics status, see [status](./#status)
-* `eventDates`: some key line event date/times
-* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [item details](./#item-details).
-
-### Status
+* `status.processStatus`: the order line process status
 
 {% hint style="info" %}
 Order and line **process** status is one of:
@@ -109,6 +100,8 @@ Order and line **process** status is one of:
 * `Cancelled`: cancelled by either buyer or supplier
 {% endhint %}
 
+* `status.logisticsStatus`: the order line logistics status
+
 {% hint style="info" %}
 Order and line **logistics** status is one of:
 
@@ -117,7 +110,10 @@ Order and line **logistics** status is one of:
 * `Delivered`: delivered at the buyer
 {% endhint %}
 
-### Item details
+* `eventDates`: some key line event date/times
+* `mergedItemDetails`: detailed part information provided by both buyer and supplier.
+
+#### Item details
 
 {% hint style="info" %}
 The buyer may send item details to inform the supplier about part information.  
@@ -133,11 +129,11 @@ The supplier may check, change and add item details if they are not correct or i
 * `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
 * `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer
 
-### Buyer line part
+#### Buyer line part
 
 `buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
 
-### **Supplier line part**
+**Supplier line part**
 
 `supplierLine` contains the supplier order line fields:
 
@@ -151,7 +147,7 @@ The supplier may check, change and add item details if they are not correct or i
 
 {% page-ref page="download-document.md" %}
 
-## Supplier proposal
+#### Supplier proposal
 
 `proposal`: in stead of accepting or rejecting an order line, the supplier can alternatively propose a different delivery schedule and prices.
 
@@ -164,7 +160,7 @@ If the proposal status is `Proposed`the buyer should approve or reject it.
 * `reason`: the reason of this proposal given by the supplier
 * `status`: one of`Proposed`by the supplier, or `Approved` or `Rejected` by the buyer.
 
-## Confirmed line
+Confirmed line
 
 `confirmedLine`: the agreed order line between buyer and supplier.
 
@@ -175,15 +171,15 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `deliverySchedule`: agreed delivery schedule, see below
 * `prices`: agreed prices, see below
 
-### Confirmed or proposed delivery schedule
+#### Confirmed or proposed delivery schedule
 
 `deliverySchedule`: the confirmed or proposed planned delivery schedule.
 
-* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
+* `deliverySchedule.position`: the position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
-### Confirmed or proposed prices
+#### Confirmed or proposed prices
 
 `prices`: the confirmed or proposed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
 
