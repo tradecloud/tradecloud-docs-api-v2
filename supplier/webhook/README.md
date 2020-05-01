@@ -66,7 +66,7 @@ The **event name** is one of:
 
 `buyerOrder` contains the buyer order fields:
 
-* `companyId`: the supplier's Tradecloud company identifier. 
+* `companyId`: the buyer's Tradecloud company identifier. 
 * `supplierAccountNumber`: your account number as known in the buyer's ERP system
 * `description`: a free format additional description of this order added by the buyer
 * `contact`: the buyer employee responsible for this order. 
@@ -83,27 +83,27 @@ The **event name** is one of:
 * `buyerAccountNumber`: the buyer account number as known in your ERP system.
 
 {% hint style="warning" %}
-The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
+The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your buyer. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
 ## Order lines
 
 `lines` contains one or more order lines:
 
-* `id`: the Tradecloud line identifier
-* `buyerLine`: the buyer part of the order line, see below
-* `supplierLine`: the supplier part of the order line
-* `confirmedLine`: the order line as agreed between buyer and supplier, see [confirmed line](./#confirmed-line) below.
-* `indicators.deliveryOverdue` is true when the order line is overdue
+* `id`: the Tradecloud line identifier.
+* `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part) below.
+* `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part) below.
+* `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line) below.
+* `indicators.deliveryOverdue` is true when the order line is overdue.
 
 {% hint style="warning" %}
 The`deliveryOverdue`feature is planned and API and documentation may change. 
 {% endhint %}
 
-* `status.processStatus`: the order line process status, see [status](./#status) below.
-* `status.logisticsStatus`: the order line logistics status, see [status](./#status) below.
-* `eventDates`: some key line event date/times
-* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [item details](./#item-details).
+* `status.processStatus`: the order line process status, see [Status](./#status) below.
+* `status.logisticsStatus`: the order line logistics status, see [Status](./#status) below.
+* `eventDates`: some key line event date/times.
+* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](./#item-details).
 
 ### Status
 
@@ -148,7 +148,7 @@ Order and line **logistics** status is one of:
 {% hint style="info" %}
 The buyer may send item details to inform the supplier about part information.  
 The supplier may check, change and add item details if they are not correct or incomplete.  
-The `mergedItemDetails` will contain the merged original item details added by the buyer merged with the changed or added item details by the supplier.
+The `mergedItemDetails` will contain the original item details added by the buyer merged with the changed or added item details by the supplier.
 {% endhint %}
 
 * `countryOfOriginCodeIso2`: The ISO 3166-1 alpha-2 country code of manufacture, production, or growth where an article or product comes from.
@@ -161,14 +161,14 @@ The `mergedItemDetails` will contain the merged original item details added by t
 
 ### Requested planned delivery schedule
 
-* `line.deliverySchedule`: the requested planned delivery schedule. 
+* `line.deliverySchedule`: the requested planned delivery schedule by the buyer. 
 * `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 ### Requested prices
 
-* `lines.prices`: the requested price. Buyers are advised is to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`. 
+* `lines.prices`: the requested price. Buyers are advised to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`. 
 * `priceInTransactionCurrency`: the price in the transaction currency, like `CNY` in China.
 * `priceInBaseCurrency`: optional price in the buyer's base currency, like `EUR` in the EU.
 * `value`: the price value has a decimal `1234.56` format with any number of digits.

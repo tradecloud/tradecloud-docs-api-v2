@@ -26,11 +26,17 @@ An order line having process status `Confirmed` will become `InProgress`
 
 ## Automatic reopen request
 
-When the supplier sends an order response update with **responded** `delivery schedule` and `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create line level reopen workflow task for the supplier. In this case you do not have to set `indicators.reopened`
+When the supplier sends an order response update with **responded** `delivery schedule` and `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create line level reopen workflow task for the supplier. 
+
+When possible provide the supplier line `reason`field.
+
+In this case you do not have to set the supplier line `indicators.reopened`
 
 {% page-ref page="send-order-response/" %}
 
 ## Forced reopen request
 
-If you want the change other line values, you can force a reopen request by setting `indicators.reopenRequest`on line level and send an order response update.
+If you want the change other line values, you can force a reopen request by setting the supplier line`indicators.reopenRequest`and send an order response update.
+
+When possible provide the supplier line `reason`field.
 

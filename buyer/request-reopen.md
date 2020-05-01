@@ -26,13 +26,17 @@ An order line having process status `Confirmed` will become `InProgress`
 
 ## Automatic reopen request
 
-When you reissue an order line with  **requested** `delivery schedule` and `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create a line level reopen workflow task for the supplier. In this case you do not have to set `indicators.reopened`
+When you reissue an order line with  **requested** `delivery schedule` and `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create a line level reopen workflow task for the supplier. 
+
+In this case you do not have to set buyer line  `indicators.reopened`
+
+When possible provide the buyer line `reason`field.
 
 {% page-ref page="reissue.md" %}
 
 ## Forced reopen request
 
-If you want the change other line values you can force a reopen request by setting `indicators.reopenRequest`on line level and reissue the order.
+If you want the change other line values you can force a reopen request by setting the buyer line `indicators.reopenRequest` and reissue the order.
 
 {% page-ref page="reissue.md" %}
 

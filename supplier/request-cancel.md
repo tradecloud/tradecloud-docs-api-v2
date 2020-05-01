@@ -10,7 +10,9 @@ This feature is planned and API and documentation may change.
 
 If an order or line is confirmed \(both parties agreed on the delivery of goods\) then the supplier should  request to cancel the order / line.
 
-The supplier can request to cancel by setting `indicators.cancelRequest`on either order or line level and send an order response update:
+The supplier can request to cancel by setting `indicators.cancelRequest`on either order or line level and send an order response update.
+
+When possible provide the supplier line `reason`field.
 
 {% page-ref page="send-order-response/" %}
 

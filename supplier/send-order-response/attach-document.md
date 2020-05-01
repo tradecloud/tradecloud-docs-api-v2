@@ -145,6 +145,10 @@ TO DO: Attach order documents by supplier OpenAPI specs
 * `objectId`: optional Tradecloud object identifier which was returned by the Tradecloud object-storage upload
 * `url`: optional document location if it is not stored in the Tradecloud object-storage.
 
+## Response
+
+When the `/order-integration/order-response/documents` API method returns HTTP status code 200, the order documents were successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order response documents are available in the portal and are forwarded to the buyer ERP integration.
+
 ## Method 2. Attach a document using your company's content server
 
 ### Step 1. Upload to your company's content server
