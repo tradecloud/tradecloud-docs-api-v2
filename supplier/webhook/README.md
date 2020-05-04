@@ -66,22 +66,27 @@ The **event name** is one of:
 
 ## Order
 
-* `id`: the Tradecloud order identifier
-* `buyerOrder`: the buyer part of the order, see below
-* `supplierOrder`: the supplier part of the order
-* `indicators.deliveryOverdue` is true when all order lines are overdue
-* `status.processStatus`: is the aggregate of all lines process status, see below
-* `status.logisticsStatus`: is the aggregate of all lines logistics status, see below
-* `version`: the  Tradecloud order version number
-* `eventDates`: some key order event date/times
+* `id`: the Tradecloud order identifier.
+* `buyerOrder`: the buyer part of the order, see below.
+* `supplierOrder`: the supplier part of the order.
+* `indicators.deliveryOverdue` is true when at least one order line is overdue.
+
+{% hint style="warning" %}
+The`deliveryOverdue`feature is planned and API and documentation may change. 
+{% endhint %}
+
+* `status.processStatus`: is the aggregate of all lines process status, see [status](./#status).
+* `status.logisticsStatus`: is the aggregate of all lines logistics status, see [status](./#status).
+* `version`: the  Tradecloud order version number.
+* `eventDates`: some key order event date/times.
 
 ### Buyer order part
 
 `buyerOrder` contains the buyer order fields:
 
 * `companyId`: the buyer's Tradecloud company identifier. 
-* `supplierAccountNumber`: your account number as known in the buyer's ERP system
-* `description`: a free format additional description of this order added by the buyer
+* `supplierAccountNumber`: your account number as known in the buyer's ERP system.
+* `description`: a free format additional description of this order added by the buyer.
 * `contact`: the buyer employee responsible for this order. 
 * `properties`: are key-value based custom fields, added by the buyer.
 * `notes`: are simple custom fields, added by the buyer.

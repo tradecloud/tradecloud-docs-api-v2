@@ -67,7 +67,12 @@ The **event name** is one of:
 * `id`: the Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order
 * `supplierOrder`: the supplier part of the order, see below
-* `indicators.deliveryOverdue` is true when all order lines are overdue
+* `indicators.deliveryOverdue` is true when at least one order line is overdue.
+
+{% hint style="warning" %}
+The`deliveryOverdue`feature is planned and API and documentation may change. 
+{% endhint %}
+
 * `status.processStatus`: is the aggregate of all lines process status, see below
 * `status.logisticsStatus`: is the aggregate of all lines logistics status, see below
 * `version`: the  Tradecloud order version number
@@ -98,10 +103,15 @@ The **event name** is one of:
 `lines` contains one or more order lines:
 
 * `id`: the Tradecloud line identifier
-* `buyerLine`: the buyer part of the order line
-* `supplierLine`: the supplier part of the order line, see below
-* `confirmedLine`: the order line as agreed between buyer and supplier, see below
-* `indicators.deliveryOverdue` is true when all order lines are overdue
+* `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part).
+* `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part).
+* `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
+* `indicators.deliveryOverdue` is true when the order line is overdue.
+
+{% hint style="warning" %}
+The`deliveryOverdue`feature is planned and API and documentation may change. 
+{% endhint %}
+
 * `status.processStatus`: the order line process status, see [status](./#status).
 * `status.logisticsStatus`: the order line logistics status, see [status](./#status)
 * `eventDates`: some key line event date/times
