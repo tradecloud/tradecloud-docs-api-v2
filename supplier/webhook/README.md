@@ -56,6 +56,8 @@ The **event name** is one of:
 * `OrderReissuedByBuyer`: Updated order has been issued by buyer.
 * `OrderChangesProposalApprovedByBuyer`: Buyer has approved proposed order lines.
 * `OrderChangesProposalRejectedByBuyer`: Buyer has rejected proposed order lines.
+* `OrderLinesReopenRequestApprovedBySupplier`: Supplier has approved changes requested by the buyer.
+* `OrderLinesReopenRequestApprovedByBuyer`: Buyer has approved changes requested by the supplier.
 * `OrderDocumentsAttachedByBuyer`: Buyer [attached documents](download-document.md) to order or lines.
 * `OrderSynced`: Order has been synced from the legacy platform.
 {% endhint %}

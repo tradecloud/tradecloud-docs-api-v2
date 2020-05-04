@@ -54,6 +54,8 @@ The **event name** is one of:
 * `OrderLinesRejectedBySupplier`: Supplier has rejected order lines.
 * `OrderChangesProposalApprovedByBuyer`: Buyer has approved proposed order lines.
 * `OrderLinesItemDetailsChangedBySupplier`: Supplier changed item details.
+* `OrderLinesReopenRequestApprovedBySupplier`: Supplier has approved changes requested by the buyer.
+* `OrderLinesReopenRequestApprovedByBuyer`: Buyer has approved changes requested by the supplier.
 * `OrderDocumentsAttachedBySupplier`: Supplier[ attached documents](download-document.md) to order or line.
 * `OrderSynced`: Order has been synced from the legacy platform.
 {% endhint %}
