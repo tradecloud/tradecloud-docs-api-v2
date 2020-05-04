@@ -1,26 +1,27 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon May 4 15:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 4 17:31:19 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
+1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 04-May-2020 16:46:40 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
+| 2 | Services (Scala) | 04-May-2020 15:44:11 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
+| 3 | Services (Scala) | 04-May-2020 13:34:49 CEST | [#1191](https://github.com/tradecloud/tradecloud-microservices/pull/1191) | [TC-5859] DO NOT MERGE - Test PR | @roy-tc |  |
+| 4 | Services (Scala) | 01-May-2020 14:57:04 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
+
+2. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-May-2020 14:50:28 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
 
-2. [N/A](#)  
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-May-2020 14:40:22 CEST | [#1192](https://github.com/tradecloud/tradecloud-microservices/pull/1192) | TC-5901 authentication refactor | @TizianoPerrucci |  |
-
-3. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-May-2020 14:39:36 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
-| 2 | Services (Scala) | 04-May-2020 13:34:49 CEST | [#1191](https://github.com/tradecloud/tradecloud-microservices/pull/1191) | [TC-5859] DO NOT MERGE - Test PR | @roy-tc |  |
-| 3 | Services (Scala) | 01-May-2020 14:57:04 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 
 4. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
