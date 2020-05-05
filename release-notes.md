@@ -1,28 +1,28 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue May 5 15:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue May 5 17:31:05 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+1. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2020 15:18:14 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
+| 1 | Web Portal | 05-May-2020 16:30:09 CEST | [#384](https://github.com/tradecloud/tradecloud-portal-angular/pull/384) |  Implement dialog for changing part data | @bohdantrc |  |
+
+2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-May-2020 16:26:45 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 | 2 | Services (Go) | 04-May-2020 19:01:59 CEST | [#292](https://github.com/tradecloud/tradecloud-microservices-go/pull/292) | [TC-5857] Listen to company view | @roy-tc |  |
 | 3 | Services (Scala) | 04-May-2020 18:33:17 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
 | 4 | Services (Scala) | 04-May-2020 18:16:35 CEST | [#1195](https://github.com/tradecloud/tradecloud-microservices/pull/1195) | [TC-5857] Implement company reindex support | @roy-tc |  |
 | 5 | Services (Go) | 04-May-2020 17:39:28 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
 
-2. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
+3. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2020 15:04:04 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
-
-3. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-May-2020 14:10:44 CEST | [#384](https://github.com/tradecloud/tradecloud-portal-angular/pull/384) |  Implement dialog for changing part data | @bohdantrc |  |
+| 1 | Services (Scala) | 05-May-2020 15:52:30 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
 
 4. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -82,25 +82,26 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 
 ## Changelog
 
-1. [TC-5828](https://tradecloud.atlassian.net/browse/TC-5828) As Devops I want microservices to use shared library 
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-May-2020 16:14:54 CEST | [#1197](https://github.com/tradecloud/tradecloud-microservices/pull/1197) |  Commit after failure for enriching connections | @roy-tc |  |
+| 2 | Services (Scala) | 04-May-2020 09:13:39 CEST | [#1193](https://github.com/tradecloud/tradecloud-microservices/pull/1193) |  Overriding messages version for microservices | @aShevc |  |
+| 3 | Services (Scala) | 01-May-2020 14:29:55 CEST | [#1190](https://github.com/tradecloud/tradecloud-microservices/pull/1190) |  Trigger full rebuild | @roy-tc |  |
+| 4 | Services (Scala) | 29-Apr-2020 15:26:11 CEST | [#1180](https://github.com/tradecloud/tradecloud-microservices/pull/1180) |  Update FutureUtils  | @aShevc |  |
+| 5 | Services (Scala) | 27-Apr-2020 08:43:36 CEST | [#1179](https://github.com/tradecloud/tradecloud-microservices/pull/1179) |  Address issue with a legacy user synced processed before the company synced. | @vovinacci |  |
+| 6 | Services (Go) | 22-Apr-2020 11:28:39 CEST | [#284](https://github.com/tradecloud/tradecloud-microservices-go/pull/284) |  - Fix compose network issue | @denys-kondartiuk |  |
+| 7 | Services (Scala) | 22-Apr-2020 11:25:23 CEST | [#1169](https://github.com/tradecloud/tradecloud-microservices/pull/1169) |  - Fix compose network issue | @denys-kondartiuk |  |
+| 8 | Services (Go) | 17-Apr-2020 15:51:57 CEST | [#282](https://github.com/tradecloud/tradecloud-microservices-go/pull/282) |  Pin &#39;protoc-gen-go&#39; to v1.3.5, bump shared | @vovinacci |  |
+| 9 | Services (Scala) | 14-Apr-2020 09:11:03 CEST | [#1159](https://github.com/tradecloud/tradecloud-microservices/pull/1159) |  Rename sbt project &#39;shared&#39; to &#39;microservices-shared&#39; | @vovinacci |  |
+| 10 | Services (Go) | 09-Apr-2020 10:35:39 CEST | [#274](https://github.com/tradecloud/tradecloud-microservices-go/pull/274) |  Reflect new shared/util package function naming | @vovinacci |  |
+| 11 | Services (Scala) | 08-Apr-2020 10:32:23 CEST | [#1146](https://github.com/tradecloud/tradecloud-microservices/pull/1146) |  Deployment: simplify secrets | @vovinacci |  |
+
+2. [TC-5828](https://tradecloud.atlassian.net/browse/TC-5828) As Devops I want microservices to use shared library 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-May-2020 14:03:23 CEST | [#1196](https://github.com/tradecloud/tradecloud-microservices/pull/1196) |  Finished Shared Scala update | @aShevc |  |
 | 2 | Services (Scala) | 30-Apr-2020 15:23:38 CEST | [#1187](https://github.com/tradecloud/tradecloud-microservices/pull/1187) |  Added shared scala dependency.  | @aShevc |  |
-
-2. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-May-2020 09:13:39 CEST | [#1193](https://github.com/tradecloud/tradecloud-microservices/pull/1193) |  Overriding messages version for microservices | @aShevc |  |
-| 2 | Services (Scala) | 01-May-2020 14:29:55 CEST | [#1190](https://github.com/tradecloud/tradecloud-microservices/pull/1190) |  Trigger full rebuild | @roy-tc |  |
-| 3 | Services (Scala) | 29-Apr-2020 15:26:11 CEST | [#1180](https://github.com/tradecloud/tradecloud-microservices/pull/1180) |  Update FutureUtils  | @aShevc |  |
-| 4 | Services (Scala) | 27-Apr-2020 08:43:36 CEST | [#1179](https://github.com/tradecloud/tradecloud-microservices/pull/1179) |  Address issue with a legacy user synced processed before the company synced. | @vovinacci |  |
-| 5 | Services (Go) | 22-Apr-2020 11:28:39 CEST | [#284](https://github.com/tradecloud/tradecloud-microservices-go/pull/284) |  - Fix compose network issue | @denys-kondartiuk |  |
-| 6 | Services (Scala) | 22-Apr-2020 11:25:23 CEST | [#1169](https://github.com/tradecloud/tradecloud-microservices/pull/1169) |  - Fix compose network issue | @denys-kondartiuk |  |
-| 7 | Services (Go) | 17-Apr-2020 15:51:57 CEST | [#282](https://github.com/tradecloud/tradecloud-microservices-go/pull/282) |  Pin &#39;protoc-gen-go&#39; to v1.3.5, bump shared | @vovinacci |  |
-| 8 | Services (Scala) | 14-Apr-2020 09:11:03 CEST | [#1159](https://github.com/tradecloud/tradecloud-microservices/pull/1159) |  Rename sbt project &#39;shared&#39; to &#39;microservices-shared&#39; | @vovinacci |  |
-| 9 | Services (Go) | 09-Apr-2020 10:35:39 CEST | [#274](https://github.com/tradecloud/tradecloud-microservices-go/pull/274) |  Reflect new shared/util package function naming | @vovinacci |  |
-| 10 | Services (Scala) | 08-Apr-2020 10:32:23 CEST | [#1146](https://github.com/tradecloud/tradecloud-microservices/pull/1146) |  Deployment: simplify secrets | @vovinacci |  |
 
 3. [TC-5818](https://tradecloud.atlassian.net/browse/TC-5818) FE: Add part data to the order line detail page  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
