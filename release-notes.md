@@ -1,94 +1,94 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue May 5 13:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue May 5 15:30:57 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5828](https://tradecloud.atlassian.net/browse/TC-5828) As Devops I want microservices to use shared library 
+1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2020 12:55:43 CEST | [#1196](https://github.com/tradecloud/tradecloud-microservices/pull/1196) |  Finished Shared Scala update | @aShevc |  |
-
-2. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-May-2020 12:10:40 CEST | [#384](https://github.com/tradecloud/tradecloud-portal-angular/pull/384) |  Implement dialog for changing part data | @bohdantrc |  |
-
-3. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2020 10:38:39 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
-
-4. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2020 09:27:04 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
+| 1 | Services (Scala) | 05-May-2020 15:18:14 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 | 2 | Services (Go) | 04-May-2020 19:01:59 CEST | [#292](https://github.com/tradecloud/tradecloud-microservices-go/pull/292) | [TC-5857] Listen to company view | @roy-tc |  |
 | 3 | Services (Scala) | 04-May-2020 18:33:17 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
 | 4 | Services (Scala) | 04-May-2020 18:16:35 CEST | [#1195](https://github.com/tradecloud/tradecloud-microservices/pull/1195) | [TC-5857] Implement company reindex support | @roy-tc |  |
 | 5 | Services (Go) | 04-May-2020 17:39:28 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
-| 6 | Services (Scala) | 04-May-2020 13:34:49 CEST | [#1191](https://github.com/tradecloud/tradecloud-microservices/pull/1191) | [TC-5859] DO NOT MERGE - Test PR | @roy-tc |  |
 
-5. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
+2. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2020 07:10:15 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
+| 1 | Services (Scala) | 05-May-2020 15:04:04 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
 
-6. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
+3. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 05-May-2020 14:10:44 CEST | [#384](https://github.com/tradecloud/tradecloud-portal-angular/pull/384) |  Implement dialog for changing part data | @bohdantrc |  |
+
+4. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-May-2020 10:38:39 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
+
+5. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-May-2020 19:17:41 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
 
-7. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) BE: Add changes to the domain model for new activity design 
+6. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) BE: Add changes to the domain model for new activity design 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-May-2020 18:59:25 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
 
-8. [N/A](#)  
+7. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-May-2020 14:40:22 CEST | [#1192](https://github.com/tradecloud/tradecloud-microservices/pull/1192) | TC-5901 authentication refactor | @TizianoPerrucci |  |
 
-9. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+8. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 04-May-2020 07:46:30 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
 
-10. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 13-May-2020]
+9. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 13-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-May-2020 11:20:55 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  2FA company level | @RobinNagpal |  |
 
-11. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 15-May-2020]
+10. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-May-2020 09:51:20 CEST | [#1170](https://github.com/tradecloud/tradecloud-microservices/pull/1170) | [TC-5874] Refactor proposal to SupplierLineException | @roy-tc |  |
 | 2 | Services (Scala) | 23-Apr-2020 12:02:16 CEST | [#1168](https://github.com/tradecloud/tradecloud-microservices/pull/1168) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
-12. [TC-5890](https://tradecloud.atlassian.net/browse/TC-5890) user profile setting changes fail until you manually change the profile picture.  
+11. [TC-5890](https://tradecloud.atlassian.net/browse/TC-5890) user profile setting changes fail until you manually change the profile picture.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Apr-2020 15:18:44 CEST | [#381](https://github.com/tradecloud/tradecloud-portal-angular/pull/381) |  Development: Set null in profile picture if it not exist | @bohdantrc |  |
 
-13. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+12. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Apr-2020 10:56:52 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
 
-14. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+13. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Apr-2020 11:54:04 CEST | [#1138](https://github.com/tradecloud/tradecloud-microservices/pull/1138) |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-15. [TC-5698](https://tradecloud.atlassian.net/browse/TC-5698) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
+14. [TC-5698](https://tradecloud.atlassian.net/browse/TC-5698) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 16:27:06 CEST | [#1161](https://github.com/tradecloud/tradecloud-microservices/pull/1161) |  Investigate service stability when keyspaces are missing | @roy-tc |  |
 
 ## Changelog
 
-1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+1. [TC-5828](https://tradecloud.atlassian.net/browse/TC-5828) As Devops I want microservices to use shared library 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-May-2020 14:03:23 CEST | [#1196](https://github.com/tradecloud/tradecloud-microservices/pull/1196) |  Finished Shared Scala update | @aShevc |  |
+| 2 | Services (Scala) | 30-Apr-2020 15:23:38 CEST | [#1187](https://github.com/tradecloud/tradecloud-microservices/pull/1187) |  Added shared scala dependency.  | @aShevc |  |
+
+2. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-May-2020 09:13:39 CEST | [#1193](https://github.com/tradecloud/tradecloud-microservices/pull/1193) |  Overriding messages version for microservices | @aShevc |  |
@@ -102,22 +102,17 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 9 | Services (Go) | 09-Apr-2020 10:35:39 CEST | [#274](https://github.com/tradecloud/tradecloud-microservices-go/pull/274) |  Reflect new shared/util package function naming | @vovinacci |  |
 | 10 | Services (Scala) | 08-Apr-2020 10:32:23 CEST | [#1146](https://github.com/tradecloud/tradecloud-microservices/pull/1146) |  Deployment: simplify secrets | @vovinacci |  |
 
-2. [TC-5818](https://tradecloud.atlassian.net/browse/TC-5818) FE: Add part data to the order line detail page  
+3. [TC-5818](https://tradecloud.atlassian.net/browse/TC-5818) FE: Add part data to the order line detail page  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-May-2020 09:37:36 CEST | [#383](https://github.com/tradecloud/tradecloud-portal-angular/pull/383) |  Development: Create view with item details info | @bohdantrc |  |
 
-3. [TC-5902](https://tradecloud.atlassian.net/browse/TC-5902) As DevOps I want to delete Marathon PR groups when relevant PR is merged 
+4. [TC-5902](https://tradecloud.atlassian.net/browse/TC-5902) As DevOps I want to delete Marathon PR groups when relevant PR is merged 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Apr-2020 16:05:39 CEST | [#382](https://github.com/tradecloud/tradecloud-portal-angular/pull/382) |  - Remove test PR group on merge | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 30-Apr-2020 15:42:54 CEST | [#1188](https://github.com/tradecloud/tradecloud-microservices/pull/1188) |  - Remove test PR group on merge | @denys-kondartiuk |  |
 | 3 | Services (Go) | 30-Apr-2020 15:31:47 CEST | [#290](https://github.com/tradecloud/tradecloud-microservices-go/pull/290) |  - Remove test PR group on merge | @denys-kondartiuk |  |
-
-4. [TC-5828](https://tradecloud.atlassian.net/browse/TC-5828) As Devops I want microservices to use shared library 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Apr-2020 15:23:38 CEST | [#1187](https://github.com/tradecloud/tradecloud-microservices/pull/1187) |  Added shared scala dependency.  | @aShevc |  |
 
 5. [TC-5849](https://tradecloud.atlassian.net/browse/TC-5849) Add order response endpoint to Order Integration service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
