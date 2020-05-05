@@ -1,16 +1,22 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue May 5 17:31:05 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue May 5 19:30:55 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
+1. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-May-2020 18:22:36 CEST | [#1198](https://github.com/tradecloud/tradecloud-microservices/pull/1198) |  [DO NOT REVIEW/MERGE] Test branch | @aShevc |  |
+| 2 | Services (Scala) | 05-May-2020 15:52:30 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
+
+2. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-May-2020 16:30:09 CEST | [#384](https://github.com/tradecloud/tradecloud-portal-angular/pull/384) |  Implement dialog for changing part data | @bohdantrc |  |
 
-2. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+3. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-May-2020 16:26:45 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
@@ -18,11 +24,6 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 3 | Services (Scala) | 04-May-2020 18:33:17 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
 | 4 | Services (Scala) | 04-May-2020 18:16:35 CEST | [#1195](https://github.com/tradecloud/tradecloud-microservices/pull/1195) | [TC-5857] Implement company reindex support | @roy-tc |  |
 | 5 | Services (Go) | 04-May-2020 17:39:28 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
-
-3. [TC-5850](https://tradecloud.atlassian.net/browse/TC-5850) Enrich incoming order response event in Company and User service 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2020 15:52:30 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
 
 4. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
