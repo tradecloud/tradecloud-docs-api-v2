@@ -141,7 +141,7 @@ The supplier may check, change and add item details if they are not correct or i
 * `line.deliverySchedule`: the responded planned delivery schedule. Provide at least one or multiple delivery schedule lines.
 * `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `deliverySchedule.quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unkown, leave this quantity empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
+* `deliverySchedule.quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
 
 {% hint style="warning" %}
 `deliverySchedule.position` should be unique within the delivery schedule and never change. Never renumber or re-use `deliverySchedule.position`s.
@@ -174,7 +174,7 @@ The supplier may check, change and add item details if they are not correct or i
 * `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `reason`: optional reason in case 
   * the order line is **rejected**
-  * the **responded** `delivery schedule` and `prices` are **NOT** **equal** to the **requested** `delivery schedule` and `prices`
+  * the **responded** `delivery schedule` and `prices` are **NOT** **equal** to the **requested** or **confirmed**`delivery schedule` and `prices`
   * a [**reopen** request](../request-reopen.md)
   * a [**cancel** request](../request-cancel.md)
 
