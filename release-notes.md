@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed May 6 13:31:19 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed May 6 15:31:06 CEST 2020)
 ---
 
 
@@ -8,15 +8,15 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 06-May-2020 13:26:09 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
-| 2 | Services (Scala) | 05-May-2020 22:03:10 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
+| 1 | Services (Go) | 06-May-2020 15:15:30 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
+| 2 | Services (Scala) | 06-May-2020 14:49:26 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
 | 3 | Services (Go) | 04-May-2020 19:01:59 CEST | [#292](https://github.com/tradecloud/tradecloud-microservices-go/pull/292) | [TC-5857] Listen to company view | @roy-tc |  |
 | 4 | Services (Scala) | 04-May-2020 18:16:35 CEST | [#1195](https://github.com/tradecloud/tradecloud-microservices/pull/1195) | [TC-5857] Implement company reindex support | @roy-tc |  |
 
 2. [TC-5841](https://tradecloud.atlassian.net/browse/TC-5841) BE: Create typed model for workflow task json content 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 06-May-2020 13:15:40 CEST | [#385](https://github.com/tradecloud/tradecloud-portal-angular/pull/385) |  Development: Change task model depending on new API specs | @bohdantrc |  |
+| 1 | Web Portal | 06-May-2020 13:35:35 CEST | [#385](https://github.com/tradecloud/tradecloud-portal-angular/pull/385) |  Development: Change task model depending on new API specs | @bohdantrc |  |
 
 3. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
