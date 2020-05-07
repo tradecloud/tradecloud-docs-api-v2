@@ -1,53 +1,53 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu May 7 19:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu May 7 21:30:57 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5831](https://tradecloud.atlassian.net/browse/TC-5831) As Devops I want to have connectors services reside in connectors repo 
+1. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 07-May-2020 20:22:08 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
+| 2 | Services (Scala) | 07-May-2020 11:31:24 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
+
+2. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 07-May-2020 19:50:08 CEST | [#1192](https://github.com/tradecloud/tradecloud-microservices/pull/1192) | TC-5901 authentication refactor | @TizianoPerrucci |  |
+
+3. [TC-5831](https://tradecloud.atlassian.net/browse/TC-5831) As Devops I want to have connectors services reside in connectors repo 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-May-2020 17:29:45 CEST | [#1202](https://github.com/tradecloud/tradecloud-microservices/pull/1202) |  Move connectors services | @aShevc |  |
 
-2. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-May-2020 16:37:55 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
-| 2 | Services (Scala) | 07-May-2020 11:31:24 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
-
-3. [TC-5874](https://tradecloud.atlassian.net/browse/TC-5874) BE: refactor line proposal to LineRequests 
+4. [TC-5874](https://tradecloud.atlassian.net/browse/TC-5874) BE: refactor line proposal to LineRequests 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-May-2020 16:25:33 CEST | [#1201](https://github.com/tradecloud/tradecloud-microservices/pull/1201) |  - reopen requests model | @olegtradecloud |  |
 
-4. [TC-5841](https://tradecloud.atlassian.net/browse/TC-5841) BE: Create typed model for workflow task json content 
+5. [TC-5841](https://tradecloud.atlassian.net/browse/TC-5841) BE: Create typed model for workflow task json content 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-May-2020 16:02:17 CEST | [#386](https://github.com/tradecloud/tradecloud-portal-angular/pull/386) | [TC-5842] Development: Change task model depending on new API specs | @bohdantrc |  |
 
-5. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
+6. [TC-5823](https://tradecloud.atlassian.net/browse/TC-5823) As a DevOps I want to optimize the storage size of workflow, so they become more scalable and reliable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-May-2020 16:02:02 CEST | [#1167](https://github.com/tradecloud/tradecloud-microservices/pull/1167) | [TC-5841]: Introduced new workflow content typed model | @dmytrozheliuk |  |
 
-6. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+7. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 07-May-2020 15:54:56 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
 
-7. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
+8. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 15-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 07-May-2020 14:46:43 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
 | 2 | Services (Scala) | 07-May-2020 14:44:50 CEST | [#1200](https://github.com/tradecloud/tradecloud-microservices/pull/1200) | [TC-5857] DO NOT MERGE - Test PR | @roy-tc |  |
 | 3 | Services (Go) | 07-May-2020 14:29:42 CEST | [#293](https://github.com/tradecloud/tradecloud-microservices-go/pull/293) | [TC-5857] DO NOT MERGE - Testing PR | @roy-tc |  |
 | 4 | Services (Scala) | 07-May-2020 09:53:36 CEST | [#1194](https://github.com/tradecloud/tradecloud-microservices/pull/1194) | [TC-5857] Implement company and connection reindex support | @roy-tc |  |
-
-8. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-May-2020 17:27:06 CEST | [#1192](https://github.com/tradecloud/tradecloud-microservices/pull/1192) | TC-5901 authentication refactor | @TizianoPerrucci |  |
 
 9. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
