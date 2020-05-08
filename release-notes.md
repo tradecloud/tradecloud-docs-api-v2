@@ -1,35 +1,36 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 8 11:31:02 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 8 13:30:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. [TC-5874](https://tradecloud.atlassian.net/browse/TC-5874) BE: refactor line proposal to LineRequests 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-May-2020 13:26:25 CEST | [#1201](https://github.com/tradecloud/tradecloud-microservices/pull/1201) |  - reopen requests model | @olegtradecloud |  |
+| 2 | Services (Go) | 08-May-2020 13:25:24 CEST | [#294](https://github.com/tradecloud/tradecloud-microservices-go/pull/294) |  - bump reopen request messages | @olegtradecloud |  |
+
+2. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 08-May-2020 11:57:01 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
+| 2 | Services (Scala) | 08-May-2020 10:00:20 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
+
+3. [TC-5831](https://tradecloud.atlassian.net/browse/TC-5831) As Devops I want to have connectors services reside in connectors repo 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-May-2020 11:55:08 CEST | [#1202](https://github.com/tradecloud/tradecloud-microservices/pull/1202) |  Move connectors services | @aShevc |  |
+
+4. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-May-2020 11:15:28 CEST | [#1192](https://github.com/tradecloud/tradecloud-microservices/pull/1192) | TC-5901 authentication refactor | @TizianoPerrucci |  |
 
-2. [TC-5874](https://tradecloud.atlassian.net/browse/TC-5874) BE: refactor line proposal to LineRequests 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-May-2020 10:59:55 CEST | [#1201](https://github.com/tradecloud/tradecloud-microservices/pull/1201) |  - reopen requests model | @olegtradecloud |  |
-
-3. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+5. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 08-May-2020 10:43:19 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
-
-4. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-May-2020 10:00:20 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
-| 2 | Web Portal | 07-May-2020 20:22:08 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
-
-5. [TC-5831](https://tradecloud.atlassian.net/browse/TC-5831) As Devops I want to have connectors services reside in connectors repo 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-May-2020 17:29:45 CEST | [#1202](https://github.com/tradecloud/tradecloud-microservices/pull/1202) |  Move connectors services | @aShevc |  |
 
 6. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -291,9 +292,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 08-Apr-2020 21:55:15 CEST | [#273](https://github.com/tradecloud/tradecloud-microservices-go/pull/273) |  Kafka: Update Confluent Kafka to 1.4.0 | @vovinacci |  |
-
-39. [TC-5775](https://tradecloud.atlassian.net/browse/TC-5775) Supplier cannot download attached order document 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Apr-2020 12:05:53 CEST | [#1144](https://github.com/tradecloud/tradecloud-microservices/pull/1144) | : Commit OrderDocumentsEvent when trying to authorize document which doesn&#39;t exi | @dmytrozheliuk |  |
 
