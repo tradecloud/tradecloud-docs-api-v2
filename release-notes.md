@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon May 11 19:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 11 21:30:55 CEST 2020)
 ---
 
 
@@ -15,7 +15,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-May-2020 03:05:29 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  2FA company level | @RobinNagpal |  |
 
-3. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) BE: Add changes to the domain model for new activity design 
+3. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-May-2020 15:34:32 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
