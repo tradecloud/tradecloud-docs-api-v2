@@ -46,6 +46,12 @@ The [OpenAPI Version 2.0 Specification \(OAS 2.0\)](https://swagger.io/specifica
 
 [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network. The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) published as [RFC 5246](https://tools.ietf.org/html/rfc5246).
 
+## URI
+
+A Uniform Resource Identifier \(URI\) is a compact sequence of characters that identifies an abstract or physical resource. Published as [RFC 3986](https://tools.ietf.org/html/rfc3986) with [errata](https://www.rfc-editor.org/errata_search.php?rfc=3986).
+
+[URLs](https://www.w3schools.com/tags/ref_urlencode.ASP) can only be sent over the Internet using the [ASCII character-set](https://www.w3schools.com/charsets/ref_html_ascii.asp). Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. URLs cannot contain spaces. URL encoding normally replaces a space with a plus \(+\) sign or with %20.
+
 ## UTF-8
 
 ISO/IEC 10646-1 defines a large character set called the Universal Character Set \(UCS\) which encompasses most of the world's writing systems. The originally proposed encodings of the UCS, however, were not compatible with many current applications and protocols, and this has led to the development of UTF-8
