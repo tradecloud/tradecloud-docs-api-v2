@@ -17,6 +17,10 @@ If both `objectId` and `url` are missing in the `document`, no file is available
 
 ### Step 1. Retrieve the `objectId` from the document
 
+Please check the `documents` fields in:
+
+{% page-ref page="./" %}
+
 ```text
 "documents": [
   {
@@ -29,10 +33,6 @@ If both `objectId` and `url` are missing in the `document`, no file is available
   }
 ],
 ```
-
-Please check the `documents` fields in:
-
-{% page-ref page="./" %}
 
 In this example the `objectId` is:
 
@@ -100,7 +100,7 @@ https://tradecloud-accp-documents.s3.eu-central-1.amazonaws.com/67aa8ece-5d41-49
 Just GET the `downloadUrl`
 
 {% hint style="warning" %}
-This a Amazon AWS S3 presigned url which expires within 1 minute.
+This Amazon AWS S3 presigned url will expire within 1 minute.
 {% endhint %}
 
 ## Method 2. Download the document from the supplier content server

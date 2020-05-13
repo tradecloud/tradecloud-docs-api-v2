@@ -4,8 +4,6 @@ description: Overview of the supplier order process.
 
 # Supplier order process overview
 
-
-
 ## Step 1. Receive an order
 
 As a supplier you can [Receive an order](webhook/)
@@ -26,6 +24,6 @@ As a supplier you can [Ship goods](ship-goods.md).
 
 As a supplier you may:
 
-* [Request to reopen an order](request-reopen.md) which will restart the order process.
-* [Request to cancel an order](../buyer/request-cancel.md) which will end the order process.
+* [Request to reopen an order](reopen-request.md) which will restart the order process.
+* [Request to cancel an order](../buyer/cancel-request.md) which will end the order process.
 

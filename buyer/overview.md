@@ -46,8 +46,8 @@ As a buyer you can [Complete an order](complete.md) which will end the order pro
 
 Alternatively, as a buyer you may:
 
-* [Request to reopen an order](../supplier/request-reopen.md) which will restart the order process.
-* [Request to cancel an order](request-cancel.md) which will end the order process.
+* [Request to reopen an order](../supplier/reopen-request.md) which will restart the order process.
+* [Request to cancel an order](cancel-request.md) which will end the order process.
 
  
 
