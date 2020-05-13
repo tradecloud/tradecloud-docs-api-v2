@@ -10,7 +10,7 @@ As buyer you can send either a [new](issue/) or updated purchase order to Tradec
 
 After sending an updated order to Tradecloud the order line **process status may change**:
 
-A new order line will have status `Issued`.
+A new order line will have status `Issued` and a confirm task to the supplier will be created.
 
 When the order line has status `InProgress`:
 
@@ -19,10 +19,22 @@ When the order line has status `InProgress`:
 
    `delivery schedule` and `prices` the process status will stay `InProgress`.
 
+* When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
+
 When the order line has status `Confirmed`:
 
 * When the by buyer **requested** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** to the supplier will be created.
 * When the **requested** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
+* When the `indicators.reopenReqeust` is set, the process status will become `InProgress`and a **reopen request** to the supplier will be created.
+
+When the order line has status `Rejected`:
+
+* When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** `delivery schedule` and `prices` the process status will become `Confirmed`
+* When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
+
+   `delivery schedule` and `prices` the process status will become `InProgress`and a confirm request to the supplier will be created
+
+* When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
 
 When the order line already has process status `Completed` the status will **NOT** change.
 
