@@ -1,32 +1,32 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed May 13 09:31:27 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed May 13 11:31:09 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
+1. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 13-May-2020 10:56:34 CEST | [#1207](https://github.com/tradecloud/tradecloud-microservices/pull/1207) |  Make Prices required everywhere | @roy-tc |  |
+
+2. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-May-2020 07:13:26 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
 
-2. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 13-May-2020]
+3. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-May-2020 05:54:23 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
 | 2 | Services (Scala) | 13-May-2020 04:16:51 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
-
-3. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-May-2020 17:34:38 CEST | [#1207](https://github.com/tradecloud/tradecloud-microservices/pull/1207) |  Make Prices required everywhere | @roy-tc |  |
 
 4. [TC-5941](https://tradecloud.atlassian.net/browse/TC-5941) Proposals are broken  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-May-2020 15:20:57 CEST | [#389](https://github.com/tradecloud/tradecloud-portal-angular/pull/389) |  Fix: change supplierLine model | @bohdantrc |  |
 
-5. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 15-May-2020]
+5. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-May-2020 14:25:16 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
@@ -263,7 +263,6 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Apr-2020 15:44:08 CEST | [#1156](https://github.com/tradecloud/tradecloud-microservices/pull/1156) |  Renamed shared module to microservices-shared | @aShevc |  |
-| 2 | Services (Scala) | 13-Apr-2020 11:27:15 CEST | [#1154](https://github.com/tradecloud/tradecloud-microservices/pull/1154) |  Renamed com.tradecloud1.shared to com.tradecloud1.microservices.shared | @aShevc |  |
 
 36. [TC-4218](https://tradecloud.atlassian.net/browse/TC-4218) As a supplier I want to receive incoming orders via the webhook connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
