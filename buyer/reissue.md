@@ -6,6 +6,33 @@ description: How to reissue an existing purchase order as a buyer
 
 As buyer you can send either a [new](issue/) or updated purchase order to Tradecloud.
 
+## Order process
+
+After sending an updated order to Tradecloud the order line **process status may change**:
+
+A new order line will have status `Issued`.
+
+When the order line has status `InProgress`:
+
+* When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** \(either via a proposal or reopen request\)`delivery schedule` and `prices` the process status will become `Confirmed`
+* When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
+
+   `delivery schedule` and `prices` the process status will stay `InProgress`.
+
+When the order line has status `Confirmed`:
+
+* When the by buyer **requested** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** to the supplier will be created.
+* When the **requested** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
+
+When the order line already has process status `Completed` the status will **NOT** change.
+
+When the order line already has process status `Cancelled` the status will **NOT** change.
+
+And the order line **logistics status may change**:
+
+* When`indicators.shipped` is set the order line will have logistics status `Shipped`
+* When the order line already has logistics status  `Delivered` the status will NOT change.
+
 ## Send an updated order to Tradecloud
 
 As a buyer you can send an updated purchase order to Tradecloud.
