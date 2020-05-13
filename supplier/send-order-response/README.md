@@ -10,14 +10,14 @@ As a supplier you can send either a new or updated purchase order response to yo
 
 After sending an order response to Tradecloud the order lines **process status may change**:
 
-When the order line has status `Issued`: 
+When the order line has process status `Issued`: 
 
 * When`indicators.accepted` is set the process status will become`Confirmed`
 * When`indicators.rejected` is set the process status will become`Rejected`
 * When the by supplier **responded** `delivery schedule` and `prices` are **equal** to the by buyer **requested** `delivery schedule` and `prices` the process status will become `Confirmed`
-* When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices` the process status will become `InProgress` and a **proposal** for the buyer will be created.
+* When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices` the process status will become `InProgress` and a **proposal** task for the buyer will be created.
 
-When the order line has status `InProgress`:
+When the order line has process status `InProgress`:
 
 * When`indicators.accepted` is set the process status will become`Confirmed`
 * When`indicators.rejected` is set the process status will become`Rejected`
@@ -27,10 +27,12 @@ When the order line has status `InProgress`:
 
 * When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices` the process status will stay `InProgress`.
 
-When the order line has status `Confirmed`:
+When the order line has process status `Confirmed`:
 
-* When the by supplier **responded** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** to the buyer will be created.
+* When the by supplier **responded** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** task for the buyer will be created.
 * When the **responded** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
+
+When the order line already has process status `Rejected`the process status will **NOT** change.
 
 When the order line already has process status `Completed` the process status will **NOT** change.
 
