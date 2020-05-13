@@ -6,7 +6,7 @@ description: How to send a purchase order response to your buyer.
 
 As a supplier you can send either a new or updated purchase order response to your buyer.
 
-## Send an order response to Tradecloud <a id="send-a-new-order-to-tradecloud"></a>
+## Order process
 
 After sending an order response to Tradecloud the order lines **process status may change**:
 

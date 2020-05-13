@@ -6,7 +6,7 @@ description: How to issue a new purchase order as a buyer
 
 As buyer you can send either a new or [updated](../reissue.md) purchase order to your supplier.
 
-## Send a new order to Tradecloud
+## Order process
 
 As a buyer you can send a new purchase order to Tradecloud.
 
