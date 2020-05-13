@@ -77,7 +77,7 @@ A company is in the lead during a**n** event that's why users are n/a relating t
         <p></p>
         <p>Execute all &quot;BySupplier&quot; actions (aka commands) + communication
           <br
-          />&amp; attach documents</p>
+          />, attach documents &amp; add/change item details</p>
       </td>
     </tr>
     <tr>
