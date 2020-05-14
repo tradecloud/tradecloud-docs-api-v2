@@ -1,73 +1,68 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu May 14 11:31:00 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu May 14 13:31:00 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+1. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Refactor JSON deserialization to avoid matching issues [Planned release 14-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-May-2020 11:27:18 CEST | [#1212](https://github.com/tradecloud/tradecloud-microservices/pull/1212) |  -  generic enums | @olegtradecloud |  |
+| 1 | Services (Scala) | 14-May-2020 13:27:17 CEST | [#1210](https://github.com/tradecloud/tradecloud-microservices/pull/1210) | : Solution for RequestStatus | @dmytrozheliuk |  |
 
-2. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Refactor JSON deserialization to avoid matching issues [Planned release 14-May-2020]
+2. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-May-2020 11:18:00 CEST | [#1210](https://github.com/tradecloud/tradecloud-microservices/pull/1210) | : Solution for RequestStatus | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 14-May-2020 13:14:22 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
 
-3. [TC-5831](https://tradecloud.atlassian.net/browse/TC-5831) As Devops I want to have connectors services reside in connectors repo 
+3. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-May-2020 11:07:42 CEST | [#1208](https://github.com/tradecloud/tradecloud-microservices/pull/1208) |  Move order-event-search service to connectors repo | @aShevc |  |
+| 1 | Services (Scala) | 14-May-2020 13:13:47 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
 
-4. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
+4. [TC-4480](https://tradecloud.atlassian.net/browse/TC-4480) As a buyer I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 14-May-2020 13:07:58 CEST | [#1209](https://github.com/tradecloud/tradecloud-microservices/pull/1209) | [TC-4478] Pull Order and OrderLine state and behavior refactoring | @roy-tc |  |
+
+5. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 30-Jun-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 14-May-2020 12:42:12 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
+| 2 | Services (Scala) | 13-May-2020 15:19:32 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
+
+6. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 14-May-2020 12:23:06 CEST | [#1212](https://github.com/tradecloud/tradecloud-microservices/pull/1212) |  -  generic enums | @olegtradecloud |  |
+
+7. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-May-2020 10:54:00 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
-5. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-May-2020 10:48:47 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
-
-6. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-May-2020 08:00:39 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
-
-7. [TC-4480](https://tradecloud.atlassian.net/browse/TC-4480) As a buyer I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-May-2020 16:24:10 CEST | [#1209](https://github.com/tradecloud/tradecloud-microservices/pull/1209) | [TC-4478] Pull Order and OrderLine state and behavior refactoring | @roy-tc |  |
-
-8. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 30-Jun-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-May-2020 15:19:32 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
-| 2 | Web Portal | 13-May-2020 05:54:23 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
-
-9. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
+8. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-May-2020 14:29:13 CEST | [#1207](https://github.com/tradecloud/tradecloud-microservices/pull/1207) |  Make Prices required everywhere | @roy-tc |  |
 
-10. [TC-5941](https://tradecloud.atlassian.net/browse/TC-5941) Proposals are broken  
+9. [TC-5941](https://tradecloud.atlassian.net/browse/TC-5941) Proposals are broken  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-May-2020 15:20:57 CEST | [#389](https://github.com/tradecloud/tradecloud-portal-angular/pull/389) |  Fix: change supplierLine model | @bohdantrc |  |
 
-11. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+10. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-May-2020 14:41:59 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
 | 2 | Web Portal | 08-May-2020 14:17:25 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
 
-12. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+11. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Apr-2020 11:54:04 CEST | [#1138](https://github.com/tradecloud/tradecloud-microservices/pull/1138) |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-13. [TC-5698](https://tradecloud.atlassian.net/browse/TC-5698) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
+12. [TC-5698](https://tradecloud.atlassian.net/browse/TC-5698) As DevOps I want persistent Scala services to handle Cassandra keyspace being unavailable 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2020 16:27:06 CEST | [#1161](https://github.com/tradecloud/tradecloud-microservices/pull/1161) |  Investigate service stability when keyspaces are missing | @roy-tc |  |
@@ -77,7 +72,8 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-5831](https://tradecloud.atlassian.net/browse/TC-5831) As Devops I want to have connectors services reside in connectors repo 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-May-2020 16:14:04 CEST | [#1202](https://github.com/tradecloud/tradecloud-microservices/pull/1202) |  Move connectors services | @aShevc |  |
+| 1 | Services (Scala) | 14-May-2020 11:51:48 CEST | [#1208](https://github.com/tradecloud/tradecloud-microservices/pull/1208) |  Move order-event-search service to connectors repo | @aShevc |  |
+| 2 | Services (Scala) | 12-May-2020 16:14:04 CEST | [#1202](https://github.com/tradecloud/tradecloud-microservices/pull/1202) |  Move connectors services | @aShevc |  |
 
 2. [TC-5906](https://tradecloud.atlassian.net/browse/TC-5906) Logout when access token is expired, possible related to 2FA 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
