@@ -197,5 +197,5 @@ The supplier may check, change and add item details if they are not correct or i
 
 ## Response
 
-When the `/order-integration/order-response` API method returns HTTP status code 200, the order response was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order response is available in the portal and is forwarded to the buyer ERP integration.
+When the `/api-connector/order-response` API method returns HTTP status code 200, the order response was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order response is available in the portal and is forwarded to the buyer ERP integration.
 

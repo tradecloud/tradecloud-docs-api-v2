@@ -59,7 +59,7 @@ If an order line has order process status `Issued` or `In Progress` and it is re
 
 ### Send updated order API method
 
-The `/order-integration/order` API method is the same as when [sending a new order](issue/) with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. Lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
+Using the `/api-connector/order` API method is the same as when [sending a new order](issue/) with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. Lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
 
 {% hint style="info" %}
 The update is event oriented, you only have to send the lines new or updated. But you can also send all lines anyway.
