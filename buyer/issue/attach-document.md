@@ -147,7 +147,7 @@ See OpenAPI specs
 
 ## Response
 
-When the `/api-connector/order/documents` API method returns HTTP status code 200, the order documents were successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order documents are available in the portal and are forwarded to the supplier ERP integration.
+When the `/order-integration/order/documents` API method returns HTTP status code 200, the order documents were successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order documents are available in the portal and are forwarded to the supplier ERP integration.
 
 ## Method 2. Attach a document using your company's content server
 
