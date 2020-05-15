@@ -12,14 +12,18 @@ After sending an updated order to Tradecloud the order line **process status may
 
 A new order line will have status `Issued` and a **confirm** task for the supplier will be created.
 
+When the order line has status `Issued` the **confirm** task for the supplier will be updated.
+
 When the order line has status `InProgress`:
 
 * When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** \(either via a proposal or reopen request\)`delivery schedule` and `prices` the process status will become `Confirmed`
 * When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
 
-   `delivery schedule` and `prices` the process status will stay `InProgress`.
+   `delivery schedule` and `prices` the process status will stay `InProgress`.  
+  If there is an open reopen request, it will be updated.
 
-* When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
+* When the `indicators.reopenReqeust` is set and there is an **Open** reopen request, it will be updated.
+* When the `indicators.reopenReqeust` is set but there is **NO** **Open** reopen request, the indicator will be ignored as the line is not confirmed.
 
 When the order line has status `Confirmed`:
 
@@ -59,7 +63,7 @@ If an order line has order process status `Issued` or `In Progress` and it is re
 
 ### Send updated order API method
 
-The `/order-integration/order` API method is the same as when [sending a new order](issue/) with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. Lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
+Using the `/api-connector/order` API method is the same as when [sending a new order](issue/) with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. Lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
 
 {% hint style="info" %}
 The update is event oriented, you only have to send the lines new or updated. But you can also send all lines anyway.
