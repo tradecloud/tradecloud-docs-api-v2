@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon May 18 11:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 18 13:31:06 CEST 2020)
 ---
 
 
@@ -8,19 +8,20 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-May-2020 11:30:21 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
+| 1 | Services (Scala) | 18-May-2020 13:02:49 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
-2. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
+2. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 18-May-2020 12:17:16 CEST | [#393](https://github.com/tradecloud/tradecloud-portal-angular/pull/393) | testing refresh | @bohdantrc |  |
+| 2 | Services (Scala) | 18-May-2020 10:58:27 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) | Tc 5867 buyer reopen request | @olegtradecloud |  |
+| 3 | Services (Go) | 17-May-2020 20:39:44 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) | feature(enforce 2FA):[TC-5802] - add enforce2FA setting | @RobinNagpal |  |
+
+3. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-May-2020 11:16:58 CEST | [#392](https://github.com/tradecloud/tradecloud-portal-angular/pull/392) | [TC-5863] Change model for activity and disable required field in confirm dialog | @bohdantrc |  |
 | 2 | Services (Scala) | 15-May-2020 16:40:45 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
-
-3. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-May-2020 10:58:27 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) | Tc 5867 buyer reopen request | @olegtradecloud |  |
-| 2 | Services (Go) | 17-May-2020 20:39:44 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) | feature(enforce 2FA):[TC-5802] - add enforce2FA setting | @RobinNagpal |  |
 
 4. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
