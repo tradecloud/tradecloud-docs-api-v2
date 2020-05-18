@@ -1,37 +1,37 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon May 18 17:30:53 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 18 19:30:51 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+1. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-May-2020 18:57:43 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
+
+2. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-May-2020 18:02:40 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
+
+3. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 18-May-2020 17:44:53 CEST | [#392](https://github.com/tradecloud/tradecloud-portal-angular/pull/392) | [TC-5863] Change model for activity and disable required field in confirm dialog | @bohdantrc |  |
+| 2 | Services (Scala) | 15-May-2020 16:40:45 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
+
+4. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 18-May-2020 17:25:18 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
 | 2 | Web Portal | 14-May-2020 20:31:13 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
 
-2. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-May-2020 17:22:02 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
-
-3. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+5. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 18-May-2020 17:14:10 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - WIP | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 14-May-2020 17:39:43 CEST | [#1212](https://github.com/tradecloud/tradecloud-microservices/pull/1212) |  -  generic enums | @olegtradecloud |  |
-
-4. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-May-2020 17:11:40 CEST | [#392](https://github.com/tradecloud/tradecloud-portal-angular/pull/392) | [TC-5863] Change model for activity and disable required field in confirm dialog | @bohdantrc |  |
-| 2 | Services (Scala) | 15-May-2020 16:40:45 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
-
-5. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-May-2020 16:32:56 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
 6. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
