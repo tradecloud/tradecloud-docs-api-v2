@@ -1,52 +1,49 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 15 21:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 18 09:31:19 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
+1. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-May-2020 20:18:16 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
+| 1 | Services (Scala) | 18-May-2020 09:26:13 CEST | [#1207](https://github.com/tradecloud/tradecloud-microservices/pull/1207) |  Make Prices required everywhere | @roy-tc |  |
 
-2. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
+2. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-May-2020 09:06:21 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) | Tc 5867 buyer reopen request | @olegtradecloud |  |
+| 2 | Services (Go) | 17-May-2020 20:39:44 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) | feature(enforce 2FA):[TC-5802] - add enforce2FA setting | @RobinNagpal |  |
+
+3. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 30-Jun-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-May-2020 00:38:22 CEST | [#1217](https://github.com/tradecloud/tradecloud-microservices/pull/1217) |  enforce 2fa new users | @RobinNagpal |  |
+| 2 | Web Portal | 17-May-2020 22:02:13 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
+| 3 | Services (Scala) | 15-May-2020 05:48:25 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
+
+4. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 17-May-2020 17:19:21 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
+
+5. [TC-5861](https://tradecloud.atlassian.net/browse/TC-5861) NEEDS DATA WIPE  - BE: Add changes to the domain model for new activity design 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-May-2020 16:40:45 CEST | [#1189](https://github.com/tradecloud/tradecloud-microservices/pull/1189) | : Optimizing activity model by replacing string json content | @dmytrozheliuk |  |
 
-3. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+6. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 15-May-2020 16:06:20 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - WIP | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 14-May-2020 17:39:43 CEST | [#1212](https://github.com/tradecloud/tradecloud-microservices/pull/1212) |  -  generic enums | @olegtradecloud |  |
 
-4. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-May-2020 15:37:16 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) | Tc 5867 buyer reopen request | @olegtradecloud |  |
-
-5. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+7. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-May-2020 11:57:28 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
 | 2 | Web Portal | 14-May-2020 20:31:13 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
-
-6. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 30-Jun-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-May-2020 10:01:55 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
-| 2 | Services (Scala) | 15-May-2020 05:48:25 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
-
-7. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-May-2020 14:29:13 CEST | [#1207](https://github.com/tradecloud/tradecloud-microservices/pull/1207) |  Make Prices required everywhere | @roy-tc |  |
-
-8. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Apr-2020 11:54:04 CEST | [#1138](https://github.com/tradecloud/tradecloud-microservices/pull/1138) |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
 ## Changelog
 
@@ -63,7 +60,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 8 | Services (Scala) | 27-Apr-2020 08:43:36 CEST | [#1179](https://github.com/tradecloud/tradecloud-microservices/pull/1179) |  Address issue with a legacy user synced processed before the company synced. | @vovinacci |  |
 | 9 | Services (Go) | 22-Apr-2020 11:28:39 CEST | [#284](https://github.com/tradecloud/tradecloud-microservices-go/pull/284) |  - Fix compose network issue | @denys-kondartiuk |  |
 | 10 | Services (Scala) | 22-Apr-2020 11:25:23 CEST | [#1169](https://github.com/tradecloud/tradecloud-microservices/pull/1169) |  - Fix compose network issue | @denys-kondartiuk |  |
-| 11 | Services (Go) | 17-Apr-2020 15:51:57 CEST | [#282](https://github.com/tradecloud/tradecloud-microservices-go/pull/282) |  Pin &#39;protoc-gen-go&#39; to v1.3.5, bump shared | @vovinacci |  |
 
 2. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -231,23 +227,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Apr-2020 15:20:14 CEST | [#1171](https://github.com/tradecloud/tradecloud-microservices/pull/1171) |  - Add support of parallel UAT run | @denys-kondartiuk |  |
 | 2 | Services (Go) | 22-Apr-2020 15:20:03 CEST | [#285](https://github.com/tradecloud/tradecloud-microservices-go/pull/285) |  - Add support of parallel UAT run | @denys-kondartiuk |  |
-
-31. [TC-5853](https://tradecloud.atlassian.net/browse/TC-5853) Move keyspaces creation from &#39;cli&#39; to &#39;tcinfra&#39; 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-Apr-2020 18:31:09 CEST | [#283](https://github.com/tradecloud/tradecloud-microservices-go/pull/283) |  - Update keyspaces creation | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 17-Apr-2020 18:30:47 CEST | [#1165](https://github.com/tradecloud/tradecloud-microservices/pull/1165) |  - Update keyspaces creation | @denys-kondartiuk |  |
-
-32. [TC-5798](https://tradecloud.atlassian.net/browse/TC-5798) 2FA login api 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Apr-2020 21:24:21 CEST | [#373](https://github.com/tradecloud/tradecloud-portal-angular/pull/373) |  enable login 2fa | @TizianoPerrucci |  |
-| 2 | Services (Scala) | 16-Apr-2020 21:15:18 CEST | [#1151](https://github.com/tradecloud/tradecloud-microservices/pull/1151) |  enable login 2fa | @TizianoPerrucci |  |
-
-33. [TC-5814](https://tradecloud.atlassian.net/browse/TC-5814) GitHub PR label flow: When PR approved first and then someone requires changes, &#39;ready: merge&#39; label is not unset 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Apr-2020 12:29:55 CEST | [#280](https://github.com/tradecloud/tradecloud-microservices-go/pull/280) |  - Fix &#39;ready:merge&#39; logic | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 16-Apr-2020 12:28:21 CEST | [#1163](https://github.com/tradecloud/tradecloud-microservices/pull/1163) |  - Fix &#39;ready:merge&#39; logic | @denys-kondartiuk |  |
-| 3 | Web Portal | 16-Apr-2020 12:28:06 CEST | [#375](https://github.com/tradecloud/tradecloud-portal-angular/pull/375) |  - Fix &#39;merge:ready&#39; logic | @denys-kondartiuk |  |
 
