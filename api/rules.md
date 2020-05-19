@@ -12,15 +12,11 @@ Tradecloud will **review** your integration in the acceptance test environment *
 
 ## Support the Tradecloud standards
 
-Your integration **must support** the Tradecloud standards.
-
-{% page-ref page="standards.md" %}
+Your integration **must support** the Tradecloud [standards](standards.md).
 
 ## Support forward compatibility
 
-Your integration **must support** **forward** compatibility.
-
-{% page-ref page="compatibility.md" %}
+Your integration **must support** [forward compatibility](compatibility.md#forward-compatibility).
 
 ## Identifiers must be unique and immutable
 
