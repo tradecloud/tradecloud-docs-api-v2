@@ -16,27 +16,13 @@ This is a \(not complete yet\) check list of buyer side API rules
 * [ ] Only reissue an order that **has an actual change**
 * [ ] Never reissue **all** orders or **all active** orders periodically
 * [ ] 
-
-
 ## Attach a document
-
-
 
 ## Receive goods
 
-
-
 ## Complete an order
-
-
 
 ## Reopen an order
 
-
-
 ## Cancel an order
-
-
-
-
 
