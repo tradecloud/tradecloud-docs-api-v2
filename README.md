@@ -6,7 +6,11 @@ description: API v2 welcome page.
 
 If you want to use the Tradecloud API v2 you are at the right place.
 
-For successful onboarding you need to have experience with these [standards](api/standards.md).
+{% hint style="danger" %}
+ Your integration **must follow** these [rules](api/rules.md).
+
+Tradecloud will **review** your integration in the acceptance test environment **before going live.**
+{% endhint %}
 
 ## Some pages to get you started
 

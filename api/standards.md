@@ -1,8 +1,12 @@
 ---
-description: Overview of standards supported by the Tradecloud API
+description: Overview of standards used by the Tradecloud API
 ---
 
 # Standards
+
+{% hint style="danger" %}
+Your integration **must support** these standards.
+{% endhint %}
 
 ## Basic HTTP authentication
 
@@ -30,6 +34,12 @@ JavaScript Object Notation is a lightweight, text-based, language-independent da
 
 Published as [RFC 8259](https://tools.ietf.org/html/rfc8259) and [ECMA-404](https://www.ecma-international.org/publications/standards/Ecma-404.htm) [\(PDF\)](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)
 
+{% hint style="warning" %}
+The JSON syntax does not assign any significance to the **ordering** of name/value pairs.
+
+Therefor **XML** based transformations **expecting ordering** will break.
+{% endhint %}
+
 ## JWT
 
 [JSON Web Tokens](https://jwt.io/) are an open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties.
@@ -44,13 +54,23 @@ The [OpenAPI Version 2.0 Specification \(OAS 2.0\)](https://swagger.io/specifica
 
 ## TLS v1.2
 
-[Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network. The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) published as [RFC 5246](https://tools.ietf.org/html/rfc5246).
+[Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network. 
+
+{% hint style="warning" %}
+The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) published as [RFC 5246](https://tools.ietf.org/html/rfc5246).
+{% endhint %}
 
 ## URI
 
-A Uniform Resource Identifier \(URI\) is a compact sequence of characters that identifies an abstract or physical resource. Published as [RFC 3986](https://tools.ietf.org/html/rfc3986) with [errata](https://www.rfc-editor.org/errata_search.php?rfc=3986).
+A Uniform Resource Identifier \(URI\) is a compact sequence of characters that identifies an abstract or physical resource. 
 
-[URLs](https://www.w3schools.com/tags/ref_urlencode.ASP) can only be sent over the Internet using the [ASCII character-set](https://www.w3schools.com/charsets/ref_html_ascii.asp). Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. URLs cannot contain spaces. URL encoding normally replaces a space with a plus \(+\) sign or with %20.
+Published as [RFC 3986](https://tools.ietf.org/html/rfc3986) with [errata](https://www.rfc-editor.org/errata_search.php?rfc=3986).
+
+{% hint style="warning" %}
+[URLs](https://www.w3schools.com/tags/ref_urlencode.ASP) can only be sent over the Internet using the [ASCII character-set](https://www.w3schools.com/charsets/ref_html_ascii.asp). 
+
+Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. URLs cannot contain spaces. URL encoding normally replaces a space with a plus \(+\) sign or with %20.
+{% endhint %}
 
 ## UTF-8
 
