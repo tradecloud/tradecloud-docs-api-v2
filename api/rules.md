@@ -14,6 +14,10 @@ Tradecloud will **review** your integration in the acceptance test environment *
 
 Your integration **must support** the Tradecloud [standards](standards.md).
 
+{% hint style="warning" %}
+Pitfall: JSON syntax does not assign any significance to the **ordering** of name/value pairs.
+{% endhint %}
+
 ## Support forward compatibility
 
 Your integration **must support** [forward compatibility](compatibility.md#forward-compatibility).
