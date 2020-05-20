@@ -1,34 +1,34 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed May 20 19:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed May 20 21:30:53 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5968](https://tradecloud.atlassian.net/browse/TC-5968) Implement addition function for service actions logs 
+1. [TC-5958](https://tradecloud.atlassian.net/browse/TC-5958) Refactor OrderEvents.id to orderId 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 20-May-2020 21:24:00 CEST | [#1222](https://github.com/tradecloud/tradecloud-microservices/pull/1222) |  Rename OrderEvent.id to orderId | @roy-tc |  |
+
+2. [TC-5968](https://tradecloud.atlassian.net/browse/TC-5968) Implement addition function for service actions logs 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 20-May-2020 18:59:47 CEST | [#301](https://github.com/tradecloud/tradecloud-microservices-go/pull/301) |  Use &#39;LogfWithTime&#39; instead &#39;Err&#39; for services actions logs | @denys-kondartiuk |  |
 
-2. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
+3. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 22-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-May-2020 18:28:11 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
-3. [TC-5925](https://tradecloud.atlassian.net/browse/TC-5925) Go lang services must check JWT token status [Planned release 20-May-2020]
+4. [TC-5925](https://tradecloud.atlassian.net/browse/TC-5925) Go lang services must check JWT token status [Planned release 20-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 20-May-2020 18:11:24 CEST | [#300](https://github.com/tradecloud/tradecloud-microservices-go/pull/300) |  bump shared go | @TizianoPerrucci |  |
 
-4. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
+5. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-May-2020 18:08:53 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
-
-5. [TC-5958](https://tradecloud.atlassian.net/browse/TC-5958) Refactor OrderEvents.id to orderId 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-May-2020 17:03:19 CEST | [#1222](https://github.com/tradecloud/tradecloud-microservices/pull/1222) |  Rename OrderEvent.id to orderId | @roy-tc |  |
 
 6. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
