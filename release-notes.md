@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 22 21:33:01 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 25 09:31:25 CEST 2020)
 ---
 
 
@@ -176,8 +176,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 3 | Services (Scala) | 05-May-2020 21:19:25 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 | 4 | Services (Scala) | 29-Apr-2020 17:06:57 CEST | [#1184](https://github.com/tradecloud/tradecloud-microservices/pull/1184) | [TC-5899] Backwards compatibility fix for OrderView and UserView | @roy-tc |  |
 | 5 | Services (Scala) | 28-Apr-2020 16:59:24 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
-| 6 | Services (Go) | 24-Apr-2020 12:52:53 CEST | [#278](https://github.com/tradecloud/tradecloud-microservices-go/pull/278) |  [TC-5840] Listen to user-view topic instead of user-updated topic | @roy-tc |  |
-| 7 | Services (Scala) | 24-Apr-2020 12:51:34 CEST | [#1158](https://github.com/tradecloud/tradecloud-microservices/pull/1158) |  [TC-5840] Support reindexing of users | @roy-tc |  |
 
 20. [TC-5841](https://tradecloud.atlassian.net/browse/TC-5841) BE: Create typed model for workflow task json content 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -261,17 +259,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Apr-2020 14:51:41 CEST | [#1178](https://github.com/tradecloud/tradecloud-microservices/pull/1178) |  Quantity fixes for bulk propose action | @dmytrozheliuk |  |
-| 2 | Web Portal | 24-Apr-2020 16:50:46 CEST | [#374](https://github.com/tradecloud/tradecloud-portal-angular/pull/374) |  Development: create checkbox column with possibility select… | @bohdantrc |  |
-| 3 | Web Portal | 23-Apr-2020 10:15:44 CEST | [#378](https://github.com/tradecloud/tradecloud-portal-angular/pull/378) |  Development: bulk actions | @bohdantrc |  |
-
-35. [TC-5888](https://tradecloud.atlassian.net/browse/TC-5888) BE: Add enrichment  and webhook support of OrderLinesItemChangedBySupplier event 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Apr-2020 09:47:35 CEST | [#1176](https://github.com/tradecloud/tradecloud-microservices/pull/1176) |   - order item details enrichment | @olegtradecloud |  |
-
-36. [TC-5800](https://tradecloud.atlassian.net/browse/TC-5800) Disable 2FA API 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Apr-2020 16:21:44 CEST | [#376](https://github.com/tradecloud/tradecloud-portal-angular/pull/376) |  Add code and tests for disable 2FA | @RobinNagpal |  |
-| 2 | Services (Scala) | 23-Apr-2020 16:19:03 CEST | [#1153](https://github.com/tradecloud/tradecloud-microservices/pull/1153) |  disable 2fa | @TizianoPerrucci |  |
 
