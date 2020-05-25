@@ -61,7 +61,7 @@ On the environment page for each service the API endpoint you can find the [Open
 Common used services are:
 
 * `authentication` for authentication, to get a token
-* `order-integration` for buyer and supplier ERP integration
+* `api-connector` for buyer and supplier ERP integration
 * `object-storage` to upload and download documents
 * `order` for order/line commands
 * `order-search` for order queries
@@ -69,11 +69,11 @@ Common used services are:
 
 ### Methods
 
-In each [OpenAPI 2.0 Specification](https://swagger.io/specification/v2/) you can find the methods supported by the service. For example the [`order-integration`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute) service:
+In each [OpenAPI 2.0 Specification](https://swagger.io/specification/v2/) you can find the methods supported by the service. For example the [`api-connector`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) service:
 
-`POST /order-integration/order` [sends an order by the buyer](../buyer/issue/)
+`POST /api-connector/order` [sends an order by the buyer](../buyer/issue/)
 
-`POST /order-integration/order-response` sends an order response by the supplier
+`POST /api-connector/order-response` sends an order response by the supplier
 
 ### Parameters
 
@@ -93,9 +93,9 @@ A GET request can have a query parameter such as a `query` in `company-search`:
 
 ### JSON body
 
-A POST request has a [JSON](requests.md#json) body \(payload\) such as a purchase order in `order-integration` service `order` method:
+A POST request has a [JSON](requests.md#json) body \(payload\) such as a purchase order in `api-connector` service `order` method:
 
-[`POST /order-integration/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute)
+[`POST /api-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 
 ```javascript
 {

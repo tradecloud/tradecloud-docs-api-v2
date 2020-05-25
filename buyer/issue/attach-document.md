@@ -117,7 +117,7 @@ See OpenAPI specs
 {% endapi-method %}
 
 {% hint style="info" %}
-[Attach order documents by buyer OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/attachOrderDocumentsByBuyerRoute)
+[Attach order documents by buyer OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/attachOrderDocumentsByBuyerRoute)
 {% endhint %}
 
 ## Order documents body

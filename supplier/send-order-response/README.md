@@ -46,7 +46,7 @@ And the **logistics status may change**:
 * When`indicators.shipped` is set the order line will have logistics status `Shipped`
 * When the order line already has logistics status  `Delivered` the status will NOT change.
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order-integration/order-response" %}
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order-response" %}
 {% api-method-summary %}
 Send order response by supplier
 {% endapi-method-summary %}
@@ -81,7 +81,7 @@ Order response JSON body, see below.
 {% endapi-method %}
 
 {% hint style="info" %}
-S[end order response OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute)
+S[end order response OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute)
 {% endhint %}
 
 ## Order

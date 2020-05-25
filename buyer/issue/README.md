@@ -14,7 +14,7 @@ As a buyer you can send a new purchase order to Tradecloud.
 The new order lines will have order process status `Issued`and logistics status `Open`
 {% endhint %}
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order-integration/order" %}
+{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order" %}
 {% api-method-summary %}
 Send order by buyer
 {% endapi-method-summary %}
@@ -49,7 +49,7 @@ Order JSON body
 {% endapi-method %}
 
 {% hint style="info" %}
-[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-integration/specs.yaml#/order-integration/sendOrderByBuyerRoute)
+[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 {% endhint %}
 
 ## Order
