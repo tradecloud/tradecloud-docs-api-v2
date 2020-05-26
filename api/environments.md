@@ -41,3 +41,4 @@ It has an availability SLA of 99,5% per month, measured 24/7, except for [planne
 ## Planned production maintenance
 
 Maintenance can be planned on working days after 20:00 CE\(S\)T or in weekends and will be announced at least 3 working days ahead on the [Tradecloud status page](http://status.tradecloud1.com)
+
