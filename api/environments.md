@@ -6,29 +6,9 @@ description: Tradecloud API environments available
 
 Tradecloud has 3 environments available for customers:
 
-* [Stable environment](environments.md#stable-environment)
-* [Acceptance test environment](environments.md#acceptance-test-environment)
 * [Production live environment](environments.md#production-environment)
-
-## Stable environment
-
-There is one [stable environment](https://api.stable.tradecloud1.com). Use https://api.stable.tradecloud1.com/v2/api-connector/ to send order (responses).
-
-Buyers and suppliers can use this environment for demo's and training.
-
-This enviroment is stable and the latest features are NOT available.
-
-It has an availability SLA of 95% per month, measured 8:00-18:00 CE\(S\)T on working days \(10/5\).
-
-## Acceptance test environment
-
-There is one [acceptance test environment](https://api.accp.tradecloud1.com). Use https://api.accp.tradecloud1.com/v2/api-connector/ to send order (responses).
-
-Buyers and suppliers can test new features and develop and test their Tradecloud API integration. 
-
-The latest features will be made available by the Tradecloud continuous delivery process.
-
-It has an availability SLA of 95% per month, measured 8:00-18:00 CE\(S\)T on working days \(10/5\).
+* [Acceptance test environment](environments.md#acceptance-test-environment)
+* [Stable environment](environments.md#stable-environment)
 
 ## Production environment
 
@@ -42,3 +22,22 @@ It has an availability SLA of 99,5% per month, measured 24/7, except for [planne
 
 Maintenance can be planned on working days after 20:00 CE\(S\)T or in weekends and will be announced at least 3 working days ahead on the [Tradecloud status page](http://status.tradecloud1.com)
 
+## Acceptance test environment
+
+There is one [acceptance test environment](https://api.accp.tradecloud1.com). Use https://api.accp.tradecloud1.com/v2/api-connector/ to send order (responses).
+
+Buyers and suppliers can test new features and develop and test their Tradecloud API integration. 
+
+The latest features will be made available by the Tradecloud continuous delivery process.
+
+It has an availability SLA of 95% per month, measured 8:00-18:00 CE\(S\)T on working days \(10/5\).
+
+## Stable environment
+
+There is one [stable environment](https://api.stable.tradecloud1.com). Use https://api.stable.tradecloud1.com/v2/api-connector/ to send order (responses).
+
+Buyers and suppliers can use this environment for demo's and training.
+
+This enviroment is stable and the latest features are NOT available.
+
+It is available on request. When available it has an availability SLA of 95% per month, measured 8:00-18:00 CE\(S\)T on working days \(10/5\).
