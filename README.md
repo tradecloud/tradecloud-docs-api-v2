@@ -42,5 +42,3 @@ If you get stuck just ask:
 
 {% page-ref page="support.md" %}
 
-
-
