@@ -1,20 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu May 28 15:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu May 28 17:30:53 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
+1. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 28-May-2020 16:08:52 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
+
+2. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-May-2020 15:08:39 CEST | [#395](https://github.com/tradecloud/tradecloud-portal-angular/pull/395) |  add reopen request dialog | @bohdantrc |  |
-
-2. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-May-2020 15:02:08 CEST | [#1226](https://github.com/tradecloud/tradecloud-microservices/pull/1226) |  - reopen request migration tests | @olegtradecloud |  |
-| 2 | Services (Scala) | 28-May-2020 11:19:01 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
 
 3. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -215,7 +214,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 2 | Services (Go) | 08-May-2020 10:07:09 CEST | [#291](https://github.com/tradecloud/tradecloud-microservices-go/pull/291) | [TC-5857] Listen to company view and connection view | @roy-tc |  |
 | 3 | Services (Scala) | 05-May-2020 21:19:25 CEST | [#1181](https://github.com/tradecloud/tradecloud-microservices/pull/1181) | [TC-5859] Support reindexing of activities | @roy-tc |  |
 | 4 | Services (Scala) | 29-Apr-2020 17:06:57 CEST | [#1184](https://github.com/tradecloud/tradecloud-microservices/pull/1184) | [TC-5899] Backwards compatibility fix for OrderView and UserView | @roy-tc |  |
-| 5 | Services (Scala) | 28-Apr-2020 16:59:24 CEST | [#1177](https://github.com/tradecloud/tradecloud-microservices/pull/1177) | [TC-5858] Support reindexing of order and order lines | @roy-tc |  |
 
 24. [TC-5841](https://tradecloud.atlassian.net/browse/TC-5841) BE: Create typed model for workflow task json content 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
