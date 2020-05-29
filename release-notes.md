@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu May 28 21:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 29 09:31:36 CEST 2020)
 ---
 
 
@@ -275,9 +275,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Apr-2020 12:13:07 CEST | [#380](https://github.com/tradecloud/tradecloud-portal-angular/pull/380) |  logout with refresh token | @bohdantrc |  |
-
-35. [TC-5327](https://tradecloud.atlassian.net/browse/TC-5327) Change FTP settings header to FTPS/SFTP 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Apr-2020 07:18:57 CEST | [#379](https://github.com/tradecloud/tradecloud-portal-angular/pull/379) |  Development: change text from FTP to FTPS/SFTP | @bohdantrc |  |
 
