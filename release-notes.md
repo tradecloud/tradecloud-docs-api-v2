@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 29 11:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 29 13:30:53 CEST 2020)
 ---
 
 
@@ -8,24 +8,24 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-May-2020 10:34:31 CEST | [#395](https://github.com/tradecloud/tradecloud-portal-angular/pull/395) |  add reopen request dialog | @bohdantrc |  |
+| 1 | Web Portal | 29-May-2020 12:25:49 CEST | [#395](https://github.com/tradecloud/tradecloud-portal-angular/pull/395) |  add reopen request dialog | @bohdantrc |  |
 
-2. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
+2. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 29-May-2020 11:36:19 CEST | [#400](https://github.com/tradecloud/tradecloud-portal-angular/pull/400) |  Change aside part in dashboard | @bohdantrc |  |
+
+3. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 28-May-2020 21:03:54 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) |  - add enforce2FA setting | @RobinNagpal |  |
 | 2 | Services (Scala) | 28-May-2020 13:27:32 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
 | 3 | Web Portal | 28-May-2020 09:54:20 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  unrestrict 2fa | @RobinNagpal |  |
 
-3. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
+4. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-May-2020 16:08:52 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
-
-4. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-May-2020 13:48:37 CEST | [#400](https://github.com/tradecloud/tradecloud-portal-angular/pull/400) |  Change aside part in dashboard | @bohdantrc |  |
 
 5. [TC-5868](https://tradecloud.atlassian.net/browse/TC-5868) Workflow tasks for reopen requests 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -270,9 +270,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Apr-2020 16:03:20 CEST | [#1186](https://github.com/tradecloud/tradecloud-microservices/pull/1186) |  - order-search spec fix | @olegtradecloud |  |
 | 2 | Services (Scala) | 29-Apr-2020 14:39:58 CEST | [#1183](https://github.com/tradecloud/tradecloud-microservices/pull/1183) |  Add item details to order-api spec | @olegtradecloud |  |
-
-34. [TC-5896](https://tradecloud.atlassian.net/browse/TC-5896) Portal should logout should send the refresh token 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Apr-2020 12:13:07 CEST | [#380](https://github.com/tradecloud/tradecloud-portal-angular/pull/380) |  logout with refresh token | @bohdantrc |  |
 
