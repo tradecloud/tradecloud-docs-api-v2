@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 1 09:36:25 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 1 11:30:50 CEST 2020)
 ---
 
 
@@ -243,9 +243,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-May-2020 08:52:19 CEST | [#1172](https://github.com/tradecloud/tradecloud-microservices/pull/1172) |  Enrich Order Response event | @aShevc |  |
-
-30. [TC-5818](https://tradecloud.atlassian.net/browse/TC-5818) FE: Add part data to the order line detail page  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 01-May-2020 09:37:36 CEST | [#383](https://github.com/tradecloud/tradecloud-portal-angular/pull/383) |  Development: Create view with item details info | @bohdantrc |  |
 
