@@ -1,74 +1,74 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 2 17:31:02 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 2 19:30:59 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
+1. [TC-5702](https://tradecloud.atlassian.net/browse/TC-5702) As DevOps I want to update Go to 1.14 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 02-Jun-2020 19:20:43 CEST | [#307](https://github.com/tradecloud/tradecloud-microservices-go/pull/307) |  Update to Go 1.14, refactor messages handling | @vovinacci |  |
+
+2. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 02-Jun-2020 17:54:45 CEST | [#395](https://github.com/tradecloud/tradecloud-portal-angular/pull/395) |  add reopen request dialog | @bohdantrc |  |
+
+3. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 17:05:53 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
 | 2 | Services (Go) | 31-May-2020 13:07:41 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) |  - add enforce2FA setting | @RobinNagpal |  |
 
-2. [TC-5702](https://tradecloud.atlassian.net/browse/TC-5702) As DevOps I want to update Go to 1.14 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 02-Jun-2020 17:05:20 CEST | [#307](https://github.com/tradecloud/tradecloud-microservices-go/pull/307) |  Update to Go 1.14, refactor messages handling | @vovinacci |  |
-
-3. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
+4. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 16:50:07 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
 
-4. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines [Planned release 29-May-2020]
+5. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines [Planned release 29-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 16:26:48 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
-5. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
+6. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 15:32:10 CEST | [#1219](https://github.com/tradecloud/tradecloud-microservices/pull/1219) |  Unrestrict 2FA | @RobinNagpal |  |
 | 2 | Web Portal | 02-Jun-2020 14:16:42 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  Unrestrict 2fa | @RobinNagpal |  |
 
-6. [TC-5869](https://tradecloud.atlassian.net/browse/TC-5869) BE: approve / reject reopen request by buyer 
+7. [TC-5869](https://tradecloud.atlassian.net/browse/TC-5869) BE: approve / reject reopen request by buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 15:23:49 CEST | [#1223](https://github.com/tradecloud/tradecloud-microservices/pull/1223) | : Added approve/reject functionality by buyer/supplier | @dmytrozheliuk |  |
 
-7. [N/A](#)  
+8. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Jun-2020 14:57:28 CEST | [#403](https://github.com/tradecloud/tradecloud-portal-angular/pull/403) | Tc 5957 RFQ | @bohdantrc |  |
 
-8. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 30-Jun-2020]
+9. [TC-5802](https://tradecloud.atlassian.net/browse/TC-5802) As Tradecloud I want to be able to enforce 2FA on a company level [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Jun-2020 14:16:29 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
 
-9. [TC-5803](https://tradecloud.atlassian.net/browse/TC-5803) Enforce 2FA by superuser and admin for new users  
+10. [TC-5803](https://tradecloud.atlassian.net/browse/TC-5803) Enforce 2FA by superuser and admin for new users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 14:10:29 CEST | [#1217](https://github.com/tradecloud/tradecloud-microservices/pull/1217) |  enforce 2fa new users | @RobinNagpal |  |
 | 2 | Web Portal | 02-Jun-2020 14:08:29 CEST | [#401](https://github.com/tradecloud/tradecloud-portal-angular/pull/401) |  Enforce 2fa new users | @RobinNagpal |  |
 
-10. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
+11. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 13:01:23 CEST | [#1227](https://github.com/tradecloud/tradecloud-microservices/pull/1227) |   - activity reopen request | @olegtradecloud |  |
 
-11. [TC-5978](https://tradecloud.atlassian.net/browse/TC-5978) As product management I want a stable environment for supplier day and user training [Planned release 26-May-2020]
+12. [TC-5978](https://tradecloud.atlassian.net/browse/TC-5978) As product management I want a stable environment for supplier day and user training [Planned release 26-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-May-2020 17:17:46 CEST | [#398](https://github.com/tradecloud/tradecloud-portal-angular/pull/398) |  Backport branch | @vovinacci |  |
 | 2 | Services (Scala) | 29-May-2020 17:17:30 CEST | [#1224](https://github.com/tradecloud/tradecloud-microservices/pull/1224) |  Backport branch | @vovinacci |  |
 | 3 | Services (Go) | 29-May-2020 17:17:15 CEST | [#303](https://github.com/tradecloud/tradecloud-microservices-go/pull/303) |  Backport branch | @vovinacci |  |
-
-12. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-May-2020 12:25:49 CEST | [#395](https://github.com/tradecloud/tradecloud-portal-angular/pull/395) |  add reopen request dialog | @bohdantrc |  |
 
 13. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
