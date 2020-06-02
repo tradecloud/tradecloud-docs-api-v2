@@ -1,30 +1,30 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 2 11:31:01 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 2 13:30:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines using a reopen request workflow [Planned release 29-May-2020]
+1. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines [Planned release 29-May-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Jun-2020 10:40:33 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
+| 1 | Services (Scala) | 02-Jun-2020 13:26:41 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
-2. [TC-5869](https://tradecloud.atlassian.net/browse/TC-5869) BE: approve / reject reopen request by buyer 
+2. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 02-Jun-2020 13:01:23 CEST | [#1227](https://github.com/tradecloud/tradecloud-microservices/pull/1227) |   - activity reopen request | @olegtradecloud |  |
+
+3. [TC-5869](https://tradecloud.atlassian.net/browse/TC-5869) BE: approve / reject reopen request by buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 10:20:00 CEST | [#1223](https://github.com/tradecloud/tradecloud-microservices/pull/1223) | : Added approve/reject functionality by buyer/supplier | @dmytrozheliuk |  |
 
-3. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
+4. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Jun-2020 03:00:52 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
 | 2 | Services (Go) | 31-May-2020 13:07:41 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) |  - add enforce2FA setting | @RobinNagpal |  |
-
-4. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Jun-2020 20:30:01 CEST | [#1227](https://github.com/tradecloud/tradecloud-microservices/pull/1227) |   - activity reopen request | @olegtradecloud |  |
 
 5. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -181,7 +181,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 1 | Services (Scala) | 15-May-2020 13:58:19 CEST | [#1214](https://github.com/tradecloud/tradecloud-microservices/pull/1214) |  Backwards compatibility for RequestStatus | @roy-tc |  |
 | 2 | Services (Scala) | 14-May-2020 15:42:52 CEST | [#1210](https://github.com/tradecloud/tradecloud-microservices/pull/1210) | : Solution for RequestStatus | @dmytrozheliuk |  |
 
-18. [TC-4480](https://tradecloud.atlassian.net/browse/TC-4480) As a buyer I want to reopen order lines using a reopen request workflow 
+18. [TC-4480](https://tradecloud.atlassian.net/browse/TC-4480) As a buyer I want to reopen order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-May-2020 11:14:05 CEST | [#1209](https://github.com/tradecloud/tradecloud-microservices/pull/1209) | [TC-4478] Pull Order and OrderLine state and behavior refactoring | @roy-tc |  |
