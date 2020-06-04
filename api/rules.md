@@ -24,7 +24,7 @@ Your integration **must support** [forward compatibility](compatibility.md#forwa
 
 ## Identifiers must be unique and immutable
 
-Your identifiers like below must be **unique** and may **never change or be reassigned**.
+Your identifiers like below **must be** **unique** and may **never change or be reassigned**.
 
 Identifier examples are:
 
@@ -53,6 +53,14 @@ Only resend an order or order response that **has an actual change**
 ### **Never send all orders periodically**
 
 Never resend **all** orders or **all active** orders periodically.
+
+## Orders and lines
+
+As buyer your integration **should not change destination or item** when reissuing an order line.
+
+Your integration **must** **support a line delivery schedule with multiple schedule lines** when sending or receiving an order, response or event.
+
+Your integration **must support** **the other party may** **add or remove a delivery schedule line**.
 
 ## Attach a document
 
