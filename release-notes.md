@@ -1,21 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jun 5 11:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jun 5 13:30:56 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5869](https://tradecloud.atlassian.net/browse/TC-5869) BE: approve / reject reopen request by buyer 
+1. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Jun-2020 11:24:17 CEST | [#1223](https://github.com/tradecloud/tradecloud-microservices/pull/1223) | : Added approve/reject functionality by buyer/supplier | @dmytrozheliuk |  |
-| 2 | Web Portal | 05-Jun-2020 10:34:12 CEST | [#404](https://github.com/tradecloud/tradecloud-portal-angular/pull/404) |  buyer approve reject | @bohdantrc |  |
-
-2. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jun-2020 20:48:22 CEST | [#1227](https://github.com/tradecloud/tradecloud-microservices/pull/1227) |  Activity reopen request | @olegtradecloud |  |
+| 1 | Services (Scala) | 05-Jun-2020 13:25:16 CEST | [#1227](https://github.com/tradecloud/tradecloud-microservices/pull/1227) |  Activity reopen request | @olegtradecloud |  |
 | 2 | Services (Go) | 04-Jun-2020 14:31:09 CEST | [#309](https://github.com/tradecloud/tradecloud-microservices-go/pull/309) |  - activity reopen request | @olegtradecloud |  |
+
+2. [TC-5869](https://tradecloud.atlassian.net/browse/TC-5869) BE: approve / reject reopen request by buyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-Jun-2020 11:45:24 CEST | [#1223](https://github.com/tradecloud/tradecloud-microservices/pull/1223) | : Added approve/reject functionality by buyer/supplier | @dmytrozheliuk |  |
+| 2 | Web Portal | 05-Jun-2020 10:34:12 CEST | [#404](https://github.com/tradecloud/tradecloud-portal-angular/pull/404) |  buyer approve reject | @bohdantrc |  |
 
 3. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -63,94 +63,95 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 
 ## Changelog
 
-1. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 05-Jun-2020 12:21:42 CEST | [#310](https://github.com/tradecloud/tradecloud-microservices-go/pull/310) |  Fix Kafka group logging | @vovinacci |  |
+| 2 | Services (Go) | 21-May-2020 19:48:10 CEST | [#302](https://github.com/tradecloud/tradecloud-microservices-go/pull/302) |  Packages: Update dependencies | @vovinacci |  |
+| 3 | Services (Scala) | 20-May-2020 13:27:54 CEST | [#1221](https://github.com/tradecloud/tradecloud-microservices/pull/1221) | : Bump messages | @dmytrozheliuk |  |
+| 4 | Services (Go) | 20-May-2020 10:23:48 CEST | [#299](https://github.com/tradecloud/tradecloud-microservices-go/pull/299) |  - Remove direct kitLogger usage | @denys-kondartiuk |  |
+| 5 | Services (Go) | 19-May-2020 13:39:22 CEST | [#298](https://github.com/tradecloud/tradecloud-microservices-go/pull/298) |  - Remove kitLogger from makeRoutes | @denys-kondartiuk |  |
+| 6 | Services (Go) | 19-May-2020 10:34:14 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - Remove unnecessary wrapper for logging | @denys-kondartiuk |  |
+| 7 | Services (Scala) | 15-May-2020 17:42:51 CEST | [#1216](https://github.com/tradecloud/tradecloud-microservices/pull/1216) |  Enforce scalastyle failures on error | @vovinacci |  |
+| 8 | Services (Scala) | 15-May-2020 15:11:04 CEST | [#1215](https://github.com/tradecloud/tradecloud-microservices/pull/1215) |  Amend pipeline to test all the services, including connectors. | @aShevc |  |
+| 9 | Services (Go) | 08-May-2020 21:19:57 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
+| 10 | Services (Scala) | 05-May-2020 16:14:54 CEST | [#1197](https://github.com/tradecloud/tradecloud-microservices/pull/1197) |  Commit after failure for enriching connections | @roy-tc |  |
+
+2. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Jun-2020 13:53:12 CEST | [#395](https://github.com/tradecloud/tradecloud-portal-angular/pull/395) |  add reopen request dialog | @bohdantrc |  |
 
-2. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines 
+3. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Jun-2020 13:49:22 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
-3. [TC-5803](https://tradecloud.atlassian.net/browse/TC-5803) Enforce 2FA by superuser and admin for new users  
+4. [TC-5803](https://tradecloud.atlassian.net/browse/TC-5803) Enforce 2FA by superuser and admin for new users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 03-Jun-2020 14:39:41 CEST | [#1217](https://github.com/tradecloud/tradecloud-microservices/pull/1217) |  enforce 2fa new users | @RobinNagpal |  |
 | 2 | Web Portal | 03-Jun-2020 14:08:45 CEST | [#401](https://github.com/tradecloud/tradecloud-portal-angular/pull/401) |  Enforce 2fa new users | @RobinNagpal |  |
 
-4. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
+5. [TC-5804](https://tradecloud.atlassian.net/browse/TC-5804) Enforce 2FA by superuser and admin for existing users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 03-Jun-2020 13:59:41 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
 | 2 | Services (Go) | 03-Jun-2020 13:59:13 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) |  - add enforce2FA setting | @RobinNagpal |  |
 | 3 | Web Portal | 03-Jun-2020 13:53:35 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
 
-5. [TC-5702](https://tradecloud.atlassian.net/browse/TC-5702) As DevOps I want to update Go to 1.14 
+6. [TC-5702](https://tradecloud.atlassian.net/browse/TC-5702) As DevOps I want to update Go to 1.14 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 03-Jun-2020 07:57:54 CEST | [#307](https://github.com/tradecloud/tradecloud-microservices-go/pull/307) |  Update to Go 1.14, refactor messages handling | @vovinacci |  |
 
-6. [TC-5993](https://tradecloud.atlassian.net/browse/TC-5993) As DevOps I want to log Kafka consumer name in Go services 
+7. [TC-5993](https://tradecloud.atlassian.net/browse/TC-5993) As DevOps I want to log Kafka consumer name in Go services 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 02-Jun-2020 09:39:36 CEST | [#306](https://github.com/tradecloud/tradecloud-microservices-go/pull/306) |  Log Kafka consumer group name | @vovinacci |  |
 
-7. [TC-5771](https://tradecloud.atlassian.net/browse/TC-5771) As DevOps I want deployment environmental variables to be consistent beween Go and Scala services. 
+8. [TC-5771](https://tradecloud.atlassian.net/browse/TC-5771) As DevOps I want deployment environmental variables to be consistent beween Go and Scala services. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 01-Jun-2020 19:11:39 CEST | [#305](https://github.com/tradecloud/tradecloud-microservices-go/pull/305) |  Make env variables naming consistent | @vovinacci |  |
 
-8. [TC-5868](https://tradecloud.atlassian.net/browse/TC-5868) Workflow tasks for reopen requests 
+9. [TC-5868](https://tradecloud.atlassian.net/browse/TC-5868) Workflow tasks for reopen requests 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Jun-2020 18:12:36 CEST | [#1225](https://github.com/tradecloud/tradecloud-microservices/pull/1225) |   - workflow reopen requests | @olegtradecloud |  |
 
-9. [TC-4661](https://tradecloud.atlassian.net/browse/TC-4661) Email links have blue text on blue buttons in Gmail 
+10. [TC-4661](https://tradecloud.atlassian.net/browse/TC-4661) Email links have blue text on blue buttons in Gmail 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 28-May-2020 10:12:32 CEST | [#304](https://github.com/tradecloud/tradecloud-microservices-go/pull/304) |  Set white color for button text | @bohdantrc |  |
 
-10. [TC-5950](https://tradecloud.atlassian.net/browse/TC-5950) Remove the &#34;approve proposal&#34; button after a buyer has rejected the proposal.  
+11. [TC-5950](https://tradecloud.atlassian.net/browse/TC-5950) Remove the &#34;approve proposal&#34; button after a buyer has rejected the proposal.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-May-2020 15:19:24 CEST | [#399](https://github.com/tradecloud/tradecloud-portal-angular/pull/399) |  change condition for approve proposal by a buyer | @bohdantrc |  |
 
-11. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
+12. [TC-5737](https://tradecloud.atlassian.net/browse/TC-5737) Incorrect line id if position contains special symbols 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-May-2020 11:33:03 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
 | 2 | Services (Scala) | 26-May-2020 11:32:41 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
 
-12. [TC-5491](https://tradecloud.atlassian.net/browse/TC-5491) As a QA I want refresh tokens to be tested by Portal unit tests 
+13. [TC-5491](https://tradecloud.atlassian.net/browse/TC-5491) As a QA I want refresh tokens to be tested by Portal unit tests 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-May-2020 17:48:16 CEST | [#397](https://github.com/tradecloud/tradecloud-portal-angular/pull/397) |  enable and fix spec files, clean code | @bohdantrc |  |
 
-13. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
+14. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-May-2020 15:21:11 CEST | [#396](https://github.com/tradecloud/tradecloud-portal-angular/pull/396) |  add check prices in proposal | @bohdantrc |  |
 | 2 | Services (Scala) | 25-May-2020 15:20:35 CEST | [#1220](https://github.com/tradecloud/tradecloud-microservices/pull/1220) |  Revert &#34;Make Prices required everywhere&#34; | @marcmatt |  |
 | 3 | Services (Scala) | 18-May-2020 14:04:05 CEST | [#1207](https://github.com/tradecloud/tradecloud-microservices/pull/1207) |  Make Prices required everywhere | @roy-tc |  |
 
-14. [N/A](#)  
+15. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-May-2020 13:37:25 CEST | [#393](https://github.com/tradecloud/tradecloud-portal-angular/pull/393) | testing refresh | @bohdantrc |  |
-
-15. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 21-May-2020 19:48:10 CEST | [#302](https://github.com/tradecloud/tradecloud-microservices-go/pull/302) |  Packages: Update dependencies | @vovinacci |  |
-| 2 | Services (Scala) | 20-May-2020 13:27:54 CEST | [#1221](https://github.com/tradecloud/tradecloud-microservices/pull/1221) | : Bump messages | @dmytrozheliuk |  |
-| 3 | Services (Go) | 20-May-2020 10:23:48 CEST | [#299](https://github.com/tradecloud/tradecloud-microservices-go/pull/299) |  - Remove direct kitLogger usage | @denys-kondartiuk |  |
-| 4 | Services (Go) | 19-May-2020 13:39:22 CEST | [#298](https://github.com/tradecloud/tradecloud-microservices-go/pull/298) |  - Remove kitLogger from makeRoutes | @denys-kondartiuk |  |
-| 5 | Services (Go) | 19-May-2020 10:34:14 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - Remove unnecessary wrapper for logging | @denys-kondartiuk |  |
-| 6 | Services (Scala) | 15-May-2020 17:42:51 CEST | [#1216](https://github.com/tradecloud/tradecloud-microservices/pull/1216) |  Enforce scalastyle failures on error | @vovinacci |  |
-| 7 | Services (Scala) | 15-May-2020 15:11:04 CEST | [#1215](https://github.com/tradecloud/tradecloud-microservices/pull/1215) |  Amend pipeline to test all the services, including connectors. | @aShevc |  |
-| 8 | Services (Go) | 08-May-2020 21:19:57 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
-| 9 | Services (Scala) | 05-May-2020 16:14:54 CEST | [#1197](https://github.com/tradecloud/tradecloud-microservices/pull/1197) |  Commit after failure for enriching connections | @roy-tc |  |
 
 16. [TC-5925](https://tradecloud.atlassian.net/browse/TC-5925) Go lang services must check JWT token status 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
