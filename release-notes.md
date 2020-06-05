@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jun 5 17:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jun 5 19:30:53 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-5996](https://tradecloud.atlassian.net/browse/TC-5996) FE: reopen request by buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Jun-2020 17:24:02 CEST | [#405](https://github.com/tradecloud/tradecloud-portal-angular/pull/405) |  add buyer reopen request show in ORDER LINE DETAILS column | @bohdantrc |  |
+| 1 | Web Portal | 05-Jun-2020 17:31:32 CEST | [#405](https://github.com/tradecloud/tradecloud-portal-angular/pull/405) |  add buyer reopen request show in ORDER LINE DETAILS column | @bohdantrc |  |
 
 2. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -71,15 +71,16 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 05-Jun-2020 12:21:42 CEST | [#310](https://github.com/tradecloud/tradecloud-microservices-go/pull/310) |  Fix Kafka group logging | @vovinacci |  |
-| 2 | Services (Go) | 21-May-2020 19:48:10 CEST | [#302](https://github.com/tradecloud/tradecloud-microservices-go/pull/302) |  Packages: Update dependencies | @vovinacci |  |
-| 3 | Services (Scala) | 20-May-2020 13:27:54 CEST | [#1221](https://github.com/tradecloud/tradecloud-microservices/pull/1221) | : Bump messages | @dmytrozheliuk |  |
-| 4 | Services (Go) | 20-May-2020 10:23:48 CEST | [#299](https://github.com/tradecloud/tradecloud-microservices-go/pull/299) |  - Remove direct kitLogger usage | @denys-kondartiuk |  |
-| 5 | Services (Go) | 19-May-2020 13:39:22 CEST | [#298](https://github.com/tradecloud/tradecloud-microservices-go/pull/298) |  - Remove kitLogger from makeRoutes | @denys-kondartiuk |  |
-| 6 | Services (Go) | 19-May-2020 10:34:14 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - Remove unnecessary wrapper for logging | @denys-kondartiuk |  |
-| 7 | Services (Scala) | 15-May-2020 17:42:51 CEST | [#1216](https://github.com/tradecloud/tradecloud-microservices/pull/1216) |  Enforce scalastyle failures on error | @vovinacci |  |
-| 8 | Services (Scala) | 15-May-2020 15:11:04 CEST | [#1215](https://github.com/tradecloud/tradecloud-microservices/pull/1215) |  Amend pipeline to test all the services, including connectors. | @aShevc |  |
-| 9 | Services (Go) | 08-May-2020 21:19:57 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
+| 1 | Services (Go) | 05-Jun-2020 18:49:36 CEST | [#311](https://github.com/tradecloud/tradecloud-microservices-go/pull/311) |  Fix Kafka group logging (this time for real) | @vovinacci |  |
+| 2 | Services (Go) | 05-Jun-2020 12:21:42 CEST | [#310](https://github.com/tradecloud/tradecloud-microservices-go/pull/310) |  Fix Kafka group logging | @vovinacci |  |
+| 3 | Services (Go) | 21-May-2020 19:48:10 CEST | [#302](https://github.com/tradecloud/tradecloud-microservices-go/pull/302) |  Packages: Update dependencies | @vovinacci |  |
+| 4 | Services (Scala) | 20-May-2020 13:27:54 CEST | [#1221](https://github.com/tradecloud/tradecloud-microservices/pull/1221) | : Bump messages | @dmytrozheliuk |  |
+| 5 | Services (Go) | 20-May-2020 10:23:48 CEST | [#299](https://github.com/tradecloud/tradecloud-microservices-go/pull/299) |  - Remove direct kitLogger usage | @denys-kondartiuk |  |
+| 6 | Services (Go) | 19-May-2020 13:39:22 CEST | [#298](https://github.com/tradecloud/tradecloud-microservices-go/pull/298) |  - Remove kitLogger from makeRoutes | @denys-kondartiuk |  |
+| 7 | Services (Go) | 19-May-2020 10:34:14 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - Remove unnecessary wrapper for logging | @denys-kondartiuk |  |
+| 8 | Services (Scala) | 15-May-2020 17:42:51 CEST | [#1216](https://github.com/tradecloud/tradecloud-microservices/pull/1216) |  Enforce scalastyle failures on error | @vovinacci |  |
+| 9 | Services (Scala) | 15-May-2020 15:11:04 CEST | [#1215](https://github.com/tradecloud/tradecloud-microservices/pull/1215) |  Amend pipeline to test all the services, including connectors. | @aShevc |  |
+| 10 | Services (Go) | 08-May-2020 21:19:57 CEST | [#288](https://github.com/tradecloud/tradecloud-microservices-go/pull/288) |  Use new log.Logger where possible, cleanup | @vovinacci |  |
 
 2. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
