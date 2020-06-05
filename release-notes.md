@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jun 5 13:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jun 5 15:30:56 CEST 2020)
 ---
 
 
@@ -254,7 +254,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-May-2020 09:17:47 CEST | [#1199](https://github.com/tradecloud/tradecloud-microservices/pull/1199) |  Updated Readme to include shared Scala updating process | @aShevc |  |
-| 2 | Services (Scala) | 05-May-2020 14:03:23 CEST | [#1196](https://github.com/tradecloud/tradecloud-microservices/pull/1196) |  Finished Shared Scala update | @aShevc |  |
 
 35. [TC-5821](https://tradecloud.atlassian.net/browse/TC-5821) FE: change/add part data.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
