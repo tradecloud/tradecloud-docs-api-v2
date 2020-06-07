@@ -10,7 +10,7 @@ As a supplier you can send either a new or updated purchase order response to yo
 
 After sending an order response to Tradecloud the order lines **process status may change**:
 
-When the order line has process status `Issued`: 
+When the order line has process status `Issued`:
 
 * When`indicators.accepted` is set the process status will become`Confirmed`
 * When`indicators.rejected` is set the process status will become`Rejected`
@@ -24,7 +24,7 @@ When the order line has process status `InProgress`:
 * When`indicators.rejected` is set the process status will become`Rejected`
 * When the by supplier **responded** `delivery schedule` and `prices` are **equal** to the by buyer
 
-   **requested** `delivery schedule` and `prices` the process status will become `Confirmed`
+  **requested** `delivery schedule` and `prices` the process status will become `Confirmed`
 
 * When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices` the process status will stay `InProgress`.
 * When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
@@ -108,8 +108,6 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 
 {% page-ref page="../ship-goods.md" %}
 
-{% page-ref page="../reopen-request.md" %}
-
 {% page-ref page="../cancel-request.md" %}
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
@@ -177,8 +175,6 @@ The supplier may check, change and add item details if they are not correct or i
 * Additional `indicators`:
 
 {% page-ref page="../ship-goods.md" %}
-
-{% page-ref page="../reopen-request.md" %}
 
 {% page-ref page="../cancel-request.md" %}
 

@@ -10,6 +10,12 @@ This feature is under development and API and documentation may change.
 
 If an order line is confirmed \(both parties agreed on the delivery of goods\) then the supplier should  request  to `reopen` the line. Tradecloud will create a line level reopen workflow task which the buyer can approve or reject.
 
+When the supplier sends an order response update with **responded** `delivery schedule` and `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create line level reopen workflow task for the supplier. When possible provide the supplier line `reason`field.
+
+You may **update an reopen request** which is in progress, by sending an order response update again.
+
+{% page-ref page="send-order-response/" %}
+
 {% hint style="warning" %}
 This is a **request** to the buyer to reopen an already confirmed order line. 
 
@@ -23,20 +29,4 @@ You cannot reopen a `Completed` or `Cancelled` line
 {% hint style="info" %}
 An order line having process status `Confirmed` will become `InProgress`
 {% endhint %}
-
-## Automatic reopen request
-
-When the supplier sends an order response update with **responded** `delivery schedule` and `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create line level reopen workflow task for the supplier. 
-
-When possible provide the supplier line `reason`field.
-
-In this case you do not have to set the supplier line `indicators.reopenRequest`
-
-{% page-ref page="send-order-response/" %}
-
-## Forced reopen request
-
-If you want the change other line values, you can force a reopen request by setting the supplier line`indicators.reopenRequest`and send an order response update.
-
-When possible provide the supplier line `reason`field.
 
