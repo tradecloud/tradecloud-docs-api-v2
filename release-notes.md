@@ -1,37 +1,37 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 8 11:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 8 13:30:54 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
+1. [TC-5996](https://tradecloud.atlassian.net/browse/TC-5996) FE: reopen request by buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 08-Jun-2020 11:23:44 CEST | [#308](https://github.com/tradecloud/tradecloud-microservices-go/pull/308) |  Buyer reopen request | @olegtradecloud |  |
-| 2 | Services (Scala) | 04-Jun-2020 20:48:11 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
+| 1 | Web Portal | 08-Jun-2020 12:58:36 CEST | [#405](https://github.com/tradecloud/tradecloud-portal-angular/pull/405) |  add buyer reopen request show in ORDER LINE DETAILS column | @bohdantrc |  |
 
-2. [N/A](#)  
+2. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-Jun-2020 12:11:54 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  buyer reopen request | @olegtradecloud |  |
+| 2 | Services (Go) | 08-Jun-2020 11:23:44 CEST | [#308](https://github.com/tradecloud/tradecloud-microservices-go/pull/308) |  Buyer reopen request | @olegtradecloud |  |
+
+3. [TC-5868](https://tradecloud.atlassian.net/browse/TC-5868) Workflow tasks for reopen requests 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-Jun-2020 12:00:13 CEST | [#1228](https://github.com/tradecloud/tradecloud-microservices/pull/1228) |  - workflow reopen requests | @olegtradecloud |  |
+
+4. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 08-Jun-2020 09:23:37 CEST | [#406](https://github.com/tradecloud/tradecloud-portal-angular/pull/406) | Bump websocket-extensions from 0.1.3 to 0.1.4 | @dependabot[bot] |  |
 | 2 | Web Portal | 02-Jun-2020 14:57:28 CEST | [#403](https://github.com/tradecloud/tradecloud-portal-angular/pull/403) | Tc 5957 RFQ | @bohdantrc |  |
 
-3. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
+5. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Jun-2020 02:29:44 CEST | [#1219](https://github.com/tradecloud/tradecloud-microservices/pull/1219) |  Unrestrict 2FA | @RobinNagpal |  |
 | 2 | Web Portal | 03-Jun-2020 14:08:46 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  Unrestrict 2fa | @RobinNagpal |  |
-
-4. [TC-5868](https://tradecloud.atlassian.net/browse/TC-5868) Workflow tasks for reopen requests 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Jun-2020 20:54:54 CEST | [#1228](https://github.com/tradecloud/tradecloud-microservices/pull/1228) |  - workflow reopen requests | @olegtradecloud |  |
-
-5. [TC-5996](https://tradecloud.atlassian.net/browse/TC-5996) FE: reopen request by buyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Jun-2020 17:31:32 CEST | [#405](https://github.com/tradecloud/tradecloud-portal-angular/pull/405) |  add buyer reopen request show in ORDER LINE DETAILS column | @bohdantrc |  |
 
 6. [TC-5786](https://tradecloud.atlassian.net/browse/TC-5786) BE: reopen request support  in activity service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
