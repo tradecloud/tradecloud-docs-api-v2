@@ -62,9 +62,10 @@ The **event name** is one of:
 
 * `orderEvent`: The actual order event:
 
-## Order
+## Order or OrderEvent
 
-* `id`: the Tradecloud order identifier
+* `id` \(in case of an Order\): the Tradecloud order identifier
+* `orderId` \(in case of an OrderEvent\): the Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order
 * `supplierOrder`: the supplier part of the order, see below
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.

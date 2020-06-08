@@ -4,10 +4,10 @@ description: API v2 welcome page.
 
 # Welcome
 
-If you want to use the Tradecloud API v2 you are at the right place.
+If you want to integrate your ERP system using the Tradecloud API v2 you are at the right place.
 
 {% hint style="danger" %}
- Your integration **must follow** these [rules](api/rules.md).
+Your integration **must follow** these [rules](api/rules.md).
 
 Tradecloud will **review** your integration in the acceptance test environment **before going live.**
 {% endhint %}
