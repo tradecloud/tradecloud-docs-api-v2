@@ -8,7 +8,7 @@ description: How to request the supplier to cancel an order or line
 This feature is planned and API and documentation may change. 
 {% endhint %}
 
-If a purchase order line is `Issued` the buyer may `cancel` the line immediately.
+If a purchase order line is `Issued` or `Rejected` the buyer may `cancel` the line immediately.
 
 If a line is `In Progress` \(parties are negotiating\) or `Confirmed` \(both parties agreed on the delivery of goods\) then the buyer should request to cancel the line.
 
@@ -23,11 +23,11 @@ The supplier has to **approve** the cancel request before Tradecloud accepts it.
 {% endhint %}
 
 {% hint style="warning" %}
-You cannot cancel a `Rejected, Cancelled` or`Completed` line
+You cannot cancel a`Cancelled` or`Completed` line
 {% endhint %}
 
 {% hint style="info" %}
-Order lines having process status `Issued,` `In Progress` or `Confirmed` will become `Cancelled`
+Order lines having process status `Issued,` `In Progress, Rejected` or `Confirmed` will become `Cancelled`
 {% endhint %}
 
 
