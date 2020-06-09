@@ -2,7 +2,7 @@
 description: How to request the buyer to reopen an order or line
 ---
 
-# Request to reopen an order
+# Reopen an order
 
 {% hint style="warning" %}
 This feature is under development and API and documentation may change. 

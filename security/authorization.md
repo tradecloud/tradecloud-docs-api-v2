@@ -88,7 +88,9 @@ A company is in the lead during a**n** event that's why users are n/a relating t
         />&amp; attach documents</td>
     </tr>
   </tbody>
-</table>#### Order \(line\) activity
+</table>
+
+#### Order \(line\) activity
 
 | Scope | Read Permission | Write Permission |
 | :--- | :--- | :--- |
@@ -168,7 +170,9 @@ A company is in the lead during a**n** event that's why users are n/a relating t
       <td style="text-align:left">n/a</td>
     </tr>
   </tbody>
-</table>#### Validate a new connection
+</table>
+
+#### Validate a new connection
 
 | Scope | Read Permission | Write Permission |
 | :--- | :--- | :--- |

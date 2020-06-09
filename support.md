@@ -15,7 +15,7 @@ API support is best effort, usually you will receive a response within 2 hours w
 
 ## Online support
 
-Plan an online meeting for intensive API support in English or Dutch. 
+Plan an online meeting for intensive API support in English or Dutch.
 
 We support [Zoom](https://zoom.us/), [Google Hangouts](https://hangouts.google.com/) and Microsoft Teams.
 

@@ -24,6 +24,6 @@ As a supplier you can [Ship goods](ship-goods.md).
 
 As a supplier you may:
 
-* [Request to reopen an order](reopen-request.md) which will restart the order process.
-* [Request to cancel an order](../buyer/cancel-request.md) which will end the order process.
+* [Reopen an order](reopen.md) which will restart the order process.
+* [Cancel an order](cancel.md) which will end the order process.
 

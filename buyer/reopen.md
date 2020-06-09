@@ -2,7 +2,7 @@
 description: How to request the supplier to reopen an order line
 ---
 
-# Request to reopen an order
+# Reopen an order
 
 {% hint style="warning" %}
 This feature is under development and API and documentation may change. 
