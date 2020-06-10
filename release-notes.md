@@ -1,26 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 10 11:30:53 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jun 10 13:30:54 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
+1. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Jun-2020 11:30:03 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  Buyer reopen request | @olegtradecloud |  |
-| 2 | Services (Go) | 10-Jun-2020 11:20:24 CEST | [#308](https://github.com/tradecloud/tradecloud-microservices-go/pull/308) |  Buyer reopen request | @olegtradecloud |  |
+| 1 | Services (Scala) | 10-Jun-2020 13:09:14 CEST | [#1219](https://github.com/tradecloud/tradecloud-microservices/pull/1219) |  Unrestrict 2FA | @RobinNagpal |  |
+| 2 | Web Portal | 10-Jun-2020 13:05:25 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  Unrestrict 2fa | @RobinNagpal |  |
 
 2. [TC-6007](https://tradecloud.atlassian.net/browse/TC-6007) Remove `order-integration` service completely [Planned release 12-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Jun-2020 11:27:42 CEST | [#1230](https://github.com/tradecloud/tradecloud-microservices/pull/1230) |  Remove &#39;order-integration&#39; service | @vovinacci |  |
+| 1 | Services (Scala) | 10-Jun-2020 12:17:41 CEST | [#1230](https://github.com/tradecloud/tradecloud-microservices/pull/1230) |  Remove &#39;order-integration&#39; service | @vovinacci |  |
 
-3. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
+3. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Jun-2020 08:16:43 CEST | [#1219](https://github.com/tradecloud/tradecloud-microservices/pull/1219) |  Unrestrict 2FA | @RobinNagpal |  |
-| 2 | Web Portal | 09-Jun-2020 15:32:13 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  Unrestrict 2fa | @RobinNagpal |  |
+| 1 | Services (Scala) | 10-Jun-2020 11:39:55 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  Buyer reopen request | @olegtradecloud |  |
+| 2 | Services (Go) | 10-Jun-2020 11:20:24 CEST | [#308](https://github.com/tradecloud/tradecloud-microservices-go/pull/308) |  Buyer reopen request | @olegtradecloud |  |
 
 4. [TC-5958](https://tradecloud.atlassian.net/browse/TC-5958) Refactor OrderEvents.id to orderId 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
