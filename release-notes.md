@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 10 21:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 11 09:31:23 CEST 2020)
 ---
 
 
@@ -240,20 +240,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-May-2020 13:50:32 CEST | [#1192](https://github.com/tradecloud/tradecloud-microservices/pull/1192) |  authentication refactor | @TizianoPerrucci |  |
-
-31. [TC-5900](https://tradecloud.atlassian.net/browse/TC-5900) Final DATA WIPE before 4.2 Live 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 11-May-2020 09:30:43 CEST | [#295](https://github.com/tradecloud/tradecloud-microservices-go/pull/295) |  REQUIRES WIPE - Cleanup protobuf files and unused manifests | @roy-tc |  |
-| 2 | Services (Scala) | 11-May-2020 09:26:51 CEST | [#1203](https://github.com/tradecloud/tradecloud-microservices/pull/1203) |  REQUIRES WIPE - Cleanup protobuf files and unused manifests | @roy-tc |  |
-
-32. [TC-5918](https://tradecloud.atlassian.net/browse/TC-5918) REQUIRES WIPE - As a DevOps I want old events be deleted when a new snapshot is persisted 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-May-2020 08:03:48 CEST | [#1204](https://github.com/tradecloud/tradecloud-microservices/pull/1204) |  REQUIRES WIPE - Extend ActorPersistence retention with deleting old messages af | @roy-tc |  |
-
-33. [TC-5874](https://tradecloud.atlassian.net/browse/TC-5874) BE: refactor line proposal to LineRequests 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-May-2020 21:57:38 CEST | [#1201](https://github.com/tradecloud/tradecloud-microservices/pull/1201) |  - reopen requests model | @olegtradecloud |  |
 
