@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 11 13:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 11 15:30:54 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-5867](https://tradecloud.atlassian.net/browse/TC-5867) Process reopen request in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Jun-2020 12:51:26 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  Buyer reopen request | @olegtradecloud |  |
+| 1 | Services (Scala) | 11-Jun-2020 14:42:41 CEST | [#1213](https://github.com/tradecloud/tradecloud-microservices/pull/1213) |  Buyer reopen request | @olegtradecloud |  |
 | 2 | Services (Go) | 10-Jun-2020 11:20:24 CEST | [#308](https://github.com/tradecloud/tradecloud-microservices-go/pull/308) |  Buyer reopen request | @olegtradecloud |  |
 
 2. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
@@ -67,29 +67,30 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 
 ## Changelog
 
-1. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process 
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 11-Jun-2020 14:21:57 CEST | [#407](https://github.com/tradecloud/tradecloud-portal-angular/pull/407) |  fix RFQ imports for correct build | @bohdantrc |  |
+| 2 | Services (Scala) | 11-Jun-2020 10:32:33 CEST | [#1231](https://github.com/tradecloud/tradecloud-microservices/pull/1231) |  Catch NotFound and properly log. Also enhance spec to avoid exceptions | @roy-tc |  |
+| 3 | Services (Go) | 05-Jun-2020 18:49:36 CEST | [#311](https://github.com/tradecloud/tradecloud-microservices-go/pull/311) |  Fix Kafka group logging (this time for real) | @vovinacci |  |
+| 4 | Services (Go) | 05-Jun-2020 12:21:42 CEST | [#310](https://github.com/tradecloud/tradecloud-microservices-go/pull/310) |  Fix Kafka group logging | @vovinacci |  |
+| 5 | Services (Go) | 21-May-2020 19:48:10 CEST | [#302](https://github.com/tradecloud/tradecloud-microservices-go/pull/302) |  Packages: Update dependencies | @vovinacci |  |
+| 6 | Services (Scala) | 20-May-2020 13:27:54 CEST | [#1221](https://github.com/tradecloud/tradecloud-microservices/pull/1221) | : Bump messages | @dmytrozheliuk |  |
+| 7 | Services (Go) | 20-May-2020 10:23:48 CEST | [#299](https://github.com/tradecloud/tradecloud-microservices-go/pull/299) |  - Remove direct kitLogger usage | @denys-kondartiuk |  |
+| 8 | Services (Go) | 19-May-2020 13:39:22 CEST | [#298](https://github.com/tradecloud/tradecloud-microservices-go/pull/298) |  - Remove kitLogger from makeRoutes | @denys-kondartiuk |  |
+| 9 | Services (Go) | 19-May-2020 10:34:14 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - Remove unnecessary wrapper for logging | @denys-kondartiuk |  |
+| 10 | Services (Scala) | 15-May-2020 17:42:51 CEST | [#1216](https://github.com/tradecloud/tradecloud-microservices/pull/1216) |  Enforce scalastyle failures on error | @vovinacci |  |
+| 11 | Services (Scala) | 15-May-2020 15:11:04 CEST | [#1215](https://github.com/tradecloud/tradecloud-microservices/pull/1215) |  Amend pipeline to test all the services, including connectors. | @aShevc |  |
+
+2. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 11-Jun-2020 12:43:38 CEST | [#403](https://github.com/tradecloud/tradecloud-portal-angular/pull/403) |  Provide RFQ mockups | @bohdantrc |  |
 
-2. [TC-6007](https://tradecloud.atlassian.net/browse/TC-6007) Remove `order-integration` service completely 
+3. [TC-6007](https://tradecloud.atlassian.net/browse/TC-6007) Remove `order-integration` service completely 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Jun-2020 10:34:13 CEST | [#1230](https://github.com/tradecloud/tradecloud-microservices/pull/1230) |  Remove &#39;order-integration&#39; service | @vovinacci |  |
-
-3. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Jun-2020 10:32:33 CEST | [#1231](https://github.com/tradecloud/tradecloud-microservices/pull/1231) |  Catch NotFound and properly log. Also enhance spec to avoid exceptions | @roy-tc |  |
-| 2 | Services (Go) | 05-Jun-2020 18:49:36 CEST | [#311](https://github.com/tradecloud/tradecloud-microservices-go/pull/311) |  Fix Kafka group logging (this time for real) | @vovinacci |  |
-| 3 | Services (Go) | 05-Jun-2020 12:21:42 CEST | [#310](https://github.com/tradecloud/tradecloud-microservices-go/pull/310) |  Fix Kafka group logging | @vovinacci |  |
-| 4 | Services (Go) | 21-May-2020 19:48:10 CEST | [#302](https://github.com/tradecloud/tradecloud-microservices-go/pull/302) |  Packages: Update dependencies | @vovinacci |  |
-| 5 | Services (Scala) | 20-May-2020 13:27:54 CEST | [#1221](https://github.com/tradecloud/tradecloud-microservices/pull/1221) | : Bump messages | @dmytrozheliuk |  |
-| 6 | Services (Go) | 20-May-2020 10:23:48 CEST | [#299](https://github.com/tradecloud/tradecloud-microservices-go/pull/299) |  - Remove direct kitLogger usage | @denys-kondartiuk |  |
-| 7 | Services (Go) | 19-May-2020 13:39:22 CEST | [#298](https://github.com/tradecloud/tradecloud-microservices-go/pull/298) |  - Remove kitLogger from makeRoutes | @denys-kondartiuk |  |
-| 8 | Services (Go) | 19-May-2020 10:34:14 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - Remove unnecessary wrapper for logging | @denys-kondartiuk |  |
-| 9 | Services (Scala) | 15-May-2020 17:42:51 CEST | [#1216](https://github.com/tradecloud/tradecloud-microservices/pull/1216) |  Enforce scalastyle failures on error | @vovinacci |  |
-| 10 | Services (Scala) | 15-May-2020 15:11:04 CEST | [#1215](https://github.com/tradecloud/tradecloud-microservices/pull/1215) |  Amend pipeline to test all the services, including connectors. | @aShevc |  |
 
 4. [TC-5701](https://tradecloud.atlassian.net/browse/TC-5701) As DevOps I want to upgrade &#39;gokit&#39; to latest version 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -235,14 +236,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-May-2020 11:51:48 CEST | [#1208](https://github.com/tradecloud/tradecloud-microservices/pull/1208) |  Move order-event-search service to connectors repo | @aShevc |  |
 | 2 | Services (Scala) | 12-May-2020 16:14:04 CEST | [#1202](https://github.com/tradecloud/tradecloud-microservices/pull/1202) |  Move connectors services | @aShevc |  |
-
-31. [TC-5906](https://tradecloud.atlassian.net/browse/TC-5906) Logout when access token is expired, possible related to 2FA 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-May-2020 15:20:25 CEST | [#1205](https://github.com/tradecloud/tradecloud-microservices/pull/1205) |  fix JWT status for 2FA challenge | @TizianoPerrucci |  |
-
-32. [TC-5901](https://tradecloud.atlassian.net/browse/TC-5901) Authentication refactor 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-May-2020 13:50:32 CEST | [#1192](https://github.com/tradecloud/tradecloud-microservices/pull/1192) |  authentication refactor | @TizianoPerrucci |  |
 
