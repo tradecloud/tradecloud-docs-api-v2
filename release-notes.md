@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jun 12 21:30:50 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 15 09:31:19 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6023](https://tradecloud.atlassian.net/browse/TC-6023) &#34;Reopen request&#34; button should have the same color as the &#34;propose changes&#34; button 
+1. [TC-5997](https://tradecloud.atlassian.net/browse/TC-5997) FE: As a buyer I want approve or reject a reopen request by supplier 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 14-Jun-2020 18:28:14 CEST | [#410](https://github.com/tradecloud/tradecloud-portal-angular/pull/410) |  Add approve reject for buyer in workflow task | @bohdantrc |  |
+
+2. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 13-Jun-2020 22:12:52 CEST | [#411](https://github.com/tradecloud/tradecloud-portal-angular/pull/411) |   update and fix the booting sequence after login | @RobinNagpal |  |
+| 2 | Services (Scala) | 11-Jun-2020 11:09:12 CEST | [#1232](https://github.com/tradecloud/tradecloud-microservices/pull/1232) |  Extend max URI length | @roy-tc |  |
+
+3. [TC-6023](https://tradecloud.atlassian.net/browse/TC-6023) &#34;Reopen request&#34; button should have the same color as the &#34;propose changes&#34; button 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Jun-2020 16:08:05 CEST | [#412](https://github.com/tradecloud/tradecloud-portal-angular/pull/412) |  change color refresh button | @bohdantrc |  |
-
-2. [TC-5997](https://tradecloud.atlassian.net/browse/TC-5997) FE: As a buyer I want approve or reject a reopen request by supplier 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Jun-2020 15:54:30 CEST | [#410](https://github.com/tradecloud/tradecloud-portal-angular/pull/410) | [TC-6023] Add approve reject for buyer in workflow task | @bohdantrc |  |
-
-3. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Jun-2020 15:50:35 CEST | [#411](https://github.com/tradecloud/tradecloud-portal-angular/pull/411) |   update and fix the booting sequence after login | @RobinNagpal |  |
-| 2 | Services (Scala) | 11-Jun-2020 11:09:12 CEST | [#1232](https://github.com/tradecloud/tradecloud-microservices/pull/1232) |  Extend max URI length | @roy-tc |  |
 
 4. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -225,20 +225,9 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-May-2020 13:58:19 CEST | [#1214](https://github.com/tradecloud/tradecloud-microservices/pull/1214) |  Backwards compatibility for RequestStatus | @roy-tc |  |
-| 2 | Services (Scala) | 14-May-2020 15:42:52 CEST | [#1210](https://github.com/tradecloud/tradecloud-microservices/pull/1210) | : Solution for RequestStatus | @dmytrozheliuk |  |
 
 31. [TC-4480](https://tradecloud.atlassian.net/browse/TC-4480) As a buyer I want to reopen order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-May-2020 11:14:05 CEST | [#1209](https://github.com/tradecloud/tradecloud-microservices/pull/1209) | [TC-4478] Pull Order and OrderLine state and behavior refactoring | @roy-tc |  |
-
-32. [TC-5941](https://tradecloud.atlassian.net/browse/TC-5941) Proposals are broken  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-May-2020 15:43:25 CEST | [#391](https://github.com/tradecloud/tradecloud-portal-angular/pull/391) | [TC-5946] Fix: change proposal model | @bohdantrc |  |
-
-33. [TC-5831](https://tradecloud.atlassian.net/browse/TC-5831) As Devops I want to have connectors services reside in connectors repo 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-May-2020 11:51:48 CEST | [#1208](https://github.com/tradecloud/tradecloud-microservices/pull/1208) |  Move order-event-search service to connectors repo | @aShevc |  |
 
