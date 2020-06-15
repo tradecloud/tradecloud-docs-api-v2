@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 15 13:30:51 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 15 15:30:50 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
+1. [TC-5883](https://tradecloud.atlassian.net/browse/TC-5883) As integrated user, I want to get order updates if a reopen request is accepted [Planned release 19-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jun-2020 13:14:07 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  - create optional event on order bulk accept | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Jun-2020 14:07:03 CEST | [#1233](https://github.com/tradecloud/tradecloud-microservices/pull/1233) | : Added listeners for outgoing events for approve/reject reopen requests actions | @dmytrozheliuk |  |
 
-2. [TC-5883](https://tradecloud.atlassian.net/browse/TC-5883) As integrated user, I want to get order updates if a reopen request is accepted [Planned release 19-Jun-2020]
+2. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jun-2020 12:57:48 CEST | [#1233](https://github.com/tradecloud/tradecloud-microservices/pull/1233) | : Added listeners for outgoing events for approve/reject reopen requests actions | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 15-Jun-2020 13:43:01 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  - create optional event on order bulk accept | @olegtradecloud |  |
 
 3. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -79,7 +79,6 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 9 | Services (Go) | 19-May-2020 13:39:22 CEST | [#298](https://github.com/tradecloud/tradecloud-microservices-go/pull/298) |  - Remove kitLogger from makeRoutes | @denys-kondartiuk |  |
 | 10 | Services (Go) | 19-May-2020 10:34:14 CEST | [#296](https://github.com/tradecloud/tradecloud-microservices-go/pull/296) |  - Remove unnecessary wrapper for logging | @denys-kondartiuk |  |
 | 11 | Services (Scala) | 15-May-2020 17:42:51 CEST | [#1216](https://github.com/tradecloud/tradecloud-microservices/pull/1216) |  Enforce scalastyle failures on error | @vovinacci |  |
-| 12 | Services (Scala) | 15-May-2020 15:11:04 CEST | [#1215](https://github.com/tradecloud/tradecloud-microservices/pull/1215) |  Amend pipeline to test all the services, including connectors. | @aShevc |  |
 
 2. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -225,14 +224,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 18-May-2020 23:21:20 CEST | [#1218](https://github.com/tradecloud/tradecloud-microservices/pull/1218) |  Add cancelled and completed line handling | @marcmatt |  |
-
-29. [TC-5767](https://tradecloud.atlassian.net/browse/TC-5767) As DevOps I want to stop misbehaved companies syncing legacy orders to Tradecloud1 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-May-2020 14:59:08 CEST | [#1143](https://github.com/tradecloud/tradecloud-microservices/pull/1143) |  Add migration whitelist, remove roles based rules | @marcmatt |  |
-
-30. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Refactor JSON deserialization to avoid matching issues 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-May-2020 13:58:19 CEST | [#1214](https://github.com/tradecloud/tradecloud-microservices/pull/1214) |  Backwards compatibility for RequestStatus | @roy-tc |  |
 
