@@ -1,35 +1,35 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 16 19:30:51 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 16 21:30:49 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+1. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Jun-2020 19:21:09 CEST | [#415](https://github.com/tradecloud/tradecloud-portal-angular/pull/415) |  Add env variable for show/hide reopen button | @bohdantrc |  |
+| 1 | Services (Scala) | 16-Jun-2020 21:23:05 CEST | [#1219](https://github.com/tradecloud/tradecloud-microservices/pull/1219) |  Unrestrict 2FA | @RobinNagpal |  |
+| 2 | Web Portal | 16-Jun-2020 21:21:45 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  Unrestrict 2fa | @RobinNagpal |  |
 
-2. [TC-5997](https://tradecloud.atlassian.net/browse/TC-5997) FE: As a buyer I want approve or reject a reopen request by supplier 
+2. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 16-Jun-2020 20:05:24 CEST | [#415](https://github.com/tradecloud/tradecloud-portal-angular/pull/415) |  Add env variable for show/hide reopen button | @bohdantrc |  |
+
+3. [TC-5997](https://tradecloud.atlassian.net/browse/TC-5997) FE: As a buyer I want approve or reject a reopen request by supplier 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jun-2020 19:19:18 CEST | [#410](https://github.com/tradecloud/tradecloud-portal-angular/pull/410) |  Add approve reject for buyer in workflow task | @bohdantrc |  |
 
-3. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
+4. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jun-2020 15:32:31 CEST | [#1232](https://github.com/tradecloud/tradecloud-microservices/pull/1232) |  Extend max URI length | @roy-tc |  |
 
-4. [TC-6025](https://tradecloud.atlassian.net/browse/TC-6025) supplierLine reopenRequest values are shown after a Buyer has rejected the reopen reqeust.  
+5. [TC-6025](https://tradecloud.atlassian.net/browse/TC-6025) supplierLine reopenRequest values are shown after a Buyer has rejected the reopen reqeust.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jun-2020 15:13:22 CEST | [#414](https://github.com/tradecloud/tradecloud-portal-angular/pull/414) |  Show info from confirmLine when reopen with status &#34;Rejected&#34; | @bohdantrc |  |
-
-5. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Jun-2020 15:00:12 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  Unrestrict 2fa | @RobinNagpal |  |
-| 2 | Services (Scala) | 11-Jun-2020 11:27:47 CEST | [#1219](https://github.com/tradecloud/tradecloud-microservices/pull/1219) |  Unrestrict 2FA | @RobinNagpal |  |
 
 6. [TC-6024](https://tradecloud.atlassian.net/browse/TC-6024) When request is “reopenRequest” the confirm/propose changes/reject buttons should not be visible for the supplier 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
