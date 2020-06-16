@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 15 21:30:50 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 16 09:31:19 CEST 2020)
 ---
 
 
@@ -8,33 +8,34 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-5883](https://tradecloud.atlassian.net/browse/TC-5883) As integrated user, I want to get order updates if a reopen request is accepted [Planned release 19-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jun-2020 21:09:47 CEST | [#1233](https://github.com/tradecloud/tradecloud-microservices/pull/1233) | : Added listeners for outgoing events for approve/reject reopen requests actions | @dmytrozheliuk |  |
+| 1 | Services (Go) | 16-Jun-2020 09:20:05 CEST | [#314](https://github.com/tradecloud/tradecloud-microservices-go/pull/314) | : Added webhooks for approve/reject reopen request by buyer/… | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 16-Jun-2020 07:05:30 CEST | [#1233](https://github.com/tradecloud/tradecloud-microservices/pull/1233) | : Added listeners for outgoing events for approve/reject reopen requests actions | @dmytrozheliuk |  |
 
-2. [TC-6023](https://tradecloud.atlassian.net/browse/TC-6023) &#34;Reopen request&#34; button should have the same color as the &#34;propose changes&#34; button 
+2. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Jun-2020 09:02:53 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Create optional event on order bulk accept | @olegtradecloud |  |
+
+3. [TC-5997](https://tradecloud.atlassian.net/browse/TC-5997) FE: As a buyer I want approve or reject a reopen request by supplier 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 16-Jun-2020 08:26:08 CEST | [#410](https://github.com/tradecloud/tradecloud-portal-angular/pull/410) |  Add approve reject for buyer in workflow task | @bohdantrc |  |
+
+4. [TC-6023](https://tradecloud.atlassian.net/browse/TC-6023) &#34;Reopen request&#34; button should have the same color as the &#34;propose changes&#34; button 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Jun-2020 17:49:39 CEST | [#412](https://github.com/tradecloud/tradecloud-portal-angular/pull/412) |  change color refresh button | @bohdantrc |  |
 
-3. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jun-2020 13:43:01 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  - create optional event on order bulk accept | @olegtradecloud |  |
-
-4. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
+5. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Jun-2020 09:55:18 CEST | [#411](https://github.com/tradecloud/tradecloud-portal-angular/pull/411) |   update and fix the booting sequence after login | @RobinNagpal |  |
 | 2 | Services (Scala) | 11-Jun-2020 11:09:12 CEST | [#1232](https://github.com/tradecloud/tradecloud-microservices/pull/1232) |  Extend max URI length | @roy-tc |  |
 
-5. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 05-Jun-2020]
+6. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index [Planned release 05-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Jun-2020 09:44:36 CEST | [#1229](https://github.com/tradecloud/tradecloud-microservices/pull/1229) |  Remove CompanyUserSynced | @roy-tc |  |
-
-6. [TC-5997](https://tradecloud.atlassian.net/browse/TC-5997) FE: As a buyer I want approve or reject a reopen request by supplier 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Jun-2020 18:28:14 CEST | [#410](https://github.com/tradecloud/tradecloud-portal-angular/pull/410) |  Add approve reject for buyer in workflow task | @bohdantrc |  |
 
 7. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
