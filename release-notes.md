@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 18 13:30:51 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 18 15:32:37 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6002](https://tradecloud.atlassian.net/browse/TC-6002) FE: As a supplier I want approve or reject a reopen request by buyer 
+1. [TC-5956](https://tradecloud.atlassian.net/browse/TC-5956) As Damen security officer I want the TOTP verification to use 2 time windows. [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-Jun-2020 13:17:24 CEST | [#416](https://github.com/tradecloud/tradecloud-portal-angular/pull/416) |  add approve/reject from supplier | @bohdantrc |  |
+| 1 | Services (Scala) | 18-Jun-2020 14:32:52 CEST | [#1237](https://github.com/tradecloud/tradecloud-microservices/pull/1237) |   update 2FA window size to 2 | @RobinNagpal |  |
 
-2. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
+2. [TC-6002](https://tradecloud.atlassian.net/browse/TC-6002) FE: As a supplier I want approve or reject a reopen request by buyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 18-Jun-2020 14:31:56 CEST | [#416](https://github.com/tradecloud/tradecloud-portal-angular/pull/416) |  add approve/reject from supplier | @bohdantrc |  |
+
+3. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 18-Jun-2020 10:27:50 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
-
-3. [TC-5956](https://tradecloud.atlassian.net/browse/TC-5956) As Damen security officer I want the TOTP verification to use 2 time windows. [Planned release 30-Jun-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Jun-2020 03:14:54 CEST | [#1237](https://github.com/tradecloud/tradecloud-microservices/pull/1237) |   update 2FA window size to 2 | @RobinNagpal |  |
 
 4. [TC-6035](https://tradecloud.atlassian.net/browse/TC-6035) Check for authenticated status during websocket connection 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -224,7 +224,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-May-2020 15:21:11 CEST | [#396](https://github.com/tradecloud/tradecloud-portal-angular/pull/396) |  add check prices in proposal | @bohdantrc |  |
 | 2 | Services (Scala) | 25-May-2020 15:20:35 CEST | [#1220](https://github.com/tradecloud/tradecloud-microservices/pull/1220) |  Revert &#34;Make Prices required everywhere&#34; | @marcmatt |  |
-| 3 | Services (Scala) | 18-May-2020 14:04:05 CEST | [#1207](https://github.com/tradecloud/tradecloud-microservices/pull/1207) |  Make Prices required everywhere | @roy-tc |  |
 
 31. [TC-5925](https://tradecloud.atlassian.net/browse/TC-5925) Go lang services must check JWT token status 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
