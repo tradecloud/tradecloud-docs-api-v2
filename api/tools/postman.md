@@ -18,7 +18,7 @@ You now have a "Tradecloud Buyer Demo" collection in your Postman application. F
 
 ## Getting a token using Postman
 
-At the start of each session, you first need to login to obtain an authorization token. You'll need this token to authorize yourself for all subsequent requests. The token will expire automatically after 1 hour.
+At the start of each session, you first need to login to obtain an authorization token. You'll need this token to authorize yourself for all subsequent requests. The token will expire automatically after 10 minutes.
 
 To login and obtain a token:
 
