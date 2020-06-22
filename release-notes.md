@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jun 19 21:30:53 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 22 09:31:23 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Jun-2020 17:04:39 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 22-Jun-2020 08:36:04 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
 
 2. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -82,9 +82,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 4 | Services (Scala) | 11-Jun-2020 10:32:33 CEST | [#1231](https://github.com/tradecloud/tradecloud-microservices/pull/1231) |  Catch NotFound and properly log. Also enhance spec to avoid exceptions | @roy-tc |  |
 | 5 | Services (Go) | 05-Jun-2020 18:49:36 CEST | [#311](https://github.com/tradecloud/tradecloud-microservices-go/pull/311) |  Fix Kafka group logging (this time for real) | @vovinacci |  |
 | 6 | Services (Go) | 05-Jun-2020 12:21:42 CEST | [#310](https://github.com/tradecloud/tradecloud-microservices-go/pull/310) |  Fix Kafka group logging | @vovinacci |  |
-| 7 | Services (Go) | 21-May-2020 19:48:10 CEST | [#302](https://github.com/tradecloud/tradecloud-microservices-go/pull/302) |  Packages: Update dependencies | @vovinacci |  |
-| 8 | Services (Scala) | 20-May-2020 13:27:54 CEST | [#1221](https://github.com/tradecloud/tradecloud-microservices/pull/1221) | : Bump messages | @dmytrozheliuk |  |
-| 9 | Services (Go) | 20-May-2020 10:23:48 CEST | [#299](https://github.com/tradecloud/tradecloud-microservices-go/pull/299) |  - Remove direct kitLogger usage | @denys-kondartiuk |  |
 
 11. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -222,19 +219,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-May-2020 15:21:11 CEST | [#396](https://github.com/tradecloud/tradecloud-portal-angular/pull/396) |  add check prices in proposal | @bohdantrc |  |
 | 2 | Services (Scala) | 25-May-2020 15:20:35 CEST | [#1220](https://github.com/tradecloud/tradecloud-microservices/pull/1220) |  Revert &#34;Make Prices required everywhere&#34; | @marcmatt |  |
-
-36. [TC-5925](https://tradecloud.atlassian.net/browse/TC-5925) Go lang services must check JWT token status 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 21-May-2020 14:44:22 CEST | [#300](https://github.com/tradecloud/tradecloud-microservices-go/pull/300) |  2FA: Fix JWT token status | @TizianoPerrucci |  |
-
-37. [TC-5968](https://tradecloud.atlassian.net/browse/TC-5968) Implement addition function for service actions logs 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 21-May-2020 10:46:16 CEST | [#301](https://github.com/tradecloud/tradecloud-microservices-go/pull/301) |  Use &#39;LogfWithTime&#39; instead &#39;Err&#39; for services actions logs | @denys-kondartiuk |  |
-
-38. [TC-5961](https://tradecloud.atlassian.net/browse/TC-5961) Align the Confirm, reject and propose changes buttons in the Order and line detail pages 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 20-May-2020 16:17:42 CEST | [#394](https://github.com/tradecloud/tradecloud-portal-angular/pull/394) |  Set same sequence actions in order and order line detail page | @bohdantrc |  |
 
