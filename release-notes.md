@@ -1,39 +1,39 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 23 19:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 23 21:30:51 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5944](https://tradecloud.atlassian.net/browse/TC-5944) Centralize business rules in order service 
+1. [TC-6018](https://tradecloud.atlassian.net/browse/TC-6018) &#34;create your password&#34; screen is shown when a new user refresh the &#34;enable 2FA page&#34;  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 23-Jun-2020 21:08:59 CEST | [#420](https://github.com/tradecloud/tradecloud-portal-angular/pull/420) |  create secret on 2fa screen when refreshed | @RobinNagpal |  |
+
+2. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Jun-2020 20:13:41 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
+
+3. [TC-5944](https://tradecloud.atlassian.net/browse/TC-5944) Centralize business rules in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2020 19:12:19 CEST | [#1242](https://github.com/tradecloud/tradecloud-microservices/pull/1242) |  - multiple events  | @olegtradecloud |  |
 
-2. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+4. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2020 17:51:07 CEST | [#1241](https://github.com/tradecloud/tradecloud-microservices/pull/1241) |  Use Enumeratum lib for enums | @roy-tc |  |
 
-3. [TC-6018](https://tradecloud.atlassian.net/browse/TC-6018) &#34;create your password&#34; screen is shown when a new user refresh the &#34;enable 2FA page&#34;  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Jun-2020 16:50:42 CEST | [#420](https://github.com/tradecloud/tradecloud-portal-angular/pull/420) |  create secret on 2fa screen when refreshed | @RobinNagpal |  |
-
-4. [TC-6037](https://tradecloud.atlassian.net/browse/TC-6037) Reopen request by supplier is not visible in supplier tab in order line detail page 
+5. [TC-6037](https://tradecloud.atlassian.net/browse/TC-6037) Reopen request by supplier is not visible in supplier tab in order line detail page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jun-2020 14:17:28 CEST | [#419](https://github.com/tradecloud/tradecloud-portal-angular/pull/419) |  add in supplier tab info about open reopen request | @bohdantrc |  |
 
-5. [TC-5794](https://tradecloud.atlassian.net/browse/TC-5794) FE: reopen request by buyer activities 
+6. [TC-5794](https://tradecloud.atlassian.net/browse/TC-5794) FE: reopen request by buyer activities 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jun-2020 14:13:44 CEST | [#418](https://github.com/tradecloud/tradecloud-portal-angular/pull/418) |  add activity types for buyer reopen request activities | @bohdantrc |  |
-
-6. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Jun-2020 09:27:09 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
 
 7. [TC-6051](https://tradecloud.atlassian.net/browse/TC-6051) BE: Add confirmedLine in activity model 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
