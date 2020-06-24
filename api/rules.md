@@ -46,6 +46,14 @@ The **account number should be set on forehand** in the **Tradecloud** **connect
 
 ## Sending orders or order responses
 
+### Send orders or responses sequential
+
+Send the next order or response when the previous one has been responded with HTTP Status Code 200
+
+Do **not** send more than **10 requests per second**.
+
+Tradecloud may respond with [HTTP Status Code 429](https://tools.ietf.org/html/rfc6585#section-4) `Too Many Requests`
+
 ### Only resend changed orders or order responses
 
 Only resend an order or order response that **has an actual change**
