@@ -58,9 +58,9 @@ Tradecloud may respond with [HTTP Status Code 429](https://tools.ietf.org/html/r
 
 Only resend an order or order response that **has an actual change**
 
-### **Never send all orders periodically**
+### **Never send all orders or responses periodically**
 
-Never resend **all** orders or **all active** orders periodically.
+Never resend **all** or **all active** orders or responses periodically.
 
 ## Orders and lines
 
