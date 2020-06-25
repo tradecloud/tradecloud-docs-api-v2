@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 25 13:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 25 15:31:01 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 25-Jun-2020 13:29:04 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 25-Jun-2020 13:25:56 CEST | [#1244](https://github.com/tradecloud/tradecloud-microservices/pull/1244) |  Send cancel order as separate command | @roy-tc |  |
+| 1 | Services (Scala) | 25-Jun-2020 15:23:49 CEST | [#1244](https://github.com/tradecloud/tradecloud-microservices/pull/1244) |  Send cancel order as separate command | @roy-tc |  |
+| 2 | Services (Scala) | 25-Jun-2020 13:31:26 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
 
 2. [TC-6054](https://tradecloud.atlassian.net/browse/TC-6054) Damen feedback related to Item details 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -274,10 +274,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-May-2020 17:48:16 CEST | [#397](https://github.com/tradecloud/tradecloud-portal-angular/pull/397) |  enable and fix spec files, clean code | @bohdantrc |  |
-
-39. [TC-5782](https://tradecloud.atlassian.net/browse/TC-5782) BE: reopen order request by supplier 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 25-May-2020 15:21:11 CEST | [#396](https://github.com/tradecloud/tradecloud-portal-angular/pull/396) |  add check prices in proposal | @bohdantrc |  |
-| 2 | Services (Scala) | 25-May-2020 15:20:35 CEST | [#1220](https://github.com/tradecloud/tradecloud-microservices/pull/1220) |  Revert &#34;Make Prices required everywhere&#34; | @marcmatt |  |
 
