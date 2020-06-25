@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 25 17:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 25 19:30:59 CEST 2020)
 ---
 
 
@@ -269,9 +269,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-May-2020 11:33:03 CEST | [#388](https://github.com/tradecloud/tradecloud-portal-angular/pull/388) |  Development: Add encoded id in GET requests | @bohdantrc |  |
 | 2 | Services (Scala) | 26-May-2020 11:32:41 CEST | [#1117](https://github.com/tradecloud/tradecloud-microservices/pull/1117) |  Incorrect line id if position contains special symbols | @denys-kondartiuk |  |
-
-38. [TC-5491](https://tradecloud.atlassian.net/browse/TC-5491) As a QA I want refresh tokens to be tested by Portal unit tests 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 25-May-2020 17:48:16 CEST | [#397](https://github.com/tradecloud/tradecloud-portal-angular/pull/397) |  enable and fix spec files, clean code | @bohdantrc |  |
 
