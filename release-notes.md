@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 30 19:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 30 21:30:59 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Jun-2020 19:16:16 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
+| 1 | Services (Scala) | 30-Jun-2020 20:19:45 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
 
 2. [TC-6087](https://tradecloud.atlassian.net/browse/TC-6087) FE: show &#34;cancelled&#34; status in UI  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
