@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 30 11:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 30 13:30:58 CEST 2020)
 ---
 
 
@@ -8,45 +8,46 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-4558](https://tradecloud.atlassian.net/browse/TC-4558) As DevOps I want to move all deployment secrets to Ansible Vault 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Jun-2020 11:20:46 CEST | [#1248](https://github.com/tradecloud/tradecloud-microservices/pull/1248) |  Remove unencrypted Mandrill API key mentions | @vovinacci |  |
-| 2 | Services (Go) | 30-Jun-2020 11:15:21 CEST | [#316](https://github.com/tradecloud/tradecloud-microservices-go/pull/316) |  Use Mandrill API key as secret | @vovinacci |  |
+| 1 | Services (Go) | 30-Jun-2020 13:00:44 CEST | [#316](https://github.com/tradecloud/tradecloud-microservices-go/pull/316) |  Use Mandrill API key as secret | @vovinacci |  |
+| 2 | Services (Scala) | 30-Jun-2020 11:40:46 CEST | [#1248](https://github.com/tradecloud/tradecloud-microservices/pull/1248) |  Remove unencrypted Mandrill API key mentions | @vovinacci |  |
 
-2. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
+2. [TC-6043](https://tradecloud.atlassian.net/browse/TC-6043) FE: Display line level activities with ActivityType OrderLineCancelledByBuyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 30-Jun-2020 12:33:59 CEST | [#427](https://github.com/tradecloud/tradecloud-portal-angular/pull/427) |  Add type `line-cancelled-by-buyer` and `lines-cancelled-by-buyer` in activity | @bohdantrc |  |
+
+3. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 30-Jun-2020 12:03:41 CEST | [#1241](https://github.com/tradecloud/tradecloud-microservices/pull/1241) |  Use Enumeratum lib for enums | @roy-tc |  |
+| 2 | Services (Scala) | 30-Jun-2020 11:59:31 CEST | [#1249](https://github.com/tradecloud/tradecloud-microservices/pull/1249) |  DO NOT MERGE - Test enum refactoring | @roy-tc |  |
+
+4. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 30-Jun-2020 11:39:34 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
+| 2 | Services (Scala) | 29-Jun-2020 23:14:02 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
+
+5. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Jun-2020 10:17:51 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
 
-3. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 30-Jun-2020 09:43:12 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
-| 2 | Services (Scala) | 29-Jun-2020 23:14:02 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
-
-4. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
+6. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jun-2020 15:45:03 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
 
-5. [TC-6043](https://tradecloud.atlassian.net/browse/TC-6043) FE: Display line level activities with ActivityType OrderLineCancelledByBuyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Jun-2020 14:54:38 CEST | [#427](https://github.com/tradecloud/tradecloud-portal-angular/pull/427) |  Add new type `order-line-cancelled-by-buyer` in activity | @bohdantrc |  |
-
-6. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
+7. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Jun-2020 15:29:49 CEST | [#1244](https://github.com/tradecloud/tradecloud-microservices/pull/1244) |  Send cancel order as separate command | @roy-tc |  |
 | 2 | Services (Scala) | 25-Jun-2020 13:31:26 CEST | [#1235](https://github.com/tradecloud/tradecloud-microservices/pull/1235) | : Added order lines cancelling functionality | @dmytrozheliuk |  |
 
-7. [TC-5944](https://tradecloud.atlassian.net/browse/TC-5944) Centralize business rules in order service 
+8. [TC-5944](https://tradecloud.atlassian.net/browse/TC-5944) Centralize business rules in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 25-Jun-2020 12:00:09 CEST | [#1242](https://github.com/tradecloud/tradecloud-microservices/pull/1242) |  - multiple events  | @olegtradecloud |  |
-
-8. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 25-Jun-2020 11:57:24 CEST | [#1241](https://github.com/tradecloud/tradecloud-microservices/pull/1241) |  Use Enumeratum lib for enums | @roy-tc |  |
 
 9. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
