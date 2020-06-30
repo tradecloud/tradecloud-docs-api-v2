@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 30 17:31:00 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 30 19:30:56 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6087](https://tradecloud.atlassian.net/browse/TC-6087) FE: show &#34;cancelled&#34; status in UI  
+1. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 30-Jun-2020 19:16:16 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
+
+2. [TC-6087](https://tradecloud.atlassian.net/browse/TC-6087) FE: show &#34;cancelled&#34; status in UI  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Jun-2020 15:58:43 CEST | [#429](https://github.com/tradecloud/tradecloud-portal-angular/pull/429) |  Add cancelled in order line and order progress | @bohdantrc |  |
 
-2. [N/A](#)  
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Jun-2020 15:45:02 CEST | [#1250](https://github.com/tradecloud/tradecloud-microservices/pull/1250) | Tc 6042 cancel separate clone | @dmytrozheliuk |  |
-
-3. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Jun-2020 15:24:53 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
 
 4. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
