@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jul 1 15:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jul 1 17:30:57 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
+1. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 01-Jul-2020 14:54:45 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add test logic send position and edit position in dialog | @bohdantrc |  |
+| 1 | Services (Scala) | 01-Jul-2020 17:26:55 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
 
-2. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
+2. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Jul-2020 11:48:43 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
+| 1 | Web Portal | 01-Jul-2020 16:53:23 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add test logic send position and edit position in dialog | @bohdantrc |  |
 
 3. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
