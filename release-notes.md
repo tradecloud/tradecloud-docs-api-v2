@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 2 17:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jul 2 19:30:54 CEST 2020)
 ---
 
 
