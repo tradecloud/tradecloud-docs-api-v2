@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 2 13:31:00 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jul 2 15:30:58 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6084](https://tradecloud.atlassian.net/browse/TC-6084) Create accptance, system and security tests for implemented stories 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Jul-2020 13:21:36 CEST | [#1252](https://github.com/tradecloud/tradecloud-microservices/pull/1252) |  - Increase number of workers for tests run | @denys-kondartiuk |  |
-| 2 | Services (Go) | 02-Jul-2020 13:18:26 CEST | [#317](https://github.com/tradecloud/tradecloud-microservices-go/pull/317) |  - Increase number of workers for tests run | @denys-kondartiuk |  |
+| 1 | Services (Go) | 02-Jul-2020 15:29:03 CEST | [#317](https://github.com/tradecloud/tradecloud-microservices-go/pull/317) |  - Increase number of workers for tests run | @denys-kondartiuk |  |
+| 2 | Services (Scala) | 02-Jul-2020 13:21:36 CEST | [#1252](https://github.com/tradecloud/tradecloud-microservices/pull/1252) |  - Increase number of workers for tests run | @denys-kondartiuk |  |
 
 2. [TC-6043](https://tradecloud.atlassian.net/browse/TC-6043) FE: Display line level activities with ActivityType OrderLineCancelledByBuyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
