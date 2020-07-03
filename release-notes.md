@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 2 21:30:53 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 3 09:31:58 CEST 2020)
 ---
 
 
@@ -287,9 +287,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 1 | Services (Scala) | 03-Jun-2020 13:59:41 CEST | [#1185](https://github.com/tradecloud/tradecloud-microservices/pull/1185) |  Enforce 2FA company level | @RobinNagpal |  |
 | 2 | Services (Go) | 03-Jun-2020 13:59:13 CEST | [#297](https://github.com/tradecloud/tradecloud-microservices-go/pull/297) |  - add enforce2FA setting | @RobinNagpal |  |
 | 3 | Web Portal | 03-Jun-2020 13:53:35 CEST | [#390](https://github.com/tradecloud/tradecloud-portal-angular/pull/390) |  Enforce 2FA company level | @RobinNagpal |  |
-
-43. [TC-5702](https://tradecloud.atlassian.net/browse/TC-5702) As DevOps I want to update Go to 1.14 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 03-Jun-2020 07:57:54 CEST | [#307](https://github.com/tradecloud/tradecloud-microservices-go/pull/307) |  Update to Go 1.14, refactor messages handling | @vovinacci |  |
 
