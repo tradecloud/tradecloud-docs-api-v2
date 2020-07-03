@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 3 15:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 3 17:30:54 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 01-Jul-2020 16:53:23 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add test logic send position and edit position in dialog | @bohdantrc |  |
+| 1 | Web Portal | 03-Jul-2020 15:48:38 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add test logic send position and edit position in dialog | @bohdantrc |  |
 
 2. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
