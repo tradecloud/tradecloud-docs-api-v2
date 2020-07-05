@@ -4,10 +4,6 @@ description: How to request the supplier to reopen an order line
 
 # Reopen an order
 
-{% hint style="warning" %}
-This feature is under development and API and documentation may change. 
-{% endhint %}
-
 If an order line is confirmed \(both parties agreed on the delivery of goods\) then the buyer should  request to `reopen` the line. Tradecloud will create a line level reopen workflow task which the supplier can approve, reject or propose an alternative.
 
 When you reissue an order line with the  **requested** `delivery schedule` or `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create a reopen workflow task for the supplier. When possible provide the buyer line `reason`field.
