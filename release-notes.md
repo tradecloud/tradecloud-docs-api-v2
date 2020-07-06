@@ -1,47 +1,57 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 6 15:31:01 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 6 17:31:01 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jul-2020 15:28:37 CEST | [#1254](https://github.com/tradecloud/tradecloud-microservices/pull/1254) |  Integration user role | @olegtradecloud |  |
+| 1 | Services (Scala) | 06-Jul-2020 17:28:55 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) | Tc 6108 resend order | @dmytrozheliuk |  |
 
-2. [TC-6001](https://tradecloud.atlassian.net/browse/TC-6001) Review cancel request business logic and discus solutions for edge cases 
+2. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 06-Jul-2020 17:27:54 CEST | [#1254](https://github.com/tradecloud/tradecloud-microservices/pull/1254) |  Integration user role | @olegtradecloud |  |
+
+3. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 06-Jul-2020 17:11:41 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
+
+4. [TC-6001](https://tradecloud.atlassian.net/browse/TC-6001) Review cancel request business logic and discus solutions for edge cases 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Jul-2020 14:49:07 CEST | [#432](https://github.com/tradecloud/tradecloud-portal-angular/pull/432) |  navigation links | @bohdantrc |  |
 
-3. [TC-6050](https://tradecloud.atlassian.net/browse/TC-6050) Bulk confirm sales order dialog shown all selected order line positions.  
+5. [TC-6050](https://tradecloud.atlassian.net/browse/TC-6050) Bulk confirm sales order dialog shown all selected order line positions.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Jul-2020 14:21:17 CEST | [#433](https://github.com/tradecloud/tradecloud-portal-angular/pull/433) |  show amount positions in bulk confirm dialog | @bohdantrc |  |
 
-4. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
+6. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Jul-2020 11:45:30 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add logic send position and edit position in dialog | @bohdantrc |  |
 
-5. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
+7. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Jul-2020 09:32:31 CEST | [#1255](https://github.com/tradecloud/tradecloud-microservices/pull/1255) |  Refactor to SendOrderByBuyer command | @marcmatt |  |
 
-6. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
+8. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Jun-2020 23:09:18 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
 | 2 | Web Portal | 30-Jun-2020 11:39:34 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
 
-7. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
+9. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jun-2020 15:45:03 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
 
-8. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
+10. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jun-2020 15:43:48 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Create optional event on order bulk accept | @olegtradecloud |  |
