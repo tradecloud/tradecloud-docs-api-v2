@@ -1,33 +1,43 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 3 21:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 6 09:31:23 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
+1. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 06-Jul-2020 09:28:28 CEST | [#1254](https://github.com/tradecloud/tradecloud-microservices/pull/1254) |  -  integration user role | @olegtradecloud |  |
+
+2. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-Jul-2020 22:07:23 CEST | [#1255](https://github.com/tradecloud/tradecloud-microservices/pull/1255) |  Refactor to SendOrderByBuyer command | @marcmatt |  |
+
+3. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 03-Jul-2020 15:48:38 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add test logic send position and edit position in dialog | @bohdantrc |  |
 
-2. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
+4. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Jun-2020 23:09:18 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
 | 2 | Web Portal | 30-Jun-2020 11:39:34 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
 
-3. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+5. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Jun-2020 14:15:51 CEST | [#1249](https://github.com/tradecloud/tradecloud-microservices/pull/1249) |  DO NOT MERGE - Test enum refactoring | @roy-tc |  |
 | 2 | Services (Scala) | 30-Jun-2020 12:03:41 CEST | [#1241](https://github.com/tradecloud/tradecloud-microservices/pull/1241) |  Use Enumeratum lib for enums | @roy-tc |  |
 
-4. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
+6. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jun-2020 15:45:03 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
 
-5. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
+7. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jun-2020 15:43:48 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Create optional event on order bulk accept | @olegtradecloud |  |
@@ -61,8 +71,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 3 | Web Portal | 11-Jun-2020 23:05:25 CEST | [#409](https://github.com/tradecloud/tradecloud-portal-angular/pull/409) |  fix model workflow | @bohdantrc |  |
 | 4 | Web Portal | 11-Jun-2020 14:21:57 CEST | [#407](https://github.com/tradecloud/tradecloud-portal-angular/pull/407) |  fix RFQ imports for correct build | @bohdantrc |  |
 | 5 | Services (Scala) | 11-Jun-2020 10:32:33 CEST | [#1231](https://github.com/tradecloud/tradecloud-microservices/pull/1231) |  Catch NotFound and properly log. Also enhance spec to avoid exceptions | @roy-tc |  |
-| 6 | Services (Go) | 05-Jun-2020 18:49:36 CEST | [#311](https://github.com/tradecloud/tradecloud-microservices-go/pull/311) |  Fix Kafka group logging (this time for real) | @vovinacci |  |
-| 7 | Services (Go) | 05-Jun-2020 12:21:42 CEST | [#310](https://github.com/tradecloud/tradecloud-microservices-go/pull/310) |  Fix Kafka group logging | @vovinacci |  |
 
 5. [TC-6087](https://tradecloud.atlassian.net/browse/TC-6087) FE: show &#34;cancelled&#34; status in UI  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -251,14 +259,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Jun-2020 16:40:26 CEST | [#1228](https://github.com/tradecloud/tradecloud-microservices/pull/1228) |  Workflow reopen requests | @olegtradecloud |  |
-
-41. [TC-5784](https://tradecloud.atlassian.net/browse/TC-5784) FE: Reopen request by supplier  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Jun-2020 13:53:12 CEST | [#395](https://github.com/tradecloud/tradecloud-portal-angular/pull/395) |  add reopen request dialog | @bohdantrc |  |
-
-42. [TC-4478](https://tradecloud.atlassian.net/browse/TC-4478) As a supplier I want to reopen order lines 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jun-2020 13:49:22 CEST | [#1206](https://github.com/tradecloud/tradecloud-microservices/pull/1206) | [TC-5782] Reopen request by supplier | @roy-tc |  |
 
