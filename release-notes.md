@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 6 19:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 6 21:31:50 CEST 2020)
 ---
 
 
@@ -8,17 +8,17 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 06-Jul-2020 18:41:36 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
+| 1 | Services (Go) | 06-Jul-2020 21:22:08 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
 
 2. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jul-2020 18:08:56 CEST | [#1254](https://github.com/tradecloud/tradecloud-microservices/pull/1254) |  Integration user role | @olegtradecloud |  |
+| 1 | Services (Scala) | 06-Jul-2020 21:18:48 CEST | [#1254](https://github.com/tradecloud/tradecloud-microservices/pull/1254) |  Integration user role | @olegtradecloud |  |
 
 3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jul-2020 17:48:57 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) | Tc 6108 resend order | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 06-Jul-2020 21:14:31 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) | Tc 6108 resend order | @dmytrozheliuk |  |
 
 4. [TC-6001](https://tradecloud.atlassian.net/browse/TC-6001) Review cancel request business logic and discus solutions for edge cases 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
