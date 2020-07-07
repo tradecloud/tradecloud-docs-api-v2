@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 6 21:31:50 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jul 7 09:31:30 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
+1. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 06-Jul-2020 21:22:08 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
+| 1 | Services (Scala) | 07-Jul-2020 09:19:50 CEST | [#1257](https://github.com/tradecloud/tradecloud-microservices/pull/1257) |  - integration user role | @olegtradecloud |  |
 
-2. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+2. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jul-2020 21:18:48 CEST | [#1254](https://github.com/tradecloud/tradecloud-microservices/pull/1254) |  Integration user role | @olegtradecloud |  |
+| 1 | Services (Go) | 06-Jul-2020 22:02:03 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
 
 3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
