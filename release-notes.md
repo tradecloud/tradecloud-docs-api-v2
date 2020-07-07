@@ -1,40 +1,41 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jul 7 15:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jul 7 17:30:54 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Jul-2020 15:16:50 CEST | [#434](https://github.com/tradecloud/tradecloud-portal-angular/pull/434) | [TС-6101] changed condition for showing action and differences reopen request | @bohdantrc |  |
-| 2 | Services (Scala) | 07-Jul-2020 14:55:08 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) | Tc 6108 resend order | @dmytrozheliuk |  |
+| 1 | Web Portal | 07-Jul-2020 17:28:57 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
+| 2 | Services (Go) | 06-Jul-2020 22:02:03 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
 
-2. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Jul-2020 15:06:59 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
+| 1 | Services (Scala) | 07-Jul-2020 17:26:47 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) | Tc 6108 resend order | @dmytrozheliuk |  |
+| 2 | Web Portal | 07-Jul-2020 15:16:50 CEST | [#434](https://github.com/tradecloud/tradecloud-portal-angular/pull/434) | [TС-6101] changed condition for showing action and differences reopen request | @bohdantrc |  |
 
 3. [TC-6006](https://tradecloud.atlassian.net/browse/TC-6006) Activity event is created on bulk actions even if action is not allowed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Jul-2020 11:39:25 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Create optional event on order bulk accept | @olegtradecloud |  |
+| 1 | Services (Scala) | 07-Jul-2020 16:27:14 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Create optional event on order bulk accept | @olegtradecloud |  |
 
-4. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
+4. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 07-Jul-2020 15:06:59 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
+
+5. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Jul-2020 11:29:34 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add logic send position and edit position in dialog | @bohdantrc |  |
 
-5. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+6. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Jul-2020 11:01:18 CEST | [#1257](https://github.com/tradecloud/tradecloud-microservices/pull/1257) |  - integration user role | @olegtradecloud |  |
-
-6. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 06-Jul-2020 22:02:03 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
 
 7. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
