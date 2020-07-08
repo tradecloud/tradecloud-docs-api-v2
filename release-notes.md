@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jul 8 17:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jul 8 19:30:57 CEST 2020)
 ---
 
 
@@ -8,21 +8,21 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Jul-2020 17:22:09 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) | Use refactored messages enums | @roy-tc |  |
+| 1 | Services (Scala) | 08-Jul-2020 18:32:05 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) | Use refactored messages enums | @roy-tc |  |
 | 2 | Web Portal | 08-Jul-2020 16:12:34 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
 | 3 | Web Portal | 08-Jul-2020 15:30:13 CEST | [#434](https://github.com/tradecloud/tradecloud-portal-angular/pull/434) | [TС-6101] changed condition for showing action and differences reopen request | @bohdantrc |  |
 
-2. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
+2. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Jul-2020 17:18:11 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) |  Resend order | @dmytrozheliuk |  |
-| 2 | Web Portal | 08-Jul-2020 15:31:06 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
-| 3 | Services (Go) | 08-Jul-2020 13:07:29 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
+| 1 | Services (Scala) | 08-Jul-2020 18:30:29 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
 
-3. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+3. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Jul-2020 17:10:02 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
+| 1 | Web Portal | 08-Jul-2020 18:29:10 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
+| 2 | Services (Scala) | 08-Jul-2020 17:40:23 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) |  Resend order | @dmytrozheliuk |  |
+| 3 | Services (Go) | 08-Jul-2020 13:07:29 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
 
 4. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
