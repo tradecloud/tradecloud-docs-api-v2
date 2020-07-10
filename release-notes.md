@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 10 19:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 10 21:30:59 CEST 2020)
 ---
 
 
@@ -295,9 +295,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Jun-2020 10:34:13 CEST | [#1230](https://github.com/tradecloud/tradecloud-microservices/pull/1230) |  Remove &#39;order-integration&#39; service | @vovinacci |  |
-
-45. [TC-5701](https://tradecloud.atlassian.net/browse/TC-5701) As DevOps I want to upgrade &#39;gokit&#39; to latest version 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 10-Jun-2020 20:29:43 CEST | [#313](https://github.com/tradecloud/tradecloud-microservices-go/pull/313) |  Update go-kit to &#39;0.10.0&#39; | @vovinacci |  |
 
