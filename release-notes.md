@@ -1,36 +1,36 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 9 21:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 10 09:31:30 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+1. [TC-6124](https://tradecloud.atlassian.net/browse/TC-6124) In progress lines because of an reopen request can be selected for Bulk actions (confirm/reject/propose)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Jul-2020 21:24:43 CEST | [#1257](https://github.com/tradecloud/tradecloud-microservices/pull/1257) |  Integration user role | @olegtradecloud |  |
+| 1 | Web Portal | 10-Jul-2020 09:13:39 CEST | [#438](https://github.com/tradecloud/tradecloud-portal-angular/pull/438) |  add pipe for checking open status in reopen request | @bohdantrc |  |
 
-2. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+2. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 10-Jul-2020 09:13:16 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
+
+3. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 09-Jul-2020 21:55:24 CEST | [#1257](https://github.com/tradecloud/tradecloud-microservices/pull/1257) |  Integration user role | @olegtradecloud |  |
+
+4. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Jul-2020 20:55:59 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
 | 2 | Services (Scala) | 09-Jul-2020 10:55:43 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
 
-3. [N/A](#)  
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 09-Jul-2020 15:47:07 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
 | 2 | Web Portal | 08-Jul-2020 15:30:13 CEST | [#434](https://github.com/tradecloud/tradecloud-portal-angular/pull/434) | [TС-6101] changed condition for showing action and differences reopen request | @bohdantrc |  |
-
-4. [TC-6124](https://tradecloud.atlassian.net/browse/TC-6124) In progress lines because of an reopen request can be selected for Bulk actions (confirm/reject/propose)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 09-Jul-2020 15:19:27 CEST | [#438](https://github.com/tradecloud/tradecloud-portal-angular/pull/438) |  add pipe for checking open status in reopen request | @bohdantrc |  |
-
-5. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Jul-2020 14:36:51 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
 
 6. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
