@@ -11,7 +11,7 @@ For more information about how to use Postman in general, see the [Postman docum
 
 To make things easier, Tradecloud provides a Postman collection with some example requests. You can use this as follows:
 
-1. Download the Tradecloud Postman Collection [using this link](../../.gitbook/assets/Tradecloud-Demo.postman_collection.json)
+1. Save the [Tradecloud Postman Collection](https://raw.githubusercontent.com/tradecloud/tradecloud-docs-api-v2/master/.gitbook/assets/Tradecloud-Demo.postman_collection.json) on your computer. (Use right-click, **save link as**)
 2. In Postman, click "Import" and select the file collection you just downloaded.
 
 You now have a "Tradecloud Buyer Demo" collection in your Postman application. Follow the instructions below to start sending your first request to the Tradecloud API.
