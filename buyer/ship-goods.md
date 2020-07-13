@@ -5,7 +5,7 @@ description: How to announce the supplier has shipped goods
 # Ship goods
 
 {% hint style="warning" %}
-This feature is planned and API and documentation may change. 
+This feature is planned and API and documentation may change.
 {% endhint %}
 
 When an order or line is completely shipped by the supplier, it can be marked as shipped by setting `indicators.shipped`on either order or line level and reissue the order:
@@ -21,6 +21,4 @@ You cannot ship a `Delivered` line.
 {% hint style="warning" %}
 Usually this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
 {% endhint %}
-
-
 

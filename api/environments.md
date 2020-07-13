@@ -12,7 +12,7 @@ Tradecloud has 3 environments available for customers:
 
 ## Production environment
 
-There is one [production environment](https://api.tradecloud1.com/) a.k.a. LIVE environment. Use https://api.tradecloud1.com/v2/api-connector/ to send order (responses).
+There is one [production environment](https://api.tradecloud1.com/) a.k.a. LIVE environment. Use [https://api.tradecloud1.com/v2/api-connector/](https://api.tradecloud1.com/v2/api-connector/) to send order \(responses\).
 
 The latest features will be made available by the Tradecloud continuous delivery process.
 
@@ -24,9 +24,9 @@ Maintenance can be planned on working days after 20:00 CE\(S\)T or in weekends a
 
 ## Acceptance test environment
 
-There is one [acceptance test environment](https://api.accp.tradecloud1.com). Use https://api.accp.tradecloud1.com/v2/api-connector/ to send order (responses).
+There is one [acceptance test environment](https://api.accp.tradecloud1.com). Use [https://api.accp.tradecloud1.com/v2/api-connector/](https://api.accp.tradecloud1.com/v2/api-connector/) to send order \(responses\).
 
-Buyers and suppliers can test new features and develop and test their Tradecloud API integration. 
+Buyers and suppliers can test new features and develop and test their Tradecloud API integration.
 
 The latest features will be made available by the Tradecloud continuous delivery process.
 
@@ -34,10 +34,11 @@ It has an availability SLA of 95% per month, measured 8:00-18:00 CE\(S\)T on wor
 
 ## Stable environment
 
-There is one [stable environment](https://api.stable.tradecloud1.com). Use https://api.stable.tradecloud1.com/v2/api-connector/ to send order (responses).
+There is one [stable environment](https://api.stable.tradecloud1.com). Use [https://api.stable.tradecloud1.com/v2/api-connector/](https://api.stable.tradecloud1.com/v2/api-connector/) to send order \(responses\).
 
 Buyers and suppliers can use this environment for demo's and training.
 
 This enviroment is stable and the latest features are NOT available.
 
 It is available on request. When available it has an availability SLA of 95% per month, measured 8:00-18:00 CE\(S\)T on working days \(10/5\).
+

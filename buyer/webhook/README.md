@@ -4,7 +4,7 @@ description: How to receive a purchase order response sent by the supplier
 
 # Receive an order response
 
-Tradecloud will send a purchase order response to the buyer when 
+Tradecloud will send a purchase order response to the buyer when
 
 * order lines are accepted by the supplier,
 * order lines are rejected by the supplier,
@@ -70,7 +70,7 @@ The **event name** is one of:
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
 
 {% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change. 
+The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
 * `status.processStatus`: is the aggregate of all lines process status, see below
@@ -94,7 +94,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `contact`: the supplier employee responsible for this order. 
 * `properties`: are key-value based custom fields, added by the supplier
 * `notes`: are simple custom fields, added by the supplier
-* `documents`: contain meta data and link of attached documents by the supplier.  
+* `documents`: contain meta data and link of attached documents by the supplier.
 
   {% page-ref page="download-document.md" %}
 
@@ -109,7 +109,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 
 {% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change. 
+The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
 * `status.processStatus`: the order line process status, see [status](./#status).

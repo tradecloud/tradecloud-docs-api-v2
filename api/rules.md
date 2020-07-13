@@ -56,23 +56,11 @@ Never resend **all** orders or **all active** orders periodically.
 
 ## Attach a document
 
-
-
 ## Receive goods
-
-
 
 ## Complete an order
 
-
-
 ## Reopen an order
 
-
-
 ## Cancel an order
-
-
-
-
 

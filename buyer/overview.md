@@ -32,7 +32,7 @@ Most buyers approve or reject order change proposals using portal workflow tasks
 
 [Approve a proposal](approve-proposal.md) from the supplier
 
-[Reject a proposal](reject-proposal.md)  from the supplier
+[Reject a proposal](reject-proposal.md) from the supplier
 
 ## Step 4. Receive goods
 
@@ -48,6 +48,4 @@ Alternatively, as a buyer you may:
 
 * [Request to reopen an order](../supplier/reopen-request.md) which will restart the order process.
 * [Request to cancel an order](cancel-request.md) which will end the order process.
-
- 
 
