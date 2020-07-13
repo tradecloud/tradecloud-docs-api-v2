@@ -1,56 +1,61 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 13 13:31:15 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 13 15:30:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+1. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 13-Jul-2020 15:25:01 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
+
+2. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 13-Jul-2020 15:18:41 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
+
+3. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 13-Jul-2020 14:08:41 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) |  Resend order | @dmytrozheliuk |  |
+| 2 | Web Portal | 13-Jul-2020 11:41:58 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
+| 3 | Services (Go) | 08-Jul-2020 13:07:29 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
+
+4. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jul-2020 13:06:44 CEST | [#1266](https://github.com/tradecloud/tradecloud-microservices/pull/1266) |  DO NOT MERGE - Test enum refactoring | @roy-tc |  |
 | 2 | Services (Scala) | 13-Jul-2020 12:26:28 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
 | 3 | Services (Scala) | 09-Jul-2020 20:55:59 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
 
-2. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
+5. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jul-2020 13:03:19 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Optional events | @olegtradecloud |  |
 
-3. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 13-Jul-2020 11:41:58 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
-| 2 | Services (Scala) | 13-Jul-2020 08:28:38 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) |  Resend order | @dmytrozheliuk |  |
-| 3 | Services (Go) | 08-Jul-2020 13:07:29 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
-
-4. [N/A](#)  
+6. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Jul-2020 11:29:57 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
 
-5. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
+7. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Jul-2020 14:18:00 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
 
-6. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Jul-2020 10:02:17 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
-
-7. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
+8. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Jul-2020 14:35:20 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
 | 2 | Web Portal | 08-Jul-2020 00:25:41 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
 
-8. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
+9. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Jul-2020 15:06:59 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
 
-9. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
+10. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Jul-2020 11:29:34 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add logic send position and edit position in dialog | @bohdantrc |  |
