@@ -34,11 +34,7 @@ Most buyers approve or reject order change proposals using portal workflow tasks
 
 [Reject a proposal](reject-proposal.md) from the supplier
 
-## Step 4. Ship and receive goods
-
-Usually the supplier indicates the goods are shipped in their order response.
-
-But it is possible for the buyer to [Ship goods](ship-goods.md).
+## Step 4. Receive goods
 
 As a buyer you can [Receive goods](receive-goods.md).
 
@@ -46,10 +42,10 @@ As a buyer you can [Receive goods](receive-goods.md).
 
 As a buyer you can [Complete an order](complete.md) which will end the order process.
 
-## Step 5b. Reopen or cancel an order
+## Optional step 5b. Reopen or cancel an order
 
 Alternatively, as a buyer you may:
 
-* [Request to reopen an order](../supplier/request-reopen.md) which will restart the order process.
-* [Request to cancel an order](request-cancel.md) which will end the order process.
+* [Request to reopen an order](../supplier/reopen-request.md) which will restart the order process.
+* [Request to cancel an order](cancel-request.md) which will end the order process.
 

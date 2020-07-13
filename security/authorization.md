@@ -63,7 +63,7 @@ A company is in the lead during a**n** event that's why users are n/a relating t
 | :--- | :--- | :--- |
 
 
-| Your supplier company | See all order \(line\) fields + download attach documents | Execute all "BySupplier" actions \(aka commands\) + communication & attach documents |
+| Your supplier company | See all order \(line\) fields + download attach documents | Execute all "BySupplier" actions \(aka commands\) + communication , attach documents & add/change item details |
 | :--- | :--- | :--- |
 
 
@@ -130,7 +130,9 @@ A company is in the lead during a**n** event that's why users are n/a relating t
     </tr>
   </thead>
   <tbody></tbody>
-</table>| Connected users | Not allowed | n/a |
+</table>
+
+| Connected users | Not allowed | n/a |
 | :--- | :--- | :--- |
 
 

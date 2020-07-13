@@ -19,7 +19,7 @@ When the order line has status `InProgress`:
 * When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** \(either via a proposal or reopen request\)`delivery schedule` and `prices` the process status will become `Confirmed`
 * When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
 
-   `delivery schedule` and `prices` the process status will stay `InProgress`.  
+  `delivery schedule` and `prices` the process status will stay `InProgress`.  
   If there is an open reopen request, it will be updated.
 
 * When the `indicators.reopenReqeust` is set and there is an **Open** reopen request, it will be updated.
@@ -36,7 +36,7 @@ When the order line has status `Rejected`:
 * When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** `delivery schedule` and `prices` the process status will become `Confirmed`
 * When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
 
-   `delivery schedule` and `prices` the process status will become `InProgress`and a confirm task for the supplier will be created
+  `delivery schedule` and `prices` the process status will become `InProgress`and a confirm task for the supplier will be created
 
 * When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
 

@@ -26,17 +26,15 @@ For successful onboarding you need to have experience with these [standards](api
 
 ## As a supplier
 
-[Receive an order](supplier/webhook/)
-
 {% page-ref page="supplier/webhook/" %}
 
-TO DO [Send an order response](supplier/accept/)
+{% page-ref page="supplier/send-order-response/" %}
 
 {% page-ref page="supplier/overview.md" %}
 
 ## Support
 
-If you get stuck just ask support:
+If you get stuck just ask:
 
 {% page-ref page="support.md" %}
 

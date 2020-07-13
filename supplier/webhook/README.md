@@ -4,11 +4,11 @@ description: How to receive a purchase order sent by the buyer.
 
 # Receive an order
 
-Tradecloud will send a new purchase order to the supplier when 
+Tradecloud will send a new purchase order to the supplier when
 
 * the buyer issues a purchase order. 
 
-Tradecloud will send an updated purchase order to the supplier when 
+Tradecloud will send an updated purchase order to the supplier when
 
 * the buyer reissues a purchase order, 
 * a supplier change proposal is approved by the buyer ,
@@ -72,7 +72,7 @@ The **event name** is one of:
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
 
 {% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change. 
+The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
 * `status.processStatus`: is the aggregate of all lines process status, see [status](./#status).
@@ -115,7 +115,7 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 
 {% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change. 
+The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
 * `status.processStatus`: the order line process status, see [Status](./#status) below.

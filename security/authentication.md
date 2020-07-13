@@ -63,7 +63,7 @@ When correctly authenticated, the response will return 200 and in this example s
 
 An access token will **expire after 10 minutes and a refresh token after 24 hours**. When your access token has expired you have to use the refresh token. If your refresh token expires you have to log in again.
 
-You can refresh your access token by placing an HTTP request to `/authentication/refresh`, using   
+You can refresh your access token by placing an HTTP request to `/authentication/refresh`, using  
 **only** **the Refresh-Token header.** **Do NOT use the Authorization header**.
 
 ```text
@@ -87,7 +87,7 @@ Set-Refresh-Token: <Refresh-Token>
 
 Log out will **invalidate the refresh token immediately**. The access token will expire after 10 minutes.
 
-You can invalidate your refresh token by placing an HTTP request to `/authentication/logout`, using   
+You can invalidate your refresh token by placing an HTTP request to `/authentication/logout`, using  
 **only** **the Refresh-Token header.** **Do NOT use the Authorization header**.
 
 ```text
@@ -97,6 +97,4 @@ POST https://api.accp.tradecloud1.com/v2/authentication/logout
 Refresh-Token: <Refresh-Token>
 // no body
 ```
-
-
 
