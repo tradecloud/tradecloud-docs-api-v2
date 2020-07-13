@@ -14,7 +14,7 @@ To make things easier, Tradecloud provides a Postman collection with some exampl
 1. Save the [Tradecloud Postman Collection](https://raw.githubusercontent.com/tradecloud/tradecloud-docs-api-v2/master/.gitbook/assets/Tradecloud-Demo.postman_collection.json) on your computer. (Use right-click, **save link as**)
 2. In Postman, click "Import" and select the file collection you just downloaded.
 
-You now have a "Tradecloud Buyer Demo" collection in your Postman application. Follow the instructions below to start sending your first request to the Tradecloud API.
+You now have a "Tradecloud Demo" collection in your Postman application. Follow the instructions below to start sending your first request to the Tradecloud API.
 
 ## Getting a token using Postman
 
@@ -22,9 +22,9 @@ At the start of each session, you first need to login to obtain an authorization
 
 To login and obtain a token:
 
-1. Open the "Login" request in the "Tradecloud Buyer Demo" collection.
+1. Open the "Login" request in the "Tradecloud Demo" collection.
 2. Go to the **Authorization** tab.
-3. Fill out the **Username** and **Password** fields with your Tradecloud credentials. If you don't have any credentials yet, please ask us to set up an account for you.
+3. Fill out the **Username** and **Password** fields with your Tradecloud Integration credentials. If you don't have any credentials yet, please ask us to set up an account for you.
 4. Click **Send**. The API should return a `200 - OK` response. 
 5. Switch to the **Headers** tab of the _response_ and copy the value of the **Set-Authorization** header.  
 
@@ -38,22 +38,13 @@ To login and obtain a token:
 
 With Postman you can easily send a request to the API once you've obtained your [Authorization Token](postman.md#getting-a-token-using-postman):
 
-1. Open one of the requests in the "Tradecloud Buyer Demo" collection.
+1. Open one of the requests in the "Tradecloud Demo" collection.
 2. In the **Authorization** tab:
    1. Set the Type to **Bearer Token**.
    2. Paste your Authorization Token in the **Token** field. 
-3. Check the body of your request and change the request data where needed.
+3. Check the body of your request and change the request data where needed.  
+Make sure that you follow the OpenAPI specs linked in the Postman request description (see screenshot).
 4. Send!
-
-Want to perform a different API operation? You can easily add new requests to the collection. Always make sure that you check the following elements against [our OpenAPI Specs](https://api.accp.tradecloud1.com/) before sending the request:
-
-* HTTP Method
-
-* Request URL
-
-* Authorization
-
-* Request Body
 
 ![Set the Authorization Token](../../.gitbook/assets/postman-issue-1.png)
 
