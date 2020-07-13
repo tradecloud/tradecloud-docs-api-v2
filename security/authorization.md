@@ -97,7 +97,9 @@ TODO: explanation of scopes
       <td style="text-align:left">n/a</td>
     </tr>
   </tbody>
-</table>\#\#\# My Profile
+</table>
+
+\#\#\# My Profile
 
 <table>
   <thead>
@@ -131,7 +133,9 @@ TODO: explanation of scopes
       <td style="text-align:left">Not allowed</td>
     </tr>
   </tbody>
-</table>\#\# Admin Permissions Permissions in addition to above User permissions. \#\#\# My Company \| Description \| Scope \| Read Permission \| Write Permission \| \| :--- \| :--- \| :--- \| :--- \| \| Connection details \| Company \| n/a \| Update account code \| \| Invite a new user \| Company \| n/a \| Invite any user \| \| Validate a new user \| n/a \| Received e-mail \| Validation token \| \| Settings \| Company \| See all fields \| Update all fields \| \#\# Superuser Permissions Superuser only permissions \\(A superuser does NOT have above User permissions\\)
+</table>
+
+\#\# Admin Permissions Permissions in addition to above User permissions. \#\#\# My Company \| Description \| Scope \| Read Permission \| Write Permission \| \| :--- \| :--- \| :--- \| :--- \| \| Connection details \| Company \| n/a \| Update account code \| \| Invite a new user \| Company \| n/a \| Invite any user \| \| Validate a new user \| n/a \| Received e-mail \| Validation token \| \| Settings \| Company \| See all fields \| Update all fields \| \#\# Superuser Permissions Superuser only permissions \\(A superuser does NOT have above User permissions\\)
 
 <table>
   <thead>
@@ -172,3 +176,4 @@ TODO: explanation of scopes
     </tr>
   </tbody>
 </table>
+
