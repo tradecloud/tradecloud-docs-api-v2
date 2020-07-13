@@ -45,7 +45,15 @@ With Postman you can easily send a request to the API once you've obtained your 
 3. Check the body of your request and change the request data where needed.
 4. Send!
 
-Want to perform a different API operation? You can easily add new requests to the collection. Always make sure that you check the **method**, **Request URL**, **Authorization** and **body** of a request against [our OpenAPI Specs](https://api.accp.tradecloud1.com/).
+Want to perform a different API operation? You can easily add new requests to the collection. Always make sure that you check the following elements against [our OpenAPI Specs](https://api.accp.tradecloud1.com/) before sending the request:
+
+* HTTP Method
+
+* Request URL
+
+* Authorization
+
+* Request Body
 
 ![Set the Authorization Token](../../.gitbook/assets/postman-issue-1.png)
 
