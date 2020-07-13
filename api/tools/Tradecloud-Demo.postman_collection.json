@@ -1,11 +1,167 @@
 {
 	"info": {
-		"_postman_id": "afa0b11a-9ea8-4ebe-83c3-8377294ed1c5",
-		"name": "Tradecloud Buyer Demo",
-		"description": "This collection contains requests illustrating how to use the Tradecloud API as a Buyer.",
+		"_postman_id": "a501ca22-b32d-42f2-ba74-dd06f84bd31e",
+		"name": "Tradecloud Demo",
+		"description": "This collection contains requests illustrating how to use the Tradecloud API.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "Buyer",
+			"item": [
+				{
+					"name": "Order Documents",
+					"item": [
+						{
+							"name": "Upload a document",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"description": "Select the document you wish to upload.",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.accp.tradecloud1.com/v2/object-storage/document",
+									"protocol": "https",
+									"host": [
+										"api",
+										"accp",
+										"tradecloud1",
+										"com"
+									],
+									"path": [
+										"v2",
+										"object-storage",
+										"document"
+									]
+								},
+								"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Select the document you wish to upload in the request **Body** tab.\n\nSee also [the api-connector API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument)"
+							},
+							"response": []
+						},
+						{
+							"name": "Attach a document",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"order\": {\n    \"companyId\": \"faa3ea58-b46d-40fe-9b27-7481796717e1\",\n    \"purchaseOrderNumber\": \"PO-12345\",\n    \"documents\": [\n      {\n        \"code\": \"123456789\",\n        \"revision\": \"B\",\n        \"name\": \"Tradecloud API Manual\",\n        \"objectId\": \"40fef20d-8769-4a0b-aa2d-90a0b00750b4\",\n        \"type\": \"General\",\n        \"description\": \"General document\"\n      },\n      {\n        \"code\": \"987654321\",\n        \"revision\": \"C\",\n        \"name\": \"Tradecloud API Manual version C\",\n        \"url\": \"https://my-company.com/storage/my_file.pdf\",\n        \"type\": \"General\",\n        \"description\": \"General document\"\n      }\n    ]\n  },\n  \"lines\": [\n    {\n      \"position\": \"0001\",\n      \"documents\": [\n        {\n        \"code\": \"123456789\",\n        \"revision\": \"B\",\n        \"name\": \"Tradecloud API Manual\",\n        \"objectId\": \"40fef20d-8769-4a0b-aa2d-90a0b00750b4\",\n        \"type\": \"General\",\n        \"description\": \"General document\"\n      },\n      {\n        \"code\": \"987654321\",\n        \"revision\": \"C\",\n        \"name\": \"Tradecloud API Manual version C\",\n        \"url\": \"https://my-company.com/storage/my_file.pdf\",\n        \"type\": \"General\",\n        \"description\": \"General document\"\n      }\n      ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.accp.tradecloud1.com/v2/api-connector/order/documents",
+									"protocol": "https",
+									"host": [
+										"api",
+										"accp",
+										"tradecloud1",
+										"com"
+									],
+									"path": [
+										"v2",
+										"api-connector",
+										"order",
+										"documents"
+									]
+								},
+								"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Make sure the `companyId` and `purchaseOrderNumber` are set correctly.\n3. Provide the data related to the documents that you wish to attach on order header and/or order line level.\n\nSee also [the api-connector API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/attachOrderDocumentsByBuyerRoute)"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Issue an order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"order\": {\n    \"companyId\": \"22d1033f-5372-4cd5-abf9-be4f0673d185\",\n    \"supplierAccountNumber\": \"123456\",\n    \"purchaseOrderNumber\": \"PO1234\",\n    \"description\": \"This is a demo order using Postman\",\n    \"destination\": {\n      \"code\": \"AC-1\",\n      \"names\": [\n        \"Blue Sailboats Main Assembly Center\",\n        \"Dock 12\"\n      ],\n      \"addressLines\": [\n        \"Street 123\",\n        \"Area 52\"\n      ],\n      \"postalCode\": \"1234 AB\",\n      \"city\": \"Delft\",\n      \"countryCodeIso2\": \"NL\",\n      \"countryName\": \"The Netherlands\",\n      \"locationType\": \"assembly-center\"\n    },\n    \"terms\": {\n      \"incotermsCode\": \"CIF\",\n      \"incoterms\": \"ECT Rotterdam\",\n      \"paymentTermsCode\": \"30D\",\n      \"paymentTerms\": \"30 days\"\n    },\n    \"indicators\": {\n      \"noDeliveryExpected\": false,\n      \"shipped\": false,\n      \"delivered\": false,\n      \"completed\": false,\n      \"cancelled\": false\n    },\n    \"properties\": [\n      {\n        \"key\": \"department\",\n        \"value\": \"Assembly and construction\"\n      }\n    ],\n    \"notes\": [\n      \"Needed for Boaty McBoatFace\"\n    ],\n    \"contact\": {\n      \"email\": \"sales@ocean-electronics-example.com\"\n    }\n  },\n  \"lines\": [\n    {\n      \"position\": \"0001\",\n      \"description\": \"Hull tubes\",\n      \"item\": {\n        \"number\": \"P123\",\n        \"revision\": \"2020.58\",\n        \"name\": \"Round tube ø60x45\",\n        \"description\": \"Very nice round tube ø60 x 45\",\n        \"purchaseUnitOfMeasureIso\": \"PCE\",\n        \"supplierItemNumber\": \"67890\"\n      },\n      \"deliverySchedule\": [\n        {\n          \"position\": \"01\",\n          \"date\": \"2020-08-31\",\n          \"quantity\": 125,\n          \"locationType\": \"harbor\",\n          \"locationName\": \"ECT Rotterdam\"\n        }\n      ],\n      \"deliveryHistory\": [],\n      \"prices\": {\n        \"grossPrice\": {\n          \"priceInTransactionCurrency\": {\n            \"value\": 1250.00,\n            \"currencyIso\": \"USD\"\n          },\n          \"priceInBaseCurrency\": {\n            \"value\": 1144.50,\n            \"currencyIso\": \"EUR\"\n          }\n        },\n        \"discountPercentage\": 50,\n        \"netPrice\": {\n          \"priceInTransactionCurrency\": {\n            \"value\": 1040.56,\n            \"currencyIso\": \"USD\"\n          },\n          \"priceInBaseCurrency\": {\n            \"value\": 952.94,\n            \"currencyIso\": \"EUR\"\n          }\n        },\n        \"priceUnitOfMeasureIso\": \"PCE\",\n        \"priceUnitQuantity\": 100\n      },\n      \"terms\": {\n        \"contractNumber\": \"20200101.v2\",\n        \"contractPosition\": \"0001\"\n      },\n      \"projectNumber\": \"PROJ12345\",\n      \"productionNumber\": \"PROD12345\",\n      \"salesOrderNumber\": \"SO123456789\",\n      \"indicators\": {\n        \"noDeliveryExpected\": false,\n        \"shipped\": false,\n        \"delivered\": false,\n        \"completed\": false,\n        \"cancelled\": false\n      },\n      \"properties\": [],\n      \"notes\": []\n    }\n  ],\n  \"erpIssueDateTime\": \"2020-04-02T10:11:12\",\n  \"erpIssuedBy\": {\n    \"email\": \"john@blue-boats-example.com\",\n    \"userName\": \"johndoe\"\n  },\n  \"erpLastChangeDateTime\": \"2020-04-02T10:30:00\",\n  \"erpLastChangedBy\": {\n    \"email\": \"dee@blue-boats-example.com\",\n    \"userName\": \"deecaffari\"\n  }\n}"
+						},
+						"url": {
+							"raw": "https://api.accp.tradecloud1.com/v2/api-connector/order",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accp",
+								"tradecloud1",
+								"com"
+							],
+							"path": [
+								"v2",
+								"api-connector",
+								"order"
+							]
+						},
+						"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Make sure the `companyId` and `supplierAccountNumber` are set correctly.\n3. Choose a unique `purchaseOrderNumber` to issue a new order. Otherwise, the order will be reissued.\n\nSee also [the api-connector API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
 		{
 			"name": "Login",
 			"request": {
@@ -44,57 +200,13 @@
 				"description": "See also [the authentication API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml#/authentication/login)"
 			},
 			"response": []
-		},
-		{
-			"name": "Issue an order",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"order\": {\n    \"companyId\": \"22d1033f-5372-4cd5-abf9-be4f0673d185\",\n    \"supplierAccountNumber\": \"123456\",\n    \"purchaseOrderNumber\": \"PO1234\",\n    \"description\": \"This is a demo order using Postman\",\n    \"destination\": {\n      \"code\": \"AC-1\",\n      \"names\": [\n        \"Blue Sailboats Main Assembly Center\",\n        \"Dock 12\"\n      ],\n      \"addressLines\": [\n        \"Street 123\",\n        \"Area 52\"\n      ],\n      \"postalCode\": \"1234 AB\",\n      \"city\": \"Delft\",\n      \"countryCodeIso2\": \"NL\",\n      \"countryName\": \"The Netherlands\",\n      \"locationType\": \"assembly-center\"\n    },\n    \"terms\": {\n      \"incotermsCode\": \"CIF\",\n      \"incoterms\": \"ECT Rotterdam\",\n      \"paymentTermsCode\": \"30D\",\n      \"paymentTerms\": \"30 days\"\n    },\n    \"indicators\": {\n      \"noDeliveryExpected\": false,\n      \"shipped\": false,\n      \"delivered\": false,\n      \"completed\": false,\n      \"cancelled\": false\n    },\n    \"properties\": [\n      {\n        \"key\": \"department\",\n        \"value\": \"Assembly and construction\"\n      }\n    ],\n    \"notes\": [\n      \"Needed for Boaty McBoatFace\"\n    ],\n    \"contact\": {\n      \"email\": \"sales@ocean-electronics-example.com\"\n    }\n  },\n  \"lines\": [\n    {\n      \"position\": \"0001\",\n      \"description\": \"Hull tubes\",\n      \"item\": {\n        \"number\": \"P123\",\n        \"revision\": \"2020.58\",\n        \"name\": \"Round tube ø60x45\",\n        \"description\": \"Very nice round tube ø60 x 45\",\n        \"purchaseUnitOfMeasureIso\": \"PCE\",\n        \"supplierItemNumber\": \"67890\"\n      },\n      \"deliverySchedule\": [\n        {\n          \"position\": \"01\",\n          \"date\": \"2020-08-31\",\n          \"quantity\": 125,\n          \"locationType\": \"harbor\",\n          \"locationName\": \"ECT Rotterdam\"\n        }\n      ],\n      \"deliveryHistory\": [],\n      \"prices\": {\n        \"grossPrice\": {\n          \"priceInTransactionCurrency\": {\n            \"value\": 1250.00,\n            \"currencyIso\": \"USD\"\n          },\n          \"priceInBaseCurrency\": {\n            \"value\": 1144.50,\n            \"currencyIso\": \"EUR\"\n          }\n        },\n        \"discountPercentage\": 50,\n        \"netPrice\": {\n          \"priceInTransactionCurrency\": {\n            \"value\": 1040.56,\n            \"currencyIso\": \"USD\"\n          },\n          \"priceInBaseCurrency\": {\n            \"value\": 952.94,\n            \"currencyIso\": \"EUR\"\n          }\n        },\n        \"priceUnitOfMeasureIso\": \"PCE\",\n        \"priceUnitQuantity\": 100\n      },\n      \"terms\": {\n        \"contractNumber\": \"20200101.v2\",\n        \"contractPosition\": \"0001\"\n      },\n      \"projectNumber\": \"PROJ12345\",\n      \"productionNumber\": \"PROD12345\",\n      \"salesOrderNumber\": \"SO123456789\",\n      \"indicators\": {\n        \"noDeliveryExpected\": false,\n        \"shipped\": false,\n        \"delivered\": false,\n        \"completed\": false,\n        \"cancelled\": false\n      },\n      \"properties\": [],\n      \"notes\": []\n    }\n  ],\n  \"erpIssueDateTime\": \"2020-04-02T10:11:12\",\n  \"erpIssuedBy\": {\n    \"email\": \"john@blue-boats-example.com\",\n    \"userName\": \"johndoe\"\n  },\n  \"erpLastChangeDateTime\": \"2020-04-02T10:30:00\",\n  \"erpLastChangedBy\": {\n    \"email\": \"dee@blue-boats-example.com\",\n    \"userName\": \"deecaffari\"\n  }\n}"
-				},
-				"url": {
-					"raw": "https://api.accp.tradecloud1.com/v2/api-connector/order",
-					"protocol": "https",
-					"host": [
-						"api",
-						"accp",
-						"tradecloud1",
-						"com"
-					],
-					"path": [
-						"v2",
-						"api-connector",
-						"order"
-					]
-				},
-				"description": "Before sending this request:\n\n1. Make sure you are logged in as a Buyer and the Bearer Token is set in the Authorization header.\n2. Make sure the `companyId` and `supplierAccountNumber` are set correctly.\n3. Choose a unique `purchaseOrderNumber` to issue a new order. Otherwise, the order will be reissued.\n\nSee also [the api-connector API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)"
-			},
-			"response": []
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "75eb00bf-b614-484b-ab11-95b5183bc055",
+				"id": "611ce9b7-4b3b-4292-b650-be321beb9284",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -104,7 +216,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1c39fbe0-24e2-4b0b-9120-0d30c2f16c5c",
+				"id": "454caf74-3f0c-4862-aeee-848c5e411469",
 				"type": "text/javascript",
 				"exec": [
 					""
