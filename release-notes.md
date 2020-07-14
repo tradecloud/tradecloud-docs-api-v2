@@ -1,30 +1,29 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jul 14 09:31:32 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jul 14 11:30:57 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+1. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 09:18:58 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
+| 1 | Services (Scala) | 14-Jul-2020 11:01:41 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
 
-2. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+2. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 14-Jul-2020 09:16:14 CEST | [#319](https://github.com/tradecloud/tradecloud-microservices-go/pull/319) |  Fix UAT status reporting | @vovinacci |  |
-| 2 | Services (Scala) | 14-Jul-2020 09:16:04 CEST | [#1268](https://github.com/tradecloud/tradecloud-microservices/pull/1268) |  Fix UAT status reporting | @vovinacci |  |
+| 1 | Services (Scala) | 14-Jul-2020 11:00:19 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
 
 3. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 09:13:08 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
+| 1 | Services (Scala) | 14-Jul-2020 10:45:00 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
 
-4. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
+4. [TC-6130](https://tradecloud.atlassian.net/browse/TC-6130) Hide reject order (line) buttons for suppliers  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 09:12:36 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
+| 1 | Web Portal | 14-Jul-2020 10:34:55 CEST | [#440](https://github.com/tradecloud/tradecloud-portal-angular/pull/440) |  add feature toggle for reject button | @bohdantrc |  |
 
 5. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system [Planned release 10-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -68,41 +67,43 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 
 ## Changelog
 
-1. [N/A](#)  
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 14-Jul-2020 09:49:44 CEST | [#1268](https://github.com/tradecloud/tradecloud-microservices/pull/1268) |  Fix UAT status reporting | @vovinacci |  |
+| 2 | Services (Go) | 14-Jul-2020 09:48:35 CEST | [#319](https://github.com/tradecloud/tradecloud-microservices-go/pull/319) |  Fix UAT status reporting | @vovinacci |  |
+| 3 | Services (Scala) | 08-Jul-2020 11:40:23 CEST | [#1258](https://github.com/tradecloud/tradecloud-microservices/pull/1258) |  Fix scalastyle errors | @vovinacci |  |
+| 4 | Services (Scala) | 02-Jul-2020 11:52:12 CEST | [#1251](https://github.com/tradecloud/tradecloud-microservices/pull/1251) |  - Fix tests run | @denys-kondartiuk |  |
+| 5 | Web Portal | 17-Jun-2020 09:07:15 CEST | [#415](https://github.com/tradecloud/tradecloud-portal-angular/pull/415) |  Add env variable for show/hide reopen button | @bohdantrc |  |
+
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Jul-2020 22:10:04 CEST | [#434](https://github.com/tradecloud/tradecloud-portal-angular/pull/434) | [TС-6101] changed condition for showing action and differences reopen request | @bohdantrc |  |
 | 2 | Web Portal | 24-Jun-2020 13:08:47 CEST | [#421](https://github.com/tradecloud/tradecloud-portal-angular/pull/421) | bugfix(2fa setup):[TC-6018]  fix spelling | @RobinNagpal |  |
 | 3 | Web Portal | 16-Jun-2020 19:19:37 CEST | [#406](https://github.com/tradecloud/tradecloud-portal-angular/pull/406) | Bump websocket-extensions from 0.1.3 to 0.1.4 | @dependabot[bot] |  |
 
-2. [TC-6103](https://tradecloud.atlassian.net/browse/TC-6103) contact filter shows only up to 10 users.  
+3. [TC-6103](https://tradecloud.atlassian.net/browse/TC-6103) contact filter shows only up to 10 users.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Jul-2020 15:06:58 CEST | [#439](https://github.com/tradecloud/tradecloud-portal-angular/pull/439) |  set limit 200 in contact user request | @bohdantrc |  |
 
-3. [TC-5238](https://tradecloud.atlassian.net/browse/TC-5238) As Damen I want a separate system integration API account 
+4. [TC-5238](https://tradecloud.atlassian.net/browse/TC-5238) As Damen I want a separate system integration API account 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Jul-2020 10:57:27 CEST | [#1264](https://github.com/tradecloud/tradecloud-microservices/pull/1264) |  Force auth and user services deployment on accp and prod, s… | @marcmatt |  |
 | 2 | Services (Scala) | 10-Jul-2020 10:31:05 CEST | [#1263](https://github.com/tradecloud/tradecloud-microservices/pull/1263) |  Force auth and user services deployment on accp and prod | @marcmatt |  |
 | 3 | Services (Scala) | 10-Jul-2020 10:14:48 CEST | [#1262](https://github.com/tradecloud/tradecloud-microservices/pull/1262) |  Make depressed scalastyle a bit happier | @marcmatt |  |
 
-4. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+5. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Jul-2020 09:47:48 CEST | [#1257](https://github.com/tradecloud/tradecloud-microservices/pull/1257) |  Integration user role | @olegtradecloud |  |
 
-5. [TC-6124](https://tradecloud.atlassian.net/browse/TC-6124) In progress lines because of an reopen request can be selected for Bulk actions (confirm/reject/propose)  
+6. [TC-6124](https://tradecloud.atlassian.net/browse/TC-6124) In progress lines because of an reopen request can be selected for Bulk actions (confirm/reject/propose)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Jul-2020 09:43:30 CEST | [#438](https://github.com/tradecloud/tradecloud-portal-angular/pull/438) |  add pipe for checking open status in reopen request | @bohdantrc |  |
-
-6. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Jul-2020 11:40:23 CEST | [#1258](https://github.com/tradecloud/tradecloud-microservices/pull/1258) |  Fix scalastyle errors | @vovinacci |  |
-| 2 | Services (Scala) | 02-Jul-2020 11:52:12 CEST | [#1251](https://github.com/tradecloud/tradecloud-microservices/pull/1251) |  - Fix tests run | @denys-kondartiuk |  |
-| 3 | Web Portal | 17-Jun-2020 09:07:15 CEST | [#415](https://github.com/tradecloud/tradecloud-portal-angular/pull/415) |  Add env variable for show/hide reopen button | @bohdantrc |  |
 
 7. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
