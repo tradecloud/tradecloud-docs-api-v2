@@ -1,34 +1,34 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jul 15 09:31:25 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jul 15 11:31:02 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+1. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 21:59:55 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
+| 1 | Services (Scala) | 15-Jul-2020 11:29:14 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
 
 2. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 14:55:42 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Jul-2020 11:26:38 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
 
-3. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. [Planned release 17-Jul-2020]
+3. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 14:53:20 CEST | [#1269](https://github.com/tradecloud/tradecloud-microservices/pull/1269) |  Password reset expiration timeout | @olegtradecloud |  |
+| 1 | Web Portal | 15-Jul-2020 11:23:09 CEST | [#441](https://github.com/tradecloud/tradecloud-portal-angular/pull/441) |  disable autocomplete in integration settings | @bohdantrc |  |
 
-4. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
+4. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. [Planned release 17-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 14:24:39 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Jul-2020 11:21:28 CEST | [#1269](https://github.com/tradecloud/tradecloud-microservices/pull/1269) |  Password reset expiration timeout | @olegtradecloud |  |
 
-5. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+5. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 14:11:53 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Jul-2020 11:21:11 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
 
 6. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -65,26 +65,27 @@ description: Tradecloud services and portal open pull requests and changelog (We
 
 ## Changelog
 
-1. [TC-6130](https://tradecloud.atlassian.net/browse/TC-6130) Hide reject order (line) buttons for suppliers  
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Jul-2020 10:40:44 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
+| 2 | Services (Scala) | 14-Jul-2020 09:49:44 CEST | [#1268](https://github.com/tradecloud/tradecloud-microservices/pull/1268) |  Fix UAT status reporting | @vovinacci |  |
+| 3 | Services (Go) | 14-Jul-2020 09:48:35 CEST | [#319](https://github.com/tradecloud/tradecloud-microservices-go/pull/319) |  Fix UAT status reporting | @vovinacci |  |
+| 4 | Services (Scala) | 08-Jul-2020 11:40:23 CEST | [#1258](https://github.com/tradecloud/tradecloud-microservices/pull/1258) |  Fix scalastyle errors | @vovinacci |  |
+| 5 | Services (Scala) | 02-Jul-2020 11:52:12 CEST | [#1251](https://github.com/tradecloud/tradecloud-microservices/pull/1251) |  - Fix tests run | @denys-kondartiuk |  |
+| 6 | Web Portal | 17-Jun-2020 09:07:15 CEST | [#415](https://github.com/tradecloud/tradecloud-portal-angular/pull/415) |  Add env variable for show/hide reopen button | @bohdantrc |  |
+
+2. [TC-6130](https://tradecloud.atlassian.net/browse/TC-6130) Hide reject order (line) buttons for suppliers  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Jul-2020 15:13:54 CEST | [#440](https://github.com/tradecloud/tradecloud-portal-angular/pull/440) |  add feature toggle for reject button | @bohdantrc |  |
 
-2. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system 
+3. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Jul-2020 13:42:26 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
 | 2 | Services (Go) | 14-Jul-2020 13:40:38 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
 | 3 | Services (Scala) | 14-Jul-2020 13:40:03 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) |  Resend order | @dmytrozheliuk |  |
-
-3. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 09:49:44 CEST | [#1268](https://github.com/tradecloud/tradecloud-microservices/pull/1268) |  Fix UAT status reporting | @vovinacci |  |
-| 2 | Services (Go) | 14-Jul-2020 09:48:35 CEST | [#319](https://github.com/tradecloud/tradecloud-microservices-go/pull/319) |  Fix UAT status reporting | @vovinacci |  |
-| 3 | Services (Scala) | 08-Jul-2020 11:40:23 CEST | [#1258](https://github.com/tradecloud/tradecloud-microservices/pull/1258) |  Fix scalastyle errors | @vovinacci |  |
-| 4 | Services (Scala) | 02-Jul-2020 11:52:12 CEST | [#1251](https://github.com/tradecloud/tradecloud-microservices/pull/1251) |  - Fix tests run | @denys-kondartiuk |  |
-| 5 | Web Portal | 17-Jun-2020 09:07:15 CEST | [#415](https://github.com/tradecloud/tradecloud-portal-angular/pull/415) |  Add env variable for show/hide reopen button | @bohdantrc |  |
 
 4. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
