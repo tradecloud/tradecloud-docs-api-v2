@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jul 14 21:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jul 15 09:31:25 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Jul-2020 21:22:23 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
+| 1 | Services (Scala) | 14-Jul-2020 21:59:55 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
 
 2. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
