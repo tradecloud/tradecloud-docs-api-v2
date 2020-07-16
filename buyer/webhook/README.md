@@ -6,13 +6,15 @@ description: How to receive a purchase order response sent by the supplier
 
 Tradecloud will send a purchase order response to the buyer when 
 
-* order lines are accepted by the supplier,
-* order lines are rejected by the supplier,
-* a supplier change proposal is approved by the buyer ,
-* item details are changed by the supplier,
-* a buyer reopen request is approved by the supplier,
-* a supplier reopen request is approved by the buyer,
-* a document is attached by the supplier,
+* issued order lines are accepted by the supplier
+* issued order lines are rejected by the supplier
+* a supplier change proposal is approved by the buyer
+* item details are changed by the supplier
+* a buyer reopen request is approved by the supplier
+* a buyer reopen request is rejected by the supplier
+* a supplier reopen request is approved by the buyer
+* a document is attached by the supplier
+* a purchase order is resent by a buyer admin
 * a purchase order is synchronized from the legacy platform.
 
 ## Receive an order response from Tradecloud
@@ -46,21 +48,22 @@ In case of **POST** or **PUT** **webhook** you can use the **order event** insid
 In case of an **POST or PUT webhook** the body will contain:
 
 * `eventName:`The event name summarizes what has happened.
+* `orderEvent`: The actual order event, see below.
 
-{% hint style="info" %}
-The **event name** is one of:
+The event name is one of:
 
-* `OrderLinesAcceptedBySupplier`: Supplier has accepted order lines.
-* `OrderLinesRejectedBySupplier`: Supplier has rejected order lines.
-* `OrderChangesProposalApprovedByBuyer`: Buyer has approved proposed order lines.
-* `OrderLinesItemDetailsChangedBySupplier`: Supplier changed item details.
-* `OrderLinesReopenRequestApprovedBySupplier`: Supplier has approved changes requested by the buyer.
-* `OrderLinesReopenRequestApprovedByBuyer`: Buyer has approved changes requested by the supplier.
-* `OrderDocumentsAttachedBySupplier`: Supplier[ attached documents](download-document.md) to order or line.
-* `OrderSynced`: Order has been synced from the legacy platform.
-{% endhint %}
-
-* `orderEvent`: The actual order event:
+| Event Name | Trigger |
+| :--- | :--- |
+| `OrderLinesAcceptedBySupplier` | The supplier has accepted issued order lines. |
+| `OrderLinesRejectedBySupplier` | The supplier has rejected issued order lines. |
+| `OrderChangesProposalApprovedByBuyer` | The buyer has approved a change proposal by the supplier. |
+| `OrderLinesItemDetailsChangedBySupplier` | The supplier changed item details. |
+| `OrderLinesReopenRequestApprovedBySupplier` | The supplier has approved changes requested by the buyer after the order line were confirmed |
+| `OrderLinesReopenRequestRejectedBySupplier` | The supplier has rejected changes requested by the buyer after the order line were confirmed. |
+| `OrderLinesReopenRequestApprovedByBuyer` | The buyer has approved changes requested by the supplier after the order line were confirmed. |
+| `OrderDocumentsAttachedBySupplier` | The supplier[ attached documents](download-document.md) to order or line. |
+| `OrderResentByBuyer` | The buyer admin resent the order to their ERP system. |
+| `OrderSynced` | The order has been synced from the legacy platform to the Tradecloud1 platform. |
 
 ## Order or OrderEvent
 
