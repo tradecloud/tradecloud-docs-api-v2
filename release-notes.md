@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 16 17:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jul 16 19:31:00 CEST 2020)
 ---
 
 
@@ -8,8 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jul-2020 17:22:06 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
-| 2 | Services (Scala) | 16-Jul-2020 14:54:52 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
+| 1 | Services (Scala) | 16-Jul-2020 18:51:03 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
 
 2. [TC-6094](https://tradecloud.atlassian.net/browse/TC-6094) All Document line activities of an issued order show a link to the document which is attached to line position 1  [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -70,22 +69,28 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 
 ## Changelog
 
-1. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+1. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Jul-2020 17:46:29 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
+| 2 | Services (Scala) | 06-Jul-2020 12:31:28 CEST | [#1241](https://github.com/tradecloud/tradecloud-microservices/pull/1241) |  Use Enumeratum lib for enums | @roy-tc |  |
+
+2. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jul-2020 15:52:53 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
 
-2. [TC-6140](https://tradecloud.atlassian.net/browse/TC-6140) Webhook API specs is missing event names 
+3. [TC-6140](https://tradecloud.atlassian.net/browse/TC-6140) Webhook API specs is missing event names 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 16-Jul-2020 09:49:03 CEST | [#320](https://github.com/tradecloud/tradecloud-microservices-go/pull/320) |  Webhook API spec: Add missing events, separate buyer and supplier events | @vovinacci |  |
 
-3. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
+4. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Jul-2020 12:48:56 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
 
-4. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+5. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Jul-2020 10:40:44 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
@@ -95,48 +100,47 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 5 | Services (Scala) | 02-Jul-2020 11:52:12 CEST | [#1251](https://github.com/tradecloud/tradecloud-microservices/pull/1251) |  - Fix tests run | @denys-kondartiuk |  |
 | 6 | Web Portal | 17-Jun-2020 09:07:15 CEST | [#415](https://github.com/tradecloud/tradecloud-portal-angular/pull/415) |  Add env variable for show/hide reopen button | @bohdantrc |  |
 
-5. [TC-6130](https://tradecloud.atlassian.net/browse/TC-6130) Hide reject order (line) buttons for suppliers  
+6. [TC-6130](https://tradecloud.atlassian.net/browse/TC-6130) Hide reject order (line) buttons for suppliers  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Jul-2020 15:13:54 CEST | [#440](https://github.com/tradecloud/tradecloud-portal-angular/pull/440) |  add feature toggle for reject button | @bohdantrc |  |
 
-6. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system 
+7. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Jul-2020 13:42:26 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
 | 2 | Services (Go) | 14-Jul-2020 13:40:38 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
 | 3 | Services (Scala) | 14-Jul-2020 13:40:03 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) |  Resend order | @dmytrozheliuk |  |
 
-7. [N/A](#)  
+8. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Jul-2020 22:10:04 CEST | [#434](https://github.com/tradecloud/tradecloud-portal-angular/pull/434) | [TС-6101] changed condition for showing action and differences reopen request | @bohdantrc |  |
 | 2 | Web Portal | 24-Jun-2020 13:08:47 CEST | [#421](https://github.com/tradecloud/tradecloud-portal-angular/pull/421) | bugfix(2fa setup):[TC-6018]  fix spelling | @RobinNagpal |  |
-| 3 | Web Portal | 16-Jun-2020 19:19:37 CEST | [#406](https://github.com/tradecloud/tradecloud-portal-angular/pull/406) | Bump websocket-extensions from 0.1.3 to 0.1.4 | @dependabot[bot] |  |
 
-8. [TC-6103](https://tradecloud.atlassian.net/browse/TC-6103) contact filter shows only up to 10 users.  
+9. [TC-6103](https://tradecloud.atlassian.net/browse/TC-6103) contact filter shows only up to 10 users.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Jul-2020 15:06:58 CEST | [#439](https://github.com/tradecloud/tradecloud-portal-angular/pull/439) |  set limit 200 in contact user request | @bohdantrc |  |
 
-9. [TC-5238](https://tradecloud.atlassian.net/browse/TC-5238) As Damen I want a separate system integration API account 
+10. [TC-5238](https://tradecloud.atlassian.net/browse/TC-5238) As Damen I want a separate system integration API account 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Jul-2020 10:57:27 CEST | [#1264](https://github.com/tradecloud/tradecloud-microservices/pull/1264) |  Force auth and user services deployment on accp and prod, s… | @marcmatt |  |
 | 2 | Services (Scala) | 10-Jul-2020 10:31:05 CEST | [#1263](https://github.com/tradecloud/tradecloud-microservices/pull/1263) |  Force auth and user services deployment on accp and prod | @marcmatt |  |
 | 3 | Services (Scala) | 10-Jul-2020 10:14:48 CEST | [#1262](https://github.com/tradecloud/tradecloud-microservices/pull/1262) |  Make depressed scalastyle a bit happier | @marcmatt |  |
 
-10. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
+11. [TC-6116](https://tradecloud.atlassian.net/browse/TC-6116) BE: Add integration user role 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Jul-2020 09:47:48 CEST | [#1257](https://github.com/tradecloud/tradecloud-microservices/pull/1257) |  Integration user role | @olegtradecloud |  |
 
-11. [TC-6124](https://tradecloud.atlassian.net/browse/TC-6124) In progress lines because of an reopen request can be selected for Bulk actions (confirm/reject/propose)  
+12. [TC-6124](https://tradecloud.atlassian.net/browse/TC-6124) In progress lines because of an reopen request can be selected for Bulk actions (confirm/reject/propose)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Jul-2020 09:43:30 CEST | [#438](https://github.com/tradecloud/tradecloud-portal-angular/pull/438) |  add pipe for checking open status in reopen request | @bohdantrc |  |
 
-12. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
+13. [TC-6042](https://tradecloud.atlassian.net/browse/TC-6042) BE: process cancelled indicator in order service, persist, publish event, create activity, close order line tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Jul-2020 14:34:40 CEST | [#1255](https://github.com/tradecloud/tradecloud-microservices/pull/1255) |  Refactor to SendOrderByBuyer command | @marcmatt |  |
@@ -145,20 +149,15 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 4 | Services (Scala) | 03-Jul-2020 12:48:40 CEST | [#1244](https://github.com/tradecloud/tradecloud-microservices/pull/1244) |  Send cancel order as separate command | @roy-tc |  |
 | 5 | Services (Scala) | 22-Jun-2020 11:18:30 CEST | [#1238](https://github.com/tradecloud/tradecloud-microservices/pull/1238) |  Improvements to Added order lines cancelling functionality | @roy-tc |  |
 
-13. [TC-6050](https://tradecloud.atlassian.net/browse/TC-6050) Bulk confirm sales order dialog shown all selected order line positions.  
+14. [TC-6050](https://tradecloud.atlassian.net/browse/TC-6050) Bulk confirm sales order dialog shown all selected order line positions.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Jul-2020 14:04:14 CEST | [#433](https://github.com/tradecloud/tradecloud-portal-angular/pull/433) |  show amount positions in bulk confirm dialog | @bohdantrc |  |
 
-14. [TC-6001](https://tradecloud.atlassian.net/browse/TC-6001) Review cancel request business logic and discus solutions for edge cases 
+15. [TC-6001](https://tradecloud.atlassian.net/browse/TC-6001) Review cancel request business logic and discus solutions for edge cases 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Jul-2020 13:56:46 CEST | [#432](https://github.com/tradecloud/tradecloud-portal-angular/pull/432) |  navigation links | @bohdantrc |  |
-
-15. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jul-2020 12:31:28 CEST | [#1241](https://github.com/tradecloud/tradecloud-microservices/pull/1241) |  Use Enumeratum lib for enums | @roy-tc |  |
 
 16. [TC-6084](https://tradecloud.atlassian.net/browse/TC-6084) Create accptance, system and security tests for implemented stories 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
