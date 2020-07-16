@@ -1,58 +1,57 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 16 13:34:27 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jul 16 15:30:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+1. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jul-2020 13:30:27 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
+| 1 | Services (Scala) | 16-Jul-2020 15:24:19 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
+| 2 | Services (Scala) | 16-Jul-2020 14:54:52 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
 
-2. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
+2. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jul-2020 13:22:01 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
+| 1 | Services (Scala) | 16-Jul-2020 15:13:33 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
+| 2 | Web Portal | 15-Jul-2020 14:02:14 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
 
-3. [N/A](#)  
+3. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Jul-2020 15:04:14 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
+
+4. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Jul-2020 14:17:29 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
+
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jul-2020 12:34:26 CEST | [#444](https://github.com/tradecloud/tradecloud-portal-angular/pull/444) | Bump lodash from 4.17.11 to 4.17.19 | @dependabot[bot] |  |
 | 2 | Web Portal | 13-Jul-2020 11:29:57 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
 
-4. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
+6. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jul-2020 11:22:20 CEST | [#443](https://github.com/tradecloud/tradecloud-portal-angular/pull/443) |  do not show price proposal in activity if netPrice or grossPrice missed | @bohdantrc |  |
 
-5. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields [Planned release 24-Jul-2020]
+7. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jul-2020 11:21:28 CEST | [#441](https://github.com/tradecloud/tradecloud-portal-angular/pull/441) |  disable autocomplete in integration settings | @bohdantrc |  |
 
-6. [TC-6033](https://tradecloud.atlassian.net/browse/TC-6033) Action column not functional [Planned release 24-Jul-2020]
+8. [TC-6033](https://tradecloud.atlassian.net/browse/TC-6033) Action column not functional [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jul-2020 11:21:21 CEST | [#442](https://github.com/tradecloud/tradecloud-portal-angular/pull/442) |  delete action column from order and order line tables | @bohdantrc |  |
 
-7. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. [Planned release 17-Jul-2020]
+9. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. [Planned release 17-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jul-2020 11:20:14 CEST | [#1269](https://github.com/tradecloud/tradecloud-microservices/pull/1269) |  Password reset expiration timeout | @olegtradecloud |  |
-
-8. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jul-2020 19:59:09 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
-| 2 | Web Portal | 15-Jul-2020 14:02:14 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
-
-9. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Jul-2020 17:11:25 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
-| 2 | Services (Scala) | 13-Jul-2020 17:06:36 CEST | [#1266](https://github.com/tradecloud/tradecloud-microservices/pull/1266) |  DO NOT MERGE - Test enum refactoring | @roy-tc |  |
-| 3 | Services (Scala) | 09-Jul-2020 20:55:59 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
 
 10. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -294,9 +293,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 16-Jun-2020 16:00:45 CEST | [#312](https://github.com/tradecloud/tradecloud-microservices-go/pull/312) |  Rename OrderEvent.id to orderId | @roy-tc |  |
 | 2 | Services (Scala) | 16-Jun-2020 16:00:35 CEST | [#1222](https://github.com/tradecloud/tradecloud-microservices/pull/1222) |  Rename OrderEvent.id to orderId | @roy-tc |  |
-
-42. [TC-6022](https://tradecloud.atlassian.net/browse/TC-6022) VMI bug fix: Tasks and Order (line) detail pages are not updated automatically after an action.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Jun-2020 14:13:05 CEST | [#411](https://github.com/tradecloud/tradecloud-portal-angular/pull/411) |   update and fix the booting sequence after login | @RobinNagpal |  |
 
