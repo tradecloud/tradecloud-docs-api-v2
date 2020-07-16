@@ -48,7 +48,8 @@ In case of **POST** or **PUT** **webhook** you can use the **order event** insid
 In case of an **POST or PUT webhook** the body will contain:
 
 * `eventName:`The event name summarizes what has happened.
-* `orderEvent`: The actual order event, see below.
+* `orderEvent`: The actual order event, see below, or
+* `orderDocumentsEvent`: \(to be documented\)
 
 The event name is one of:
 
