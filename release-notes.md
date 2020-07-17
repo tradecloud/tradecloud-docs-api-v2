@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 17 15:31:07 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 17 17:30:59 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Jul-2020 15:14:12 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
+| 1 | Services (Scala) | 17-Jul-2020 15:56:48 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
 
 2. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -276,14 +276,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Jun-2020 18:16:11 CEST | [#410](https://github.com/tradecloud/tradecloud-portal-angular/pull/410) |  Add approve reject for buyer in workflow task | @bohdantrc |  |
-
-39. [TC-5874](https://tradecloud.atlassian.net/browse/TC-5874) BE: refactor line proposal to LineRequests 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-Jun-2020 16:38:42 CEST | [#315](https://github.com/tradecloud/tradecloud-microservices-go/pull/315) |  Fix webhook API specs semantic error | @marcmatt |  |
-
-40. [TC-6024](https://tradecloud.atlassian.net/browse/TC-6024) When request is “reopenRequest” the confirm/propose changes/reject buttons should not be visible for the supplier 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 17-Jun-2020 15:49:44 CEST | [#413](https://github.com/tradecloud/tradecloud-portal-angular/pull/413) |  Disable the ability to see buttons for a proposal entity like &#34;Confirm&#34;, &#34;Propo | @bohdantrc |  |
 
