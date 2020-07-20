@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 17 21:30:53 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 20 09:31:25 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile [Planned release 24-Jul-2020]
+1. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Jul-2020 15:56:48 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
+| 1 | Services (Scala) | 20-Jul-2020 08:07:31 CEST | [#1273](https://github.com/tradecloud/tradecloud-microservices/pull/1273) |  Fix order status after reissue new lines | @olegtradecloud |  |
 
-2. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
+2. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Jul-2020 14:48:31 CEST | [#1273](https://github.com/tradecloud/tradecloud-microservices/pull/1273) |  Fix order status after reissue new lines | @olegtradecloud |  |
+| 1 | Services (Scala) | 20-Jul-2020 08:03:07 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
 
 3. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -245,30 +245,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jun-2020 15:44:38 CEST | [#417](https://github.com/tradecloud/tradecloud-portal-angular/pull/417) |  add activity for supplier reopen request activities | @bohdantrc |  |
-
-33. [TC-5805](https://tradecloud.atlassian.net/browse/TC-5805) Unrestrict 2FA by superuser and admin 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 19-Jun-2020 14:51:23 CEST | [#402](https://github.com/tradecloud/tradecloud-portal-angular/pull/402) |  Unrestrict 2fa | @RobinNagpal |  |
-| 2 | Services (Scala) | 19-Jun-2020 14:50:44 CEST | [#1219](https://github.com/tradecloud/tradecloud-microservices/pull/1219) |  Unrestrict 2FA | @RobinNagpal |  |
-
-34. [TC-6002](https://tradecloud.atlassian.net/browse/TC-6002) FE: As a supplier I want approve or reject a reopen request by buyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 19-Jun-2020 13:31:15 CEST | [#416](https://github.com/tradecloud/tradecloud-portal-angular/pull/416) |  add approve/reject from supplier | @bohdantrc |  |
-
-35. [TC-4467](https://tradecloud.atlassian.net/browse/TC-4467) As a DevOps I want to be able to re-build a search index 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Jun-2020 11:06:16 CEST | [#1229](https://github.com/tradecloud/tradecloud-microservices/pull/1229) |  Remove CompanyUserSynced | @roy-tc |  |
-
-36. [TC-6035](https://tradecloud.atlassian.net/browse/TC-6035) Check for authenticated status during websocket connection 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Jun-2020 09:47:16 CEST | [#1236](https://github.com/tradecloud/tradecloud-microservices/pull/1236) |  update shared version(check authentication status) | @RobinNagpal |  |
-
-37. [TC-5956](https://tradecloud.atlassian.net/browse/TC-5956) As Damen security officer I want the TOTP verification to use 2 time windows. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Jun-2020 22:32:21 CEST | [#1237](https://github.com/tradecloud/tradecloud-microservices/pull/1237) |   update 2FA window size to 2 | @RobinNagpal |  |
 
