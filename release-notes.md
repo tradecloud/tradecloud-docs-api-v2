@@ -1,41 +1,41 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 20 15:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 20 17:30:54 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile [Planned release 24-Jul-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 20-Jul-2020 17:05:27 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
+
+2. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 20-Jul-2020 16:57:51 CEST | [#1273](https://github.com/tradecloud/tradecloud-microservices/pull/1273) |  Fix order status after reissue new lines | @olegtradecloud |  |
+
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Jul-2020 15:10:52 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
 | 2 | Web Portal | 16-Jul-2020 12:34:26 CEST | [#444](https://github.com/tradecloud/tradecloud-portal-angular/pull/444) | Bump lodash from 4.17.11 to 4.17.19 | @dependabot[bot] |  |
 
-2. [TC-6077](https://tradecloud.atlassian.net/browse/TC-6077) Integration settings cannot be disabled.  [Planned release 31-Jul-2020]
+4. [TC-6077](https://tradecloud.atlassian.net/browse/TC-6077) Integration settings cannot be disabled.  [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Jul-2020 15:09:46 CEST | [#445](https://github.com/tradecloud/tradecloud-portal-angular/pull/445) |  fix possibility disable integration settings | @bohdantrc |  |
 
-3. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
+5. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 20-Jul-2020 13:49:04 CEST | [#321](https://github.com/tradecloud/tradecloud-microservices-go/pull/321) |  Make buyer delivery position optional | @marcmatt |  |
 | 2 | Services (Scala) | 20-Jul-2020 13:21:14 CEST | [#1274](https://github.com/tradecloud/tradecloud-microservices/pull/1274) |  Make buyer delivery position optional | @marcmatt |  |
 
-4. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields [Planned release 24-Jul-2020]
+6. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Jul-2020 12:27:32 CEST | [#441](https://github.com/tradecloud/tradecloud-portal-angular/pull/441) |  disable autocomplete in integration settings | @bohdantrc |  |
-
-5. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Jul-2020 12:03:28 CEST | [#1273](https://github.com/tradecloud/tradecloud-microservices/pull/1273) |  Fix order status after reissue new lines | @olegtradecloud |  |
-
-6. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile [Planned release 24-Jul-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Jul-2020 11:35:57 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
 
 7. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
