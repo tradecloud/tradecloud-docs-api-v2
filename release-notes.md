@@ -1,79 +1,84 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 20 21:30:51 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jul 21 09:31:31 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile [Planned release 24-Jul-2020]
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 21-Jul-2020 09:23:48 CEST | [#446](https://github.com/tradecloud/tradecloud-portal-angular/pull/446) |  add encoding order id and line id in attach requests | @bohdantrc |  |
+
+2. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Jul-2020 21:06:52 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
 
-2. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
+3. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Jul-2020 16:57:51 CEST | [#1273](https://github.com/tradecloud/tradecloud-microservices/pull/1273) |  Fix order status after reissue new lines | @olegtradecloud |  |
 
-3. [N/A](#)  
+4. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Jul-2020 15:10:52 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
 | 2 | Web Portal | 16-Jul-2020 12:34:26 CEST | [#444](https://github.com/tradecloud/tradecloud-portal-angular/pull/444) | Bump lodash from 4.17.11 to 4.17.19 | @dependabot[bot] |  |
 
-4. [TC-6077](https://tradecloud.atlassian.net/browse/TC-6077) Integration settings cannot be disabled.  [Planned release 31-Jul-2020]
+5. [TC-6077](https://tradecloud.atlassian.net/browse/TC-6077) Integration settings cannot be disabled.  [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Jul-2020 15:09:46 CEST | [#445](https://github.com/tradecloud/tradecloud-portal-angular/pull/445) |  fix possibility disable integration settings | @bohdantrc |  |
 
-5. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
+6. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 20-Jul-2020 13:49:04 CEST | [#321](https://github.com/tradecloud/tradecloud-microservices-go/pull/321) |  Make buyer delivery position optional | @marcmatt |  |
 | 2 | Services (Scala) | 20-Jul-2020 13:21:14 CEST | [#1274](https://github.com/tradecloud/tradecloud-microservices/pull/1274) |  Make buyer delivery position optional | @marcmatt |  |
 
-6. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields [Planned release 24-Jul-2020]
+7. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Jul-2020 12:27:32 CEST | [#441](https://github.com/tradecloud/tradecloud-portal-angular/pull/441) |  disable autocomplete in integration settings | @bohdantrc |  |
 
-7. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
+8. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jul-2020 13:15:40 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
 
-8. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
+9. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jul-2020 15:13:33 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
 | 2 | Web Portal | 15-Jul-2020 14:02:14 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
 
-9. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
+10. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jul-2020 11:22:20 CEST | [#443](https://github.com/tradecloud/tradecloud-portal-angular/pull/443) |  do not show price proposal in activity if netPrice or grossPrice missed | @bohdantrc |  |
 
-10. [TC-6033](https://tradecloud.atlassian.net/browse/TC-6033) Action column not functional [Planned release 24-Jul-2020]
+11. [TC-6033](https://tradecloud.atlassian.net/browse/TC-6033) Action column not functional [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jul-2020 11:21:21 CEST | [#442](https://github.com/tradecloud/tradecloud-portal-angular/pull/442) |  delete action column from order and order line tables | @bohdantrc |  |
 
-11. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. [Planned release 17-Jul-2020]
+12. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. [Planned release 17-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jul-2020 11:20:14 CEST | [#1269](https://github.com/tradecloud/tradecloud-microservices/pull/1269) |  Password reset expiration timeout | @olegtradecloud |  |
 
-12. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
+13. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jul-2020 13:03:19 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Optional events | @olegtradecloud |  |
 
-13. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
+14. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found [Planned release 30-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Jul-2020 15:06:59 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
 
-14. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
+15. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Jul-2020 11:29:34 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add logic send position and edit position in dialog | @bohdantrc |  |
