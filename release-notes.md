@@ -1,20 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jul 22 13:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jul 22 15:31:03 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
+1. [TC-6126](https://tradecloud.atlassian.net/browse/TC-6126) FE: Show integration user badge, like an admin user 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 22-Jul-2020 15:26:25 CEST | [#447](https://github.com/tradecloud/tradecloud-portal-angular/pull/447) |  enable role icon in activity and tables. Add integration icon | @bohdantrc |  |
+
+2. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Jul-2020 12:41:50 CEST | [#443](https://github.com/tradecloud/tradecloud-portal-angular/pull/443) |  do not show price proposal in activity if netPrice or grossPrice missed | @bohdantrc |  |
-
-2. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 22-Jul-2020 11:50:03 CEST | [#322](https://github.com/tradecloud/tradecloud-microservices-go/pull/322) |  - Make usual run same stable as Nightly | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 22-Jul-2020 11:21:48 CEST | [#1277](https://github.com/tradecloud/tradecloud-microservices/pull/1277) |  - Make usual test run same stable as Nightly | @denys-kondartiuk |  |
 
 3. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -50,93 +49,95 @@ description: Tradecloud services and portal open pull requests and changelog (We
 
 ## Changelog
 
-1. [TC-6166](https://tradecloud.atlassian.net/browse/TC-6166) Can’t upload any file to order 
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 22-Jul-2020 13:39:45 CEST | [#1277](https://github.com/tradecloud/tradecloud-microservices/pull/1277) |  - Make usual test run same stable as Nightly | @denys-kondartiuk |  |
+| 2 | Services (Go) | 22-Jul-2020 13:39:41 CEST | [#322](https://github.com/tradecloud/tradecloud-microservices-go/pull/322) |  - Make usual run same stable as Nightly | @denys-kondartiuk |  |
+| 3 | Services (Scala) | 15-Jul-2020 10:40:44 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
+| 4 | Services (Scala) | 14-Jul-2020 09:49:44 CEST | [#1268](https://github.com/tradecloud/tradecloud-microservices/pull/1268) |  Fix UAT status reporting | @vovinacci |  |
+| 5 | Services (Go) | 14-Jul-2020 09:48:35 CEST | [#319](https://github.com/tradecloud/tradecloud-microservices-go/pull/319) |  Fix UAT status reporting | @vovinacci |  |
+| 6 | Services (Scala) | 08-Jul-2020 11:40:23 CEST | [#1258](https://github.com/tradecloud/tradecloud-microservices/pull/1258) |  Fix scalastyle errors | @vovinacci |  |
+| 7 | Services (Scala) | 02-Jul-2020 11:52:12 CEST | [#1251](https://github.com/tradecloud/tradecloud-microservices/pull/1251) |  - Fix tests run | @denys-kondartiuk |  |
+
+2. [TC-6166](https://tradecloud.atlassian.net/browse/TC-6166) Can’t upload any file to order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Jul-2020 11:52:47 CEST | [#446](https://github.com/tradecloud/tradecloud-portal-angular/pull/446) |  add encoding order id and line id in attach requests | @bohdantrc |  |
 
-2. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found 
+3. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 22:22:25 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
 | 2 | Services (Scala) | 28-Jun-2020 21:26:33 CEST | [#1245](https://github.com/tradecloud/tradecloud-microservices/pull/1245) |  Commit when order/line is not found | @marcmatt |  |
 
-3. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check 
+4. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 17:41:49 CEST | [#1265](https://github.com/tradecloud/tradecloud-microservices/pull/1265) |  - fix connection accept | @olegtradecloud |  |
 
-4. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile 
+5. [TC-5325](https://tradecloud.atlassian.net/browse/TC-5325) Admin user should not be able to change user&#39;s profile 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 15:40:24 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
 
-5. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
+6. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jul-2020 14:28:03 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
 | 2 | Services (Scala) | 21-Jul-2020 14:27:15 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
 
-6. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
+7. [TC-6093](https://tradecloud.atlassian.net/browse/TC-6093) order header process status does ignore lines which are later added to the order.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 12:36:32 CEST | [#1273](https://github.com/tradecloud/tradecloud-microservices/pull/1273) |  Fix order status after reissue new lines | @olegtradecloud |  |
 
-7. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. 
+8. [TC-5936](https://tradecloud.atlassian.net/browse/TC-5936) Lower password link expiration timeout to 15 mins. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 12:07:14 CEST | [#1269](https://github.com/tradecloud/tradecloud-microservices/pull/1269) |  Password reset expiration timeout | @olegtradecloud |  |
 
-8. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields 
+9. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jul-2020 10:25:05 CEST | [#441](https://github.com/tradecloud/tradecloud-portal-angular/pull/441) |  disable autocomplete in integration settings | @bohdantrc |  |
 
-9. [TC-6033](https://tradecloud.atlassian.net/browse/TC-6033) Action column not functional 
+10. [TC-6033](https://tradecloud.atlassian.net/browse/TC-6033) Action column not functional 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jul-2020 10:04:08 CEST | [#442](https://github.com/tradecloud/tradecloud-portal-angular/pull/442) |  delete action column from order and order line tables | @bohdantrc |  |
 
-10. [TC-6077](https://tradecloud.atlassian.net/browse/TC-6077) Integration settings cannot be disabled.  
+11. [TC-6077](https://tradecloud.atlassian.net/browse/TC-6077) Integration settings cannot be disabled.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jul-2020 10:01:09 CEST | [#445](https://github.com/tradecloud/tradecloud-portal-angular/pull/445) |  fix possibility disable integration settings | @bohdantrc |  |
 
-11. [TC-6094](https://tradecloud.atlassian.net/browse/TC-6094) All Document line activities of an issued order show a link to the document which is attached to line position 1  
+12. [TC-6094](https://tradecloud.atlassian.net/browse/TC-6094) All Document line activities of an issued order show a link to the document which is attached to line position 1  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jul-2020 10:47:57 CEST | [#1271](https://github.com/tradecloud/tradecloud-microservices/pull/1271) | : Fixing bug related to documents activity | @dmytrozheliuk |  |
 
-12. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
+13. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jul-2020 08:58:43 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
 | 2 | Services (Scala) | 16-Jul-2020 17:46:29 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
 | 3 | Services (Scala) | 06-Jul-2020 12:31:28 CEST | [#1241](https://github.com/tradecloud/tradecloud-microservices/pull/1241) |  Use Enumeratum lib for enums | @roy-tc |  |
 
-13. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
+14. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jul-2020 15:52:53 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
 
-14. [TC-6140](https://tradecloud.atlassian.net/browse/TC-6140) Webhook API specs is missing event names 
+15. [TC-6140](https://tradecloud.atlassian.net/browse/TC-6140) Webhook API specs is missing event names 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 16-Jul-2020 09:49:03 CEST | [#320](https://github.com/tradecloud/tradecloud-microservices-go/pull/320) |  Webhook API spec: Add missing events, separate buyer and supplier events | @vovinacci |  |
 
-15. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
+16. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Jul-2020 12:48:56 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
-
-16. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jul-2020 10:40:44 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
-| 2 | Services (Scala) | 14-Jul-2020 09:49:44 CEST | [#1268](https://github.com/tradecloud/tradecloud-microservices/pull/1268) |  Fix UAT status reporting | @vovinacci |  |
-| 3 | Services (Go) | 14-Jul-2020 09:48:35 CEST | [#319](https://github.com/tradecloud/tradecloud-microservices-go/pull/319) |  Fix UAT status reporting | @vovinacci |  |
-| 4 | Services (Scala) | 08-Jul-2020 11:40:23 CEST | [#1258](https://github.com/tradecloud/tradecloud-microservices/pull/1258) |  Fix scalastyle errors | @vovinacci |  |
-| 5 | Services (Scala) | 02-Jul-2020 11:52:12 CEST | [#1251](https://github.com/tradecloud/tradecloud-microservices/pull/1251) |  - Fix tests run | @denys-kondartiuk |  |
 
 17. [TC-6130](https://tradecloud.atlassian.net/browse/TC-6130) Hide reject order (line) buttons for suppliers  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
