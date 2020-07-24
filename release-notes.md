@@ -1,41 +1,41 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 24 15:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 24 17:30:54 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
+1. [TC-5921](https://tradecloud.atlassian.net/browse/TC-5921) Approve/reject proposal by buyer buttons are still visible when supplier has rejected/confirmed the line after the proposal. [Planned release 24-Jul-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Jul-2020 17:07:40 CEST | [#1280](https://github.com/tradecloud/tradecloud-microservices/pull/1280) |   Close open proposal on line accept/reject | @olegtradecloud |  |
+
+2. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 14-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Jul-2020 16:39:29 CEST | [#1278](https://github.com/tradecloud/tradecloud-microservices/pull/1278) |  Add integration settings enabled event names | @marcmatt |  |
+| 2 | Services (Go) | 24-Jul-2020 16:01:13 CEST | [#323](https://github.com/tradecloud/tradecloud-microservices-go/pull/323) |  Add integration settings enabled event names | @marcmatt |  |
+
+3. [TC-6127](https://tradecloud.atlassian.net/browse/TC-6127) Net/gross price changes are shown in the activity stream, while there are no changes.  [Planned release 23-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Jul-2020 14:46:15 CEST | [#450](https://github.com/tradecloud/tradecloud-portal-angular/pull/450) |  do not show price reopen in activity if netPrice or grossPrice | @bohdantrc |  |
 
-2. [TC-5921](https://tradecloud.atlassian.net/browse/TC-5921) Approve/reject proposal by buyer buttons are still visible when supplier has rejected/confirmed the line after the proposal. [Planned release 24-Jul-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jul-2020 14:05:59 CEST | [#1280](https://github.com/tradecloud/tradecloud-microservices/pull/1280) |   Close open proposal on line accept/reject | @olegtradecloud |  |
-
-3. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
+4. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Jul-2020 13:31:24 CEST | [#1275](https://github.com/tradecloud/tradecloud-microservices/pull/1275) |  PoC - Optional Fields | @roy-tc |  |
 | 2 | Services (Scala) | 23-Jul-2020 11:58:26 CEST | [#1279](https://github.com/tradecloud/tradecloud-microservices/pull/1279) |  Use auto-generated BuyerDeliveryMsg instead of or own case class | @roy-tc |  |
 
-4. [TC-6126](https://tradecloud.atlassian.net/browse/TC-6126) FE: Show integration user badge, like an admin user 
+5. [TC-6126](https://tradecloud.atlassian.net/browse/TC-6126) FE: Show integration user badge, like an admin user 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jul-2020 15:21:42 CEST | [#447](https://github.com/tradecloud/tradecloud-portal-angular/pull/447) |  enable role icon in activity and tables. Add integration icon | @bohdantrc |  |
 
-5. [N/A](#)  
+6. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jul-2020 13:37:05 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
-
-6. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events send to my ERP system [Planned release 14-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Jul-2020 08:44:01 CEST | [#1278](https://github.com/tradecloud/tradecloud-microservices/pull/1278) |  Add integration settings enabled event names | @marcmatt |  |
-| 2 | Services (Go) | 22-Jul-2020 22:26:28 CEST | [#323](https://github.com/tradecloud/tradecloud-microservices-go/pull/323) |  Add integration settings enabled event names | @marcmatt |  |
 
 7. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
