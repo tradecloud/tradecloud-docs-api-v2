@@ -1,35 +1,35 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 24 11:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 24 13:30:56 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6159](https://tradecloud.atlassian.net/browse/TC-6159) Remove reject button from Re-open order lines 
+1. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 24-Jul-2020 11:23:07 CEST | [#449](https://github.com/tradecloud/tradecloud-portal-angular/pull/449) |  create feature toggle directive for easy add toggle flags | @bohdantrc |  |
+| 1 | Services (Scala) | 24-Jul-2020 13:29:38 CEST | [#1275](https://github.com/tradecloud/tradecloud-microservices/pull/1275) |  PoC - Optional Fields | @roy-tc |  |
+| 2 | Services (Scala) | 23-Jul-2020 11:58:26 CEST | [#1279](https://github.com/tradecloud/tradecloud-microservices/pull/1279) |  Use auto-generated BuyerDeliveryMsg instead of or own case class | @roy-tc |  |
 
-2. [TC-5921](https://tradecloud.atlassian.net/browse/TC-5921) Approve/reject proposal by buyer buttons are still visible when supplier has rejected/confirmed the line after the proposal. [Planned release 24-Jul-2020]
+2. [TC-6159](https://tradecloud.atlassian.net/browse/TC-6159) Remove reject button from Re-open order lines 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 24-Jul-2020 11:33:31 CEST | [#449](https://github.com/tradecloud/tradecloud-portal-angular/pull/449) |  create feature toggle directive for easy add toggle flags | @bohdantrc |  |
+
+3. [TC-5921](https://tradecloud.atlassian.net/browse/TC-5921) Approve/reject proposal by buyer buttons are still visible when supplier has rejected/confirmed the line after the proposal. [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jul-2020 17:25:26 CEST | [#1280](https://github.com/tradecloud/tradecloud-microservices/pull/1280) |   Close open proposal on line accept/reject | @olegtradecloud |  |
 
-3. [TC-6126](https://tradecloud.atlassian.net/browse/TC-6126) FE: Show integration user badge, like an admin user 
+4. [TC-6126](https://tradecloud.atlassian.net/browse/TC-6126) FE: Show integration user badge, like an admin user 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jul-2020 15:21:42 CEST | [#447](https://github.com/tradecloud/tradecloud-portal-angular/pull/447) |  enable role icon in activity and tables. Add integration icon | @bohdantrc |  |
 
-4. [N/A](#)  
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jul-2020 13:37:05 CEST | [#437](https://github.com/tradecloud/tradecloud-portal-angular/pull/437) | A9 update | @bohdantrc |  |
-
-5. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Jul-2020 11:58:26 CEST | [#1279](https://github.com/tradecloud/tradecloud-microservices/pull/1279) |  Use auto-generated BuyerDeliveryMsg instead of or own case class | @roy-tc |  |
-| 2 | Services (Scala) | 21-Jul-2020 17:04:56 CEST | [#1275](https://github.com/tradecloud/tradecloud-microservices/pull/1275) |  PoC - Optional Fields | @roy-tc |  |
 
 6. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events send to my ERP system [Planned release 14-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -176,7 +176,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Jul-2020 22:10:04 CEST | [#434](https://github.com/tradecloud/tradecloud-portal-angular/pull/434) | [TС-6101] changed condition for showing action and differences reopen request | @bohdantrc |  |
-| 2 | Web Portal | 24-Jun-2020 13:08:47 CEST | [#421](https://github.com/tradecloud/tradecloud-portal-angular/pull/421) | bugfix(2fa setup):[TC-6018]  fix spelling | @RobinNagpal |  |
 
 22. [TC-6103](https://tradecloud.atlassian.net/browse/TC-6103) contact filter shows only up to 10 users.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -279,9 +278,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Jun-2020 22:15:28 CEST | [#422](https://github.com/tradecloud/tradecloud-portal-angular/pull/422) |  show `reopen request reason` if it was created by buyer | @bohdantrc |  |
-
-41. [TC-6051](https://tradecloud.atlassian.net/browse/TC-6051) BE: Add confirmedLine in activity model 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jun-2020 13:00:25 CEST | [#1239](https://github.com/tradecloud/tradecloud-microservices/pull/1239) | : version bump | @dmytrozheliuk |  |
 
