@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 27 17:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 27 19:30:52 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6047](https://tradecloud.atlassian.net/browse/TC-6047) As DevOps I want to update portal dependencies (node/typescript) 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 27-Jul-2020 16:51:06 CEST | [#451](https://github.com/tradecloud/tradecloud-portal-angular/pull/451) |  update portal angular and dependencies  | @bohdantrc |  |
+| 1 | Web Portal | 27-Jul-2020 18:12:20 CEST | [#451](https://github.com/tradecloud/tradecloud-portal-angular/pull/451) |  update portal angular and dependencies  | @bohdantrc |  |
 
 2. [TC-6069](https://tradecloud.atlassian.net/browse/TC-6069) Tasks are never updated, they are closed and a new task is created.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
