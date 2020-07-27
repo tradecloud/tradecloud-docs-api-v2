@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jul 27 19:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jul 27 21:30:52 CEST 2020)
 ---
 
 
@@ -10,60 +10,55 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Jul-2020 18:12:20 CEST | [#451](https://github.com/tradecloud/tradecloud-portal-angular/pull/451) |  update portal angular and dependencies  | @bohdantrc |  |
 
-2. [TC-6069](https://tradecloud.atlassian.net/browse/TC-6069) Tasks are never updated, they are closed and a new task is created.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Jul-2020 16:43:50 CEST | [#1282](https://github.com/tradecloud/tradecloud-microservices/pull/1282) | : Updating existing task with the same workflow task type | @dmytrozheliuk |  |
-
-3. [TC-5921](https://tradecloud.atlassian.net/browse/TC-5921) Approve/reject proposal by buyer buttons are still visible when supplier has rejected/confirmed the line after the proposal. [Planned release 24-Jul-2020]
+2. [TC-5921](https://tradecloud.atlassian.net/browse/TC-5921) Approve/reject proposal by buyer buttons are still visible when supplier has rejected/confirmed the line after the proposal. [Planned release 24-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Jul-2020 12:32:27 CEST | [#1280](https://github.com/tradecloud/tradecloud-microservices/pull/1280) |   Close open proposal on line accept/reject | @olegtradecloud |  |
 
-4. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
+3. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Jul-2020 12:26:49 CEST | [#1275](https://github.com/tradecloud/tradecloud-microservices/pull/1275) |  PoC - Optional Fields | @roy-tc |  |
 | 2 | Services (Scala) | 27-Jul-2020 11:54:31 CEST | [#1279](https://github.com/tradecloud/tradecloud-microservices/pull/1279) |  PoC Use auto-generated BuyerDeliveryMsg instead of or own case class | @roy-tc |  |
 
-5. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
+4. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Jul-2020 11:14:03 CEST | [#1281](https://github.com/tradecloud/tradecloud-microservices/pull/1281) |  PoC for JIT Data Migration | @roy-tc |  |
 
-6. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+5. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 26-Jul-2020 16:10:05 CEST | [#324](https://github.com/tradecloud/tradecloud-microservices-go/pull/324) |  Make Mandrill base URL configurable | @marcmatt |  |
 
-7. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 14-Aug-2020]
+6. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 14-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Jul-2020 16:39:29 CEST | [#1278](https://github.com/tradecloud/tradecloud-microservices/pull/1278) |  Add integration settings enabled event names | @marcmatt |  |
 | 2 | Services (Go) | 24-Jul-2020 16:01:13 CEST | [#323](https://github.com/tradecloud/tradecloud-microservices-go/pull/323) |  Add integration settings enabled event names | @marcmatt |  |
 
-8. [TC-6126](https://tradecloud.atlassian.net/browse/TC-6126) FE: Show integration user badge, like an admin user 
+7. [TC-6126](https://tradecloud.atlassian.net/browse/TC-6126) FE: Show integration user badge, like an admin user 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jul-2020 15:21:42 CEST | [#447](https://github.com/tradecloud/tradecloud-portal-angular/pull/447) |  enable role icon in activity and tables. Add integration icon | @bohdantrc |  |
 
-9. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
+8. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 21-Jul-2020 21:42:28 CEST | [#321](https://github.com/tradecloud/tradecloud-microservices-go/pull/321) |  Make buyer delivery position optional | @marcmatt |  |
 | 2 | Services (Scala) | 21-Jul-2020 13:17:21 CEST | [#1274](https://github.com/tradecloud/tradecloud-microservices/pull/1274) |  Make buyer delivery position optional | @marcmatt |  |
 
-10. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
+9. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jul-2020 10:41:08 CEST | [#400](https://github.com/tradecloud/tradecloud-portal-angular/pull/400) |  Change aside part in dashboard | @bohdantrc |  |
 
-11. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
+10. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jul-2020 13:03:19 CEST | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Optional events | @olegtradecloud |  |
 
-12. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
+11. [TC-4927](https://tradecloud.atlassian.net/browse/TC-4927) Portal delivery schedule position is missing in proposal dialog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Jul-2020 11:29:34 CEST | [#430](https://github.com/tradecloud/tradecloud-portal-angular/pull/430) |  Add logic send position and edit position in dialog | @bohdantrc |  |
