@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jul 28 19:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jul 28 21:30:54 CEST 2020)
 ---
 
 
@@ -118,7 +118,6 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 22:22:25 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
-| 2 | Services (Scala) | 28-Jun-2020 21:26:33 CEST | [#1245](https://github.com/tradecloud/tradecloud-microservices/pull/1245) |  Commit when order/line is not found | @marcmatt |  |
 
 11. [TC-5930](https://tradecloud.atlassian.net/browse/TC-5930) Broken accept connection permissions check 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
