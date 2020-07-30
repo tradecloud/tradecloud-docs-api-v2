@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 30 13:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jul 30 15:31:05 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6142](https://tradecloud.atlassian.net/browse/TC-6142) As SSO Enabled company, after I login with specific email domain, I should see AD login page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 30-Jul-2020 13:20:07 CEST | [#454](https://github.com/tradecloud/tradecloud-portal-angular/pull/454) |  redirect to Azure AD for sso email domain | @RobinNagpal |  |
+| 1 | Web Portal | 30-Jul-2020 13:52:26 CEST | [#454](https://github.com/tradecloud/tradecloud-portal-angular/pull/454) |  redirect to Azure AD for sso email domain | @RobinNagpal |  |
 
 2. [TC-6199](https://tradecloud.atlassian.net/browse/TC-6199) Raise webhook order client http request/idle time out to 60 secs 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -291,10 +291,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Jul-2020 17:44:11 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
-
-39. [TC-4558](https://tradecloud.atlassian.net/browse/TC-4558) As DevOps I want to move all deployment secrets to Ansible Vault 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 30-Jun-2020 14:51:20 CEST | [#316](https://github.com/tradecloud/tradecloud-microservices-go/pull/316) |  Use Mandrill API key as secret | @vovinacci |  |
-| 2 | Services (Scala) | 30-Jun-2020 14:49:41 CEST | [#1248](https://github.com/tradecloud/tradecloud-microservices/pull/1248) |  Remove unencrypted Mandrill API key mentions | @vovinacci |  |
 
