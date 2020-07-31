@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 31 17:30:58 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 31 19:30:57 CEST 2020)
 ---
 
 
@@ -291,9 +291,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Jul-2020 11:40:37 CEST | [#431](https://github.com/tradecloud/tradecloud-portal-angular/pull/431) |  Add cancelled in order line and order progress | @bohdantrc |  |
-
-38. [TC-6083](https://tradecloud.atlassian.net/browse/TC-6083) Split up CompanyOrderIssuedByBuyer event into multiple commands 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Jul-2020 17:44:11 CEST | [#1247](https://github.com/tradecloud/tradecloud-microservices/pull/1247) |  - split commands | @olegtradecloud |  |
 
