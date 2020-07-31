@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jul 30 21:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 31 09:31:24 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
+1. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 31-Jul-2020 09:23:55 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
+
+2. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Jul-2020 18:26:00 CEST | [#1287](https://github.com/tradecloud/tradecloud-microservices/pull/1287) |  Logistics status | @olegtradecloud |  |
 
-2. [TC-6047](https://tradecloud.atlassian.net/browse/TC-6047) As DevOps I want to update portal dependencies (node/typescript) 
+3. [TC-6047](https://tradecloud.atlassian.net/browse/TC-6047) As DevOps I want to update portal dependencies (node/typescript) 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Jul-2020 17:17:19 CEST | [#451](https://github.com/tradecloud/tradecloud-portal-angular/pull/451) |  update portal angular and dependencies  | @bohdantrc |  |
-
-3. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Jul-2020 16:41:58 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
 
 4. [TC-6142](https://tradecloud.atlassian.net/browse/TC-6142) As SSO Enabled company, after I login with specific email domain, I should see AD login page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
