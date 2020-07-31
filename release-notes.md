@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jul 31 15:30:56 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jul 31 17:30:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+1. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Jul-2020 15:08:57 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 31-Jul-2020 17:28:02 CEST | [#1287](https://github.com/tradecloud/tradecloud-microservices/pull/1287) |  Logistics status | @olegtradecloud |  |
 
 2. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Jul-2020 12:58:58 CEST | [#1288](https://github.com/tradecloud/tradecloud-microservices/pull/1288) | [TC-6165] DO NOT MERGE - PoC Data model refactoring with JIT Data Migration and  | @roy-tc |  |
+| 1 | Services (Scala) | 31-Jul-2020 16:11:27 CEST | [#1288](https://github.com/tradecloud/tradecloud-microservices/pull/1288) | [TC-6165] DO NOT MERGE - PoC Data model refactoring with JIT Data Migration and  | @roy-tc |  |
 | 2 | Services (Scala) | 29-Jul-2020 14:04:58 CEST | [#1285](https://github.com/tradecloud/tradecloud-microservices/pull/1285) |  DO NOT MERGE - PoC for refactoring with JIT Data Migration | @roy-tc |  |
 | 3 | Services (Scala) | 27-Jul-2020 11:14:03 CEST | [#1281](https://github.com/tradecloud/tradecloud-microservices/pull/1281) |  PoC for JIT Data Migration | @roy-tc |  |
 
-3. [TC-5662](https://tradecloud.atlassian.net/browse/TC-5662) As Gazelle I only want to receive an order line confirmation when the line is agreed and has no goods received 
+3. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 31-Jul-2020 15:08:57 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
+
+4. [TC-5662](https://tradecloud.atlassian.net/browse/TC-5662) As Gazelle I only want to receive an order line confirmation when the line is agreed and has no goods received 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 31-Jul-2020 11:04:08 CEST | [#456](https://github.com/tradecloud/tradecloud-portal-angular/pull/456) |  delete orderLines from storage if websocket updated order | @bohdantrc |  |
-
-4. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Jul-2020 10:38:12 CEST | [#1287](https://github.com/tradecloud/tradecloud-microservices/pull/1287) |  Logistics status | @olegtradecloud |  |
 
 5. [TC-6047](https://tradecloud.atlassian.net/browse/TC-6047) As DevOps I want to update portal dependencies (node/typescript) 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
