@@ -15,7 +15,6 @@ Below you will find an overview of how these _user identity permissions_ \(in sh
 | Your supplier company | All entities within your own supplier company. |
 | Not connected users | All entities of not connected users. |
 | Connected users | All entities of users linked to a connected company. |
-| Co-workers  | All entities of co-workers. |
 | Your user | All entities within the user's account. |
 | Your admin | All admin entities within your own company. |
 
@@ -97,7 +96,6 @@ A company is in the lead during a**n** event that's why users are n/a relating t
 | Not connected companies | Not allowed  | n/a |
 | Connected companies | See all activities wherein your company is involved | n/a |
 | Your company | See all order \(line\) activities | n/a |
-| Co-workers  | See all order \(line\) activities | n/a |
 | Your user | See all order \(line\) activities | n/a |
 
 ### Tasks
@@ -107,7 +105,6 @@ A company is in the lead during a**n** event that's why users are n/a relating t
 | Not connected companies | Not allowed  | n/a |
 | Connected companies | Not allowed  | n/a |
 | Your company | See all conversation & order tasks	 | Perform all conversation & order tasks |
-| Co-workers  | See all conversation & order tasks | Perform all conversation & order tasks |
 | Your user | See al conversation & order tasks | Perform all conversation & order tasks |
 
 ### My Company
@@ -160,11 +157,6 @@ A company is in the lead during a**n** event that's why users are n/a relating t
       <td style="text-align:left">n/a</td>
     </tr>
     <tr>
-      <td style="text-align:left">Co-workers</td>
-      <td style="text-align:left">Not allowed</td>
-      <td style="text-align:left">n/a</td>
-    </tr>
-    <tr>
       <td style="text-align:left">Your user</td>
       <td style="text-align:left">Not allowed</td>
       <td style="text-align:left">n/a</td>
@@ -177,10 +169,9 @@ A company is in the lead during a**n** event that's why users are n/a relating t
 | Scope | Read Permission | Write Permission |
 | :--- | :--- | :--- |
 | Connected companies | Not allowed  | n/a |
-| Your company | Received connection request in the portal | n/a |
+| Your company | Received connection request in the portal | Accept/ Reject offer  |
 | Not connected users | not Allowed  | n/a |
 | Connected users | Not allowed | n/a |
-| Co-workers  | Received connection request in the portal | Accept/ Reject offer  |
 | Your user | Received e-mail | Accept / Reject offer |
 
 #### Team
@@ -207,7 +198,7 @@ Only admins and super users are allowed to invite new users
 | :--- | :--- | :--- |
 | Not connected users | Not allowed | Not allowed |
 | Connected users | Not allowed | Not allowed |
-| Co-workers  | Not allowed | Not allowed |
+| Your company | Not allowed | Not allowed |
 | Your user | Received e-mail | Create password |
 
 #### Company settings
@@ -239,7 +230,7 @@ Public profile is not yet developed, till then Public profile = Not allowed
 | :--- | :--- | :--- |
 | Not connected users | Public profile | Not allowed |
 | Connected users | Public profile | Not allowed  |
-| Co-workers  | All settings except password recovery | Not allowed |
+| Your company | All settings except password recovery | Not allowed |
 | Your user | All settings | allowed for all settings  |
 
 {% hint style="info" %}
@@ -252,6 +243,6 @@ Public profile is not yet developed, till then Public profile = Not allowed
 | :--- | :--- | :--- |
 | Not connected users | Not allowed  | n/a |
 | Connected users | Not allowed  | n/a |
-| Co-workers  | See all activity | n/a |
+| Your company | See all activity | n/a |
 | Your user | See all activity | n/a |
 
