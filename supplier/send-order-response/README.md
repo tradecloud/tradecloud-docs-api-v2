@@ -16,7 +16,6 @@ When the order line has process status `Issued`:
 * When`indicators.rejected` is set the process status will become`Rejected`
 * When the by supplier **responded** `delivery schedule` and `prices` are **equal** to the by buyer **requested** `delivery schedule` and `prices` the process status will become `Confirmed`
 * When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices` the process status will become `InProgress` and a **proposal** task for the buyer will be created.
-* When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
 
 When the order line has process status `InProgress`:
 
@@ -27,13 +26,15 @@ When the order line has process status `InProgress`:
   **requested** `delivery schedule` and `prices` the process status will become `Confirmed`
 
 * When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices` the process status will stay `InProgress`.
-* When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
 
 When the order line has process status `Confirmed`:
 
 * When the by supplier **responded** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** task for the buyer will be created.
 * When the **responded** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
-* When the `indicators.reopenReqeust` is set, the process status will become `InProgress`and a **reopen request** task for the buyer will be created.
+
+{% hint style="warning" %}
+This [reopen request](../reopen.md) feature is under development and API and documentation may change. 
+{% endhint %}
 
 When the order line already has process status `Rejected`the process status will **NOT** change.
 
