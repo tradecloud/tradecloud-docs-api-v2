@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 3 09:31:04 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 3 11:31:40 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6199](https://tradecloud.atlassian.net/browse/TC-6199) Raise webhook order client http request/idle time out to 60 secs 
+1. [TC-6049](https://tradecloud.atlassian.net/browse/TC-6049) Blank page after entering expired 2FA code in verify dailog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 02-Aug-2020 22:17:29 CEST | [#325](https://github.com/tradecloud/tradecloud-microservices-go/pull/325) |  Sync outgoing webhook HTTP request and Kafka timeouts | @vovinacci |  |
+| 1 | Web Portal | 03-Aug-2020 10:53:41 CEST | [#457](https://github.com/tradecloud/tradecloud-portal-angular/pull/457) |   add back button and fix bug | @RobinNagpal |  |
 
-2. [TC-6049](https://tradecloud.atlassian.net/browse/TC-6049) Blank page after entering expired 2FA code in verify dailog 
+2. [TC-6199](https://tradecloud.atlassian.net/browse/TC-6199) Raise webhook order client http request/idle time out to 60 secs 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 01-Aug-2020 23:39:50 CEST | [#457](https://github.com/tradecloud/tradecloud-portal-angular/pull/457) |   add back button and fix bug | @RobinNagpal |  |
+| 1 | Services (Go) | 03-Aug-2020 10:20:28 CEST | [#325](https://github.com/tradecloud/tradecloud-microservices-go/pull/325) |  Sync outgoing webhook HTTP request and Kafka timeouts | @vovinacci |  |
 
 3. [TC-6142](https://tradecloud.atlassian.net/browse/TC-6142) As SSO Enabled company, after I login with specific email domain, I should see AD login page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 01-Aug-2020 16:59:25 CEST | [#454](https://github.com/tradecloud/tradecloud-portal-angular/pull/454) |  redirect to Azure AD for sso email domain | @RobinNagpal |  |
+| 1 | Web Portal | 03-Aug-2020 09:32:02 CEST | [#454](https://github.com/tradecloud/tradecloud-portal-angular/pull/454) |  redirect to Azure AD for sso email domain | @RobinNagpal |  |
 
 4. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
