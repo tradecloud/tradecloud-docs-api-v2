@@ -115,8 +115,8 @@ A company is in the lead during a**n** event that's why users are n/a relating t
 | :--- | :--- | :--- |
 | Not connected companies | Not allowed  | n/a |
 | Connected companies | Not allowed  | n/a |
-| Your company | See all connection details | Add a supplier/buyer account code |
-| Your admin | See all connection details | Update a supplier/buyer account code |
+| Your company | See all connection details | n/a |
+| Your admin | See all connection details | Add or update a supplier/buyer account code \(update not yet implemented\)  |
 
 #### Invite a new connection
 
@@ -141,15 +141,8 @@ A company is in the lead during a**n** event that's why users are n/a relating t
     </tr>
     <tr>
       <td style="text-align:left">Not connected users</td>
-      <td style="text-align:left">
-        <p>Find all sellers NAMES + company name(when you are a buyer)
-          <br />
-        </p>
-        <p>Find all purchases NAMES (when you are a supplier)
-          <br />
-        </p>
-      </td>
-      <td style="text-align:left">Send invite</td>
+      <td style="text-align:left">Not allowed</td>
+      <td style="text-align:left">n/a</td>
     </tr>
     <tr>
       <td style="text-align:left">Connected users</td>
@@ -158,8 +151,16 @@ A company is in the lead during a**n** event that's why users are n/a relating t
     </tr>
     <tr>
       <td style="text-align:left">Your user</td>
-      <td style="text-align:left">Not allowed</td>
-      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">
+        <p>Find all not connected sellers NAMES + company name(when you are a buyer)
+          <br
+          />
+        </p>
+        <p>Find all not connected purchases NAMES (when you are a supplier)
+          <br />
+        </p>
+      </td>
+      <td style="text-align:left">send invite</td>
     </tr>
   </tbody>
 </table>
