@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 3 21:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Aug 4 09:31:29 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Aug-2020 18:39:29 CEST | [#1287](https://github.com/tradecloud/tradecloud-microservices/pull/1287) |  Logistics status | @olegtradecloud |  |
+| 1 | Services (Scala) | 04-Aug-2020 09:21:56 CEST | [#1287](https://github.com/tradecloud/tradecloud-microservices/pull/1287) |  Logistics status | @olegtradecloud |  |
 
 2. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
