@@ -8,7 +8,7 @@ If an order line is confirmed \(both parties agreed on the delivery of goods\) t
 
 When you reissue an order line with the  **requested** `delivery schedule` or `prices` **NOT** **equal** to the **confirmed** `delivery schedule` and `prices`, Tradecloud will automatically create a reopen workflow task for the supplier. When possible provide the buyer line `reason`field.
 
-You may **update an reopen request** which is in progress, by reissuing an order line again.
+You may **update an reopen request** which is in progress, by updating an order line again.
 
 {% page-ref page="update.md" %}
 
