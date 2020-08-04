@@ -10,9 +10,9 @@ This feature is planned.
 
 When an order or line is completely handled at the buyer, usually when the supplier invoice is received and approved by buyer, . 
 
-The order or line can be marked as completed by setting `indicators.completed`on either order or line level and reissue the order:
+The order or line can be marked as completed by setting `indicators.completed`on either order or line level and update the order:
 
-{% page-ref page="reissue.md" %}
+{% page-ref page="update.md" %}
 
 {% hint style="warning" %}
 You cannot complete a `Cancelled` line

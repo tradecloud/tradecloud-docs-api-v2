@@ -10,7 +10,7 @@ When you reissue an order line with the  **requested** `delivery schedule` or `p
 
 You may **update an reopen request** which is in progress, by reissuing an order line again.
 
-{% page-ref page="reissue.md" %}
+{% page-ref page="update.md" %}
 
 {% hint style="warning" %}
 This is a **request** to the supplier to reopen an already confirmed order line. 

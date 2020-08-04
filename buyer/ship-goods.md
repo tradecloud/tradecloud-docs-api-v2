@@ -10,7 +10,7 @@ This feature is planned and API and documentation may change.
 
 When an order or line is completely shipped by the supplier, it can be marked as shipped by setting `indicators.shipped`on either order or line level and reissue the order:
 
-{% page-ref page="reissue.md" %}
+{% page-ref page="update.md" %}
 
 {% hint style="info" %}
 Order lines having logistics status `Open` will become `Shipped`

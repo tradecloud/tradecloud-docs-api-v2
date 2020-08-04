@@ -10,7 +10,7 @@ As a buyer you can [Issue a new order](issue/)
 
 Additionally you can [Attach a document to the order](issue/attach-document.md)
 
-You can [Reissue an existing order](reissue.md)
+You can [Update an existing order](update.md)
 
 ## Step 2. Receive an order response
 

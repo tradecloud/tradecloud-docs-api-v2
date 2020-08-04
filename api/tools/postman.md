@@ -11,7 +11,7 @@ For more information about how to use Postman in general, see the [Postman docum
 
 To make things easier, Tradecloud provides a Postman collection with some example requests. You can use this as follows:
 
-1. Save the [Tradecloud Postman Collection](https://raw.githubusercontent.com/tradecloud/tradecloud-docs-api-v2/master/.gitbook/assets/Tradecloud-Demo.postman_collection.json) on your computer. (Use right-click, **save link as**)
+1. Save the [Tradecloud Postman Collection](https://raw.githubusercontent.com/tradecloud/tradecloud-docs-api-v2/master/.gitbook/assets/Tradecloud-Demo.postman_collection.json) on your computer. \(Use right-click, **save link as**\)
 2. In Postman, click "Import" and select the file collection you just downloaded.
 
 You now have a "Tradecloud Demo" collection in your Postman application. Follow the instructions below to start sending your first request to the Tradecloud API.
@@ -26,7 +26,7 @@ To login and obtain a token:
 2. Go to the **Authorization** tab.
 3. Fill out the **Username** and **Password** fields with your Tradecloud Integration credentials. If you don't have any credentials yet, please ask us to set up an account for you.
 4. Click **Send**. The API should return a `200 - OK` response. 
-5. Switch to the **Headers** tab of the _response_ and copy the value of the **Set-Authorization** header.  
+5. Switch to the **Headers** tab of the _response_ and copy the value of the **Set-Authorization** header.
 
    This is the token you need to use as authorization for all following requests.
 
@@ -43,7 +43,9 @@ With Postman you can easily send a request to the API once you've obtained your 
    1. Set the Type to **Bearer Token**.
    2. Paste your Authorization Token in the **Token** field. 
 3. Check the body of your request and change the request data where needed.  
-Make sure that you follow the OpenAPI specs linked in the Postman request description (see screenshot).
+
+   Make sure that you follow the OpenAPI specs linked in the Postman request description \(see screenshot\).
+
 4. Send!
 
 ![Set the Authorization Token](../../.gitbook/assets/postman-issue-1.png)

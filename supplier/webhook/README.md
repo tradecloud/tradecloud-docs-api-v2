@@ -10,7 +10,7 @@ Tradecloud will send a new purchase order to the supplier when
 
 Tradecloud will send an updated purchase order to the supplier when 
 
-* the buyer reissues a purchase order 
+* the buyer updates a purchase order 
 * a supplier change proposal is approved by the buyer
 * a supplier change proposal is rejected by the buyer
 * a buyer reopen request is approved by the supplier
@@ -57,7 +57,7 @@ Then event name is one of:
 | Event Name | Trigger |
 | :--- | :--- |
 | `OrderIssuedByBuyer` | A new order has been issued by the buyer. |
-| `OrderReissuedByBuyer` | An updated order has been issued by the buyer. |
+| `OrderReissuedByBuyer` | An issued order has been updated by the buyer. |
 | `OrderChangesProposalApprovedByBuyer` | The buyer has approved changes requested by the supplier after the order line were confirmed. |
 | `OrderChangesProposalRejectedByBuyer` | The buyer has rejected changes requested by the supplier after the order line were confirmed. |
 | `OrderLinesReopenRequestApprovedBySupplier` | The supplier has approved changes requested by the buyer after the order line were confirmed. |

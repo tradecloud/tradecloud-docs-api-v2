@@ -1,8 +1,8 @@
 ---
-description: How to reissue an existing purchase order as a buyer
+description: How to update an existing purchase order as a buyer
 ---
 
-# Reissue an existing order
+# Update an existing order
 
 As buyer you can send either a [new](issue/) or updated purchase order to Tradecloud.
 
@@ -16,25 +16,20 @@ When the order line has status `Issued` the **confirm** task for the supplier wi
 
 When the order line has status `InProgress`:
 
-* When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** \(either via a proposal or reopen request\)`delivery schedule` and `prices` the process status will become `Confirmed`
+* When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** \(either via a proposal or reopen request\)`delivery schedule` and `prices` the order process status will become `Confirmed`
 * When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
 
-   `delivery schedule` and `prices` the process status will stay `InProgress`.  
+   `delivery schedule` and `prices` the order process status will stay `InProgress`.  
   If there is an open reopen request, it will be updated.
-
-* When the `indicators.reopenReqeust` is set and there is an **Open** reopen request, it will be updated.
-* When the `indicators.reopenReqeust` is set but there is **NO** **Open** reopen request, the indicator will be ignored as the line is not confirmed.
 
 When the order line has status `Confirmed`:
 
 * When the by buyer **requested** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** to the supplier will be created.
 * When the **requested** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
-* When the `indicators.reopenReqeust` is set, the process status will become `InProgress`and a **reopen request** task for the supplier will be created.
 
 When the order line has status `Rejected`:
 
 * The process status will become `InProgress`and a confirm task for the supplier will be created
-* When the `indicators.reopenReqeust` is set, it will be ignored as the line is not confirmed.
 
 When the order line already has process status `Completed` the status will **NOT** change.
 
@@ -54,7 +49,7 @@ Most supplier ERP integrations do not have the capability to automatically proce
 {% endhint %}
 
 {% hint style="info" %}
-If an order line has order process status `Issued` or `In Progress` and it is reissued, it will keep the same status. If the line has status `Rejected` \(by supplier\) and it is reissued, it will become `In Progress`. If the line has status `Confirmed` and it is reopened, it will become `In Progress`. In case of any other status like `Completed` or `Cancelled` the order update will be ignored.
+If an order line has order process status `Issued` or `In Progress` and it is updated, it will keep the same status. If the line has status `Rejected` \(by supplier\) and it is reissued, it will become `In Progress`. If the line has status `Confirmed` and it is reopened, it will become `In Progress`. In case of any other status like `Completed` or `Cancelled` the order update will be ignored.
 {% endhint %}
 
 ### Send updated order API method

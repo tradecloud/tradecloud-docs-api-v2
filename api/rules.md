@@ -64,7 +64,7 @@ Never resend **all** or **all active** orders or responses periodically.
 
 ## Orders and lines
 
-As buyer your integration **should not change destination or item** when reissuing an order line.
+As buyer your integration **should not change destination or item** when updating an order line.
 
 Your integration **must** **support a line delivery schedule with multiple schedule lines** when sending or receiving an order, response or event.
 

@@ -4,7 +4,7 @@ description: How to issue a new purchase order as a buyer
 
 # Issue a new order
 
-As buyer you can send either a new or [updated](../reissue.md) purchase order to your supplier.
+As buyer you can send either a new or [updated](../update.md) purchase order to your supplier.
 
 ## Order process
 

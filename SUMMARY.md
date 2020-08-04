@@ -36,7 +36,7 @@
   * [Issue a new order](buyer/issue/README.md)
     * [Attach a document to an order](buyer/issue/attach-document.md)
     * [No delivery expected](buyer/issue/no-delivery-expected.md)
-  * [Reissue an existing order](buyer/reissue.md)
+  * [Update an existing order](buyer/update.md)
   * [Receive an order response](buyer/webhook/README.md)
     * [Download a document attached to an order response](buyer/webhook/download-document.md)
   * [Approve order changes proposed by supplier](buyer/approve-proposal.md)
