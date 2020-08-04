@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Aug 4 17:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Aug 4 19:30:54 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Aug-2020 17:14:18 CEST | [#1290](https://github.com/tradecloud/tradecloud-microservices/pull/1290) |  Update scalapb and remove flatPackage flag | @roy-tc |  |
+| 1 | Services (Scala) | 04-Aug-2020 17:53:03 CEST | [#1290](https://github.com/tradecloud/tradecloud-microservices/pull/1290) |  Update scalapb and remove flatPackage flag | @roy-tc |  |
 | 2 | Services (Scala) | 03-Aug-2020 16:36:33 CEST | [#1288](https://github.com/tradecloud/tradecloud-microservices/pull/1288) | [TC-6165] DO NOT MERGE - PoC Data model refactoring with JIT Data Migration and  | @roy-tc |  |
 | 3 | Services (Scala) | 29-Jul-2020 14:04:58 CEST | [#1285](https://github.com/tradecloud/tradecloud-microservices/pull/1285) |  DO NOT MERGE - PoC for refactoring with JIT Data Migration | @roy-tc |  |
 | 4 | Services (Scala) | 27-Jul-2020 11:14:03 CEST | [#1281](https://github.com/tradecloud/tradecloud-microservices/pull/1281) |  PoC for JIT Data Migration | @roy-tc |  |
