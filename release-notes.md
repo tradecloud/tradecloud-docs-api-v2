@@ -1,11 +1,16 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Aug 4 21:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Aug 5 09:31:38 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
+1. [TC-6142](https://tradecloud.atlassian.net/browse/TC-6142) As SSO Enabled company, after I login with specific email domain, I should see AD login page 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 05-Aug-2020 00:35:01 CEST | [#454](https://github.com/tradecloud/tradecloud-portal-angular/pull/454) |  redirect to Azure AD for sso email domain | @RobinNagpal |  |
+
+2. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Aug-2020 17:53:03 CEST | [#1290](https://github.com/tradecloud/tradecloud-microservices/pull/1290) |  Update scalapb and remove flatPackage flag | @roy-tc |  |
@@ -13,25 +18,20 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 3 | Services (Scala) | 29-Jul-2020 14:04:58 CEST | [#1285](https://github.com/tradecloud/tradecloud-microservices/pull/1285) |  DO NOT MERGE - PoC for refactoring with JIT Data Migration | @roy-tc |  |
 | 4 | Services (Scala) | 27-Jul-2020 11:14:03 CEST | [#1281](https://github.com/tradecloud/tradecloud-microservices/pull/1281) |  PoC for JIT Data Migration | @roy-tc |  |
 
-2. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
+3. [TC-6176](https://tradecloud.atlassian.net/browse/TC-6176) Add logistics status business rules to order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Aug-2020 15:24:24 CEST | [#1287](https://github.com/tradecloud/tradecloud-microservices/pull/1287) |  Logistics status | @olegtradecloud |  |
 
-3. [TC-6029](https://tradecloud.atlassian.net/browse/TC-6029) Attach Document dialog seems to hang when uploading large files (smaller than 100MB) 
+4. [TC-6029](https://tradecloud.atlassian.net/browse/TC-6029) Attach Document dialog seems to hang when uploading large files (smaller than 100MB) 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Aug-2020 14:36:05 CEST | [#458](https://github.com/tradecloud/tradecloud-portal-angular/pull/458) |  add progress bar when uploading file and disable close events | @bohdantrc |  |
 
-4. [TC-6049](https://tradecloud.atlassian.net/browse/TC-6049) Blank page after entering expired 2FA code in verify dailog 
+5. [TC-6049](https://tradecloud.atlassian.net/browse/TC-6049) Blank page after entering expired 2FA code in verify dailog 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 03-Aug-2020 10:53:41 CEST | [#457](https://github.com/tradecloud/tradecloud-portal-angular/pull/457) |   add back button and fix bug | @RobinNagpal |  |
-
-5. [TC-6142](https://tradecloud.atlassian.net/browse/TC-6142) As SSO Enabled company, after I login with specific email domain, I should see AD login page 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 03-Aug-2020 09:32:02 CEST | [#454](https://github.com/tradecloud/tradecloud-portal-angular/pull/454) |  redirect to Azure AD for sso email domain | @RobinNagpal |  |
 
 6. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
