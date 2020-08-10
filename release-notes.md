@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 7 21:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 10 09:31:26 CEST 2020)
 ---
 
 
@@ -160,7 +160,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 3 | Services (Scala) | 15-Jul-2020 10:40:44 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
 | 4 | Services (Scala) | 14-Jul-2020 09:49:44 CEST | [#1268](https://github.com/tradecloud/tradecloud-microservices/pull/1268) |  Fix UAT status reporting | @vovinacci |  |
 | 5 | Services (Go) | 14-Jul-2020 09:48:35 CEST | [#319](https://github.com/tradecloud/tradecloud-microservices-go/pull/319) |  Fix UAT status reporting | @vovinacci |  |
-| 6 | Services (Scala) | 08-Jul-2020 11:40:23 CEST | [#1258](https://github.com/tradecloud/tradecloud-microservices/pull/1258) |  Fix scalastyle errors | @vovinacci |  |
 
 18. [TC-6166](https://tradecloud.atlassian.net/browse/TC-6166) Can’t upload any file to order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
