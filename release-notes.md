@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Aug 11 15:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Aug 11 17:30:57 CEST 2020)
 ---
 
 
@@ -8,17 +8,17 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6221](https://tradecloud.atlassian.net/browse/TC-6221) Add missed logistics status business rules to order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Aug-2020 13:57:14 CEST | [#1291](https://github.com/tradecloud/tradecloud-microservices/pull/1291) |   Logistic status missing rules | @olegtradecloud |  |
+| 1 | Services (Scala) | 11-Aug-2020 16:31:11 CEST | [#1291](https://github.com/tradecloud/tradecloud-microservices/pull/1291) |   Logistic status missing rules | @olegtradecloud |  |
 
-2. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
+2. [TC-6030](https://tradecloud.atlassian.net/browse/TC-6030) Attach Document dialog does not provide feedback if a file is uploaded that is too large 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 11-Aug-2020 16:26:04 CEST | [#463](https://github.com/tradecloud/tradecloud-portal-angular/pull/463) |  Add notification with error about upload file | @bohdantrc |  |
+
+3. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 11-Aug-2020 11:15:44 CEST | [#465](https://github.com/tradecloud/tradecloud-portal-angular/pull/465) |  Add extra limit in task query request | @bohdantrc |  |
-
-3. [TC-6030](https://tradecloud.atlassian.net/browse/TC-6030) Attach Document dialog does not provide feedback if a file is uploaded that is too large 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Aug-2020 09:48:54 CEST | [#463](https://github.com/tradecloud/tradecloud-portal-angular/pull/463) |  Add notification with error about upload file | @bohdantrc |  |
 
 4. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
