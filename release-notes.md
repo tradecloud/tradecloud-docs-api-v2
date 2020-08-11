@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Aug 11 09:31:23 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Aug 11 11:31:03 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Aug-2020 09:23:31 CEST | [#465](https://github.com/tradecloud/tradecloud-portal-angular/pull/465) |  Add extra limit in task query request | @bohdantrc |  |
+| 1 | Web Portal | 11-Aug-2020 11:15:44 CEST | [#465](https://github.com/tradecloud/tradecloud-portal-angular/pull/465) |  Add extra limit in task query request | @bohdantrc |  |
 
 2. [TC-6090](https://tradecloud.atlassian.net/browse/TC-6090) When doing a proposal/request with more as 2 digits, prices are automatically rounded on 2 digits in the UI   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
