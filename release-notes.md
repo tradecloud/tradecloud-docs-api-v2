@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Aug 12 19:30:51 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Aug 12 21:30:55 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Aug-2020 17:24:38 CEST | [#1293](https://github.com/tradecloud/tradecloud-microservices/pull/1293) | [TС-6226] Order updating | @olegtradecloud |  |
+| 1 | Services (Scala) | 12-Aug-2020 21:19:09 CEST | [#1293](https://github.com/tradecloud/tradecloud-microservices/pull/1293) | [TС-6226] Order updating | @olegtradecloud |  |
 
 2. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
