@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 14 13:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Aug 14 15:30:55 CEST 2020)
 ---
 
 
@@ -261,16 +261,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Jul-2020 12:48:56 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
-
-39. [TC-6130](https://tradecloud.atlassian.net/browse/TC-6130) Hide reject order (line) buttons for suppliers  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Jul-2020 15:13:54 CEST | [#440](https://github.com/tradecloud/tradecloud-portal-angular/pull/440) |  add feature toggle for reject button | @bohdantrc |  |
-
-40. [TC-6108](https://tradecloud.atlassian.net/browse/TC-6108) As Eriks I want to test the integration by resending an order to my ERP system 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Jul-2020 13:42:26 CEST | [#435](https://github.com/tradecloud/tradecloud-portal-angular/pull/435) |  Add resend action and activity types | @bohdantrc |  |
-| 2 | Services (Go) | 14-Jul-2020 13:40:38 CEST | [#318](https://github.com/tradecloud/tradecloud-microservices-go/pull/318) |  Add OutgoingOrderResentByBuyer and OutgoingOrderResentBySupplier events handlin | @vovinacci |  |
-| 3 | Services (Scala) | 14-Jul-2020 13:40:03 CEST | [#1256](https://github.com/tradecloud/tradecloud-microservices/pull/1256) |  Resend order | @dmytrozheliuk |  |
 
