@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 14 11:31:11 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Aug 14 13:30:54 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Aug-2020 11:13:51 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 14-Aug-2020 12:09:56 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
 
 2. [TC-6180](https://tradecloud.atlassian.net/browse/TC-6180) Refactor OrderLinesReissuedByBuyer to OrderLinesUpdatedByBuyer when the line is not Issued 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
