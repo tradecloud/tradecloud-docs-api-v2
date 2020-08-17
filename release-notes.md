@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 14 21:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 17 09:31:26 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+1. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 17-Aug-2020 09:26:32 CEST | [#465](https://github.com/tradecloud/tradecloud-portal-angular/pull/465) |  Add extra limit in task query request | @bohdantrc |  |
+
+2. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Aug-2020 12:09:56 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
 
-2. [TC-6180](https://tradecloud.atlassian.net/browse/TC-6180) Refactor OrderLinesReissuedByBuyer to OrderLinesUpdatedByBuyer when the line is not Issued 
+3. [TC-6180](https://tradecloud.atlassian.net/browse/TC-6180) Refactor OrderLinesReissuedByBuyer to OrderLinesUpdatedByBuyer when the line is not Issued 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Aug-2020 11:12:53 CEST | [#466](https://github.com/tradecloud/tradecloud-portal-angular/pull/466) |  add order and order line status for activity | @bohdantrc |  |
 | 2 | Services (Scala) | 13-Aug-2020 18:37:40 CEST | [#1295](https://github.com/tradecloud/tradecloud-microservices/pull/1295) |  Order updated by buyer | @olegtradecloud |  |
-
-3. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 13-Aug-2020 18:06:32 CEST | [#465](https://github.com/tradecloud/tradecloud-portal-angular/pull/465) |  Add extra limit in task query request | @bohdantrc |  |
 
 4. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -183,7 +183,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Jul-2020 13:39:45 CEST | [#1277](https://github.com/tradecloud/tradecloud-microservices/pull/1277) |  - Make usual test run same stable as Nightly | @denys-kondartiuk |  |
 | 2 | Services (Go) | 22-Jul-2020 13:39:41 CEST | [#322](https://github.com/tradecloud/tradecloud-microservices-go/pull/322) |  - Make usual run same stable as Nightly | @denys-kondartiuk |  |
-| 3 | Services (Scala) | 15-Jul-2020 10:40:44 CEST | [#1270](https://github.com/tradecloud/tradecloud-microservices/pull/1270) |  Add test scalstyle check, address linter concerns | @vovinacci |  |
 
 24. [TC-6166](https://tradecloud.atlassian.net/browse/TC-6166) Can’t upload any file to order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -240,25 +239,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jul-2020 10:47:57 CEST | [#1271](https://github.com/tradecloud/tradecloud-microservices/pull/1271) | : Fixing bug related to documents activity | @dmytrozheliuk |  |
-
-35. [TC-5916](https://tradecloud.atlassian.net/browse/TC-5916) Use enumeratum for enums to avoid JSON deserialization issues 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Jul-2020 08:58:43 CEST | [#1260](https://github.com/tradecloud/tradecloud-microservices/pull/1260) |  Use refactored enums in services | @roy-tc |  |
-| 2 | Services (Scala) | 16-Jul-2020 17:46:29 CEST | [#1259](https://github.com/tradecloud/tradecloud-microservices/pull/1259) |  Use refactored messages enums | @roy-tc |  |
-
-36. [TC-6095](https://tradecloud.atlassian.net/browse/TC-6095) As buyer/supplier I want that documents are never removed from the buyer/supplier order/line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jul-2020 15:52:53 CEST | [#1261](https://github.com/tradecloud/tradecloud-microservices/pull/1261) |  - preserve order and line documents | @olegtradecloud |  |
-
-37. [TC-6140](https://tradecloud.atlassian.net/browse/TC-6140) Webhook API specs is missing event names 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Jul-2020 09:49:03 CEST | [#320](https://github.com/tradecloud/tradecloud-microservices-go/pull/320) |  Webhook API spec: Add missing events, separate buyer and supplier events | @vovinacci |  |
-
-38. [TC-6099](https://tradecloud.atlassian.net/browse/TC-6099) Reissuing a line with less deliverySchedule positions will not trigger a reopen request.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jul-2020 12:48:56 CEST | [#1267](https://github.com/tradecloud/tradecloud-microservices/pull/1267) |  Fix delivery schedule rules for reopen request | @olegtradecloud |  |
 
