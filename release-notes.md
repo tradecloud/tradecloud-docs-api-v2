@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 17 09:31:26 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 17 11:30:55 CEST 2020)
 ---
 
 
@@ -234,9 +234,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jul-2020 10:01:09 CEST | [#445](https://github.com/tradecloud/tradecloud-portal-angular/pull/445) |  fix possibility disable integration settings | @bohdantrc |  |
-
-34. [TC-6094](https://tradecloud.atlassian.net/browse/TC-6094) All Document line activities of an issued order show a link to the document which is attached to line position 1  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Jul-2020 10:47:57 CEST | [#1271](https://github.com/tradecloud/tradecloud-microservices/pull/1271) | : Fixing bug related to documents activity | @dmytrozheliuk |  |
 
