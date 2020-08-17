@@ -1,63 +1,68 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 17 19:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 17 21:30:52 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6180](https://tradecloud.atlassian.net/browse/TC-6180) Refactor OrderLinesReissuedByBuyer to OrderLinesUpdatedByBuyer when the line is not Issued 
+1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 17-Aug-2020 20:26:08 CEST | [#326](https://github.com/tradecloud/tradecloud-microservices-go/pull/326) |  Update Go to 1.15, update deps | @vovinacci |  |
+
+2. [TC-6180](https://tradecloud.atlassian.net/browse/TC-6180) Refactor OrderLinesReissuedByBuyer to OrderLinesUpdatedByBuyer when the line is not Issued 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Aug-2020 14:49:10 CEST | [#1295](https://github.com/tradecloud/tradecloud-microservices/pull/1295) |  Order updated by buyer | @olegtradecloud |  |
 | 2 | Web Portal | 14-Aug-2020 11:12:53 CEST | [#466](https://github.com/tradecloud/tradecloud-portal-angular/pull/466) |  add order and order line status for activity | @bohdantrc |  |
 
-2. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
+3. [TC-5351](https://tradecloud.atlassian.net/browse/TC-5351) Tasks page does not add a new task at the bottom of the que after a task is completed.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Aug-2020 11:32:42 CEST | [#465](https://github.com/tradecloud/tradecloud-portal-angular/pull/465) |  Add extra limit in task query request | @bohdantrc |  |
 
-3. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+4. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Aug-2020 12:09:56 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
 
-4. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
+5. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-Aug-2020 12:59:13 CEST | [#1288](https://github.com/tradecloud/tradecloud-microservices/pull/1288) | [TC-6165] DO NOT MERGE - PoC Data model refactoring with JIT Data Migration and  | @roy-tc |  |
 | 2 | Services (Scala) | 29-Jul-2020 14:04:58 CEST | [#1285](https://github.com/tradecloud/tradecloud-microservices/pull/1285) |  DO NOT MERGE - PoC for refactoring with JIT Data Migration | @roy-tc |  |
 | 3 | Services (Scala) | 27-Jul-2020 11:14:03 CEST | [#1281](https://github.com/tradecloud/tradecloud-microservices/pull/1281) |  PoC for JIT Data Migration | @roy-tc |  |
 
-5. [TC-6142](https://tradecloud.atlassian.net/browse/TC-6142) As SSO Enabled company, after I login with specific email domain, I should see AD login page 
+6. [TC-6142](https://tradecloud.atlassian.net/browse/TC-6142) As SSO Enabled company, after I login with specific email domain, I should see AD login page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Aug-2020 14:12:18 CEST | [#454](https://github.com/tradecloud/tradecloud-portal-angular/pull/454) |  redirect to Azure AD for sso email domain | @RobinNagpal |  |
 
-6. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
+7. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 06-Aug-2020 12:06:20 CEST | [#323](https://github.com/tradecloud/tradecloud-microservices-go/pull/323) |  Add integration settings enabled event names | @marcmatt |  |
 | 2 | Services (Scala) | 24-Jul-2020 16:39:29 CEST | [#1278](https://github.com/tradecloud/tradecloud-microservices/pull/1278) |  Add integration settings enabled event names | @marcmatt |  |
 
-7. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
+8. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jul-2020 21:36:09 CEST | [#1286](https://github.com/tradecloud/tradecloud-microservices/pull/1286) |  DO NOT MERGE - PoC for refactoring using Optional Fields | @roy-tc |  |
 | 2 | Services (Scala) | 27-Jul-2020 12:26:49 CEST | [#1275](https://github.com/tradecloud/tradecloud-microservices/pull/1275) |  PoC - Optional Fields | @roy-tc |  |
 | 3 | Services (Scala) | 27-Jul-2020 11:54:31 CEST | [#1279](https://github.com/tradecloud/tradecloud-microservices/pull/1279) |  PoC Use auto-generated BuyerDeliveryMsg instead of or own case class | @roy-tc |  |
 
-8. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
+9. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jul-2020 17:51:33 CEST | [#1289](https://github.com/tradecloud/tradecloud-microservices/pull/1289) |  Draft to illustrate how we can simplify the order behavior and decent… | @roy-tc |  |
 
-9. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+10. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 21-Jul-2020 21:42:28 CEST | [#321](https://github.com/tradecloud/tradecloud-microservices-go/pull/321) |  Make buyer delivery position optional | @marcmatt |  |
 | 2 | Services (Scala) | 21-Jul-2020 13:17:21 CEST | [#1274](https://github.com/tradecloud/tradecloud-microservices/pull/1274) |  Make buyer delivery position optional | @marcmatt |  |
 
-10. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
+11. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jul-2020 10:41:08 CEST | [#400](https://github.com/tradecloud/tradecloud-portal-angular/pull/400) |  Change aside part in dashboard | @bohdantrc |  |
