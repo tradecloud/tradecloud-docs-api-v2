@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 17 21:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Aug 18 09:31:34 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-Aug-2020 20:26:08 CEST | [#326](https://github.com/tradecloud/tradecloud-microservices-go/pull/326) |  Update Go to 1.15, update deps | @vovinacci |  |
+| 1 | Services (Go) | 18-Aug-2020 09:21:04 CEST | [#326](https://github.com/tradecloud/tradecloud-microservices-go/pull/326) |  Update Go to 1.15, update deps | @vovinacci |  |
 
 2. [TC-6180](https://tradecloud.atlassian.net/browse/TC-6180) Refactor OrderLinesReissuedByBuyer to OrderLinesUpdatedByBuyer when the line is not Issued 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
