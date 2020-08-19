@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Aug 18 21:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Aug 19 09:31:30 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
+1. [TC-6290](https://tradecloud.atlassian.net/browse/TC-6290) Create new supplier commands 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 19-Aug-2020 09:30:39 CEST | [#1296](https://github.com/tradecloud/tradecloud-microservices/pull/1296) |  supplier order commands | @olegtradecloud |  |
+
+2. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Aug-2020 19:01:59 CEST | [#468](https://github.com/tradecloud/tradecloud-portal-angular/pull/468) |  create auth0 identity and user | @RobinNagpal |  |
-
-2. [TC-6290](https://tradecloud.atlassian.net/browse/TC-6290) Create new supplier commands 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Aug-2020 18:24:20 CEST | [#1296](https://github.com/tradecloud/tradecloud-microservices/pull/1296) |  supplier order commands | @olegtradecloud |  |
 
 3. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
