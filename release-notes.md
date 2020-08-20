@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Aug 20 11:30:57 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Aug 20 13:31:25 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6266](https://tradecloud.atlassian.net/browse/TC-6266) Add multiple event to Mixpanel  
+1. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 20-Aug-2020 12:48:07 CEST | [#1297](https://github.com/tradecloud/tradecloud-microservices/pull/1297) |  create identity and user based on auth0 user | @RobinNagpal |  |
+| 2 | Web Portal | 20-Aug-2020 11:56:41 CEST | [#468](https://github.com/tradecloud/tradecloud-portal-angular/pull/468) |  create auth0 identity and user | @RobinNagpal |  |
+
+2. [TC-6266](https://tradecloud.atlassian.net/browse/TC-6266) Add multiple event to Mixpanel  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Aug-2020 10:27:47 CEST | [#469](https://github.com/tradecloud/tradecloud-portal-angular/pull/469) |  rewrite calling mixpanel events | @bohdantrc |  |
-
-2. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Aug-2020 04:04:58 CEST | [#1297](https://github.com/tradecloud/tradecloud-microservices/pull/1297) |  create identity and user based on auth0 user | @RobinNagpal |  |
-| 2 | Web Portal | 19-Aug-2020 16:25:13 CEST | [#468](https://github.com/tradecloud/tradecloud-portal-angular/pull/468) |  create auth0 identity and user | @RobinNagpal |  |
 
 3. [TC-6265](https://tradecloud.atlassian.net/browse/TC-6265) FE: Storage for updated Tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
