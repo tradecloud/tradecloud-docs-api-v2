@@ -1,67 +1,77 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Aug 20 17:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Aug 20 19:31:00 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
+1. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 20-Aug-2020 16:59:55 CEST | [#400](https://github.com/tradecloud/tradecloud-portal-angular/pull/400) |  Change aside part in dashboard | @bohdantrc |  |
-
-2. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Aug-2020 12:48:07 CEST | [#1297](https://github.com/tradecloud/tradecloud-microservices/pull/1297) |  create identity and user based on auth0 user | @RobinNagpal |  |
+| 1 | Services (Scala) | 20-Aug-2020 19:26:06 CEST | [#1297](https://github.com/tradecloud/tradecloud-microservices/pull/1297) |  create identity and user based on auth0 user | @RobinNagpal |  |
 | 2 | Web Portal | 20-Aug-2020 11:56:41 CEST | [#468](https://github.com/tradecloud/tradecloud-portal-angular/pull/468) |  create auth0 identity and user | @RobinNagpal |  |
 
-3. [TC-6266](https://tradecloud.atlassian.net/browse/TC-6266) Add multiple event to Mixpanel  
+2. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 20-Aug-2020 19:17:26 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
+
+3. [TC-6267](https://tradecloud.atlassian.net/browse/TC-6267) Order performance metrics broken when you leave the Dashboard page and return to it 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 20-Aug-2020 18:05:17 CEST | [#471](https://github.com/tradecloud/tradecloud-portal-angular/pull/471) |  give one value from stream to avoiding que streams | @bohdantrc |  |
+
+4. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 20-Aug-2020 17:35:06 CEST | [#400](https://github.com/tradecloud/tradecloud-portal-angular/pull/400) |  Change aside part in dashboard | @bohdantrc |  |
+
+5. [TC-6266](https://tradecloud.atlassian.net/browse/TC-6266) Add multiple event to Mixpanel  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Aug-2020 10:27:47 CEST | [#469](https://github.com/tradecloud/tradecloud-portal-angular/pull/469) |  rewrite calling mixpanel events | @bohdantrc |  |
 
-4. [TC-6265](https://tradecloud.atlassian.net/browse/TC-6265) FE: Storage for updated Tasks 
+6. [TC-6265](https://tradecloud.atlassian.net/browse/TC-6265) FE: Storage for updated Tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 19-Aug-2020 17:07:21 CEST | [#470](https://github.com/tradecloud/tradecloud-portal-angular/pull/470) |  Add closedIds and filter tasks | @bohdantrc |  |
 
-5. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
+7. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Aug-2020 16:56:42 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
 | 2 | Services (Go) | 06-Aug-2020 12:06:20 CEST | [#323](https://github.com/tradecloud/tradecloud-microservices-go/pull/323) |  Add integration settings enabled event names | @marcmatt |  |
 
-6. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
+8. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Aug-2020 16:13:30 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
 
-7. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+9. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Aug-2020 12:09:56 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
 
-8. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
+10. [TC-6162](https://tradecloud.atlassian.net/browse/TC-6162) SPIKE: JIT Data Migration for Protobuf with proper code examples 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-Aug-2020 12:59:13 CEST | [#1288](https://github.com/tradecloud/tradecloud-microservices/pull/1288) | [TC-6165] DO NOT MERGE - PoC Data model refactoring with JIT Data Migration and  | @roy-tc |  |
 | 2 | Services (Scala) | 29-Jul-2020 14:04:58 CEST | [#1285](https://github.com/tradecloud/tradecloud-microservices/pull/1285) |  DO NOT MERGE - PoC for refactoring with JIT Data Migration | @roy-tc |  |
 | 3 | Services (Scala) | 27-Jul-2020 11:14:03 CEST | [#1281](https://github.com/tradecloud/tradecloud-microservices/pull/1281) |  PoC for JIT Data Migration | @roy-tc |  |
 
-9. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
+11. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jul-2020 21:36:09 CEST | [#1286](https://github.com/tradecloud/tradecloud-microservices/pull/1286) |  DO NOT MERGE - PoC for refactoring using Optional Fields | @roy-tc |  |
 | 2 | Services (Scala) | 27-Jul-2020 12:26:49 CEST | [#1275](https://github.com/tradecloud/tradecloud-microservices/pull/1275) |  PoC - Optional Fields | @roy-tc |  |
 | 3 | Services (Scala) | 27-Jul-2020 11:54:31 CEST | [#1279](https://github.com/tradecloud/tradecloud-microservices/pull/1279) |  PoC Use auto-generated BuyerDeliveryMsg instead of or own case class | @roy-tc |  |
 
-10. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
+12. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jul-2020 17:51:33 CEST | [#1289](https://github.com/tradecloud/tradecloud-microservices/pull/1289) |  Draft to illustrate how we can simplify the order behavior and decent… | @roy-tc |  |
 
-11. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+13. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 21-Jul-2020 21:42:28 CEST | [#321](https://github.com/tradecloud/tradecloud-microservices-go/pull/321) |  Make buyer delivery position optional | @marcmatt |  |
