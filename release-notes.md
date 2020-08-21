@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 21 09:31:25 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Aug 21 11:31:00 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
+1. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Aug-2020 09:30:15 CEST | [#1300](https://github.com/tradecloud/tradecloud-microservices/pull/1300) |  split supplier order command | @olegtradecloud |  |
+| 1 | Web Portal | 21-Aug-2020 11:25:41 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
+| 2 | Services (Scala) | 21-Aug-2020 10:16:43 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
 
-2. [TC-6267](https://tradecloud.atlassian.net/browse/TC-6267) Order performance metrics broken when you leave the Dashboard page and return to it 
+2. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Aug-2020 10:34:55 CEST | [#1300](https://github.com/tradecloud/tradecloud-microservices/pull/1300) |  split supplier order command | @olegtradecloud |  |
+
+3. [TC-6267](https://tradecloud.atlassian.net/browse/TC-6267) Order performance metrics broken when you leave the Dashboard page and return to it 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Aug-2020 09:17:17 CEST | [#471](https://github.com/tradecloud/tradecloud-portal-angular/pull/471) |  give one value from stream to avoiding que streams | @bohdantrc |  |
-
-3. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Aug-2020 20:17:23 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
-| 2 | Web Portal | 20-Aug-2020 20:06:09 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
 
 4. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -46,7 +46,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Aug-2020 16:56:42 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
-| 2 | Services (Go) | 06-Aug-2020 12:06:20 CEST | [#323](https://github.com/tradecloud/tradecloud-microservices-go/pull/323) |  Add integration settings enabled event names | @marcmatt |  |
 
 9. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -62,22 +61,13 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-Aug-2020 12:59:13 CEST | [#1288](https://github.com/tradecloud/tradecloud-microservices/pull/1288) | [TC-6165] DO NOT MERGE - PoC Data model refactoring with JIT Data Migration and  | @roy-tc |  |
-| 2 | Services (Scala) | 29-Jul-2020 14:04:58 CEST | [#1285](https://github.com/tradecloud/tradecloud-microservices/pull/1285) |  DO NOT MERGE - PoC for refactoring with JIT Data Migration | @roy-tc |  |
-| 3 | Services (Scala) | 27-Jul-2020 11:14:03 CEST | [#1281](https://github.com/tradecloud/tradecloud-microservices/pull/1281) |  PoC for JIT Data Migration | @roy-tc |  |
 
-12. [TC-6165](https://tradecloud.atlassian.net/browse/TC-6165) SPIKE: evaluate compatibility using optional fields 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Jul-2020 21:36:09 CEST | [#1286](https://github.com/tradecloud/tradecloud-microservices/pull/1286) |  DO NOT MERGE - PoC for refactoring using Optional Fields | @roy-tc |  |
-| 2 | Services (Scala) | 27-Jul-2020 12:26:49 CEST | [#1275](https://github.com/tradecloud/tradecloud-microservices/pull/1275) |  PoC - Optional Fields | @roy-tc |  |
-| 3 | Services (Scala) | 27-Jul-2020 11:54:31 CEST | [#1279](https://github.com/tradecloud/tradecloud-microservices/pull/1279) |  PoC Use auto-generated BuyerDeliveryMsg instead of or own case class | @roy-tc |  |
-
-13. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
+12. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jul-2020 17:51:33 CEST | [#1289](https://github.com/tradecloud/tradecloud-microservices/pull/1289) |  Draft to illustrate how we can simplify the order behavior and decent… | @roy-tc |  |
 
-14. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+13. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 21-Jul-2020 21:42:28 CEST | [#321](https://github.com/tradecloud/tradecloud-microservices-go/pull/321) |  Make buyer delivery position optional | @marcmatt |  |
@@ -262,19 +252,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 12:07:14 CEST | [#1269](https://github.com/tradecloud/tradecloud-microservices/pull/1269) |  Password reset expiration timeout | @olegtradecloud |  |
-
-35. [TC-5332](https://tradecloud.atlassian.net/browse/TC-5332) Disable auto-complete for sensitive fields 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Jul-2020 10:25:05 CEST | [#441](https://github.com/tradecloud/tradecloud-portal-angular/pull/441) |  disable autocomplete in integration settings | @bohdantrc |  |
-
-36. [TC-6033](https://tradecloud.atlassian.net/browse/TC-6033) Action column not functional 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Jul-2020 10:04:08 CEST | [#442](https://github.com/tradecloud/tradecloud-portal-angular/pull/442) |  delete action column from order and order line tables | @bohdantrc |  |
-
-37. [TC-6077](https://tradecloud.atlassian.net/browse/TC-6077) Integration settings cannot be disabled.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Jul-2020 10:01:09 CEST | [#445](https://github.com/tradecloud/tradecloud-portal-angular/pull/445) |  fix possibility disable integration settings | @bohdantrc |  |
 
