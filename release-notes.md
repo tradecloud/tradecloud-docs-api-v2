@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Aug 20 21:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Aug 21 09:31:25 CEST 2020)
 ---
 
 
@@ -8,24 +8,24 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Aug-2020 20:23:49 CEST | [#1300](https://github.com/tradecloud/tradecloud-microservices/pull/1300) |  split supplier order command | @olegtradecloud |  |
+| 1 | Services (Scala) | 21-Aug-2020 09:30:15 CEST | [#1300](https://github.com/tradecloud/tradecloud-microservices/pull/1300) |  split supplier order command | @olegtradecloud |  |
 
-2. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
+2. [TC-6267](https://tradecloud.atlassian.net/browse/TC-6267) Order performance metrics broken when you leave the Dashboard page and return to it 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 21-Aug-2020 09:17:17 CEST | [#471](https://github.com/tradecloud/tradecloud-portal-angular/pull/471) |  give one value from stream to avoiding que streams | @bohdantrc |  |
+
+3. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Aug-2020 20:17:23 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
 | 2 | Web Portal | 20-Aug-2020 20:06:09 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
 
-3. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
+4. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Aug-2020 19:26:06 CEST | [#1297](https://github.com/tradecloud/tradecloud-microservices/pull/1297) |  create identity and user based on auth0 user | @RobinNagpal |  |
 | 2 | Web Portal | 20-Aug-2020 11:56:41 CEST | [#468](https://github.com/tradecloud/tradecloud-portal-angular/pull/468) |  create auth0 identity and user | @RobinNagpal |  |
-
-4. [TC-6267](https://tradecloud.atlassian.net/browse/TC-6267) Order performance metrics broken when you leave the Dashboard page and return to it 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 20-Aug-2020 18:05:17 CEST | [#471](https://github.com/tradecloud/tradecloud-portal-angular/pull/471) |  give one value from stream to avoiding que streams | @bohdantrc |  |
 
 5. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
