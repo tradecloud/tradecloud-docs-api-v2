@@ -1,26 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 21 13:31:28 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Aug 21 15:31:05 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
+1. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 21-Aug-2020 14:38:37 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
+| 2 | Services (Scala) | 21-Aug-2020 11:40:19 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
+
+2. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Aug-2020 13:25:02 CEST | [#1297](https://github.com/tradecloud/tradecloud-microservices/pull/1297) |  create identity and user based on auth0 user | @RobinNagpal |  |
 | 2 | Web Portal | 20-Aug-2020 11:56:41 CEST | [#468](https://github.com/tradecloud/tradecloud-portal-angular/pull/468) |  create auth0 identity and user | @RobinNagpal |  |
 
-2. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
+3. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Aug-2020 12:11:16 CEST | [#1300](https://github.com/tradecloud/tradecloud-microservices/pull/1300) |  split supplier order command | @olegtradecloud |  |
-
-3. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Aug-2020 11:40:19 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
-| 2 | Web Portal | 21-Aug-2020 11:25:41 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
 
 4. [TC-6266](https://tradecloud.atlassian.net/browse/TC-6266) Add multiple event to Mixpanel  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -236,10 +236,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jul-2020 15:40:24 CEST | [#1272](https://github.com/tradecloud/tradecloud-microservices/pull/1272) |  User profile update permission | @olegtradecloud |  |
-
-35. [TC-5929](https://tradecloud.atlassian.net/browse/TC-5929) When a user authenticates with 2FA validate, a new refresh token is created 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Jul-2020 14:28:03 CEST | [#428](https://github.com/tradecloud/tradecloud-portal-angular/pull/428) |  set auth token even if refresh token is not there | @RobinNagpal |  |
-| 2 | Services (Scala) | 21-Jul-2020 14:27:15 CEST | [#1243](https://github.com/tradecloud/tradecloud-microservices/pull/1243) |  Do not set refresh token until fully authenticated | @TizianoPerrucci |  |
 
