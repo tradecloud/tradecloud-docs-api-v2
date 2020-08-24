@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 21 21:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 24 09:31:37 CEST 2020)
 ---
 
 
@@ -57,11 +57,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Jul-2020 17:51:33 CEST | [#1289](https://github.com/tradecloud/tradecloud-microservices/pull/1289) |  Draft to illustrate how we can simplify the order behavior and decent… | @roy-tc |  |
 
-11. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 21-Jul-2020 21:42:28 CEST | [#321](https://github.com/tradecloud/tradecloud-microservices-go/pull/321) |  Make buyer delivery position optional | @marcmatt |  |
-
 ## Changelog
 
 1. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
@@ -69,8 +64,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Aug-2020 12:47:01 CEST | [#473](https://github.com/tradecloud/tradecloud-portal-angular/pull/473) |  Trigger build | @bohdantrc |  |
 | 2 | Services (Go) | 18-Aug-2020 11:00:06 CEST | [#326](https://github.com/tradecloud/tradecloud-microservices-go/pull/326) |  Update Go to 1.15, update deps | @vovinacci |  |
-| 3 | Services (Scala) | 22-Jul-2020 13:39:45 CEST | [#1277](https://github.com/tradecloud/tradecloud-microservices/pull/1277) |  - Make usual test run same stable as Nightly | @denys-kondartiuk |  |
-| 4 | Services (Go) | 22-Jul-2020 13:39:41 CEST | [#322](https://github.com/tradecloud/tradecloud-microservices-go/pull/322) |  - Make usual run same stable as Nightly | @denys-kondartiuk |  |
 
 2. [TC-6265](https://tradecloud.atlassian.net/browse/TC-6265) FE: Storage for updated Tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -210,25 +203,9 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Jul-2020 11:28:30 CEST | [#450](https://github.com/tradecloud/tradecloud-portal-angular/pull/450) |  do not show price reopen in activity if netPrice or grossPrice | @bohdantrc |  |
-| 2 | Web Portal | 23-Jul-2020 14:34:16 CEST | [#443](https://github.com/tradecloud/tradecloud-portal-angular/pull/443) |  do not show price proposal in activity if netPrice or grossPrice missed | @bohdantrc |  |
 
 29. [TC-6159](https://tradecloud.atlassian.net/browse/TC-6159) Remove reject button from Re-open order lines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Jul-2020 15:22:34 CEST | [#449](https://github.com/tradecloud/tradecloud-portal-angular/pull/449) |  create feature toggle directive for easy add toggle flags | @bohdantrc |  |
-
-30. [TC-6132](https://tradecloud.atlassian.net/browse/TC-6132) Remove the reopen request toggle out of our code  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Jul-2020 19:00:16 CEST | [#448](https://github.com/tradecloud/tradecloud-portal-angular/pull/448) |  Remove reopen requests feature toggle | @vovinacci |  |
-
-31. [TC-6166](https://tradecloud.atlassian.net/browse/TC-6166) Can’t upload any file to order 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Jul-2020 11:52:47 CEST | [#446](https://github.com/tradecloud/tradecloud-portal-angular/pull/446) |  add encoding order id and line id in attach requests | @bohdantrc |  |
-
-32. [TC-6102](https://tradecloud.atlassian.net/browse/TC-6102) IncomingOrderDocumentsAttachedByBuyer is retried forever when the purchase order number cannot be found 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Jul-2020 22:22:25 CEST | [#1246](https://github.com/tradecloud/tradecloud-microservices/pull/1246) |  Cleanup EventListener and log warnings in case of acknowledged errors | @roy-tc |  |
 
