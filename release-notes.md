@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 24 13:31:16 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 24 15:30:52 CEST 2020)
 ---
 
 
@@ -203,9 +203,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Jul-2020 11:28:30 CEST | [#450](https://github.com/tradecloud/tradecloud-portal-angular/pull/450) |  do not show price reopen in activity if netPrice or grossPrice | @bohdantrc |  |
-
-29. [TC-6159](https://tradecloud.atlassian.net/browse/TC-6159) Remove reject button from Re-open order lines 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 24-Jul-2020 15:22:34 CEST | [#449](https://github.com/tradecloud/tradecloud-portal-angular/pull/449) |  create feature toggle directive for easy add toggle flags | @bohdantrc |  |
 
