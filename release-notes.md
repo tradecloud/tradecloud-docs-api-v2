@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 24 19:30:55 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 24 21:30:51 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Aug-2020 19:16:07 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
-| 2 | Web Portal | 24-Aug-2020 19:13:47 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
+| 1 | Services (Scala) | 24-Aug-2020 19:59:33 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
+| 2 | Web Portal | 24-Aug-2020 19:32:36 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
 
 2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
