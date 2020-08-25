@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Aug 25 19:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Aug 25 21:30:47 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6163](https://tradecloud.atlassian.net/browse/TC-6163) Add buf breaking change checker to CI pipelines 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 25-Aug-2020 19:26:59 CEST | [#1303](https://github.com/tradecloud/tradecloud-microservices/pull/1303) |  Add Protobuf breaking changes detection | @vovinacci |  |
-| 2 | Services (Scala) | 25-Aug-2020 17:40:10 CEST | [#1302](https://github.com/tradecloud/tradecloud-microservices/pull/1302) |  Add buf configuration | @vovinacci |  |
+| 1 | Services (Scala) | 25-Aug-2020 21:00:10 CEST | [#1303](https://github.com/tradecloud/tradecloud-microservices/pull/1303) |  Add Protobuf breaking changes detection | @vovinacci |  |
+| 2 | Services (Scala) | 25-Aug-2020 20:52:57 CEST | [#1302](https://github.com/tradecloud/tradecloud-microservices/pull/1302) |  Add buf configuration | @vovinacci |  |
 
 2. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
