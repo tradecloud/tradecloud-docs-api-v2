@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 28 15:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Aug 28 17:30:46 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Aug-2020 15:09:48 CEST | [#1307](https://github.com/tradecloud/tradecloud-microservices/pull/1307) | : Search workflow tasks by multiple suppliers/buyers | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 28-Aug-2020 15:02:33 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 28-Aug-2020 15:59:36 CEST | [#1284](https://github.com/tradecloud/tradecloud-microservices/pull/1284) | : Added relatedCompanyIds field to filter workflow task by companies | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 28-Aug-2020 15:09:48 CEST | [#1307](https://github.com/tradecloud/tradecloud-microservices/pull/1307) | : Search workflow tasks by multiple suppliers/buyers | @dmytrozheliuk |  |
 
 2. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -211,9 +211,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 29-Jul-2020 11:40:19 CEST | [#324](https://github.com/tradecloud/tradecloud-microservices-go/pull/324) |  Make Mandrill base URL configurable | @marcmatt |  |
-
-28. [TC-6198](https://tradecloud.atlassian.net/browse/TC-6198) Net/gross price changes are shown in the activity stream during a reopen request, while there are no changes.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Jul-2020 15:37:05 CEST | [#453](https://github.com/tradecloud/tradecloud-portal-angular/pull/453) |  set correct field grossPrice in condition | @bohdantrc |  |
 
