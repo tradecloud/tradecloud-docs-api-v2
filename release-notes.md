@@ -1,41 +1,41 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 31 11:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 31 13:30:47 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+1. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 31-Aug-2020 13:11:53 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
+| 2 | Services (Go) | 27-Aug-2020 22:49:49 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
+
+2. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 31-Aug-2020 12:24:01 CEST | [#475](https://github.com/tradecloud/tradecloud-portal-angular/pull/475) |  rewrite links to company and user into simple text | @bohdantrc |  |
+
+3. [TC-5639](https://tradecloud.atlassian.net/browse/TC-5639) buyer/supplier filter box in the Orders/Task page remembers filters but does not show them when coming back on the orders page    
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 31-Aug-2020 12:23:45 CEST | [#476](https://github.com/tradecloud/tradecloud-portal-angular/pull/476) |  add possibility see initial filters in the connection box | @bohdantrc |  |
+
+4. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 31-Aug-2020 10:26:49 CEST | [#1307](https://github.com/tradecloud/tradecloud-microservices/pull/1307) | : Search workflow tasks by multiple suppliers/buyers | @dmytrozheliuk |  |
 
-2. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
+5. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Aug-2020 23:34:33 CEST | [#468](https://github.com/tradecloud/tradecloud-portal-angular/pull/468) |  create auth0 identity and user | @RobinNagpal |  |
 | 2 | Services (Scala) | 21-Aug-2020 13:25:02 CEST | [#1297](https://github.com/tradecloud/tradecloud-microservices/pull/1297) |  create identity and user based on auth0 user | @RobinNagpal |  |
 
-3. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 27-Aug-2020 22:49:49 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 25-Aug-2020 14:59:30 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
-
-4. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
+6. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Aug-2020 17:01:44 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
-
-5. [TC-5639](https://tradecloud.atlassian.net/browse/TC-5639) buyer/supplier filter box in the Orders/Task page remembers filters but does not show them when coming back on the orders page    
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 27-Aug-2020 15:21:01 CEST | [#476](https://github.com/tradecloud/tradecloud-portal-angular/pull/476) |  add possibility see initial filters in the connection box | @bohdantrc |  |
-
-6. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 26-Aug-2020 15:18:56 CEST | [#475](https://github.com/tradecloud/tradecloud-portal-angular/pull/475) |  rewrite links to company and user into simple text | @bohdantrc |  |
 
 7. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
