@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Aug 28 21:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Aug 31 09:31:17 CEST 2020)
 ---
 
 
@@ -63,11 +63,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-Aug-2020 12:59:13 CEST | [#1288](https://github.com/tradecloud/tradecloud-microservices/pull/1288) | [TC-6165] DO NOT MERGE - PoC Data model refactoring with JIT Data Migration and  | @roy-tc |  |
-
-12. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Jul-2020 17:51:33 CEST | [#1289](https://github.com/tradecloud/tradecloud-microservices/pull/1289) |  Draft to illustrate how we can simplify the order behavior and decent… | @roy-tc |  |
 
 ## Changelog
 
@@ -206,9 +201,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 03-Aug-2020 12:12:47 CEST | [#325](https://github.com/tradecloud/tradecloud-microservices-go/pull/325) |  Sync outgoing webhook HTTP request and Kafka timeouts | @vovinacci |  |
-
-27. [TC-5006](https://tradecloud.atlassian.net/browse/TC-5006) As Technical Tester, I want to use a Mandrill API mock for my accp tests 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 29-Jul-2020 11:40:19 CEST | [#324](https://github.com/tradecloud/tradecloud-microservices-go/pull/324) |  Make Mandrill base URL configurable | @marcmatt |  |
 
