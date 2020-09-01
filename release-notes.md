@@ -1,36 +1,36 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Aug 31 21:30:45 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Sep 1 09:31:16 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+1. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Aug-2020 18:26:34 CEST | [#1307](https://github.com/tradecloud/tradecloud-microservices/pull/1307) | : Search workflow tasks by multiple suppliers/buyers | @dmytrozheliuk |  |
+| 1 | Services (Go) | 01-Sep-2020 09:22:22 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 31-Aug-2020 13:31:57 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
 
 2. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Aug-2020 18:09:28 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
-| 2 | Web Portal | 31-Aug-2020 16:35:55 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
+| 1 | Services (Scala) | 01-Sep-2020 00:34:11 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
+| 2 | Web Portal | 31-Aug-2020 22:45:33 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
 
-3. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
+3. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 31-Aug-2020 18:26:34 CEST | [#1307](https://github.com/tradecloud/tradecloud-microservices/pull/1307) | : Search workflow tasks by multiple suppliers/buyers | @dmytrozheliuk |  |
+
+4. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 31-Aug-2020 15:39:31 CEST | [#475](https://github.com/tradecloud/tradecloud-portal-angular/pull/475) |  rewrite links to company and user into simple text | @bohdantrc |  |
 
-4. [TC-5639](https://tradecloud.atlassian.net/browse/TC-5639) buyer/supplier filter box in the Orders/Task page remembers filters but does not show them when coming back on the orders page    
+5. [TC-5639](https://tradecloud.atlassian.net/browse/TC-5639) buyer/supplier filter box in the Orders/Task page remembers filters but does not show them when coming back on the orders page    
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 31-Aug-2020 15:38:24 CEST | [#476](https://github.com/tradecloud/tradecloud-portal-angular/pull/476) |  add possibility see initial filters in the connection box | @bohdantrc |  |
-
-5. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Aug-2020 13:31:57 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
-| 2 | Services (Go) | 27-Aug-2020 22:49:49 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
 
 6. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
