@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Sep 1 11:30:47 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Sep 1 13:30:47 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 01-Sep-2020 09:22:22 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 31-Aug-2020 13:31:57 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
+| 1 | Services (Go) | 01-Sep-2020 13:26:41 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 01-Sep-2020 13:18:39 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
 
 2. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
