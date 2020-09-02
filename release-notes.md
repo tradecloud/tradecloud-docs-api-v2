@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 2 17:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 2 19:30:49 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6314](https://tradecloud.atlassian.net/browse/TC-6314) Use next MessageMeta everywhere 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Sep-2020 17:22:27 CEST | [#1313](https://github.com/tradecloud/tradecloud-microservices/pull/1313) |  Use next MessageMeta where needed | @roy-tc |  |
+| 1 | Services (Scala) | 02-Sep-2020 18:58:27 CEST | [#1313](https://github.com/tradecloud/tradecloud-microservices/pull/1313) |  Use next MessageMeta where needed | @roy-tc |  |
 
 2. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
