@@ -1,35 +1,35 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 2 13:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 2 15:30:51 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+1. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 02-Sep-2020 13:12:26 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
+| 1 | Web Portal | 02-Sep-2020 14:42:12 CEST | [#479](https://github.com/tradecloud/tradecloud-portal-angular/pull/479) |  add checkboxes with events into settings form | @bohdantrc |  |
 
-2. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
+2. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 02-Sep-2020 13:07:47 CEST | [#479](https://github.com/tradecloud/tradecloud-portal-angular/pull/479) |  add checkboxes with events into settings form | @bohdantrc |  |
+| 1 | Services (Scala) | 02-Sep-2020 14:32:54 CEST | [#1312](https://github.com/tradecloud/tradecloud-microservices/pull/1312) |  split supplier order command | @olegtradecloud |  |
 
 3. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 02-Sep-2020 12:58:52 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
+| 1 | Services (Go) | 02-Sep-2020 14:19:09 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 02-Sep-2020 09:15:18 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
 
-4. [TC-6044](https://tradecloud.atlassian.net/browse/TC-6044) company settings cannot be changed anymore after you change &#34;integration&#34; to webhook.  
+4. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 02-Sep-2020 13:12:26 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
+
+5. [TC-6044](https://tradecloud.atlassian.net/browse/TC-6044) company settings cannot be changed anymore after you change &#34;integration&#34; to webhook.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Sep-2020 11:15:34 CEST | [#1311](https://github.com/tradecloud/tradecloud-microservices/pull/1311) | : Fixed credentials issue when saving webhook integration settings at company pr | @dmytrozheliuk |  |
-
-5. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Sep-2020 11:13:56 CEST | [#1312](https://github.com/tradecloud/tradecloud-microservices/pull/1312) |  split supplier order command | @olegtradecloud |  |
 
 6. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
