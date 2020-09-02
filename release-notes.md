@@ -1,40 +1,40 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 2 09:31:19 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 2 11:30:50 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
+1. [TC-6044](https://tradecloud.atlassian.net/browse/TC-6044) company settings cannot be changed anymore after you change &#34;integration&#34; to webhook.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Sep-2020 09:25:22 CEST | [#1312](https://github.com/tradecloud/tradecloud-microservices/pull/1312) |  split supplier order command | @olegtradecloud |  |
+| 1 | Services (Scala) | 02-Sep-2020 11:15:34 CEST | [#1311](https://github.com/tradecloud/tradecloud-microservices/pull/1311) | : Fixed credentials issue when saving webhook integration settings at company pr | @dmytrozheliuk |  |
 
-2. [TC-6044](https://tradecloud.atlassian.net/browse/TC-6044) company settings cannot be changed anymore after you change &#34;integration&#34; to webhook.  
+2. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Sep-2020 09:21:22 CEST | [#1311](https://github.com/tradecloud/tradecloud-microservices/pull/1311) | : Fixed credentials issue when saving webhook integration settings at company pr | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 02-Sep-2020 11:13:56 CEST | [#1312](https://github.com/tradecloud/tradecloud-microservices/pull/1312) |  split supplier order command | @olegtradecloud |  |
 
-3. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
+3. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 02-Sep-2020 10:00:37 CEST | [#475](https://github.com/tradecloud/tradecloud-portal-angular/pull/475) |  rewrite links to company and user into simple text | @bohdantrc |  |
+
+4. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Sep-2020 09:15:18 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
 | 2 | Services (Go) | 01-Sep-2020 18:19:53 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
 
-4. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+5. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Sep-2020 17:20:37 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
-5. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
+6. [TC-6153](https://tradecloud.atlassian.net/browse/TC-6153) Company search box on the Tasks page does not work. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 31-Aug-2020 18:26:34 CEST | [#1307](https://github.com/tradecloud/tradecloud-microservices/pull/1307) | : Search workflow tasks by multiple suppliers/buyers | @dmytrozheliuk |  |
-
-6. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 31-Aug-2020 15:39:31 CEST | [#475](https://github.com/tradecloud/tradecloud-portal-angular/pull/475) |  rewrite links to company and user into simple text | @bohdantrc |  |
 
 7. [TC-5639](https://tradecloud.atlassian.net/browse/TC-5639) buyer/supplier filter box in the Orders/Task page remembers filters but does not show them when coming back on the orders page    
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
