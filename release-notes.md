@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 2 21:30:47 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 3 09:31:19 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6314](https://tradecloud.atlassian.net/browse/TC-6314) Use next MessageMeta everywhere 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Sep-2020 18:58:27 CEST | [#1313](https://github.com/tradecloud/tradecloud-microservices/pull/1313) |  Use next MessageMeta where needed | @roy-tc |  |
+| 1 | Services (Scala) | 03-Sep-2020 09:18:33 CEST | [#1313](https://github.com/tradecloud/tradecloud-microservices/pull/1313) |  Use next MessageMeta where needed | @roy-tc |  |
 
 2. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -68,16 +68,17 @@ description: Tradecloud services and portal open pull requests and changelog (We
 
 ## Changelog
 
-1. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
+1. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 03-Sep-2020 08:59:45 CEST | [#480](https://github.com/tradecloud/tradecloud-portal-angular/pull/480) |  update env variables | @RobinNagpal |  |
+| 2 | Web Portal | 02-Sep-2020 09:28:32 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
+| 3 | Services (Scala) | 02-Sep-2020 09:27:44 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
+
+2. [TC-6271](https://tradecloud.atlassian.net/browse/TC-6271) Split SendOrderResponseBySupplier command 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Sep-2020 16:16:00 CEST | [#1312](https://github.com/tradecloud/tradecloud-microservices/pull/1312) |  split supplier order command | @olegtradecloud |  |
-
-2. [TC-6296](https://tradecloud.atlassian.net/browse/TC-6296) As a SSO users, I should not see the security setting under profile and should not be able to reset password 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 02-Sep-2020 09:28:32 CEST | [#472](https://github.com/tradecloud/tradecloud-portal-angular/pull/472) |  add identity provider | @RobinNagpal |  |
-| 2 | Services (Scala) | 02-Sep-2020 09:27:44 CEST | [#1299](https://github.com/tradecloud/tradecloud-microservices/pull/1299) |  add identity provider | @RobinNagpal |  |
 
 3. [TC-6144](https://tradecloud.atlassian.net/browse/TC-6144) As SSO Enabled company, after I login with on AD page, I should be logged in to tradecloud portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
