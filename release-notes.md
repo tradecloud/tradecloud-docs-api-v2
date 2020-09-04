@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Sep 4 15:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Sep 4 17:30:47 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6323](https://tradecloud.atlassian.net/browse/TC-6323) Event handling of incoming-user-company-order-sent-by-buyer results in Invalid operation: 
+1. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Sep-2020 15:25:27 CEST | [#1314](https://github.com/tradecloud/tradecloud-microservices/pull/1314) | Remove ActorPublishing trait | @roy-tc |  |
-
-2. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Sep-2020 14:04:40 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 04-Sep-2020 16:10:33 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
 | 2 | Services (Go) | 02-Sep-2020 17:11:39 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
+
+2. [TC-6323](https://tradecloud.atlassian.net/browse/TC-6323) Event handling of incoming-user-company-order-sent-by-buyer results in Invalid operation: 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 04-Sep-2020 15:46:38 CEST | [#1314](https://github.com/tradecloud/tradecloud-microservices/pull/1314) | Remove ActorPublishing trait | @roy-tc |  |
 
 3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -31,7 +31,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Sep-2020 13:20:54 CEST | [#479](https://github.com/tradecloud/tradecloud-portal-angular/pull/479) |  add checkboxes with events into settings form | @bohdantrc |  |
 
-6. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Approving/Rejecting an reopen request task will break the Tasks page Closed tap 
+6. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Sep-2020 11:36:54 CEST | [#481](https://github.com/tradecloud/tradecloud-portal-angular/pull/481) |  don`t show closed reopen request | @bohdantrc |  |
@@ -218,9 +218,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Aug-2020 11:52:11 CEST | [#457](https://github.com/tradecloud/tradecloud-portal-angular/pull/457) |   add back button and fix bug | @RobinNagpal |  |
-
-29. [TC-6047](https://tradecloud.atlassian.net/browse/TC-6047) As DevOps I want to update portal dependencies (node/typescript) 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Aug-2020 15:35:28 CEST | [#460](https://github.com/tradecloud/tradecloud-portal-angular/pull/460) |  set new version node.js in .nvmrc file | @bohdantrc |  |
 
