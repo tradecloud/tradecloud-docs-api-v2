@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 7 17:30:45 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 7 19:30:43 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
+1. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 07-Sep-2020 17:32:43 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
+| 2 | Web Portal | 07-Sep-2020 11:49:02 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
+
+2. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Sep-2020 17:22:05 CEST | [#482](https://github.com/tradecloud/tradecloud-portal-angular/pull/482) |  add checkboxes with events into settings form  | @bohdantrc |  |
-
-2. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Sep-2020 17:08:56 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
-| 2 | Web Portal | 07-Sep-2020 11:49:02 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
 
 3. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
