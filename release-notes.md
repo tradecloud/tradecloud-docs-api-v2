@@ -1,56 +1,56 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 7 09:31:15 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 7 11:30:46 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
+1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 07-Sep-2020 09:19:56 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 04-Sep-2020 16:10:33 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
+| 1 | Web Portal | 07-Sep-2020 11:27:25 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
+| 2 | Web Portal | 06-Sep-2020 14:04:02 CEST | [#483](https://github.com/tradecloud/tradecloud-portal-angular/pull/483) | Bump http-proxy from 1.17.0 to 1.18.1 | @dependabot[bot] |  |
 
-2. [TC-6044](https://tradecloud.atlassian.net/browse/TC-6044) company settings cannot be changed anymore after you change &#34;integration&#34; to webhook.  
+2. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 07-Sep-2020 11:27:24 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 07-Sep-2020 10:56:33 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
+
+3. [TC-6323](https://tradecloud.atlassian.net/browse/TC-6323) Event handling of incoming-user-company-order-sent-by-buyer results in Invalid operation: 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 07-Sep-2020 11:15:07 CEST | [#1314](https://github.com/tradecloud/tradecloud-microservices/pull/1314) | Remove ActorPublishing trait | @roy-tc |  |
+
+4. [TC-6314](https://tradecloud.atlassian.net/browse/TC-6314) Use next MessageMeta everywhere 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 07-Sep-2020 11:14:00 CEST | [#1313](https://github.com/tradecloud/tradecloud-microservices/pull/1313) |  Use next MessageMeta where needed | @roy-tc |  |
+
+5. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 07-Sep-2020 10:53:49 CEST | [#482](https://github.com/tradecloud/tradecloud-portal-angular/pull/482) |  add checkboxes with events into settings form  | @bohdantrc |  |
+
+6. [TC-6044](https://tradecloud.atlassian.net/browse/TC-6044) company settings cannot be changed anymore after you change &#34;integration&#34; to webhook.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Sep-2020 09:04:37 CEST | [#1311](https://github.com/tradecloud/tradecloud-microservices/pull/1311) | : Fixed credentials issue when saving webhook integration settings at company pr | @dmytrozheliuk |  |
 
-3. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+7. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Sep-2020 20:30:13 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
-4. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 06-Sep-2020 14:04:02 CEST | [#483](https://github.com/tradecloud/tradecloud-portal-angular/pull/483) | Bump http-proxy from 1.17.0 to 1.18.1 | @dependabot[bot] |  |
-| 2 | Web Portal | 04-Sep-2020 13:50:14 CEST | [#482](https://github.com/tradecloud/tradecloud-portal-angular/pull/482) | Tc 5282 integration settings event names | @bohdantrc |  |
-
-5. [TC-6323](https://tradecloud.atlassian.net/browse/TC-6323) Event handling of incoming-user-company-order-sent-by-buyer results in Invalid operation: 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Sep-2020 15:46:38 CEST | [#1314](https://github.com/tradecloud/tradecloud-microservices/pull/1314) | Remove ActorPublishing trait | @roy-tc |  |
-
-6. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Sep-2020 13:20:54 CEST | [#479](https://github.com/tradecloud/tradecloud-portal-angular/pull/479) |  add checkboxes with events into settings form | @bohdantrc |  |
-
-7. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
+8. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Sep-2020 11:36:54 CEST | [#481](https://github.com/tradecloud/tradecloud-portal-angular/pull/481) |  don`t show closed reopen request | @bohdantrc |  |
 
-8. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
+9. [TC-6217](https://tradecloud.atlassian.net/browse/TC-6217) Buyer/supplier company &amp; contact links in the Buyer/supplier tap on the order detail page work, while the shouldn&#39;t.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Sep-2020 09:30:53 CEST | [#475](https://github.com/tradecloud/tradecloud-portal-angular/pull/475) |  rewrite links to company and user into simple text | @bohdantrc |  |
-
-9. [TC-6314](https://tradecloud.atlassian.net/browse/TC-6314) Use next MessageMeta everywhere 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Sep-2020 12:57:25 CEST | [#1313](https://github.com/tradecloud/tradecloud-microservices/pull/1313) |  Use next MessageMeta where needed | @roy-tc |  |
 
 10. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
