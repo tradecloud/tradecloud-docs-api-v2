@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 7 15:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 7 17:30:45 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
+1. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 07-Sep-2020 13:42:08 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 07-Sep-2020 13:41:11 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
+| 1 | Web Portal | 07-Sep-2020 17:22:05 CEST | [#482](https://github.com/tradecloud/tradecloud-portal-angular/pull/482) |  add checkboxes with events into settings form  | @bohdantrc |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Sep-2020 11:49:02 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
-| 2 | Web Portal | 06-Sep-2020 14:04:02 CEST | [#483](https://github.com/tradecloud/tradecloud-portal-angular/pull/483) | Bump http-proxy from 1.17.0 to 1.18.1 | @dependabot[bot] |  |
+| 1 | Services (Scala) | 07-Sep-2020 17:08:56 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
+| 2 | Web Portal | 07-Sep-2020 11:49:02 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
 
-3. [TC-6294](https://tradecloud.atlassian.net/browse/TC-6294) Implement UI View for configuring enabled event names 
+3. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Sep-2020 10:53:49 CEST | [#482](https://github.com/tradecloud/tradecloud-portal-angular/pull/482) |  add checkboxes with events into settings form  | @bohdantrc |  |
+| 1 | Services (Scala) | 07-Sep-2020 15:53:06 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
-4. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+4. [TC-5282](https://tradecloud.atlassian.net/browse/TC-5282) As a customer I would like to select the order events sent to my ERP system [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Sep-2020 20:30:13 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+| 1 | Services (Go) | 07-Sep-2020 13:42:08 CEST | [#327](https://github.com/tradecloud/tradecloud-microservices-go/pull/327) | [TC-6292]: Filtering events based on enabled event names | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 07-Sep-2020 13:41:11 CEST | [#1298](https://github.com/tradecloud/tradecloud-microservices/pull/1298) | [TC-6293]: Added `enabledEventNames` field to `CompanyIntegrationSettings` | @dmytrozheliuk |  |
 
 5. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
