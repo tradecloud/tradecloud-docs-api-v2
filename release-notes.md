@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Sep 8 15:30:45 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Sep 8 17:30:43 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Sep-2020 14:20:38 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
-| 2 | Web Portal | 07-Sep-2020 11:49:02 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
+| 1 | Web Portal | 08-Sep-2020 17:12:58 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
+| 2 | Services (Scala) | 08-Sep-2020 14:20:38 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
 
 2. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
