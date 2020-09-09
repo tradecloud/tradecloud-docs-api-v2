@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Sep 8 21:30:45 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 9 09:31:16 CEST 2020)
 ---
 
 
@@ -8,7 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 08-Sep-2020 21:01:01 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
+| 1 | Services (Scala) | 09-Sep-2020 00:22:44 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
+| 2 | Web Portal | 08-Sep-2020 23:45:24 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
