@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 19:30:44 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 21:30:46 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 10-Sep-2020 20:52:04 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
+
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Sep-2020 17:19:23 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
 | 2 | Web Portal | 08-Sep-2020 17:12:58 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
-
-2. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Sep-2020 17:09:47 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
 
 3. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
