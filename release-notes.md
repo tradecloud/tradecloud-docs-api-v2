@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 09:31:14 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 11:31:04 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
+1. [TC-4456](https://tradecloud.atlassian.net/browse/TC-4456) Refactor persist-publish pattern used through codebase 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 10-Sep-2020 11:13:15 CEST | [#1318](https://github.com/tradecloud/tradecloud-microservices/pull/1318) | [TC-6323] Don&#39;t call handler when publishing failed | @roy-tc |  |
+
+2. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Sep-2020 09:14:10 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
 
-2. [N/A](#)  
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Sep-2020 17:29:21 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
 | 2 | Web Portal | 08-Sep-2020 17:12:58 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
-
-3. [TC-4456](https://tradecloud.atlassian.net/browse/TC-4456) Refactor persist-publish pattern used through codebase 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Sep-2020 17:13:47 CEST | [#1318](https://github.com/tradecloud/tradecloud-microservices/pull/1318) | [TC-6323] Don&#39;t call handler when publishing failed | @roy-tc |  |
 
 4. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
