@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 11:31:04 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 13:30:45 CEST 2020)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-4456](https://tradecloud.atlassian.net/browse/TC-4456) Refactor persist-publish pattern used through codebase 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Sep-2020 11:13:15 CEST | [#1318](https://github.com/tradecloud/tradecloud-microservices/pull/1318) | [TC-6323] Don&#39;t call handler when publishing failed | @roy-tc |  |
+| 1 | Services (Scala) | 10-Sep-2020 13:10:09 CEST | [#1318](https://github.com/tradecloud/tradecloud-microservices/pull/1318) | [TC-6323] Don&#39;t call handler when publishing failed | @roy-tc |  |
 
 2. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Sep-2020 09:14:10 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
+| 1 | Web Portal | 10-Sep-2020 11:35:06 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
 
 3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -201,9 +201,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 11-Aug-2020 15:19:55 CEST | [#464](https://github.com/tradecloud/tradecloud-portal-angular/pull/464) |  Add format for money and discount | @bohdantrc |  |
-
-30. [TC-6226](https://tradecloud.atlassian.net/browse/TC-6226) Refactor order-service to use new OrderLinesUpdatedByBuyer event 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Aug-2020 11:39:23 CEST | [#1292](https://github.com/tradecloud/tradecloud-microservices/pull/1292) |  Refactor order service | @olegtradecloud |  |
 
