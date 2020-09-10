@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 15:30:47 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 10 17:30:47 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6306](https://tradecloud.atlassian.net/browse/TC-6306) QA: a new line can be added to a confirmed order when the buyer sends an updated order 
+1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Sep-2020 15:21:30 CEST | [#1319](https://github.com/tradecloud/tradecloud-microservices/pull/1319) |  Bogus PR to test accp tests (DO NOT MERGE) | @marcmatt |  |
+| 1 | Services (Scala) | 10-Sep-2020 17:19:23 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
+| 2 | Web Portal | 08-Sep-2020 17:12:58 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
 
 2. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Sep-2020 11:35:06 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
+| 1 | Web Portal | 10-Sep-2020 17:09:47 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
 
-3. [N/A](#)  
+3. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Sep-2020 17:29:21 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
-| 2 | Web Portal | 08-Sep-2020 17:12:58 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
+| 1 | Services (Scala) | 10-Sep-2020 15:33:35 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
 4. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -32,12 +32,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 1 | Web Portal | 09-Sep-2020 11:24:24 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
 | 2 | Services (Scala) | 09-Sep-2020 10:46:56 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
 
-6. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Sep-2020 13:45:17 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
-
-7. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
+6. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Aug-2020 16:13:30 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
