@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Sep 11 17:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Sep 11 19:30:45 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Sep-2020 16:58:14 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  sent mixpanel event after attach document in order or order… | @bohdantrc |  |
+| 1 | Web Portal | 11-Sep-2020 17:51:09 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  Implement and refactor multiple mixpanel events | @bohdantrc |  |
 
 2. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -197,9 +197,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Aug-2020 09:32:10 CEST | [#463](https://github.com/tradecloud/tradecloud-portal-angular/pull/463) |  Add notification with error about upload file | @bohdantrc |  |
-
-29. [TC-6221](https://tradecloud.atlassian.net/browse/TC-6221) Add missed logistics status business rules to order service 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Aug-2020 17:33:30 CEST | [#1291](https://github.com/tradecloud/tradecloud-microservices/pull/1291) |   Logistic status missing rules | @olegtradecloud |  |
 
