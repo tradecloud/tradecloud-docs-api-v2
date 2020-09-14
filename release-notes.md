@@ -1,41 +1,41 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 14 13:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 14 15:30:49 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
+1. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Sep-2020 13:28:16 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  Implement and refactor multiple mixpanel events | @bohdantrc |  |
+| 1 | Web Portal | 14-Sep-2020 15:03:39 CEST | [#481](https://github.com/tradecloud/tradecloud-portal-angular/pull/481) |  don`t show closed reopen request | @bohdantrc |  |
 
-2. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
+2. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 14-Sep-2020 15:03:35 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
+| 2 | Services (Go) | 14-Sep-2020 09:46:41 CEST | [#330](https://github.com/tradecloud/tradecloud-microservices-go/pull/330) | : Optional buyer delivery position | @dmytrozheliuk |  |
+
+3. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 14-Sep-2020 15:02:17 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  Implement and refactor multiple mixpanel events | @bohdantrc |  |
+
+4. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 14-Sep-2020 15:00:24 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
+
+5. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Sep-2020 12:15:26 CEST | [#1321](https://github.com/tradecloud/tradecloud-microservices/pull/1321) | : Fixed conversation spec route name `getConversationById` | @dmytrozheliuk |  |
 
-3. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+6. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Sep-2020 11:54:32 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
 | 2 | Services (Scala) | 11-Sep-2020 02:00:56 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
-
-4. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Sep-2020 11:38:51 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
-| 2 | Services (Go) | 14-Sep-2020 09:46:41 CEST | [#330](https://github.com/tradecloud/tradecloud-microservices-go/pull/330) | : Optional buyer delivery position | @dmytrozheliuk |  |
-
-5. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Sep-2020 11:29:58 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
-
-6. [TC-6215](https://tradecloud.atlassian.net/browse/TC-6215) Closed tasks are only shown in the closed tasks tap after refreshing. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Sep-2020 10:20:16 CEST | [#481](https://github.com/tradecloud/tradecloud-portal-angular/pull/481) |  don`t show closed reopen request | @bohdantrc |  |
 
 7. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
