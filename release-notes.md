@@ -1,48 +1,53 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 14 19:30:42 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 14 21:30:47 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
+1. [TC-4323](https://tradecloud.atlassian.net/browse/TC-4323) JWT authorization token does not expire at Go services 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 14-Sep-2020 20:29:35 CEST | [#331](https://github.com/tradecloud/tradecloud-microservices-go/pull/331) |  Check JWT token expiry time | @vovinacci |  |
+
+2. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Sep-2020 17:02:13 CEST | [#1321](https://github.com/tradecloud/tradecloud-microservices/pull/1321) | : Fixed conversation spec route name `getConversationById` | @dmytrozheliuk |  |
 
-2. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
+3. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Sep-2020 16:51:36 CEST | [#477](https://github.com/tradecloud/tradecloud-portal-angular/pull/477) |  Implement and refactor multiple mixpanel events | @bohdantrc |  |
 
-3. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
+4. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Sep-2020 16:27:00 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
 
-4. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+5. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Sep-2020 15:47:26 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
 | 2 | Services (Go) | 14-Sep-2020 09:46:41 CEST | [#330](https://github.com/tradecloud/tradecloud-microservices-go/pull/330) | : Optional buyer delivery position | @dmytrozheliuk |  |
 
-5. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+6. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Sep-2020 11:54:32 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
 | 2 | Services (Scala) | 11-Sep-2020 02:00:56 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
 
-6. [N/A](#)  
+7. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Sep-2020 08:29:53 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
 
-7. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+8. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Sep-2020 15:33:35 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
-8. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
+9. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Aug-2020 16:13:30 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
