@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Sep 15 11:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Sep 15 13:30:46 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
+1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Sep-2020 11:28:54 CEST | [#1321](https://github.com/tradecloud/tradecloud-microservices/pull/1321) | : Fixed conversation spec route name `getConversationById` | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 15-Sep-2020 13:25:59 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
 
-2. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+2. [TC-4323](https://tradecloud.atlassian.net/browse/TC-4323) JWT authorization token does not expire at Go services 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Sep-2020 10:52:45 CEST | [#486](https://github.com/tradecloud/tradecloud-portal-angular/pull/486) |  Add logic send position and edit position in dialog | @bohdantrc |  |
-| 2 | Services (Scala) | 15-Sep-2020 10:03:35 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
+| 1 | Services (Go) | 15-Sep-2020 13:17:21 CEST | [#331](https://github.com/tradecloud/tradecloud-microservices-go/pull/331) |  Check JWT token expiry time | @vovinacci |  |
+
+3. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Sep-2020 12:37:15 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
+| 2 | Web Portal | 15-Sep-2020 12:18:35 CEST | [#486](https://github.com/tradecloud/tradecloud-portal-angular/pull/486) | [TC-4927] Add logic send position and edit position in dialog | @bohdantrc |  |
 | 3 | Services (Go) | 15-Sep-2020 09:58:15 CEST | [#330](https://github.com/tradecloud/tradecloud-microservices-go/pull/330) | : Optional buyer delivery position | @dmytrozheliuk |  |
 
-3. [N/A](#)  
+4. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Sep-2020 10:40:54 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
-
-4. [TC-4323](https://tradecloud.atlassian.net/browse/TC-4323) JWT authorization token does not expire at Go services 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 15-Sep-2020 09:56:40 CEST | [#331](https://github.com/tradecloud/tradecloud-microservices-go/pull/331) |  Check JWT token expiry time | @vovinacci |  |
+| 1 | Services (Scala) | 15-Sep-2020 11:51:24 CEST | [#1321](https://github.com/tradecloud/tradecloud-microservices/pull/1321) | : Fixed conversation spec route name `getConversationById` | @dmytrozheliuk |  |
 
 5. [TC-6297](https://tradecloud.atlassian.net/browse/TC-6297) Implement and refactor multiple mixpanel events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
