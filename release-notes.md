@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 16 17:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 16 19:30:45 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+1. [TC-6321](https://tradecloud.atlassian.net/browse/TC-6321) Unit tests for process new accept/propose/reject/update domain command on order level 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Sep-2020 17:51:00 CEST | [#1323](https://github.com/tradecloud/tradecloud-microservices/pull/1323) |  supplier order response tests | @olegtradecloud |  |
+
+2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Sep-2020 15:45:07 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
-
-2. [TC-6321](https://tradecloud.atlassian.net/browse/TC-6321) Unit tests for process new accept/propose/reject/update domain command on order level 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Sep-2020 15:10:00 CEST | [#1323](https://github.com/tradecloud/tradecloud-microservices/pull/1323) |  supplier order response tests | @olegtradecloud |  |
 
 3. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
