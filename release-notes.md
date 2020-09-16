@@ -1,49 +1,54 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 16 09:31:16 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 16 11:30:48 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6321](https://tradecloud.atlassian.net/browse/TC-6321) Unit tests for process new accept/propose/reject/update domain command on order level 
+1. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 16-Sep-2020 11:28:19 CEST | [#486](https://github.com/tradecloud/tradecloud-portal-angular/pull/486) | [TC-4927] Add logic send position and edit position in dialog | @bohdantrc |  |
+| 2 | Services (Go) | 15-Sep-2020 16:09:49 CEST | [#330](https://github.com/tradecloud/tradecloud-microservices-go/pull/330) | : Optional buyer delivery position | @dmytrozheliuk |  |
+| 3 | Services (Scala) | 15-Sep-2020 12:37:15 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
+
+2. [TC-6333](https://tradecloud.atlassian.net/browse/TC-6333) Version conflict between order-search and order services. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Sep-2020 11:16:18 CEST | [#1324](https://github.com/tradecloud/tradecloud-microservices/pull/1324) |  Add logging for OrderViews returned by search service and websocket | @roy-tc |  |
+
+3. [TC-6321](https://tradecloud.atlassian.net/browse/TC-6321) Unit tests for process new accept/propose/reject/update domain command on order level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Sep-2020 20:49:57 CEST | [#1323](https://github.com/tradecloud/tradecloud-microservices/pull/1323) |  supplier order response tests | @olegtradecloud |  |
 
-2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+4. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Sep-2020 20:46:29 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
-3. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
+5. [TC-5813](https://tradecloud.atlassian.net/browse/TC-5813) ConversationMessageView doersn&#39;t match to expected 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Sep-2020 17:13:31 CEST | [#1321](https://github.com/tradecloud/tradecloud-microservices/pull/1321) | : Fixed conversation spec route name `getConversationById` | @dmytrozheliuk |  |
 
-4. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
+6. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Sep-2020 16:44:38 CEST | [#487](https://github.com/tradecloud/tradecloud-portal-angular/pull/487) |  add fields into intercom request | @bohdantrc |  |
 
-5. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule [Planned release 31-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 15-Sep-2020 16:09:49 CEST | [#330](https://github.com/tradecloud/tradecloud-microservices-go/pull/330) | : Optional buyer delivery position | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 15-Sep-2020 12:37:15 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
-| 3 | Web Portal | 15-Sep-2020 12:18:35 CEST | [#486](https://github.com/tradecloud/tradecloud-portal-angular/pull/486) | [TC-4927] Add logic send position and edit position in dialog | @bohdantrc |  |
-
-6. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
+7. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Sep-2020 16:27:00 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
 
-7. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+8. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Sep-2020 11:54:32 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
 | 2 | Services (Scala) | 11-Sep-2020 02:00:56 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
 
-8. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
+9. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Aug-2020 16:13:30 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
