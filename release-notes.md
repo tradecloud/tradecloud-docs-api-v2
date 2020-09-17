@@ -1,14 +1,14 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 16 21:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 17 09:31:19 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
+1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Sep-2020 21:17:22 CEST | [#333](https://github.com/tradecloud/tradecloud-microservices-go/pull/333) |  PoC: Kafka consumer producer | @vovinacci |  |
+| 1 | Services (Go) | 17-Sep-2020 09:18:16 CEST | [#333](https://github.com/tradecloud/tradecloud-microservices-go/pull/333) |  PoC: Kafka consumer producer | @vovinacci |  |
 
 2. [TC-6321](https://tradecloud.atlassian.net/browse/TC-6321) Unit tests for process new accept/propose/reject/update domain command on order level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
