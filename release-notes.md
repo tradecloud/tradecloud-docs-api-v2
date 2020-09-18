@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Sep 18 19:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Sep 18 21:30:44 CEST 2020)
 ---
 
 
@@ -30,12 +30,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Sep-2020 12:41:51 CEST | [#1325](https://github.com/tradecloud/tradecloud-microservices/pull/1325) | DO NOT MERGE | @denys-kondartiuk |  |
 
-6. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-Sep-2020 09:18:16 CEST | [#333](https://github.com/tradecloud/tradecloud-microservices-go/pull/333) |  PoC: Kafka consumer producer | @vovinacci |  |
-
-7. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+6. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Sep-2020 13:21:36 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
