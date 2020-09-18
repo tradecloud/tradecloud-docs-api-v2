@@ -1,34 +1,34 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Sep 18 11:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Sep 18 13:30:48 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
+1. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-Sep-2020 09:46:53 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
+| 1 | Web Portal | 18-Sep-2020 12:23:19 CEST | [#487](https://github.com/tradecloud/tradecloud-portal-angular/pull/487) |  add fields into intercom request | @bohdantrc |  |
 
 2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Sep-2020 17:16:25 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+| 1 | Services (Scala) | 18-Sep-2020 12:04:50 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
-3. [TC-6273](https://tradecloud.atlassian.net/browse/TC-6273) Unit tests for Implement order lines accepting/proposing/rejecting/updating 
+3. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 18-Sep-2020 09:46:53 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
+
+4. [TC-6273](https://tradecloud.atlassian.net/browse/TC-6273) Unit tests for Implement order lines accepting/proposing/rejecting/updating 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Sep-2020 14:14:19 CEST | [#1326](https://github.com/tradecloud/tradecloud-microservices/pull/1326) |  order line behavior tests | @olegtradecloud |  |
 
-4. [N/A](#)  
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Sep-2020 12:41:51 CEST | [#1325](https://github.com/tradecloud/tradecloud-microservices/pull/1325) | DO NOT MERGE | @denys-kondartiuk |  |
-
-5. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 17-Sep-2020 11:18:46 CEST | [#487](https://github.com/tradecloud/tradecloud-portal-angular/pull/487) |  add fields into intercom request | @bohdantrc |  |
 
 6. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -228,10 +228,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 19-Aug-2020 09:57:26 CEST | [#465](https://github.com/tradecloud/tradecloud-portal-angular/pull/465) |  Add extra limit in task query request | @bohdantrc |  |
-
-34. [TC-6180](https://tradecloud.atlassian.net/browse/TC-6180) Refactor OrderLinesReissuedByBuyer to OrderLinesUpdatedByBuyer when the line is not Issued 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-Aug-2020 12:48:18 CEST | [#466](https://github.com/tradecloud/tradecloud-portal-angular/pull/466) |  add order and order line status for activity | @bohdantrc |  |
-| 2 | Services (Scala) | 18-Aug-2020 12:47:22 CEST | [#1295](https://github.com/tradecloud/tradecloud-microservices/pull/1295) |  Order updated by buyer | @olegtradecloud |  |
 
