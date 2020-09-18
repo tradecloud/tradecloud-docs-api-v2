@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Sep 18 13:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Sep 18 15:30:49 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
+1. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-Sep-2020 14:30:06 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+
+2. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Sep-2020 12:23:19 CEST | [#487](https://github.com/tradecloud/tradecloud-portal-angular/pull/487) |  add fields into intercom request | @bohdantrc |  |
-
-2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Sep-2020 12:04:50 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
 3. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
