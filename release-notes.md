@@ -1,24 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 21 15:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 21 17:30:44 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6277](https://tradecloud.atlassian.net/browse/TC-6277) Create an activity for the new OrderLinesUpdatedBySupplier event 
+1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Sep-2020 15:21:26 CEST | [#1329](https://github.com/tradecloud/tradecloud-microservices/pull/1329) |  - add supplier order update activities | @olegtradecloud |  |
+| 1 | Services (Scala) | 21-Sep-2020 17:27:20 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events | @vovinacci |  |
+| 2 | Services (Go) | 21-Sep-2020 17:18:32 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events | @vovinacci |  |
 
-2. [TC-6273](https://tradecloud.atlassian.net/browse/TC-6273) Unit tests for Implement order lines accepting/proposing/rejecting/updating 
+2. [TC-6277](https://tradecloud.atlassian.net/browse/TC-6277) Create an activity for the new OrderLinesUpdatedBySupplier event 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Sep-2020 15:42:22 CEST | [#1329](https://github.com/tradecloud/tradecloud-microservices/pull/1329) |  - add supplier order update activities | @olegtradecloud |  |
+
+3. [TC-6273](https://tradecloud.atlassian.net/browse/TC-6273) Unit tests for Implement order lines accepting/proposing/rejecting/updating 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Sep-2020 13:47:23 CEST | [#1326](https://github.com/tradecloud/tradecloud-microservices/pull/1326) |  order line behavior tests | @olegtradecloud |  |
-
-3. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 21-Sep-2020 13:34:49 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events | @vovinacci |  |
 
 4. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
