@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 21 11:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 21 13:30:44 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
+1. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Sep-2020 12:28:09 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+
+2. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 21-Sep-2020 11:19:53 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events | @vovinacci |  |
-
-2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Sep-2020 21:38:45 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 
 3. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -188,24 +188,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Aug-2020 09:55:03 CEST | [#469](https://github.com/tradecloud/tradecloud-portal-angular/pull/469) |  rewrite calling mixpanel events | @bohdantrc |  |
-
-27. [TC-5555](https://tradecloud.atlassian.net/browse/TC-5555) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Aug-2020 12:47:01 CEST | [#473](https://github.com/tradecloud/tradecloud-portal-angular/pull/473) |  Trigger build | @bohdantrc |  |
-
-28. [TC-6265](https://tradecloud.atlassian.net/browse/TC-6265) FE: Storage for updated Tasks 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Aug-2020 11:41:35 CEST | [#470](https://github.com/tradecloud/tradecloud-portal-angular/pull/470) |  Add closedIds and filter tasks | @bohdantrc |  |
-
-29. [TC-6267](https://tradecloud.atlassian.net/browse/TC-6267) Order performance metrics broken when you leave the Dashboard page and return to it 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Aug-2020 11:41:07 CEST | [#471](https://github.com/tradecloud/tradecloud-portal-angular/pull/471) |  give one value from stream to avoiding que streams | @bohdantrc |  |
-
-30. [TC-5640](https://tradecloud.atlassian.net/browse/TC-5640) As product management I want to show product info on the dashboard page 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Aug-2020 11:40:32 CEST | [#400](https://github.com/tradecloud/tradecloud-portal-angular/pull/400) |  Change aside part in dashboard | @bohdantrc |  |
 
