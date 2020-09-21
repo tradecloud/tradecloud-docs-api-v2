@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 21 19:30:45 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 21 21:30:47 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Sep-2020 17:27:20 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events | @vovinacci |  |
-| 2 | Services (Go) | 21-Sep-2020 17:18:32 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events | @vovinacci |  |
+| 1 | Services (Go) | 21-Sep-2020 20:55:20 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events | @vovinacci |  |
+| 2 | Services (Scala) | 21-Sep-2020 20:54:03 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events | @vovinacci |  |
 
 2. [TC-6277](https://tradecloud.atlassian.net/browse/TC-6277) Create an activity for the new OrderLinesUpdatedBySupplier event 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
