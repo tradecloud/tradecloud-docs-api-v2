@@ -1,25 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Sep 22 13:30:50 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Sep 22 15:30:48 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5604](https://tradecloud.atlassian.net/browse/TC-5604) As DevOps I want to have possibility to run acceptance tests only for services amended in PR 
+1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 22-Sep-2020 13:25:12 CEST | [#335](https://github.com/tradecloud/tradecloud-microservices-go/pull/335) |  - Add possibility to run acceptance tests only for services amended in PR | @denys-kondartiuk |  |
+| 1 | Services (Scala) | 22-Sep-2020 15:15:49 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events #1 | @vovinacci |  |
+| 2 | Services (Go) | 22-Sep-2020 15:03:14 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events #1 | @vovinacci |  |
 
-2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+2. [TC-5604](https://tradecloud.atlassian.net/browse/TC-5604) As DevOps I want to have possibility to run acceptance tests only for services amended in PR 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 22-Sep-2020 14:49:21 CEST | [#1331](https://github.com/tradecloud/tradecloud-microservices/pull/1331) |  - Add possibility to run acceptance tests only for services amended in PR | @denys-kondartiuk |  |
+| 2 | Services (Go) | 22-Sep-2020 14:14:17 CEST | [#335](https://github.com/tradecloud/tradecloud-microservices-go/pull/335) |  - Add possibility to run acceptance tests only for services amended in PR | @denys-kondartiuk |  |
+
+3. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Sep-2020 12:55:45 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
-
-3. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 22-Sep-2020 12:53:54 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events #1 | @vovinacci |  |
-| 2 | Services (Scala) | 22-Sep-2020 10:17:57 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events #1 | @vovinacci |  |
 
 4. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
