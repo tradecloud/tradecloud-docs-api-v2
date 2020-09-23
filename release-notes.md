@@ -1,26 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 23 09:31:16 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 23 11:30:47 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+1. [TC-6333](https://tradecloud.atlassian.net/browse/TC-6333) Version conflict between order-search and order services. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Sep-2020 00:23:40 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
-| 2 | Services (Scala) | 16-Sep-2020 13:21:36 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
+| 1 | Services (Scala) | 23-Sep-2020 10:16:46 CEST | [#1332](https://github.com/tradecloud/tradecloud-microservices/pull/1332) |  log user info | @roy-tc |  |
 
 2. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Sep-2020 18:40:21 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events #1 | @vovinacci |  |
-| 2 | Services (Go) | 22-Sep-2020 18:39:42 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events #1 | @vovinacci |  |
+| 1 | Services (Scala) | 23-Sep-2020 09:48:38 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events #1 | @vovinacci |  |
+| 2 | Services (Go) | 23-Sep-2020 09:34:42 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events #1 | @vovinacci |  |
 
-3. [TC-6333](https://tradecloud.atlassian.net/browse/TC-6333) Version conflict between order-search and order services. 
+3. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Sep-2020 17:12:48 CEST | [#1332](https://github.com/tradecloud/tradecloud-microservices/pull/1332) |  log user info | @roy-tc |  |
+| 1 | Web Portal | 23-Sep-2020 00:23:40 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
+| 2 | Services (Scala) | 16-Sep-2020 13:21:36 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
 
 4. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
