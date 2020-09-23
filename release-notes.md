@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 23 19:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 23 21:30:44 CEST 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Sep-2020 19:20:33 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
-| 2 | Services (Go) | 23-Sep-2020 19:19:57 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
+| 1 | Services (Go) | 23-Sep-2020 21:18:32 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
+| 2 | Services (Scala) | 23-Sep-2020 19:20:33 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
 
 2. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
