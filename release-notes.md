@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Sep 24 09:31:15 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 24 11:30:51 CEST 2020)
 ---
 
 
@@ -8,8 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Sep-2020 09:05:46 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
-| 2 | Services (Go) | 24-Sep-2020 09:05:32 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
+| 1 | Services (Scala) | 24-Sep-2020 11:13:48 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
 
 2. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive &#34;Customer label reference&#34; data on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -39,29 +38,30 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 
 ## Changelog
 
-1. [TC-6333](https://tradecloud.atlassian.net/browse/TC-6333) Version conflict between order-search and order services. 
+1. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 24-Sep-2020 10:17:54 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
+| 2 | Services (Go) | 22-Sep-2020 16:21:31 CEST | [#336](https://github.com/tradecloud/tradecloud-microservices-go/pull/336) |  Add webhook event name logging | @vovinacci |  |
+
+2. [TC-6333](https://tradecloud.atlassian.net/browse/TC-6333) Version conflict between order-search and order services. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Sep-2020 17:44:41 CEST | [#1332](https://github.com/tradecloud/tradecloud-microservices/pull/1332) |  log user info | @roy-tc |  |
 | 2 | Services (Scala) | 16-Sep-2020 13:05:22 CEST | [#1324](https://github.com/tradecloud/tradecloud-microservices/pull/1324) |  Add logging for OrderViews returned by search service and websocket | @roy-tc |  |
 | 3 | Services (Scala) | 09-Sep-2020 16:52:52 CEST | [#1317](https://github.com/tradecloud/tradecloud-microservices/pull/1317) |  Add logging of order view version to order-search and order-line-search service | @roy-tc |  |
 
-2. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client 
+3. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 23-Sep-2020 15:16:55 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events #1 | @vovinacci |  |
 | 2 | Services (Scala) | 23-Sep-2020 15:16:32 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events #1 | @vovinacci |  |
 
-3. [TC-5604](https://tradecloud.atlassian.net/browse/TC-5604) As DevOps I want to have possibility to run acceptance tests only for services amended in PR 
+4. [TC-5604](https://tradecloud.atlassian.net/browse/TC-5604) As DevOps I want to have possibility to run acceptance tests only for services amended in PR 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Sep-2020 17:48:28 CEST | [#1331](https://github.com/tradecloud/tradecloud-microservices/pull/1331) |  - Add possibility to run acceptance tests only for services amended in PR | @denys-kondartiuk |  |
 | 2 | Services (Go) | 22-Sep-2020 17:48:19 CEST | [#335](https://github.com/tradecloud/tradecloud-microservices-go/pull/335) |  - Add possibility to run acceptance tests only for services amended in PR | @denys-kondartiuk |  |
-
-4. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 22-Sep-2020 16:21:31 CEST | [#336](https://github.com/tradecloud/tradecloud-microservices-go/pull/336) |  Add webhook event name logging | @vovinacci |  |
 
 5. [TC-5496](https://tradecloud.atlassian.net/browse/TC-5496) Add user data to Intercom script so we can use this for profiling 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
