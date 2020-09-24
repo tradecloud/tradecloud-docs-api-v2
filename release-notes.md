@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Sep 24 15:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Sep 24 17:30:46 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
+1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 24-Sep-2020 17:11:42 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
+
+2. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Sep-2020 14:13:47 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
 
-2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+3. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Sep-2020 13:26:58 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
-
-3. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Sep-2020 11:13:48 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
 
 4. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive &#34;Customer label reference&#34; data on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -41,8 +41,9 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 24-Sep-2020 10:17:54 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
-| 2 | Services (Go) | 22-Sep-2020 16:21:31 CEST | [#336](https://github.com/tradecloud/tradecloud-microservices-go/pull/336) |  Add webhook event name logging | @vovinacci |  |
+| 1 | Services (Scala) | 24-Sep-2020 16:20:45 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
+| 2 | Services (Go) | 24-Sep-2020 10:17:54 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
+| 3 | Services (Go) | 22-Sep-2020 16:21:31 CEST | [#336](https://github.com/tradecloud/tradecloud-microservices-go/pull/336) |  Add webhook event name logging | @vovinacci |  |
 
 2. [TC-6333](https://tradecloud.atlassian.net/browse/TC-6333) Version conflict between order-search and order services. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
