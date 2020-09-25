@@ -1,30 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Sep 25 09:31:18 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Sep 25 11:30:50 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Sep-2020 23:38:25 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+| 1 | Services (Scala) | 25-Sep-2020 11:29:21 CEST | [#1335](https://github.com/tradecloud/tradecloud-microservices/pull/1335) |  Dry Integrationsettings Enrichment | @roy-tc |  |
+| 2 | Services (Go) | 24-Sep-2020 19:18:27 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
 
-2. [N/A](#)  
+2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 25-Sep-2020 11:21:38 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Sep-2020 22:42:10 CEST | [#1334](https://github.com/tradecloud/tradecloud-microservices/pull/1334) |  [TC-5597] Add labels to order and line [TC-6344] Add row to line | @marcmatt |  |
 | 2 | Services (Scala) | 17-Sep-2020 12:41:51 CEST | [#1325](https://github.com/tradecloud/tradecloud-microservices/pull/1325) | DO NOT MERGE | @denys-kondartiuk |  |
 
-3. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive &#34;Customer label reference&#34; data on line level 
+4. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive &#34;Customer label reference&#34; data on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 24-Sep-2020 22:27:35 CEST | [#338](https://github.com/tradecloud/tradecloud-microservices-go/pull/338) |  Add labels on buyer order and line levels. | @marcmatt |  |
-
-4. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 24-Sep-2020 19:18:27 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
 
 5. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -214,9 +215,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Scala) | 26-Aug-2020 15:15:42 CEST | [#1305](https://github.com/tradecloud/tradecloud-microservices/pull/1305) |  Minor typo fixes, bump messages | @vovinacci |  |
 | 2 | Services (Scala) | 26-Aug-2020 10:03:20 CEST | [#1303](https://github.com/tradecloud/tradecloud-microservices/pull/1303) |  Add Protobuf breaking changes detection | @vovinacci |  |
 | 3 | Services (Scala) | 26-Aug-2020 09:25:13 CEST | [#1302](https://github.com/tradecloud/tradecloud-microservices/pull/1302) |  Add buf configuration | @vovinacci |  |
-
-32. [TC-6266](https://tradecloud.atlassian.net/browse/TC-6266) Add multiple event to Mixpanel  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 25-Aug-2020 09:55:03 CEST | [#469](https://github.com/tradecloud/tradecloud-portal-angular/pull/469) |  rewrite calling mixpanel events | @bohdantrc |  |
 
