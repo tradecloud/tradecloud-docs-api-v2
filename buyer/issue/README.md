@@ -78,6 +78,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
+* `labels`: shipment labels when shipped per order. Please note the practicable number of labels is dependent on the supplier.
 * `documents`: contain meta data and link of attached documents, see:
 
 {% page-ref page="attach-document.md" %}
@@ -86,7 +87,8 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `lines`: a purchase order contains one or multiple lines
 * `line`: a purchase order line which contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
-* `position`: the line position within the purchase order
+* `position`: the required line position identifier within the purchase order
+* `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. The row will only be displayed in the portal.
 
 {% hint style="warning" %}
 `lines.position` should be unique within the order and never change. Never renumber or re-use `position` numbers.
@@ -159,6 +161,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
 * `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
+* `labels`: shipment labels when shipped per item. Please note the practicable number of labels is dependent on the supplier.
 
 ## New order meta data
 
