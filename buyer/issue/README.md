@@ -88,7 +88,7 @@ S* `labels`: value-added services labels on order level. Please note the practic
 * `lines`: a purchase order contains one or multiple lines
 * `line`: a purchase order line which contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
 * `position`: the required line position identifier within the purchase order
-* `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. The row will only be displayed in the portal.
+* `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. Do NOT use row as identifier.
 
 {% hint style="warning" %}
 `lines.position` should be unique within the order and never change. Never renumber or re-use `position` numbers.
