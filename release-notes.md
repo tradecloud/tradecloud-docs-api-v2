@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 28 15:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 28 17:30:45 CEST 2020)
 ---
 
 
@@ -8,13 +8,13 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Sep-2020 15:11:33 CEST | [#489](https://github.com/tradecloud/tradecloud-portal-angular/pull/489) |  Add row field into order line buyer tab and into order line… | @bohdantrc |  |
+| 1 | Web Portal | 28-Sep-2020 17:24:31 CEST | [#489](https://github.com/tradecloud/tradecloud-portal-angular/pull/489) |  Add row field into order line buyer tab and table | @bohdantrc |  |
 | 2 | Services (Go) | 28-Sep-2020 13:16:36 CEST | [#338](https://github.com/tradecloud/tradecloud-microservices-go/pull/338) |  Add labels on buyer order and line levels. | @marcmatt |  |
 
 2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Sep-2020 14:57:32 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+| 1 | Services (Scala) | 28-Sep-2020 16:47:47 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 | 2 | Services (Scala) | 28-Sep-2020 14:45:02 CEST | [#1337](https://github.com/tradecloud/tradecloud-microservices/pull/1337) |  troubleshooting | @olegtradecloud |  |
 
 3. [N/A](#)  
