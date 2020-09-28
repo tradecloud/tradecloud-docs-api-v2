@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Sep 28 09:31:20 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Sep 28 11:30:55 CEST 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client [Planned release 25-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 28-Sep-2020 09:24:48 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
+| 1 | Services (Go) | 28-Sep-2020 11:14:12 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
 
 2. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -42,7 +42,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Sep-2020 13:24:57 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
 
-8. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive &#34;Customer label reference&#34; data on line level 
+8. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 24-Sep-2020 22:27:35 CEST | [#338](https://github.com/tradecloud/tradecloud-microservices-go/pull/338) |  Add labels on buyer order and line levels. | @marcmatt |  |
