@@ -78,7 +78,7 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
-S* `labels`: value-added services labels on order level. Please note the practicable number of labels is dependent on the supplier.
+* `labels`: value-added services labels on order level. Please note the practicable number of labels is dependent on the supplier.
 * `documents`: contain meta data and link of attached documents, see:
 
 {% page-ref page="attach-document.md" %}
