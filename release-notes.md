@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Sep 29 15:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Sep 29 17:30:45 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6357](https://tradecloud.atlassian.net/browse/TC-6357) priceInBaseCurrency should not be taken into account when order response is compared to the order message 
+1. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Sep-2020 14:21:37 CEST | [#1338](https://github.com/tradecloud/tradecloud-microservices/pull/1338) |  - fix prices comparison | @olegtradecloud |  |
+| 1 | Services (Scala) | 29-Sep-2020 17:00:05 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
+| 2 | Services (Scala) | 28-Sep-2020 14:45:02 CEST | [#1337](https://github.com/tradecloud/tradecloud-microservices/pull/1337) |  troubleshooting | @olegtradecloud |  |
 
-2. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+2. [TC-6357](https://tradecloud.atlassian.net/browse/TC-6357) priceInBaseCurrency should not be taken into account when order response is compared to the order message 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 29-Sep-2020 16:23:45 CEST | [#1338](https://github.com/tradecloud/tradecloud-microservices/pull/1338) |  - fix prices comparison | @olegtradecloud |  |
+
+3. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Sep-2020 13:48:42 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
 
-3. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
+4. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Sep-2020 11:47:29 CEST | [#489](https://github.com/tradecloud/tradecloud-portal-angular/pull/489) | [TC-6369][TC-6367] Add row, labels fields into order line buyer tab and table | @bohdantrc |  |
 | 2 | Services (Go) | 29-Sep-2020 09:11:32 CEST | [#338](https://github.com/tradecloud/tradecloud-microservices-go/pull/338) |  Add labels on buyer order and line levels. | @marcmatt |  |
-
-4. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Sep-2020 10:54:01 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
-| 2 | Services (Scala) | 28-Sep-2020 14:45:02 CEST | [#1337](https://github.com/tradecloud/tradecloud-microservices/pull/1337) |  troubleshooting | @olegtradecloud |  |
 
 5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
