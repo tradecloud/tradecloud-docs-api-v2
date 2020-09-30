@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Sep 30 15:30:51 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Sep 30 17:30:47 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
+1. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 30-Sep-2020 17:11:09 CEST | [#491](https://github.com/tradecloud/tradecloud-portal-angular/pull/491) |  Add reinvite logic into team page. | @bohdantrc |  |
+
+2. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration [Planned release 28-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Sep-2020 15:00:02 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
-
-2. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 30-Sep-2020 14:01:05 CEST | [#491](https://github.com/tradecloud/tradecloud-portal-angular/pull/491) |  Add reinvite logic into team page. | @bohdantrc |  |
 
 3. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
