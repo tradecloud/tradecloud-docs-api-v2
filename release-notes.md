@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Oct 1 17:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Oct 1 19:30:51 CEST 2020)
 ---
 
 
@@ -8,7 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  [Planned release 02-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Oct-2020 16:43:39 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
+| 1 | Services (Go) | 01-Oct-2020 19:01:48 CEST | [#342](https://github.com/tradecloud/tradecloud-microservices-go/pull/342) |  Add IdentityReinvited | @marcmatt |  |
+| 2 | Services (Scala) | 01-Oct-2020 17:55:03 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
 
 2. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
