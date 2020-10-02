@@ -1,46 +1,46 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 2 11:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Oct 2 13:30:55 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
+1. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  [Planned release 02-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 02-Oct-2020 13:28:10 CEST | [#342](https://github.com/tradecloud/tradecloud-microservices-go/pull/342) |  Add IdentityReinvited | @marcmatt |  |
+| 2 | Services (Scala) | 01-Oct-2020 23:00:31 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
+
+2. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 02-Oct-2020 11:45:11 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
+
+3. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Oct-2020 10:30:20 CEST | [#493](https://github.com/tradecloud/tradecloud-portal-angular/pull/493) |  Refactor into new style and fix supplierOrder values. | @bohdantrc |  |
 
-2. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+4. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Oct-2020 08:50:28 CEST | [#1340](https://github.com/tradecloud/tradecloud-microservices/pull/1340) |  [TC-6076] Delivered status | @dmytrozheliuk |  |
 
-3. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  [Planned release 02-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Oct-2020 23:00:31 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
-| 2 | Services (Go) | 01-Oct-2020 22:39:18 CEST | [#342](https://github.com/tradecloud/tradecloud-microservices-go/pull/342) |  Add IdentityReinvited | @marcmatt |  |
-
-4. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
+5. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Oct-2020 22:28:48 CEST | [#492](https://github.com/tradecloud/tradecloud-portal-angular/pull/492) |  Add reinvite logic into team page.  | @bohdantrc |  |
 
-5. [N/A](#)  
+6. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Oct-2020 09:28:40 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) | Tc 6309 add puppeteer project | @RobinNagpal |  |
 | 2 | Services (Scala) | 01-Oct-2020 09:17:14 CEST | [#1334](https://github.com/tradecloud/tradecloud-microservices/pull/1334) |  [TC-5597] Add labels to order and line [TC-6344] Add row to line | @marcmatt |  |
 
-6. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
+7. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Oct-2020 09:17:01 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
-
-7. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Sep-2020 13:48:42 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
 
 8. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
