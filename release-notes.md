@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 2 17:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Oct 2 19:30:54 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+1. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  [Planned release 02-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 02-Oct-2020 18:08:34 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
+| 2 | Services (Go) | 02-Oct-2020 14:07:11 CEST | [#342](https://github.com/tradecloud/tradecloud-microservices-go/pull/342) |  Add IdentityReinvited | @marcmatt |  |
+
+2. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Oct-2020 15:53:29 CEST | [#1340](https://github.com/tradecloud/tradecloud-microservices/pull/1340) |  [TC-6076] Delivered status | @dmytrozheliuk |  |
 
-2. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+3. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Oct-2020 15:46:32 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
-
-3. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  [Planned release 02-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Oct-2020 14:58:05 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
-| 2 | Services (Go) | 02-Oct-2020 14:07:11 CEST | [#342](https://github.com/tradecloud/tradecloud-microservices-go/pull/342) |  Add IdentityReinvited | @marcmatt |  |
 
 4. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
