@@ -1,30 +1,30 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 2 09:31:15 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Oct 2 11:30:48 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+1. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 02-Oct-2020 10:30:20 CEST | [#493](https://github.com/tradecloud/tradecloud-portal-angular/pull/493) |  Refactor into new style and fix supplierOrder values. | @bohdantrc |  |
+
+2. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Oct-2020 08:50:28 CEST | [#1340](https://github.com/tradecloud/tradecloud-microservices/pull/1340) |  [TC-6076] Delivered status | @dmytrozheliuk |  |
 
-2. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  [Planned release 02-Oct-2020]
+3. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  [Planned release 02-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Oct-2020 23:00:31 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
 | 2 | Services (Go) | 01-Oct-2020 22:39:18 CEST | [#342](https://github.com/tradecloud/tradecloud-microservices-go/pull/342) |  Add IdentityReinvited | @marcmatt |  |
 
-3. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
+4. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Oct-2020 22:28:48 CEST | [#492](https://github.com/tradecloud/tradecloud-portal-angular/pull/492) |  Add reinvite logic into team page.  | @bohdantrc |  |
-
-4. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 01-Oct-2020 15:35:39 CEST | [#493](https://github.com/tradecloud/tradecloud-portal-angular/pull/493) |  Refactor into new style and fix supplierOrder values. | @bohdantrc |  |
 
 5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
