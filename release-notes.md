@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Oct 5 15:30:54 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 5 17:30:49 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
+1. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 05-Oct-2020 16:52:05 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
+
+2. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Oct-2020 14:56:07 CEST | [#1342](https://github.com/tradecloud/tradecloud-microservices/pull/1342) |  - add price comparison based on business rules | @olegtradecloud |  |
-
-2. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Oct-2020 14:03:18 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
 
 3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -44,13 +44,22 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 
 ## Changelog
 
-1. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
+1. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 05-Oct-2020 16:50:00 CEST | [#343](https://github.com/tradecloud/tradecloud-microservices-go/pull/343) |  Fix: Change docker base image | @vovinacci |  |
+| 2 | Services (Go) | 29-Sep-2020 20:42:12 CEST | [#341](https://github.com/tradecloud/tradecloud-microservices-go/pull/341) |  Kafka: Commit to correct channel | @vovinacci |  |
+| 3 | Services (Scala) | 24-Sep-2020 16:20:45 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
+| 4 | Services (Go) | 24-Sep-2020 10:17:54 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
+| 5 | Services (Go) | 22-Sep-2020 16:21:31 CEST | [#336](https://github.com/tradecloud/tradecloud-microservices-go/pull/336) |  Add webhook event name logging | @vovinacci |  |
+
+2. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Oct-2020 15:24:34 CEST | [#489](https://github.com/tradecloud/tradecloud-portal-angular/pull/489) | [TC-6369][TC-6367] Add row, labels fields into order line buyer tab and table | @bohdantrc |  |
 | 2 | Services (Go) | 05-Oct-2020 15:20:43 CEST | [#338](https://github.com/tradecloud/tradecloud-microservices-go/pull/338) |  Add labels on buyer order and line levels. | @marcmatt |  |
 
-2. [N/A](#)  
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Oct-2020 15:20:21 CEST | [#1334](https://github.com/tradecloud/tradecloud-microservices/pull/1334) |  [TC-5597] Add labels to order and line [TC-6344] Add row to line | @marcmatt |  |
@@ -58,53 +67,45 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 3 | Services (Scala) | 15-Sep-2020 14:28:18 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
 | 4 | Web Portal | 11-Sep-2020 11:42:16 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
 
-3. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
+4. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Oct-2020 13:39:15 CEST | [#493](https://github.com/tradecloud/tradecloud-portal-angular/pull/493) |  Refactor into new style and fix supplierOrder values. | @bohdantrc |  |
 
-4. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  
+5. [TC-5806](https://tradecloud.atlassian.net/browse/TC-5806) As company admin or superuser, I want to resend an invitation mail to my coworker.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 03-Oct-2020 15:29:09 CEST | [#1339](https://github.com/tradecloud/tradecloud-microservices/pull/1339) |  Reinvite user | @marcmatt |  |
 | 2 | Services (Go) | 03-Oct-2020 15:09:35 CEST | [#342](https://github.com/tradecloud/tradecloud-microservices-go/pull/342) |  Add IdentityReinvited | @marcmatt |  |
 
-5. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
+6. [TC-6381](https://tradecloud.atlassian.net/browse/TC-6381) Reinvite pending user in portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 03-Oct-2020 14:51:21 CEST | [#492](https://github.com/tradecloud/tradecloud-portal-angular/pull/492) |  Add reinvite logic into team page.  | @bohdantrc |  |
 
-6. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration 
+7. [TC-4220](https://tradecloud.atlassian.net/browse/TC-4220) As a supplier I want to accept, reject and propose order lines changes using my integration 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Sep-2020 17:34:27 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
 | 2 | Services (Scala) | 15-Sep-2020 16:04:30 CEST | [#1322](https://github.com/tradecloud/tradecloud-microservices/pull/1322) |  - fix buf check issues | @olegtradecloud |  |
 
-7. [TC-6357](https://tradecloud.atlassian.net/browse/TC-6357) priceInBaseCurrency should not be taken into account when order response is compared to the order message 
+8. [TC-6357](https://tradecloud.atlassian.net/browse/TC-6357) priceInBaseCurrency should not be taken into account when order response is compared to the order message 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Sep-2020 10:35:53 CEST | [#1338](https://github.com/tradecloud/tradecloud-microservices/pull/1338) |  - fix prices comparison | @olegtradecloud |  |
 
-8. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
+9. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Sep-2020 10:18:40 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
 
-9. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client 
+10. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 29-Sep-2020 21:56:56 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
 | 2 | Services (Scala) | 27-Sep-2020 21:09:06 CEST | [#1335](https://github.com/tradecloud/tradecloud-microservices/pull/1335) |  Dry Integrationsettings Enrichment | @roy-tc |  |
 | 3 | Services (Go) | 23-Sep-2020 15:16:55 CEST | [#334](https://github.com/tradecloud/tradecloud-microservices-go/pull/334) |  Add missing webhook events #1 | @vovinacci |  |
 | 4 | Services (Scala) | 23-Sep-2020 15:16:32 CEST | [#1330](https://github.com/tradecloud/tradecloud-microservices/pull/1330) |  Add missing webhook events #1 | @vovinacci |  |
-
-10. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 29-Sep-2020 20:42:12 CEST | [#341](https://github.com/tradecloud/tradecloud-microservices-go/pull/341) |  Kafka: Commit to correct channel | @vovinacci |  |
-| 2 | Services (Scala) | 24-Sep-2020 16:20:45 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
-| 3 | Services (Go) | 24-Sep-2020 10:17:54 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
-| 4 | Services (Go) | 22-Sep-2020 16:21:31 CEST | [#336](https://github.com/tradecloud/tradecloud-microservices-go/pull/336) |  Add webhook event name logging | @vovinacci |  |
 
 11. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
