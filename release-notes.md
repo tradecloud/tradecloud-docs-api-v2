@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Oct 5 11:31:20 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 5 13:33:58 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+1. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Oct-2020 11:30:00 CEST | [#1340](https://github.com/tradecloud/tradecloud-microservices/pull/1340) |  [TC-6076] Delivered status | @dmytrozheliuk |  |
-
-2. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Oct-2020 11:28:44 CEST | [#489](https://github.com/tradecloud/tradecloud-portal-angular/pull/489) | [TC-6369][TC-6367] Add row, labels fields into order line buyer tab and table | @bohdantrc |  |
+| 1 | Web Portal | 05-Oct-2020 12:22:32 CEST | [#489](https://github.com/tradecloud/tradecloud-portal-angular/pull/489) | [TC-6369][TC-6367] Add row, labels fields into order line buyer tab and table | @bohdantrc |  |
 | 2 | Services (Go) | 05-Oct-2020 10:59:23 CEST | [#338](https://github.com/tradecloud/tradecloud-microservices-go/pull/338) |  Add labels on buyer order and line levels. | @marcmatt |  |
+
+2. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-Oct-2020 12:07:30 CEST | [#1340](https://github.com/tradecloud/tradecloud-microservices/pull/1340) |  [TC-6076] Delivered status | @dmytrozheliuk |  |
 
 3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
