@@ -92,6 +92,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `contact`: the buyer employee responsible for this order. 
 * `properties`: are key-value based custom fields, added by the buyer.
 * `notes`: are simple custom fields, added by the buyer.
+* `labels`: value-added services labels on order level.
 * `documents`: contain meta data and link of attached documents by the buyer, see:
 
 {% page-ref page="download-document.md" %}
@@ -209,6 +210,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 * `indicators.delivered`: All goods are delivered at the buyer.
 * `properties`: are key-value based custom fields. `\n` may be used for a new line in the value.
 * `notes`: are simple custom fields. `\n` may be used for a new line.
+* `labels`: value-added services labels on line level.
 * `documents`: contain meta data and link of attached documents, see:
 
 {% page-ref page="download-document.md" %}
