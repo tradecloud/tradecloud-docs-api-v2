@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Oct 6 19:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Oct 6 21:30:48 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+1. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 06-Oct-2020 18:47:19 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
+| 1 | Services (Scala) | 06-Oct-2020 20:12:52 CEST | [#1342](https://github.com/tradecloud/tradecloud-microservices/pull/1342) |  - add price comparison based on business rules | @olegtradecloud |  |
 
-2. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+2. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 06-Oct-2020 19:46:41 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
+
+3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Oct-2020 16:15:41 CEST | [#1340](https://github.com/tradecloud/tradecloud-microservices/pull/1340) |  [TC-6076] Delivered status | @dmytrozheliuk |  |
-
-3. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Oct-2020 16:01:25 CEST | [#1342](https://github.com/tradecloud/tradecloud-microservices/pull/1342) |  - add price comparison based on business rules | @olegtradecloud |  |
 
 4. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
