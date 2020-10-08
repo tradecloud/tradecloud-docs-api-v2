@@ -22,7 +22,9 @@ Con's:
 {% endhint %}
 
 {% hint style="warning" %}
-**Use Basic Authentication without tokens only when you send one order or response occasionally,** **less then 1 per minute, and you do not need other services.**
+**Use Basic Authentication without tokens only when you send one order or response occasionally,** **less then 1 per minute.**
+
+**And you do not need other services, like the object-storage, user and company services**
 
 **Or when your integration system does not support** [**JSON Web Tokens**](https://jwt.io/) ****[**RFC 7519**](https://tools.ietf.org/html/rfc7519)\*\*\*\*
 {% endhint %}
