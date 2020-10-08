@@ -4,15 +4,18 @@ description: How to use JSON Web Tokens
 
 # Authentication
 
-The API supports the "Basic" HTTP authentication scheme [RFC 7617](https://tools.ietf.org/html/rfc7617) with or without [JSON Web Tokens](https://jwt.io/) [RFC 7519](https://tools.ietf.org/html/rfc7519)
+The API supports 2 means of authentication:
 
-## Basic Authentication without a token
+* Using "Basic" HTTP authentication scheme ([RFC 7617](https://tools.ietf.org/html/rfc7617)) upon every HTTP request. 
 
-Use the Basic HTTP Authentication scheme to authenticate against the Tradecloud API Connector.
+* Using "Basic" HTTP authentication scheme ([RFC 7617](https://tools.ietf.org/html/rfc7617)) to obtain a [JSON Web Token](https://jwt.io/) ([RFC 7519](https://tools.ietf.org/html/rfc7519)).  
+  The JWT is used for authentication for all following requests.
+
+### Basic Authentication upon every request
+
+You can use the Basic HTTP Authentication scheme to authenticate against the Tradecloud API Connector upon every request.
 
 {% hint style="info" %}
-Using Basic Authentication without tokens:
-
 Pro: this is a simple authentication method, supported by all integrations
 
 Con's: 
@@ -22,16 +25,18 @@ Con's:
 {% endhint %}
 
 {% hint style="warning" %}
-**Use Basic Authentication without tokens only when you send one order or response occasionally,** **less then 1 per minute.**
+**Use Basic Authentication upon every request only when**:
 
-**And you do not need other services, like the object-storage, user and company services**
+* You send one order or response occasionally; less then 1 per minute.
 
-**Or when your integration system does not support** [**JSON Web Tokens**](https://jwt.io/) ****[**RFC 7519**](https://tools.ietf.org/html/rfc7519)\*\*\*\*
+* You do not need to integrate with other services, like the object-storage, user and company services
+
+* Or when your integration system does not support [**JSON Web Tokens**](https://jwt.io/) ([RFC 7519](https://tools.ietf.org/html/rfc7519))
 {% endhint %}
 
-### Authenticate
+#### How to Authenticate
 
-Authenticate using an Basic Authorization HTTP header with a base 64 encoded email and password:
+You can authenticate using a Basic Authorization HTTP header with a base 64 encoded email and password:
 
 ```text
 // Example request method and URI
@@ -40,39 +45,39 @@ POST https://api.accp.tradecloud1.com/v2/api-connector/order
 Authorization: Basic <<Email>:<Password> base64 encoded>
 ```
 
-When correctly authenticated, the response will return [HTTP status code 200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_success) `OK`
+When correctly authenticated, your request will be processed and if all is well, the response will have [HTTP status code 200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_success) `OK`
 
 When NOT correctly authenticated, the response will return [HTTP status code 401](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors) `Unauthorized` 
 
 In case of some server issue, including the upstream authentication service being unreachable,   
 the response will return [HTTP status code 500](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors) `Internal Server Error`
 
-## Basic Authentication with a token
+### Basic Authentication with JSON Web Tokens
 
-Use the Basic HTTP Authentication scheme to authenticate against the authentication service.
+1. Use the Basic HTTP Authentication scheme to **authenticate** against the authentication service.
 
-Use the returned token to the authorize against the Tradecloud API Connector and other services.
+2. Use the returned JWT to **authorize** against the Tradecloud API Connector and other services for all subsequent requests.
 
 {% hint style="info" %}
-Using Basic Authentication with a token:
-
 Pro's: 
 
-* the response time is short \(except for the initial authentication\), average 200ms
+* Faster response time \(except for the initial authentication\), average 200ms
 * It is supported by all connectors and services, including the object-storage
 
-Con: this is a complex authentication and authorization method
+Con: this is a more complex authentication and authorization method
 {% endhint %}
 
 {% hint style="warning" %}
-**Use tokens when you send batches of orders or responses**, **more then 1 per minute**
+**Use JSON Web Tokens when:**
 
-**Or when you need additional services, like the object-storage, user and company services**
+* You send batches of orders or responses; more then 1 per minute
+
+* When you need additional services, like the object-storage, user and company services
 {% endhint %}
 
-### Authenticate
+#### Authenticate
 
-Log in using an Basic Authorization HTTP header with a base 64 encoded email and password:
+You can log in using a Basic Authorization HTTP header with a base 64 encoded email and password:
 
 ```text
 // Request method and URI
@@ -98,7 +103,7 @@ When NOT correctly authenticated, the response will return [HTTP status code 401
 [Authentication OpenAPI specification](https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) in yaml format
 {% endhint %}
 
-### Authorize
+#### Authorize
 
 Use a Bearer Authorization HTTP header with the access token in each request:
 
@@ -109,9 +114,9 @@ POST https://api.accp.tradecloud1.com/v2/api-connector/order
 Authorization: Bearer <Access-Token>
 ```
 
-When correctly authorized, the response will return [HTTP status code 200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_success) `OK`  
+When correctly authenticated, your request will be processed and if all is well, the response will have [HTTP status code 200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_success) `OK`  
 
-### Refreshing the token
+#### Refreshing the token
 
 An access token will **expire after 10 minutes and a refresh token after 24 hours**. When your access token has expired you have to use the refresh token. If your refresh token expires you have to log in again.
 
