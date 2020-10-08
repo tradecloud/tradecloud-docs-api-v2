@@ -1,29 +1,30 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Oct 8 09:31:18 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Oct 8 11:30:50 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+1. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-Oct-2020 11:26:45 CEST | [#1342](https://github.com/tradecloud/tradecloud-microservices/pull/1342) |  - add price comparison based on business rules | @olegtradecloud |  |
+
+2. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 08-Oct-2020 11:11:09 CEST | [#495](https://github.com/tradecloud/tradecloud-portal-angular/pull/495) | [TC-5121] Add new statuses(marked as delivered) into activity | @bohdantrc |  |
+
+3. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-Oct-2020 11:00:14 CEST | [#1347](https://github.com/tradecloud/tradecloud-microservices/pull/1347) | Tc 6390 reopen request prices comparison | @olegtradecloud |  |
+| 2 | Web Portal | 07-Oct-2020 21:50:30 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) | Tc 6309 add puppeteer project | @RobinNagpal |  |
+
+4. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Oct-2020 09:22:26 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
-
-2. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Oct-2020 21:50:30 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) | Tc 6309 add puppeteer project | @RobinNagpal |  |
-
-3. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Oct-2020 15:09:42 CEST | [#495](https://github.com/tradecloud/tradecloud-portal-angular/pull/495) | [TC-5121] Add new statuses(marked as delivered) into activity | @bohdantrc |  |
-
-4. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Oct-2020 14:46:10 CEST | [#1342](https://github.com/tradecloud/tradecloud-microservices/pull/1342) |  - add price comparison based on business rules | @olegtradecloud |  |
 
 5. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
