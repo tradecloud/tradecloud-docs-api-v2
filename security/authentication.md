@@ -44,6 +44,9 @@ When correctly authenticated, the response will return [HTTP status code 200](ht
 
 When NOT correctly authenticated, the response will return [HTTP status code 401](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors) `Unauthorized` 
 
+In case of some server issue, including the upstream authentication service being unreachable,   
+the response will return [HTTP status code 500](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors) `Internal Server Error`
+
 ## Basic Authentication with a token
 
 Use the Basic HTTP Authentication scheme to authenticate against the authentication service.
