@@ -23,6 +23,8 @@ Con's:
 
 {% hint style="warning" %}
 **Use Basic Authentication without tokens only when you send one order or response occasionally,** **less then 1 per minute, and you do not need other services.**
+
+**Or when your integration system does not support** [**JSON Web Tokens**](https://jwt.io/) ****[**RFC 7519**](https://tools.ietf.org/html/rfc7519)\*\*\*\*
 {% endhint %}
 
 ### Authenticate
@@ -58,8 +60,9 @@ Con: this is a complex authentication and authorization method
 {% endhint %}
 
 {% hint style="warning" %}
-**Use tokens when you send batches of orders or responses**, **more then 1 per minute,  
-or when you need additional services, like the object-storage, user and company services**
+**Use tokens when you send batches of orders or responses**, **more then 1 per minute**
+
+**Or when you need additional services, like the object-storage, user and company services**
 {% endhint %}
 
 ### Authenticate
