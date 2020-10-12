@@ -1,39 +1,39 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Oct 12 09:31:17 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 12 11:30:50 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
+1. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Oct-2020 09:28:57 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
+| 1 | Services (Scala) | 12-Oct-2020 11:30:26 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
 
-2. [N/A](#)  
+2. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 12-Oct-2020 11:22:55 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
+
+3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 12-Oct-2020 10:34:43 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
+
+4. [TC-6268](https://tradecloud.atlassian.net/browse/TC-6268) As user I want proposed &amp; requested prices and deliverySchedule are highlighted clearly throughout the UI. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 12-Oct-2020 10:12:06 CEST | [#496](https://github.com/tradecloud/tradecloud-portal-angular/pull/496) |  add order line info highlight | @bohdantrc |  |
+
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Oct-2020 08:28:23 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) | Tc 6309 add puppeteer project | @RobinNagpal |  |
 
-3. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
+6. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Oct-2020 17:48:01 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
-
-4. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Oct-2020 12:04:18 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
-
-5. [TC-6268](https://tradecloud.atlassian.net/browse/TC-6268) As user I want proposed &amp; requested prices and deliverySchedule are highlighted clearly throughout the UI. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 09-Oct-2020 17:27:34 CEST | [#496](https://github.com/tradecloud/tradecloud-portal-angular/pull/496) |  add order line info highlight | @bohdantrc |  |
-
-6. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) MergedItem details are not updated when re-issueing order line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Oct-2020 15:26:20 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
 
 7. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
