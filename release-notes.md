@@ -1,54 +1,54 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 9 21:30:46 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 12 09:31:17 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6268](https://tradecloud.atlassian.net/browse/TC-6268) As user I want proposed &amp; requested prices and deliverySchedule are highlighted clearly throughout the UI. 
+1. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 12-Oct-2020 09:28:57 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
+
+2. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 12-Oct-2020 08:28:23 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) | Tc 6309 add puppeteer project | @RobinNagpal |  |
+
+3. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 11-Oct-2020 17:48:01 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
+
+4. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 10-Oct-2020 12:04:18 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
+
+5. [TC-6268](https://tradecloud.atlassian.net/browse/TC-6268) As user I want proposed &amp; requested prices and deliverySchedule are highlighted clearly throughout the UI. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 09-Oct-2020 17:27:34 CEST | [#496](https://github.com/tradecloud/tradecloud-portal-angular/pull/496) |  add order line info highlight | @bohdantrc |  |
 
-2. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) MergedItem details are not updated when re-issueing order line 
+6. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) MergedItem details are not updated when re-issueing order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Oct-2020 15:26:20 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
 
-3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Oct-2020 14:58:23 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
-
-4. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
+7. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 08-Oct-2020 16:36:59 CEST | [#495](https://github.com/tradecloud/tradecloud-portal-angular/pull/495) | [TC-5121] Add new statuses(marked as delivered) into activity | @bohdantrc |  |
 
-5. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
+8. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  [Planned release 16-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Oct-2020 14:03:16 CEST | [#1342](https://github.com/tradecloud/tradecloud-microservices/pull/1342) |  - add price comparison based on business rules | @olegtradecloud |  |
 
-6. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Oct-2020 21:50:30 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) | Tc 6309 add puppeteer project | @RobinNagpal |  |
-
-7. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Oct-2020 14:27:23 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
-
-8. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+9. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Oct-2020 10:32:21 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
-
-9. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Oct-2020 09:17:01 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
 ## Changelog
 
@@ -90,7 +90,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Scala) | 05-Oct-2020 15:20:21 CEST | [#1334](https://github.com/tradecloud/tradecloud-microservices/pull/1334) |  [TC-5597] Add labels to order and line [TC-6344] Add row to line | @marcmatt |  |
 | 2 | Services (Go) | 15-Sep-2020 16:02:14 CEST | [#332](https://github.com/tradecloud/tradecloud-microservices-go/pull/332) | TC-6000] Bump &#39;mux&#39; to &#39;1.8.0&#39;, improvements | @vovinacci |  |
 | 3 | Services (Scala) | 15-Sep-2020 14:28:18 CEST | [#1315](https://github.com/tradecloud/tradecloud-microservices/pull/1315) | TC-6319 split supplier order response | @olegtradecloud |  |
-| 4 | Web Portal | 11-Sep-2020 11:42:16 CEST | [#484](https://github.com/tradecloud/tradecloud-portal-angular/pull/484) | [TС-6089] year validator | @bohdantrc |  |
 
 7. [TC-6366](https://tradecloud.atlassian.net/browse/TC-6366) buyerOrder/Line notes &amp; properties are shown in the supplier tap  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -195,9 +194,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Sep-2020 15:35:46 CEST | [#481](https://github.com/tradecloud/tradecloud-portal-angular/pull/481) |  don`t show closed reopen request | @bohdantrc |  |
-
-26. [TC-4456](https://tradecloud.atlassian.net/browse/TC-4456) Refactor persist-publish pattern used through codebase 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Sep-2020 14:32:24 CEST | [#1318](https://github.com/tradecloud/tradecloud-microservices/pull/1318) | [TC-6323] Don&#39;t call handler when publishing failed | @roy-tc |  |
 
