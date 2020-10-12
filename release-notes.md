@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Oct 12 11:30:50 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 12 13:30:47 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
+1. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Oct-2020 11:30:26 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
+| 1 | Services (Scala) | 12-Oct-2020 13:29:30 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
 
 2. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Oct-2020 11:22:55 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
+| 1 | Services (Scala) | 12-Oct-2020 11:43:29 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
 
-3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+3. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Oct-2020 10:34:43 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 12-Oct-2020 11:40:15 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
 
 4. [TC-6268](https://tradecloud.atlassian.net/browse/TC-6268) As user I want proposed &amp; requested prices and deliverySchedule are highlighted clearly throughout the UI. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
