@@ -1,34 +1,34 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Oct 13 17:30:50 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Oct 13 19:31:10 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Sep-2020]
+1. [TC-6406](https://tradecloud.atlassian.net/browse/TC-6406) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price [Planned release 19-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 13-Oct-2020 18:42:42 CEST | [#1351](https://github.com/tradecloud/tradecloud-microservices/pull/1351) |  Supplier gross prices | @olegtradecloud |  |
+
+2. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Sep-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Oct-2020 17:18:15 CEST | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-2. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
+3. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Oct-2020 15:59:59 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
 
-3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+4. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Oct-2020 15:51:21 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
 
-4. [TC-6424](https://tradecloud.atlassian.net/browse/TC-6424) FE: Update password recovery link sent confirmation 
+5. [TC-6424](https://tradecloud.atlassian.net/browse/TC-6424) FE: Update password recovery link sent confirmation 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Oct-2020 15:48:00 CEST | [#498](https://github.com/tradecloud/tradecloud-portal-angular/pull/498) | [TC-5932] change recovery text | @bohdantrc |  |
-
-5. [TC-6406](https://tradecloud.atlassian.net/browse/TC-6406) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price [Planned release 19-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Oct-2020 15:45:25 CEST | [#1351](https://github.com/tradecloud/tradecloud-microservices/pull/1351) |  Supplier gross prices | @olegtradecloud |  |
 
 6. [TC-5932](https://tradecloud.atlassian.net/browse/TC-5932) Remove password reset username enumeration [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
