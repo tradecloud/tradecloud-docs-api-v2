@@ -1,34 +1,34 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 16 09:31:18 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Oct 16 11:30:51 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+1. [TC-6405](https://tradecloud.atlassian.net/browse/TC-6405) SSO users how are created as Non-SSO users have Tradecloud as identityProvider 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Oct-2020 11:04:38 CEST | [#1354](https://github.com/tradecloud/tradecloud-microservices/pull/1354) |   fix identiy provider | @RobinNagpal |  |
+
+2. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Oct-2020 10:11:33 CEST | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
+
+3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Oct-2020 09:20:18 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
 
-2. [TC-6405](https://tradecloud.atlassian.net/browse/TC-6405) SSO users how are created as Non-SSO users have Tradecloud as identityProvider 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Oct-2020 18:33:32 CEST | [#1354](https://github.com/tradecloud/tradecloud-microservices/pull/1354) |   fix identiy provider | @RobinNagpal |  |
-
-3. [TC-6432](https://tradecloud.atlassian.net/browse/TC-6432) Damen ACCP order line N612060 01-002 cannot be confirmed by the supplier.  
+4. [TC-6432](https://tradecloud.atlassian.net/browse/TC-6432) Damen ACCP order line N612060 01-002 cannot be confirmed by the supplier.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Oct-2020 16:40:01 CEST | [#1353](https://github.com/tradecloud/tradecloud-microservices/pull/1353) |  Confirm order line with rejected proposal | @roy-tc |  |
 
-4. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+5. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 15-Oct-2020 16:29:11 CEST | [#344](https://github.com/tradecloud/tradecloud-microservices-go/pull/344) |  Deserialise Java BigDecimal as Double | @vovinacci |  |
-
-5. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Oct-2020 09:58:32 CEST | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
 6. [TC-5932](https://tradecloud.atlassian.net/browse/TC-5932) Remove password reset username enumeration [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
