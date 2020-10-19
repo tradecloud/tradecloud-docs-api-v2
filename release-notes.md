@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 16 21:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 19 09:31:15 CEST 2020)
 ---
 
 
@@ -198,16 +198,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Sep-2020 09:09:31 CEST | [#1329](https://github.com/tradecloud/tradecloud-microservices/pull/1329) |  - add supplier order update activities | @olegtradecloud |  |
-
-22. [TC-6321](https://tradecloud.atlassian.net/browse/TC-6321) Unit tests for process new accept/propose/reject/update domain command on order level 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Sep-2020 13:08:38 CEST | [#1323](https://github.com/tradecloud/tradecloud-microservices/pull/1323) |  supplier order response tests | @olegtradecloud |  |
-
-23. [TC-5845](https://tradecloud.atlassian.net/browse/TC-5845) Some ERP systems do NOT use a position in a delivery schedule 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Sep-2020 12:27:42 CEST | [#1320](https://github.com/tradecloud/tradecloud-microservices/pull/1320) | : Optional buyer delivery position field | @dmytrozheliuk |  |
-| 2 | Web Portal | 17-Sep-2020 12:27:40 CEST | [#486](https://github.com/tradecloud/tradecloud-portal-angular/pull/486) | [TC-4927] Add logic send position and edit position in dialog | @bohdantrc |  |
-| 3 | Services (Go) | 17-Sep-2020 12:27:35 CEST | [#330](https://github.com/tradecloud/tradecloud-microservices-go/pull/330) | : Optional buyer delivery position | @dmytrozheliuk |  |
 
