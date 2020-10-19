@@ -1,54 +1,54 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Oct 19 17:30:59 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 19 19:30:48 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6410](https://tradecloud.atlassian.net/browse/TC-6410) As buyer or supplier I want that the net price is calculated and saved, when I do not send the net price [Planned release 19-Oct-2020]
+1. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 19-Oct-2020 18:11:49 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
+
+2. [TC-6410](https://tradecloud.atlassian.net/browse/TC-6410) As buyer or supplier I want that the net price is calculated and saved, when I do not send the net price [Planned release 19-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Oct-2020 16:39:30 CEST | [#1355](https://github.com/tradecloud/tradecloud-microservices/pull/1355) |   - net price calculation | @olegtradecloud |  |
 
-2. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+3. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Oct-2020 15:02:03 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
 
-3. [TC-5932](https://tradecloud.atlassian.net/browse/TC-5932) Remove password reset username enumeration [Planned release 30-Oct-2020]
+4. [TC-5932](https://tradecloud.atlassian.net/browse/TC-5932) Remove password reset username enumeration [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Oct-2020 13:15:22 CEST | [#1350](https://github.com/tradecloud/tradecloud-microservices/pull/1350) |  Avoid username enumeration | @roy-tc |  |
 
-4. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
+5. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Oct-2020 15:10:33 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
 
-5. [TC-6405](https://tradecloud.atlassian.net/browse/TC-6405) SSO users how are created as Non-SSO users have Tradecloud as identityProvider 
+6. [TC-6405](https://tradecloud.atlassian.net/browse/TC-6405) SSO users how are created as Non-SSO users have Tradecloud as identityProvider 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Oct-2020 13:57:23 CEST | [#1354](https://github.com/tradecloud/tradecloud-microservices/pull/1354) |   fix identiy provider | @RobinNagpal |  |
 
-6. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+7. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Oct-2020 13:10:03 CEST | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-7. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
+8. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Oct-2020 16:27:27 CEST | [#1349](https://github.com/tradecloud/tradecloud-microservices/pull/1349) |  Make routing of email address-based commands case-insensitive in IdentityActor  | @roy-tc |  |
 
-8. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
+9. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Oct-2020 11:22:16 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
-
-9. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 13-Oct-2020 15:59:59 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
 
 10. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
