@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Oct 20 11:30:52 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Oct 20 13:30:49 CEST 2020)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Oct-2020 11:19:40 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 20-Oct-2020 12:27:39 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
 
 2. [TC-6410](https://tradecloud.atlassian.net/browse/TC-6410) As buyer or supplier I want that the net price is calculated and saved, when I do not send the net price [Planned release 19-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Oct-2020 11:01:00 CEST | [#1355](https://github.com/tradecloud/tradecloud-microservices/pull/1355) |   - net price calculation | @olegtradecloud |  |
+| 1 | Services (Scala) | 20-Oct-2020 11:44:09 CEST | [#1355](https://github.com/tradecloud/tradecloud-microservices/pull/1355) |   - net price calculation | @olegtradecloud |  |
 
 3. [TC-5932](https://tradecloud.atlassian.net/browse/TC-5932) Remove password reset username enumeration [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
