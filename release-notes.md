@@ -1,142 +1,138 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Oct 22 17:30:48 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Oct 22 19:30:48 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+1. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 22-Oct-2020 18:20:41 CEST | [#501](https://github.com/tradecloud/tradecloud-portal-angular/pull/501) |   add option to enable sso by specific email | @RobinNagpal |  |
+
+2. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 22-Oct-2020 18:16:03 CEST | [#500](https://github.com/tradecloud/tradecloud-portal-angular/pull/500) |  logout user in auth0 | @RobinNagpal |  |
+
+3. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 22-Oct-2020 15:08:17 CEST | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
 
-2. [TC-6437](https://tradecloud.atlassian.net/browse/TC-6437) Place Notes above Documents in the order &amp; order line buyer &amp; supplier tap 
+4. [TC-6437](https://tradecloud.atlassian.net/browse/TC-6437) Place Notes above Documents in the order &amp; order line buyer &amp; supplier tap 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Oct-2020 14:29:33 CEST | [#503](https://github.com/tradecloud/tradecloud-portal-angular/pull/503) |  move Notes fields in the order and order line buyer &amp; suppl… | @bohdantrc |  |
 
-3. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Oct-2020 16:31:07 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
-
-4. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Oct-2020 16:09:25 CEST | [#500](https://github.com/tradecloud/tradecloud-portal-angular/pull/500) |  logout user in auth0 | @RobinNagpal |  |
-
-5. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Oct-2020 15:55:51 CEST | [#501](https://github.com/tradecloud/tradecloud-portal-angular/pull/501) |   add option to enable sso by specific email | @RobinNagpal |  |
-
-6. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
+5. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Oct-2020 12:23:03 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
 
-7. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
+6. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Oct-2020 15:10:33 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
 
-8. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+7. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Oct-2020 13:10:03 CEST | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-9. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
+8. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Oct-2020 16:27:27 CEST | [#1349](https://github.com/tradecloud/tradecloud-microservices/pull/1349) |  Make routing of email address-based commands case-insensitive in IdentityActor  | @roy-tc |  |
 
-10. [TC-6416](https://tradecloud.atlassian.net/browse/TC-6416) Add id(token) for each word in AUTH module 
+9. [TC-6416](https://tradecloud.atlassian.net/browse/TC-6416) Add id(token) for each word in AUTH module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Oct-2020 14:46:43 CEST | [#497](https://github.com/tradecloud/tradecloud-portal-angular/pull/497) |  i18n auth | @bohdantrc |  |
 
-11. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
+10. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Oct-2020 17:48:01 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-12. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+11. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Oct-2020 10:32:21 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
 
 ## Changelog
 
-1. [TC-6440](https://tradecloud.atlassian.net/browse/TC-6440) As an integrated buyer/supplier I want to use \n  in order and lines notes and properties to apply a line feed in the portal 
+1. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 22-Oct-2020 17:41:45 CEST | [#1341](https://github.com/tradecloud/tradecloud-microservices/pull/1341) |   add domain to company id mapping for tradecloud1 and damen | @RobinNagpal |  |
+| 2 | Web Portal | 07-Oct-2020 10:38:28 CEST | [#494](https://github.com/tradecloud/tradecloud-portal-angular/pull/494) |   add domain sso configuration | @RobinNagpal |  |
+
+2. [TC-6440](https://tradecloud.atlassian.net/browse/TC-6440) As an integrated buyer/supplier I want to use \n  in order and lines notes and properties to apply a line feed in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Oct-2020 14:27:28 CEST | [#502](https://github.com/tradecloud/tradecloud-portal-angular/pull/502) |  add style for saving formatted text | @bohdantrc |  |
 
-2. [TC-6410](https://tradecloud.atlassian.net/browse/TC-6410) As buyer or supplier I want that the net price is calculated and saved, when I do not send the net price 
+3. [TC-6410](https://tradecloud.atlassian.net/browse/TC-6410) As buyer or supplier I want that the net price is calculated and saved, when I do not send the net price 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Oct-2020 14:06:32 CEST | [#1355](https://github.com/tradecloud/tradecloud-microservices/pull/1355) |   - net price calculation | @olegtradecloud |  |
 
-3. [TC-6268](https://tradecloud.atlassian.net/browse/TC-6268) As user I want proposed &amp; requested prices and deliverySchedule are highlighted clearly throughout the UI. 
+4. [TC-6268](https://tradecloud.atlassian.net/browse/TC-6268) As user I want proposed &amp; requested prices and deliverySchedule are highlighted clearly throughout the UI. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Oct-2020 17:41:41 CEST | [#496](https://github.com/tradecloud/tradecloud-portal-angular/pull/496) |  add order line info highlight | @bohdantrc |  |
 
-4. [TC-5932](https://tradecloud.atlassian.net/browse/TC-5932) Remove password reset username enumeration 
+5. [TC-5932](https://tradecloud.atlassian.net/browse/TC-5932) Remove password reset username enumeration 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Oct-2020 15:59:32 CEST | [#1350](https://github.com/tradecloud/tradecloud-microservices/pull/1350) |  Avoid username enumeration | @roy-tc |  |
 
-5. [TC-6405](https://tradecloud.atlassian.net/browse/TC-6405) SSO users how are created as Non-SSO users have Tradecloud as identityProvider 
+6. [TC-6405](https://tradecloud.atlassian.net/browse/TC-6405) SSO users how are created as Non-SSO users have Tradecloud as identityProvider 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Oct-2020 12:33:43 CEST | [#1354](https://github.com/tradecloud/tradecloud-microservices/pull/1354) |   fix identiy provider | @RobinNagpal |  |
 
-6. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
+7. [TC-5121](https://tradecloud.atlassian.net/browse/TC-5121) As buyer I want to send a delivered indicator to Tradecloud. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Oct-2020 17:57:18 CEST | [#1346](https://github.com/tradecloud/tradecloud-microservices/pull/1346) | [TC-6076][TC-6075][TC-6389]: Handling delivery status within corresponding event | @dmytrozheliuk |  |
 
-7. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
+8. [TC-6399](https://tradecloud.atlassian.net/browse/TC-6399) Add UI changes to show new activity OrderLinesMarkedAsDeliveredBySupplier/Buyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Oct-2020 16:56:12 CEST | [#495](https://github.com/tradecloud/tradecloud-portal-angular/pull/495) | [TC-5121] Add new statuses(marked as delivered) into activity | @bohdantrc |  |
 
-8. [TC-6432](https://tradecloud.atlassian.net/browse/TC-6432) Damen ACCP order line N612060 01-002 cannot be confirmed by the supplier.  
+9. [TC-6432](https://tradecloud.atlassian.net/browse/TC-6432) Damen ACCP order line N612060 01-002 cannot be confirmed by the supplier.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Oct-2020 13:14:23 CEST | [#1353](https://github.com/tradecloud/tradecloud-microservices/pull/1353) |  Confirm order line with rejected proposal | @roy-tc |  |
 
-9. [TC-6424](https://tradecloud.atlassian.net/browse/TC-6424) FE: Update password recovery link sent confirmation 
+10. [TC-6424](https://tradecloud.atlassian.net/browse/TC-6424) FE: Update password recovery link sent confirmation 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 19-Oct-2020 09:36:34 CEST | [#498](https://github.com/tradecloud/tradecloud-portal-angular/pull/498) | [TC-5932] change recovery text | @bohdantrc |  |
 
-10. [TC-6406](https://tradecloud.atlassian.net/browse/TC-6406) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price 
+11. [TC-6406](https://tradecloud.atlassian.net/browse/TC-6406) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Oct-2020 16:38:05 CEST | [#1351](https://github.com/tradecloud/tradecloud-microservices/pull/1351) |  Supplier gross prices | @olegtradecloud |  |
 
-11. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  
+12. [TC-6375](https://tradecloud.atlassian.net/browse/TC-6375) As a buyer, I want that prices of supplier proposals are compared based on Net price and the highest PUQ  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Oct-2020 14:03:57 CEST | [#1342](https://github.com/tradecloud/tradecloud-microservices/pull/1342) |  - add price comparison based on business rules | @olegtradecloud |  |
 
-12. [TC-6390](https://tradecloud.atlassian.net/browse/TC-6390) As a buyer/supplier, I want that prices of reopen requests are compared based on Net price and the highest PUQ 
+13. [TC-6390](https://tradecloud.atlassian.net/browse/TC-6390) As a buyer/supplier, I want that prices of reopen requests are compared based on Net price and the highest PUQ 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Oct-2020 13:30:35 CEST | [#1347](https://github.com/tradecloud/tradecloud-microservices/pull/1347) |  reopen request prices comparison | @olegtradecloud |  |
 
-13. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
+14. [TC-6145](https://tradecloud.atlassian.net/browse/TC-6145)  As SSO Enabled company, after I login with on AD page, I should be kept logged in 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Oct-2020 14:07:48 CEST | [#478](https://github.com/tradecloud/tradecloud-portal-angular/pull/478) |  exchange jwt token for access token(refresh scenario) | @RobinNagpal |  |
 | 2 | Services (Scala) | 07-Oct-2020 14:07:16 CEST | [#1316](https://github.com/tradecloud/tradecloud-microservices/pull/1316) |  don&#39;t return refresh access token if identity provided is Auth0 | @RobinNagpal |  |
-
-14. [TC-6383](https://tradecloud.atlassian.net/browse/TC-6383) Create and configure environment variables for backend SSO domain to companyId mapping 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Oct-2020 10:38:28 CEST | [#494](https://github.com/tradecloud/tradecloud-portal-angular/pull/494) |   add domain sso configuration | @RobinNagpal |  |
 
 15. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -206,10 +202,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Sep-2020 17:44:41 CEST | [#1332](https://github.com/tradecloud/tradecloud-microservices/pull/1332) |  log user info | @roy-tc |  |
-
-27. [TC-5604](https://tradecloud.atlassian.net/browse/TC-5604) As DevOps I want to have possibility to run acceptance tests only for services amended in PR 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Sep-2020 17:48:28 CEST | [#1331](https://github.com/tradecloud/tradecloud-microservices/pull/1331) |  - Add possibility to run acceptance tests only for services amended in PR | @denys-kondartiuk |  |
-| 2 | Services (Go) | 22-Sep-2020 17:48:19 CEST | [#335](https://github.com/tradecloud/tradecloud-microservices-go/pull/335) |  - Add possibility to run acceptance tests only for services amended in PR | @denys-kondartiuk |  |
 
