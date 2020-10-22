@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Oct 22 15:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Oct 22 17:30:48 CEST 2020)
 ---
 
 
@@ -146,7 +146,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 3 | Services (Go) | 29-Sep-2020 20:42:12 CEST | [#341](https://github.com/tradecloud/tradecloud-microservices-go/pull/341) |  Kafka: Commit to correct channel | @vovinacci |  |
 | 4 | Services (Scala) | 24-Sep-2020 16:20:45 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
 | 5 | Services (Go) | 24-Sep-2020 10:17:54 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
-| 6 | Services (Go) | 22-Sep-2020 16:21:31 CEST | [#336](https://github.com/tradecloud/tradecloud-microservices-go/pull/336) |  Add webhook event name logging | @vovinacci |  |
 
 16. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
