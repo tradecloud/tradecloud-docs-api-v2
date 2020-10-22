@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Oct 21 21:30:49 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Oct 22 09:31:15 CEST 2020)
 ---
 
 
@@ -223,9 +223,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Sep-2020 11:23:26 CEST | [#1326](https://github.com/tradecloud/tradecloud-microservices/pull/1326) |  order line behavior tests | @olegtradecloud |  |
-
-28. [TC-6277](https://tradecloud.atlassian.net/browse/TC-6277) Create an activity for the new OrderLinesUpdatedBySupplier event 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Sep-2020 09:09:31 CEST | [#1329](https://github.com/tradecloud/tradecloud-microservices/pull/1329) |  - add supplier order update activities | @olegtradecloud |  |
 
