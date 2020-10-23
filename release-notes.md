@@ -1,29 +1,29 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 23 09:31:15 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Oct 23 11:30:50 CEST 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+1. [TC-6437](https://tradecloud.atlassian.net/browse/TC-6437) Place Notes above Documents in the order &amp; order line buyer &amp; supplier tap 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 23-Oct-2020 11:20:40 CEST | [#503](https://github.com/tradecloud/tradecloud-portal-angular/pull/503) |  move Notes fields in the order and order line buyer &amp; suppl… | @bohdantrc |  |
+
+2. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 22-Oct-2020 19:56:24 CEST | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
 
-2. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
+3. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Oct-2020 18:20:41 CEST | [#501](https://github.com/tradecloud/tradecloud-portal-angular/pull/501) |   add option to enable sso by specific email | @RobinNagpal |  |
 
-3. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
+4. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Oct-2020 18:16:03 CEST | [#500](https://github.com/tradecloud/tradecloud-portal-angular/pull/500) |  logout user in auth0 | @RobinNagpal |  |
-
-4. [TC-6437](https://tradecloud.atlassian.net/browse/TC-6437) Place Notes above Documents in the order &amp; order line buyer &amp; supplier tap 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Oct-2020 14:29:33 CEST | [#503](https://github.com/tradecloud/tradecloud-portal-angular/pull/503) |  move Notes fields in the order and order line buyer &amp; suppl… | @bohdantrc |  |
 
 5. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
