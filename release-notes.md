@@ -1,29 +1,29 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 23 21:30:47 CEST 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 26 09:31:17 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5935](https://tradecloud.atlassian.net/browse/TC-5935) Do not allow to use previous password as new password [Planned release 30-Oct-2020]
+1. [TC-6416](https://tradecloud.atlassian.net/browse/TC-6416) Add id(token) for each word in AUTH module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Oct-2020 17:48:03 CEST | [#1357](https://github.com/tradecloud/tradecloud-microservices/pull/1357) |  - previous passwords validation | @olegtradecloud |  |
+| 1 | Web Portal | 26-Oct-2020 09:15:20 CET | [#497](https://github.com/tradecloud/tradecloud-portal-angular/pull/497) |  i18n auth | @bohdantrc |  |
 
-2. [TC-6416](https://tradecloud.atlassian.net/browse/TC-6416) Add id(token) for each word in AUTH module 
+2. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Oct-2020 17:24:41 CEST | [#497](https://github.com/tradecloud/tradecloud-portal-angular/pull/497) |  i18n auth | @bohdantrc |  |
+| 1 | Services (Go) | 24-Oct-2020 13:48:50 CEST | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
 
-3. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
+3. [TC-5935](https://tradecloud.atlassian.net/browse/TC-5935) Do not allow to use previous password as new password [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Oct-2020 12:53:25 CEST | [#1357](https://github.com/tradecloud/tradecloud-microservices/pull/1357) |  - previous passwords validation | @olegtradecloud |  |
+
+4. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Oct-2020 15:43:08 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
-
-4. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 23-Oct-2020 14:07:06 CEST | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
 
 5. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -145,8 +145,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Scala) | 06-Oct-2020 15:31:08 CEST | [#1345](https://github.com/tradecloud/tradecloud-microservices/pull/1345) |  Hotfix: Use exact buf version | @denys-kondartiuk |  |
 | 2 | Services (Go) | 05-Oct-2020 16:50:00 CEST | [#343](https://github.com/tradecloud/tradecloud-microservices-go/pull/343) |  Fix: Change docker base image | @vovinacci |  |
 | 3 | Services (Go) | 29-Sep-2020 20:42:12 CEST | [#341](https://github.com/tradecloud/tradecloud-microservices-go/pull/341) |  Kafka: Commit to correct channel | @vovinacci |  |
-| 4 | Services (Scala) | 24-Sep-2020 16:20:45 CEST | [#1333](https://github.com/tradecloud/tradecloud-microservices/pull/1333) |  Run unit tests for all services | @vovinacci |  |
-| 5 | Services (Go) | 24-Sep-2020 10:17:54 CEST | [#337](https://github.com/tradecloud/tradecloud-microservices-go/pull/337) |  Style fixes, language improvements, cleanup | @vovinacci |  |
 
 17. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
