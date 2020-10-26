@@ -1,40 +1,40 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Oct 26 15:30:49 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Oct 26 17:30:55 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5935](https://tradecloud.atlassian.net/browse/TC-5935) Do not allow to use previous password as new password [Planned release 30-Oct-2020]
+1. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 26-Oct-2020 15:20:35 CET | [#504](https://github.com/tradecloud/tradecloud-portal-angular/pull/504) |  add correct showing errors | @bohdantrc |  |
-| 2 | Services (Scala) | 26-Oct-2020 10:31:03 CET | [#1357](https://github.com/tradecloud/tradecloud-microservices/pull/1357) |  - previous passwords validation | @olegtradecloud |  |
+| 1 | Web Portal | 26-Oct-2020 16:20:16 CET | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
 
-2. [TC-6415](https://tradecloud.atlassian.net/browse/TC-6415) As DevOps I want to push git tag on master builds only when it is required, so that it&#39;s more clean 
+2. [TC-5935](https://tradecloud.atlassian.net/browse/TC-5935) Do not allow to use previous password as new password [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 26-Oct-2020 15:03:16 CET | [#346](https://github.com/tradecloud/tradecloud-microservices-go/pull/346) |  - Push git tag on master builds only when it is required, so that it&#39;s more cle | @denys-kondartiuk |  |
+| 1 | Web Portal | 26-Oct-2020 15:57:28 CET | [#504](https://github.com/tradecloud/tradecloud-portal-angular/pull/504) |  add correct showing errors | @bohdantrc |  |
+| 2 | Services (Scala) | 26-Oct-2020 10:31:03 CET | [#1357](https://github.com/tradecloud/tradecloud-microservices/pull/1357) |  - previous passwords validation | @olegtradecloud |  |
 
 3. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Oct-2020 14:28:31 CET | [#1358](https://github.com/tradecloud/tradecloud-microservices/pull/1358) |  - webhook url validation | @olegtradecloud |  |
+| 1 | Services (Scala) | 26-Oct-2020 15:31:29 CET | [#1358](https://github.com/tradecloud/tradecloud-microservices/pull/1358) |  - webhook url validation | @olegtradecloud |  |
 
-4. [TC-6416](https://tradecloud.atlassian.net/browse/TC-6416) Add id(token) for each word in AUTH module 
+4. [TC-6415](https://tradecloud.atlassian.net/browse/TC-6415) As DevOps I want to push git tag on master builds only when it is required, so that it&#39;s more clean 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 26-Oct-2020 15:03:16 CET | [#346](https://github.com/tradecloud/tradecloud-microservices-go/pull/346) |  - Push git tag on master builds only when it is required, so that it&#39;s more cle | @denys-kondartiuk |  |
+
+5. [TC-6416](https://tradecloud.atlassian.net/browse/TC-6416) Add id(token) for each word in AUTH module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Oct-2020 10:16:33 CET | [#497](https://github.com/tradecloud/tradecloud-portal-angular/pull/497) |  i18n auth | @bohdantrc |  |
 
-5. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+6. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 24-Oct-2020 13:48:50 CEST | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
-
-6. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process [Planned release 04-Jun-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Oct-2020 15:43:08 CEST | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
 
 7. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
