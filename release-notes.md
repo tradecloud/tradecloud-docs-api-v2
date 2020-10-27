@@ -1,14 +1,14 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Oct 27 15:30:51 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Oct 27 17:30:52 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6415](https://tradecloud.atlassian.net/browse/TC-6415) As DevOps I want to push git tag on master builds only when it is required, so that it&#39;s more clean 
+1. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 27-Oct-2020 15:27:03 CET | [#349](https://github.com/tradecloud/tradecloud-microservices-go/pull/349) |  - Add additional logging | @denys-kondartiuk |  |
+| 1 | Services (Scala) | 27-Oct-2020 17:11:32 CET | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
 
 2. [TC-6463](https://tradecloud.atlassian.net/browse/TC-6463) Add id(token) for each tag with text in ANALYTICS and ACTIVITY modules 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -40,22 +40,17 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Oct-2020 12:23:03 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
 
-8. [TC-6354](https://tradecloud.atlassian.net/browse/TC-6354) Item details are not updated when re-issueing order line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Oct-2020 15:10:33 CEST | [#1348](https://github.com/tradecloud/tradecloud-microservices/pull/1348) |  Update order details | @roy-tc |  |
-
-9. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+8. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Oct-2020 13:10:03 CEST | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-10. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
+9. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Oct-2020 16:27:27 CEST | [#1349](https://github.com/tradecloud/tradecloud-microservices/pull/1349) |  Make routing of email address-based commands case-insensitive in IdentityActor  | @roy-tc |  |
 
-11. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
+10. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Oct-2020 17:48:01 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
@@ -65,9 +60,11 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6415](https://tradecloud.atlassian.net/browse/TC-6415) As DevOps I want to push git tag on master builds only when it is required, so that it&#39;s more clean 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 27-Oct-2020 14:51:54 CET | [#348](https://github.com/tradecloud/tradecloud-microservices-go/pull/348) |  - Investigating issue with pushing tag | @denys-kondartiuk |  |
-| 2 | Services (Go) | 27-Oct-2020 14:39:00 CET | [#347](https://github.com/tradecloud/tradecloud-microservices-go/pull/347) |  - Investigating issue with pushing tag | @denys-kondartiuk |  |
-| 3 | Services (Go) | 27-Oct-2020 14:24:37 CET | [#346](https://github.com/tradecloud/tradecloud-microservices-go/pull/346) |  - Push git tag on master builds only when it is required, so that it&#39;s more cle | @denys-kondartiuk |  |
+| 1 | Services (Scala) | 27-Oct-2020 16:51:02 CET | [#1359](https://github.com/tradecloud/tradecloud-microservices/pull/1359) |  Push git tag on master builds only when it is required, so that it&#39;s more clean | @denys-kondartiuk |  |
+| 2 | Services (Go) | 27-Oct-2020 16:24:02 CET | [#349](https://github.com/tradecloud/tradecloud-microservices-go/pull/349) |  - Add additional logging | @denys-kondartiuk |  |
+| 3 | Services (Go) | 27-Oct-2020 14:51:54 CET | [#348](https://github.com/tradecloud/tradecloud-microservices-go/pull/348) |  - Investigating issue with pushing tag | @denys-kondartiuk |  |
+| 4 | Services (Go) | 27-Oct-2020 14:39:00 CET | [#347](https://github.com/tradecloud/tradecloud-microservices-go/pull/347) |  - Investigating issue with pushing tag | @denys-kondartiuk |  |
+| 5 | Services (Go) | 27-Oct-2020 14:24:37 CET | [#346](https://github.com/tradecloud/tradecloud-microservices-go/pull/346) |  - Push git tag on master builds only when it is required, so that it&#39;s more cle | @denys-kondartiuk |  |
 
 2. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
