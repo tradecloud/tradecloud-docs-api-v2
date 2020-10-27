@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Oct 27 19:30:48 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Oct 27 21:30:48 CET 2020)
 ---
 
 
@@ -212,7 +212,6 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 29-Sep-2020 21:56:56 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
-| 2 | Services (Scala) | 27-Sep-2020 21:09:06 CEST | [#1335](https://github.com/tradecloud/tradecloud-microservices/pull/1335) |  Dry Integrationsettings Enrichment | @roy-tc |  |
 
 30. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
