@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Oct 28 15:30:53 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Oct 28 17:30:57 CET 2020)
 ---
 
 
@@ -8,32 +8,32 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6461](https://tradecloud.atlassian.net/browse/TC-6461) Add id(token) for each tag with text in CATALOG module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Oct-2020 13:43:40 CET | [#507](https://github.com/tradecloud/tradecloud-portal-angular/pull/507) |  add tokens into template for catalog module | @bohdantrc |  |
+| 1 | Web Portal | 28-Oct-2020 15:53:11 CET | [#507](https://github.com/tradecloud/tradecloud-portal-angular/pull/507) |  add tokens into template for catalog module | @bohdantrc |  |
 
-2. [TC-6254](https://tradecloud.atlassian.net/browse/TC-6254) FE: Completing order lines  
+2. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Oct-2020 11:31:28 CET | [#506](https://github.com/tradecloud/tradecloud-portal-angular/pull/506) |  initial adding completed label into progress component | @bohdantrc |  |
+| 1 | Web Portal | 28-Oct-2020 15:52:32 CET | [#500](https://github.com/tradecloud/tradecloud-portal-angular/pull/500) |  logout user in auth0 | @RobinNagpal |  |
 
-3. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+3. [TC-6254](https://tradecloud.atlassian.net/browse/TC-6254) FE: Completing order lines  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 28-Oct-2020 15:46:54 CET | [#506](https://github.com/tradecloud/tradecloud-portal-angular/pull/506) |  initial adding completed label into progress component | @bohdantrc |  |
+
+4. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 27-Oct-2020 19:08:08 CET | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
 
-4. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
+5. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Oct-2020 12:06:52 CET | [#1358](https://github.com/tradecloud/tradecloud-microservices/pull/1358) |  - webhook url validation | @olegtradecloud |  |
 
-5. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
+6. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Oct-2020 18:20:41 CEST | [#501](https://github.com/tradecloud/tradecloud-portal-angular/pull/501) |   add option to enable sso by specific email | @RobinNagpal |  |
-
-6. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Oct-2020 18:16:03 CEST | [#500](https://github.com/tradecloud/tradecloud-portal-angular/pull/500) |  logout user in auth0 | @RobinNagpal |  |
 
 7. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
