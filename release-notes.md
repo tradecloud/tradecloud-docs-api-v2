@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Oct 28 13:30:51 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Oct 28 15:30:53 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6461](https://tradecloud.atlassian.net/browse/TC-6461) Add id(token) for each tag with text in CATALOG module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Oct-2020 13:29:54 CET | [#507](https://github.com/tradecloud/tradecloud-portal-angular/pull/507) |  add tokens into template for catalog module | @bohdantrc |  |
+| 1 | Web Portal | 28-Oct-2020 13:43:40 CET | [#507](https://github.com/tradecloud/tradecloud-portal-angular/pull/507) |  add tokens into template for catalog module | @bohdantrc |  |
 
 2. [TC-6254](https://tradecloud.atlassian.net/browse/TC-6254) FE: Completing order lines  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -222,9 +222,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 29-Sep-2020 21:56:56 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
-
-32. [TC-6339](https://tradecloud.atlassian.net/browse/TC-6339) The portal somehow uses american date &amp; time notations (MM/DD/YYYY) AM/AP.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Sep-2020 15:10:23 CEST | [#485](https://github.com/tradecloud/tradecloud-portal-angular/pull/485) |  change format date | @bohdantrc |  |
 
