@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Oct 29 19:30:48 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Oct 29 21:30:53 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event, and refactor OrderReissuedByBuyer to OrderLinesReissuedByBuyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Oct-2020 18:48:49 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 29-Oct-2020 21:23:53 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
 
 2. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -180,7 +180,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Oct-2020 15:31:08 CEST | [#1345](https://github.com/tradecloud/tradecloud-microservices/pull/1345) |  Hotfix: Use exact buf version | @denys-kondartiuk |  |
 | 2 | Services (Go) | 05-Oct-2020 16:50:00 CEST | [#343](https://github.com/tradecloud/tradecloud-microservices-go/pull/343) |  Fix: Change docker base image | @vovinacci |  |
-| 3 | Services (Go) | 29-Sep-2020 20:42:12 CEST | [#341](https://github.com/tradecloud/tradecloud-microservices-go/pull/341) |  Kafka: Commit to correct channel | @vovinacci |  |
 
 23. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -223,9 +222,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Sep-2020 10:18:40 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
-
-31. [TC-6332](https://tradecloud.atlassian.net/browse/TC-6332) Missing events in the order webhook client 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 29-Sep-2020 21:56:56 CEST | [#339](https://github.com/tradecloud/tradecloud-microservices-go/pull/339) |  Add missing webhook events #2 | @vovinacci |  |
 
