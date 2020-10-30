@@ -1,55 +1,55 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Oct 29 21:30:53 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Oct 30 09:31:19 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event, and refactor OrderReissuedByBuyer to OrderLinesReissuedByBuyer 
+1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Oct-2020 21:23:53 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 30-Oct-2020 09:02:26 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-2. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
+2. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event, and refactor OrderReissuedByBuyer to OrderLinesReissuedByBuyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 30-Oct-2020 08:57:36 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
+
+3. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Oct-2020 16:32:21 CET | [#1358](https://github.com/tradecloud/tradecloud-microservices/pull/1358) |  - webhook url validation | @olegtradecloud |  |
 | 2 | Services (Go) | 29-Oct-2020 08:10:02 CET | [#350](https://github.com/tradecloud/tradecloud-microservices-go/pull/350) |  Allow skip webhook SSL certificate validation | @vovinacci |  |
 
-3. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+4. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 29-Oct-2020 13:57:07 CET | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
 
-4. [TC-6461](https://tradecloud.atlassian.net/browse/TC-6461) Add id(token) for each tag with text in CATALOG module 
+5. [TC-6461](https://tradecloud.atlassian.net/browse/TC-6461) Add id(token) for each tag with text in CATALOG module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-Oct-2020 15:53:11 CET | [#507](https://github.com/tradecloud/tradecloud-portal-angular/pull/507) |  add tokens into template for catalog module | @bohdantrc |  |
 
-5. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
+6. [TC-6449](https://tradecloud.atlassian.net/browse/TC-6449) Logout SSO user in Auth0 also so that tokens can be removed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-Oct-2020 15:52:32 CET | [#500](https://github.com/tradecloud/tradecloud-portal-angular/pull/500) |  logout user in auth0 | @RobinNagpal |  |
 
-6. [TC-6254](https://tradecloud.atlassian.net/browse/TC-6254) FE: Completing order lines  
+7. [TC-6254](https://tradecloud.atlassian.net/browse/TC-6254) FE: Completing order lines  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-Oct-2020 15:46:54 CET | [#506](https://github.com/tradecloud/tradecloud-portal-angular/pull/506) |  initial adding completed label into progress component | @bohdantrc |  |
 
-7. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
+8. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Oct-2020 18:20:41 CEST | [#501](https://github.com/tradecloud/tradecloud-portal-angular/pull/501) |   add option to enable sso by specific email | @RobinNagpal |  |
 
-8. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
+9. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Oct-2020 12:23:03 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
-
-9. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Oct-2020 13:10:03 CEST | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
 10. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -217,9 +217,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Sep-2020 10:35:53 CEST | [#1338](https://github.com/tradecloud/tradecloud-microservices/pull/1338) |  - fix prices comparison | @olegtradecloud |  |
-
-30. [TC-6278](https://tradecloud.atlassian.net/browse/TC-6278) Add UI support of new order lines updated. by supplier activity 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 30-Sep-2020 10:18:40 CEST | [#467](https://github.com/tradecloud/tradecloud-portal-angular/pull/467) |  add updated statuses in activity for supplier | @bohdantrc |  |
 
