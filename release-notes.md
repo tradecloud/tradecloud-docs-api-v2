@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Oct 30 09:31:19 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Oct 30 11:30:48 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+1. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event, and refactor OrderReissuedByBuyer to OrderLinesReissuedByBuyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Oct-2020 09:02:26 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
+| 1 | Services (Scala) | 30-Oct-2020 11:29:03 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
 
-2. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event, and refactor OrderReissuedByBuyer to OrderLinesReissuedByBuyer 
+2. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Oct-2020 08:57:36 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 30-Oct-2020 10:57:47 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
 3. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -212,9 +212,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Sep-2020 17:34:27 CEST | [#1301](https://github.com/tradecloud/tradecloud-microservices/pull/1301) |  supplier order response | @olegtradecloud |  |
-
-29. [TC-6357](https://tradecloud.atlassian.net/browse/TC-6357) priceInBaseCurrency should not be taken into account when order response is compared to the order message 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Sep-2020 10:35:53 CEST | [#1338](https://github.com/tradecloud/tradecloud-microservices/pull/1338) |  - fix prices comparison | @olegtradecloud |  |
 
