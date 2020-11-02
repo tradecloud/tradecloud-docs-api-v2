@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Nov 2 11:30:49 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Nov 2 13:30:50 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
+1. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event, and refactor OrderReissuedByBuyer to OrderLinesReissuedByBuyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 02-Nov-2020 13:09:06 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
+
+2. [TC-5328](https://tradecloud.atlassian.net/browse/TC-5328) As user, I want to be sure that only secure webhook endpoints are used [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Nov-2020 10:20:22 CET | [#1358](https://github.com/tradecloud/tradecloud-microservices/pull/1358) |  - webhook url validation | @olegtradecloud |  |
 | 2 | Services (Go) | 29-Oct-2020 08:10:02 CET | [#350](https://github.com/tradecloud/tradecloud-microservices-go/pull/350) |  Allow skip webhook SSL certificate validation | @vovinacci |  |
 
-2. [TC-6462](https://tradecloud.atlassian.net/browse/TC-6462) Add id(token) for each tag with text in COMPANY module 
+3. [TC-6462](https://tradecloud.atlassian.net/browse/TC-6462) Add id(token) for each tag with text in COMPANY module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Nov-2020 09:49:35 CET | [#509](https://github.com/tradecloud/tradecloud-portal-angular/pull/509) |  add i18n tokens for company and common tokens for button | @bohdantrc |  |
-
-3. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event, and refactor OrderReissuedByBuyer to OrderLinesReissuedByBuyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Nov-2020 09:45:46 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
 
 4. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
