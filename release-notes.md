@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Nov 2 21:30:49 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Nov 3 09:31:27 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6468](https://tradecloud.atlassian.net/browse/TC-6468) Add id(token) for each tag with text in SHARED module 
+1. [TC-6477](https://tradecloud.atlassian.net/browse/TC-6477) BE: Implement complete order and lines flow in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 02-Nov-2020 19:01:43 CET | [#510](https://github.com/tradecloud/tradecloud-portal-angular/pull/510) |  add i18n tokens for SHARED module | @bohdantrc |  |
+| 1 | Services (Scala) | 03-Nov-2020 09:29:18 CET | [#1362](https://github.com/tradecloud/tradecloud-microservices/pull/1362) |  - complete order lines by indicators | @olegtradecloud |  |
 
-2. [TC-6477](https://tradecloud.atlassian.net/browse/TC-6477) BE: Implement complete order and lines flow in order service 
+2. [TC-6468](https://tradecloud.atlassian.net/browse/TC-6468) Add id(token) for each tag with text in SHARED module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Nov-2020 18:44:16 CET | [#1362](https://github.com/tradecloud/tradecloud-microservices/pull/1362) |  - complete order lines by indicators | @olegtradecloud |  |
+| 1 | Web Portal | 03-Nov-2020 04:07:56 CET | [#510](https://github.com/tradecloud/tradecloud-portal-angular/pull/510) |  add i18n tokens for SHARED module | @bohdantrc |  |
 
 3. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
