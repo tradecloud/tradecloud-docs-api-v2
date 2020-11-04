@@ -1,30 +1,30 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Nov 3 21:30:51 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Nov 4 09:31:30 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6464](https://tradecloud.atlassian.net/browse/TC-6464) Add id(token) for each tag with text in USER module 
+1. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 04-Nov-2020 09:15:24 CET | [#1363](https://github.com/tradecloud/tradecloud-microservices/pull/1363) | : PoC to handle multiple order issuing | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 02-Nov-2020 16:09:50 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
+
+2. [TC-6464](https://tradecloud.atlassian.net/browse/TC-6464) Add id(token) for each tag with text in USER module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 03-Nov-2020 17:37:32 CET | [#514](https://github.com/tradecloud/tradecloud-portal-angular/pull/514) |  add i18n tokens for USER module | @bohdantrc |  |
 
-2. [TC-6477](https://tradecloud.atlassian.net/browse/TC-6477) BE: Implement complete order and lines flow in order service 
+3. [TC-6477](https://tradecloud.atlassian.net/browse/TC-6477) BE: Implement complete order and lines flow in order service 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 03-Nov-2020 17:23:52 CET | [#1362](https://github.com/tradecloud/tradecloud-microservices/pull/1362) |  - complete order lines by indicators | @olegtradecloud |  |
 
-3. [TC-6489](https://tradecloud.atlassian.net/browse/TC-6489) Add &#34;OrderLinesIssuedByBuyer&#34; to the integration settings.   
+4. [TC-6489](https://tradecloud.atlassian.net/browse/TC-6489) Add &#34;OrderLinesIssuedByBuyer&#34; to the integration settings.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 03-Nov-2020 15:38:07 CET | [#511](https://github.com/tradecloud/tradecloud-portal-angular/pull/511) |  add new item into integration settings | @bohdantrc |  |
-
-4. [TC-6222](https://tradecloud.atlassian.net/browse/TC-6222) Introduce &#34;OrderLinesIssuedByBuyer&#34; as an event 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Nov-2020 14:02:00 CET | [#1363](https://github.com/tradecloud/tradecloud-microservices/pull/1363) | : PoC to handle multiple order issuing | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 02-Nov-2020 16:09:50 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
 
 5. [TC-6454](https://tradecloud.atlassian.net/browse/TC-6454) As portal supplier, I want that the net price is calculated automatically based on the gross price and discount I put in.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
