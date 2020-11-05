@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Nov 4 21:30:49 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Nov 5 09:31:30 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
+1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-Nov-2020 09:21:11 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
+| 2 | Web Portal | 04-Nov-2020 17:06:14 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
+
+2. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Nov-2020 18:58:55 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
 
-2. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
+3. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Nov-2020 18:08:25 CET | [#1349](https://github.com/tradecloud/tradecloud-microservices/pull/1349) |  Make routing of email address-based commands case-insensitive in IdentityActor  | @roy-tc |  |
-
-3. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Nov-2020 17:07:54 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
-| 2 | Web Portal | 04-Nov-2020 17:06:14 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 
 4. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
