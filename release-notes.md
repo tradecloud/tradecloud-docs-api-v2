@@ -1,33 +1,33 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Nov 5 13:30:53 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Nov 5 15:30:56 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
+1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-Nov-2020 15:16:49 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
+| 2 | Web Portal | 04-Nov-2020 17:06:14 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
+
+2. [TC-6499](https://tradecloud.atlassian.net/browse/TC-6499) Add webhook for OrderLinesIssuedByBuyer event 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 05-Nov-2020 14:58:37 CET | [#351](https://github.com/tradecloud/tradecloud-microservices-go/pull/351) | : Added OutgoingOrderLinesIssuedEvent for buyer and supplier | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 05-Nov-2020 14:49:31 CET | [#1366](https://github.com/tradecloud/tradecloud-microservices/pull/1366) | : Added OutgoingOrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
+
+3. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Nov-2020 13:29:19 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
 | 2 | Services (Scala) | 05-Nov-2020 12:33:09 CET | [#1367](https://github.com/tradecloud/tradecloud-microservices/pull/1367) |  - fix completeAt event dates | @olegtradecloud |  |
 | 3 | Services (Scala) | 05-Nov-2020 11:02:43 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
 
-2. [TC-6465](https://tradecloud.atlassian.net/browse/TC-6465) Add id(token) for each tag with text in TASK module 
+4. [TC-6465](https://tradecloud.atlassian.net/browse/TC-6465) Add id(token) for each tag with text in TASK module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Nov-2020 13:09:42 CET | [#519](https://github.com/tradecloud/tradecloud-portal-angular/pull/519) |  add i18n tokens for TASK module and common tokens for buttons | @bohdantrc |  |
-
-3. [TC-6499](https://tradecloud.atlassian.net/browse/TC-6499) Add webhook for OrderLinesIssuedByBuyer event 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 05-Nov-2020 12:16:08 CET | [#351](https://github.com/tradecloud/tradecloud-microservices-go/pull/351) | : Added OutgoingOrderLinesIssuedEvent for buyer and supplier | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 05-Nov-2020 11:33:26 CET | [#1366](https://github.com/tradecloud/tradecloud-microservices/pull/1366) | : Added OutgoingOrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
-
-4. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Nov-2020 09:21:11 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
-| 2 | Web Portal | 04-Nov-2020 17:06:14 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 
 5. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive [Planned release 31-Aug-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -251,15 +251,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Oct-2020 15:31:08 CEST | [#1345](https://github.com/tradecloud/tradecloud-microservices/pull/1345) |  Hotfix: Use exact buf version | @denys-kondartiuk |  |
 | 2 | Services (Go) | 05-Oct-2020 16:50:00 CEST | [#343](https://github.com/tradecloud/tradecloud-microservices-go/pull/343) |  Fix: Change docker base image | @vovinacci |  |
-
-39. [TC-5597](https://tradecloud.atlassian.net/browse/TC-5597) As Eriks I want to receive a &#34;Value-added services label&#34; on line level 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Oct-2020 15:24:34 CEST | [#489](https://github.com/tradecloud/tradecloud-portal-angular/pull/489) | [TC-6369][TC-6367] Add row, labels fields into order line buyer tab and table | @bohdantrc |  |
-| 2 | Services (Go) | 05-Oct-2020 15:20:43 CEST | [#338](https://github.com/tradecloud/tradecloud-microservices-go/pull/338) |  Add labels on buyer order and line levels. | @marcmatt |  |
-
-40. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Oct-2020 15:20:21 CEST | [#1334](https://github.com/tradecloud/tradecloud-microservices/pull/1334) |  [TC-5597] Add labels to order and line [TC-6344] Add row to line | @marcmatt |  |
 
