@@ -1,26 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Nov 6 09:31:24 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Nov 6 11:30:57 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+1. [TC-6465](https://tradecloud.atlassian.net/browse/TC-6465) Add id(token) for each tag with text in TASK module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Nov-2020 07:21:06 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
+| 1 | Web Portal | 06-Nov-2020 11:19:34 CET | [#519](https://github.com/tradecloud/tradecloud-portal-angular/pull/519) |  add i18n tokens for TASK module and common tokens for buttons | @bohdantrc |  |
+
+2. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 06-Nov-2020 10:42:17 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 | 2 | Web Portal | 04-Nov-2020 17:06:14 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 
-2. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
+3. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Nov-2020 16:46:13 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
 | 2 | Web Portal | 05-Nov-2020 16:07:01 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
-
-3. [TC-6465](https://tradecloud.atlassian.net/browse/TC-6465) Add id(token) for each tag with text in TASK module 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Nov-2020 16:43:41 CET | [#519](https://github.com/tradecloud/tradecloud-portal-angular/pull/519) |  add i18n tokens for TASK module and common tokens for buttons | @bohdantrc |  |
 
 4. [TC-6499](https://tradecloud.atlassian.net/browse/TC-6499) Add webhook for OrderLinesIssuedByBuyer event 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
