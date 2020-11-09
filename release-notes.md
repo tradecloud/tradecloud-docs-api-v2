@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Nov 9 17:30:59 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Nov 9 19:30:53 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6469](https://tradecloud.atlassian.net/browse/TC-6469) Add id(token) for each tag with text in ORDER &amp; ORDER-LINE modules 
+1. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 09-Nov-2020 19:04:23 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
+| 2 | Web Portal | 05-Nov-2020 16:07:01 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
+
+2. [TC-6469](https://tradecloud.atlassian.net/browse/TC-6469) Add id(token) for each tag with text in ORDER &amp; ORDER-LINE modules 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 09-Nov-2020 16:39:55 CET | [#521](https://github.com/tradecloud/tradecloud-portal-angular/pull/521) |  add i18n tokens for order and orderLine modules | @bohdantrc |  |
-
-2. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Nov-2020 16:11:38 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
-| 2 | Web Portal | 05-Nov-2020 16:07:01 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
 
 3. [TC-6505](https://tradecloud.atlassian.net/browse/TC-6505)  Split the SSO config in portal in accp and prod envs 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
