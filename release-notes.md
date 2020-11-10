@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Nov 10 13:31:00 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Nov 10 15:30:56 CET 2020)
 ---
 
 
@@ -8,68 +8,73 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Nov-2020 12:11:00 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
-| 2 | Web Portal | 10-Nov-2020 12:01:45 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
+| 1 | Services (Scala) | 10-Nov-2020 14:16:29 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
 
-2. [TC-6505](https://tradecloud.atlassian.net/browse/TC-6505)  Split the SSO config in portal in accp and prod envs 
+2. [TC-6513](https://tradecloud.atlassian.net/browse/TC-6513) Update logo&#39;s in portal UI 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 10-Nov-2020 14:08:26 CET | [#522](https://github.com/tradecloud/tradecloud-portal-angular/pull/522) |  add new logo into dashboard page. | @bohdantrc |  |
+
+3. [TC-6505](https://tradecloud.atlassian.net/browse/TC-6505)  Split the SSO config in portal in accp and prod envs 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 08-Nov-2020 18:12:18 CET | [#520](https://github.com/tradecloud/tradecloud-portal-angular/pull/520) |  add option to specify domain and email per environment | @RobinNagpal |  |
 
-3. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+4. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Nov-2020 16:04:05 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 | 2 | Web Portal | 04-Nov-2020 17:06:14 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 
-4. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
+5. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Oct-2020 12:23:03 CEST | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
 
-5. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
+6. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Oct-2020 17:48:01 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
 ## Changelog
 
-1. [TC-6469](https://tradecloud.atlassian.net/browse/TC-6469) Add id(token) for each tag with text in ORDER &amp; ORDER-LINE modules 
+1. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 10-Nov-2020 14:05:28 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
+| 2 | Services (Scala) | 05-Nov-2020 16:18:55 CET | [#1367](https://github.com/tradecloud/tradecloud-microservices/pull/1367) |  - fix completeAt event dates | @olegtradecloud |  |
+
+2. [TC-6469](https://tradecloud.atlassian.net/browse/TC-6469) Add id(token) for each tag with text in ORDER &amp; ORDER-LINE modules 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Nov-2020 10:35:39 CET | [#521](https://github.com/tradecloud/tradecloud-portal-angular/pull/521) |  add i18n tokens for order and orderLine modules | @bohdantrc |  |
 
-2. [TC-6510](https://tradecloud.atlassian.net/browse/TC-6510) As a migrating Exact Globe buyer, I want the correct line position and row in Tradecloud1 
+3. [TC-6510](https://tradecloud.atlassian.net/browse/TC-6510) As a migrating Exact Globe buyer, I want the correct line position and row in Tradecloud1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Nov-2020 09:36:16 CET | [#1368](https://github.com/tradecloud/tradecloud-microservices/pull/1368) |  Add correct position and row for migrating legacy Exact Globe customers | @marcmatt |  |
 
-3. [TC-6499](https://tradecloud.atlassian.net/browse/TC-6499) Add webhook for OrderLinesIssuedByBuyer event 
+4. [TC-6499](https://tradecloud.atlassian.net/browse/TC-6499) Add webhook for OrderLinesIssuedByBuyer event 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Nov-2020 08:20:32 CET | [#1366](https://github.com/tradecloud/tradecloud-microservices/pull/1366) | : Added OutgoingOrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
 | 2 | Services (Go) | 09-Nov-2020 08:20:17 CET | [#351](https://github.com/tradecloud/tradecloud-microservices-go/pull/351) | : Added OutgoingOrderLinesIssuedEvent for buyer and supplier | @dmytrozheliuk |  |
 
-4. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive 
+5. [TC-5934](https://tradecloud.atlassian.net/browse/TC-5934) Make username case insensitive 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Nov-2020 14:15:07 CET | [#1349](https://github.com/tradecloud/tradecloud-microservices/pull/1349) |  Make routing of email address-based commands case-insensitive in IdentityActor  | @roy-tc |  |
 
-5. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+6. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Nov-2020 13:26:46 CET | [#515](https://github.com/tradecloud/tradecloud-portal-angular/pull/515) |  replace GET request with POST into user service | @bohdantrc |  |
 | 2 | Services (Go) | 03-Nov-2020 14:59:38 CET | [#345](https://github.com/tradecloud/tradecloud-microservices-go/pull/345) |  Add findUserByEmail route to user-search | @roy-tc |  |
 
-6. [TC-6465](https://tradecloud.atlassian.net/browse/TC-6465) Add id(token) for each tag with text in TASK module 
+7. [TC-6465](https://tradecloud.atlassian.net/browse/TC-6465) Add id(token) for each tag with text in TASK module 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Nov-2020 12:12:37 CET | [#519](https://github.com/tradecloud/tradecloud-portal-angular/pull/519) |  add i18n tokens for TASK module and common tokens for buttons | @bohdantrc |  |
-
-7. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Nov-2020 16:18:55 CET | [#1367](https://github.com/tradecloud/tradecloud-microservices/pull/1367) |  - fix completeAt event dates | @olegtradecloud |  |
 
 8. [TC-6434](https://tradecloud.atlassian.net/browse/TC-6434) Allow enabling SSO on a user level  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
