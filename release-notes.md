@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Nov 10 11:30:55 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Nov 10 13:31:00 CET 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Nov-2020 09:42:05 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
-| 2 | Services (Scala) | 09-Nov-2020 19:04:23 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
+| 1 | Services (Scala) | 10-Nov-2020 12:11:00 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
+| 2 | Web Portal | 10-Nov-2020 12:01:45 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
 
 2. [TC-6505](https://tradecloud.atlassian.net/browse/TC-6505)  Split the SSO config in portal in accp and prod envs 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
