@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Nov 10 17:30:57 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Nov 10 19:30:54 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6255](https://tradecloud.atlassian.net/browse/TC-6255) As Buyer, I want to see that an order header receives the status Completed when all lines are Completed.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Nov-2020 17:30:22 CET | [#1369](https://github.com/tradecloud/tradecloud-microservices/pull/1369) |  - fix order process status | @olegtradecloud |  |
+| 1 | Services (Scala) | 10-Nov-2020 17:36:41 CET | [#1369](https://github.com/tradecloud/tradecloud-microservices/pull/1369) |  - fix order process status | @olegtradecloud |  |
 
 2. [TC-6251](https://tradecloud.atlassian.net/browse/TC-6251) As a buyer, I want to complete lines in Tradecloud using a Completed indicator 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
