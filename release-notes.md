@@ -1,36 +1,46 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Nov 12 09:31:27 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Nov 12 11:31:13 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+1. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 12-Nov-2020 11:29:41 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
+
+2. [TC-6233](https://tradecloud.atlassian.net/browse/TC-6233) Users from other companies can send messages 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 12-Nov-2020 11:20:41 CET | [#1371](https://github.com/tradecloud/tradecloud-microservices/pull/1371) |   conversation permission | @olegtradecloud |  |
+
+3. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-Nov-2020 08:08:27 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
-2. [TC-6505](https://tradecloud.atlassian.net/browse/TC-6505)  Split the SSO config in portal in accp and prod envs 
+4. [TC-6505](https://tradecloud.atlassian.net/browse/TC-6505)  Split the SSO config in portal in accp and prod envs 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 11-Nov-2020 13:13:58 CET | [#520](https://github.com/tradecloud/tradecloud-portal-angular/pull/520) |  add option to specify domain and email per environment | @RobinNagpal |  |
 
-3. [TC-6123](https://tradecloud.atlassian.net/browse/TC-6123) Bulk reject/proposal order dialog shows all selected order line positions 
+5. [TC-6123](https://tradecloud.atlassian.net/browse/TC-6123) Bulk reject/proposal order dialog shows all selected order line positions 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Nov-2020 23:33:30 CET | [#524](https://github.com/tradecloud/tradecloud-portal-angular/pull/524) |  show amount order lines into reject, propose, confirm dialogs | @bohdantrc |  |
 
-4. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
+6. [TC-6309](https://tradecloud.atlassian.net/browse/TC-6309) Add puppeteer project and super user test  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Nov-2020 19:41:10 CET | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
 
-5. [TC-6513](https://tradecloud.atlassian.net/browse/TC-6513) Update logo&#39;s in portal UI 
+7. [TC-6513](https://tradecloud.atlassian.net/browse/TC-6513) Update logo&#39;s in portal UI 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Nov-2020 16:39:49 CET | [#522](https://github.com/tradecloud/tradecloud-portal-angular/pull/522) |  add new logo into dashboard page. | @bohdantrc |  |
 
-6. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+8. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Nov-2020 16:04:05 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
