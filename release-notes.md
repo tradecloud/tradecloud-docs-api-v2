@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Nov 13 09:31:23 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Nov 13 11:30:57 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6528](https://tradecloud.atlassian.net/browse/TC-6528) Add common id(token) for error messages and frequently used words in the project.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Nov-2020 17:30:43 CET | [#528](https://github.com/tradecloud/tradecloud-portal-angular/pull/528) |  add i18n tokens for common words | @bohdantrc |  |
+| 1 | Web Portal | 13-Nov-2020 10:43:47 CET | [#528](https://github.com/tradecloud/tradecloud-portal-angular/pull/528) |  add i18n tokens for common words | @bohdantrc |  |
 
 2. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
