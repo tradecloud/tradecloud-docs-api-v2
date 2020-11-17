@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Nov 16 21:30:58 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Nov 17 09:31:25 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As A B software I want to cancel a line and order in Tradecloud when a line or order has been deleted in Exact Globe 
+1. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Nov-2020 19:35:14 CET | [#1373](https://github.com/tradecloud/tradecloud-microservices/pull/1373) |  - POC: make buyer fields optional | @olegtradecloud |  |
+| 1 | Services (Scala) | 17-Nov-2020 09:03:03 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
 
 2. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Nov-2020 18:21:32 CET | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  i18n xliffmerge | @bohdantrc |  |
+| 1 | Web Portal | 17-Nov-2020 08:20:37 CET | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
 
-3. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
+3. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As A B software I want to cancel a line and order in Tradecloud when a line or order has been deleted in Exact Globe 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Nov-2020 16:50:05 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 16-Nov-2020 19:35:14 CET | [#1373](https://github.com/tradecloud/tradecloud-microservices/pull/1373) |  - POC: make buyer fields optional | @olegtradecloud |  |
 
 4. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
