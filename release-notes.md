@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Nov 17 13:31:00 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Nov 17 15:31:00 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
+1. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 17-Nov-2020 14:56:06 CET | [#1373](https://github.com/tradecloud/tradecloud-microservices/pull/1373) |  - POC: make buyer fields optional | @olegtradecloud |  |
+
+2. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Nov-2020 12:51:04 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
-
-2. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Nov-2020 11:00:38 CET | [#1373](https://github.com/tradecloud/tradecloud-microservices/pull/1373) |  - POC: make buyer fields optional | @olegtradecloud |  |
 
 3. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
