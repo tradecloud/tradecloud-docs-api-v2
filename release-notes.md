@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Nov 19 09:31:29 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Nov 19 11:30:59 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Nov-2020 16:05:16 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 19-Nov-2020 10:03:26 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
 
 2. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
