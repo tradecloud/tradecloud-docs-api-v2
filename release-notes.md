@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Nov 19 15:31:01 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Nov 19 17:30:58 CET 2020)
 ---
 
 
@@ -8,31 +8,36 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6214](https://tradecloud.atlassian.net/browse/TC-6214) Connected companies can view Order performance metrics of each other 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Nov-2020 15:21:19 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 19-Nov-2020 14:47:32 CET | [#1375](https://github.com/tradecloud/tradecloud-microservices/pull/1375) |  Add api specs documenting permission checks | @roy-tc |  |
+| 1 | Services (Scala) | 19-Nov-2020 16:56:45 CET | [#1375](https://github.com/tradecloud/tradecloud-microservices/pull/1375) |  Add api specs documenting permission checks | @roy-tc |  |
+| 2 | Services (Scala) | 19-Nov-2020 15:21:19 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
 
-2. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+2. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 19-Nov-2020 16:16:46 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
+
+3. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 19-Nov-2020 13:21:07 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 | 2 | Services (Scala) | 19-Nov-2020 13:13:33 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-3. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+4. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Nov-2020 12:17:11 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
-4. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
+5. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Nov-2020 14:05:23 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
 
-5. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
+6. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Nov-2020 16:21:38 CET | [#1373](https://github.com/tradecloud/tradecloud-microservices/pull/1373) |  - POC: make buyer fields optional | @olegtradecloud |  |
 
-6. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
+7. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Nov-2020 08:20:37 CET | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
