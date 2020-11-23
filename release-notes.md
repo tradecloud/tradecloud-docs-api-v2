@@ -1,37 +1,37 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Nov 23 17:30:55 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Nov 23 19:31:14 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+1. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 23-Nov-2020 17:28:39 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
+| 1 | Services (Scala) | 23-Nov-2020 19:06:53 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) |  Trigger build of order service, use parallelism of 1 | @roy-tc |  |
+
+2. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 23-Nov-2020 18:57:53 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
 | 2 | Web Portal | 23-Nov-2020 12:56:50 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 | 3 | Services (Scala) | 19-Nov-2020 13:13:33 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-2. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
+3. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Nov-2020 17:11:41 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
 
-3. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
+4. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Nov-2020 17:07:27 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - POC: buyer indicators | @olegtradecloud |  |
 | 2 | Services (Scala) | 17-Nov-2020 16:21:38 CET | [#1373](https://github.com/tradecloud/tradecloud-microservices/pull/1373) |  - POC: make buyer fields optional | @olegtradecloud |  |
 
-4. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+5. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Nov-2020 11:58:11 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
-
-5. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Nov-2020 11:17:57 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) | [TC4540] Trigger build of order service, use parallelism of 1 | @roy-tc |  |
 
 6. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
