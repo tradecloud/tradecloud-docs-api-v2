@@ -1,21 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Nov 24 09:31:40 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Nov 24 11:30:58 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+1. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 24-Nov-2020 09:22:54 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
+| 1 | Services (Scala) | 24-Nov-2020 10:45:02 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) |  Trigger build of order service, use parallelism of 1 | @roy-tc |  |
+
+2. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 24-Nov-2020 10:37:35 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
 | 2 | Web Portal | 23-Nov-2020 12:56:50 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 | 3 | Services (Scala) | 19-Nov-2020 13:13:33 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
-
-2. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Nov-2020 08:04:11 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) |  Trigger build of order service, use parallelism of 1 | @roy-tc |  |
 
 3. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
