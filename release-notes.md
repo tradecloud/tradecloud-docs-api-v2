@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Nov 25 09:31:26 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Nov 25 11:31:05 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
+1. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 25-Nov-2020 11:29:32 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
+| 2 | Web Portal | 24-Nov-2020 16:10:57 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
+| 3 | Services (Go) | 24-Nov-2020 16:06:30 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
+
+2. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Nov-2020 09:05:46 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
 
-2. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+3. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Nov-2020 17:47:15 CET | [#1376](https://github.com/tradecloud/tradecloud-microservices/pull/1376) |  Remove findUserByEmail route from user service | @roy-tc |  |
 
-3. [TC-6557](https://tradecloud.atlassian.net/browse/TC-6557) Damen prod Order line N470323 01-001 does not have status Delivered, while this should be according to the activity steam &amp; deliveryHistory  
+4. [TC-6557](https://tradecloud.atlassian.net/browse/TC-6557) Damen prod Order line N470323 01-001 does not have status Delivered, while this should be according to the activity steam &amp; deliveryHistory  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Nov-2020 16:23:02 CET | [#1380](https://github.com/tradecloud/tradecloud-microservices/pull/1380) |  Fix order delivered status | @roy-tc |  |
-
-4. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 24-Nov-2020 16:10:57 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
-| 2 | Services (Go) | 24-Nov-2020 16:06:30 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
-| 3 | Services (Scala) | 19-Nov-2020 13:13:33 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
 5. [TC-6550](https://tradecloud.atlassian.net/browse/TC-6550) As DevOps I want to use Tradecloud1 portal e2e tests, so that I ensure that user flows are correct 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
