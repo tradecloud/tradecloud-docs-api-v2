@@ -1,57 +1,57 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Nov 24 21:30:58 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Nov 25 09:31:26 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
+1. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 25-Nov-2020 09:05:46 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
+
+2. [TC-6429](https://tradecloud.atlassian.net/browse/TC-6429) Refactor findUserByEmail route to a POST route in user-search 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Nov-2020 17:47:15 CET | [#1376](https://github.com/tradecloud/tradecloud-microservices/pull/1376) |  Remove findUserByEmail route from user service | @roy-tc |  |
 
-2. [TC-6557](https://tradecloud.atlassian.net/browse/TC-6557) Damen prod Order line N470323 01-001 does not have status Delivered, while this should be according to the activity steam &amp; deliveryHistory  
+3. [TC-6557](https://tradecloud.atlassian.net/browse/TC-6557) Damen prod Order line N470323 01-001 does not have status Delivered, while this should be according to the activity steam &amp; deliveryHistory  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Nov-2020 16:23:02 CET | [#1380](https://github.com/tradecloud/tradecloud-microservices/pull/1380) |  Fix order delivered status | @roy-tc |  |
 
-3. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
+4. [TC-5864](https://tradecloud.atlassian.net/browse/TC-5864) API&#39;s should not use sensitive information in the URL [Planned release 30-Oct-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Nov-2020 16:10:57 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 | 2 | Services (Go) | 24-Nov-2020 16:06:30 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
 | 3 | Services (Scala) | 19-Nov-2020 13:13:33 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 
-4. [TC-6550](https://tradecloud.atlassian.net/browse/TC-6550) As DevOps I want to use Tradecloud1 portal e2e tests, so that I ensure that user flows are correct 
+5. [TC-6550](https://tradecloud.atlassian.net/browse/TC-6550) As DevOps I want to use Tradecloud1 portal e2e tests, so that I ensure that user flows are correct 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Nov-2020 12:20:42 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Fix env variables names | @denys-kondartiuk |  |
 
-5. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
+6. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Nov-2020 11:40:39 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - POC: buyer indicators | @olegtradecloud |  |
 | 2 | Services (Scala) | 17-Nov-2020 16:21:38 CET | [#1373](https://github.com/tradecloud/tradecloud-microservices/pull/1373) |  - POC: make buyer fields optional | @olegtradecloud |  |
 
-6. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
+7. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Nov-2020 10:45:02 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) |  Trigger build of order service, use parallelism of 1 | @roy-tc |  |
 
-7. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
+8. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Nov-2020 17:11:41 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
 
-8. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+9. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Nov-2020 11:58:11 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
-
-9. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-Nov-2020 14:05:23 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
 
 10. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
