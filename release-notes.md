@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Nov 26 09:31:24 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Nov 26 11:31:01 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6556](https://tradecloud.atlassian.net/browse/TC-6556) Proposed changes in Damen production order S717648 cannot be approved.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Nov-2020 09:28:56 CET | [#1381](https://github.com/tradecloud/tradecloud-microservices/pull/1381) | : Fix for unexpected state when trying to approve line proposal | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 26-Nov-2020 09:33:51 CET | [#1381](https://github.com/tradecloud/tradecloud-microservices/pull/1381) | : Fix for unexpected state when trying to approve line proposal | @dmytrozheliuk |  |
 
 2. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
