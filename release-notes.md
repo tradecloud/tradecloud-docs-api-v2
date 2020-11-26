@@ -1,29 +1,29 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Nov 26 15:31:02 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Nov 26 17:30:55 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6556](https://tradecloud.atlassian.net/browse/TC-6556) Proposed changes in Damen production order S717648 cannot be approved.   
+1. [TC-6564](https://tradecloud.atlassian.net/browse/TC-6564) publish all order-related messages to partition 0 of that topic 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 26-Nov-2020 17:17:03 CET | [#1382](https://github.com/tradecloud/tradecloud-microservices/pull/1382) |  Trigger build of order service to publish all messages to partition 0 of the to | @roy-tc |  |
+
+2. [TC-6556](https://tradecloud.atlassian.net/browse/TC-6556) Proposed changes in Damen production order S717648 cannot be approved.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Nov-2020 09:33:51 CET | [#1381](https://github.com/tradecloud/tradecloud-microservices/pull/1381) | : Fix for unexpected state when trying to approve line proposal | @dmytrozheliuk |  |
 
-2. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
+3. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 25-Nov-2020 17:27:44 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - buyer indicators | @olegtradecloud |  |
 
-3. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
+4. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Nov-2020 09:05:46 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
-
-4. [TC-6557](https://tradecloud.atlassian.net/browse/TC-6557) Damen prod Order line N470323 01-001 does not have status Delivered, while this should be according to the activity steam &amp; deliveryHistory  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Nov-2020 16:23:02 CET | [#1380](https://github.com/tradecloud/tradecloud-microservices/pull/1380) |  Fix order delivered status | @roy-tc |  |
 
 5. [TC-6550](https://tradecloud.atlassian.net/browse/TC-6550) As DevOps I want to use Tradecloud1 portal e2e tests, so that I ensure that user flows are correct 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
