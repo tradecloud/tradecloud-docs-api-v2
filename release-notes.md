@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Nov 27 17:30:53 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Nov 27 19:30:56 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6556](https://tradecloud.atlassian.net/browse/TC-6556) Proposed changes in Damen production order S717648 cannot be approved.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Nov-2020 17:29:45 CET | [#1383](https://github.com/tradecloud/tradecloud-microservices/pull/1383) |  - order restoring state fix | @olegtradecloud |  |
+| 1 | Services (Scala) | 27-Nov-2020 19:27:06 CET | [#1383](https://github.com/tradecloud/tradecloud-microservices/pull/1383) |  - order restoring state fix | @olegtradecloud |  |
 | 2 | Services (Scala) | 26-Nov-2020 09:33:51 CET | [#1381](https://github.com/tradecloud/tradecloud-microservices/pull/1381) | : Fix for unexpected state when trying to approve line proposal | @dmytrozheliuk |  |
 
 2. [N/A](#)  
