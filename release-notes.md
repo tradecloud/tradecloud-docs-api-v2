@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Nov 27 11:31:03 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Nov 27 13:30:53 CET 2020)
 ---
 
 
@@ -263,14 +263,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 3 | Services (Go) | 27-Oct-2020 14:51:54 CET | [#348](https://github.com/tradecloud/tradecloud-microservices-go/pull/348) |  - Investigating issue with pushing tag | @denys-kondartiuk |  |
 | 4 | Services (Go) | 27-Oct-2020 14:39:00 CET | [#347](https://github.com/tradecloud/tradecloud-microservices-go/pull/347) |  - Investigating issue with pushing tag | @denys-kondartiuk |  |
 | 5 | Services (Go) | 27-Oct-2020 14:24:37 CET | [#346](https://github.com/tradecloud/tradecloud-microservices-go/pull/346) |  - Push git tag on master builds only when it is required, so that it&#39;s more cle | @denys-kondartiuk |  |
-
-40. [TC-5957](https://tradecloud.atlassian.net/browse/TC-5957) Create Mockup for RFQ / Proposal process 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 27-Oct-2020 12:38:38 CET | [#488](https://github.com/tradecloud/tradecloud-portal-angular/pull/488) |  add mock data for testing and change structure | @bohdantrc |  |
-
-41. [TC-5935](https://tradecloud.atlassian.net/browse/TC-5935) Do not allow to use previous password as new password 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Oct-2020 12:02:47 CET | [#1357](https://github.com/tradecloud/tradecloud-microservices/pull/1357) |  - previous passwords validation | @olegtradecloud |  |
 
