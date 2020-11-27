@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Nov 27 09:31:23 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Nov 27 11:31:03 CET 2020)
 ---
 
 
@@ -8,32 +8,32 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6564](https://tradecloud.atlassian.net/browse/TC-6564) publish all order-related messages to partition 0 of that topic 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Nov-2020 08:59:09 CET | [#1382](https://github.com/tradecloud/tradecloud-microservices/pull/1382) |  Trigger build of order service to publish all messages to partition 0 of the to | @roy-tc |  |
+| 1 | Services (Scala) | 27-Nov-2020 11:21:31 CET | [#1382](https://github.com/tradecloud/tradecloud-microservices/pull/1382) |  Trigger build of order service to publish all messages to partition 0 of the to | @roy-tc |  |
 
-2. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
+2. [TC-6550](https://tradecloud.atlassian.net/browse/TC-6550) As DevOps I want to use Tradecloud1 portal e2e tests, so that I ensure that user flows are correct 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 27-Nov-2020 10:58:29 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Fix env variables names | @denys-kondartiuk |  |
+
+3. [TC-6555](https://tradecloud.atlassian.net/browse/TC-6555) [ACTIVITY] As a user, I want that my filter settings are saved also if I log out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Nov-2020 18:24:14 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
 
-3. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
+4. [TC-6430](https://tradecloud.atlassian.net/browse/TC-6430) As TC I want to make it possible to influence the status of an order (line) when only identifiers are know.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Nov-2020 18:20:56 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - buyer indicators | @olegtradecloud |  |
 
-4. [TC-6556](https://tradecloud.atlassian.net/browse/TC-6556) Proposed changes in Damen production order S717648 cannot be approved.   
+5. [TC-6556](https://tradecloud.atlassian.net/browse/TC-6556) Proposed changes in Damen production order S717648 cannot be approved.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Nov-2020 09:33:51 CET | [#1381](https://github.com/tradecloud/tradecloud-microservices/pull/1381) | : Fix for unexpected state when trying to approve line proposal | @dmytrozheliuk |  |
 
-5. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
+6. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Nov-2020 09:05:46 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
-
-6. [TC-6550](https://tradecloud.atlassian.net/browse/TC-6550) As DevOps I want to use Tradecloud1 portal e2e tests, so that I ensure that user flows are correct 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Nov-2020 12:20:42 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Fix env variables names | @denys-kondartiuk |  |
 
 7. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -273,10 +273,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Oct-2020 12:02:47 CET | [#1357](https://github.com/tradecloud/tradecloud-microservices/pull/1357) |  - previous passwords validation | @olegtradecloud |  |
-| 2 | Web Portal | 27-Oct-2020 11:00:38 CET | [#504](https://github.com/tradecloud/tradecloud-portal-angular/pull/504) |  add correct showing errors | @bohdantrc |  |
-
-42. [TC-6416](https://tradecloud.atlassian.net/browse/TC-6416) Add id(token) for each word in AUTH module 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 27-Oct-2020 10:44:27 CET | [#497](https://github.com/tradecloud/tradecloud-portal-angular/pull/497) |  i18n auth | @bohdantrc |  |
 
