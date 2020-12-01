@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 1 15:30:44 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 1 17:30:41 CET 2020)
 ---
 
 
@@ -8,37 +8,39 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Dec-2020 15:19:11 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) |  Trigger build of order service, use parallelism of 1 | @roy-tc |  |
+| 1 | Services (Scala) | 01-Dec-2020 17:23:05 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) |  Trigger build of order service, use parallelism of 1 | @roy-tc |  |
+| 2 | Services (Scala) | 01-Dec-2020 16:58:48 CET | [#1384](https://github.com/tradecloud/tradecloud-microservices/pull/1384) |  Test PR | @roy-tc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Dec-2020 13:11:58 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Web Portal | 01-Dec-2020 16:52:53 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
+| 2 | Services (Scala) | 27-Nov-2020 10:58:29 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Fix env variables names | @denys-kondartiuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Dec-2020 11:57:24 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - buyer indicators | @olegtradecloud |  |
+| 1 | Services (Scala) | 01-Dec-2020 16:40:05 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - buyer indicators | @olegtradecloud |  |
 
-4. [N/A](#)  
+4. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 01-Dec-2020 13:11:58 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Nov-2020 14:24:55 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) | Tc 6522 order task pages | @bohdantrc |  |
 
-5. []()  
+6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Nov-2020 16:26:11 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
 
-6. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 27-Nov-2020 16:07:47 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
-
 7. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Nov-2020 10:58:29 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Fix env variables names | @denys-kondartiuk |  |
+| 1 | Web Portal | 27-Nov-2020 16:07:47 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
 
 8. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
