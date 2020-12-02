@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Dec 2 19:30:42 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 2 21:30:39 CET 2020)
 ---
 
 
@@ -8,17 +8,17 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 02-Dec-2020 20:59:13 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+
+2. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Dec-2020 19:13:10 CET | [#1385](https://github.com/tradecloud/tradecloud-microservices/pull/1385) |  - enable buf check | @olegtradecloud |  |
 
-2. [N/A](#)  
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Dec-2020 17:14:54 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) | Tc 6522 order task pages | @bohdantrc |  |
-
-3. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Dec-2020 16:42:17 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -192,7 +192,6 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Nov-2020 12:33:44 CET | [#518](https://github.com/tradecloud/tradecloud-portal-angular/pull/518) |  Remove Marcel Terlouw from SSO connections | @marcmatt |  |
-| 2 | Web Portal | 02-Nov-2020 21:17:32 CET | [#501](https://github.com/tradecloud/tradecloud-portal-angular/pull/501) |   add option to enable sso by specific email | @RobinNagpal |  |
 
 28. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -250,9 +249,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 03-Nov-2020 15:39:47 CET | [#510](https://github.com/tradecloud/tradecloud-portal-angular/pull/510) |  add i18n tokens for SHARED module | @bohdantrc |  |
-
-39. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 02-Nov-2020 21:29:26 CET | [#500](https://github.com/tradecloud/tradecloud-portal-angular/pull/500) |  logout user in auth0 | @RobinNagpal |  |
 
