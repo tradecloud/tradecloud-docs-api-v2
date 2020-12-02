@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Dec 2 17:30:38 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 2 19:30:42 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 02-Dec-2020 19:13:10 CET | [#1385](https://github.com/tradecloud/tradecloud-microservices/pull/1385) |  - enable buf check | @olegtradecloud |  |
+
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Dec-2020 17:14:54 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) | Tc 6522 order task pages | @bohdantrc |  |
 
-2. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Dec-2020 16:42:17 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
-
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Dec-2020 15:41:44 CET | [#1385](https://github.com/tradecloud/tradecloud-microservices/pull/1385) |  - enable buf check | @olegtradecloud |  |
+| 1 | Services (Scala) | 02-Dec-2020 16:42:17 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
