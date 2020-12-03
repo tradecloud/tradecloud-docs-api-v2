@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Dec 3 09:31:17 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Dec 3 11:30:46 CET 2020)
 ---
 
 
@@ -8,40 +8,35 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Dec-2020 08:55:17 CET | [#1385](https://github.com/tradecloud/tradecloud-microservices/pull/1385) |  - enable buf check | @olegtradecloud |  |
-
-2. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Dec-2020 20:59:13 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
-3. [N/A](#)  
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Dec-2020 17:14:54 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) | Tc 6522 order task pages | @bohdantrc |  |
 
-4. []()  
+3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 02-Dec-2020 14:35:58 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 27-Nov-2020 10:58:29 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Fix env variables names | @denys-kondartiuk |  |
 
-5. []()  
+4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Dec-2020 16:58:48 CET | [#1384](https://github.com/tradecloud/tradecloud-microservices/pull/1384) |  Test PR | @roy-tc |  |
 
-6. []()  
+5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Nov-2020 16:26:11 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
 
-7. []()  
+6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 27-Nov-2020 16:07:47 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
 
-8. []()  
+7. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Nov-2020 08:20:37 CET | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
@@ -51,7 +46,8 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Dec-2020 14:56:43 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - buyer indicators | @olegtradecloud |  |
+| 1 | Services (Scala) | 03-Dec-2020 10:21:59 CET | [#1385](https://github.com/tradecloud/tradecloud-microservices/pull/1385) |  - enable buf check | @olegtradecloud |  |
+| 2 | Services (Scala) | 02-Dec-2020 14:56:43 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - buyer indicators | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
