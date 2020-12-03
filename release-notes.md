@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Dec 3 17:30:42 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Dec 3 19:30:38 CET 2020)
 ---
 
 
@@ -244,9 +244,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Nov-2020 11:54:50 CET | [#1362](https://github.com/tradecloud/tradecloud-microservices/pull/1362) |  - complete order lines by indicators | @olegtradecloud |  |
-
-38. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 03-Nov-2020 17:37:55 CET | [#513](https://github.com/tradecloud/tradecloud-portal-angular/pull/513) |  add i18n tokens for DASHBOARD and CONVERSATION module | @bohdantrc |  |
 
