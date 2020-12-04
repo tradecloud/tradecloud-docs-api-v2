@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 17:30:44 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 19:30:41 CET 2020)
 ---
 
 
@@ -207,14 +207,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Nov-2020 20:05:48 CET | [#1360](https://github.com/tradecloud/tradecloud-microservices/pull/1360) | : Introduced OrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
-
-30. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Nov-2020 18:29:18 CET | [#1364](https://github.com/tradecloud/tradecloud-microservices/pull/1364) |  - close tasks on complete order lines | @olegtradecloud |  |
-
-31. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Nov-2020 18:28:46 CET | [#1365](https://github.com/tradecloud/tradecloud-microservices/pull/1365) |  - add activities for complete order lines | @olegtradecloud |  |
 
