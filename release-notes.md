@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 13:30:40 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 15:30:38 CET 2020)
 ---
 
 
@@ -8,23 +8,23 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Dec-2020 12:15:28 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
+| 1 | Services (Scala) | 04-Dec-2020 15:28:16 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
+| 2 | Web Portal | 03-Dec-2020 16:27:46 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
 
-2. [N/A](#)  
+2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Dec-2020 11:36:55 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) | Tc 6522 order task pages | @bohdantrc |  |
+| 1 | Web Portal | 04-Dec-2020 15:27:31 CET | [#536](https://github.com/tradecloud/tradecloud-portal-angular/pull/536) |  Add possibility show empty activity into demo pages | @bohdantrc |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 03-Dec-2020 16:27:46 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 27-Nov-2020 10:58:29 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Fix env variables names | @denys-kondartiuk |  |
+| 1 | Web Portal | 04-Dec-2020 15:27:05 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) |  Save filters into task and orders pages | @bohdantrc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 03-Dec-2020 15:33:38 CET | [#536](https://github.com/tradecloud/tradecloud-portal-angular/pull/536) |  Add possibility show empty activity into demo pages | @bohdantrc |  |
+| 1 | Services (Scala) | 04-Dec-2020 13:39:17 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
