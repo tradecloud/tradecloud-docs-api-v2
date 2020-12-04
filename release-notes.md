@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 11:31:11 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 13:30:40 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Dec-2020 11:28:44 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) | Tc 6522 order task pages | @bohdantrc |  |
+| 1 | Services (Scala) | 04-Dec-2020 12:15:28 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 
-2. []()  
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Dec-2020 10:39:18 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
+| 1 | Web Portal | 04-Dec-2020 11:36:55 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) | Tc 6522 order task pages | @bohdantrc |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -222,30 +222,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Nov-2020 16:23:27 CET | [#516](https://github.com/tradecloud/tradecloud-portal-angular/pull/516) |  Delete symbol | @bohdantrc |  |
-
-33. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Nov-2020 13:06:42 CET | [#514](https://github.com/tradecloud/tradecloud-portal-angular/pull/514) |  add i18n tokens for USER module | @bohdantrc |  |
-
-34. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Nov-2020 13:05:31 CET | [#511](https://github.com/tradecloud/tradecloud-portal-angular/pull/511) |  add new item into integration settings | @bohdantrc |  |
-
-35. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Nov-2020 12:36:07 CET | [#1358](https://github.com/tradecloud/tradecloud-microservices/pull/1358) |  - webhook url validation | @olegtradecloud |  |
-| 2 | Services (Go) | 04-Nov-2020 12:35:34 CET | [#350](https://github.com/tradecloud/tradecloud-microservices-go/pull/350) |  Allow skip webhook SSL certificate validation | @vovinacci |  |
-
-36. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Nov-2020 12:02:32 CET | [#512](https://github.com/tradecloud/tradecloud-portal-angular/pull/512) |  add net price in dialog as computed field | @bohdantrc |  |
-
-37. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Nov-2020 11:54:50 CET | [#1362](https://github.com/tradecloud/tradecloud-microservices/pull/1362) |  - complete order lines by indicators | @olegtradecloud |  |
 
