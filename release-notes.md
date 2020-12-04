@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 15:30:38 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 17:30:44 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Dec-2020 15:28:16 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
+| 1 | Services (Scala) | 04-Dec-2020 17:02:34 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
 | 2 | Web Portal | 03-Dec-2020 16:27:46 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
 
 2. []()  
@@ -217,9 +217,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Nov-2020 18:28:46 CET | [#1365](https://github.com/tradecloud/tradecloud-microservices/pull/1365) |  - add activities for complete order lines | @olegtradecloud |  |
-
-32. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Nov-2020 16:23:27 CET | [#516](https://github.com/tradecloud/tradecloud-portal-angular/pull/516) |  Delete symbol | @bohdantrc |  |
 
