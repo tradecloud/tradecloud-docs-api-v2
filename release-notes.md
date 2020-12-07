@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 4 21:30:41 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 7 09:31:06 CET 2020)
 ---
 
 
@@ -8,28 +8,28 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Dec-2020 17:02:34 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
-| 2 | Web Portal | 03-Dec-2020 16:27:46 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
+| 1 | Web Portal | 07-Dec-2020 09:28:35 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
+| 2 | Services (Scala) | 07-Dec-2020 09:27:39 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Dec-2020 15:27:31 CET | [#536](https://github.com/tradecloud/tradecloud-portal-angular/pull/536) |  Add possibility show empty activity into demo pages | @bohdantrc |  |
+| 1 | Services (Scala) | 07-Dec-2020 09:16:45 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Dec-2020 15:27:05 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) |  Save filters into task and orders pages | @bohdantrc |  |
+| 1 | Web Portal | 07-Dec-2020 09:11:02 CET | [#536](https://github.com/tradecloud/tradecloud-portal-angular/pull/536) |  Add possibility show empty activity into demo pages | @bohdantrc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Dec-2020 13:39:17 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
+| 1 | Web Portal | 04-Dec-2020 15:27:05 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) |  Save filters into task and orders pages | @bohdantrc |  |
 
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Dec-2020 20:59:13 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 04-Dec-2020 13:39:17 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -88,7 +88,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Nov-2020 08:43:34 CET | [#1376](https://github.com/tradecloud/tradecloud-microservices/pull/1376) |  Remove findUserByEmail route from user service | @roy-tc |  |
-| 2 | Web Portal | 06-Nov-2020 13:26:46 CET | [#515](https://github.com/tradecloud/tradecloud-portal-angular/pull/515) |  replace GET request with POST into user service | @bohdantrc |  |
 
 8. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -155,7 +154,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Nov-2020 14:28:51 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
 | 2 | Web Portal | 10-Nov-2020 14:05:28 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
-| 3 | Services (Scala) | 05-Nov-2020 16:18:55 CET | [#1367](https://github.com/tradecloud/tradecloud-microservices/pull/1367) |  - fix completeAt event dates | @olegtradecloud |  |
 
 20. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -187,19 +185,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 09-Nov-2020 08:20:32 CET | [#1366](https://github.com/tradecloud/tradecloud-microservices/pull/1366) | : Added OutgoingOrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
 | 2 | Services (Go) | 09-Nov-2020 08:20:17 CET | [#351](https://github.com/tradecloud/tradecloud-microservices-go/pull/351) | : Added OutgoingOrderLinesIssuedEvent for buyer and supplier | @dmytrozheliuk |  |
-
-26. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Nov-2020 14:15:07 CET | [#1349](https://github.com/tradecloud/tradecloud-microservices/pull/1349) |  Make routing of email address-based commands case-insensitive in IdentityActor  | @roy-tc |  |
-
-27. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 06-Nov-2020 12:12:37 CET | [#519](https://github.com/tradecloud/tradecloud-portal-angular/pull/519) |  add i18n tokens for TASK module and common tokens for buttons | @bohdantrc |  |
-
-28. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Nov-2020 12:33:44 CET | [#518](https://github.com/tradecloud/tradecloud-portal-angular/pull/518) |  Remove Marcel Terlouw from SSO connections | @marcmatt |  |
 
