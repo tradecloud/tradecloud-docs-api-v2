@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Dec 7 11:30:44 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 7 13:30:41 CET 2020)
 ---
 
 
@@ -8,23 +8,23 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Dec-2020 10:57:02 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Web Portal | 07-Dec-2020 13:29:03 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
+| 2 | Services (Scala) | 07-Dec-2020 12:19:42 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Dec-2020 10:18:06 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
-| 2 | Web Portal | 07-Dec-2020 09:28:35 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
+| 1 | Services (Scala) | 07-Dec-2020 12:20:13 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Dec-2020 15:27:05 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) |  Save filters into task and orders pages | @bohdantrc |  |
+| 1 | Services (Scala) | 07-Dec-2020 11:51:46 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Dec-2020 13:39:17 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
+| 1 | Web Portal | 04-Dec-2020 15:27:05 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) |  Save filters into task and orders pages | @bohdantrc |  |
 
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
