@@ -23,14 +23,14 @@ Usually this is indicator is set in the `order-response` by the supplier but in 
 The order or line can be marked as shipped by setting `indicators.shipped` on either order or line level and updating the order.
 
 {% hint style="info" %}
-If you provide a `shipped` indicator on order level, **ONLY** the lines provided in this order message will be completed.
+If you provide a `shipped` indicator on order level, **ONLY** the lines provided in this order message will be shipped.
 
 If you also provide a `shipped` indicator on line level, it has **precedence** over the order level `shipped` indicator.
 {% endhint %}
 
 {% page-ref page="update.md" %}
 
-##  Mark as shipped by sending the complete indicator
+## Mark as shipped by sending the shipped indicator
 
 The order or line can be marked as completed by setting `indicators.shipped` on either order or line level and sending this indicator only.
 

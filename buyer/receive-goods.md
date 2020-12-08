@@ -18,7 +18,7 @@ The actual delivery schedule can be send by setting the `lines.deliveryHistory` 
 
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
-## Mark as delivered by resending an order
+### Mark as delivered by resending an order
 
 The order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and updating the order.
 
@@ -30,7 +30,7 @@ If you also provide a `delivered` indicator on line level, it has **precedence**
 
 {% page-ref page="update.md" %}
 
-## Mark as delivered by sending the delivered indicator
+### Mark as delivered by sending the delivered indicator
 
 The order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and sending this indicator only.
 
