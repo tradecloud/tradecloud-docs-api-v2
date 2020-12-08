@@ -4,11 +4,11 @@ description: How to complete an order or line
 
 # Complete an order
 
-{% hint style="warning" %}
-This feature is planned.
-{% endhint %}
+Complete an order line when it is completely handled at the buyer, usually when the supplier invoice is received and approved by buyer.
 
-When an order or line is completely handled at the buyer, usually when the supplier invoice is received and approved by buyer.
+- `Issued`, `Rejected` and `Confirmed` lines will become `Completed`
+- `In progress` and `Cancelled` lines cannot be completed
+- `Completed` lines cannot be completed again
 
 ## Completing by resending an order
 
@@ -78,13 +78,5 @@ application/json
 {% endapi-method %}
 
 {% hint style="info" %}
-[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute)
-{% endhint %}
-
-{% hint style="warning" %}
-You cannot complete a `Cancelled` line
-{% endhint %}
-
-{% hint style="info" %}
-Order lines having process status `Issued`, `In Progress` or `Confirmed` will become `Completed`
+[Send order indicators OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute)
 {% endhint %}
