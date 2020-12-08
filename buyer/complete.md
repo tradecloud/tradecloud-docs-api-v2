@@ -2,9 +2,9 @@
 description: How to complete an order or line
 ---
 
-# Complete an order
+# Complete an order or line
 
-Complete an order line when it is completely handled at the buyer, usually when the supplier invoice is received and approved by buyer.
+Complete an order line in Tradecloud when it is completely handled at the buyer, usually when the supplier invoice is received and approved by buyer.
 
 - `Issued`, `Rejected` and `Confirmed` lines will become `Completed`
 - `In progress` and `Cancelled` lines cannot be completed
@@ -15,19 +15,21 @@ Complete an order line when it is completely handled at the buyer, usually when 
 The order or line can be marked as completed by setting `indicators.completed` on either order or line level and updating the order.
 
 {% hint style="info" %}
-If you provide a completed indicator on order level, ONLY the lines provided in this order message will be completed.
-If you also provide a completed indicator on line level, it has precedence over the order level completed indicator.
+If you provide a `completed` indicator on order level, **ONLY** the lines provided in this order message will be completed.
+
+If you also provide a `completed` indicator on line level, it has **precedence** over the order level `completed` indicator.
 {% endhint %}
 
 {% page-ref page="update.md" %}
 
 ## Completing by sending the complete indicator
 
-The order or can be marked as completed by setting `indicators.completed` on either order or line level and sending the indicator only.
+The order or line can be marked as completed by setting `indicators.completed` on either order or line level and sending this indicator only.
 
 {% hint style="info" %}
-If you provide a completed indicator on order level, ALL the lines in the order will be completed.
-If you also provide a completed indicator on line level, it has precedence over the order level completed indicator.
+If you provide a `completed` indicator on order level, **ALL** the lines in the order will be completed.
+
+If you also provide a `completed` indicator on line level, it has **precedence** over the order level `completed` indicator.
 {% endhint %}
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order/indicators" %}
@@ -82,7 +84,6 @@ Body example:
   ]
 }
 ```
-
 
 {% hint style="info" %}
 [Send order indicators OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute)
