@@ -34,7 +34,7 @@ If you also provide a `completed` indicator on line level, it has **precedence**
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order/indicators" %}
 {% api-method-summary %}
-Send order by buyer
+Send order indicators by buyer
 {% endapi-method-summary %}
 
 {% api-method-description %}
