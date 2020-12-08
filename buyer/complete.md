@@ -12,20 +12,22 @@ Complete an order line when it is completely handled at the buyer, usually when 
 
 ## Completing by resending an order
 
-The order or line can be marked as completed by setting `indicators.completed`on either order or line level and updating the order.
+The order or line can be marked as completed by setting `indicators.completed` on either order or line level and updating the order.
 
 {% hint style="info" %}
 If you provide a completed indicator on order level, ONLY the lines provided in this order message will be completed.
+If you also provide a completed indicator on line level, it has precedence over the order level completed indicator.
 {% endhint %}
 
 {% page-ref page="update.md" %}
 
 ## Completing by sending the complete indicator
 
-The order or can be marked as competed  by setting `indicators.completed`on either order or line level and sending the indicator only.
+The order or can be marked as completed by setting `indicators.completed` on either order or line level and sending the indicator only.
 
 {% hint style="info" %}
-If you provide a completed indicator on order level, ALL the lines in the order will be completed, regardless the lines provided in this order indicators message.
+If you provide a completed indicator on order level, ALL the lines in the order will be completed.
+If you also provide a completed indicator on line level, it has precedence over the order level completed indicator.
 {% endhint %}
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order/indicators" %}
@@ -51,6 +53,7 @@ application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
+```
 {
   "order": {
     "purchaseOrderNumber": "PO123456789",
@@ -67,6 +70,7 @@ application/json
     }
   ]
 }
+```
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
