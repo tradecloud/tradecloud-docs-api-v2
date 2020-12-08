@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 8 13:30:40 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 8 15:30:40 CET 2020)
 ---
 
 
@@ -8,17 +8,17 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Dec-2020 12:36:15 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 08-Dec-2020 15:10:57 CET | [#1388](https://github.com/tradecloud/tradecloud-microservices/pull/1388) |  - refactor calculation of order header status | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 08-Dec-2020 10:47:36 CET | [#354](https://github.com/tradecloud/tradecloud-microservices-go/pull/354) |  Fix webhook API specs event names | @marcmatt |  |
+| 1 | Services (Scala) | 08-Dec-2020 12:36:15 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Dec-2020 10:30:56 CET | [#1388](https://github.com/tradecloud/tradecloud-microservices/pull/1388) |  - refactor calculation of order header status | @olegtradecloud |  |
+| 1 | Services (Go) | 08-Dec-2020 10:47:36 CET | [#354](https://github.com/tradecloud/tradecloud-microservices-go/pull/354) |  Fix webhook API specs event names | @marcmatt |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
