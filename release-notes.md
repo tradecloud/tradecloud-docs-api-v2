@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 8 09:31:16 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 8 11:30:41 CET 2020)
 ---
 
 
@@ -8,23 +8,23 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 08-Dec-2020 09:30:24 CET | [#354](https://github.com/tradecloud/tradecloud-microservices-go/pull/354) |  Fix webhook API specs event names | @marcmatt |  |
+| 1 | Services (Scala) | 08-Dec-2020 11:07:51 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Dec-2020 17:25:01 CET | [#1388](https://github.com/tradecloud/tradecloud-microservices/pull/1388) |  - refactor calculation of order header status | @olegtradecloud |  |
+| 1 | Services (Go) | 08-Dec-2020 10:47:36 CET | [#354](https://github.com/tradecloud/tradecloud-microservices-go/pull/354) |  Fix webhook API specs event names | @marcmatt |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-Dec-2020 16:39:16 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 08-Dec-2020 10:30:56 CET | [#1388](https://github.com/tradecloud/tradecloud-microservices/pull/1388) |  - refactor calculation of order header status | @olegtradecloud |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Dec-2020 15:46:06 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 07-Dec-2020 15:41:49 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
+| 1 | Services (Scala) | 08-Dec-2020 10:07:41 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
+| 2 | Web Portal | 07-Dec-2020 15:46:06 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
 
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
