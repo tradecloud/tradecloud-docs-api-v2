@@ -29,7 +29,7 @@ The order or can be cancelled by setting `indicators.cancelled` on either order 
 {% hint style="info" %}
 If you provide a `cancelled` indicator on order level, **ALL** the lines in the order will be cancelled.
 
-If you also provide a compl`cancelled`eted indicator on line level, it has **precedence**  over the order level `cancelled` indicator.
+If you also provide a `cancelled` indicator on line level, it has **precedence**  over the order level `cancelled` indicator.
 {% endhint %}
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order/indicators" %}

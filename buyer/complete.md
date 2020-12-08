@@ -9,6 +9,8 @@ Complete an order line in Tradecloud when it is completely handled at the buyer,
 - `Issued`, `Rejected` and `Confirmed` lines will become `Completed`
 - `In progress` and `Cancelled` lines cannot be completed
 - `Completed` lines cannot be completed again
+- Completing has precedence over cancelling at the same time
+
 
 ## Completing by resending an order
 
