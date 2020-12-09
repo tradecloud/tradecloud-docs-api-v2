@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 8 21:30:40 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 9 09:31:06 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Dec-2020 21:21:09 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 08-Dec-2020 22:07:56 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -181,10 +181,4 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Nov-2020 09:36:16 CET | [#1368](https://github.com/tradecloud/tradecloud-microservices/pull/1368) |  Add correct position and row for migrating legacy Exact Globe customers | @marcmatt |  |
-
-29. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Nov-2020 08:20:32 CET | [#1366](https://github.com/tradecloud/tradecloud-microservices/pull/1366) | : Added OutgoingOrderLinesIssuedByBuyer event | @dmytrozheliuk |  |
-| 2 | Services (Go) | 09-Nov-2020 08:20:17 CET | [#351](https://github.com/tradecloud/tradecloud-microservices-go/pull/351) | : Added OutgoingOrderLinesIssuedEvent for buyer and supplier | @dmytrozheliuk |  |
 
