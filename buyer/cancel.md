@@ -10,9 +10,9 @@ Cancel an order line in Tradecloud when it is cancelled at the buyer.
 - `Completed` lines cannot be cancelled
 - `Cancelled` lines cannot be cancelled again
 
-## Cancelling by resending an order
+## Cancelling by resending an order using the `/order` API
 
-The order or line can be cancelled by setting `indicators.cancelled` on either order or line level and updating the order.
+The order or line can be cancelled by setting `indicators.cancelled` on either order or line level and updating the order using the `/order` API resource.
 
 {% hint style="info" %}
 If you provide a `cancelled` indicator on order level, **ONLY** the lines provided in this order message will be cancelled.
@@ -22,9 +22,9 @@ If you also provide a `cancelled` indicator on line level, it has **precedence**
 
 {% page-ref page="update.md" %}
 
-## Cancelling by sending the cancelled indicator
+## Cancelling by sending the cancelled indicator using the `/order/indicators` API
 
-The order or can be cancelled by setting `indicators.cancelled` on either order or line level and sending this indicator only.
+The order or can be cancelled by setting `indicators.cancelled` on either order or line level and sending this indicator only, using the `/order/indicators` API resource.
 
 {% hint style="info" %}
 If you provide a `cancelled` indicator on order level, **ALL** the lines in the order will be cancelled.

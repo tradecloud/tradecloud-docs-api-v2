@@ -18,9 +18,9 @@ When an order or line is completely shipped by the supplier, it can be marked as
 Usually this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
 {% endhint %}
 
-## Mark as shipped by resending an order
+## Mark as shipped by resending an order using the `/order` API
 
-The order or line can be marked as shipped by setting `indicators.shipped` on either order or line level and updating the order.
+The order or line can be marked as shipped by setting `indicators.shipped` on either order or line level and updating the order using the `/order` API resource.
 
 {% hint style="info" %}
 If you provide a `shipped` indicator on order level, **ONLY** the lines provided in this order message will be shipped.
@@ -30,9 +30,9 @@ If you also provide a `shipped` indicator on line level, it has **precedence** o
 
 {% page-ref page="update.md" %}
 
-## Mark as shipped by sending the shipped indicator
+## Mark as shipped by sending the shipped indicator using the `/order/indicators` API
 
-The order or line can be marked as completed by setting `indicators.shipped` on either order or line level and sending this indicator only.
+The order or line can be marked as completed by setting `indicators.shipped` on either order or line level and sending this indicator only, using the `/order/indicators` API resource.
 
 {% hint style="info" %}
 If you provide a `shipped` indicator on order level, **ALL** the lines in the order will be shipped.

@@ -6,18 +6,16 @@ description: How to use order and line indicators as a buyer
 
 ## Indicators
 
-When sending a purchase order to Tradecloud you can optionally set indicators on both order and line levels.
-
-{% hint style="info" %}
+You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
-{% endhint %}
 
 ### No delivery expected
 
 `noDeliveryExpected`: no goods of are expected to be delivered to the buyer.
 
 {% hint style="warning" %}
-This feature is planned. Ticket [TC-5564](https://tradecloud.atlassian.net/browse/TC-5564) As a buyer I want to set a "No delivery expected" indicator
+This feature is planned. Ticket [TC-5564](https://tradecloud.atlassian.net/browse/TC-5564)
+ As a buyer I want to set a "No delivery expected" indicator
 {% endhint %}
 
 {% hint style="info" %}
@@ -26,27 +24,21 @@ Order lines having `noDeliveryExpected` set will NEVER become `overdue`
 
 ### Shipped by supplier
 
-`shipped`: all goods of the order or line are completely shipped by the supplier. 
+`shipped`: all goods of the order or line are completely shipped by the supplier.
 
 {% hint style="warning" %}
 This feature is planned. Ticket [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status ''Shipped'' when they have the status "shipped" in my ERP system.
 {% endhint %}
 
+- Order lines having logistics status `Open` will become `Shipped`
+- `Delivered` lines cannot be shipped
+- `Shipped` lines cannot be shipped again
+
 {% hint style="warning" %}
 Usually this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
 {% endhint %}
 
-{% hint style="info" %}
-Order lines having logistics status `Open` will become `Shipped`
-
-You cannot ship a delivered line.
-{% endhint %}
-
 ### Delivered at buyer
-
-{% hint style="warning" %}
-This feature is planned. [TC-5121 ](https://tradecloud.atlassian.net/browse/TC-5121)As buyer I want to see order lines receive the logistical status ''Shipped/Delivered'' when they have the status "shipped/Delivered" in my ERP system.
-{% endhint %}
 
 `delivered`: all goods of the order or line are completely delivered at the buyer.
 
@@ -56,61 +48,23 @@ Order lines having logistics status `Open` or `Shipped` will become `Delivered`
 
 ### Completed at buyer
 
-{% hint style="warning" %}
-This feature is planned.  Ticket [TC-5186](https://tradecloud.atlassian.net/browse/TC-5186) As a buyer I want to complete orders and lines
-{% endhint %}
-
 `completed`: the order or line is completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.
 
-{% hint style="warning" %}
-You cannot complete a `Cancelled` line
-{% endhint %}
-
-{% hint style="info" %}
-Order lines having process status `Issued`, `In Progress` or `Confirmed` will become `Completed`
-{% endhint %}
-
-### Reopened at buyer
-
-{% hint style="warning" %}
-This feature is planned. Ticket TC-4480 As a buyer I want to reopen an order line using a reopen request workflow
-{% endhint %}
-
-`reopened`: the order or line is reopened at the buyer
-
-{% hint style="warning" %}
-This is a **request** to the supplier to reopen an already agreed order or line. 
-
-The supplier has to approve the reopen request.
-{% endhint %}
-
-{% hint style="warning" %}
-You cannot reopen a `Completed` or `Cancelled` order or line
-{% endhint %}
-
-{% hint style="info" %}
-Order lines having process status `Confirmed` will become `InProgress`
-{% endhint %}
+- `Issued`, `Rejected` and `Confirmed` lines will become `Completed`
+- `In progress` and `Cancelled` lines cannot be completed
+- `Completed` lines cannot be completed again
+- Completing has precedence over cancelling at the same time
 
 ### Cancelled at buyer
-
-{% hint style="warning" %}
-This feature is planned. Ticket [TC-4479](https://tradecloud.atlassian.net/browse/TC-4479) As a buyer I want to cancel an order line using a cancel request workflow.
-{% endhint %}
 
 `cancelled`: the order or line is cancelled at the buyer
 
 {% hint style="warning" %}
-This is a **request** to the supplier to cancel an order or line. 
+This is a **request** to the supplier to cancel an order or line.
 
 The supplier has to approve the cancel request.
 {% endhint %}
 
-{% hint style="warning" %}
-You cannot cancel a `Completed` line
-{% endhint %}
-
-{% hint style="info" %}
-Order lines having process status `Issued`, `In Progress` or `Confirmed` will become `Cancelled`
-{% endhint %}
-
+- `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately (without request)
+- `Completed` lines cannot be cancelled
+- `Cancelled` lines cannot be cancelled again

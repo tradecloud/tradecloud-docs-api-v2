@@ -6,11 +6,13 @@ description: How to announce the buyer has received goods
 
 There are two ways to announce the buyer has received goods. Using the actual delivery schedule is preferred over the delivered indicator, as it is more precise regarding partial deliveries.
 
-## Actual delivery schedule
+## Actual delivery history
 
-This schedule contains the actual physical deliveries. With the actual deliveries versus the planned deliveries Tradecloud can calculate which goods should still be delivered or are overdue.
+The delivery history schedule contains the actual physical deliveries. With the actual deliveries versus the planned deliveries Tradecloud can calculate which goods should still be delivered or are overdue.
 
-The actual delivery schedule can be send by setting the `lines.deliveryHistory` and updating the order:
+### Send the delivery history by resending an order using the `/order` API
+
+The actual delivery schedule can be send by setting the `lines.deliveryHistory` and updating the order using the `/order` API resource:
 
 {% page-ref page="update.md" %}
 
@@ -18,9 +20,9 @@ The actual delivery schedule can be send by setting the `lines.deliveryHistory` 
 
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
-### Mark as delivered by resending an order
+### Mark as delivered by resending an order using the `/order` API
 
-The order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and updating the order.
+The order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and updating the order using the `/order` API resource.
 
 {% hint style="info" %}
 If you provide a `delivered` indicator on order level, **ONLY** the lines provided in this order message will be marked as delivered.
@@ -30,9 +32,9 @@ If you also provide a `delivered` indicator on line level, it has **precedence**
 
 {% page-ref page="update.md" %}
 
-### Mark as delivered by sending the delivered indicator
+### Mark as delivered by sending the delivered indicator using the `/order/indicators` API
 
-The order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and sending this indicator only.
+The order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and sending this indicator only, using the `/order/indicators` API resource.
 
 {% hint style="info" %}
 If you provide a `delivered` indicator on order level, **ALL** the lines in the order will be delivered.
