@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Dec 10 09:31:08 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Dec 10 11:30:38 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Dec-2020 09:30:36 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 10-Dec-2020 11:29:40 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -176,14 +176,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Nov-2020 15:46:40 CET | [#523](https://github.com/tradecloud/tradecloud-portal-angular/pull/523) |  add i18n tokens for super-user module | @bohdantrc |  |
-
-27. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Nov-2020 10:35:39 CET | [#521](https://github.com/tradecloud/tradecloud-portal-angular/pull/521) |  add i18n tokens for order and orderLine modules | @bohdantrc |  |
-
-28. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Nov-2020 09:36:16 CET | [#1368](https://github.com/tradecloud/tradecloud-microservices/pull/1368) |  Add correct position and row for migrating legacy Exact Globe customers | @marcmatt |  |
 
