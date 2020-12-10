@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Dec 10 13:30:38 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Thu Dec 10 15:30:40 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Dec-2020 13:30:02 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
+| 1 | Web Portal | 10-Dec-2020 13:42:27 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -165,7 +165,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Nov-2020 14:28:51 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
-| 2 | Web Portal | 10-Nov-2020 14:05:28 CET | [#517](https://github.com/tradecloud/tradecloud-portal-angular/pull/517) | [TC-6262][TC-6254] Add new status into progress bar and activity | @bohdantrc |  |
 
 24. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
