@@ -54,7 +54,7 @@ Order JSON body
 
 ## Order
 
-* `companyId`: your Tradecloud company identifier. You can find your company id in the URL when selecting "My company" in the portal dropdown menu. For example in `https://portal.accp.tradecloud1.com/company/06893bba-e131-4268-87c9-7fae64e16ee9` the last part `06893bba-e131-4268-87c9-7fae64e16ee9` is the company id.
+* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company permissions.
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system
 * `destination`: the delivery destination of this order as known in your ERP system

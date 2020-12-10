@@ -87,7 +87,7 @@ S[end order response OpenAPI Specification](https://swagger-ui.accp.tradecloud1.
 
 ## Order
 
-* `companyId`: your Tradecloud company identifier. You can find your company id in the URL when selecting "My company" in the portal dropdown menu. For example in `https://portal.accp.tradecloud1.com/company/06893bba-e131-4268-87c9-7fae64e16ee9` the last part `06893bba-e131-4268-87c9-7fae64e16ee9` is the company id.
+* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company permissions.
 * `buyerAccountNumber`: the buyer account number as known in your ERP system.
 * `purchaseOrderNumber`: the purchase order number as sent by the buyer.
 * `contact`: the supplier employee responsible for this order. You can either send his/her email or userName as known in your ERP system.
@@ -100,7 +100,7 @@ S[end order response OpenAPI Specification](https://swagger-ui.accp.tradecloud1.
 The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
-#### Other order fields
+### Other order fields
 
 * `description`: a free format additional description of this order.
 * `indicators.accepted`: explicitly **accept** the order as is, the responded lines `delivery schedule` and `prices` will be ignored.
