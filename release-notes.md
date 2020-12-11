@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 15:30:42 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 17:30:37 CET 2020)
 ---
 
 
@@ -8,32 +8,32 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Dec-2020 14:45:00 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
+| 1 | Web Portal | 11-Dec-2020 16:31:30 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Dec-2020 12:01:57 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
+| 1 | Services (Scala) | 11-Dec-2020 16:28:32 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Dec-2020 11:59:19 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
+| 1 | Web Portal | 11-Dec-2020 14:45:00 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Dec-2020 08:42:12 CET | [#1389](https://github.com/tradecloud/tradecloud-microservices/pull/1389) |  Update elastic4s | @roy-tc |  |
+| 1 | Web Portal | 11-Dec-2020 12:01:57 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
 
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Dec-2020 13:42:27 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
+| 1 | Services (Scala) | 11-Dec-2020 11:59:19 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
 
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Dec-2020 11:29:40 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 11-Dec-2020 08:42:12 CET | [#1389](https://github.com/tradecloud/tradecloud-microservices/pull/1389) |  Update elastic4s | @roy-tc |  |
 
 7. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
