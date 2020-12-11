@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Dec 10 21:30:37 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 09:31:07 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Dec-2020 17:16:39 CET | [#1389](https://github.com/tradecloud/tradecloud-microservices/pull/1389) |  Update elastic4s | @roy-tc |  |
+| 1 | Services (Scala) | 11-Dec-2020 08:42:12 CET | [#1389](https://github.com/tradecloud/tradecloud-microservices/pull/1389) |  Update elastic4s | @roy-tc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
