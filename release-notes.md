@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 17:30:37 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 19:30:41 CET 2020)
 ---
 
 
@@ -8,17 +8,17 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Dec-2020 16:31:30 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
+| 1 | Web Portal | 11-Dec-2020 19:19:45 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Dec-2020 16:28:32 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Web Portal | 11-Dec-2020 16:31:30 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Dec-2020 14:45:00 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
+| 1 | Services (Scala) | 11-Dec-2020 16:28:32 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
