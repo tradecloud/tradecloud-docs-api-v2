@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 09:31:07 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 11:30:38 CET 2020)
 ---
 
 
@@ -170,14 +170,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Nov-2020 14:28:51 CET | [#1361](https://github.com/tradecloud/tradecloud-microservices/pull/1361) |  - complete order lines | @olegtradecloud |  |
-
-24. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Nov-2020 11:15:51 CET | [#525](https://github.com/tradecloud/tradecloud-portal-angular/pull/525) |  add i18n tokens for core module | @bohdantrc |  |
-
-25. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Nov-2020 09:55:16 CET | [#1369](https://github.com/tradecloud/tradecloud-microservices/pull/1369) |  - fix order process status | @olegtradecloud |  |
 
