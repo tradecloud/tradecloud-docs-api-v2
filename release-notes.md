@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 11 21:30:37 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 14 09:31:07 CET 2020)
 ---
 
 
@@ -8,27 +8,27 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Dec-2020 19:19:45 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
+| 1 | Services (Scala) | 14-Dec-2020 09:30:46 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Dec-2020 16:31:30 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
+| 1 | Services (Scala) | 13-Dec-2020 18:12:10 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Dec-2020 16:28:32 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Web Portal | 11-Dec-2020 19:19:45 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Dec-2020 12:01:57 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
+| 1 | Web Portal | 11-Dec-2020 16:31:30 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
 
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Dec-2020 11:59:19 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
+| 1 | Web Portal | 11-Dec-2020 12:01:57 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
 
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -145,29 +145,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Nov-2020 23:09:48 CET | [#529](https://github.com/tradecloud/tradecloud-portal-angular/pull/529) |  Fix SSO domainMappingPerEnvironment accp typo | @marcmatt |  |
 | 2 | Web Portal | 15-Nov-2020 22:10:13 CET | [#520](https://github.com/tradecloud/tradecloud-portal-angular/pull/520) |  add option to specify domain and email per environment | @RobinNagpal |  |
-
-17. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 13-Nov-2020 13:03:11 CET | [#528](https://github.com/tradecloud/tradecloud-portal-angular/pull/528) |  add i18n tokens for common words | @bohdantrc |  |
-
-18. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Nov-2020 16:58:33 CET | [#1371](https://github.com/tradecloud/tradecloud-microservices/pull/1371) |   conversation permission | @olegtradecloud |  |
-
-19. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Nov-2020 13:32:36 CET | [#524](https://github.com/tradecloud/tradecloud-portal-angular/pull/524) |  show amount order lines into reject, propose, confirm dialogs | @bohdantrc |  |
-
-20. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Nov-2020 13:32:18 CET | [#522](https://github.com/tradecloud/tradecloud-portal-angular/pull/522) |  add new logo into dashboard page. | @bohdantrc |  |
-
-21. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Nov-2020 13:24:05 CET | [#527](https://github.com/tradecloud/tradecloud-portal-angular/pull/527) |  add i18n tokens for shipments module | @bohdantrc |  |
 
