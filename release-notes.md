@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Dec 14 09:31:07 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 14 11:30:50 CET 2020)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Dec-2020 09:30:46 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 14-Dec-2020 11:27:09 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Dec-2020 18:12:10 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 14-Dec-2020 09:46:44 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
