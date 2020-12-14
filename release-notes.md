@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Dec 14 19:30:39 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 14 21:30:41 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 14-Dec-2020 19:15:08 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
+| 1 | Services (Go) | 14-Dec-2020 21:21:22 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
