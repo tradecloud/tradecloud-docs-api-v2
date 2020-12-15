@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Dec 14 21:30:41 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 15 09:31:04 CET 2020)
 ---
 
 
@@ -8,12 +8,14 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 14-Dec-2020 21:21:22 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
+| 1 | Web Portal | 15-Dec-2020 09:26:10 CET | [#541](https://github.com/tradecloud/tradecloud-portal-angular/pull/541) | [TC-6646] show only users with data into contact filter | @bohdantrc |  |
+| 2 | Services (Go) | 14-Dec-2020 21:21:22 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Dec-2020 18:02:26 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
+| 1 | Web Portal | 14-Dec-2020 23:10:05 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
+| 2 | Services (Scala) | 14-Dec-2020 18:02:26 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
