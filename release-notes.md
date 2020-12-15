@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 15 19:30:40 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 15 21:30:36 CET 2020)
 ---
 
 
@@ -8,14 +8,14 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Dec-2020 18:24:49 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
-| 2 | Web Portal | 14-Dec-2020 23:10:05 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
+| 1 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
+| 2 | Services (Scala) | 15-Dec-2020 18:10:47 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 15-Dec-2020 18:11:20 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
-| 2 | Services (Scala) | 15-Dec-2020 18:10:47 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
+| 1 | Services (Scala) | 15-Dec-2020 18:24:49 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
+| 2 | Web Portal | 14-Dec-2020 23:10:05 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
