@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Dec 16 09:31:12 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 16 11:30:40 CET 2020)
 ---
 
 
@@ -8,19 +8,19 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Dec-2020 09:01:32 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
-| 2 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
+| 1 | Services (Scala) | 16-Dec-2020 10:53:46 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Dec-2020 18:24:49 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
-| 2 | Web Portal | 14-Dec-2020 23:10:05 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
+| 1 | Services (Scala) | 16-Dec-2020 09:01:32 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
+| 2 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Dec-2020 16:22:39 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Dec-2020 18:24:49 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
+| 2 | Web Portal | 14-Dec-2020 23:10:05 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
