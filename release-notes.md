@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Dec 16 13:30:38 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 16 15:30:45 CET 2020)
 ---
 
 
@@ -8,35 +8,34 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Dec-2020 13:28:58 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
+| 1 | Services (Scala) | 16-Dec-2020 15:02:26 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Dec-2020 13:05:03 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
-| 2 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
+| 1 | Services (Scala) | 16-Dec-2020 14:28:04 CET | [#1389](https://github.com/tradecloud/tradecloud-microservices/pull/1389) |  Update elastic4s | @roy-tc |  |
 
 3. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
+
+4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Dec-2020 18:24:49 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
 | 2 | Web Portal | 14-Dec-2020 23:10:05 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
 
-4. []()  
+5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 15-Dec-2020 13:16:44 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 | 2 | Web Portal | 15-Dec-2020 13:06:40 CET | [#541](https://github.com/tradecloud/tradecloud-portal-angular/pull/541) | [TC-6646] show only users with data into contact filter | @bohdantrc |  |
 
-5. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Dec-2020 09:36:33 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
-
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Dec-2020 17:51:21 CET | [#1389](https://github.com/tradecloud/tradecloud-microservices/pull/1389) |  Update elastic4s | @roy-tc |  |
+| 1 | Services (Scala) | 15-Dec-2020 09:36:33 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
 7. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -68,17 +67,18 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Dec-2020 13:26:58 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
+| 1 | Services (Scala) | 16-Dec-2020 14:06:57 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
+| 2 | Services (Go) | 08-Dec-2020 16:17:48 CET | [#354](https://github.com/tradecloud/tradecloud-microservices-go/pull/354) |  Fix webhook API specs event names | @marcmatt |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Dec-2020 13:26:34 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
+| 1 | Web Portal | 14-Dec-2020 13:26:58 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 08-Dec-2020 16:17:48 CET | [#354](https://github.com/tradecloud/tradecloud-microservices-go/pull/354) |  Fix webhook API specs event names | @marcmatt |  |
+| 1 | Web Portal | 14-Dec-2020 13:26:34 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
