@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Dec 16 11:30:40 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 16 13:30:38 CET 2020)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Dec-2020 10:53:46 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
+| 1 | Services (Scala) | 16-Dec-2020 13:28:58 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Dec-2020 09:01:32 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
+| 1 | Services (Scala) | 16-Dec-2020 13:05:03 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
 | 2 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
 
 3. []()  
