@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 15 21:30:36 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 16 09:31:12 CET 2020)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
-| 2 | Services (Scala) | 15-Dec-2020 18:10:47 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
+| 1 | Services (Scala) | 16-Dec-2020 09:01:32 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
+| 2 | Services (Go) | 15-Dec-2020 19:35:34 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -157,10 +157,4 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Nov-2020 14:37:54 CET | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
-
-18. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Nov-2020 23:09:48 CET | [#529](https://github.com/tradecloud/tradecloud-portal-angular/pull/529) |  Fix SSO domainMappingPerEnvironment accp typo | @marcmatt |  |
-| 2 | Web Portal | 15-Nov-2020 22:10:13 CET | [#520](https://github.com/tradecloud/tradecloud-portal-angular/pull/520) |  add option to specify domain and email per environment | @RobinNagpal |  |
 
