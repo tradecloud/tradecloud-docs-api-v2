@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 18 13:30:35 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 18 15:30:38 CET 2020)
 ---
 
 
@@ -8,18 +8,19 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 18-Dec-2020 13:19:34 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
-| 2 | Web Portal | 15-Dec-2020 13:06:40 CET | [#541](https://github.com/tradecloud/tradecloud-portal-angular/pull/541) | [TC-6646] show only users with data into contact filter | @bohdantrc |  |
+| 1 | Services (Go) | 18-Dec-2020 15:28:42 CET | [#358](https://github.com/tradecloud/tradecloud-microservices-go/pull/358) |  Update api specs with updates in domain model | @roy-tc |  |
+| 2 | Services (Scala) | 18-Dec-2020 15:22:19 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Dec-2020 12:01:14 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
+| 1 | Services (Scala) | 18-Dec-2020 15:25:58 CET | [#1394](https://github.com/tradecloud/tradecloud-microservices/pull/1394) | : Fixed issue to accpet/reject/propose after reissue | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Dec-2020 10:43:15 CET | [#1394](https://github.com/tradecloud/tradecloud-microservices/pull/1394) | : Fixed issue to accpet/reject/propose after reissue | @dmytrozheliuk |  |
+| 1 | Services (Go) | 18-Dec-2020 15:25:01 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
+| 2 | Web Portal | 15-Dec-2020 13:06:40 CET | [#541](https://github.com/tradecloud/tradecloud-portal-angular/pull/541) | [TC-6646] show only users with data into contact filter | @bohdantrc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -149,9 +150,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Nov-2020 15:31:03 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 20-Nov-2020 09:13:39 CET | [#1375](https://github.com/tradecloud/tradecloud-microservices/pull/1375) |  Add api specs documenting permission checks | @roy-tc |  |
-
-19. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-Nov-2020 14:37:54 CET | [#490](https://github.com/tradecloud/tradecloud-portal-angular/pull/490) |  Add e2e tests (puppeteer) | @RobinNagpal |  |
 
