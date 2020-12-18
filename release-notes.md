@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Dec 17 21:30:36 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Fri Dec 18 09:31:06 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Dec-2020 21:05:31 CET | [#1394](https://github.com/tradecloud/tradecloud-microservices/pull/1394) | : Fixed issue to accpet/reject/propose after reissue | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 18-Dec-2020 08:49:13 CET | [#1394](https://github.com/tradecloud/tradecloud-microservices/pull/1394) | : Fixed issue to accpet/reject/propose after reissue | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
