@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Dec 21 17:30:37 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 21 19:30:34 CET 2020)
 ---
 
 
@@ -8,19 +8,19 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 21-Dec-2020 17:30:10 CET | [#358](https://github.com/tradecloud/tradecloud-microservices-go/pull/358) |  Update api specs with updates in domain model | @roy-tc |  |
-| 2 | Services (Scala) | 21-Dec-2020 17:16:40 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
+| 1 | Web Portal | 21-Dec-2020 18:30:11 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
+| 2 | Services (Scala) | 21-Dec-2020 14:43:14 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Dec-2020 17:26:31 CET | [#1396](https://github.com/tradecloud/tradecloud-microservices/pull/1396) |  - fix attach order line documents | @olegtradecloud |  |
+| 1 | Services (Scala) | 21-Dec-2020 17:55:48 CET | [#1396](https://github.com/tradecloud/tradecloud-microservices/pull/1396) |  - fix attach order line documents | @olegtradecloud |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Dec-2020 14:43:14 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
-| 2 | Web Portal | 21-Dec-2020 14:40:55 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
+| 1 | Services (Go) | 21-Dec-2020 17:30:10 CET | [#358](https://github.com/tradecloud/tradecloud-microservices-go/pull/358) |  Update api specs with updates in domain model | @roy-tc |  |
+| 2 | Services (Scala) | 21-Dec-2020 17:16:40 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
