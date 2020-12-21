@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 18 21:30:37 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 21 09:31:02 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 18-Dec-2020 17:58:17 CET | [#358](https://github.com/tradecloud/tradecloud-microservices-go/pull/358) |  Update api specs with updates in domain model | @roy-tc |  |
+| 1 | Services (Go) | 21-Dec-2020 07:47:37 CET | [#358](https://github.com/tradecloud/tradecloud-microservices-go/pull/358) |  Update api specs with updates in domain model | @roy-tc |  |
 | 2 | Services (Scala) | 18-Dec-2020 15:43:03 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 
 2. []()  
@@ -88,8 +88,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 08-Dec-2020 12:17:07 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 08-Dec-2020 12:16:57 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
-| 3 | Services (Go) | 19-Nov-2020 14:06:57 CET | [#352](https://github.com/tradecloud/tradecloud-microservices-go/pull/352) |  Add &#39;authentication&#39; service timeouts for UAT | @vovinacci |  |
-| 4 | Services (Scala) | 19-Nov-2020 14:05:51 CET | [#1374](https://github.com/tradecloud/tradecloud-microservices/pull/1374) |  Add &#39;authentication&#39; service timeouts for UAT | @vovinacci |  |
 
 8. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -144,10 +142,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Web Portal | 26-Nov-2020 08:42:23 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
 | 2 | Services (Scala) | 26-Nov-2020 08:42:01 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
 | 3 | Services (Go) | 26-Nov-2020 08:41:43 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
-
-18. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Nov-2020 15:31:03 CET | [#1372](https://github.com/tradecloud/tradecloud-microservices/pull/1372) | : Permission metrics for connected companies | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 20-Nov-2020 09:13:39 CET | [#1375](https://github.com/tradecloud/tradecloud-microservices/pull/1375) |  Add api specs documenting permission checks | @roy-tc |  |
 
