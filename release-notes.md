@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 22 15:30:39 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 22 17:30:36 CET 2020)
 ---
 
 
@@ -8,13 +8,13 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Dec-2020 14:33:09 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
+| 1 | Web Portal | 22-Dec-2020 17:15:47 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
 | 2 | Services (Scala) | 21-Dec-2020 14:43:14 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Dec-2020 10:22:34 CET | [#1396](https://github.com/tradecloud/tradecloud-microservices/pull/1396) |  - fix attach order line documents | @olegtradecloud |  |
+| 1 | Services (Scala) | 22-Dec-2020 16:31:52 CET | [#1396](https://github.com/tradecloud/tradecloud-microservices/pull/1396) |  - fix attach order line documents | @olegtradecloud |  |
 
 3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
