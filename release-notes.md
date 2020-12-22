@@ -1,36 +1,36 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 22 09:31:06 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 22 11:30:44 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 22-Dec-2020 10:54:25 CET | [#1395](https://github.com/tradecloud/tradecloud-microservices/pull/1395) |  Bump shared and elastic4s | @roy-tc |  |
+
+2. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 22-Dec-2020 10:22:34 CET | [#1396](https://github.com/tradecloud/tradecloud-microservices/pull/1396) |  - fix attach order line documents | @olegtradecloud |  |
+
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Dec-2020 20:35:54 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) | Tc 6565 use msal oauth | @RobinNagpal |  |
 
-2. []()  
+4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Dec-2020 18:30:11 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
 | 2 | Services (Scala) | 21-Dec-2020 14:43:14 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
 
-3. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Dec-2020 17:55:48 CET | [#1396](https://github.com/tradecloud/tradecloud-microservices/pull/1396) |  - fix attach order line documents | @olegtradecloud |  |
-
-4. []()  
+5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 21-Dec-2020 17:30:10 CET | [#358](https://github.com/tradecloud/tradecloud-microservices-go/pull/358) |  Update api specs with updates in domain model | @roy-tc |  |
 | 2 | Services (Scala) | 21-Dec-2020 17:16:40 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
-
-5. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Dec-2020 12:09:24 CET | [#1395](https://github.com/tradecloud/tradecloud-microservices/pull/1395) |  Bump shared and elastic4s | @roy-tc |  |
 
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
