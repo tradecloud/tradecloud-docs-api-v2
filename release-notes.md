@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Dec 25 21:30:35 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 28 09:31:06 CET 2020)
 ---
 
 
@@ -41,11 +41,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Dec-2020 16:58:48 CET | [#1384](https://github.com/tradecloud/tradecloud-microservices/pull/1384) |  Test PR | @roy-tc |  |
-
-8. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 27-Nov-2020 16:26:11 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
 
 ## Changelog
 
@@ -146,21 +141,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Nov-2020 13:04:17 CET | [#1382](https://github.com/tradecloud/tradecloud-microservices/pull/1382) |  Trigger build of order service to publish all messages to partition 0 of the to | @roy-tc |  |
-
-19. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Nov-2020 20:41:23 CET | [#1383](https://github.com/tradecloud/tradecloud-microservices/pull/1383) |  - order restoring state fix | @olegtradecloud |  |
-
-20. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Nov-2020 08:43:34 CET | [#1376](https://github.com/tradecloud/tradecloud-microservices/pull/1376) |  Remove findUserByEmail route from user service | @roy-tc |  |
-
-21. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 26-Nov-2020 08:42:23 CET | [#508](https://github.com/tradecloud/tradecloud-portal-angular/pull/508) |  add auth token into ws request header protocol key | @bohdantrc |  |
-| 2 | Services (Scala) | 26-Nov-2020 08:42:01 CET | [#1352](https://github.com/tradecloud/tradecloud-microservices/pull/1352) |  Don&#39;t use sensitive data in GET URL parameters | @roy-tc |  |
-| 3 | Services (Go) | 26-Nov-2020 08:41:43 CET | [#353](https://github.com/tradecloud/tradecloud-microservices-go/pull/353) |  Transform user-search search and suggest to POST | @roy-tc |  |
 
