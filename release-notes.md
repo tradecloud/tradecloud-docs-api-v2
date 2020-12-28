@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Dec 28 15:30:36 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Mon Dec 28 17:30:39 CET 2020)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 28-Dec-2020 17:14:14 CET | [#544](https://github.com/tradecloud/tradecloud-portal-angular/pull/544) |  add user into task | @bohdantrc |  |
+
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-Dec-2020 13:06:45 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) | Tc 6565 use msal oauth | @RobinNagpal |  |
 
-2. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Dec-2020 12:12:16 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
-
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Dec-2020 11:49:55 CET | [#544](https://github.com/tradecloud/tradecloud-portal-angular/pull/544) |  add user into task | @bohdantrc |  |
+| 1 | Services (Scala) | 28-Dec-2020 12:12:16 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
