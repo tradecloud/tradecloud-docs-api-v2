@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 29 09:31:05 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 29 11:30:37 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 28-Dec-2020 17:14:14 CET | [#544](https://github.com/tradecloud/tradecloud-portal-angular/pull/544) |  add user into task | @bohdantrc |  |
+| 1 | Web Portal | 29-Dec-2020 11:28:07 CET | [#544](https://github.com/tradecloud/tradecloud-portal-angular/pull/544) |  add user into task | @bohdantrc |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
