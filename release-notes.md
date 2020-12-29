@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Dec 29 19:30:40 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Tue Dec 29 21:30:41 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Dec-2020 18:46:41 CET | [#545](https://github.com/tradecloud/tradecloud-portal-angular/pull/545) |  Replace auth0 code with Microsoft AD directly | @RobinNagpal |  |
+| 1 | Web Portal | 29-Dec-2020 20:21:21 CET | [#545](https://github.com/tradecloud/tradecloud-portal-angular/pull/545) |  Replace auth0 code with Microsoft AD directly | @RobinNagpal |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
