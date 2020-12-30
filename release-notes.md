@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Dec 30 13:30:36 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 30 15:30:35 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Dec-2020 13:02:15 CET | [#1399](https://github.com/tradecloud/tradecloud-microservices/pull/1399) | Tc 6448 indicators when issue | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 30-Dec-2020 14:30:00 CET | [#1399](https://github.com/tradecloud/tradecloud-microservices/pull/1399) | Tc 6448 indicators when issue | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
