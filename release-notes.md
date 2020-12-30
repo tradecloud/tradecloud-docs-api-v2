@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Dec 30 09:31:05 CET 2020)
+description: Tradecloud services and portal open pull requests and changelog (Wed Dec 30 11:30:39 CET 2020)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Dec-2020 00:51:08 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+| 1 | Services (Scala) | 30-Dec-2020 10:59:33 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 | 2 | Web Portal | 29-Dec-2020 22:47:34 CET | [#545](https://github.com/tradecloud/tradecloud-portal-angular/pull/545) |  Replace auth0 code with Microsoft AD directly | @RobinNagpal |  |
 
 2. []()  
@@ -120,7 +120,6 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Dec-2020 15:35:19 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
-| 2 | Web Portal | 30-Nov-2020 11:19:17 CET | [#534](https://github.com/tradecloud/tradecloud-portal-angular/pull/534) |  add saving last value activity into cache(localStorage) | @bohdantrc |  |
 
 16. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
