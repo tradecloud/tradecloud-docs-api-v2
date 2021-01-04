@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 19:30:37 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 21:30:38 CET 2021)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Jan-2021 18:12:40 CET | [#545](https://github.com/tradecloud/tradecloud-portal-angular/pull/545) |  Replace auth0 code with Microsoft AD directly | @RobinNagpal |  |
-| 2 | Services (Scala) | 04-Jan-2021 18:11:32 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+| 1 | Web Portal | 04-Jan-2021 21:16:30 CET | [#545](https://github.com/tradecloud/tradecloud-portal-angular/pull/545) |  Replace auth0 code with Microsoft AD directly | @RobinNagpal |  |
+| 2 | Services (Scala) | 04-Jan-2021 20:57:19 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
