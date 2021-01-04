@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jan 1 21:30:39 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 09:31:19 CET 2021)
 ---
 
 
@@ -135,20 +135,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 07-Dec-2020 10:59:47 CET | [#536](https://github.com/tradecloud/tradecloud-portal-angular/pull/536) |  Add possibility show empty activity into demo pages | @bohdantrc |  |
-
-18. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Dec-2020 15:46:00 CET | [#1386](https://github.com/tradecloud/tradecloud-microservices/pull/1386) | Revert &#34;Remove findUserByEmail route from user service&#34; | @marcmatt |  |
-
-19. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Dec-2020 10:21:59 CET | [#1385](https://github.com/tradecloud/tradecloud-microservices/pull/1385) |  - enable buf check | @olegtradecloud |  |
-| 2 | Services (Scala) | 02-Dec-2020 14:56:43 CET | [#1377](https://github.com/tradecloud/tradecloud-microservices/pull/1377) |  - buyer indicators | @olegtradecloud |  |
-
-20. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Dec-2020 10:52:32 CET | [#1378](https://github.com/tradecloud/tradecloud-microservices/pull/1378) |  Trigger build of order service, use parallelism of 1 | @roy-tc |  |
 
