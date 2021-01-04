@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 09:31:19 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 11:30:41 CET 2021)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Dec-2020 12:22:28 CET | [#1400](https://github.com/tradecloud/tradecloud-microservices/pull/1400) |  Merge incoming order(line) documents | @roy-tc |  |
+| 1 | Services (Scala) | 04-Jan-2021 11:30:13 CET | [#1400](https://github.com/tradecloud/tradecloud-microservices/pull/1400) |  Merge incoming order(line) documents | @roy-tc |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Dec-2020 22:32:10 CET | [#1399](https://github.com/tradecloud/tradecloud-microservices/pull/1399) | Tc 6448 indicators when issue | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 04-Jan-2021 09:40:26 CET | [#1399](https://github.com/tradecloud/tradecloud-microservices/pull/1399) | [TС-6448]: Order indicators when issue an order for the first time | @dmytrozheliuk |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
