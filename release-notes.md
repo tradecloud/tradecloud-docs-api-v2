@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 13:30:35 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 15:30:41 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jan-2021 13:28:04 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
+| 1 | Services (Scala) | 04-Jan-2021 14:45:25 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
