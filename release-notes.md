@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jan 4 21:30:38 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jan 5 09:31:04 CET 2021)
 ---
 
 
@@ -8,51 +8,56 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Jan-2021 21:16:30 CET | [#545](https://github.com/tradecloud/tradecloud-portal-angular/pull/545) |  Replace auth0 code with Microsoft AD directly | @RobinNagpal |  |
-| 2 | Services (Scala) | 04-Jan-2021 20:57:19 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+| 1 | Web Portal | 05-Jan-2021 08:50:32 CET | [#546](https://github.com/tradecloud/tradecloud-portal-angular/pull/546) |  disable checkboxes with buyer reopen request open status | @bohdantrc |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jan-2021 17:44:24 CET | [#1402](https://github.com/tradecloud/tradecloud-microservices/pull/1402) |  Let all KafkaPublishers publish to partition 0 | @roy-tc |  |
+| 1 | Services (Scala) | 05-Jan-2021 08:39:43 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+| 2 | Web Portal | 04-Jan-2021 21:16:30 CET | [#545](https://github.com/tradecloud/tradecloud-portal-angular/pull/545) |  Replace auth0 code with Microsoft AD directly | @RobinNagpal |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jan-2021 16:28:48 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
+| 1 | Services (Scala) | 05-Jan-2021 08:29:44 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jan-2021 12:31:36 CET | [#1400](https://github.com/tradecloud/tradecloud-microservices/pull/1400) |  Merge incoming order(line) documents | @roy-tc |  |
+| 1 | Services (Scala) | 04-Jan-2021 21:32:27 CET | [#1402](https://github.com/tradecloud/tradecloud-microservices/pull/1402) |  Let all KafkaPublishers publish to partition 0 | @roy-tc |  |
 
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Jan-2021 12:01:47 CET | [#546](https://github.com/tradecloud/tradecloud-portal-angular/pull/546) |  disable checkboxes with buyer reopen request open status | @bohdantrc |  |
+| 1 | Services (Scala) | 04-Jan-2021 16:28:48 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 04-Jan-2021 12:31:36 CET | [#1400](https://github.com/tradecloud/tradecloud-microservices/pull/1400) |  Merge incoming order(line) documents | @roy-tc |  |
+
+7. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Jan-2021 11:54:42 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
 
-7. [N/A](#)  
+8. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Jan-2021 09:40:26 CET | [#1399](https://github.com/tradecloud/tradecloud-microservices/pull/1399) | [TС-6448]: Order indicators when issue an order for the first time | @dmytrozheliuk |  |
 
-8. []()  
+9. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Dec-2020 13:00:31 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
 
-9. []()  
+10. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 18-Dec-2020 16:03:05 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 | 2 | Web Portal | 15-Dec-2020 13:06:40 CET | [#541](https://github.com/tradecloud/tradecloud-portal-angular/pull/541) | [TC-6646] show only users with data into contact filter | @bohdantrc |  |
 
-10. []()  
+11. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Dec-2020 09:36:33 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
