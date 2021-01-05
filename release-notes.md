@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jan 5 19:30:35 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jan 5 21:30:37 CET 2021)
 ---
 
 
@@ -8,13 +8,13 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Jan-2021 19:28:40 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
-| 2 | Services (Scala) | 05-Jan-2021 19:25:46 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+| 1 | Services (Scala) | 05-Jan-2021 21:23:41 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Jan-2021 16:54:47 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
+| 1 | Web Portal | 05-Jan-2021 19:33:32 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
+| 2 | Services (Scala) | 05-Jan-2021 19:25:46 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -31,23 +31,18 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Jan-2021 10:13:12 CET | [#1402](https://github.com/tradecloud/tradecloud-microservices/pull/1402) |  Let all KafkaPublishers publish to partition 0 | @roy-tc |  |
 
-6. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jan-2021 09:40:26 CET | [#1399](https://github.com/tradecloud/tradecloud-microservices/pull/1399) | [TС-6448]: Order indicators when issue an order for the first time | @dmytrozheliuk |  |
-
-7. []()  
+6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Dec-2020 13:00:31 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
 
-8. []()  
+7. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 18-Dec-2020 16:03:05 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 | 2 | Web Portal | 15-Dec-2020 13:06:40 CET | [#541](https://github.com/tradecloud/tradecloud-portal-angular/pull/541) | [TC-6646] show only users with data into contact filter | @bohdantrc |  |
 
-9. []()  
+8. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Dec-2020 09:36:33 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
