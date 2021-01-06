@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jan 6 15:30:37 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jan 6 17:30:35 CET 2021)
 ---
 
 
@@ -8,18 +8,19 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jan-2021 13:34:45 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
+| 1 | Services (Scala) | 06-Jan-2021 17:02:00 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+| 2 | Web Portal | 05-Jan-2021 19:33:32 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jan-2021 12:14:31 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
+| 1 | Web Portal | 06-Jan-2021 16:43:38 CET | [#549](https://github.com/tradecloud/tradecloud-portal-angular/pull/549) |  add search component | @bohdantrc |  |
+| 2 | Services (Scala) | 06-Jan-2021 13:34:45 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 
 3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Jan-2021 19:33:32 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
-| 2 | Services (Scala) | 05-Jan-2021 19:25:46 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+| 1 | Services (Scala) | 06-Jan-2021 12:14:31 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
 
 4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
