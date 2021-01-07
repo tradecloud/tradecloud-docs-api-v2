@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jan 7 15:30:48 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jan 7 17:30:37 CET 2021)
 ---
 
 
@@ -151,14 +151,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 08-Dec-2020 12:17:07 CET | [#535](https://github.com/tradecloud/tradecloud-portal-angular/pull/535) |  - Add cli e2e run for each build | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 08-Dec-2020 12:16:57 CET | [#1379](https://github.com/tradecloud/tradecloud-microservices/pull/1379) |  Add UI tests to CI flow | @denys-kondartiuk |  |
-
-22. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Dec-2020 15:35:19 CET | [#532](https://github.com/tradecloud/tradecloud-portal-angular/pull/532) |  add cache store and save last activity value, disable clear… | @bohdantrc |  |
-
-23. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Dec-2020 15:35:17 CET | [#533](https://github.com/tradecloud/tradecloud-portal-angular/pull/533) |  Save filters into task and orders pages | @bohdantrc |  |
 
