@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jan 8 15:30:38 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jan 8 17:30:41 CET 2021)
 ---
 
 
@@ -8,29 +8,29 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 08-Jan-2021 14:58:13 CET | [#550](https://github.com/tradecloud/tradecloud-portal-angular/pull/550) |  change settings into backoff  | @bohdantrc |  |
+| 1 | Services (Scala) | 08-Jan-2021 16:55:39 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
 
 2. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Jan-2021 14:44:52 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
+| 1 | Web Portal | 08-Jan-2021 14:58:13 CET | [#550](https://github.com/tradecloud/tradecloud-portal-angular/pull/550) |  change settings into backoff  | @bohdantrc |  |
 
 3. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-Jan-2021 14:44:52 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
+
+4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 08-Jan-2021 12:33:48 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
 | 2 | Services (Scala) | 08-Jan-2021 10:29:27 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 
-4. []()  
+5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Jan-2021 10:34:43 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 | 2 | Web Portal | 06-Jan-2021 19:08:18 CET | [#549](https://github.com/tradecloud/tradecloud-portal-angular/pull/549) |  add search component | @bohdantrc |  |
-
-5. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jan-2021 12:14:31 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
 
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -129,7 +129,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Scala) | 17-Dec-2020 18:46:23 CET | [#1393](https://github.com/tradecloud/tradecloud-microservices/pull/1393) |  Run scalafmt on all source and test source files. | @roy-tc |  |
 | 2 | Services (Go) | 17-Dec-2020 10:42:12 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
 | 3 | Services (Scala) | 16-Dec-2020 14:06:57 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
-| 4 | Services (Go) | 08-Dec-2020 16:17:48 CET | [#354](https://github.com/tradecloud/tradecloud-microservices-go/pull/354) |  Fix webhook API specs event names | @marcmatt |  |
 
 17. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -145,9 +144,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Dec-2020 13:26:34 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
-
-20. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Dec-2020 15:41:11 CET | [#1388](https://github.com/tradecloud/tradecloud-microservices/pull/1388) |  - refactor calculation of order header status | @olegtradecloud |  |
 
