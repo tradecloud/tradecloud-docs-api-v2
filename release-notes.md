@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jan 8 13:30:39 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jan 8 15:30:38 CET 2021)
 ---
 
 
@@ -8,29 +8,29 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 08-Jan-2021 13:27:41 CET | [#550](https://github.com/tradecloud/tradecloud-portal-angular/pull/550) |  make 15 attempts for websocket and set max back off time 18… | @bohdantrc |  |
+| 1 | Web Portal | 08-Jan-2021 14:58:13 CET | [#550](https://github.com/tradecloud/tradecloud-portal-angular/pull/550) |  change settings into backoff  | @bohdantrc |  |
 
 2. []()  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 08-Jan-2021 14:44:52 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
+
+3. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 08-Jan-2021 12:33:48 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
 | 2 | Services (Scala) | 08-Jan-2021 10:29:27 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 
-3. []()  
+4. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Jan-2021 10:34:43 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 | 2 | Web Portal | 06-Jan-2021 19:08:18 CET | [#549](https://github.com/tradecloud/tradecloud-portal-angular/pull/549) |  add search component | @bohdantrc |  |
 
-4. []()  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-Jan-2021 12:14:31 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
-
 5. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Jan-2021 16:30:19 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
+| 1 | Services (Scala) | 06-Jan-2021 12:14:31 CET | [#1403](https://github.com/tradecloud/tradecloud-microservices/pull/1403) | : Processing order indicators when issuing an order for the first time | @dmytrozheliuk |  |
 
 6. []()  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
