@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jan 11 16:31:05 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jan 11 18:30:54 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Jan-2021 15:47:26 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | Tc 6448 indicators v4 | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 11-Jan-2021 16:31:09 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | Tc 6448 indicators v4 | @dmytrozheliuk |  |
 
 2. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
