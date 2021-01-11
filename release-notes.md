@@ -1,29 +1,29 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jan 11 12:30:51 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jan 11 14:30:49 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
+1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Jan-2021 12:26:06 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
+| 1 | Services (Scala) | 11-Jan-2021 14:19:37 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | Tc 6448 indicators v4 | @dmytrozheliuk |  |
 
-2. [N/A](#)  
+2. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Jan-2021 12:23:00 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | Tc 6448 indicators v4 | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 11-Jan-2021 13:57:59 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
 
-3. [TC-6651](https://tradecloud.atlassian.net/browse/TC-6651) Make portal websocket reconnect exponential back off more often and longer.  
+3. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 11-Jan-2021 13:38:31 CET | [#551](https://github.com/tradecloud/tradecloud-portal-angular/pull/551) |  add comment | @bohdantrc |  |
+
+4. [TC-6651](https://tradecloud.atlassian.net/browse/TC-6651) Make portal websocket reconnect exponential back off more often and longer.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 11-Jan-2021 11:37:03 CET | [#550](https://github.com/tradecloud/tradecloud-portal-angular/pull/550) |  change settings into backoff  | @bohdantrc |  |
-
-4. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Jan-2021 11:17:02 CET | [#551](https://github.com/tradecloud/tradecloud-portal-angular/pull/551) |  add comment | @bohdantrc |  |
 
 5. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
