@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jan 12 10:30:55 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jan 12 12:30:55 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Jan-2021 10:08:25 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 12-Jan-2021 11:51:29 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 11-Jan-2021 09:51:14 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
 
 2. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
