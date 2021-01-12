@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jan 12 14:30:54 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jan 12 16:30:56 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
+1. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Jan-2021 14:13:17 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 11-Jan-2021 09:51:14 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
+| 1 | Services (Scala) | 12-Jan-2021 16:23:10 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
 
-2. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
+2. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Jan-2021 13:57:59 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
+| 1 | Services (Scala) | 12-Jan-2021 14:44:57 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 11-Jan-2021 09:51:14 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
 
 3. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
