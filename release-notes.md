@@ -1,27 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jan 13 20:30:52 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jan 13 22:30:57 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Jan-2021 20:22:35 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 13-Jan-2021 19:37:05 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
-
-2. [TC-6615](https://tradecloud.atlassian.net/browse/TC-6615) As portal user I want to search order(line)s on multiple order fields 
+1. [TC-6615](https://tradecloud.atlassian.net/browse/TC-6615) As portal user I want to search order(line)s on multiple order fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 20:12:40 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 | 2 | Web Portal | 13-Jan-2021 19:42:40 CET | [#549](https://github.com/tradecloud/tradecloud-portal-angular/pull/549) |  add search component | @bohdantrc |  |
 
-3. [TC-6565](https://tradecloud.atlassian.net/browse/TC-6565) POC - SSO with AzureAD using Oauth 2.0 and skip Auth0 
+2. [TC-6565](https://tradecloud.atlassian.net/browse/TC-6565) POC - SSO with AzureAD using Oauth 2.0 and skip Auth0 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:41:01 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 | 2 | Web Portal | 13-Jan-2021 19:36:28 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
+
+3. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 13-Jan-2021 19:37:05 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
 
 4. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -86,102 +85,107 @@ description: Tradecloud services and portal open pull requests and changelog (We
 
 ## Changelog
 
-1. [N/A](#)  
+1. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 13-Jan-2021 21:03:57 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
+
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Jan-2021 13:21:48 CET | [#1405](https://github.com/tradecloud/tradecloud-microservices/pull/1405) | Revert &#34;[TC-6688] Remove findUserByEmail route from user service&#34; | @marcmatt |  |
 
-2. [TC-6643](https://tradecloud.atlassian.net/browse/TC-6643) Use only one partition for all kafka topics 
+3. [TC-6643](https://tradecloud.atlassian.net/browse/TC-6643) Use only one partition for all kafka topics 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Jan-2021 12:44:43 CET | [#1402](https://github.com/tradecloud/tradecloud-microservices/pull/1402) |  Let all KafkaPublishers publish to partition 0 | @roy-tc |  |
 
-3. [TC-6688](https://tradecloud.atlassian.net/browse/TC-6688) Remove findUserByEmail route to user service as Damen is no longer using it. 
+4. [TC-6688](https://tradecloud.atlassian.net/browse/TC-6688) Remove findUserByEmail route to user service as Damen is no longer using it. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Jan-2021 12:22:50 CET | [#1404](https://github.com/tradecloud/tradecloud-microservices/pull/1404) |  Remove findUserByEmail route from user service | @marcmatt |  |
 
-4. [TC-6634](https://tradecloud.atlassian.net/browse/TC-6634) Add &#34;current selected filters bar&#34; and a &#34;reset filters&#34; button 
+5. [TC-6634](https://tradecloud.atlassian.net/browse/TC-6634) Add &#34;current selected filters bar&#34; and a &#34;reset filters&#34; button 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Jan-2021 10:40:31 CET | [#539](https://github.com/tradecloud/tradecloud-portal-angular/pull/539) |  add reset button and filters into header orders and task pages | @bohdantrc |  |
 
-5. [TC-6669](https://tradecloud.atlassian.net/browse/TC-6669) Implement support for Order(line) Documents through SCI Connector 
+6. [TC-6669](https://tradecloud.atlassian.net/browse/TC-6669) Implement support for Order(line) Documents through SCI Connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Jan-2021 16:26:47 CET | [#1400](https://github.com/tradecloud/tradecloud-microservices/pull/1400) |  Merge incoming order(line) documents | @roy-tc |  |
 
-6. [TC-6686](https://tradecloud.atlassian.net/browse/TC-6686) Remove bulk select Proposal &amp; Reopen buttons.  
+7. [TC-6686](https://tradecloud.atlassian.net/browse/TC-6686) Remove bulk select Proposal &amp; Reopen buttons.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Jan-2021 16:06:58 CET | [#547](https://github.com/tradecloud/tradecloud-portal-angular/pull/547) |  remove proposed and reopened checkboxes for selection | @bohdantrc |  |
 
-7. [TC-6685](https://tradecloud.atlassian.net/browse/TC-6685) A supplier can (bulk) select in progress lines when a buyer reopen request is Open  
+8. [TC-6685](https://tradecloud.atlassian.net/browse/TC-6685) A supplier can (bulk) select in progress lines when a buyer reopen request is Open  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Jan-2021 14:28:48 CET | [#546](https://github.com/tradecloud/tradecloud-portal-angular/pull/546) |  disable checkboxes with buyer reopen request open status | @bohdantrc |  |
 
-8. [TC-6611](https://tradecloud.atlassian.net/browse/TC-6611) As a Contact person, I want to see myself in the tasks header.  
+9. [TC-6611](https://tradecloud.atlassian.net/browse/TC-6611) As a Contact person, I want to see myself in the tasks header.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Dec-2020 12:07:07 CET | [#544](https://github.com/tradecloud/tradecloud-portal-angular/pull/544) |  add user into task | @bohdantrc |  |
 
-9. [TC-6654](https://tradecloud.atlassian.net/browse/TC-6654) implement domain model changes to support SCSN standard 
+10. [TC-6654](https://tradecloud.atlassian.net/browse/TC-6654) implement domain model changes to support SCSN standard 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-Dec-2020 14:30:05 CET | [#542](https://github.com/tradecloud/tradecloud-portal-angular/pull/542) |  make field optional | @bohdantrc |  |
 
-10. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
+11. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-Dec-2020 14:29:51 CET | [#1387](https://github.com/tradecloud/tradecloud-microservices/pull/1387) |  Domain model changes required for SCSN support | @roy-tc |  |
 | 2 | Services (Go) | 28-Dec-2020 14:29:06 CET | [#358](https://github.com/tradecloud/tradecloud-microservices-go/pull/358) |  Update api specs with updates in domain model | @roy-tc |  |
 
-11. [TC-6602](https://tradecloud.atlassian.net/browse/TC-6602) As portal supplier, I want to do bulk reopen request in the order header page. 
+12. [TC-6602](https://tradecloud.atlassian.net/browse/TC-6602) As portal supplier, I want to do bulk reopen request in the order header page. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Dec-2020 10:02:49 CET | [#1390](https://github.com/tradecloud/tradecloud-microservices/pull/1390) | [TC-6604]: API first design &#43; adding route for bulk reopen operation | @dmytrozheliuk |  |
 | 2 | Web Portal | 24-Dec-2020 10:02:46 CET | [#540](https://github.com/tradecloud/tradecloud-portal-angular/pull/540) |  add bulk reopen request | @bohdantrc |  |
 
-12. [TC-6488](https://tradecloud.atlassian.net/browse/TC-6488) Company search box gives incorrect suggestions in some cases. 
+13. [TC-6488](https://tradecloud.atlassian.net/browse/TC-6488) Company search box gives incorrect suggestions in some cases. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Dec-2020 16:42:47 CET | [#543](https://github.com/tradecloud/tradecloud-portal-angular/pull/543) |  show connected company in search box | @bohdantrc |  |
 
-13. [TC-6644](https://tradecloud.atlassian.net/browse/TC-6644) Attaching documents to an order with cancelled OR Completed line(s) will delete the cancelled OR Completed line(s).  
+14. [TC-6644](https://tradecloud.atlassian.net/browse/TC-6644) Attaching documents to an order with cancelled OR Completed line(s) will delete the cancelled OR Completed line(s).  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Dec-2020 13:06:08 CET | [#1396](https://github.com/tradecloud/tradecloud-microservices/pull/1396) |  - fix attach order line documents | @olegtradecloud |  |
 
-14. [TC-6601](https://tradecloud.atlassian.net/browse/TC-6601) Kibana cannot use nested event.meta.createdDateTime as Time Filter field 
+15. [TC-6601](https://tradecloud.atlassian.net/browse/TC-6601) Kibana cannot use nested event.meta.createdDateTime as Time Filter field 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Dec-2020 11:46:24 CET | [#1395](https://github.com/tradecloud/tradecloud-microservices/pull/1395) |  Bump shared and elastic4s | @roy-tc |  |
 | 2 | Services (Scala) | 17-Dec-2020 10:42:45 CET | [#1389](https://github.com/tradecloud/tradecloud-microservices/pull/1389) |  Update elastic4s | @roy-tc |  |
 
-15. [TC-6530](https://tradecloud.atlassian.net/browse/TC-6530) Suppliers cannot accept/reject/propose line that are rejected by the supplier and reissued by the buyer.  
+16. [TC-6530](https://tradecloud.atlassian.net/browse/TC-6530) Suppliers cannot accept/reject/propose line that are rejected by the supplier and reissued by the buyer.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Dec-2020 12:20:44 CET | [#1394](https://github.com/tradecloud/tradecloud-microservices/pull/1394) | : Fixed issue to accpet/reject/propose after reissue | @dmytrozheliuk |  |
 
-16. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
+17. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Dec-2020 18:46:23 CET | [#1393](https://github.com/tradecloud/tradecloud-microservices/pull/1393) |  Run scalafmt on all source and test source files. | @roy-tc |  |
 | 2 | Services (Go) | 17-Dec-2020 10:42:12 CET | [#357](https://github.com/tradecloud/tradecloud-microservices-go/pull/357) |  Use random UUID for example companyId and userId | @roy-tc |  |
 | 3 | Services (Scala) | 16-Dec-2020 14:06:57 CET | [#1392](https://github.com/tradecloud/tradecloud-microservices/pull/1392) |  Use random UUID for example ids | @roy-tc |  |
 
-17. [TC-6648](https://tradecloud.atlassian.net/browse/TC-6648) Failed to persist conversation message 
+18. [TC-6648](https://tradecloud.atlassian.net/browse/TC-6648) Failed to persist conversation message 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Dec-2020 17:19:34 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
 
-18. [TC-6598](https://tradecloud.atlassian.net/browse/TC-6598) [Validate cached value] As a user, I want that my filter settings are saved also if I log out 
+19. [TC-6598](https://tradecloud.atlassian.net/browse/TC-6598) [Validate cached value] As a user, I want that my filter settings are saved also if I log out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Dec-2020 13:26:58 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
 
-19. [TC-6613](https://tradecloud.atlassian.net/browse/TC-6613) Typo in Shipment mock up 
+20. [TC-6613](https://tradecloud.atlassian.net/browse/TC-6613) Typo in Shipment mock up 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Dec-2020 13:26:34 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
