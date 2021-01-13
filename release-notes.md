@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jan 12 22:30:53 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jan 13 10:30:56 CET 2021)
 ---
 
 
@@ -8,14 +8,14 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Jan-2021 21:40:05 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 13-Jan-2021 09:55:15 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 11-Jan-2021 09:51:14 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
 
 2. [TC-6565](https://tradecloud.atlassian.net/browse/TC-6565) POC - SSO with AzureAD using Oauth 2.0 and skip Auth0 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Jan-2021 21:00:25 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
-| 2 | Web Portal | 09-Jan-2021 01:35:54 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
+| 1 | Web Portal | 12-Jan-2021 23:00:35 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
+| 2 | Services (Scala) | 12-Jan-2021 21:00:25 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 
 3. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
