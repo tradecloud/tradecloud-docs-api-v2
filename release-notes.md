@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jan 13 12:30:57 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jan 13 14:30:54 CET 2021)
 ---
 
 
@@ -8,24 +8,24 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Jan-2021 11:39:27 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 13-Jan-2021 14:02:29 CET | [#1407](https://github.com/tradecloud/tradecloud-microservices/pull/1407) | : Handling indicators when issuing order for the first time | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 11-Jan-2021 09:51:14 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
 
-2. [TC-6565](https://tradecloud.atlassian.net/browse/TC-6565) POC - SSO with AzureAD using Oauth 2.0 and skip Auth0 
+2. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 13-Jan-2021 12:58:15 CET | [#551](https://github.com/tradecloud/tradecloud-portal-angular/pull/551) |  add comment | @bohdantrc |  |
+
+3. [TC-6565](https://tradecloud.atlassian.net/browse/TC-6565) POC - SSO with AzureAD using Oauth 2.0 and skip Auth0 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Jan-2021 23:00:35 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
 | 2 | Services (Scala) | 12-Jan-2021 21:00:25 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 
-3. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
+4. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-Jan-2021 16:23:10 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
-
-4. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Jan-2021 13:38:31 CET | [#551](https://github.com/tradecloud/tradecloud-portal-angular/pull/551) |  add comment | @bohdantrc |  |
 
 5. [TC-6651](https://tradecloud.atlassian.net/browse/TC-6651) Make portal websocket reconnect exponential back off more often and longer.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
