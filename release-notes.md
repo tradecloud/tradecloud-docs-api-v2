@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jan 13 22:30:57 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jan 14 10:31:17 CET 2021)
 ---
 
 
@@ -17,68 +17,63 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | 1 | Services (Scala) | 13-Jan-2021 19:41:01 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
 | 2 | Web Portal | 13-Jan-2021 19:36:28 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
 
-3. [TC-6448](https://tradecloud.atlassian.net/browse/TC-6448) Indicators do not work when a order is issued for the first time.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Jan-2021 19:37:05 CET | [#1406](https://github.com/tradecloud/tradecloud-microservices/pull/1406) |  re-using OrderSentByBuyerSplitting PoC | @marcmatt |  |
-
-4. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
+3. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:37:01 CET | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Optional events | @olegtradecloud |  |
 
-5. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+4. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:36:49 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
-6. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
+5. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Jan-2021 19:36:39 CET | [#551](https://github.com/tradecloud/tradecloud-portal-angular/pull/551) |  add comment | @bohdantrc |  |
 
-7. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+6. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:36:31 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-8. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
+7. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:36:21 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
 
-9. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+8. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:36:17 CET | [#1138](https://github.com/tradecloud/tradecloud-microservices/pull/1138) |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-10. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that only contacts in the Orders &amp; Tasks page that have orders or tasks assigned are shown and sorted alphabetically  
+9. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that only contacts in the Orders &amp; Tasks page that have orders or tasks assigned are shown and sorted alphabetically  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Jan-2021 19:36:13 CET | [#541](https://github.com/tradecloud/tradecloud-portal-angular/pull/541) | [TC-6646] show only users with data into contact filter | @bohdantrc |  |
 | 2 | Services (Go) | 13-Jan-2021 19:36:10 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
-11. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
+10. [TC-4420](https://tradecloud.atlassian.net/browse/TC-4420) Create IDoc connector components and sequence diagrams 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:36:06 CET | [#1289](https://github.com/tradecloud/tradecloud-microservices/pull/1289) |  Draft to illustrate how we can simplify the order behavior and decent… | @roy-tc |  |
 
-12. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
+11. [TC-6541](https://tradecloud.atlassian.net/browse/TC-6541) Refresh the &#34;Refresh Token&#34; without logging the user out 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Jan-2021 19:35:47 CET | [#531](https://github.com/tradecloud/tradecloud-portal-angular/pull/531) |  re-trigger the login path when refresh unsuccessful | @RobinNagpal |  |
 
-13. [TC-6651](https://tradecloud.atlassian.net/browse/TC-6651) Make portal websocket reconnect exponential back off more often and longer.  
+12. [TC-6651](https://tradecloud.atlassian.net/browse/TC-6651) Make portal websocket reconnect exponential back off more often and longer.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Jan-2021 19:35:41 CET | [#550](https://github.com/tradecloud/tradecloud-portal-angular/pull/550) |  change settings into backoff  | @bohdantrc |  |
 
-14. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
+13. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 19:34:02 CET | [#1384](https://github.com/tradecloud/tradecloud-microservices/pull/1384) |  Test PR | @roy-tc |  |
 
-15. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
+14. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 13-Jan-2021 19:32:58 CET | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
