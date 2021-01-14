@@ -1,26 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jan 14 12:31:08 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jan 14 14:30:51 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
+1. [TC-6565](https://tradecloud.atlassian.net/browse/TC-6565) POC - SSO with AzureAD using Oauth 2.0 and skip Auth0 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 14-Jan-2021 13:38:04 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
+| 2 | Services (Scala) | 13-Jan-2021 19:41:01 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
+
+2. [TC-6653](https://tradecloud.atlassian.net/browse/TC-6653) Portal should check and refresh access token when invalid before web socket reconnect 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Jan-2021 12:08:33 CET | [#551](https://github.com/tradecloud/tradecloud-portal-angular/pull/551) |  add comment | @bohdantrc |  |
 
-2. [TC-6615](https://tradecloud.atlassian.net/browse/TC-6615) As portal user I want to search order(line)s on multiple order fields 
+3. [TC-6615](https://tradecloud.atlassian.net/browse/TC-6615) As portal user I want to search order(line)s on multiple order fields 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-Jan-2021 20:12:40 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 | 2 | Web Portal | 13-Jan-2021 19:42:40 CET | [#549](https://github.com/tradecloud/tradecloud-portal-angular/pull/549) |  add search component | @bohdantrc |  |
-
-3. [TC-6565](https://tradecloud.atlassian.net/browse/TC-6565) POC - SSO with AzureAD using Oauth 2.0 and skip Auth0 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Jan-2021 19:41:01 CET | [#1397](https://github.com/tradecloud/tradecloud-microservices/pull/1397) |  replace Auth0 by using the token from MicrosoftAD | @RobinNagpal |  |
-| 2 | Web Portal | 13-Jan-2021 19:36:28 CET | [#548](https://github.com/tradecloud/tradecloud-portal-angular/pull/548) |  use msal oauth | @RobinNagpal |  |
 
 4. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -174,14 +174,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Dec-2020 17:19:34 CET | [#1391](https://github.com/tradecloud/tradecloud-microservices/pull/1391) |  - disallow json null values | @olegtradecloud |  |
-
-19. [TC-6598](https://tradecloud.atlassian.net/browse/TC-6598) [Validate cached value] As a user, I want that my filter settings are saved also if I log out 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Dec-2020 13:26:58 CET | [#537](https://github.com/tradecloud/tradecloud-portal-angular/pull/537) |  add validation cached data | @bohdantrc |  |
-
-20. [TC-6613](https://tradecloud.atlassian.net/browse/TC-6613) Typo in Shipment mock up 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 14-Dec-2020 13:26:34 CET | [#538](https://github.com/tradecloud/tradecloud-portal-angular/pull/538) |  change typo into shipment module | @bohdantrc |  |
 
