@@ -35,6 +35,7 @@
   * [Buyer order process overview](buyer/overview.md)
   * [Issue a new order](buyer/issue/README.md)
     * [Attach a document to an order](buyer/issue/attach-document.md)
+    * [Choose attach document API](buyer/issue/attach-document-api.md)
     * [No delivery expected](buyer/issue/no-delivery-expected.md)
   * [Update an existing order](buyer/update.md)
   * [Receive an order response](buyer/webhook/README.md)
