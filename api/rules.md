@@ -54,11 +54,16 @@ Do **not** send more than **10 requests per second**.
 
 Tradecloud may respond with [HTTP Status Code 429](https://tools.ietf.org/html/rfc6585#section-4) `Too Many Requests`
 
-### Only resend changed orders or order responses
+### Only send new or changed orders or order responses
 
-Only resend an order or order response that **has an actual change**
+Only send an **order** or **order response** that either **is new** or **has an actual change**
 
-### **Never send all orders or responses periodically**
+### The order or order response should only contain new or changed lines
+
+The order or order response should only contain **order lines** that are **new or changed**.
+Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+
+### Never send all orders or responses periodically
 
 Never resend **all** or **all active** orders or responses periodically.
 
