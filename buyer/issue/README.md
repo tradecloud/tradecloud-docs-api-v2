@@ -56,7 +56,12 @@ Order JSON body
 
 * `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company permissions.
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
-* `purchaseOrderNumber`: the purchase order number as known in your ERP system
+* `purchaseOrderNumber`: the purchase order number as known in your ERP system.
+
+{% hint style="warning" %}
+The purchase order number must not contain whitespace characters
+{% endhint %}
+
 * `destination`: the delivery destination of this order as known in your ERP system
 * `contact`: the employee responsible for this order. You can either send his/her email or userName as known in your ERP system
 
@@ -68,7 +73,7 @@ Order JSON body
 The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
-#### Other order fields
+### Other order fields
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier

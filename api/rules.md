@@ -22,23 +22,33 @@ Pitfall: JSON syntax does not assign any significance to the **ordering** of nam
 
 Your integration **must support** [forward compatibility](compatibility.md#forward-compatibility).
 
-## Identifiers must be unique and immutable
-
-Your identifiers like below **must be** **unique** and may **never change or be reassigned**.
+## Identifiers
 
 Identifier examples are:
 
-* `supplierAccountNumber`
-* `buyerAccountNumber`
-* `purchaseOrderNumber`
-* `destination.code`
-* `position`
-* `item.number`
-* `deliverySchedule.position`
-* `salesOrderNumber`
-* `salesOrderPosition`
-* `contact.email`
-* `contact.userName`
+- `supplierAccountNumber`
+- `buyerAccountNumber`
+- `purchaseOrderNumber`
+- `destination.code`
+- `position`
+- `item.number`
+- `deliverySchedule.position`
+- `salesOrderNumber`
+- `salesOrderPosition`
+- `contact.email`
+- `contact.userName`
+
+### Identifiers must be unique and immutable
+
+Your identifiers
+
+- **must be unique**
+- **must never change**
+- **must never be reassigned**
+
+### Identifiers must not contain whitespace characters
+
+Your identifiers **must not contain whitespace characters.**
 
 ## Connections must be configured
 
@@ -72,23 +82,10 @@ Your integration **must support** **the other party may** **add or remove a deli
 
 ## Attach a document
 
-
-
 ## Receive goods
-
-
 
 ## Complete an order
 
-
-
 ## Reopen an order
 
-
-
 ## Cancel an order
-
-
-
-
-
