@@ -4,7 +4,12 @@ description: How to issue a new purchase order as a buyer
 
 # Issue a new order
 
-As buyer you can send either a new or [updated](../update.md) purchase order to your supplier.
+As buyer you can send either a **new or [updated](../update.md)** purchase order to your supplier.
+
+{% hint style="warning" %}
+The order should only contain **order lines** that are **new or changed**.
+Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+{% endhint %}
 
 ## Order process
 
@@ -68,7 +73,7 @@ Order JSON body
 The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
-#### Other order fields
+### Other order fields
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier

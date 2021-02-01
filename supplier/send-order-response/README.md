@@ -4,7 +4,12 @@ description: How to send a purchase order response to your buyer.
 
 # Send order response
 
-As a supplier you can send either a new or updated purchase order response to your buyer.
+As a supplier you can send either a **new or updated** purchase order response to your buyer.
+
+{% hint style="warning" %}
+The order response should only contain **order lines** that are **new or changed**.
+Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+{% endhint %}
 
 ## Order process
 

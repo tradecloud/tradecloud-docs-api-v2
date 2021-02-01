@@ -6,6 +6,11 @@ description: How to update an existing purchase order as a buyer
 
 As buyer you can send either a [new](issue/) or updated purchase order to Tradecloud.
 
+{% hint style="warning" %}
+The order should only contain **order lines** that are **new or changed**.
+Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+{% endhint %}
+
 ## Order process
 
 After sending an updated order to Tradecloud the order line **process status may change**:
