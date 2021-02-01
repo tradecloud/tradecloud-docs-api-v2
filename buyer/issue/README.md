@@ -170,6 +170,10 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 {% page-ref page="no-delivery-expected.md" %}
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
+* `documents`: contain attached documents, see:
+
+{% page-ref page="attach-document.md" %}
+
 * `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `labels`: value-added services labels on line level. Please note the practicable number of labels is dependent on the supplier.
 
