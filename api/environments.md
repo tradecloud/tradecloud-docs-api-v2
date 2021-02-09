@@ -15,7 +15,7 @@ There is one [production environment](https://api.tradecloud1.com/) a.k.a. LIVE 
 
 The latest features will be made available by the Tradecloud continuous delivery process.
 
-It has an availability SLA of 99,5% per month, measured 9:00 to 18:00 CE\(S\)T on working days \(10/5\).
+It has an availability SLA of 99,5% per month, measured 9:00 to 18:00 CE\(S\)T on working days.
 
 ## Planned production maintenance
 
@@ -29,4 +29,4 @@ Buyers and suppliers can test new features and develop and test their Tradecloud
 
 The latest features will be made available by the Tradecloud continuous delivery process.
 
-It has an availability SLA of 95% per month, measured 9:00 to 18:00 CE\(S\)T on working days \(10/5\).
+It has an availability SLA of 95% per month, measured 9:00 to 18:00 CE\(S\)T on working days.
