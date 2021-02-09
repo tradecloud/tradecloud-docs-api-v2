@@ -8,7 +8,6 @@ Tradecloud has 3 environments available for customers:
 
 * [Production live environment](environments.md#production-environment)
 * [Acceptance test environment](environments.md#acceptance-test-environment)
-* [Stable environment](environments.md#stable-environment)
 
 ## Production environment
 
@@ -16,11 +15,11 @@ There is one [production environment](https://api.tradecloud1.com/) a.k.a. LIVE 
 
 The latest features will be made available by the Tradecloud continuous delivery process.
 
-It has an availability SLA of 99,5% per month, measured 24/7, except for [planned production maintenance](environments.md#planned-maintenance)
+It has an availability Service Level Objective of 95% per month.
 
 ## Planned production maintenance
 
-Maintenance can be planned on working days from 20:00 to 0:00 CE\(S\)T or in weekends and will be announced at least 3 working days ahead on the [Tradecloud status page](http://status.tradecloud1.com)
+Maintenance can be planned on working days from 20:00 to 0:00 CE\(S\)T or in weekends and will be announced at least 1 working day ahead on the [Tradecloud status page](http://status.tradecloud1.com)
 
 ## Acceptance test environment
 
@@ -30,5 +29,4 @@ Buyers and suppliers can test new features and develop and test their Tradecloud
 
 The latest features will be made available by the Tradecloud continuous delivery process.
 
-It has an availability SLA of 95% per month, measured 8:00-18:00 CE\(S\)T on working days \(10/5\).
-
+It has an availability Service Level Objective of 90% per month.
