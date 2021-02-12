@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 12 12:31:05 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Feb 12 14:30:55 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
+1. [TC-6766](https://tradecloud.atlassian.net/browse/TC-6766) Choose either credentials or token in the company webhook integration settings in the portal. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 12-Feb-2021 14:11:09 CET | [#573](https://github.com/tradecloud/tradecloud-portal-angular/pull/573) |  Add new field token into integration settings. | @bohdantrc |  |
+
+2. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 12-Feb-2021 09:55:00 CET | [#1435](https://github.com/tradecloud/tradecloud-microservices/pull/1435) |  - implement supplier reopen request tests | @olegtradecloud |  |
 | 2 | Services (Scala) | 11-Feb-2021 20:26:05 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
-
-2. [TC-6766](https://tradecloud.atlassian.net/browse/TC-6766) Choose either credentials or token in the company webhook integration settings in the portal. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 11-Feb-2021 20:28:23 CET | [#573](https://github.com/tradecloud/tradecloud-portal-angular/pull/573) |  Add new field token into integration settings. | @bohdantrc |  |
 
 3. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
