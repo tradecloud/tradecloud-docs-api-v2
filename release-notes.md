@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Feb 15 14:30:50 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Feb 15 16:30:52 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
+1. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Feb-2021 14:27:40 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Feb-2021 16:28:41 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-2. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
+2. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Feb-2021 15:35:27 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
+
+3. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 15-Feb-2021 13:53:57 CET | [#375](https://github.com/tradecloud/tradecloud-microservices-go/pull/375) |  PR cleanup as separate stage | @denys-kondartiuk |  |
-
-3. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Feb-2021 13:39:09 CET | [#1436](https://github.com/tradecloud/tradecloud-microservices/pull/1436) | Remove findUserByEmail route from user service | @marcmatt |  |
 
 4. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -83,38 +83,40 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 
 ## Changelog
 
-1. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
+1. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Feb-2021 16:27:28 CET | [#1440](https://github.com/tradecloud/tradecloud-microservices/pull/1440) |  Add afterTests for UAT Run | @denys-kondartiuk |  |
+| 2 | Services (Scala) | 15-Feb-2021 13:00:26 CET | [#1438](https://github.com/tradecloud/tradecloud-microservices/pull/1438) |  Fix CI group deployment | @denys-kondartiuk |  |
+| 3 | Services (Scala) | 12-Feb-2021 17:28:28 CET | [#1437](https://github.com/tradecloud/tradecloud-microservices/pull/1437) |  Move PR group cleanup to the separate stage | @denys-kondartiuk |  |
+| 4 | Web Portal | 12-Feb-2021 16:48:46 CET | [#576](https://github.com/tradecloud/tradecloud-portal-angular/pull/576) |  - PR cleanup add label | @denys-kondartiuk |  |
+| 5 | Web Portal | 12-Feb-2021 16:32:55 CET | [#575](https://github.com/tradecloud/tradecloud-portal-angular/pull/575) |  PR cleanup as a separate stage | @denys-kondartiuk |  |
+
+2. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Feb-2021 14:36:12 CET | [#1436](https://github.com/tradecloud/tradecloud-microservices/pull/1436) | Remove findUserByEmail route from user service | @marcmatt |  |
+| 2 | Web Portal | 10-Feb-2021 21:43:39 CET | [#565](https://github.com/tradecloud/tradecloud-portal-angular/pull/565) | Provide a meaningful error message to the user | @bohdantrc |  |
+
+3. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Feb-2021 14:21:51 CET | [#1435](https://github.com/tradecloud/tradecloud-microservices/pull/1435) |  - implement supplier reopen request tests | @olegtradecloud |  |
 
-2. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Feb-2021 13:00:26 CET | [#1438](https://github.com/tradecloud/tradecloud-microservices/pull/1438) |  Fix CI group deployment | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 12-Feb-2021 17:28:28 CET | [#1437](https://github.com/tradecloud/tradecloud-microservices/pull/1437) |  Move PR group cleanup to the separate stage | @denys-kondartiuk |  |
-| 3 | Web Portal | 12-Feb-2021 16:48:46 CET | [#576](https://github.com/tradecloud/tradecloud-portal-angular/pull/576) |  - PR cleanup add label | @denys-kondartiuk |  |
-| 4 | Web Portal | 12-Feb-2021 16:32:55 CET | [#575](https://github.com/tradecloud/tradecloud-portal-angular/pull/575) |  PR cleanup as a separate stage | @denys-kondartiuk |  |
-
-3. [TC-6766](https://tradecloud.atlassian.net/browse/TC-6766) Choose either credentials or token in the company webhook integration settings in the portal. 
+4. [TC-6766](https://tradecloud.atlassian.net/browse/TC-6766) Choose either credentials or token in the company webhook integration settings in the portal. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Feb-2021 22:27:10 CET | [#573](https://github.com/tradecloud/tradecloud-portal-angular/pull/573) |  Add new field token into integration settings. | @bohdantrc |  |
 
-4. [TC-6823](https://tradecloud.atlassian.net/browse/TC-6823) Marcel Terlouw can not log in on production, after he tested SSO on acceptance 
+5. [TC-6823](https://tradecloud.atlassian.net/browse/TC-6823) Marcel Terlouw can not log in on production, after he tested SSO on acceptance 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Feb-2021 12:05:48 CET | [#574](https://github.com/tradecloud/tradecloud-portal-angular/pull/574) |  Remove Damen users from SSO connections config | @marcmatt |  |
 
-5. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+6. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 11:10:03 CET | [#1434](https://github.com/tradecloud/tradecloud-microservices/pull/1434) |  Alternative default solution | @marcmatt |  |
-
-6. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Feb-2021 21:43:39 CET | [#565](https://github.com/tradecloud/tradecloud-portal-angular/pull/565) | Provide a meaningful error message to the user | @bohdantrc |  |
 
 7. [TC-6781](https://tradecloud.atlassian.net/browse/TC-6781) As a SSO user I am logged out when browser is closed for 10 minutes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -261,9 +263,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 18-Jan-2021 17:01:20 CET | [#1410](https://github.com/tradecloud/tradecloud-microservices/pull/1410) |  SSO Deploy remaining services with an api | @marcmatt |  |
-
-31. [TC-6610](https://tradecloud.atlassian.net/browse/TC-6610) As a portal user, I want that filters counts interact in a more user friendly way.   
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jan-2021 16:24:19 CET | [#1408](https://github.com/tradecloud/tradecloud-microservices/pull/1408) | : Removed postFilter from order-search ES query | @dmytrozheliuk |  |
 
