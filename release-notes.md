@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Feb 15 16:30:52 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Feb 15 18:30:48 CET 2021)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Feb-2021 16:28:41 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
+| 1 | Services (Scala) | 15-Feb-2021 18:12:55 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
 2. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Feb-2021 15:35:27 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Feb-2021 16:53:24 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
 
 3. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
