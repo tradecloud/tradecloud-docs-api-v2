@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Feb 16 10:30:51 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Feb 16 12:30:54 CET 2021)
 ---
 
 
@@ -8,22 +8,22 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Feb-2021 09:24:42 CET | [#1441](https://github.com/tradecloud/tradecloud-microservices/pull/1441) | : Workflow refactoring to support multiple tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 16-Feb-2021 12:29:23 CET | [#1441](https://github.com/tradecloud/tradecloud-microservices/pull/1441) | : Workflow refactoring to support multiple tasks | @dmytrozheliuk |  |
 
-2. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
+2. [TC-6824](https://tradecloud.atlassian.net/browse/TC-6824) Make portal SSO configurable per environment for Damen  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 16-Feb-2021 12:23:39 CET | [#577](https://github.com/tradecloud/tradecloud-portal-angular/pull/577) |  move config to env files | @bohdantrc |  |
+
+3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Feb-2021 09:07:39 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-3. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
+4. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Feb-2021 09:01:36 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
-
-4. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 15-Feb-2021 13:53:57 CET | [#375](https://github.com/tradecloud/tradecloud-microservices-go/pull/375) |  PR cleanup as separate stage | @denys-kondartiuk |  |
 
 5. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -91,11 +91,12 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Feb-2021 16:27:28 CET | [#1440](https://github.com/tradecloud/tradecloud-microservices/pull/1440) |  Add afterTests for UAT Run | @denys-kondartiuk |  |
-| 2 | Services (Scala) | 15-Feb-2021 13:00:26 CET | [#1438](https://github.com/tradecloud/tradecloud-microservices/pull/1438) |  Fix CI group deployment | @denys-kondartiuk |  |
-| 3 | Services (Scala) | 12-Feb-2021 17:28:28 CET | [#1437](https://github.com/tradecloud/tradecloud-microservices/pull/1437) |  Move PR group cleanup to the separate stage | @denys-kondartiuk |  |
-| 4 | Web Portal | 12-Feb-2021 16:48:46 CET | [#576](https://github.com/tradecloud/tradecloud-portal-angular/pull/576) |  - PR cleanup add label | @denys-kondartiuk |  |
-| 5 | Web Portal | 12-Feb-2021 16:32:55 CET | [#575](https://github.com/tradecloud/tradecloud-portal-angular/pull/575) |  PR cleanup as a separate stage | @denys-kondartiuk |  |
+| 1 | Services (Go) | 16-Feb-2021 11:44:51 CET | [#375](https://github.com/tradecloud/tradecloud-microservices-go/pull/375) |  PR cleanup as separate stage | @denys-kondartiuk |  |
+| 2 | Services (Scala) | 15-Feb-2021 16:27:28 CET | [#1440](https://github.com/tradecloud/tradecloud-microservices/pull/1440) |  Add afterTests for UAT Run | @denys-kondartiuk |  |
+| 3 | Services (Scala) | 15-Feb-2021 13:00:26 CET | [#1438](https://github.com/tradecloud/tradecloud-microservices/pull/1438) |  Fix CI group deployment | @denys-kondartiuk |  |
+| 4 | Services (Scala) | 12-Feb-2021 17:28:28 CET | [#1437](https://github.com/tradecloud/tradecloud-microservices/pull/1437) |  Move PR group cleanup to the separate stage | @denys-kondartiuk |  |
+| 5 | Web Portal | 12-Feb-2021 16:48:46 CET | [#576](https://github.com/tradecloud/tradecloud-portal-angular/pull/576) |  - PR cleanup add label | @denys-kondartiuk |  |
+| 6 | Web Portal | 12-Feb-2021 16:32:55 CET | [#575](https://github.com/tradecloud/tradecloud-portal-angular/pull/575) |  PR cleanup as a separate stage | @denys-kondartiuk |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
