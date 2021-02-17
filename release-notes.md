@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Feb 16 22:30:45 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Feb 17 10:30:54 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Feb-2021 16:49:40 CET | [#1441](https://github.com/tradecloud/tradecloud-microservices/pull/1441) | : Workflow refactoring to support multiple tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 17-Feb-2021 09:33:23 CET | [#1441](https://github.com/tradecloud/tradecloud-microservices/pull/1441) | : Workflow refactoring to support multiple tasks | @dmytrozheliuk |  |
 
 2. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
