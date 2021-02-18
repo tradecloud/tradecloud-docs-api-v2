@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Feb 18 16:30:51 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Feb 18 18:30:59 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Feb-2021 16:15:52 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
+| 1 | Services (Scala) | 18-Feb-2021 17:06:53 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
 
 2. [TC-6822](https://tradecloud.atlassian.net/browse/TC-6822) order line header does show the line position when there is a `row` value available  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -274,9 +274,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Jan-2021 16:02:54 CET | [#1413](https://github.com/tradecloud/tradecloud-microservices/pull/1413) |  - bump shared | @olegtradecloud |  |
-
-32. [TC-6704](https://tradecloud.atlassian.net/browse/TC-6704) SSO Authorization failed. Unable to decode JWT token. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Jan-2021 17:01:20 CET | [#1410](https://github.com/tradecloud/tradecloud-microservices/pull/1410) |  SSO Deploy remaining services with an api | @marcmatt |  |
 
