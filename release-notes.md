@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 19 14:30:46 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Feb 19 16:30:55 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 19-Feb-2021 14:29:31 CET | [#374](https://github.com/tradecloud/tradecloud-microservices-go/pull/374) |  Extend consumers to listen to separate reindexing topics | @roy-tc |  |
+| 1 | Services (Go) | 19-Feb-2021 16:29:19 CET | [#374](https://github.com/tradecloud/tradecloud-microservices-go/pull/374) |  Extend consumers to listen to separate reindexing topics | @roy-tc |  |
 | 2 | Services (Scala) | 19-Feb-2021 13:28:49 CET | [#1433](https://github.com/tradecloud/tradecloud-microservices/pull/1433) |  Publish views to prefixed topic for reindexing | @roy-tc |  |
 
 2. [TC-6822](https://tradecloud.atlassian.net/browse/TC-6822) order line header does show the line position when there is a `row` value available  
@@ -266,9 +266,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Jan-2021 10:25:50 CET | [#1414](https://github.com/tradecloud/tradecloud-microservices/pull/1414) | : Increased size for contacts aggregation | @dmytrozheliuk |  |
-
-32. [TC-6583](https://tradecloud.atlassian.net/browse/TC-6583) Properly format logged uri path 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Jan-2021 16:02:54 CET | [#1413](https://github.com/tradecloud/tradecloud-microservices/pull/1413) |  - bump shared | @olegtradecloud |  |
 
