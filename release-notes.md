@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 19 10:30:57 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Feb 19 12:30:53 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+1. [TC-6822](https://tradecloud.atlassian.net/browse/TC-6822) order line header does show the line position when there is a `row` value available  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Feb-2021 09:20:41 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 19-Feb-2021 09:16:10 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
+| 1 | Web Portal | 19-Feb-2021 11:39:51 CET | [#579](https://github.com/tradecloud/tradecloud-portal-angular/pull/579) |  add row info into order line detail page | @bohdantrc |  |
 
 2. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Feb-2021 17:06:53 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
+| 1 | Services (Scala) | 19-Feb-2021 11:33:48 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
 
-3. [TC-6822](https://tradecloud.atlassian.net/browse/TC-6822) order line header does show the line position when there is a `row` value available  
+3. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 18-Feb-2021 14:56:39 CET | [#579](https://github.com/tradecloud/tradecloud-portal-angular/pull/579) |  add row info into order line detail page | @bohdantrc |  |
+| 1 | Services (Scala) | 19-Feb-2021 11:25:18 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 19-Feb-2021 09:16:10 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 
 4. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
