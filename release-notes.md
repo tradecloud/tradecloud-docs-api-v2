@@ -1,36 +1,36 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Feb 23 14:30:44 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Feb 23 16:30:48 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+1. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Feb-2021 14:02:44 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 23-Feb-2021 15:15:57 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
+
+2. [TC-6597](https://tradecloud.atlassian.net/browse/TC-6597) Show initials in the portal when a users does not have set a profile picture.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 23-Feb-2021 15:15:01 CET | [#580](https://github.com/tradecloud/tradecloud-portal-angular/pull/580) |  multi-colored avatar | @bohdantrc |  |
+
+3. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Feb-2021 14:47:57 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
+
+4. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Feb-2021 14:32:01 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 19-Feb-2021 09:16:10 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 
-2. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Feb-2021 14:01:02 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
-
-3. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
+5. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 23-Feb-2021 13:09:24 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
 | 2 | Services (Scala) | 23-Feb-2021 12:14:17 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
-
-4. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Feb-2021 12:00:05 CET | [#580](https://github.com/tradecloud/tradecloud-portal-angular/pull/580) | Tc 6597 avatar | @bohdantrc |  |
-
-5. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Feb-2021 10:49:28 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
 
 6. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
