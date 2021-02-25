@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Feb 24 22:30:46 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Feb 25 10:30:59 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+1. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Feb-2021 17:59:01 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 25-Feb-2021 09:58:28 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
+
+2. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 25-Feb-2021 09:49:35 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 19-Feb-2021 09:16:10 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 
-2. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+3. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Feb-2021 17:26:48 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
-
-3. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Feb-2021 22:57:05 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
 
 4. [TC-6597](https://tradecloud.atlassian.net/browse/TC-6597) Show initials in the portal when a users does not have set a profile picture.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -207,7 +207,6 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | 15 | Web Portal | 25-Jan-2021 12:38:19 CET | [#560](https://github.com/tradecloud/tradecloud-portal-angular/pull/560) |  Restore CI files to unblock master builds | @denys-kondartiuk |  |
 | 16 | Web Portal | 25-Jan-2021 12:02:20 CET | [#558](https://github.com/tradecloud/tradecloud-portal-angular/pull/558) |  Split build and deploy fixes | @denys-kondartiuk |  |
 | 17 | Web Portal | 25-Jan-2021 11:41:09 CET | [#557](https://github.com/tradecloud/tradecloud-portal-angular/pull/557) |  Split prod and test service versions | @denys-kondartiuk |  |
-| 18 | Web Portal | 25-Jan-2021 10:07:47 CET | [#554](https://github.com/tradecloud/tradecloud-portal-angular/pull/554) |  - Split build and deploy | @denys-kondartiuk |  |
 
 20. [TC-6712](https://tradecloud.atlassian.net/browse/TC-6712) As a buyer I want to send attached documents embedded in the order/line using the API connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -261,10 +260,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Jan-2021 11:22:26 CET | [#555](https://github.com/tradecloud/tradecloud-portal-angular/pull/555) |  show title for link | @bohdantrc |  |
-
-30. [TC-6615](https://tradecloud.atlassian.net/browse/TC-6615) As portal user I want to search order(line)s on multiple order fields 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 25-Jan-2021 09:09:15 CET | [#549](https://github.com/tradecloud/tradecloud-portal-angular/pull/549) |  add search component into orders and task pages | @bohdantrc |  |
-| 2 | Services (Scala) | 25-Jan-2021 09:07:42 CET | [#1398](https://github.com/tradecloud/tradecloud-microservices/pull/1398) |  - improve order search | @olegtradecloud |  |
 
