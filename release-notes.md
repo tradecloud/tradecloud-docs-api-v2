@@ -1,41 +1,42 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 16:30:49 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 18:30:46 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
+1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 26-Feb-2021 18:21:20 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 25-Feb-2021 15:03:21 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
+
+2. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 26-Feb-2021 17:51:48 CET | [#582](https://github.com/tradecloud/tradecloud-portal-angular/pull/582) |  Refactor to OrderLinesReissuedByBuyer ActivityType and event | @marcmatt |  |
+| 2 | Services (Go) | 26-Feb-2021 17:51:14 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
+| 3 | Services (Scala) | 26-Feb-2021 17:50:39 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
+
+3. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Feb-2021 16:28:19 CET | [#1447](https://github.com/tradecloud/tradecloud-microservices/pull/1447) |  -  logistics status poc | @olegtradecloud |  |
 
-2. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Feb-2021 16:05:32 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 25-Feb-2021 15:03:21 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
-
-3. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
+4. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Feb-2021 15:26:54 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
 
-4. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
+5. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Feb-2021 13:05:00 CET | [#581](https://github.com/tradecloud/tradecloud-portal-angular/pull/581) | [TC-6243] add acknowledge part | @bohdantrc |  |
 
-5. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+6. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Feb-2021 17:26:48 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
-
-6. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 23-Feb-2021 13:09:24 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
-| 2 | Services (Scala) | 23-Feb-2021 12:14:17 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
 
 7. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -252,9 +253,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-Jan-2021 14:17:16 CET | [#1416](https://github.com/tradecloud/tradecloud-microservices/pull/1416) | : Handling order indicators during order reissuing | @dmytrozheliuk |  |
-
-28. [TC-6562](https://tradecloud.atlassian.net/browse/TC-6562) As Alfen I want to send orders to tradecloud 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Jan-2021 16:32:56 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
 
