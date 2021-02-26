@@ -1,30 +1,30 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 14:30:46 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 16:30:49 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+1. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Feb-2021 13:56:13 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 26-Feb-2021 16:28:19 CET | [#1447](https://github.com/tradecloud/tradecloud-microservices/pull/1447) |  -  logistics status poc | @olegtradecloud |  |
+
+2. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 26-Feb-2021 16:05:32 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 25-Feb-2021 15:03:21 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 
-2. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
+3. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Feb-2021 13:34:36 CET | [#1447](https://github.com/tradecloud/tradecloud-microservices/pull/1447) |  -  logistics status poc | @olegtradecloud |  |
+| 1 | Services (Scala) | 26-Feb-2021 15:26:54 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
 
-3. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
+4. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Feb-2021 13:05:00 CET | [#581](https://github.com/tradecloud/tradecloud-portal-angular/pull/581) | [TC-6243] add acknowledge part | @bohdantrc |  |
-
-4. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 25-Feb-2021 15:03:20 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
 
 5. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
