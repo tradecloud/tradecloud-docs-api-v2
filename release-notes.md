@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 12:30:48 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 14:30:46 CET 2021)
 ---
 
 
@@ -8,77 +8,82 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Feb-2021 11:27:23 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 26-Feb-2021 13:56:13 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 25-Feb-2021 15:03:21 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 
 2. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Feb-2021 10:19:58 CET | [#1447](https://github.com/tradecloud/tradecloud-microservices/pull/1447) |  -  logistics status poc | @olegtradecloud |  |
+| 1 | Services (Scala) | 26-Feb-2021 13:34:36 CET | [#1447](https://github.com/tradecloud/tradecloud-microservices/pull/1447) |  -  logistics status poc | @olegtradecloud |  |
 
-3. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
+3. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 26-Feb-2021 13:05:00 CET | [#581](https://github.com/tradecloud/tradecloud-portal-angular/pull/581) | [TC-6243] add acknowledge part | @bohdantrc |  |
+
+4. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 25-Feb-2021 15:03:20 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
 
-4. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+5. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Feb-2021 17:26:48 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
-5. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
+6. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 23-Feb-2021 13:09:24 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
 | 2 | Services (Scala) | 23-Feb-2021 12:14:17 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
 
-6. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
+7. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Feb-2021 09:50:04 CET | [#1433](https://github.com/tradecloud/tradecloud-microservices/pull/1433) |  Publish views to prefixed topic for reindexing | @roy-tc |  |
 | 2 | Services (Go) | 22-Feb-2021 14:21:23 CET | [#374](https://github.com/tradecloud/tradecloud-microservices-go/pull/374) |  Extend consumers to listen to separate reindexing topics | @roy-tc |  |
 
-7. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
+8. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Feb-2021 17:18:36 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-8. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
+9. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 11-Feb-2021 20:27:13 CET | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
 
-9. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
+10. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:25:49 CET | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Optional events | @olegtradecloud |  |
 
-10. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
+11. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:08 CET | [#1384](https://github.com/tradecloud/tradecloud-microservices/pull/1384) |  Test PR | @roy-tc |  |
 
-11. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+12. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:07 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
-12. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+13. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:06 CET | [#1138](https://github.com/tradecloud/tradecloud-microservices/pull/1138) |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-13. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
+14. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:05 CET | [#1430](https://github.com/tradecloud/tradecloud-microservices/pull/1430) |  PoC for running RiskIndicator as a Scala Microservice | @roy-tc |  |
 
-14. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
+15. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 11-Feb-2021 20:21:59 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
-15. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+16. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:21:56 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
@@ -252,9 +257,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Jan-2021 16:32:56 CET | [#1401](https://github.com/tradecloud/tradecloud-microservices/pull/1401) |  Update support for order(line) documents, merge documents | @roy-tc |  |
-
-29. [TC-6747](https://tradecloud.atlassian.net/browse/TC-6747) orders search box breaks the order overview. When used 500 error is received.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Jan-2021 12:35:11 CET | [#1417](https://github.com/tradecloud/tradecloud-microservices/pull/1417) |  - update shared to use new ES fixes | @olegtradecloud |  |
 
