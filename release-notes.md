@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 18:30:46 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 20:30:43 CET 2021)
 ---
 
 
@@ -8,15 +8,15 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Feb-2021 18:21:20 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 26-Feb-2021 19:59:31 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 25-Feb-2021 15:03:21 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 
 2. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 26-Feb-2021 17:51:48 CET | [#582](https://github.com/tradecloud/tradecloud-portal-angular/pull/582) |  Refactor to OrderLinesReissuedByBuyer ActivityType and event | @marcmatt |  |
-| 2 | Services (Go) | 26-Feb-2021 17:51:14 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
-| 3 | Services (Scala) | 26-Feb-2021 17:50:39 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
+| 1 | Services (Go) | 26-Feb-2021 19:35:42 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
+| 2 | Services (Scala) | 26-Feb-2021 18:45:12 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
+| 3 | Web Portal | 26-Feb-2021 17:51:48 CET | [#582](https://github.com/tradecloud/tradecloud-portal-angular/pull/582) |  Refactor to OrderLinesReissuedByBuyer ActivityType and event | @marcmatt |  |
 
 3. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
