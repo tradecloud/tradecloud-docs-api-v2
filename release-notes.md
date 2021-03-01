@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Feb 26 22:30:48 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 1 10:30:51 CET 2021)
 ---
 
 
@@ -175,7 +175,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 2 | Services (Go) | 10-Feb-2021 10:12:57 CET | [#373](https://github.com/tradecloud/tradecloud-microservices-go/pull/373) |  Fix bash array usage. Add dummy changes to rebuild the services. | @denys-kondartiuk |  |
 | 3 | Services (Go) | 10-Feb-2021 09:56:19 CET | [#372](https://github.com/tradecloud/tradecloud-microservices-go/pull/372) |  Additional logging to investigate deployment issues | @denys-kondartiuk |  |
 | 4 | Services (Go) | 01-Feb-2021 14:27:21 CET | [#361](https://github.com/tradecloud/tradecloud-microservices-go/pull/361) |  Fix case with missing variable | @denys-kondartiuk |  |
-| 5 | Services (Scala) | 28-Jan-2021 12:02:59 CET | [#1422](https://github.com/tradecloud/tradecloud-microservices/pull/1422) |  Disable UI tests for builds | @denys-kondartiuk |  |
 
 16. [TC-6798](https://tradecloud.atlassian.net/browse/TC-6798) Go services cannot connect to Elasticsearch if any of Elasticsearch nodes are not available 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -220,37 +219,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Feb-2021 15:03:16 CET | [#1421](https://github.com/tradecloud/tradecloud-microservices/pull/1421) |  - attach documents refactoring | @olegtradecloud |  |
-
-22. [TC-6754](https://tradecloud.atlassian.net/browse/TC-6754) Configure Damen SSO in ACCP 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 01-Feb-2021 10:18:32 CET | [#566](https://github.com/tradecloud/tradecloud-portal-angular/pull/566) |  Add Marcel Terlouw to SSO Damen ACCP config | @marcmatt |  |
-| 2 | Web Portal | 27-Jan-2021 14:11:24 CET | [#564](https://github.com/tradecloud/tradecloud-portal-angular/pull/564) |  SSO Damen ACCP config | @marcmatt |  |
-| 3 | Services (Scala) | 27-Jan-2021 14:10:17 CET | [#1420](https://github.com/tradecloud/tradecloud-microservices/pull/1420) |  SSO Damen ACCP config | @marcmatt |  |
-
-23. [TC-6647](https://tradecloud.atlassian.net/browse/TC-6647) Portal should get the actual order when reconnected to the order websocket 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Jan-2021 19:17:42 CET | [#556](https://github.com/tradecloud/tradecloud-portal-angular/pull/556) |  after connection to WS each time fetch (opened/current) order, order line if po | @bohdantrc |  |
-
-24. [TC-6679](https://tradecloud.atlassian.net/browse/TC-6679) when doing a bulk proposal and after that a proposal, then the dialog is only prefilled with the proposed delivery date.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Jan-2021 19:15:01 CET | [#561](https://github.com/tradecloud/tradecloud-portal-angular/pull/561) |  add fileds prices into dialog | @bohdantrc |  |
-
-25. [TC-6753](https://tradecloud.atlassian.net/browse/TC-6753) Make sure no order (line) search request is send to the backend when an WS &#34;orders are outdated&#34; event comes in 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 29-Jan-2021 17:57:39 CET | [#563](https://github.com/tradecloud/tradecloud-portal-angular/pull/563) |  delete search request after WS event that orders outdated | @bohdantrc |  |
-
-26. [TC-6247](https://tradecloud.atlassian.net/browse/TC-6247) Add the event that triggered a Task in the tasks itself.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Jan-2021 15:44:32 CET | [#1423](https://github.com/tradecloud/tradecloud-microservices/pull/1423) |  - fix eventName deserialization | @olegtradecloud |  |
-| 2 | Services (Scala) | 28-Jan-2021 14:01:09 CET | [#1411](https://github.com/tradecloud/tradecloud-microservices/pull/1411) |  - add `eventName` to workflow model and view | @olegtradecloud |  |
-
-27. [TC-6697](https://tradecloud.atlassian.net/browse/TC-6697) Indicators do not work when a line, with an indicator on True, is added later to an existing order.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Jan-2021 14:17:16 CET | [#1416](https://github.com/tradecloud/tradecloud-microservices/pull/1416) | : Handling order indicators during order reissuing | @dmytrozheliuk |  |
 
