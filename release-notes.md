@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 1 14:31:14 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 1 16:31:12 CET 2021)
 ---
 
 
@@ -214,12 +214,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 8 | Services (Go) | 01-Feb-2021 17:26:10 CET | [#367](https://github.com/tradecloud/tradecloud-microservices-go/pull/367) |  Finalize changes related to split build and deploy | @denys-kondartiuk |  |
 | 9 | Services (Go) | 01-Feb-2021 17:15:39 CET | [#366](https://github.com/tradecloud/tradecloud-microservices-go/pull/366) |  Add additional logging to investigate the issues | @denys-kondartiuk |  |
 | 10 | Services (Go) | 01-Feb-2021 16:42:55 CET | [#365](https://github.com/tradecloud/tradecloud-microservices-go/pull/365) |  Experiment with conditions in shell scripts | @denys-kondartiuk |  |
-| 11 | Services (Go) | 01-Feb-2021 15:34:39 CET | [#364](https://github.com/tradecloud/tradecloud-microservices-go/pull/364) |  Fix master build | @denys-kondartiuk |  |
-| 12 | Services (Go) | 01-Feb-2021 15:18:20 CET | [#363](https://github.com/tradecloud/tradecloud-microservices-go/pull/363) |  Dummy commit to trigger build | @denys-kondartiuk |  |
-| 13 | Services (Go) | 01-Feb-2021 15:05:03 CET | [#362](https://github.com/tradecloud/tradecloud-microservices-go/pull/362) |  Fix way to skip unnecessary deployment | @denys-kondartiuk |  |
-
-21. [TC-6712](https://tradecloud.atlassian.net/browse/TC-6712) As a buyer I want to send attached documents embedded in the order/line using the API connector 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Feb-2021 15:03:16 CET | [#1421](https://github.com/tradecloud/tradecloud-microservices/pull/1421) |  - attach documents refactoring | @olegtradecloud |  |
 
