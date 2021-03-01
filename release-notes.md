@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 1 12:31:15 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 1 14:31:14 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 01-Mar-2021 12:30:42 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
+| 1 | Services (Go) | 01-Mar-2021 13:23:19 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
 
 2. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -179,7 +179,6 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 1 | Services (Scala) | 10-Feb-2021 10:44:20 CET | [#1431](https://github.com/tradecloud/tradecloud-microservices/pull/1431) |  Fix master deployment for multiple services | @denys-kondartiuk |  |
 | 2 | Services (Go) | 10-Feb-2021 10:12:57 CET | [#373](https://github.com/tradecloud/tradecloud-microservices-go/pull/373) |  Fix bash array usage. Add dummy changes to rebuild the services. | @denys-kondartiuk |  |
 | 3 | Services (Go) | 10-Feb-2021 09:56:19 CET | [#372](https://github.com/tradecloud/tradecloud-microservices-go/pull/372) |  Additional logging to investigate deployment issues | @denys-kondartiuk |  |
-| 4 | Services (Go) | 01-Feb-2021 14:27:21 CET | [#361](https://github.com/tradecloud/tradecloud-microservices-go/pull/361) |  Fix case with missing variable | @denys-kondartiuk |  |
 
 16. [TC-6798](https://tradecloud.atlassian.net/browse/TC-6798) Go services cannot connect to Elasticsearch if any of Elasticsearch nodes are not available 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -218,7 +217,6 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 11 | Services (Go) | 01-Feb-2021 15:34:39 CET | [#364](https://github.com/tradecloud/tradecloud-microservices-go/pull/364) |  Fix master build | @denys-kondartiuk |  |
 | 12 | Services (Go) | 01-Feb-2021 15:18:20 CET | [#363](https://github.com/tradecloud/tradecloud-microservices-go/pull/363) |  Dummy commit to trigger build | @denys-kondartiuk |  |
 | 13 | Services (Go) | 01-Feb-2021 15:05:03 CET | [#362](https://github.com/tradecloud/tradecloud-microservices-go/pull/362) |  Fix way to skip unnecessary deployment | @denys-kondartiuk |  |
-| 14 | Services (Go) | 01-Feb-2021 13:33:42 CET | [#359](https://github.com/tradecloud/tradecloud-microservices-go/pull/359) |  Split build and deploy | @denys-kondartiuk |  |
 
 21. [TC-6712](https://tradecloud.atlassian.net/browse/TC-6712) As a buyer I want to send attached documents embedded in the order/line using the API connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
