@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 1 16:31:12 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 1 18:30:49 CET 2021)
 ---
 
 
@@ -8,46 +8,47 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 01-Mar-2021 13:23:19 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
+| 1 | Services (Scala) | 01-Mar-2021 18:29:01 CET | [#1448](https://github.com/tradecloud/tradecloud-microservices/pull/1448) |  Fix deployment and avoid leftover PR groups | @denys-kondartiuk |  |
+| 2 | Services (Go) | 01-Mar-2021 18:28:12 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
 
-2. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
+2. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 01-Mar-2021 16:42:54 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
+
+3. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Mar-2021 12:11:20 CET | [#581](https://github.com/tradecloud/tradecloud-portal-angular/pull/581) | [TC-6243] add acknowledge part | @bohdantrc |  |
 
-3. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
+4. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Mar-2021 11:46:35 CET | [#1433](https://github.com/tradecloud/tradecloud-microservices/pull/1433) |  Publish views to prefixed topic for reindexing | @roy-tc |  |
 | 2 | Services (Go) | 22-Feb-2021 14:21:23 CET | [#374](https://github.com/tradecloud/tradecloud-microservices-go/pull/374) |  Extend consumers to listen to separate reindexing topics | @roy-tc |  |
 
-4. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
+5. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Mar-2021 11:28:06 CET | [#582](https://github.com/tradecloud/tradecloud-portal-angular/pull/582) |  Refactor to OrderLinesReissuedByBuyer ActivityType and event | @marcmatt |  |
 | 2 | Services (Scala) | 01-Mar-2021 11:22:55 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
 | 3 | Services (Go) | 26-Feb-2021 22:20:47 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
 
-5. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
+6. [TC-6855](https://tradecloud.atlassian.net/browse/TC-6855) Move logistics business logic to 2nd actor Proof of Concept 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Mar-2021 11:06:50 CET | [#1447](https://github.com/tradecloud/tradecloud-microservices/pull/1447) |  -  logistics status poc | @olegtradecloud |  |
 
-6. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
+7. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Mar-2021 10:51:19 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
 
-7. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+8. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Feb-2021 19:59:31 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 25-Feb-2021 15:03:21 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
-
-8. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Feb-2021 17:26:48 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
 9. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -209,9 +210,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 3 | Web Portal | 02-Feb-2021 13:23:08 CET | [#569](https://github.com/tradecloud/tradecloud-portal-angular/pull/569) |  Add additional logging to investigate issue with master deploy | @denys-kondartiuk |  |
 | 4 | Web Portal | 02-Feb-2021 12:55:28 CET | [#568](https://github.com/tradecloud/tradecloud-portal-angular/pull/568) |  Fix unbound variable | @denys-kondartiuk |  |
 | 5 | Web Portal | 02-Feb-2021 12:35:19 CET | [#567](https://github.com/tradecloud/tradecloud-portal-angular/pull/567) |  Split build and deploy | @denys-kondartiuk |  |
-| 6 | Services (Go) | 01-Feb-2021 17:44:42 CET | [#369](https://github.com/tradecloud/tradecloud-microservices-go/pull/369) |  Trigger build | @denys-kondartiuk |  |
-| 7 | Services (Go) | 01-Feb-2021 17:39:10 CET | [#368](https://github.com/tradecloud/tradecloud-microservices-go/pull/368) |   Fix master deploy | @denys-kondartiuk |  |
-| 8 | Services (Go) | 01-Feb-2021 17:26:10 CET | [#367](https://github.com/tradecloud/tradecloud-microservices-go/pull/367) |  Finalize changes related to split build and deploy | @denys-kondartiuk |  |
-| 9 | Services (Go) | 01-Feb-2021 17:15:39 CET | [#366](https://github.com/tradecloud/tradecloud-microservices-go/pull/366) |  Add additional logging to investigate the issues | @denys-kondartiuk |  |
-| 10 | Services (Go) | 01-Feb-2021 16:42:55 CET | [#365](https://github.com/tradecloud/tradecloud-microservices-go/pull/365) |  Experiment with conditions in shell scripts | @denys-kondartiuk |  |
 
