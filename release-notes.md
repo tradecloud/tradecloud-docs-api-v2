@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 2 12:30:48 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 2 14:30:54 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+1. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Mar-2021 11:45:30 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 02-Mar-2021 11:43:23 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 02-Mar-2021 14:30:13 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
 2. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Mar-2021 10:34:49 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
+| 1 | Services (Scala) | 02-Mar-2021 14:25:20 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
-3. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
+3. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Mar-2021 10:32:54 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 02-Mar-2021 13:05:02 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 02-Mar-2021 12:43:28 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 
 4. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -203,8 +203,4 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Feb-2021 18:06:09 CET | [#1415](https://github.com/tradecloud/tradecloud-microservices/pull/1415) |  Split build and deploy | @denys-kondartiuk |  |
-| 2 | Web Portal | 02-Feb-2021 13:53:22 CET | [#570](https://github.com/tradecloud/tradecloud-portal-angular/pull/570) |  Fix services list for master deployment | @denys-kondartiuk |  |
-| 3 | Web Portal | 02-Feb-2021 13:23:08 CET | [#569](https://github.com/tradecloud/tradecloud-portal-angular/pull/569) |  Add additional logging to investigate issue with master deploy | @denys-kondartiuk |  |
-| 4 | Web Portal | 02-Feb-2021 12:55:28 CET | [#568](https://github.com/tradecloud/tradecloud-portal-angular/pull/568) |  Fix unbound variable | @denys-kondartiuk |  |
-| 5 | Web Portal | 02-Feb-2021 12:35:19 CET | [#567](https://github.com/tradecloud/tradecloud-portal-angular/pull/567) |  Split build and deploy | @denys-kondartiuk |  |
 
