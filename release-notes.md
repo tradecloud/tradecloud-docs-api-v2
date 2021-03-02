@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 2 16:30:49 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 2 18:30:41 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Mar-2021 16:28:55 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 02-Mar-2021 16:36:43 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
 2. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -198,9 +198,4 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Feb-2021 14:59:51 CET | [#571](https://github.com/tradecloud/tradecloud-portal-angular/pull/571) |  Fix issue  with npm | @denys-kondartiuk |  |
-
-21. [TC-6682](https://tradecloud.atlassian.net/browse/TC-6682) As DevOps I want to migrate cd/monit/grafana/influx to GCP, so that I would be able to operate things efficiently 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Feb-2021 18:06:09 CET | [#1415](https://github.com/tradecloud/tradecloud-microservices/pull/1415) |  Split build and deploy | @denys-kondartiuk |  |
 
