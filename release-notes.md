@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 2 10:30:54 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 2 12:30:48 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
+1. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Mar-2021 10:23:39 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 02-Mar-2021 11:45:30 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 02-Mar-2021 11:43:23 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 
 2. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Mar-2021 09:54:18 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
+| 1 | Services (Scala) | 02-Mar-2021 10:34:49 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
-3. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
+3. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Mar-2021 09:21:19 CET | [#1433](https://github.com/tradecloud/tradecloud-microservices/pull/1433) |  Publish views to prefixed topic for reindexing | @roy-tc |  |
-| 2 | Services (Go) | 22-Feb-2021 14:21:23 CET | [#374](https://github.com/tradecloud/tradecloud-microservices-go/pull/374) |  Extend consumers to listen to separate reindexing topics | @roy-tc |  |
+| 1 | Services (Scala) | 02-Mar-2021 10:32:54 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
 4. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -38,108 +38,104 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Mar-2021 11:06:50 CET | [#1447](https://github.com/tradecloud/tradecloud-microservices/pull/1447) |  -  logistics status poc | @olegtradecloud |  |
 
-7. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Mar-2021 10:51:19 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
-
-8. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 26-Feb-2021 19:59:31 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 25-Feb-2021 15:03:21 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
-
-9. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
+7. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Feb-2021 17:18:36 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-10. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
+8. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 11-Feb-2021 20:27:13 CET | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
 
-11. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
+9. [TC-5769](https://tradecloud.atlassian.net/browse/TC-5769) Do not persist and publish order events when the entity state does not change. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:25:49 CET | [#1234](https://github.com/tradecloud/tradecloud-microservices/pull/1234) |  Optional events | @olegtradecloud |  |
 
-12. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
+10. [TC-4540](https://tradecloud.atlassian.net/browse/TC-4540) Load test with MRP-based batch of orders and order responses 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:08 CET | [#1384](https://github.com/tradecloud/tradecloud-microservices/pull/1384) |  Test PR | @roy-tc |  |
 
-13. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+11. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:07 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
-14. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
+12. [TC-5789](https://tradecloud.atlassian.net/browse/TC-5789) Some SAP fetch requests are lost and not retried in case of SAP 503 Service Unavailable. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:06 CET | [#1138](https://github.com/tradecloud/tradecloud-microservices/pull/1138) |  Restructure SOAP logging statements to fix alerting | @roy-tc |  |
 
-15. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
+13. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:22:05 CET | [#1430](https://github.com/tradecloud/tradecloud-microservices/pull/1430) |  PoC for running RiskIndicator as a Scala Microservice | @roy-tc |  |
 
-16. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
+14. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 11-Feb-2021 20:21:59 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
-17. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+15. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 20:21:56 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
 ## Changelog
 
-1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+1. [TC-6775](https://tradecloud.atlassian.net/browse/TC-6775) Separate reindexing of OrderViews from the processing of regular OrderViews 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 02-Mar-2021 12:21:32 CET | [#1433](https://github.com/tradecloud/tradecloud-microservices/pull/1433) |  Publish views to prefixed topic for reindexing | @roy-tc |  |
+| 2 | Services (Go) | 02-Mar-2021 12:21:18 CET | [#374](https://github.com/tradecloud/tradecloud-microservices-go/pull/374) |  Extend consumers to listen to separate reindexing topics | @roy-tc |  |
+
+2. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 02-Mar-2021 10:55:29 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
+| 2 | Services (Scala) | 19-Feb-2021 09:11:43 CET | [#1441](https://github.com/tradecloud/tradecloud-microservices/pull/1441) | : Workflow refactoring to support multiple tasks | @dmytrozheliuk |  |
+
+3. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 01-Mar-2021 18:45:52 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 01-Mar-2021 18:41:32 CET | [#1448](https://github.com/tradecloud/tradecloud-microservices/pull/1448) |  Fix deployment and avoid leftover PR groups | @denys-kondartiuk |  |
 | 3 | Services (Go) | 24-Feb-2021 10:13:26 CET | [#377](https://github.com/tradecloud/tradecloud-microservices-go/pull/377) |  Build chores and fixes | @vovinacci |  |
 
-2. [TC-6597](https://tradecloud.atlassian.net/browse/TC-6597) Show initials in the portal when a users does not have set a profile picture.  
+4. [TC-6597](https://tradecloud.atlassian.net/browse/TC-6597) Show initials in the portal when a users does not have set a profile picture.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 25-Feb-2021 16:51:28 CET | [#580](https://github.com/tradecloud/tradecloud-portal-angular/pull/580) |  multi-colored avatar | @bohdantrc |  |
 
-3. [TC-6822](https://tradecloud.atlassian.net/browse/TC-6822) order line header does show the line position when there is a `row` value available  
+5. [TC-6822](https://tradecloud.atlassian.net/browse/TC-6822) order line header does show the line position when there is a `row` value available  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Feb-2021 11:01:33 CET | [#579](https://github.com/tradecloud/tradecloud-portal-angular/pull/579) |  add row info into order line detail page | @bohdantrc |  |
 
-4. [TC-6852](https://tradecloud.atlassian.net/browse/TC-6852) BE: Manually close acknowledge tasks 
+6. [TC-6852](https://tradecloud.atlassian.net/browse/TC-6852) BE: Manually close acknowledge tasks 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Feb-2021 06:59:13 CET | [#1444](https://github.com/tradecloud/tradecloud-microservices/pull/1444) | : Adding functionality to manually close acknowledge tasks | @dmytrozheliuk |  |
 
-5. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
+7. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Feb-2021 14:08:19 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
 | 2 | Services (Scala) | 15-Feb-2021 14:21:51 CET | [#1435](https://github.com/tradecloud/tradecloud-microservices/pull/1435) |  - implement supplier reopen request tests | @olegtradecloud |  |
 
-6. [TC-6827](https://tradecloud.atlassian.net/browse/TC-6827) BE: refactor workflow state to support multiple tasks for 1 order line 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Feb-2021 09:11:43 CET | [#1441](https://github.com/tradecloud/tradecloud-microservices/pull/1441) | : Workflow refactoring to support multiple tasks | @dmytrozheliuk |  |
-
-7. [TC-6759](https://tradecloud.atlassian.net/browse/TC-6759) Enable Damen SSO in PROD 
+8. [TC-6759](https://tradecloud.atlassian.net/browse/TC-6759) Enable Damen SSO in PROD 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Feb-2021 14:33:58 CET | [#578](https://github.com/tradecloud/tradecloud-portal-angular/pull/578) |  Enable Damen SSO on production | @marcmatt |  |
 
-8. [TC-6824](https://tradecloud.atlassian.net/browse/TC-6824) Make portal SSO configurable per environment for Damen  
+9. [TC-6824](https://tradecloud.atlassian.net/browse/TC-6824) Make portal SSO configurable per environment for Damen  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Feb-2021 15:45:40 CET | [#577](https://github.com/tradecloud/tradecloud-portal-angular/pull/577) |  move config to env files | @bohdantrc |  |
 
-9. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
+10. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 16-Feb-2021 11:44:51 CET | [#375](https://github.com/tradecloud/tradecloud-microservices-go/pull/375) |  PR cleanup as separate stage | @denys-kondartiuk |  |
@@ -149,61 +145,61 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 5 | Web Portal | 12-Feb-2021 16:48:46 CET | [#576](https://github.com/tradecloud/tradecloud-portal-angular/pull/576) |  - PR cleanup add label | @denys-kondartiuk |  |
 | 6 | Web Portal | 12-Feb-2021 16:32:55 CET | [#575](https://github.com/tradecloud/tradecloud-portal-angular/pull/575) |  PR cleanup as a separate stage | @denys-kondartiuk |  |
 
-10. [N/A](#)  
+11. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Feb-2021 14:36:12 CET | [#1436](https://github.com/tradecloud/tradecloud-microservices/pull/1436) | Remove findUserByEmail route from user service | @marcmatt |  |
 | 2 | Web Portal | 10-Feb-2021 21:43:39 CET | [#565](https://github.com/tradecloud/tradecloud-portal-angular/pull/565) | Provide a meaningful error message to the user | @bohdantrc |  |
 
-11. [TC-6766](https://tradecloud.atlassian.net/browse/TC-6766) Choose either credentials or token in the company webhook integration settings in the portal. 
+12. [TC-6766](https://tradecloud.atlassian.net/browse/TC-6766) Choose either credentials or token in the company webhook integration settings in the portal. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Feb-2021 22:27:10 CET | [#573](https://github.com/tradecloud/tradecloud-portal-angular/pull/573) |  Add new field token into integration settings. | @bohdantrc |  |
 
-12. [TC-6823](https://tradecloud.atlassian.net/browse/TC-6823) Marcel Terlouw can not log in on production, after he tested SSO on acceptance 
+13. [TC-6823](https://tradecloud.atlassian.net/browse/TC-6823) Marcel Terlouw can not log in on production, after he tested SSO on acceptance 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Feb-2021 12:05:48 CET | [#574](https://github.com/tradecloud/tradecloud-portal-angular/pull/574) |  Remove Damen users from SSO connections config | @marcmatt |  |
 
-13. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+14. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 11-Feb-2021 11:10:03 CET | [#1434](https://github.com/tradecloud/tradecloud-microservices/pull/1434) |  Alternative default solution | @marcmatt |  |
 
-14. [TC-6781](https://tradecloud.atlassian.net/browse/TC-6781) As a SSO user I am logged out when browser is closed for 10 minutes 
+15. [TC-6781](https://tradecloud.atlassian.net/browse/TC-6781) As a SSO user I am logged out when browser is closed for 10 minutes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Feb-2021 17:39:21 CET | [#572](https://github.com/tradecloud/tradecloud-portal-angular/pull/572) |  use local storage instead of session so that token are retined | @RobinNagpal |  |
 
-15. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
+16. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Feb-2021 10:44:20 CET | [#1431](https://github.com/tradecloud/tradecloud-microservices/pull/1431) |  Fix master deployment for multiple services | @denys-kondartiuk |  |
 | 2 | Services (Go) | 10-Feb-2021 10:12:57 CET | [#373](https://github.com/tradecloud/tradecloud-microservices-go/pull/373) |  Fix bash array usage. Add dummy changes to rebuild the services. | @denys-kondartiuk |  |
 | 3 | Services (Go) | 10-Feb-2021 09:56:19 CET | [#372](https://github.com/tradecloud/tradecloud-microservices-go/pull/372) |  Additional logging to investigate deployment issues | @denys-kondartiuk |  |
 
-16. [TC-6798](https://tradecloud.atlassian.net/browse/TC-6798) Go services cannot connect to Elasticsearch if any of Elasticsearch nodes are not available 
+17. [TC-6798](https://tradecloud.atlassian.net/browse/TC-6798) Go services cannot connect to Elasticsearch if any of Elasticsearch nodes are not available 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 09-Feb-2021 18:25:53 CET | [#371](https://github.com/tradecloud/tradecloud-microservices-go/pull/371) |  Configure Elasticsearch client, improve error handling | @marcmatt |  |
 
-17. [TC-6709](https://tradecloud.atlassian.net/browse/TC-6709) Refactor workflow event to not use domain command as a payload 
+18. [TC-6709](https://tradecloud.atlassian.net/browse/TC-6709) Refactor workflow event to not use domain command as a payload 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Feb-2021 09:36:39 CET | [#1426](https://github.com/tradecloud/tradecloud-microservices/pull/1426) |   - workflow refactoring v2 | @olegtradecloud |  |
 
-18. [TC-6330](https://tradecloud.atlassian.net/browse/TC-6330) As A B software I would like to use a static webhook bearer token to scale customer onboarding and reduce maintenance 
+19. [TC-6330](https://tradecloud.atlassian.net/browse/TC-6330) As A B software I would like to use a static webhook bearer token to scale customer onboarding and reduce maintenance 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 04-Feb-2021 16:26:32 CET | [#360](https://github.com/tradecloud/tradecloud-microservices-go/pull/360) |  Add webhook bearer token | @marcmatt |  |
 | 2 | Services (Scala) | 04-Feb-2021 16:02:16 CET | [#1424](https://github.com/tradecloud/tradecloud-microservices/pull/1424) |  Add company settings integration endpoint token | @marcmatt |  |
 
-19. [TC-6670](https://tradecloud.atlassian.net/browse/TC-6670) E2E tests for Azure AD  SSO integration 
+20. [TC-6670](https://tradecloud.atlassian.net/browse/TC-6670) E2E tests for Azure AD  SSO integration 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Feb-2021 14:59:51 CET | [#571](https://github.com/tradecloud/tradecloud-portal-angular/pull/571) |  Fix issue  with npm | @denys-kondartiuk |  |
 
-20. [TC-6682](https://tradecloud.atlassian.net/browse/TC-6682) As DevOps I want to migrate cd/monit/grafana/influx to GCP, so that I would be able to operate things efficiently 
+21. [TC-6682](https://tradecloud.atlassian.net/browse/TC-6682) As DevOps I want to migrate cd/monit/grafana/influx to GCP, so that I would be able to operate things efficiently 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Feb-2021 18:06:09 CET | [#1415](https://github.com/tradecloud/tradecloud-microservices/pull/1415) |  Split build and deploy | @denys-kondartiuk |  |
