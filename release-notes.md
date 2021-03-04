@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 4 14:30:55 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 4 16:30:43 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
+1. [TC-6875](https://tradecloud.atlassian.net/browse/TC-6875) Logging in not possible for SSO users that are redirected to Azure and then go back to the login page.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 04-Mar-2021 14:28:42 CET | [#379](https://github.com/tradecloud/tradecloud-microservices-go/pull/379) |  Force order-webhook-client deploy | @marcmatt |  |
+| 1 | Web Portal | 04-Mar-2021 16:30:20 CET | [#584](https://github.com/tradecloud/tradecloud-portal-angular/pull/584) |  Update azure package for (Fix clearing of temporary cache) | @bohdantrc |  |
 
 2. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Mar-2021 14:22:31 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 04-Mar-2021 15:52:37 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 04-Mar-2021 13:16:06 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
 3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
@@ -68,24 +68,25 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 
 ## Changelog
 
-1. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
+1. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 04-Mar-2021 14:36:36 CET | [#379](https://github.com/tradecloud/tradecloud-microservices-go/pull/379) |  Force order-webhook-client deploy | @marcmatt |  |
+| 2 | Services (Scala) | 04-Mar-2021 12:19:59 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
+| 3 | Services (Go) | 04-Mar-2021 12:19:42 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
+| 4 | Web Portal | 04-Mar-2021 12:19:19 CET | [#582](https://github.com/tradecloud/tradecloud-portal-angular/pull/582) |  Refactor to OrderLinesReissuedByBuyer ActivityType and event | @marcmatt |  |
+
+2. [TC-6812](https://tradecloud.atlassian.net/browse/TC-6812) FE: Company settings acknowledge tasks  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Mar-2021 12:56:55 CET | [#581](https://github.com/tradecloud/tradecloud-portal-angular/pull/581) | [TC-6243] add acknowledge part | @bohdantrc |  |
 
-2. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
+3. [TC-6767](https://tradecloud.atlassian.net/browse/TC-6767) BE: Company acknowledge settings 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Mar-2021 12:56:52 CET | [#1428](https://github.com/tradecloud/tradecloud-microservices/pull/1428) | : Acknowledge settings model and new API endpoints to get settings and modify it | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 04-Mar-2021 12:56:50 CET | [#1443](https://github.com/tradecloud/tradecloud-microservices/pull/1443) | [TC-6245]: Acknowledge tasks | @dmytrozheliuk |  |
 | 3 | Services (Scala) | 11-Feb-2021 11:10:03 CET | [#1434](https://github.com/tradecloud/tradecloud-microservices/pull/1434) |  Alternative default solution | @marcmatt |  |
-
-3. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Mar-2021 12:19:59 CET | [#1432](https://github.com/tradecloud/tradecloud-microservices/pull/1432) |  Refactor to OrderLinesReissuedByBuyer event and ActivityType | @marcmatt |  |
-| 2 | Services (Go) | 04-Mar-2021 12:19:42 CET | [#376](https://github.com/tradecloud/tradecloud-microservices-go/pull/376) |  Refactor to OrderLinesReissuedByBuyer event | @marcmatt |  |
-| 3 | Web Portal | 04-Mar-2021 12:19:19 CET | [#582](https://github.com/tradecloud/tradecloud-portal-angular/pull/582) |  Refactor to OrderLinesReissuedByBuyer ActivityType and event | @marcmatt |  |
 
 4. [TC-6813](https://tradecloud.atlassian.net/browse/TC-6813) As user I want to see some basic metrics on the dashboard page.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -189,15 +190,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Feb-2021 09:36:39 CET | [#1426](https://github.com/tradecloud/tradecloud-microservices/pull/1426) |   - workflow refactoring v2 | @olegtradecloud |  |
-
-22. [TC-6330](https://tradecloud.atlassian.net/browse/TC-6330) As A B software I would like to use a static webhook bearer token to scale customer onboarding and reduce maintenance 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 04-Feb-2021 16:26:32 CET | [#360](https://github.com/tradecloud/tradecloud-microservices-go/pull/360) |  Add webhook bearer token | @marcmatt |  |
-| 2 | Services (Scala) | 04-Feb-2021 16:02:16 CET | [#1424](https://github.com/tradecloud/tradecloud-microservices/pull/1424) |  Add company settings integration endpoint token | @marcmatt |  |
-
-23. [TC-6670](https://tradecloud.atlassian.net/browse/TC-6670) E2E tests for Azure AD  SSO integration 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Feb-2021 14:59:51 CET | [#571](https://github.com/tradecloud/tradecloud-portal-angular/pull/571) |  Fix issue  with npm | @denys-kondartiuk |  |
 
