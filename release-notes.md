@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 4 16:30:43 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 4 18:30:42 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6875](https://tradecloud.atlassian.net/browse/TC-6875) Logging in not possible for SSO users that are redirected to Azure and then go back to the login page.  
+1. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 04-Mar-2021 16:30:20 CET | [#584](https://github.com/tradecloud/tradecloud-portal-angular/pull/584) |  Update azure package for (Fix clearing of temporary cache) | @bohdantrc |  |
+| 1 | Services (Scala) | 04-Mar-2021 18:03:01 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 04-Mar-2021 17:04:27 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
-2. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
+2. [TC-6875](https://tradecloud.atlassian.net/browse/TC-6875) Logging in not possible for SSO users that are redirected to Azure and then go back to the login page.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Mar-2021 15:52:37 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 04-Mar-2021 13:16:06 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
+| 1 | Web Portal | 04-Mar-2021 16:44:56 CET | [#584](https://github.com/tradecloud/tradecloud-portal-angular/pull/584) |  Update azure package for (Fix clearing of temporary cache) | @bohdantrc |  |
 
 3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
