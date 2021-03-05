@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 4 22:30:40 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Mar 5 10:30:46 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Mar-2021 18:03:01 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 05-Mar-2021 10:24:39 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
 | 2 | Services (Scala) | 04-Mar-2021 17:04:27 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
 2. [TC-6875](https://tradecloud.atlassian.net/browse/TC-6875) Logging in not possible for SSO users that are redirected to Azure and then go back to the login page.  
@@ -185,9 +185,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 09-Feb-2021 18:25:53 CET | [#371](https://github.com/tradecloud/tradecloud-microservices-go/pull/371) |  Configure Elasticsearch client, improve error handling | @marcmatt |  |
-
-21. [TC-6709](https://tradecloud.atlassian.net/browse/TC-6709) Refactor workflow event to not use domain command as a payload 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Feb-2021 09:36:39 CET | [#1426](https://github.com/tradecloud/tradecloud-microservices/pull/1426) |   - workflow refactoring v2 | @olegtradecloud |  |
 
