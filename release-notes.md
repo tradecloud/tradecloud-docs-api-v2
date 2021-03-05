@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Mar 5 14:30:48 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Mar 5 16:30:55 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6874](https://tradecloud.atlassian.net/browse/TC-6874) BE: Acknowledge tasks for document event on order level 
+1. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-Mar-2021 15:12:13 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 04-Mar-2021 17:04:27 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
+
+2. [TC-6874](https://tradecloud.atlassian.net/browse/TC-6874) BE: Acknowledge tasks for document event on order level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Mar-2021 14:18:35 CET | [#585](https://github.com/tradecloud/tradecloud-portal-angular/pull/585) |  enable docs into settings | @bohdantrc |  |
 
-2. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
+3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 05-Mar-2021 13:58:41 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
-
-3. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Mar-2021 13:47:54 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 04-Mar-2021 17:04:27 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
 4. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
