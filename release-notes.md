@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 9 16:30:43 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 9 18:30:40 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6586](https://tradecloud.atlassian.net/browse/TC-6586) Construct KafkaPublisher with exponential back-off 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Mar-2021 16:26:59 CET | [#1453](https://github.com/tradecloud/tradecloud-microservices/pull/1453) |  -backoff kafka publisher | @olegtradecloud |  |
+| 1 | Services (Scala) | 09-Mar-2021 17:16:06 CET | [#1453](https://github.com/tradecloud/tradecloud-microservices/pull/1453) |  -backoff kafka publisher | @olegtradecloud |  |
 
 2. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -201,9 +201,4 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 1 | Services (Scala) | 10-Feb-2021 10:44:20 CET | [#1431](https://github.com/tradecloud/tradecloud-microservices/pull/1431) |  Fix master deployment for multiple services | @denys-kondartiuk |  |
 | 2 | Services (Go) | 10-Feb-2021 10:12:57 CET | [#373](https://github.com/tradecloud/tradecloud-microservices-go/pull/373) |  Fix bash array usage. Add dummy changes to rebuild the services. | @denys-kondartiuk |  |
 | 3 | Services (Go) | 10-Feb-2021 09:56:19 CET | [#372](https://github.com/tradecloud/tradecloud-microservices-go/pull/372) |  Additional logging to investigate deployment issues | @denys-kondartiuk |  |
-
-22. [TC-6798](https://tradecloud.atlassian.net/browse/TC-6798) Go services cannot connect to Elasticsearch if any of Elasticsearch nodes are not available 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 09-Feb-2021 18:25:53 CET | [#371](https://github.com/tradecloud/tradecloud-microservices-go/pull/371) |  Configure Elasticsearch client, improve error handling | @marcmatt |  |
 
