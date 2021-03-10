@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 10 20:30:38 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 10 22:30:37 CET 2021)
 ---
 
 
@@ -169,7 +169,6 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Feb-2021 14:36:12 CET | [#1436](https://github.com/tradecloud/tradecloud-microservices/pull/1436) | Remove findUserByEmail route from user service | @marcmatt |  |
-| 2 | Web Portal | 10-Feb-2021 21:43:39 CET | [#565](https://github.com/tradecloud/tradecloud-portal-angular/pull/565) | Provide a meaningful error message to the user | @bohdantrc |  |
 
 19. [TC-6766](https://tradecloud.atlassian.net/browse/TC-6766) Choose either credentials or token in the company webhook integration settings in the portal. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
