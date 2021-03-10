@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 10 16:30:39 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 10 18:30:46 CET 2021)
 ---
 
 
@@ -180,9 +180,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 12-Feb-2021 12:05:48 CET | [#574](https://github.com/tradecloud/tradecloud-portal-angular/pull/574) |  Remove Damen users from SSO connections config | @marcmatt |  |
-
-21. [TC-6781](https://tradecloud.atlassian.net/browse/TC-6781) As a SSO user I am logged out when browser is closed for 10 minutes 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 10-Feb-2021 17:39:21 CET | [#572](https://github.com/tradecloud/tradecloud-portal-angular/pull/572) |  use local storage instead of session so that token are retined | @RobinNagpal |  |
 
