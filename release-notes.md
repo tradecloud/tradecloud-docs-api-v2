@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 10 10:30:56 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 10 12:30:51 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+1. [TC-6586](https://tradecloud.atlassian.net/browse/TC-6586) Construct KafkaPublisher with exponential back-off 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 10-Mar-2021 12:23:59 CET | [#1453](https://github.com/tradecloud/tradecloud-microservices/pull/1453) |  -backoff kafka publisher | @olegtradecloud |  |
+
+2. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Mar-2021 10:24:19 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
-
-2. [TC-6586](https://tradecloud.atlassian.net/browse/TC-6586) Construct KafkaPublisher with exponential back-off 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Mar-2021 09:11:34 CET | [#1453](https://github.com/tradecloud/tradecloud-microservices/pull/1453) |  -backoff kafka publisher | @olegtradecloud |  |
 
 3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -179,9 +179,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 10-Feb-2021 17:39:21 CET | [#572](https://github.com/tradecloud/tradecloud-portal-angular/pull/572) |  use local storage instead of session so that token are retined | @RobinNagpal |  |
-
-21. [TC-6000](https://tradecloud.atlassian.net/browse/TC-6000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Feb-2021 10:44:20 CET | [#1431](https://github.com/tradecloud/tradecloud-microservices/pull/1431) |  Fix master deployment for multiple services | @denys-kondartiuk |  |
 
