@@ -1,30 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 11 12:30:52 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 11 14:30:38 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+1. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Mar-2021 12:18:48 CET | [#1454](https://github.com/tradecloud/tradecloud-microservices/pull/1454) |  Add counter to reindexing process | @roy-tc |  |
+| 1 | Services (Scala) | 11-Mar-2021 14:28:28 CET | [#1456](https://github.com/tradecloud/tradecloud-microservices/pull/1456) |  Build application image before checking proto breaking changes | @roy-tc |  |
+| 2 | Services (Scala) | 11-Mar-2021 14:14:00 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-2. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
+2. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Mar-2021 11:12:33 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
+| 1 | Services (Scala) | 11-Mar-2021 14:28:09 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 11-Mar-2021 13:40:45 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
-3. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+3. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 11-Mar-2021 12:33:31 CET | [#1454](https://github.com/tradecloud/tradecloud-microservices/pull/1454) |  Add counter to reindexing process | @roy-tc |  |
+
+4. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Mar-2021 10:24:19 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
-
-4. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events on line level 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Mar-2021 13:54:24 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) | [TC-6536]: Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 09-Mar-2021 13:53:15 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) | [TC-6874]: Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
 
 5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
