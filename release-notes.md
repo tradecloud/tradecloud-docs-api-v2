@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 11 16:30:45 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 11 18:30:38 CET 2021)
 ---
 
 
@@ -8,13 +8,13 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Mar-2021 16:30:17 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) |  [TC-6874] Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 11-Mar-2021 15:46:52 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 11-Mar-2021 17:31:54 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) |  [TC-6874] Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
+| 2 | Services (Scala) | 11-Mar-2021 17:30:18 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event on line level | @dmytrozheliuk |  |
 
-2. [TC-6729](https://tradecloud.atlassian.net/browse/TC-6729) Risk Indicator training performance improvements 
+2. [TC-5729](https://tradecloud.atlassian.net/browse/TC-5729) As an integrated supplier I want to reopen confirmed orders via the API [Planned release 30-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 11-Mar-2021 15:19:23 CET | [#1457](https://github.com/tradecloud/tradecloud-microservices/pull/1457) |  -supplier reopen requests | @olegtradecloud |  |
+| 1 | Services (Scala) | 11-Mar-2021 16:31:49 CET | [#1457](https://github.com/tradecloud/tradecloud-microservices/pull/1457) |  -supplier reopen requests | @olegtradecloud |  |
 
 3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
