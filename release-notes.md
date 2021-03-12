@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Mar 12 16:30:44 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Mar 12 18:30:43 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-5729](https://tradecloud.atlassian.net/browse/TC-5729) As an integrated supplier I want to reopen confirmed orders via the API [Planned release 30-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Mar-2021 15:56:19 CET | [#1457](https://github.com/tradecloud/tradecloud-microservices/pull/1457) |  -supplier reopen requests | @olegtradecloud |  |
+| 1 | Services (Scala) | 12-Mar-2021 17:25:10 CET | [#1457](https://github.com/tradecloud/tradecloud-microservices/pull/1457) |  -supplier reopen requests | @olegtradecloud |  |
 
 2. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -154,9 +154,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Go) | 16-Feb-2021 11:44:51 CET | [#375](https://github.com/tradecloud/tradecloud-microservices-go/pull/375) |  PR cleanup as separate stage | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 15-Feb-2021 16:27:28 CET | [#1440](https://github.com/tradecloud/tradecloud-microservices/pull/1440) |  Add afterTests for UAT Run | @denys-kondartiuk |  |
 | 3 | Services (Scala) | 15-Feb-2021 13:00:26 CET | [#1438](https://github.com/tradecloud/tradecloud-microservices/pull/1438) |  Fix CI group deployment | @denys-kondartiuk |  |
-| 4 | Services (Scala) | 12-Feb-2021 17:28:28 CET | [#1437](https://github.com/tradecloud/tradecloud-microservices/pull/1437) |  Move PR group cleanup to the separate stage | @denys-kondartiuk |  |
-| 5 | Web Portal | 12-Feb-2021 16:48:46 CET | [#576](https://github.com/tradecloud/tradecloud-portal-angular/pull/576) |  - PR cleanup add label | @denys-kondartiuk |  |
-| 6 | Web Portal | 12-Feb-2021 16:32:55 CET | [#575](https://github.com/tradecloud/tradecloud-portal-angular/pull/575) |  PR cleanup as a separate stage | @denys-kondartiuk |  |
 
 20. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
