@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 15 12:30:43 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 15 14:30:45 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Mar-2021 11:54:20 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 15-Mar-2021 14:13:51 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -137,7 +137,6 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Feb-2021 14:08:19 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
-| 2 | Services (Scala) | 15-Feb-2021 14:21:51 CET | [#1435](https://github.com/tradecloud/tradecloud-microservices/pull/1435) |  - implement supplier reopen request tests | @olegtradecloud |  |
 
 18. [TC-6759](https://tradecloud.atlassian.net/browse/TC-6759) Enable Damen SSO in PROD 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -154,7 +153,6 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 16-Feb-2021 11:44:51 CET | [#375](https://github.com/tradecloud/tradecloud-microservices-go/pull/375) |  PR cleanup as separate stage | @denys-kondartiuk |  |
 | 2 | Services (Scala) | 15-Feb-2021 16:27:28 CET | [#1440](https://github.com/tradecloud/tradecloud-microservices/pull/1440) |  Add afterTests for UAT Run | @denys-kondartiuk |  |
-| 3 | Services (Scala) | 15-Feb-2021 13:00:26 CET | [#1438](https://github.com/tradecloud/tradecloud-microservices/pull/1438) |  Fix CI group deployment | @denys-kondartiuk |  |
 
 21. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
