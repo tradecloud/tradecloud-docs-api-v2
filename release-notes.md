@@ -1,27 +1,27 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 15 18:30:44 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 15 20:30:43 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
+1. [TC-6909](https://tradecloud.atlassian.net/browse/TC-6909) Marathon: Deploy services only when at least one service been built to ensure that only changed services are deployed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Mar-2021 18:27:22 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
+| 1 | Services (Go) | 15-Mar-2021 19:31:52 CET | [#380](https://github.com/tradecloud/tradecloud-microservices-go/pull/380) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
+| 2 | Web Portal | 15-Mar-2021 19:31:25 CET | [#588](https://github.com/tradecloud/tradecloud-portal-angular/pull/588) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
+| 3 | Services (Scala) | 15-Mar-2021 17:04:50 CET | [#1459](https://github.com/tradecloud/tradecloud-microservices/pull/1459) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
 
-2. [N/A](#)  
+2. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Mar-2021 19:12:31 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
+
+3. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Mar-2021 17:33:16 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
 | 2 | Web Portal | 08-Mar-2021 23:16:18 CET | [#586](https://github.com/tradecloud/tradecloud-portal-angular/pull/586) | Bump elliptic from 6.5.3 to 6.5.4 | @dependabot[bot] |  |
-
-3. [TC-6909](https://tradecloud.atlassian.net/browse/TC-6909) Marathon: Deploy services only when at least one service been built to ensure that only changed services are deployed 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Mar-2021 17:22:52 CET | [#588](https://github.com/tradecloud/tradecloud-portal-angular/pull/588) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
-| 2 | Services (Go) | 15-Mar-2021 17:05:24 CET | [#380](https://github.com/tradecloud/tradecloud-microservices-go/pull/380) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
-| 3 | Services (Scala) | 15-Mar-2021 17:04:50 CET | [#1459](https://github.com/tradecloud/tradecloud-microservices/pull/1459) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
 
 4. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
