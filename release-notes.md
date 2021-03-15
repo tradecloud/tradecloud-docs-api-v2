@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 15 16:30:45 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 15 18:30:44 CET 2021)
 ---
 
 
@@ -8,28 +8,30 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Mar-2021 16:27:15 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Mar-2021 18:27:22 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
 
-2. [TC-6909](https://tradecloud.atlassian.net/browse/TC-6909) Marathon: Deploy services only when at least one service been built to ensure that only changed services are deployed 
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Mar-2021 16:27:06 CET | [#1459](https://github.com/tradecloud/tradecloud-microservices/pull/1459) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
+| 1 | Web Portal | 15-Mar-2021 17:33:16 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
+| 2 | Web Portal | 08-Mar-2021 23:16:18 CET | [#586](https://github.com/tradecloud/tradecloud-portal-angular/pull/586) | Bump elliptic from 6.5.3 to 6.5.4 | @dependabot[bot] |  |
 
-3. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
+3. [TC-6909](https://tradecloud.atlassian.net/browse/TC-6909) Marathon: Deploy services only when at least one service been built to ensure that only changed services are deployed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Mar-2021 16:26:37 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
+| 1 | Web Portal | 15-Mar-2021 17:22:52 CET | [#588](https://github.com/tradecloud/tradecloud-portal-angular/pull/588) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
+| 2 | Services (Go) | 15-Mar-2021 17:05:24 CET | [#380](https://github.com/tradecloud/tradecloud-microservices-go/pull/380) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
+| 3 | Services (Scala) | 15-Mar-2021 17:04:50 CET | [#1459](https://github.com/tradecloud/tradecloud-microservices/pull/1459) |  Clean Workspace to avoid unexpected deployment | @denys-kondartiuk |  |
 
-4. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+4. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 15-Mar-2021 17:05:54 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
+
+5. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Mar-2021 15:59:47 CET | [#1454](https://github.com/tradecloud/tradecloud-microservices/pull/1454) |  Add counter to reindexing process | @roy-tc |  |
-
-5. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Mar-2021 11:44:01 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
-| 2 | Web Portal | 08-Mar-2021 23:16:18 CET | [#586](https://github.com/tradecloud/tradecloud-portal-angular/pull/586) | Bump elliptic from 6.5.3 to 6.5.4 | @dependabot[bot] |  |
 
 6. [TC-6874](https://tradecloud.atlassian.net/browse/TC-6874) BE: Acknowledge tasks for document event on order level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
