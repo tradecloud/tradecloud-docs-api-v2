@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 16 14:30:52 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 16 16:30:46 CET 2021)
 ---
 
 
@@ -151,9 +151,4 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-Feb-2021 14:33:58 CET | [#578](https://github.com/tradecloud/tradecloud-portal-angular/pull/578) |  Enable Damen SSO on production | @marcmatt |  |
-
-20. [TC-6824](https://tradecloud.atlassian.net/browse/TC-6824) Make portal SSO configurable per environment for Damen  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Feb-2021 15:45:40 CET | [#577](https://github.com/tradecloud/tradecloud-portal-angular/pull/577) |  move config to env files | @bohdantrc |  |
 
