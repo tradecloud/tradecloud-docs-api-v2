@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 16 10:30:56 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 16 12:30:49 CET 2021)
 ---
 
 
@@ -8,18 +8,18 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Mar-2021 09:41:11 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
+| 1 | Services (Scala) | 16-Mar-2021 12:15:44 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-2. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
+2. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 16-Mar-2021 10:43:57 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
+| 2 | Web Portal | 08-Mar-2021 23:16:18 CET | [#586](https://github.com/tradecloud/tradecloud-portal-angular/pull/586) | Bump elliptic from 6.5.3 to 6.5.4 | @dependabot[bot] |  |
+
+3. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Mar-2021 08:57:28 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
-
-3. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Mar-2021 17:33:16 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
-| 2 | Web Portal | 08-Mar-2021 23:16:18 CET | [#586](https://github.com/tradecloud/tradecloud-portal-angular/pull/586) | Bump elliptic from 6.5.3 to 6.5.4 | @dependabot[bot] |  |
 
 4. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -159,9 +159,4 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Feb-2021 15:45:40 CET | [#577](https://github.com/tradecloud/tradecloud-portal-angular/pull/577) |  move config to env files | @bohdantrc |  |
-
-21. [TC-6619](https://tradecloud.atlassian.net/browse/TC-6619) As DevOps, I want to migrate Mesos based test environment to GCP, so that I have better platform availability 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Feb-2021 11:44:51 CET | [#375](https://github.com/tradecloud/tradecloud-microservices-go/pull/375) |  PR cleanup as separate stage | @denys-kondartiuk |  |
 
