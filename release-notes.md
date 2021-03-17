@@ -1,14 +1,15 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 17 10:30:43 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 17 12:30:55 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Mar-2021 10:10:56 CET | [#1462](https://github.com/tradecloud/tradecloud-microservices/pull/1462) |  Trigger build of reindexing services | @roy-tc |  |
+| 1 | Web Portal | 17-Mar-2021 12:07:46 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
+| 2 | Web Portal | 08-Mar-2021 23:16:18 CET | [#586](https://github.com/tradecloud/tradecloud-portal-angular/pull/586) | Bump elliptic from 6.5.3 to 6.5.4 | @dependabot[bot] |  |
 
 2. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -16,33 +17,27 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | 1 | Services (Scala) | 17-Mar-2021 08:35:58 CET | [#1461](https://github.com/tradecloud/tradecloud-microservices/pull/1461) |  Bogus change so all services are rebuilt | @roy-tc |  |
 | 2 | Services (Scala) | 16-Mar-2021 20:12:23 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-3. [N/A](#)  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Mar-2021 17:51:36 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
-| 2 | Web Portal | 08-Mar-2021 23:16:18 CET | [#586](https://github.com/tradecloud/tradecloud-portal-angular/pull/586) | Bump elliptic from 6.5.3 to 6.5.4 | @dependabot[bot] |  |
-
-4. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
+3. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Mar-2021 16:39:42 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
 
-5. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
+4. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Mar-2021 17:05:54 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
 
-6. [TC-6874](https://tradecloud.atlassian.net/browse/TC-6874) BE: Acknowledge tasks for document event on order level 
+5. [TC-6874](https://tradecloud.atlassian.net/browse/TC-6874) BE: Acknowledge tasks for document event on order level 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Mar-2021 11:35:54 CET | [#585](https://github.com/tradecloud/tradecloud-portal-angular/pull/585) |  enable docs into settings | @bohdantrc |  |
 
-7. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+6. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Mar-2021 10:24:19 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-8. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+7. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Mar-2021 09:34:20 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
@@ -52,10 +47,11 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Mar-2021 13:07:11 CET | [#1454](https://github.com/tradecloud/tradecloud-microservices/pull/1454) |  Add counter to reindexing process | @roy-tc |  |
-| 2 | Services (Go) | 01-Mar-2021 18:45:52 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
-| 3 | Services (Scala) | 01-Mar-2021 18:41:32 CET | [#1448](https://github.com/tradecloud/tradecloud-microservices/pull/1448) |  Fix deployment and avoid leftover PR groups | @denys-kondartiuk |  |
-| 4 | Services (Go) | 24-Feb-2021 10:13:26 CET | [#377](https://github.com/tradecloud/tradecloud-microservices-go/pull/377) |  Build chores and fixes | @vovinacci |  |
+| 1 | Services (Scala) | 17-Mar-2021 12:02:23 CET | [#1462](https://github.com/tradecloud/tradecloud-microservices/pull/1462) |  Trigger build of reindexing services | @roy-tc |  |
+| 2 | Services (Scala) | 16-Mar-2021 13:07:11 CET | [#1454](https://github.com/tradecloud/tradecloud-microservices/pull/1454) |  Add counter to reindexing process | @roy-tc |  |
+| 3 | Services (Go) | 01-Mar-2021 18:45:52 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
+| 4 | Services (Scala) | 01-Mar-2021 18:41:32 CET | [#1448](https://github.com/tradecloud/tradecloud-microservices/pull/1448) |  Fix deployment and avoid leftover PR groups | @denys-kondartiuk |  |
+| 5 | Services (Go) | 24-Feb-2021 10:13:26 CET | [#377](https://github.com/tradecloud/tradecloud-microservices-go/pull/377) |  Build chores and fixes | @vovinacci |  |
 
 2. [TC-6909](https://tradecloud.atlassian.net/browse/TC-6909) Marathon: Deploy services only when at least one service been built to ensure that only changed services are deployed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
