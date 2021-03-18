@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 18 16:30:57 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 18 18:30:36 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 18-Mar-2021 16:05:20 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
+| 1 | Services (Scala) | 18-Mar-2021 17:34:32 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
