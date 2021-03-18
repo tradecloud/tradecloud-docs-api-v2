@@ -1,42 +1,37 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 17 22:30:39 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 18 10:30:55 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Mar-2021 16:56:09 CET | [#1463](https://github.com/tradecloud/tradecloud-microservices/pull/1463) |  Process order delivery events | @roy-tc |  |
-
-2. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
+1. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Mar-2021 16:39:42 CET | [#1460](https://github.com/tradecloud/tradecloud-microservices/pull/1460) |  - calculate supplier gross price on reopen request | @olegtradecloud |  |
 
-3. [N/A](#)  
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Mar-2021 12:07:46 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
 
-4. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
+3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Mar-2021 08:35:58 CET | [#1461](https://github.com/tradecloud/tradecloud-microservices/pull/1461) |  Bogus change so all services are rebuilt | @roy-tc |  |
 | 2 | Services (Scala) | 16-Mar-2021 20:12:23 CET | [#1439](https://github.com/tradecloud/tradecloud-microservices/pull/1439) |  Move ActorPersistence and AggregateRootActor to shared lib | @roy-tc |  |
 
-5. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
+4. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Mar-2021 17:05:54 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
 
-6. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+5. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Mar-2021 10:24:19 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-7. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+6. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Mar-2021 09:34:20 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
