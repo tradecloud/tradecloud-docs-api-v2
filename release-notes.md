@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Mar 19 12:30:36 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Mar 19 14:30:43 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Mar-2021 11:54:00 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
+| 1 | Services (Scala) | 19-Mar-2021 14:14:41 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -145,9 +145,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Feb-2021 06:59:13 CET | [#1444](https://github.com/tradecloud/tradecloud-microservices/pull/1444) | : Adding functionality to manually close acknowledge tasks | @dmytrozheliuk |  |
-
-21. [TC-6630](https://tradecloud.atlassian.net/browse/TC-6630) As a integrated supplier I want to process reopen requests by buyer in my ERP instead of TC  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Feb-2021 14:08:19 CET | [#1429](https://github.com/tradecloud/tradecloud-microservices/pull/1429) |  - supplier reopen request via integration | @olegtradecloud |  |
 
