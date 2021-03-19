@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Mar 19 14:30:43 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Mar 19 16:30:40 CET 2021)
 ---
 
 
@@ -8,12 +8,13 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Mar-2021 14:14:41 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
+| 1 | Services (Scala) | 19-Mar-2021 16:01:44 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 
 2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 17-Mar-2021 12:07:46 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
+| 1 | Web Portal | 19-Mar-2021 15:51:03 CET | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) | Tc 6695 sci supplier credentials order response | @bohdantrc |  |
+| 2 | Web Portal | 17-Mar-2021 12:07:46 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | Tc 6538 acknowledge docs | @bohdantrc |  |
 
 3. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
