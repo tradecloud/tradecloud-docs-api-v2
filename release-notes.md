@@ -1,57 +1,62 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 23 10:30:54 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 23 12:30:51 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
+1. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE:  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 10:29:43 CET | [#1469](https://github.com/tradecloud/tradecloud-microservices/pull/1469) |  Company upsert account | @marcmatt |  |
+| 1 | Web Portal | 23-Mar-2021 11:53:13 CET | [#591](https://github.com/tradecloud/tradecloud-portal-angular/pull/591) | [TC-6238] add rejected field after buyer rejection request | @bohdantrc |  |
 
-2. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
+2. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 10:26:12 CET | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 23-Mar-2021 11:50:36 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-3. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+3. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Mar-2021 11:37:00 CET | [#1466](https://github.com/tradecloud/tradecloud-microservices/pull/1466) |  Remove OrderReissuedByBuyer forward compatibility | @marcmatt |  |
+
+4. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Mar-2021 11:28:51 CET | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
+
+5. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Mar-2021 11:18:22 CET | [#1469](https://github.com/tradecloud/tradecloud-microservices/pull/1469) |  Company upsert account | @marcmatt |  |
+
+6. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Mar-2021 11:10:56 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
+
+7. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Mar-2021 10:18:30 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 | 2 | Services (Scala) | 22-Mar-2021 17:44:53 CET | [#1467](https://github.com/tradecloud/tradecloud-microservices/pull/1467) |  Refactor splitting traits | @roy-tc |  |
 
-4. [N/A](#)  
+8. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Mar-2021 20:15:10 CET | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) | Tc 6695 sci supplier credentials order response | @bohdantrc |  |
 
-5. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Mar-2021 17:40:03 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
-
-6. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Mar-2021 15:25:50 CET | [#1466](https://github.com/tradecloud/tradecloud-microservices/pull/1466) |  Remove OrderReissuedByBuyer forward compatibility | @marcmatt |  |
-
-7. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 22-Mar-2021 12:21:28 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
-
-8. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events 
+9. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Mar-2021 11:18:03 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | [TC-6876] acknowledge docs | @bohdantrc |  |
 
-9. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+10. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Mar-2021 10:24:19 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-10. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+11. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Mar-2021 09:34:20 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
