@@ -1,39 +1,39 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 23 12:30:51 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 23 14:30:46 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE:  
+1. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Mar-2021 11:53:13 CET | [#591](https://github.com/tradecloud/tradecloud-portal-angular/pull/591) | [TC-6238] add rejected field after buyer rejection request | @bohdantrc |  |
+| 1 | Services (Scala) | 23-Mar-2021 13:55:07 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
 
 2. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 11:50:36 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
+| 1 | Services (Scala) | 23-Mar-2021 13:16:59 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-3. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
+3. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Mar-2021 12:35:00 CET | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
+
+4. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE:  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 23-Mar-2021 11:53:13 CET | [#591](https://github.com/tradecloud/tradecloud-portal-angular/pull/591) | [TC-6238] add rejected field after buyer rejection request | @bohdantrc |  |
+
+5. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Mar-2021 11:37:00 CET | [#1466](https://github.com/tradecloud/tradecloud-microservices/pull/1466) |  Remove OrderReissuedByBuyer forward compatibility | @marcmatt |  |
 
-4. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 11:28:51 CET | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
-
-5. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
+6. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Mar-2021 11:18:22 CET | [#1469](https://github.com/tradecloud/tradecloud-microservices/pull/1469) |  Company upsert account | @marcmatt |  |
-
-6. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 11:10:56 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
 
 7. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
