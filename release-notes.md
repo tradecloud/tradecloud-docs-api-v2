@@ -1,40 +1,40 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 23 22:30:40 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 24 10:30:54 CET 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
+1. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE: rejection reason  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 20:31:16 CET | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
+| 1 | Web Portal | 24-Mar-2021 10:26:50 CET | [#591](https://github.com/tradecloud/tradecloud-portal-angular/pull/591) | [TC-6238] add rejected field after buyer rejection request | @bohdantrc |  |
 
 2. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 18:06:04 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
+| 1 | Services (Scala) | 24-Mar-2021 10:17:36 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-3. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+3. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 17:29:08 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
-| 2 | Web Portal | 23-Mar-2021 17:07:16 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
+| 1 | Services (Scala) | 24-Mar-2021 10:16:16 CET | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
 
-4. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
+4. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 24-Mar-2021 08:57:14 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
+| 2 | Services (Scala) | 23-Mar-2021 17:29:08 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
+
+5. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Mar-2021 17:10:02 CET | [#1466](https://github.com/tradecloud/tradecloud-microservices/pull/1466) |  Remove OrderReissuedByBuyer forward compatibility | @marcmatt |  |
 
-5. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
+6. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Mar-2021 13:55:07 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
-
-6. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE: rejection reason  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 23-Mar-2021 11:53:13 CET | [#591](https://github.com/tradecloud/tradecloud-portal-angular/pull/591) | [TC-6238] add rejected field after buyer rejection request | @bohdantrc |  |
 
 7. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -96,7 +96,6 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 | 2 | Services (Scala) | 16-Mar-2021 13:07:11 CET | [#1454](https://github.com/tradecloud/tradecloud-microservices/pull/1454) |  Add counter to reindexing process | @roy-tc |  |
 | 3 | Services (Go) | 01-Mar-2021 18:45:52 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
 | 4 | Services (Scala) | 01-Mar-2021 18:41:32 CET | [#1448](https://github.com/tradecloud/tradecloud-microservices/pull/1448) |  Fix deployment and avoid leftover PR groups | @denys-kondartiuk |  |
-| 5 | Services (Go) | 24-Feb-2021 10:13:26 CET | [#377](https://github.com/tradecloud/tradecloud-microservices-go/pull/377) |  Build chores and fixes | @vovinacci |  |
 
 7. [TC-6909](https://tradecloud.atlassian.net/browse/TC-6909) Marathon: Deploy services only when at least one service been built to ensure that only changed services are deployed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
