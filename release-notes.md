@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 24 18:30:45 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 24 20:30:37 CET 2021)
 ---
 
 
@@ -10,53 +10,48 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Mar-2021 17:56:45 CET | [#1471](https://github.com/tradecloud/tradecloud-microservices/pull/1471) | : Fixing security issue when finding users by company id | @dmytrozheliuk |  |
 
-2. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Mar-2021 16:48:50 CET | [#1470](https://github.com/tradecloud/tradecloud-microservices/pull/1470) |  [TC-6935] Add OrderLineContent documents empty default | @marcmatt |  |
-
-3. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
+2. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Mar-2021 14:32:21 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-4. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE: rejection reason  
+3. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE: rejection reason  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Mar-2021 11:27:52 CET | [#591](https://github.com/tradecloud/tradecloud-portal-angular/pull/591) | [TC-6238] add rejected field after buyer rejection request | @bohdantrc |  |
 
-5. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
+4. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Mar-2021 11:18:35 CET | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
 
-6. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+5. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Mar-2021 10:58:28 CET | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 | 2 | Web Portal | 24-Mar-2021 10:58:16 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 
-7. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
+6. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Mar-2021 17:10:02 CET | [#1466](https://github.com/tradecloud/tradecloud-microservices/pull/1466) |  Remove OrderReissuedByBuyer forward compatibility | @marcmatt |  |
 
-8. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
+7. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Mar-2021 11:18:22 CET | [#1469](https://github.com/tradecloud/tradecloud-microservices/pull/1469) |  Company upsert account | @marcmatt |  |
 
-9. [N/A](#)  
+8. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Mar-2021 20:15:10 CET | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) | Tc 6695 sci supplier credentials order response | @bohdantrc |  |
 
-10. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+9. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Mar-2021 10:24:19 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-11. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+10. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Mar-2021 09:34:20 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
@@ -66,8 +61,9 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Mar-2021 12:20:07 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
-| 2 | Services (Scala) | 12-Mar-2021 11:43:29 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) |  [TC-6874] Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 24-Mar-2021 20:14:14 CET | [#1470](https://github.com/tradecloud/tradecloud-microservices/pull/1470) |  [TC-6935] Add OrderLineContent documents empty default | @marcmatt |  |
+| 2 | Services (Scala) | 24-Mar-2021 12:20:07 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
+| 3 | Services (Scala) | 12-Mar-2021 11:43:29 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) |  [TC-6874] Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
 
 2. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
