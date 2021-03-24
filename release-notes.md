@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 24 14:30:51 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 24 16:30:40 CET 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Mar-2021 14:30:15 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
+| 1 | Services (Scala) | 24-Mar-2021 14:32:21 CET | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
 2. [TC-6241](https://tradecloud.atlassian.net/browse/TC-6241) FE: rejection reason  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
