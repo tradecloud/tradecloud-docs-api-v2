@@ -48,7 +48,7 @@ Document body
 Document upload successful, returning the object id
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": "40fef20d-8769-4a0b-aa2d-90a0b00750b4"
 }
@@ -60,7 +60,7 @@ Document upload successful, returning the object id
 Document upload failed, the document size exceeds 100 MB
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -108,7 +108,7 @@ See OpenAPI specs
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -157,7 +157,7 @@ Upload documents to your company's content server and remember the returned docu
 
 ### Step 2. Attach uploaded document `url` to the order or line
 
-Use Step 2. in method 1, but use  `url` instead of `objectId`
+Use Step 2. in method 1, but use `url` instead of `objectId`
 
 ## Method 3. Only provide document meta data
 

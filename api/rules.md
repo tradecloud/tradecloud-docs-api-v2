@@ -26,25 +26,25 @@ Your integration **must support** [forward compatibility](compatibility.md#forwa
 
 Identifier examples are:
 
-- `supplierAccountNumber`
-- `buyerAccountNumber`
-- `purchaseOrderNumber`
-- `destination.code`
-- `position`
-- `item.number`
-- `deliverySchedule.position`
-- `salesOrderNumber`
-- `salesOrderPosition`
-- `contact.email`
-- `contact.userName`
+* `supplierAccountNumber`
+* `buyerAccountNumber`
+* `purchaseOrderNumber`
+* `destination.code`
+* `position`
+* `item.number`
+* `deliverySchedule.position`
+* `salesOrderNumber`
+* `salesOrderPosition`
+* `contact.email`
+* `contact.userName`
 
 ### Identifiers must be unique and immutable
 
 Your identifiers
 
-- **must be unique**
-- **must never change**
-- **must never be reassigned**
+* **must be unique**
+* **must never change**
+* **must never be reassigned**
 
 ### Identifiers must not contain whitespace characters
 
@@ -70,8 +70,7 @@ Only send an **order** or **order response** that either **is new** or **has an 
 
 ### The order or order response should only contain new or changed lines
 
-The order or order response should only contain **order lines** that are **new or changed**.
-Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+The order or order response should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
 
 ### Never send all orders or responses periodically
 
@@ -94,3 +93,4 @@ Your integration **must support** **the other party may** **add or remove a deli
 ## Reopen an order
 
 ## Cancel an order
+

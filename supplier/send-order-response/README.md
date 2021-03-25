@@ -7,8 +7,7 @@ description: How to send a purchase order response to your buyer.
 As a supplier you can send either a **new or updated** purchase order response to your buyer.
 
 {% hint style="warning" %}
-The order response should only contain **order lines** that are **new or changed**.
-Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+The order response should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
 {% endhint %}
 
 ## Order process
@@ -38,7 +37,7 @@ When the order line has process status `Confirmed`:
 * When the **responded** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
 
 {% hint style="warning" %}
-This [reopen request](../reopen.md) feature is under development and API and documentation may change. 
+This [reopen request](../reopen.md) feature is under development and API and documentation may change.
 {% endhint %}
 
 When the order line already has process status `Rejected`the process status will **NOT** change.

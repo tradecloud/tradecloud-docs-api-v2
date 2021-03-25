@@ -5,14 +5,14 @@ description: How to announce the supplier has shipped goods
 # Ship goods
 
 {% hint style="warning" %}
-This feature is planned and API and documentation may change. 
+This feature is planned and API and documentation may change.
 {% endhint %}
 
 When an order or line is completely shipped by the supplier, it can be marked as shipped by setting `indicators.shipped` on either order or line level.
 
-- Order lines having logistics status `Open` will become `Shipped`
-- `Delivered` lines cannot be shipped
-- `Shipped` lines cannot be shipped again
+* Order lines having logistics status `Open` will become `Shipped`
+* `Delivered` lines cannot be shipped
+* `Shipped` lines cannot be shipped again
 
 {% hint style="warning" %}
 Usually this is indicator is set in the `order-response` by the supplier but in some cases a buyer requires to set it.
@@ -63,6 +63,7 @@ application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
+
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -74,7 +75,8 @@ application/json
 {% endapi-method %}
 
 Body example:
-```
+
+```text
 {
   "order": {
     "purchaseOrderNumber": "PO123456789",
@@ -96,3 +98,4 @@ Body example:
 {% hint style="info" %}
 [Send order indicators OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute)
 {% endhint %}
+

@@ -4,11 +4,10 @@ description: How to issue a new purchase order as a buyer
 
 # Issue a new order
 
-As buyer you can send either a **new or [updated](../update.md)** purchase order to your supplier.
+As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
 
 {% hint style="warning" %}
-The order should only contain **order lines** that are **new or changed**.
-Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+The order should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
 {% endhint %}
 
 ## Order process

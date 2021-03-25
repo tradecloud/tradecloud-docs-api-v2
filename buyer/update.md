@@ -7,8 +7,7 @@ description: How to update an existing purchase order as a buyer
 As buyer you can send either a [new](issue/) or updated purchase order to Tradecloud.
 
 {% hint style="warning" %}
-The order should only contain **order lines** that are **new or changed**.
-Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+The order should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
 {% endhint %}
 
 ## Order process
@@ -24,7 +23,7 @@ When the order line has status `InProgress`:
 * When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** \(either via a proposal or reopen request\)`delivery schedule` and `prices` the order process status will become `Confirmed`
 * When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
 
-   `delivery schedule` and `prices` the order process status will stay `InProgress`.  
+  `delivery schedule` and `prices` the order process status will stay `InProgress`.  
   If there is an open reopen request, it will be updated.
 
 When the order line has status `Confirmed`:

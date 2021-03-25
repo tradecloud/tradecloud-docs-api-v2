@@ -30,3 +30,4 @@ Buyers and suppliers can test new features and develop and test their Tradecloud
 The latest features will be made available by the Tradecloud continuous delivery process.
 
 It has an availability Service Level Objective of 90% per month.
+

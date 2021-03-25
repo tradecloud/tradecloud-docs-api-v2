@@ -180,7 +180,7 @@ A company is in the lead during a**n** event that's why users are n/a relating t
 | Scope | Read Permission | Write Permission |
 | :--- | :--- | :--- |
 | Not connected companies | Not allowed  | Not allowed  |
-| Connected companies | See all team members and positions \(if filled\) | Not allowed  |
+| Connected companies | Not allowed  | Not allowed  |
 | Your company | See all team members and positions \(if filled\) | Not allowed  |
 
 #### Invite a new user

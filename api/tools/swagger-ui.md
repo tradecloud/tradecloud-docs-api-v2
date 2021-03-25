@@ -8,7 +8,7 @@ You can use the [Swagger UI](https://swagger.io/tools/swagger-ui/) to explore an
 
 Go to the [acceptance test environment status page](https://api.accp.tradecloud1.com/) and click one the Swagger UI links
 
-![acceptance test environment status page](../../.gitbook/assets/image%20%281%29.png)
+![acceptance test environment status page](../../.gitbook/assets/image%20%281%29%20%281%29.png)
 
 ## Getting a token using the Swagger UI
 

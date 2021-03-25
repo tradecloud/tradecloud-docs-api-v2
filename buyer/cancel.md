@@ -2,13 +2,13 @@
 description: How to request the supplier to cancel an order or line
 ---
 
-# Cancelling an order or line
+# Cancel an order
 
 Cancel an order line in Tradecloud when it is cancelled at the buyer.
 
-- `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately (without request)
-- `Completed` lines cannot be cancelled
-- `Cancelled` lines cannot be cancelled again
+* `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately \(without request\)
+* `Completed` lines cannot be cancelled
+* `Cancelled` lines cannot be cancelled again
 
 ## Cancelling by resending an order using the `/order` API
 
@@ -29,7 +29,7 @@ The order or can be cancelled by setting `indicators.cancelled` on either order 
 {% hint style="info" %}
 If you provide a `cancelled` indicator on order level, **ALL** the lines in the order will be cancelled.
 
-If you also provide a `cancelled` indicator on line level, it has **precedence**  over the order level `cancelled` indicator.
+If you also provide a `cancelled` indicator on line level, it has **precedence** over the order level `cancelled` indicator.
 {% endhint %}
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order/indicators" %}
@@ -55,6 +55,7 @@ application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
+
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -66,7 +67,8 @@ application/json
 {% endapi-method %}
 
 Body example:
-```
+
+```text
 {
   "order": {
     "purchaseOrderNumber": "PO123456789",
@@ -88,3 +90,4 @@ Body example:
 {% hint style="info" %}
 [Send order indicators OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute)
 {% endhint %}
+

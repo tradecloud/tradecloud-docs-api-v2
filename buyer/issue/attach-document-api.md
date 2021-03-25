@@ -2,7 +2,7 @@
 description: Choose an appropriate API to attach a document to an order or line
 ---
 
-# API for a documents attaching
+# Choose attach document API
 
 You can attach documents using either of the following API's:
 
@@ -10,7 +10,7 @@ You can attach documents using either of the following API's:
 
 You can attach documents body using `documents` field of either `order` or `lines` fields of the order body.
 
-{% page-ref page="README.md" %}
+{% page-ref page="./" %}
 
 #### Documents body
 
@@ -23,7 +23,8 @@ You can attach documents body using `documents` field of either `order` or `line
 * `url`: optional document location if it is not stored in the Tradecloud object-storage.
 
 Body example:
-```
+
+```text
 {
   "order": {
     "purchaseOrderNumber": "PO123456789",
@@ -51,7 +52,6 @@ Body example:
   ]
 }
 ```
-
 
 ## 2. Separate from the order message using the /order/documents API
 
@@ -129,3 +129,4 @@ See OpenAPI specs
 ### Response
 
 When the `/api-connector/order/documents` API method returns HTTP status code 200, the order documents were successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order documents are available in the portal and are forwarded to the supplier ERP integration.
+
