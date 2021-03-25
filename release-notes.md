@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 25 12:30:38 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 25 14:30:43 CET 2021)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 25-Mar-2021 12:28:49 CET | [#1469](https://github.com/tradecloud/tradecloud-microservices/pull/1469) |  Company upsert account | @marcmatt |  |
+| 1 | Services (Scala) | 25-Mar-2021 13:45:31 CET | [#1469](https://github.com/tradecloud/tradecloud-microservices/pull/1469) |  Company upsert account | @marcmatt |  |
 
 2. [TC-6918](https://tradecloud.atlassian.net/browse/TC-6918) Re-invite button in the Teams page is broken, no popup shown when you click on the button.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 25-Mar-2021 12:27:45 CET | [#593](https://github.com/tradecloud/tradecloud-portal-angular/pull/593) |  back action button for opening reinvite | @bohdantrc |  |
+| 1 | Web Portal | 25-Mar-2021 12:40:22 CET | [#593](https://github.com/tradecloud/tradecloud-portal-angular/pull/593) |  back action button for opening reinvite | @bohdantrc |  |
 
 3. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
