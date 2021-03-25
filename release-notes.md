@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Mar 25 16:30:41 CET 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Mar 25 18:30:40 CET 2021)
 ---
 
 
@@ -177,9 +177,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 02-Mar-2021 10:55:29 CET | [#1445](https://github.com/tradecloud/tradecloud-microservices/pull/1445) |  multiple tasks migration specs | @marcmatt |  |
-
-21. [TC-6597](https://tradecloud.atlassian.net/browse/TC-6597) Show initials in the portal when a users does not have set a profile picture.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 25-Feb-2021 16:51:28 CET | [#580](https://github.com/tradecloud/tradecloud-portal-angular/pull/580) |  multi-colored avatar | @bohdantrc |  |
 
