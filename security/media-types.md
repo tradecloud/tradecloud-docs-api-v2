@@ -41,4 +41,5 @@ If you need an additional Media Type or File Extension please send a request to 
 ## References
 
 [RFC 6838 Media Type Specifications](https://tools.ietf.org/html/rfc6838)
+
 [iana Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml)

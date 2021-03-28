@@ -13,7 +13,7 @@ You can attach documents using three methods:
 ## Method 1. Attach a document using the Tradecloud object-storage
 
 {% hint style="warning" %}
-Your integration should only upload doucments and images with [supported Media Types and File Extensions](/security/media-types.md)
+Your integration should only upload documents and images with [supported Media Types and File Extensions](/security/media-types.md)
 {% endhint %}
 
 ### Step 1. Upload a document to the Tradecloud object-storage
