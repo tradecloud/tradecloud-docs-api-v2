@@ -18,6 +18,7 @@
   * [Authentication](security/authentication.md)
   * [Authorization](security/authorization.md)
   * [Encryption](security/encryption.md)
+  * [Media Types](security/media-types.md)
 * [Your company](company/README.md)
   * [Company overview](company/overview.md)
   * [Get your company](company/get.md)
