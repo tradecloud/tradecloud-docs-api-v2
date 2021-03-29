@@ -1,22 +1,22 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 29 11:30:50 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 29 13:30:43 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+1. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Mar-2021 11:30:20 CEST | [#1473](https://github.com/tradecloud/tradecloud-microservices/pull/1473) |  Refactor initial handling of order issue events. | @roy-tc |  |
+| 1 | Services (Scala) | 29-Mar-2021 13:22:26 CEST | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
+
+2. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 29-Mar-2021 12:41:52 CEST | [#1473](https://github.com/tradecloud/tradecloud-microservices/pull/1473) |  Refactor initial handling of order issue events. | @roy-tc |  |
 | 2 | Services (Scala) | 29-Mar-2021 11:25:57 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 | 3 | Services (Scala) | 29-Mar-2021 11:20:57 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
 | 4 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
-
-2. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Mar-2021 11:27:14 CEST | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
 
 3. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
