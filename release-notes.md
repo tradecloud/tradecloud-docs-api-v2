@@ -1,32 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Mar 29 15:30:48 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Mar 29 17:30:39 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
+1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 29-Mar-2021 17:13:32 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
+| 2 | Services (Scala) | 29-Mar-2021 11:25:57 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
+| 3 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
+
+2. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Mar-2021 14:57:32 CEST | [#595](https://github.com/tradecloud/tradecloud-portal-angular/pull/595) |  add firstDeliveryDate field | @bohdantrc |  |
 
-2. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
+3. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Mar-2021 14:54:57 CEST | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-3. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
+4. [TC-6238](https://tradecloud.atlassian.net/browse/TC-6238) As a portal user, I want see the reason why me proposal/reopen request is rejected in the task header.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Mar-2021 14:28:16 CEST | [#1468](https://github.com/tradecloud/tradecloud-microservices/pull/1468) | [TC-6240]: Added rejection reason field to workflow task content | @dmytrozheliuk |  |
-
-4. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Mar-2021 12:41:52 CEST | [#1473](https://github.com/tradecloud/tradecloud-microservices/pull/1473) |  Refactor initial handling of order issue events. | @roy-tc |  |
-| 2 | Services (Scala) | 29-Mar-2021 11:25:57 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
-| 3 | Services (Scala) | 29-Mar-2021 11:20:57 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
-| 4 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 
 5. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -75,37 +74,38 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 
 ## Changelog
 
-1. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
+1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 29-Mar-2021 15:38:50 CEST | [#1473](https://github.com/tradecloud/tradecloud-microservices/pull/1473) |  Refactor initial handling of order issue events. | @roy-tc |  |
+| 2 | Services (Scala) | 23-Mar-2021 16:45:52 CET | [#1467](https://github.com/tradecloud/tradecloud-microservices/pull/1467) |  Refactor splitting traits | @roy-tc |  |
+
+2. [TC-3907](https://tradecloud.atlassian.net/browse/TC-3907) As a admin want to update an account number of an existing connection 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 16:29:34 CET | [#1469](https://github.com/tradecloud/tradecloud-microservices/pull/1469) |  Company upsert account | @marcmatt |  |
 
-2. [TC-6918](https://tradecloud.atlassian.net/browse/TC-6918) Re-invite button in the Teams page is broken, no popup shown when you click on the button.  
+3. [TC-6918](https://tradecloud.atlassian.net/browse/TC-6918) Re-invite button in the Teams page is broken, no popup shown when you click on the button.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Mar-2021 15:29:46 CET | [#593](https://github.com/tradecloud/tradecloud-portal-angular/pull/593) |  back action button for opening reinvite | @bohdantrc |  |
 
-3. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
+4. [TC-6877](https://tradecloud.atlassian.net/browse/TC-6877) Remove OrderReissuedByBuyer parallel change forward compatibility on 12-03-2021 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Mar-2021 21:50:49 CET | [#1466](https://github.com/tradecloud/tradecloud-microservices/pull/1466) |  Remove OrderReissuedByBuyer forward compatibility | @marcmatt |  |
 
-4. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
+5. [TC-6536](https://tradecloud.atlassian.net/browse/TC-6536) As user I want to be acknowledged when a document is attached to an order or order line  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Mar-2021 20:14:14 CET | [#1470](https://github.com/tradecloud/tradecloud-microservices/pull/1470) |  [TC-6935] Add OrderLineContent documents empty default | @marcmatt |  |
 | 2 | Services (Scala) | 24-Mar-2021 12:20:07 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
 | 3 | Services (Scala) | 12-Mar-2021 11:43:29 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) |  [TC-6874] Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
 
-5. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events 
+6. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Mar-2021 12:19:31 CET | [#587](https://github.com/tradecloud/tradecloud-portal-angular/pull/587) | [TC-6876] acknowledge docs | @bohdantrc |  |
-
-6. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Mar-2021 16:45:52 CET | [#1467](https://github.com/tradecloud/tradecloud-microservices/pull/1467) |  Refactor splitting traits | @roy-tc |  |
 
 7. [TC-6418](https://tradecloud.atlassian.net/browse/TC-6418) As a buyer, only able to process gross price and discount in my ERP, I want to calculate and save the confirmed gross price of supplier reopen requests  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
