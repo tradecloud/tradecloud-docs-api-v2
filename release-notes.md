@@ -1,68 +1,73 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 30 17:30:49 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 30 19:30:49 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+1. [TC-6942](https://tradecloud.atlassian.net/browse/TC-6942) As an admin/superuser I want to update an account code in the portal 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 30-Mar-2021 19:27:44 CEST | [#597](https://github.com/tradecloud/tradecloud-portal-angular/pull/597) |  add edit account code | @bohdantrc |  |
+
+2. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Mar-2021 14:17:05 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
 | 2 | Services (Scala) | 30-Mar-2021 14:15:34 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 | 3 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 
-2. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
+3. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Mar-2021 13:23:41 CEST | [#1474](https://github.com/tradecloud/tradecloud-microservices/pull/1474) | : Adding basicAuth support for object-storage endpoints | @dmytrozheliuk |  |
 
-3. [TC-6724](https://tradecloud.atlassian.net/browse/TC-6724) As a portal user I only want to see contacts in the contacts filter, that have orders attached to them.  [Planned release 31-Mar-2021]
+4. [TC-6724](https://tradecloud.atlassian.net/browse/TC-6724) As a portal user I only want to see contacts in the contacts filter, that have orders attached to them.  [Planned release 31-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 30-Mar-2021 13:10:06 CEST | [#594](https://github.com/tradecloud/tradecloud-portal-angular/pull/594) |  check contact user into order and task pages | @bohdantrc |  |
 
-4. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
+5. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Mar-2021 22:10:12 CEST | [#1475](https://github.com/tradecloud/tradecloud-microservices/pull/1475) | : Fixing order line search filters&#39; counters | @dmytrozheliuk |  |
 
-5. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
+6. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Mar-2021 14:57:32 CEST | [#595](https://github.com/tradecloud/tradecloud-portal-angular/pull/595) |  add firstDeliveryDate field | @bohdantrc |  |
 
-6. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
+7. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Mar-2021 14:54:57 CEST | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-7. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+8. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:29 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
-8. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+9. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:22 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-9. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
+10. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 26-Mar-2021 19:34:20 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
-10. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
+11. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:15 CET | [#1430](https://github.com/tradecloud/tradecloud-microservices/pull/1430) |  PoC for running RiskIndicator as a Scala Microservice | @roy-tc |  |
 
-11. [N/A](#)  
+12. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Mar-2021 19:33:52 CET | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) | Tc 6695 sci supplier credentials order response | @bohdantrc |  |
 
-12. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+13. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:33:44 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
