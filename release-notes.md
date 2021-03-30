@@ -1,21 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Mar 30 13:30:46 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Mar 30 15:30:53 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
+1. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 30-Mar-2021 14:17:05 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
+| 2 | Services (Scala) | 30-Mar-2021 14:15:34 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
+| 3 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
+
+2. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 30-Mar-2021 13:23:41 CEST | [#1474](https://github.com/tradecloud/tradecloud-microservices/pull/1474) | : Adding basicAuth support for object-storage endpoints | @dmytrozheliuk |  |
-
-2. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 30-Mar-2021 13:19:54 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
-| 2 | Services (Scala) | 29-Mar-2021 11:25:57 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
-| 3 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 
 3. [TC-6724](https://tradecloud.atlassian.net/browse/TC-6724) As a portal user I only want to see contacts in the contacts filter, that have orders attached to them.  [Planned release 31-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
