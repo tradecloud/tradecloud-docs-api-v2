@@ -44,6 +44,12 @@ Therefor **XML** based transformations **expecting ordering** will break.
 
 [JSON Web Tokens](https://jwt.io/) are an open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties.
 
+## Media Types
+
+Tradecloud supports a sub set of the [RFC 6838 Media Type Specifications](https://tools.ietf.org/html/rfc6838).
+
+{% page-ref page="/security/media-types.md" %}
+
 ## OpenAPI
 
 The [OpenAPI Version 2.0 Specification \(OAS 2.0\)](https://swagger.io/specification/v2/) creates a RESTful interface for easily developing and consuming an API by effectively mapping all the resources and operations associated with it.
@@ -77,4 +83,3 @@ Since URLs often contain characters outside the ASCII set, the URL has to be con
 ISO/IEC 10646-1 defines a large character set called the Universal Character Set \(UCS\) which encompasses most of the world's writing systems. The originally proposed encodings of the UCS, however, were not compatible with many current applications and protocols, and this has led to the development of UTF-8
 
 Published as [RFC 9259](https://tools.ietf.org/html/rfc8259#section-8.1)
-

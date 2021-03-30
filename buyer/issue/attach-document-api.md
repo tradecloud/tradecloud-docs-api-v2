@@ -12,7 +12,7 @@ You can attach documents body using `documents` field of either `order` or `line
 
 {% page-ref page="./" %}
 
-#### Documents body
+### Documents body
 
 * `code` : optional document code or number. The document code should be unique within your company and immutable.
 * `revision`: optional document revision \(or version\) code or number

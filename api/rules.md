@@ -84,6 +84,12 @@ Your integration **must** **support a line delivery schedule with multiple sched
 
 Your integration **must support** **the other party may** **add or remove a delivery schedule line**.
 
+## Upload a document or image
+
+Your integration should only upload doucments and images with **supported Media Types and File Extensions**:
+
+{% page-ref page="/security/media-types.md" %}
+
 ## Attach a document
 
 ## Receive goods
@@ -93,4 +99,3 @@ Your integration **must support** **the other party may** **add or remove a deli
 ## Reopen an order
 
 ## Cancel an order
-
