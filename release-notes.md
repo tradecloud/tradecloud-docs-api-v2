@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Mar 31 19:30:43 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Mar 31 21:30:43 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6579](https://tradecloud.atlassian.net/browse/TC-6579) As Eriks &amp; Damen I want to have a dedicated orderLine field reserved for specifying inspection companies [Planned release 31-Mar-2021]
+1. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Mar-2021 19:04:54 CEST | [#1478](https://github.com/tradecloud/tradecloud-microservices/pull/1478) |  - add certification to buyer line | @olegtradecloud |  |
+| 1 | Services (Scala) | 31-Mar-2021 20:14:35 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
 
-2. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
+2. [TC-6579](https://tradecloud.atlassian.net/browse/TC-6579) As Eriks &amp; Damen I want to have a dedicated orderLine field reserved for specifying inspection companies [Planned release 31-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Mar-2021 17:42:27 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 31-Mar-2021 20:11:15 CEST | [#1478](https://github.com/tradecloud/tradecloud-microservices/pull/1478) |  - add certification to buyer line | @olegtradecloud |  |
 
 3. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
