@@ -1,77 +1,82 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 1 21:30:43 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 1 23:30:48 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
+1. [TC-5691](https://tradecloud.atlassian.net/browse/TC-5691) As company admin I want to disable 2FA for co workers who lost their phone.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 01-Apr-2021 22:34:58 CEST | [#1479](https://github.com/tradecloud/tradecloud-microservices/pull/1479) |  Find identity by email for super users | @marcmatt |  |
+
+2. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Apr-2021 17:45:57 CEST | [#1475](https://github.com/tradecloud/tradecloud-microservices/pull/1475) | : Fixing order line search filters&#39; counters | @dmytrozheliuk |  |
 
-2. [TC-6579](https://tradecloud.atlassian.net/browse/TC-6579) As Eriks &amp; Damen I want to have a dedicated orderLine field reserved for specifying inspection companies [Planned release 31-Mar-2021]
+3. [TC-6579](https://tradecloud.atlassian.net/browse/TC-6579) As Eriks &amp; Damen I want to have a dedicated orderLine field reserved for specifying inspection companies [Planned release 31-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Apr-2021 17:05:30 CEST | [#1478](https://github.com/tradecloud/tradecloud-microservices/pull/1478) |  - add certification to buyer line | @olegtradecloud |  |
 
-3. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
+4. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Apr-2021 16:06:26 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
 
-4. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+5. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Apr-2021 15:23:07 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 | 2 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 
-5. [TC-6942](https://tradecloud.atlassian.net/browse/TC-6942) As an admin/superuser I want to update an account code in the portal 
+6. [TC-6942](https://tradecloud.atlassian.net/browse/TC-6942) As an admin/superuser I want to update an account code in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Apr-2021 15:20:22 CEST | [#597](https://github.com/tradecloud/tradecloud-portal-angular/pull/597) |  add edit account code | @bohdantrc |  |
 
-6. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
+7. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Apr-2021 14:58:37 CEST | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-7. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
+8. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Apr-2021 13:34:18 CEST | [#595](https://github.com/tradecloud/tradecloud-portal-angular/pull/595) |  add firstDeliveryDate field | @bohdantrc |  |
 
-8. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
+9. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 31-Mar-2021 09:35:13 CEST | [#1474](https://github.com/tradecloud/tradecloud-microservices/pull/1474) | : Adding basicAuth support for object-storage endpoints | @dmytrozheliuk |  |
 
-9. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+10. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:29 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
-10. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+11. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:22 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-11. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
+12. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 26-Mar-2021 19:34:20 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
-12. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
+13. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:15 CET | [#1430](https://github.com/tradecloud/tradecloud-microservices/pull/1430) |  PoC for running RiskIndicator as a Scala Microservice | @roy-tc |  |
 
-13. [N/A](#)  
+14. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Mar-2021 19:33:52 CET | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) | Tc 6695 sci supplier credentials order response | @bohdantrc |  |
 
-14. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+15. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:33:44 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
