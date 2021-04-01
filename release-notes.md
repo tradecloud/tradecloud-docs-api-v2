@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 1 19:30:43 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 1 21:30:43 CEST 2021)
 ---
 
 
@@ -154,8 +154,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Mar-2021 12:02:23 CET | [#1462](https://github.com/tradecloud/tradecloud-microservices/pull/1462) |  Trigger build of reindexing services | @roy-tc |  |
 | 2 | Services (Scala) | 16-Mar-2021 13:07:11 CET | [#1454](https://github.com/tradecloud/tradecloud-microservices/pull/1454) |  Add counter to reindexing process | @roy-tc |  |
-| 3 | Services (Go) | 01-Mar-2021 18:45:52 CET | [#378](https://github.com/tradecloud/tradecloud-microservices-go/pull/378) |  PR groups leftover | @denys-kondartiuk |  |
-| 4 | Services (Scala) | 01-Mar-2021 18:41:32 CET | [#1448](https://github.com/tradecloud/tradecloud-microservices/pull/1448) |  Fix deployment and avoid leftover PR groups | @denys-kondartiuk |  |
 
 15. [TC-6909](https://tradecloud.atlassian.net/browse/TC-6909) Marathon: Deploy services only when at least one service been built to ensure that only changed services are deployed 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
