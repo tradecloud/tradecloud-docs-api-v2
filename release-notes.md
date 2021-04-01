@@ -1,45 +1,45 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 1 15:30:47 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 1 17:30:46 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
+1. [TC-6579](https://tradecloud.atlassian.net/browse/TC-6579) As Eriks &amp; Damen I want to have a dedicated orderLine field reserved for specifying inspection companies [Planned release 31-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Apr-2021 15:27:35 CEST | [#1475](https://github.com/tradecloud/tradecloud-microservices/pull/1475) | : Fixing order line search filters&#39; counters | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 01-Apr-2021 17:05:30 CEST | [#1478](https://github.com/tradecloud/tradecloud-microservices/pull/1478) |  - add certification to buyer line | @olegtradecloud |  |
 
-2. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
+2. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 01-Apr-2021 16:12:39 CEST | [#1475](https://github.com/tradecloud/tradecloud-microservices/pull/1475) | : Fixing order line search filters&#39; counters | @dmytrozheliuk |  |
+
+3. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 01-Apr-2021 16:06:26 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
+
+4. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API [Planned release 29-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Apr-2021 15:23:07 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 | 2 | Web Portal | 26-Mar-2021 19:33:48 CET | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 
-3. [TC-6942](https://tradecloud.atlassian.net/browse/TC-6942) As an admin/superuser I want to update an account code in the portal 
+5. [TC-6942](https://tradecloud.atlassian.net/browse/TC-6942) As an admin/superuser I want to update an account code in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Apr-2021 15:20:22 CEST | [#597](https://github.com/tradecloud/tradecloud-portal-angular/pull/597) |  add edit account code | @bohdantrc |  |
 
-4. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
+6. [TC-5041](https://tradecloud.atlassian.net/browse/TC-5041) As a supplier I want to see the first delivery date on order and line levels 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 01-Apr-2021 14:58:37 CEST | [#1465](https://github.com/tradecloud/tradecloud-microservices/pull/1465) |  - first delivery date | @olegtradecloud |  |
 
-5. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
+7. [TC-6937](https://tradecloud.atlassian.net/browse/TC-6937) FE: sorting  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 01-Apr-2021 13:34:18 CEST | [#595](https://github.com/tradecloud/tradecloud-portal-angular/pull/595) |  add firstDeliveryDate field | @bohdantrc |  |
-
-6. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 01-Apr-2021 09:16:42 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
-
-7. [TC-6579](https://tradecloud.atlassian.net/browse/TC-6579) As Eriks &amp; Damen I want to have a dedicated orderLine field reserved for specifying inspection companies [Planned release 31-Mar-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 31-Mar-2021 20:11:15 CEST | [#1478](https://github.com/tradecloud/tradecloud-microservices/pull/1478) |  - add certification to buyer line | @olegtradecloud |  |
 
 8. [TC-6838](https://tradecloud.atlassian.net/browse/TC-6838) As a buyer integrator I want to use basic authentication when uploading and downloading documents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
