@@ -4,14 +4,16 @@ description: How to use JSON Web Tokens
 
 # Authentication
 
-The API supports 2 means of authentication:
+The `api-connector` and `object-storage/document` API's supports two means of authentication:
 
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) upon every HTTP request.
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) to obtain a [JSON Web Token](https://jwt.io/) \([RFC 7519](https://tools.ietf.org/html/rfc7519)\). The JWT is used for authentication for all following requests.
 
+Other API's only support the "Basic" HTTP authentication scheme with JSON Web Tokens.
+
 ## Basic Authentication upon every request
 
-You can use the Basic HTTP Authentication scheme to authenticate against the Tradecloud API Connector upon every request.
+You can use the Basic HTTP Authentication scheme to authenticate against the Tradecloud `api-connector` and `object-storage/document` API's upon every request.
 
 {% hint style="info" %}
 Pro: this is a simple authentication method, supported by all integrations
@@ -51,7 +53,7 @@ the response will return [HTTP status code 500](https://en.wikipedia.org/wiki/Li
 ## Basic Authentication with JSON Web Tokens
 
 1. Use the Basic HTTP Authentication scheme to **authenticate** against the authentication service.
-2. Use the returned JWT to **authorize** against the Tradecloud API Connector and other services for all subsequent requests.
+2. Use the returned JWT to **authorize** against the Tradecloud  `api-connector` and other services for all subsequent requests.
 
 {% hint style="info" %}
 Pro's:
