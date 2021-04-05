@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 5 21:30:42 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 5 23:30:38 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6942](https://tradecloud.atlassian.net/browse/TC-6942) As an admin/superuser I want to update an account code in the portal 
+1. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 05-Apr-2021 21:35:17 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
+
+2. [TC-6942](https://tradecloud.atlassian.net/browse/TC-6942) As an admin/superuser I want to update an account code in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Apr-2021 17:46:13 CEST | [#597](https://github.com/tradecloud/tradecloud-portal-angular/pull/597) |  add edit account code | @bohdantrc |  |
-
-2. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Apr-2021 16:30:06 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
 
 3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -32,7 +32,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | 2 | Services (Scala) | 05-Apr-2021 09:06:40 CEST | [#1478](https://github.com/tradecloud/tradecloud-microservices/pull/1478) |  - add certification to buyer line | @olegtradecloud |  |
 | 3 | Web Portal | 02-Apr-2021 14:02:52 CEST | [#598](https://github.com/tradecloud/tradecloud-portal-angular/pull/598) | [TC-6582] add Certification field into order line details | @bohdantrc |  |
 
-6. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 31-Jul-2020]
+6. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 16-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:29 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
