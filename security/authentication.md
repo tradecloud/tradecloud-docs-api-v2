@@ -4,14 +4,16 @@ description: How to use JSON Web Tokens
 
 # Authentication
 
-The API supports 2 means of authentication:
+The `api-connector` and `object-storage/document` API's support two means of authentication:
 
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) upon every HTTP request.
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) to obtain a [JSON Web Token](https://jwt.io/) \([RFC 7519](https://tools.ietf.org/html/rfc7519)\). The JWT is used for authentication for all following requests.
 
+Other API's only support the "Basic" HTTP authentication scheme with JSON Web Tokens.
+
 ## Basic Authentication upon every request
 
-You can use the Basic HTTP Authentication scheme to authenticate against the Tradecloud API Connector upon every request.
+You can use the Basic HTTP Authentication scheme to authenticate against the Tradecloud `api-connector` and `object-storage/document` API's upon every request.
 
 {% hint style="info" %}
 Pro: this is a simple authentication method, supported by all integrations
@@ -19,14 +21,14 @@ Pro: this is a simple authentication method, supported by all integrations
 Con's:
 
 * The response time is long, average 1 second, up to 3 seconds.
-* It is only supported by connectors, not by other services like the object-storage.
+* It is only supported by `api-connector` and `object-storage/document` API's, not by other service API's.
 {% endhint %}
 
 {% hint style="warning" %}
 **Use Basic Authentication upon every request only when**:
 
 * You send one order or response occasionally; less then 1 per minute.
-* You do not need to integrate with other services, like the object-storage, user and company services
+* And you do not need to integrate with other API's, like the user and company API's
 * Or when your integration system does not support [**JSON Web Tokens**](https://jwt.io/) \([RFC 7519](https://tools.ietf.org/html/rfc7519)\)
 {% endhint %}
 
@@ -51,13 +53,13 @@ the response will return [HTTP status code 500](https://en.wikipedia.org/wiki/Li
 ## Basic Authentication with JSON Web Tokens
 
 1. Use the Basic HTTP Authentication scheme to **authenticate** against the authentication service.
-2. Use the returned JWT to **authorize** against the Tradecloud API Connector and other services for all subsequent requests.
+2. Use the returned JWT to **authorize** against the Tradecloud  `api-connector` and other service API's for all subsequent requests.
 
 {% hint style="info" %}
 Pro's:
 
 * Faster response time \(except for the initial authentication\), average 200ms
-* It is supported by all connectors and services, including the object-storage
+* It is supported by all connector and service API's
 
 Con: this is a more complex authentication and authorization method
 {% endhint %}
@@ -65,8 +67,8 @@ Con: this is a more complex authentication and authorization method
 {% hint style="warning" %}
 **Use JSON Web Tokens when:**
 
-* You send batches of orders or responses; more then 1 per minute
-* When you need additional services, like the object-storage, user and company services
+* You send batches of orders or responses; more then 1 per minute 
+* Or when you need additional API's, like the user and company API's
 {% endhint %}
 
 ### Authenticate
