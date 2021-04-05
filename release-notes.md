@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 5 13:30:41 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 5 15:30:41 CEST 2021)
 ---
 
 
@@ -180,14 +180,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Mar-2021 10:13:52 CET | [#1452](https://github.com/tradecloud/tradecloud-microservices/pull/1452) |  Bump user service to latest messages | @marcmatt |  |
-
-21. [TC-6483](https://tradecloud.atlassian.net/browse/TC-6483) The OrderReissuedByBuyer event should be renamed to OrderLinesReissuedByBuyer 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-Mar-2021 14:04:40 CET | [#1451](https://github.com/tradecloud/tradecloud-microservices/pull/1451) |  Add JSON ActivityType backwards compatibility | @marcmatt |  |
-
-22. [TC-6875](https://tradecloud.atlassian.net/browse/TC-6875) Logging in not possible for SSO users that are redirected to Azure and then go back to the login page.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Mar-2021 12:53:15 CET | [#584](https://github.com/tradecloud/tradecloud-portal-angular/pull/584) |  Update azure package for (Fix clearing of temporary cache) | @bohdantrc |  |
 
