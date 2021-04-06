@@ -1,46 +1,51 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 6 21:30:40 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Apr 6 23:30:45 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
+1. [TC-6926](https://tradecloud.atlassian.net/browse/TC-6926) As Alfen I want to resend an order to my Isah ERP system 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 06-Apr-2021 22:26:37 CEST | [#1480](https://github.com/tradecloud/tradecloud-microservices/pull/1480) |  Publish OrderView when resending | @marcmatt |  |
+
+2. [TC-6944](https://tradecloud.atlassian.net/browse/TC-6944) The counts of the process &amp; logistical status on the order line overview interact with each other.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Apr-2021 16:39:17 CEST | [#1475](https://github.com/tradecloud/tradecloud-microservices/pull/1475) | : Fixing order line search filters&#39; counters | @dmytrozheliuk |  |
 
-2. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
+3. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 06-Apr-2021 10:06:51 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
 
-3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
+4. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Apr-2021 16:24:37 CEST | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) |  SCI supplier credentials order response | @bohdantrc |  |
 
-4. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 16-Apr-2021]
+5. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 16-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:29 CET | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
-5. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+6. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:22 CET | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-6. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
+7. [TC-6521](https://tradecloud.atlassian.net/browse/TC-6521) As a user I want that contacts in the Orders &amp; Tasks page are sorted alphabetically  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 26-Mar-2021 19:34:20 CET | [#355](https://github.com/tradecloud/tradecloud-microservices-go/pull/355) |  - user search sorting  | @olegtradecloud |  |
 
-7. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
+8. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:34:15 CET | [#1430](https://github.com/tradecloud/tradecloud-microservices/pull/1430) |  PoC for running RiskIndicator as a Scala Microservice | @roy-tc |  |
 
-8. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+9. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Mar-2021 19:33:44 CET | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
