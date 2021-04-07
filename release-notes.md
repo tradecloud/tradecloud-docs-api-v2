@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 7 19:30:42 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 7 21:30:45 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6966](https://tradecloud.atlassian.net/browse/TC-6966) OrderLinesCancelledByBuyer resulted in failure=no workflow tasks to close 
+1. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 07-Apr-2021 19:59:56 CEST | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) |  SCI supplier credentials order response | @bohdantrc |  |
+
+2. [TC-6966](https://tradecloud.atlassian.net/browse/TC-6966) OrderLinesCancelledByBuyer resulted in failure=no workflow tasks to close 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Apr-2021 16:07:05 CEST | [#1481](https://github.com/tradecloud/tradecloud-microservices/pull/1481) |  - workflow ignored events | @olegtradecloud |  |
 
-2. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
+3. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Apr-2021 15:12:41 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
-
-3. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Apr-2021 16:24:37 CEST | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) |  SCI supplier credentials order response | @bohdantrc |  |
 
 4. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 16-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
