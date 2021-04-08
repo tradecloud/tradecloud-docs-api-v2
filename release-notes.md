@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 8 11:31:08 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 8 13:30:45 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
+1. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 08-Apr-2021 11:09:27 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
+| 1 | Web Portal | 08-Apr-2021 13:26:36 CEST | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) |  SCI supplier credentials order response | @bohdantrc |  |
 
-2. [TC-6695](https://tradecloud.atlassian.net/browse/TC-6695) Implement per-buyer-supplier authentication and persistence of configured credentials [Planned release 22-Mar-2021]
+2. [TC-6674](https://tradecloud.atlassian.net/browse/TC-6674) BE: as a Buyer I want to be able to Complete lines that are still In progress 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 08-Apr-2021 10:10:21 CEST | [#590](https://github.com/tradecloud/tradecloud-portal-angular/pull/590) |  SCI supplier credentials order response | @bohdantrc |  |
+| 1 | Services (Scala) | 08-Apr-2021 12:32:15 CEST | [#1476](https://github.com/tradecloud/tradecloud-microservices/pull/1476) | : Adding possibility to complete order line in in_progress s… | @dmytrozheliuk |  |
 
 3. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 16-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
