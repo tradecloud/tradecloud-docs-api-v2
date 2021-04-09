@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 9 17:30:46 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 9 19:30:40 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 09-Apr-2021 17:26:28 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
+| 1 | Services (Scala) | 09-Apr-2021 19:05:15 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
 
 2. [TC-6981](https://tradecloud.atlassian.net/browse/TC-6981) FE: add separate webhook url support 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
