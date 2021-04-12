@@ -1,20 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 12 15:30:42 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 12 17:30:46 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+1. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 12-Apr-2021 15:29:00 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
+| 1 | Services (Go) | 12-Apr-2021 17:02:46 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
+| 2 | Services (Scala) | 12-Apr-2021 15:20:09 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
 
-2. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
+2. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-Apr-2021 15:20:09 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
-| 2 | Services (Go) | 12-Apr-2021 15:15:45 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
+| 1 | Services (Scala) | 12-Apr-2021 16:00:12 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 2 | Services (Go) | 12-Apr-2021 15:29:00 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
 3. [TC-6969](https://tradecloud.atlassian.net/browse/TC-6969) Update default text for activity type OrderLineDeliveryHistoryAppendedByBuyer  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
