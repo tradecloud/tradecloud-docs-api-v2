@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 12 19:30:43 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 12 21:30:46 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 12-Apr-2021 19:07:43 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
+| 1 | Services (Go) | 12-Apr-2021 21:25:07 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
 | 2 | Services (Scala) | 12-Apr-2021 15:20:09 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
 
 2. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
