@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 12 11:30:53 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 12 13:30:45 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 1. [TC-6969](https://tradecloud.atlassian.net/browse/TC-6969) Update default text for activity type OrderLineDeliveryHistoryAppendedByBuyer  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Apr-2021 11:21:06 CEST | [#601](https://github.com/tradecloud/tradecloud-portal-angular/pull/601) |  update activity text | @bohdantrc |  |
+| 1 | Web Portal | 12-Apr-2021 12:38:01 CEST | [#601](https://github.com/tradecloud/tradecloud-portal-angular/pull/601) |  update activity text | @bohdantrc |  |
 
 2. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -156,7 +156,6 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Mar-2021 20:14:14 CET | [#1470](https://github.com/tradecloud/tradecloud-microservices/pull/1470) |  [TC-6935] Add OrderLineContent documents empty default | @marcmatt |  |
 | 2 | Services (Scala) | 24-Mar-2021 12:20:07 CET | [#1449](https://github.com/tradecloud/tradecloud-microservices/pull/1449) |  [TC-6538] Acknowledge tasks for order documents event | @dmytrozheliuk |  |
-| 3 | Services (Scala) | 12-Mar-2021 11:43:29 CET | [#1450](https://github.com/tradecloud/tradecloud-microservices/pull/1450) |  [TC-6874] Acknowledge tasks for order level documents events | @dmytrozheliuk |  |
 
 21. [TC-6538](https://tradecloud.atlassian.net/browse/TC-6538) BE:  Acknowledge tasks for document events 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
