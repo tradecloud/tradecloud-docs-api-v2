@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 13 13:30:56 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Apr 13 15:30:46 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 13-Apr-2021 13:27:09 CEST | [#1484](https://github.com/tradecloud/tradecloud-microservices/pull/1484) | : Added order API specs changes to support supplier contact | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 13-Apr-2021 15:11:57 CEST | [#1484](https://github.com/tradecloud/tradecloud-microservices/pull/1484) | : Added order API specs changes to support supplier contact | @dmytrozheliuk |  |
 
 2. [TC-6981](https://tradecloud.atlassian.net/browse/TC-6981) FE: add separate webhook url support 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
