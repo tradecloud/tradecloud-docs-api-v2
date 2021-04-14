@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 14 13:30:48 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 14 15:30:44 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
+1. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Apr-2021 13:05:33 CEST | [#1486](https://github.com/tradecloud/tradecloud-microservices/pull/1486) |  - supplier contact filters | @olegtradecloud |  |
+| 1 | Services (Scala) | 14-Apr-2021 15:25:36 CEST | [#1484](https://github.com/tradecloud/tradecloud-microservices/pull/1484) | : Added order API specs changes to support supplier contact | @dmytrozheliuk |  |
 
-2. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
+2. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Apr-2021 12:53:10 CEST | [#1484](https://github.com/tradecloud/tradecloud-microservices/pull/1484) | : Added order API specs changes to support supplier contact | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 14-Apr-2021 15:20:35 CEST | [#1486](https://github.com/tradecloud/tradecloud-microservices/pull/1486) |  - supplier contact filters | @olegtradecloud |  |
 
 3. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Apr-2021 12:28:55 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
-| 2 | Services (Go) | 14-Apr-2021 12:10:17 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
+| 1 | Services (Go) | 14-Apr-2021 14:05:36 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
+| 2 | Services (Scala) | 14-Apr-2021 12:28:55 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 
 4. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
