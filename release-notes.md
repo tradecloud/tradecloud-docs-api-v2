@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 14 15:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 14 17:30:43 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 14-Apr-2021 15:25:36 CEST | [#1484](https://github.com/tradecloud/tradecloud-microservices/pull/1484) | : Added order API specs changes to support supplier contact | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 14-Apr-2021 16:50:55 CEST | [#1484](https://github.com/tradecloud/tradecloud-microservices/pull/1484) | : Added order API specs changes to support supplier contact | @dmytrozheliuk |  |
 
 2. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
