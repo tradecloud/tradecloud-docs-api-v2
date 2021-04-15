@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 15 17:30:43 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 15 19:30:42 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2021 16:23:56 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
+| 1 | Services (Scala) | 15-Apr-2021 18:11:27 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
 | 2 | Services (Go) | 15-Apr-2021 11:30:53 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
 
 2. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
