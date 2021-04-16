@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 16 11:30:47 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 16 13:30:42 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
+1. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Apr-2021 11:29:54 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
+| 1 | Web Portal | 16-Apr-2021 11:55:16 CEST | [#602](https://github.com/tradecloud/tradecloud-portal-angular/pull/602) |  supplier contact filters | @bohdantrc |  |
+| 2 | Services (Scala) | 15-Apr-2021 15:25:04 CEST | [#1486](https://github.com/tradecloud/tradecloud-microservices/pull/1486) |  - supplier contact filters | @olegtradecloud |  |
 
-2. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
+2. [TC-7003](https://tradecloud.atlassian.net/browse/TC-7003) When the buyer only sends a gross price, then TC should fill 0% discount in the supplier request dialog.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 16-Apr-2021 11:53:54 CEST | [#604](https://github.com/tradecloud/tradecloud-portal-angular/pull/604) |  set default value 0 for discount price | @bohdantrc |  |
+
+3. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Apr-2021 11:49:32 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
+
+4. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Apr-2021 18:11:27 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
 | 2 | Services (Go) | 15-Apr-2021 11:30:53 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
-
-3. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2021 15:25:04 CEST | [#1486](https://github.com/tradecloud/tradecloud-microservices/pull/1486) |  - supplier contact filters | @olegtradecloud |  |
-| 2 | Web Portal | 15-Apr-2021 11:57:15 CEST | [#602](https://github.com/tradecloud/tradecloud-portal-angular/pull/602) |  supplier contact filters | @bohdantrc |  |
-
-4. [TC-7003](https://tradecloud.atlassian.net/browse/TC-7003) When the buyer only sends a gross price, then TC should fill 0% discount in the supplier request dialog.  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Apr-2021 15:11:02 CEST | [#604](https://github.com/tradecloud/tradecloud-portal-angular/pull/604) |  set default value 0 for discount price | @bohdantrc |  |
 
 5. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
