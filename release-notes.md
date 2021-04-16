@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 16 15:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 16 17:30:42 CEST 2021)
 ---
 
 
@@ -8,12 +8,12 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Apr-2021 15:29:22 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
+| 1 | Web Portal | 16-Apr-2021 15:34:11 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
 
 2. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Apr-2021 15:23:58 CEST | [#602](https://github.com/tradecloud/tradecloud-portal-angular/pull/602) |  supplier contact filters | @bohdantrc |  |
+| 1 | Web Portal | 16-Apr-2021 15:32:46 CEST | [#602](https://github.com/tradecloud/tradecloud-portal-angular/pull/602) |  supplier contact filters | @bohdantrc |  |
 | 2 | Services (Scala) | 15-Apr-2021 15:25:04 CEST | [#1486](https://github.com/tradecloud/tradecloud-microservices/pull/1486) |  - supplier contact filters | @olegtradecloud |  |
 
 3. [TC-7003](https://tradecloud.atlassian.net/browse/TC-7003) When the buyer only sends a gross price, then TC should fill 0% discount in the supplier request dialog.  
