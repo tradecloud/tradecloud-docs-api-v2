@@ -1,47 +1,47 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Apr 19 15:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Apr 19 17:30:44 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7007](https://tradecloud.atlassian.net/browse/TC-7007) Damen order N612862 on ACCP has both marked as open and delivered events, triggered by one order update 
+1. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-Apr-2021 15:24:28 CEST | [#1488](https://github.com/tradecloud/tradecloud-microservices/pull/1488) |  - line delivery fixes | @olegtradecloud |  |
+| 1 | Services (Scala) | 19-Apr-2021 17:09:14 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
+| 2 | Services (Go) | 15-Apr-2021 11:30:53 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
 
-2. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
+2. [TC-7007](https://tradecloud.atlassian.net/browse/TC-7007) Damen order N612862 on ACCP has both marked as open and delivered events, triggered by one order update 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 19-Apr-2021 15:36:08 CEST | [#1488](https://github.com/tradecloud/tradecloud-microservices/pull/1488) |  - line delivery fixes | @olegtradecloud |  |
+
+3. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 19-Apr-2021 11:31:06 CEST | [#602](https://github.com/tradecloud/tradecloud-portal-angular/pull/602) |  supplier contact filters | @bohdantrc |  |
 | 2 | Services (Scala) | 15-Apr-2021 15:25:04 CEST | [#1486](https://github.com/tradecloud/tradecloud-microservices/pull/1486) |  - supplier contact filters | @olegtradecloud |  |
 
-3. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+4. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 19-Apr-2021 10:00:00 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Services (Go) | 15-Apr-2021 11:02:54 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
-4. [N/A](#)  
+5. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Apr-2021 15:34:11 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
 
-5. [TC-7003](https://tradecloud.atlassian.net/browse/TC-7003) When the buyer only sends a gross price, then TC should fill 0% discount in the supplier request dialog.  
+6. [TC-7003](https://tradecloud.atlassian.net/browse/TC-7003) When the buyer only sends a gross price, then TC should fill 0% discount in the supplier request dialog.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Apr-2021 11:53:54 CEST | [#604](https://github.com/tradecloud/tradecloud-portal-angular/pull/604) |  set default value 0 for discount price | @bohdantrc |  |
 
-6. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
+7. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Apr-2021 11:49:32 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
-
-7. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents [Planned release 15-Apr-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Apr-2021 18:11:27 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
-| 2 | Services (Go) | 15-Apr-2021 11:30:53 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
 
 8. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
