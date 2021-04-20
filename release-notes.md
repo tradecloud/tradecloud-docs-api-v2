@@ -1,35 +1,35 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 20 15:30:45 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Apr 20 17:30:41 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+1. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Apr-2021 15:20:54 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 1 | Services (Scala) | 20-Apr-2021 16:22:05 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
+
+2. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 20-Apr-2021 16:06:21 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Services (Go) | 20-Apr-2021 15:06:31 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
-2. [TC-7007](https://tradecloud.atlassian.net/browse/TC-7007) Damen order N612862 on ACCP has both marked as open and delivered events, triggered by one order update 
+3. [TC-7007](https://tradecloud.atlassian.net/browse/TC-7007) Damen order N612862 on ACCP has both marked as open and delivered events, triggered by one order update 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Apr-2021 14:36:10 CEST | [#1488](https://github.com/tradecloud/tradecloud-microservices/pull/1488) |  - line delivery fixes | @olegtradecloud |  |
 
-3. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
+4. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Apr-2021 13:57:52 CEST | [#608](https://github.com/tradecloud/tradecloud-portal-angular/pull/608) |  check and highlight priceInTransactionCurrency | @bohdantrc |  |
 
-4. [TC-6744](https://tradecloud.atlassian.net/browse/TC-6744) As a supplier I want to see my sales order number (if exist) in the Task header 
+5. [TC-6744](https://tradecloud.atlassian.net/browse/TC-6744) As a supplier I want to see my sales order number (if exist) in the Task header 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Apr-2021 13:54:23 CEST | [#607](https://github.com/tradecloud/tradecloud-portal-angular/pull/607) |  show sales order number into workflow page | @bohdantrc |  |
-
-5. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Apr-2021 10:51:58 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
 
 6. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
