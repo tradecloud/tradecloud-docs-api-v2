@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 20 23:30:40 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 21 11:31:12 CEST 2021)
 ---
 
 
@@ -8,17 +8,17 @@ description: Tradecloud services and portal open pull requests and changelog (Tu
 1. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Apr-2021 18:29:36 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 21-Apr-2021 11:10:55 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
 
 2. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Apr-2021 18:02:31 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
+| 1 | Services (Scala) | 21-Apr-2021 10:17:06 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
 
 3. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-Apr-2021 16:06:21 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 1 | Services (Scala) | 21-Apr-2021 09:16:11 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Services (Go) | 20-Apr-2021 15:06:31 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
 4. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
