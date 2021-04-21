@@ -1,19 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 21 17:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 21 19:30:42 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6212](https://tradecloud.atlassian.net/browse/TC-6212) Not connected buyer can view supplier&#39;s users 
+1. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Apr-2021 18:20:11 CEST | [#1493](https://github.com/tradecloud/tradecloud-microservices/pull/1493) |  - add lastUpdatedAt in order-service | @olegtradecloud |  |
+| 2 | Services (Scala) | 21-Apr-2021 16:49:45 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
+
+2. [TC-6212](https://tradecloud.atlassian.net/browse/TC-6212) Not connected buyer can view supplier&#39;s users 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Apr-2021 17:11:33 CEST | [#1490](https://github.com/tradecloud/tradecloud-microservices/pull/1490) |  Remove findUsersByCompanyId route from user service | @roy-tc |  |
-
-2. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2021 16:49:45 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
 
 3. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
