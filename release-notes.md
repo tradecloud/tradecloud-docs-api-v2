@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 22 21:30:46 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 22 23:30:43 CEST 2021)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 22-Apr-2021 21:30:07 CEST | [#386](https://github.com/tradecloud/tradecloud-microservices-go/pull/386) |  Workaround BigDecimal serialisation | @vovinacci |  |
-| 2 | Services (Go) | 22-Apr-2021 21:12:21 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
+| 1 | Services (Go) | 22-Apr-2021 22:29:53 CEST | [#386](https://github.com/tradecloud/tradecloud-microservices-go/pull/386) |  Workaround BigDecimal serialisation | @vovinacci |  |
+| 2 | Services (Go) | 22-Apr-2021 21:36:54 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
 
 2. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
