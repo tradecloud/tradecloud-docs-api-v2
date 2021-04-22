@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 21 23:30:48 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 22 11:31:11 CEST 2021)
 ---
 
 
@@ -8,45 +8,45 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2021 21:41:03 CEST | [#1493](https://github.com/tradecloud/tradecloud-microservices/pull/1493) |  - add lastUpdatedAt in order-service | @olegtradecloud |  |
+| 1 | Services (Scala) | 22-Apr-2021 11:26:49 CEST | [#1493](https://github.com/tradecloud/tradecloud-microservices/pull/1493) |  - add lastUpdatedAt in order-service | @olegtradecloud |  |
 | 2 | Services (Scala) | 21-Apr-2021 16:49:45 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
 
 2. [TC-6212](https://tradecloud.atlassian.net/browse/TC-6212) Not connected buyer can view supplier&#39;s users 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2021 17:11:33 CEST | [#1490](https://github.com/tradecloud/tradecloud-microservices/pull/1490) |  Remove findUsersByCompanyId route from user service | @roy-tc |  |
+| 1 | Services (Scala) | 22-Apr-2021 11:21:41 CEST | [#1490](https://github.com/tradecloud/tradecloud-microservices/pull/1490) |  Remove findUsersByCompanyId route from user service | @roy-tc |  |
 
-3. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
+3. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-Apr-2021 16:33:15 CEST | [#610](https://github.com/tradecloud/tradecloud-portal-angular/pull/610) |  change method and add possibility change user settings | @bohdantrc |  |
+| 1 | Services (Scala) | 22-Apr-2021 11:13:10 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 2 | Services (Go) | 20-Apr-2021 15:06:31 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
+
+4. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 22-Apr-2021 11:07:33 CEST | [#610](https://github.com/tradecloud/tradecloud-portal-angular/pull/610) |  change method and add possibility change user settings | @bohdantrc |  |
 | 2 | Services (Scala) | 21-Apr-2021 14:16:41 CEST | [#1485](https://github.com/tradecloud/tradecloud-microservices/pull/1485) |  Update SSO user settings and profile | @roy-tc |  |
 
-4. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
+5. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Apr-2021 16:17:36 CEST | [#608](https://github.com/tradecloud/tradecloud-portal-angular/pull/608) |  check and highlight priceInTransactionCurrency | @bohdantrc |  |
 
-5. [TC-6744](https://tradecloud.atlassian.net/browse/TC-6744) As a supplier I want to see my sales order number (if exist) in the Task header 
+6. [TC-6744](https://tradecloud.atlassian.net/browse/TC-6744) As a supplier I want to see my sales order number (if exist) in the Task header 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Apr-2021 16:17:26 CEST | [#607](https://github.com/tradecloud/tradecloud-portal-angular/pull/607) |  show sales order number into workflow page | @bohdantrc |  |
 
-6. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
+7. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Apr-2021 14:56:46 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
 
-7. [TC-6806](https://tradecloud.atlassian.net/browse/TC-6806) Move the location of the supplier search box in the Orders page, so the search boxes are grouped together  
+8. [TC-6806](https://tradecloud.atlassian.net/browse/TC-6806) Move the location of the supplier search box in the Orders page, so the search boxes are grouped together  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Apr-2021 13:05:29 CEST | [#609](https://github.com/tradecloud/tradecloud-portal-angular/pull/609) |  change ordering filters | @bohdantrc |  |
-
-8. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Apr-2021 09:16:11 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
-| 2 | Services (Go) | 20-Apr-2021 15:06:31 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
 9. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
