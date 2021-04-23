@@ -1,31 +1,31 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 23 17:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 23 19:30:44 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
+1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 23-Apr-2021 18:57:34 CEST | [#386](https://github.com/tradecloud/tradecloud-microservices-go/pull/386) |  Workaround BigDecimal serialisation | @vovinacci |  |
+
+2. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2021 13:39:40 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
 
-2. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
+3. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2021 13:25:01 CEST | [#1497](https://github.com/tradecloud/tradecloud-microservices/pull/1497) |  Update scalapb  | @roy-tc |  |
 
-3. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
+4. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2021 11:54:54 CEST | [#1496](https://github.com/tradecloud/tradecloud-microservices/pull/1496) |  - test updated order search | @olegtradecloud |  |
 | 2 | Services (Scala) | 22-Apr-2021 18:37:28 CEST | [#1495](https://github.com/tradecloud/tradecloud-microservices/pull/1495) |  - order search service changes | @olegtradecloud |  |
 | 3 | Services (Scala) | 22-Apr-2021 18:33:49 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
-
-4. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 22-Apr-2021 22:29:53 CEST | [#386](https://github.com/tradecloud/tradecloud-microservices-go/pull/386) |  Workaround BigDecimal serialisation | @vovinacci |  |
 
 5. [TC-6768](https://tradecloud.atlassian.net/browse/TC-6768) Update ES cleanup script to remove pipelines when removing a PR group 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -223,7 +223,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 2 | Web Portal | 03-Apr-2021 15:20:34 CEST | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 | 3 | Services (Scala) | 01-Apr-2021 14:45:31 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
 | 4 | Services (Scala) | 29-Mar-2021 15:38:50 CEST | [#1473](https://github.com/tradecloud/tradecloud-microservices/pull/1473) |  Refactor initial handling of order issue events. | @roy-tc |  |
-| 5 | Services (Scala) | 23-Mar-2021 16:45:52 CET | [#1467](https://github.com/tradecloud/tradecloud-microservices/pull/1467) |  Refactor splitting traits | @roy-tc |  |
 
 25. [TC-6724](https://tradecloud.atlassian.net/browse/TC-6724) As a portal user I only want to see contacts in the contacts filter, that have orders attached to them.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
