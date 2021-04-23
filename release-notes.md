@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 23 13:30:56 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 23 15:30:45 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
+1. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Apr-2021 13:39:40 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
+
+2. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Apr-2021 13:25:01 CEST | [#1497](https://github.com/tradecloud/tradecloud-microservices/pull/1497) |  Update scalapb  | @roy-tc |  |
-
-2. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Apr-2021 13:14:35 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
 
 3. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
