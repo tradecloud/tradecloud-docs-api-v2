@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Apr 23 15:30:45 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Apr 23 17:30:44 CEST 2021)
 ---
 
 
@@ -26,7 +26,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 22-Apr-2021 22:29:53 CEST | [#386](https://github.com/tradecloud/tradecloud-microservices-go/pull/386) |  Workaround BigDecimal serialisation | @vovinacci |  |
-| 2 | Services (Go) | 22-Apr-2021 21:36:54 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
 
 5. [TC-6768](https://tradecloud.atlassian.net/browse/TC-6768) Update ES cleanup script to remove pipelines when removing a PR group 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -93,65 +92,66 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 
 ## Changelog
 
-1. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders 
+1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 23-Apr-2021 16:21:42 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
+| 2 | Web Portal | 15-Apr-2021 11:07:49 CEST | [#603](https://github.com/tradecloud/tradecloud-portal-angular/pull/603) |  Update marathon links in the project | @denys-kondartiuk |  |
+| 3 | Services (Go) | 15-Apr-2021 11:07:33 CEST | [#385](https://github.com/tradecloud/tradecloud-microservices-go/pull/385) |  Update marathon links in the project | @denys-kondartiuk |  |
+| 4 | Services (Scala) | 15-Apr-2021 11:07:25 CEST | [#1487](https://github.com/tradecloud/tradecloud-microservices/pull/1487) |  Update marathon links in the project | @denys-kondartiuk |  |
+
+2. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Apr-2021 18:30:48 CEST | [#1493](https://github.com/tradecloud/tradecloud-microservices/pull/1493) |  - add lastUpdatedAt in order-service | @olegtradecloud |  |
 
-2. [TC-6212](https://tradecloud.atlassian.net/browse/TC-6212) Not connected buyer can view supplier&#39;s users 
+3. [TC-6212](https://tradecloud.atlassian.net/browse/TC-6212) Not connected buyer can view supplier&#39;s users 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Apr-2021 17:13:58 CEST | [#1490](https://github.com/tradecloud/tradecloud-microservices/pull/1490) |  Remove findUsersByCompanyId route from user service | @roy-tc |  |
 
-3. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents 
+4. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 22-Apr-2021 15:39:06 CEST | [#387](https://github.com/tradecloud/tradecloud-microservices-go/pull/387) |  - build issues investigation | @olegtradecloud |  |
 | 2 | Services (Go) | 20-Apr-2021 10:58:43 CEST | [#383](https://github.com/tradecloud/tradecloud-microservices-go/pull/383) |  - separate webhook urls | @olegtradecloud |  |
 | 3 | Services (Scala) | 20-Apr-2021 10:57:18 CEST | [#1482](https://github.com/tradecloud/tradecloud-microservices/pull/1482) |  - company webhook settings api | @olegtradecloud |  |
 
-4. [TC-6806](https://tradecloud.atlassian.net/browse/TC-6806) Move the location of the supplier search box in the Orders page, so the search boxes are grouped together  
+5. [TC-6806](https://tradecloud.atlassian.net/browse/TC-6806) Move the location of the supplier search box in the Orders page, so the search boxes are grouped together  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Apr-2021 14:56:25 CEST | [#609](https://github.com/tradecloud/tradecloud-portal-angular/pull/609) |  change ordering filters | @bohdantrc |  |
 
-5. [TC-6744](https://tradecloud.atlassian.net/browse/TC-6744) As a supplier I want to see my sales order number (if exist) in the Task header 
+6. [TC-6744](https://tradecloud.atlassian.net/browse/TC-6744) As a supplier I want to see my sales order number (if exist) in the Task header 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Apr-2021 14:44:26 CEST | [#607](https://github.com/tradecloud/tradecloud-portal-angular/pull/607) |  show sales order number into workflow page | @bohdantrc |  |
 
-6. [TC-6899](https://tradecloud.atlassian.net/browse/TC-6899) Migrate Van Raam &amp; supplier Van der Hoorn Buigtechniek &#43; orders naar Tradecloud One production env.  
+7. [TC-6899](https://tradecloud.atlassian.net/browse/TC-6899) Migrate Van Raam &amp; supplier Van der Hoorn Buigtechniek &#43; orders naar Tradecloud One production env.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Apr-2021 16:47:23 CEST | [#1491](https://github.com/tradecloud/tradecloud-microservices/pull/1491) |  Migrate archived orders and archived companies | @marcmatt |  |
 
-7. [TC-7007](https://tradecloud.atlassian.net/browse/TC-7007) Damen order N612862 on ACCP has both marked as open and delivered events, triggered by one order update 
+8. [TC-7007](https://tradecloud.atlassian.net/browse/TC-7007) Damen order N612862 on ACCP has both marked as open and delivered events, triggered by one order update 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-Apr-2021 19:15:16 CEST | [#1488](https://github.com/tradecloud/tradecloud-microservices/pull/1488) |  - line delivery fixes | @olegtradecloud |  |
 
-8. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. 
+9. [TC-6660](https://tradecloud.atlassian.net/browse/TC-6660) As portal supplier, I want to have contact filters, so I can filter orders that are linked to a specific contact. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Apr-2021 15:03:35 CEST | [#602](https://github.com/tradecloud/tradecloud-portal-angular/pull/602) |  supplier contact filters | @bohdantrc |  |
 | 2 | Services (Scala) | 20-Apr-2021 15:03:11 CEST | [#1486](https://github.com/tradecloud/tradecloud-microservices/pull/1486) |  - supplier contact filters | @olegtradecloud |  |
 
-9. [TC-7003](https://tradecloud.atlassian.net/browse/TC-7003) When the buyer only sends a gross price, then TC should fill 0% discount in the supplier request dialog.  
+10. [TC-7003](https://tradecloud.atlassian.net/browse/TC-7003) When the buyer only sends a gross price, then TC should fill 0% discount in the supplier request dialog.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Apr-2021 14:14:14 CEST | [#604](https://github.com/tradecloud/tradecloud-portal-angular/pull/604) |  set default value 0 for discount price | @bohdantrc |  |
 
-10. [TC-6981](https://tradecloud.atlassian.net/browse/TC-6981) FE: add separate webhook url support 
+11. [TC-6981](https://tradecloud.atlassian.net/browse/TC-6981) FE: add separate webhook url support 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Apr-2021 16:22:28 CEST | [#600](https://github.com/tradecloud/tradecloud-portal-angular/pull/600) |  add model | @bohdantrc |  |
-
-11. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Apr-2021 11:07:49 CEST | [#603](https://github.com/tradecloud/tradecloud-portal-angular/pull/603) |  Update marathon links in the project | @denys-kondartiuk |  |
-| 2 | Services (Go) | 15-Apr-2021 11:07:33 CEST | [#385](https://github.com/tradecloud/tradecloud-microservices-go/pull/385) |  Update marathon links in the project | @denys-kondartiuk |  |
-| 3 | Services (Scala) | 15-Apr-2021 11:07:25 CEST | [#1487](https://github.com/tradecloud/tradecloud-microservices/pull/1487) |  Update marathon links in the project | @denys-kondartiuk |  |
 
 12. [TC-6969](https://tradecloud.atlassian.net/browse/TC-6969) Update default text for activity type OrderLineDeliveryHistoryAppendedByBuyer  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
