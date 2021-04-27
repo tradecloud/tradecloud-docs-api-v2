@@ -1,20 +1,20 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Apr 27 21:30:43 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Apr 27 23:30:40 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+1. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 27-Apr-2021 21:37:04 CEST | [#1497](https://github.com/tradecloud/tradecloud-microservices/pull/1497) |  Update scalapb  | @roy-tc |  |
+| 2 | Services (Scala) | 27-Apr-2021 19:46:28 CEST | [#1498](https://github.com/tradecloud/tradecloud-microservices/pull/1498) |  [DO NOT MERGE] Master test environment for Scala services | @marcmatt |  |
+
+2. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 27-Apr-2021 20:30:38 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
-
-2. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-Apr-2021 19:46:28 CEST | [#1498](https://github.com/tradecloud/tradecloud-microservices/pull/1498) |  [DO NOT MERGE] Master test environment for Scala services | @marcmatt |  |
-| 2 | Services (Scala) | 27-Apr-2021 19:42:36 CEST | [#1497](https://github.com/tradecloud/tradecloud-microservices/pull/1497) |  Update scalapb  | @roy-tc |  |
 
 3. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
