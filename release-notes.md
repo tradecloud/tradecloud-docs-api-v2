@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 28 17:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 28 19:30:41 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
+1. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2021 17:02:57 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 28-Apr-2021 18:21:12 CEST | [#1497](https://github.com/tradecloud/tradecloud-microservices/pull/1497) |  Update scalapb  | @roy-tc |  |
 
-2. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
+2. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2021 16:32:16 CEST | [#1497](https://github.com/tradecloud/tradecloud-microservices/pull/1497) |  Update scalapb  | @roy-tc |  |
+| 1 | Services (Scala) | 28-Apr-2021 18:11:17 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
 
 3. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
