@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Apr 28 11:30:56 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Apr 28 13:30:44 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2021 09:31:23 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
+| 1 | Services (Scala) | 28-Apr-2021 13:17:18 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
 
 2. [TC-7033](https://tradecloud.atlassian.net/browse/TC-7033) Update to ScalaPB sbt-protoc 1.0.3 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
