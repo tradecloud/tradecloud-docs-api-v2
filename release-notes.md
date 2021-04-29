@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 29 15:30:47 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 29 17:30:48 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Apr-2021 15:10:38 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
+| 1 | Services (Scala) | 29-Apr-2021 17:27:40 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
 
 2. [TC-6924](https://tradecloud.atlassian.net/browse/TC-6924) As Isah, I want to be able to disable my SCI Integration 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -232,7 +232,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 1 | Services (Scala) | 03-Apr-2021 15:35:56 CEST | [#1464](https://github.com/tradecloud/tradecloud-microservices/pull/1464) |  Process DeliveriesSentByBuyer event | @roy-tc |  |
 | 2 | Web Portal | 03-Apr-2021 15:20:34 CEST | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 | 3 | Services (Scala) | 01-Apr-2021 14:45:31 CEST | [#1472](https://github.com/tradecloud/tradecloud-microservices/pull/1472) |  Support optional deliveryHistory in incoming events and refactor SendOrderByBuy | @roy-tc |  |
-| 4 | Services (Scala) | 29-Mar-2021 15:38:50 CEST | [#1473](https://github.com/tradecloud/tradecloud-microservices/pull/1473) |  Refactor initial handling of order issue events. | @roy-tc |  |
 
 30. [TC-6724](https://tradecloud.atlassian.net/browse/TC-6724) As a portal user I only want to see contacts in the contacts filter, that have orders attached to them.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
