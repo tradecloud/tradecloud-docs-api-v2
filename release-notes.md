@@ -1,67 +1,72 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 29 13:30:55 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 29 15:30:47 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
+1. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 29-Apr-2021 15:10:38 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
+
+2. [TC-6924](https://tradecloud.atlassian.net/browse/TC-6924) As Isah, I want to be able to disable my SCI Integration 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 29-Apr-2021 14:28:08 CEST | [#611](https://github.com/tradecloud/tradecloud-portal-angular/pull/611) |  add disabling sci integration | @bohdantrc |  |
+
+3. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 29-Apr-2021 11:35:45 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
 
-2. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+4. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 29-Apr-2021 09:49:20 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
-3. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Apr-2021 22:35:23 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
-
-4. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+5. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-Apr-2021 21:29:13 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Services (Go) | 20-Apr-2021 15:06:31 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
-5. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
+6. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Apr-2021 19:28:26 CEST | [#1484](https://github.com/tradecloud/tradecloud-microservices/pull/1484) | : DO NOT MERGE - Added order API specs changes to support supplier contact | @dmytrozheliuk |  |
 
-6. [TC-6768](https://tradecloud.atlassian.net/browse/TC-6768) Update ES cleanup script to remove pipelines when removing a PR group 
+7. [TC-6768](https://tradecloud.atlassian.net/browse/TC-6768) Update ES cleanup script to remove pipelines when removing a PR group 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Apr-2021 17:20:43 CEST | [#1494](https://github.com/tradecloud/tradecloud-microservices/pull/1494) |  DO NOT MERGE - Test PR | @roy-tc |  |
 
-7. [N/A](#)  
+8. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Apr-2021 15:34:11 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
 
-8. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
+9. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Apr-2021 10:57:08 CEST | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
 
-9. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
+10. [TC-4371](https://tradecloud.atlassian.net/browse/TC-4371) As a DevOps I would like to trace messages over and in services to solve issues faster 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Apr-2021 10:48:03 CEST | [#1370](https://github.com/tradecloud/tradecloud-microservices/pull/1370) | : Kamon init | @dmytrozheliuk |  |
 
-10. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
+11. [TC-6359](https://tradecloud.atlassian.net/browse/TC-6359) As a company admin and superuser, I want to remove a user, in the portal 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Apr-2021 10:47:45 CEST | [#1336](https://github.com/tradecloud/tradecloud-microservices/pull/1336) |  Remove user | @marcmatt |  |
 
-11. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 16-Apr-2021]
+12. [TC-5330](https://tradecloud.atlassian.net/browse/TC-5330) As DevOps, I want to check the validity of file extensions that are uploaded [Planned release 16-Apr-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Apr-2021 10:46:59 CEST | [#1446](https://github.com/tradecloud/tradecloud-microservices/pull/1446) |  - uploaded file validation | @olegtradecloud |  |
 
-12. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
+13. [TC-6811](https://tradecloud.atlassian.net/browse/TC-6811) PoC for using the Java Tensorflow API for evaluating order lines based on a saved model 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Apr-2021 10:46:58 CEST | [#1430](https://github.com/tradecloud/tradecloud-microservices/pull/1430) |  PoC for running RiskIndicator as a Scala Microservice | @roy-tc |  |
