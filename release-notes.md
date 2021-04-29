@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Apr 29 19:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Apr 29 21:30:41 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 29-Apr-2021 18:11:30 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
+| 1 | Services (Scala) | 29-Apr-2021 21:03:24 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
 
 2. [TC-6924](https://tradecloud.atlassian.net/browse/TC-6924) As Isah, I want to be able to disable my SCI Integration 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
