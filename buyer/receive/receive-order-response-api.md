@@ -10,13 +10,13 @@ To receive an order response you can use either:
 * the [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `GET`
 * the polling pattern
 
-## The Webhook connector
+## The Webhook Connector
 
-The webhook is nost suitable for companies with high volume order responses; say more than 1 per minute average during office hours.
+The webhook is most suitable for companies with high volume order responses and having a web server, firewall and SSL certificate available.
 
 When an order has been changed at Tradecloud, we will trigger your webhook.
 
-You can either use `POST` or `PUT` or alternatively `GET`
+You can either use `POST` or `PUT` or alternatively `GET`.
 
 See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) for setting up and using the webhook.
 
@@ -24,15 +24,15 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 
 Use `POST` or `PUT` when:
 
-* You want to receive real time order responses
-* You want to receive the order event content
-* You only want to receive selected order events
+* You want to receive real time order responses.
+* You want to receive the order event content.
+* You only want to receive selected order events.
 * You **only** need to receive the order lines that are **changed**, not the complete order.
 
 {% hint style="info" %}
 Pro's:
 
-* Real time, receive the order event within seconds.
+* Real time, receive the order event within a second.
 * Order event content included.
 * You can filter on which order events to receive (in the company integration settings or in your integration).
 * You do not have to build or configure the polling pattern.
@@ -62,7 +62,7 @@ Use `GET` when:
 {% hint style="info" %}
 Pro's:
 
-* Real time, receive the order event trigger within seconds.
+* Semi real time, receive the order within seconds.
 * You can filter on which order events to receive (in the company integration settings only).
 * You do not have to build or configure the polling pattern.
 
@@ -70,21 +70,21 @@ Con's:
 
 * You need to fetch the order.
 * Basic authentication is not yet supported for the GET `/order/:orderId` API. Send a support request if you need it.
-* You cannot see what order event happened
+* You cannot see what order event happened.
 * You need to build or configure a webhook at your side.
-* You need to publish the webhook on the internet (webserver and firewall required).
+* You need to publish the webhook on the internet (web server and firewall required).
 * You need to obtain and configure a public SSL certificate.
 
 {% endhint %}
 
 ## The polling pattern
 
-The polling pattern is most suitable for companies with low volume order responses; say less than 1 per minute average during office hours.
+The polling pattern is most suitable for companies with low volume order responses and not willing to invest in a web server, firewall and SSL certificate.
 
 {% hint style="info" %}
 Pro's:
 
-* No webhook needed: no webserver, firewall or SSL certificate needed.
+* No webhook needed: no web server, firewall or SSL certificate needed.
 
 Con's:
 
@@ -157,10 +157,12 @@ See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud
 * Use the `lastUpdatedAt` on order line level to filter on the line has been changed.
 * Use the `status` field to filter on process and logistics status.
 
-#### Step 4. Store the lastUpdatedAt for the next polling request
+#### Step 4. Store the `lastUpdatedAt` for the next polling request
 
 Store the **latest** (in the last order in the response body) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
 
-The latest `lastUpdatedAt` should be stored **persistent**, eg. when your integration is restarted,  `lastUpdatedAt` should still be available.
+`lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ` (including milliseconds). To keep it simple just store it as a `String`.
+
+The latest `lastUpdatedAt` should be stored **persistent**, eg. when your integration is restarted or crashes, `lastUpdatedAt` should still be available.
 
 If there is no order in the order response body, use the same `lastUpdatedSince` in the next polling request.
