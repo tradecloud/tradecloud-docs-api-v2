@@ -4,67 +4,13 @@ description: How to receive a purchase order response sent by the supplier
 
 # Receive an order response
 
-Tradecloud will send a purchase order response to the buyer when 
+Tradecloud will send a purchase order response to the buyer when an order event has been triggered.
 
-* issued order lines are accepted by the supplier
-* issued order lines are rejected by the supplier
-* a supplier change proposal is approved by the buyer
-* item details are changed by the supplier
-* a buyer reopen request is approved by the supplier
-* a buyer reopen request is rejected by the supplier
-* a supplier reopen request is approved by the buyer
-* a document is attached by the supplier
-* a purchase order is resent by a buyer admin
-* a purchase order is synchronized from the legacy platform.
+## Choose the appropriate API to receive the order response
 
-## Receive an order response from Tradecloud
+First choose either the webhook API or the polling API to receive order responses:
 
-To receive an order response you will need to use the [webhook connector](https://tradecloud.gitbook.io/connectors/webhook-connector).  
-When an order response is new or has been changed at Tradecloud, we will trigger your webhook.
-
-You can either choose to receive the order id and GET the order yourself or alternatively to receive the order event which contains the affected lines.
-
-{% hint style="warning" %}
-When you **GET the order yourself** you will get **ALL** the order lines.
-
-When you use **the order event** it will **ONLY** contain the lines **affected** by the order event.
-{% endhint %}
-
-In case of a **GET webhook**, using the **order id** you can fetch the actual order from Tradecloud:
-
-{% hint style="info" %}
-[GET webhook eindpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookGet)  
-[API v2 GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
-{% endhint %}
-
-In case of **POST** or **PUT** **webhook** you can use the **order event** inside the request JSON body:
-
-{% hint style="info" %}
-[POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
-{% endhint %}
-
-## Event
-
-In case of an **POST or PUT webhook** the body will contain:
-
-* `eventName:`The event name summarizes what has happened.
-* `orderEvent`: The actual order event, see below, or
-* `orderDocumentsEvent`: \(to be documented\)
-
-The event name is one of:
-
-| Event Name | Trigger |
-| :--- | :--- |
-| `OrderLinesAcceptedBySupplier` | The supplier has accepted issued order lines. |
-| `OrderLinesRejectedBySupplier` | The supplier has rejected issued order lines. |
-| `OrderChangesProposalApprovedByBuyer` | The buyer has approved a change proposal by the supplier. |
-| `OrderLinesItemDetailsChangedBySupplier` | The supplier changed item details. |
-| `OrderLinesReopenRequestApprovedBySupplier` | The supplier has approved changes requested by the buyer after the order line were confirmed |
-| `OrderLinesReopenRequestRejectedBySupplier` | The supplier has rejected changes requested by the buyer after the order line were confirmed. |
-| `OrderLinesReopenRequestApprovedByBuyer` | The buyer has approved changes requested by the supplier after the order line were confirmed. |
-| `OrderDocumentsAttachedBySupplier` | The supplier[ attached documents](download-document.md) to order or line. |
-| `OrderResentByBuyer` | The buyer admin resent the order to their ERP system. |
-| `OrderSynced` | The order has been synced from the legacy platform to the Tradecloud1 platform. |
+{% page-ref page="receive-order-response-api.md" %}
 
 ## Order or OrderEvent
 
@@ -82,6 +28,8 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `status.logisticsStatus`: is the aggregate of all lines logistics status, see below
 * `version`: the  Tradecloud order version number
 * `eventDates`: some key order event date/times
+* `meta`: meta information, including source and trace info, about this messsage
+* `lastUpdatedAt`: is the latest date time the order has been changed, usefull for polling.
 
 ### Buyer order part
 
@@ -121,6 +69,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `status.logisticsStatus`: the order line logistics status, see [status](./#status)
 * `eventDates`: some key line event date/times
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [item details](./#item-details).
+* `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
 
 ### Status
 
@@ -219,4 +168,3 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
-
