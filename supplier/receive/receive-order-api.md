@@ -6,21 +6,27 @@ description: Choose between the webhook API or polling API to receive an order
 
 To receive an order you can use either:
 
-* the [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `POST` or `PUT`
-* the [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `GET`
-* the polling pattern
+* The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `POST` or `PUT`.
+* The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `GET`.
+* The polling pattern.
 
 ## The Webhook Connector
 
-The webhook is most suitable for companies with high volume orders and having a web server, firewall and SSL certificate available.
-
 When an order is issued or has been changed at Tradecloud, we will trigger your webhook.
+
+The webhook is most suitable for companies with real time, high volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
 You can either use `POST` or `PUT` or alternatively `GET`.
 
 See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) for setting up and using the webhook.
 
 ### Using `POST` or `PUT`
+
+When using `POST` or `PUT` the webhook request body will contain:
+
+* `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model") summarizes what has happened.
+* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model" and "OrderEvent") and [Receive order response](README.md).
+* `orderDocumentsEvent`: Or the actual order documents event, see see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model" and "OrderDocumentsEvent").
 
 Use `POST` or `PUT` when:
 
@@ -45,13 +51,9 @@ Con's:
 
 {% endhint %}
 
-In case of an **POST or PUT webhook** the body will contain:
-
-* `eventName:`The event name summarizes what has happened.
-* `orderEvent`: The actual order event, see [Receive order](README.md)
-* `orderDocumentsEvent`: \(to be documented\)
-
 ### Using `GET`
+
+When using `GET` the webhook request URL will contain the Tradecloud orderId, which will be used to fetch the order, but will not contain a request body.
 
 Use `GET` when:
 
@@ -78,6 +80,7 @@ Con's:
 {% endhint %}
 
 ## The polling pattern
+Check if there are new or updated order responses every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order.
 
 The polling pattern is most suitable for companies with low volume orders and not willing to invest in a web server, firewall and SSL certificate.
 
@@ -161,8 +164,7 @@ See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud
 
 Store the **latest** (in the last order in the response body) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
 
-The latest `lastUpdatedAt` should be stored **persistent**, eg. when your integration is restarted or crashes, `lastUpdatedAt` should still be available.
-
-`lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ` (including milliseconds). To keep it simple just store it as a `String`.
-
-If there is no order in the order body, use the same `lastUpdatedSince` in the next polling request.
+* `lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ`, but to keep it simple just store it as a `String`.
+* The latest `lastUpdatedAt` should be stored **persistent**, eg. when your integration is restarted or crashes, `lastUpdatedAt` should still be available.
+* If there is no order in the order body, use the same `lastUpdatedSince` in the next polling request.
+* The very first time, use a date in the past, from the point you want to receive existing orders.
