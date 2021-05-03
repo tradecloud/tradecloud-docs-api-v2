@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon May 3 17:30:37 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 3 19:30:36 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
+1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 03-May-2021 19:17:20 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+
+2. [TC-7004](https://tradecloud.atlassian.net/browse/TC-7004) BE: Add `supplierContact` to `BuyerOrder` 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 03-May-2021 13:05:17 CEST | [#1489](https://github.com/tradecloud/tradecloud-microservices/pull/1489) | [TC-5534]: Supplier contact | @dmytrozheliuk |  |
-
-2. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 03-May-2021 00:38:04 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
 3. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -37,43 +37,44 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 
 ## Changelog
 
-1. [TC-6924](https://tradecloud.atlassian.net/browse/TC-6924) As Isah, I want to be able to disable my SCI Integration 
+1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 03-May-2021 18:21:11 CEST | [#392](https://github.com/tradecloud/tradecloud-microservices-go/pull/392) |  Remove broken link from email footer | @vovinacci |  |
+| 2 | Services (Go) | 23-Apr-2021 16:21:42 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
+| 3 | Web Portal | 15-Apr-2021 11:07:49 CEST | [#603](https://github.com/tradecloud/tradecloud-portal-angular/pull/603) |  Update marathon links in the project | @denys-kondartiuk |  |
+| 4 | Services (Go) | 15-Apr-2021 11:07:33 CEST | [#385](https://github.com/tradecloud/tradecloud-microservices-go/pull/385) |  Update marathon links in the project | @denys-kondartiuk |  |
+
+2. [TC-6924](https://tradecloud.atlassian.net/browse/TC-6924) As Isah, I want to be able to disable my SCI Integration 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 03-May-2021 11:31:42 CEST | [#611](https://github.com/tradecloud/tradecloud-portal-angular/pull/611) |  add disabling sci integration | @bohdantrc |  |
 
-2. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
+3. [TC-6906](https://tradecloud.atlassian.net/browse/TC-6906) Activity proposal/reopen request comparison in portal does not take currencies into account   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 29-Apr-2021 12:58:21 CEST | [#608](https://github.com/tradecloud/tradecloud-portal-angular/pull/608) |  check and highlight priceInTransactionCurrency | @bohdantrc |  |
 
-3. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
+4. [TC-6315](https://tradecloud.atlassian.net/browse/TC-6315) As an SSO user I want to change my profile in Tradecloud 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Apr-2021 15:59:46 CEST | [#610](https://github.com/tradecloud/tradecloud-portal-angular/pull/610) |  change method and add possibility change user settings | @bohdantrc |  |
 
-4. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders 
+5. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 26-Apr-2021 15:23:22 CEST | [#1495](https://github.com/tradecloud/tradecloud-microservices/pull/1495) |  [TC-7013] Order search service changes | @olegtradecloud |  |
 | 2 | Services (Scala) | 22-Apr-2021 18:30:48 CEST | [#1493](https://github.com/tradecloud/tradecloud-microservices/pull/1493) |  - add lastUpdatedAt in order-service | @olegtradecloud |  |
 
-5. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+6. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 26-Apr-2021 14:39:32 CEST | [#389](https://github.com/tradecloud/tradecloud-microservices-go/pull/389) |  Cleanup | @vovinacci |  |
 
-6. [N/A](#)  
+7. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 26-Apr-2021 11:36:33 CEST | [#606](https://github.com/tradecloud/tradecloud-portal-angular/pull/606) | Bump ssri from 6.0.1 to 6.0.2 | @dependabot[bot] |  |
-
-7. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 23-Apr-2021 16:21:42 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
-| 2 | Web Portal | 15-Apr-2021 11:07:49 CEST | [#603](https://github.com/tradecloud/tradecloud-portal-angular/pull/603) |  Update marathon links in the project | @denys-kondartiuk |  |
-| 3 | Services (Go) | 15-Apr-2021 11:07:33 CEST | [#385](https://github.com/tradecloud/tradecloud-microservices-go/pull/385) |  Update marathon links in the project | @denys-kondartiuk |  |
 
 8. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
