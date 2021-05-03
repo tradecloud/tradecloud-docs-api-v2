@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon May 3 13:30:36 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 3 15:30:36 CEST 2021)
 ---
 
 
@@ -151,9 +151,4 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 05-Apr-2021 17:46:29 CEST | [#595](https://github.com/tradecloud/tradecloud-portal-angular/pull/595) |  [TC-6937] add firstDeliveryDate field | @bohdantrc |  |
-
-23. [TC-6570](https://tradecloud.atlassian.net/browse/TC-6570) As Isah I want to send order lines receipts using the /order/delivery event based API 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 03-Apr-2021 15:20:34 CEST | [#592](https://github.com/tradecloud/tradecloud-portal-angular/pull/592) | [TC-6927] add new Delivery event activity type | @bohdantrc |  |
 
