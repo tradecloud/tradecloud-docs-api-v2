@@ -40,7 +40,7 @@ Pro's:
 
 * Real time, receive the order event within a second.
 * Order event content included.
-* You can filter on which order events to receive (in the company integration settings or in your integration).
+* You can filter on which order events to receive (in the company integration settings or filter in your integration).
 * You do not have to build or configure the polling pattern.
 
 Con's:
@@ -53,7 +53,7 @@ Con's:
 
 ### Using `GET`
 
-When using `GET` the webhook request URL will contain the Tradecloud orderId, which will be used to fetch the order, but will not contain a request body.
+When using `GET` the webhook request URL will contain the Tradecloud `orderId`, which you must use to fetch the order.
 
 Use `GET` when:
 
@@ -79,7 +79,7 @@ Con's:
 {% endhint %}
 
 ## The polling pattern
-Check if there are new or updated order responses every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order response.
+Check if there are new or updated orders every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order.
 
 The polling pattern is most suitable for companies with low volume order responses and not willing to invest in a web server, firewall and SSL certificate.
 
@@ -106,7 +106,7 @@ Fetch every polling period, typically 5 minutes, all orders which are new or cha
 * Use the latest `lastUpdatedAt` from previous poll request in the `lastUpdatedSince` filter.
 * Sorting is set automatically to `lastUpdatedAt` order `asc` (latest `lastUpdatedAt` will be in the last order in the response body)
 * Set `limit` to the maximum of `100` orders.
-* Optionally use `offset` for paging, but if you receive `100` or more orders, it is easier to reduce the polling period.
+* Optionally use `offset` for paging, but if you receive more than `100` orders, it is easier to reduce the polling period, so you receive less orders per request.
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order-search/search" %}
 {% api-method-summary %}
@@ -164,6 +164,6 @@ See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud
 Store the **latest** (in the last order in the response body) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
 
 * `lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ`, but to keep it simple just store it as a `String`.
-* The latest `lastUpdatedAt` should be stored **persistent**, eg. when your integration is restarted or crashes, `lastUpdatedAt` should still be available.
+* The latest `lastUpdatedAt` should be stored **persistent**. When your integration is restarted or crashes, `lastUpdatedAt` should still be available.
 * If there is no order in the order response body, use the same `lastUpdatedSince` in the next polling request.
 * The very first time, use a date in the past, from the point you want to receive existing order responses.
