@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed May 5 17:30:41 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed May 5 19:30:35 CEST 2021)
 ---
 
 
@@ -147,9 +147,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-Apr-2021 10:19:42 CEST | [#597](https://github.com/tradecloud/tradecloud-portal-angular/pull/597) |  add edit account code | @bohdantrc |  |
-
-22. [TC-6936](https://tradecloud.atlassian.net/browse/TC-6936) FE: show first delivery 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 05-Apr-2021 17:46:29 CEST | [#595](https://github.com/tradecloud/tradecloud-portal-angular/pull/595) |  [TC-6937] add firstDeliveryDate field | @bohdantrc |  |
 
