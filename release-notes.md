@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed May 5 15:30:39 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed May 5 17:30:41 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
+1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 05-May-2021 15:27:40 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
+| 1 | Services (Go) | 05-May-2021 16:03:38 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
-2. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+2. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 05-May-2021 14:57:31 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+| 1 | Services (Scala) | 05-May-2021 15:58:23 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
 
 3. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
