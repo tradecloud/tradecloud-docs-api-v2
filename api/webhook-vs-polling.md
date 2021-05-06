@@ -132,8 +132,6 @@ application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
-
-```json
 {
   "filters": {
     "lastUpdatedSince": "YYYY-MM-DDThh:mm:ss.SSSZ"
@@ -141,8 +139,6 @@ application/json
   "offset": 0,
   "limit": 100
 }
-```
-
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
