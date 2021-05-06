@@ -80,7 +80,7 @@ In each [OpenAPI 2.0 Specification](https://swagger.io/specification/v2/) you ca
 
 ### Parameters
 
-Most service methods have either path parameters, query parameters and/or a [JSON body](requests.md#JSON-body) or [XML body](requests.md#XML-body)
+Most service methods have either path parameters, query parameters and/or a [JSON body](requests.md#JSON-body) or [XML body](#XML-body)
 
 #### Path parameters
 
@@ -100,7 +100,7 @@ A POST request has a [JSON](requests.md#json) body \(payload\), such as a purcha
 
 [`POST /api-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 
-```javascript
+```json
 {
   "order": {
     "companyId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -122,7 +122,7 @@ A request can have an XML body, such as purchase order sent to the `sci-connecto
 
 [`PUT /sci-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml#/sci-connector/sendOrderByBuyerRoute)
 
-```markup
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Order>
     <ID>123</ID>
@@ -135,4 +135,3 @@ A request can have an XML body, such as purchase order sent to the `sci-connecto
 Tradecloud supports XML following the [SCSN Standard](https://smartconnected.semantic-treehouse.nl/#/Standards)
 
 * XML text [MUST be encoded using UTF-8](https://tools.ietf.org/html/rfc8259#section-8.1)
-

@@ -14,9 +14,9 @@ You can [Update an existing order](update.md)
 
 ## Step 2. Receive an order response
 
-As a buyer you should [Receive an order response](https://github.com/tradecloud/tradecloud-docs-api-v2/tree/8815f0d473762d6f7515a8c293d0a8037875d203/buyer/webhook/README.md) from the supplier
+As a buyer you should [Receive an order response](webhook/) from the supplier
 
-Additionally you can [Download a to document attached to an order response](https://github.com/tradecloud/tradecloud-docs-api-v2/tree/8815f0d473762d6f7515a8c293d0a8037875d203/buyer/webhook/download-document.md).
+Additionally you can [Download a to document attached to an order response](webhook/download-document.md).
 
 ## Step 3. Approve or reject a proposal
 
@@ -32,7 +32,7 @@ Most buyers approve or reject order change proposals using portal workflow tasks
 
 [Approve a proposal](approve-proposal.md) from the supplier
 
-[Reject a proposal](reject-proposal.md) from the supplier
+[Reject a proposal](reject-proposal.md)  from the supplier
 
 ## Step 4. Receive goods
 
@@ -48,4 +48,6 @@ Alternatively, as a buyer you may:
 
 * [Reopen an order](reopen.md) which will restart the order process.
 * [Cancel an order](cancel.md) which will end the order process.
+
+ 
 

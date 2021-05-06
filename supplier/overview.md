@@ -6,9 +6,9 @@ description: Overview of the supplier order process.
 
 ## Step 1. Receive an order
 
-As a supplier you can [Receive an order](https://github.com/tradecloud/tradecloud-docs-api-v2/tree/8815f0d473762d6f7515a8c293d0a8037875d203/supplier/webhook/README.md)
+As a supplier you can [Receive an order](webhook/)
 
-Additionally you can [Download a document attached to an order](https://github.com/tradecloud/tradecloud-docs-api-v2/tree/8815f0d473762d6f7515a8c293d0a8037875d203/supplier/webhook/download-document.md).
+Additionally you can [Download a document attached to an order](webhook/download-document.md).
 
 ## Step 2. Send an order response
 

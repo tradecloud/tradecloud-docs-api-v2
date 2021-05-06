@@ -58,4 +58,3 @@
   * [Ship goods](supplier/ship-goods.md)
   * [Reopen an order](supplier/reopen.md)
   * [Cancel an order](supplier/cancel.md)
-

@@ -44,7 +44,7 @@ Update user body
 User updated \(HTTP status code and user id will be returned\)
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}

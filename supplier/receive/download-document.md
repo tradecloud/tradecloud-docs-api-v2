@@ -15,7 +15,7 @@ If both `objectId` and `url` are missing in the `document`, no file is available
 
 ### Step 1. Retrieve the `objectId` from the document <a id="step-1-retrieve-the-objectid-from-the-document"></a>
 
-Please check the `documents` fields in order and lines in:
+Please check the `documents` fields in order and lines in: 
 
 {% page-ref page="./" %}
 
@@ -70,7 +70,7 @@ Bearer Access-Token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
   "id": "67aa8ece-5d41-496f-a94c-483e360b833b",
   "filename": "test.pdf",
@@ -99,7 +99,7 @@ This Amazon AWS S3 presigned url will expire within 1 minute.
 
 ### Step 1. Retrieve the `url` from the document <a id="step-1-retrieve-the-url-from-the-document"></a>
 
-Please check the `documents` fields in order and lines in:
+Please check the `documents` fields in order and lines in: 
 
 {% page-ref page="./" %}
 

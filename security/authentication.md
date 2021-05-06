@@ -152,4 +152,3 @@ POST https://api.accp.tradecloud1.com/v2/authentication/logout
 Refresh-Token: <Refresh-Token>
 // no body
 ```
-

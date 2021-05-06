@@ -6,11 +6,11 @@ description: How to receive a purchase order sent by the buyer.
 
 Tradecloud will send a new purchase order to the supplier when an order event has been triggered.
 
-{% page-ref page="../../api/webhook-vs-polling.md" %}
-
 ## Choose the appropriate API to receive the order
 
 First choose either the webhook API or the polling API to receive orders:
+
+{% page-ref page="api/webhook-vs-polling.md" %}
 
 ## Order or OrderEvent
 
@@ -21,7 +21,7 @@ First choose either the webhook API or the polling API to receive orders:
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
 
 {% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change.
+The`deliveryOverdue`feature is planned and API and documentation may change. 
 {% endhint %}
 
 * `status.processStatus`: is the aggregate of all lines process status, see [status](./#status).
@@ -67,7 +67,7 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 
 {% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change.
+The`deliveryOverdue`feature is planned and API and documentation may change. 
 {% endhint %}
 
 * `status.processStatus`: the order line process status, see [Status](./#status) below.
@@ -200,4 +200,3 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
-

@@ -48,7 +48,7 @@ Therefor **XML** based transformations **expecting ordering** will break.
 
 Tradecloud supports a sub set of the [RFC 6838 Media Type Specifications](https://tools.ietf.org/html/rfc6838).
 
-{% page-ref page="../security/media-types.md" %}
+{% page-ref page="/security/media-types.md" %}
 
 ## OpenAPI
 
@@ -60,7 +60,7 @@ The [OpenAPI Version 2.0 Specification \(OAS 2.0\)](https://swagger.io/specifica
 
 ## TLS v1.2
 
-[Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network.
+[Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network. 
 
 {% hint style="warning" %}
 The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) published as [RFC 5246](https://tools.ietf.org/html/rfc5246).
@@ -68,12 +68,12 @@ The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transp
 
 ## URI
 
-A Uniform Resource Identifier \(URI\) is a compact sequence of characters that identifies an abstract or physical resource.
+A Uniform Resource Identifier \(URI\) is a compact sequence of characters that identifies an abstract or physical resource. 
 
 Published as [RFC 3986](https://tools.ietf.org/html/rfc3986) with [errata](https://www.rfc-editor.org/errata_search.php?rfc=3986).
 
 {% hint style="warning" %}
-[URLs](https://www.w3schools.com/tags/ref_urlencode.ASP) can only be sent over the Internet using the [ASCII character-set](https://www.w3schools.com/charsets/ref_html_ascii.asp).
+[URLs](https://www.w3schools.com/tags/ref_urlencode.ASP) can only be sent over the Internet using the [ASCII character-set](https://www.w3schools.com/charsets/ref_html_ascii.asp). 
 
 Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. URLs cannot contain spaces. URL encoding normally replaces a space with a plus \(+\) sign or with %20.
 {% endhint %}
@@ -83,4 +83,3 @@ Since URLs often contain characters outside the ASCII set, the URL has to be con
 ISO/IEC 10646-1 defines a large character set called the Universal Character Set \(UCS\) which encompasses most of the world's writing systems. The originally proposed encodings of the UCS, however, were not compatible with many current applications and protocols, and this has led to the development of UTF-8
 
 Published as [RFC 9259](https://tools.ietf.org/html/rfc8259#section-8.1)
-

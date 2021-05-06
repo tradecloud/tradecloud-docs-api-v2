@@ -48,7 +48,7 @@ Request connection to user id
 Connection requested
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
