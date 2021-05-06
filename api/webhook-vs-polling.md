@@ -1,10 +1,10 @@
 ---
-description: Choose between the webhook API or polling API to receive an order
+description: Choose between the webhook API or polling API to receive an order or order response
 ---
 
 # Choose a receive API
 
-To receive an order you can use either:
+To receive an order or order response you can use either:
 
 * The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `POST` or `PUT`.
 * The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `GET`.
@@ -12,7 +12,7 @@ To receive an order you can use either:
 
 ## The Webhook Connector
 
-When an order is issued or has been changed at Tradecloud, we will trigger your webhook.
+When an order has been changed at Tradecloud, we will trigger your webhook, which optionally contains the order event.
 
 The webhook is most suitable for companies with real time, high volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
@@ -25,15 +25,15 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 When using `POST` or `PUT` the webhook request body will contain:
 
 * `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model") summarizes what has happened.
-* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model" and "OrderEvent") and [Receive order](README.md).
+* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model" and "OrderEvent") and [Receive order response](README.md).
 * `orderDocumentsEvent`: Or the actual order documents event, see see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model" and "OrderDocumentsEvent").
 
 Use `POST` or `PUT` when:
 
-* You want to receive real time orders
-* You want to receive the order event content
-* You only want to receive selected order events, like only issued (new) orders.
-* You **only** need to receive the order lines that are **changed**, not the complete order.
+* You want to receive real time order events.
+* You want to receive the order event content.
+* You only want to receive selected order events.
+* You **only** need to receive the order lines that are **changed**, not all the lines of the order.
 
 {% hint style="info" %}
 Pro's:
@@ -58,7 +58,6 @@ When using `GET` the webhook request URL will contain the Tradecloud `orderId`, 
 Use `GET` when:
 
 * Same as `POST` and `PUT` above, but:
-
 * You need to receive the **complete** order with **all** the order lines, regardless they are changed or not.
 
 {% hint style="info" %}
@@ -80,9 +79,10 @@ Con's:
 {% endhint %}
 
 ## The polling pattern
-Check if there are new or updated order responses every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order.
 
-The polling pattern is most suitable for companies with low volume orders and not willing to invest in a web server, firewall and SSL certificate.
+Check if there are new or updated orders every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order.
+
+The polling pattern is most suitable for companies with low volume order responses and not willing to invest in a web server, firewall and SSL certificate.
 
 {% hint style="info" %}
 Pro's:
@@ -91,7 +91,7 @@ Pro's:
 
 Con's:
 
-* Not real time, a polling period is typically 5 mins. which is good enough for low volume.
+* Not real time, a polling period is typically 5 mins.
 * You need to build or configure a periodic polling pattern at your side.
 * You cannot filter on which order events to receive, you will receive any order line change.
 * You cannot see what order event happened.
@@ -132,6 +132,8 @@ application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
+
+```json
 {
   "filters": {
     "lastUpdatedSince": "YYYY-MM-DDThh:mm:ss.SSSZ"
@@ -139,6 +141,8 @@ application/json
   "offset": 0,
   "limit": 100
 }
+```
+
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -155,7 +159,7 @@ application/json
 
 #### Step 2. Process the orders in the search response body
 
-See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) and [Receive order](README.md) for order fields descriptions.
+See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) and [Receive order response](README.md) for order fields descriptions.
 
 * Use the `lastUpdatedAt` on order line level to filter on the line has been changed.
 * Use the `status` field to filter on process and logistics status.
@@ -166,5 +170,5 @@ Store the **latest** (in the last order in the response body) `lastUpdatedAt` to
 
 * `lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ`, but to keep it simple just store it as a `String`.
 * The latest `lastUpdatedAt` should be stored **persistent**. When your integration is restarted or crashes, `lastUpdatedAt` should still be available.
-* If there is no order in the order body, use the same `lastUpdatedSince` in the next polling request.
-* The very first time, use a date in the past, from the point you want to receive existing orders.
+* If there is no order in the order response body, use the same `lastUpdatedSince` in the next polling request.
+* The very first time, use a date in the past, from the point you want to receive existing order responses.
