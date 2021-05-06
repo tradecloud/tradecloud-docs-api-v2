@@ -4,7 +4,7 @@ description: How to use JSON Web Tokens
 
 # Authentication
 
-The `api-connector` and `object-storage/document` API's support two means of authentication:
+The `api-connector`, `object-storage/document` and `order-search/search` API's support two means of authentication:
 
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) upon every HTTP request.
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) to obtain a [JSON Web Token](https://jwt.io/) \([RFC 7519](https://tools.ietf.org/html/rfc7519)\). The JWT is used for authentication for all following requests.
@@ -13,7 +13,7 @@ Other API's only support the "Basic" HTTP authentication scheme with JSON Web To
 
 ## Basic Authentication upon every request
 
-You can use the Basic HTTP Authentication scheme to authenticate against the Tradecloud `api-connector` and `object-storage/document` API's upon every request.
+You can use the Basic HTTP Authentication scheme to authenticate upon every request.
 
 {% hint style="info" %}
 Pro: this is a simple authentication method, supported by all integrations
@@ -21,7 +21,7 @@ Pro: this is a simple authentication method, supported by all integrations
 Con's:
 
 * The response time is long, average 1 second, up to 3 seconds.
-* It is only supported by `api-connector` and `object-storage/document` API's, not by other service API's.
+* It is only supported by `api-connector`, `object-storage/document` and `order-search/search` API's, not by other service API's.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -152,4 +152,3 @@ POST https://api.accp.tradecloud1.com/v2/authentication/logout
 Refresh-Token: <Refresh-Token>
 // no body
 ```
-
