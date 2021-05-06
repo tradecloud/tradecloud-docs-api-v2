@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu May 6 15:30:37 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu May 6 17:30:33 CEST 2021)
 ---
 
 
@@ -8,18 +8,18 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-May-2021 15:23:35 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
-| 2 | Services (Go) | 06-May-2021 15:22:52 CEST | [#391](https://github.com/tradecloud/tradecloud-microservices-go/pull/391) |  Extend and fix webhook API specs, bump messages | @marcmatt |  |
+| 1 | Services (Go) | 06-May-2021 16:47:18 CEST | [#391](https://github.com/tradecloud/tradecloud-microservices-go/pull/391) |  Extend and fix webhook API specs, bump messages | @marcmatt |  |
+| 2 | Services (Scala) | 06-May-2021 16:32:15 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
 
-2. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+2. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 06-May-2021 13:36:21 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+| 1 | Services (Scala) | 06-May-2021 16:43:12 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
 
-3. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
+3. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-May-2021 12:13:54 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
+| 1 | Services (Go) | 06-May-2021 15:40:32 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
 4. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -134,9 +134,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 08-Apr-2021 10:48:55 CEST | [#1481](https://github.com/tradecloud/tradecloud-microservices/pull/1481) |  - workflow ignored events | @olegtradecloud |  |
-
-19. [TC-6579](https://tradecloud.atlassian.net/browse/TC-6579) As Eriks &amp; Damen I want to have a dedicated orderLine field reserved for specifying inspection companies 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 06-Apr-2021 17:21:47 CEST | [#598](https://github.com/tradecloud/tradecloud-portal-angular/pull/598) | [TC-6582] add Certification field into order line details | @bohdantrc |  |
 
