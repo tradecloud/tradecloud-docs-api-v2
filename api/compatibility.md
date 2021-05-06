@@ -6,17 +6,17 @@ description: Backward and forward compatibility responsibilities
 
 ## Backward compatibility
 
-**Tradecloud** promises and is responsible that the **API** and **web hook request** are **backwards** compatible. 
+**Tradecloud** promises and is responsible that the **API** and **web hook request** are **backwards** compatible.
 
-The ****API and web hook request are compatible with previous versions of itself, which means:
+The _\*\*_API and web hook request are compatible with previous versions of itself, which means:
 
 * Fields will not be removed, renamed or become mandatory
 * Values will not be removed, renamed or become mandatory
 
 ## Forward compatibility
 
-The Tradecloud **customer** is responsible that the **API client** and **web hook service** is **forward** compatible.  
-  
+The Tradecloud **customer** is responsible that the **API client** and **web hook service** is **forward** compatible.
+
 The API client and web hook service are compatible with future versions of itself, which means:
 
 * **Fields can be added** in the future

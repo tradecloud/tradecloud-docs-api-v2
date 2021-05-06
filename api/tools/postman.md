@@ -42,7 +42,7 @@ With Postman you can easily send a request to the API once you've obtained your 
 2. In the **Authorization** tab:
    1. Set the Type to **Bearer Token**.
    2. Paste your Authorization Token in the **Token** field. 
-3. Check the body of your request and change the request data where needed.  
+3. Check the body of your request and change the request data where needed.
 
    Make sure that you follow the OpenAPI specs linked in the Postman request description \(see screenshot\).
 

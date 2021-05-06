@@ -1,8 +1,10 @@
 ---
-description: Choose between the webhook API or polling API to receive an order or order response
+description: >-
+  Choose between the webhook API or polling API to receive an order or order
+  response
 ---
 
-# Choose a receive API
+# Webhook versus polling
 
 To receive an order or order response you can use either:
 
@@ -24,9 +26,9 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 
 When using `POST` or `PUT` the webhook request body will contain:
 
-* `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model") summarizes what has happened.
-* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model" and "OrderEvent") and [Receive order response](README.md).
-* `orderDocumentsEvent`: Or the actual order documents event, see see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) (click "Model" and "OrderDocumentsEvent").
+* `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
+* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\) and [Receive order response](./).
+* `orderDocumentsEvent`: Or the actual order documents event, see see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
 
 Use `POST` or `PUT` when:
 
@@ -40,15 +42,14 @@ Pro's:
 
 * Real time, receive the order event within a second.
 * Order event content included.
-* You can filter on which order events to receive (in the company integration settings or filter in your integration).
+* You can filter on which order events to receive \(in the company integration settings or filter in your integration\).
 * You do not have to build or configure the polling pattern.
 
 Con's:
 
 * You need to build or configure a webhook at your side.
-* You need to publish the webhook on the internet (webserver and firewall required).
+* You need to publish the webhook on the internet \(webserver and firewall required\).
 * You need to obtain and configure a public SSL certificate.
-
 {% endhint %}
 
 ### Using `GET`
@@ -64,7 +65,7 @@ Use `GET` when:
 Pro's:
 
 * Semi real time, receive the order within seconds.
-* You can filter on which order events to receive (in the company integration settings only).
+* You can filter on which order events to receive \(in the company integration settings only\).
 * You do not have to build or configure the polling pattern.
 
 Con's:
@@ -73,9 +74,8 @@ Con's:
 * Basic authentication is not yet supported for the GET `/order/:orderId` API. Send a support request if you need it.
 * You cannot see what order event happened.
 * You need to build or configure a webhook at your side.
-* You need to publish the webhook on the internet (web server and firewall required).
+* You need to publish the webhook on the internet \(web server and firewall required\).
 * You need to obtain and configure a public SSL certificate.
-
 {% endhint %}
 
 ## The polling pattern
@@ -95,7 +95,6 @@ Con's:
 * You need to build or configure a periodic polling pattern at your side.
 * You cannot filter on which order events to receive, you will receive any order line change.
 * You cannot see what order event happened.
-
 {% endhint %}
 
 ### Polling usage
@@ -105,7 +104,7 @@ Con's:
 Fetch every polling period, typically 5 minutes, all orders which are new or changed since last date time.
 
 * Use the latest `lastUpdatedAt` from previous poll request in the `lastUpdatedSince` filter.
-* Sorting is set automatically to `lastUpdatedAt` order `asc` (latest `lastUpdatedAt` will be in the last order in the response body)
+* Sorting is set automatically to `lastUpdatedAt` order `asc` \(latest `lastUpdatedAt` will be in the last order in the response body\)
 * Set `limit` to the maximum of `100` orders.
 * Optionally use `offset` for paging, but if you receive more than `100` orders, it is easier to reduce the polling period, so you receive less orders per request.
 
@@ -132,13 +131,7 @@ application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
-{
-  "filters": {
-    "lastUpdatedSince": "YYYY-MM-DDThh:mm:ss.SSSZ"
-  },
-  "offset": 0,
-  "limit": 100
-}
+{ "filters": { "lastUpdatedSince": "YYYY-MM-DDThh:mm:ss.SSSZ" }, "offset": 0, "limit": 100 }
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -155,16 +148,17 @@ application/json
 
 #### Step 2. Process the orders in the search response body
 
-See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) and [Receive order response](README.md) for order fields descriptions.
+See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) and [Receive order response](./) for order fields descriptions.
 
 * Use the `lastUpdatedAt` on order line level to filter on the line has been changed.
 * Use the `status` field to filter on process and logistics status.
 
 #### Step 4. Store the `lastUpdatedAt` for the next polling request
 
-Store the **latest** (in the last order in the response body) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
+Store the **latest** \(in the last order in the response body\) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
 
 * `lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ`, but to keep it simple just store it as a `String`.
 * The latest `lastUpdatedAt` should be stored **persistent**. When your integration is restarted or crashes, `lastUpdatedAt` should still be available.
 * If there is no order in the order response body, use the same `lastUpdatedSince` in the next polling request.
 * The very first time, use a date in the past, from the point you want to receive existing order responses.
+
