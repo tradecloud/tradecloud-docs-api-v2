@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 7 11:30:44 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 7 13:30:40 CEST 2021)
 ---
 
 
@@ -8,36 +8,36 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 07-May-2021 11:26:39 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+| 1 | Services (Go) | 07-May-2021 13:30:15 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
 2. [TC-7057](https://tradecloud.atlassian.net/browse/TC-7057) Remove akka-cluster-custom-downing dependency 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-May-2021 10:54:11 CEST | [#1501](https://github.com/tradecloud/tradecloud-microservices/pull/1501) |  - akka custom downing  | @olegtradecloud |  |
+| 1 | Services (Scala) | 07-May-2021 13:27:11 CEST | [#1501](https://github.com/tradecloud/tradecloud-microservices/pull/1501) |  - akka custom downing  | @olegtradecloud |  |
 
-3. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
+3. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 07-May-2021 10:06:58 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
+| 1 | Services (Scala) | 07-May-2021 13:25:57 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
+| 2 | Services (Go) | 07-May-2021 13:23:32 CEST | [#391](https://github.com/tradecloud/tradecloud-microservices-go/pull/391) |  Extend and fix webhook API specs, bump messages | @marcmatt |  |
 
-4. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+4. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-May-2021 21:51:55 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 1 | Services (Scala) | 07-May-2021 13:11:50 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
+
+5. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 07-May-2021 12:15:52 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Services (Go) | 20-Apr-2021 15:06:31 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
-5. [N/A](#)  
+6. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 06-May-2021 18:01:20 CEST | [#613](https://github.com/tradecloud/tradecloud-portal-angular/pull/613) | Bump highcharts from 7.0.3 to 9.0.0 | @dependabot[bot] |  |
 | 2 | Web Portal | 06-May-2021 10:37:14 CEST | [#612](https://github.com/tradecloud/tradecloud-portal-angular/pull/612) | Tc 6733 login attempts | @bohdantrc |  |
 | 3 | Web Portal | 16-Apr-2021 15:34:11 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
-
-6. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders [Planned release 31-May-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 06-May-2021 17:40:19 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
-| 2 | Services (Go) | 06-May-2021 16:47:18 CEST | [#391](https://github.com/tradecloud/tradecloud-microservices-go/pull/391) |  Extend and fix webhook API specs, bump messages | @marcmatt |  |
 
 7. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
