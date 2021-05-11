@@ -1,36 +1,45 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon May 10 23:30:33 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue May 11 11:30:45 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+1. [TC-6789](https://tradecloud.atlassian.net/browse/TC-6789) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 10-May-2021 22:30:56 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+| 1 | Services (Scala) | 11-May-2021 11:27:27 CEST | [#1504](https://github.com/tradecloud/tradecloud-microservices/pull/1504) |  Update job URL | @denys-kondartiuk |  |
 
-2. [N/A](#)  
+2. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-May-2021 17:26:46 CEST | [#1502](https://github.com/tradecloud/tradecloud-microservices/pull/1502) | Added banned time in seconds to login response | @OlehVasylyshyn |  |
-| 2 | Web Portal | 09-May-2021 19:41:50 CEST | [#615](https://github.com/tradecloud/tradecloud-portal-angular/pull/615) | Bump hosted-git-info from 2.7.1 to 2.8.9 | @dependabot[bot] |  |
-| 3 | Web Portal | 07-May-2021 16:22:16 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
-| 4 | Web Portal | 06-May-2021 18:01:20 CEST | [#613](https://github.com/tradecloud/tradecloud-portal-angular/pull/613) | Bump highcharts from 7.0.3 to 9.0.0 | @dependabot[bot] |  |
-| 5 | Web Portal | 06-May-2021 10:37:14 CEST | [#612](https://github.com/tradecloud/tradecloud-portal-angular/pull/612) | Tc 6733 login attempts | @bohdantrc |  |
+| 1 | Services (Go) | 11-May-2021 11:26:11 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
-3. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
+3. [TC-6733](https://tradecloud.atlassian.net/browse/TC-6733) As a portal user, I want to see how many attempts I have left to login and see the time for how long I am banned if my last attempt failed.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-May-2021 17:22:59 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
+| 1 | Services (Scala) | 11-May-2021 11:23:41 CEST | [#1503](https://github.com/tradecloud/tradecloud-microservices/pull/1503) |  Added banned time in seconds to login response | @OlehVasylyshyn |  |
 
-4. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+4. [TC-5534](https://tradecloud.atlassian.net/browse/TC-5534) As buyer I want to send the supplier contact with my order [Planned release 13-May-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 11-May-2021 10:45:09 CEST | [#1500](https://github.com/tradecloud/tradecloud-microservices/pull/1500) | [TC-7004] add supplierOrder.contact with status | @roy-tc |  |
+
+5. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-May-2021 12:35:03 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Services (Go) | 20-Apr-2021 15:06:31 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
-5. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
+6. [N/A](#)  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 09-May-2021 19:41:50 CEST | [#615](https://github.com/tradecloud/tradecloud-portal-angular/pull/615) | Bump hosted-git-info from 2.7.1 to 2.8.9 | @dependabot[bot] |  |
+| 2 | Web Portal | 07-May-2021 16:22:16 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
+| 3 | Web Portal | 06-May-2021 18:01:20 CEST | [#613](https://github.com/tradecloud/tradecloud-portal-angular/pull/613) | Bump highcharts from 7.0.3 to 9.0.0 | @dependabot[bot] |  |
+| 4 | Web Portal | 06-May-2021 10:37:14 CEST | [#612](https://github.com/tradecloud/tradecloud-portal-angular/pull/612) | Tc 6733 login attempts | @bohdantrc |  |
+
+7. [TC-6535](https://tradecloud.atlassian.net/browse/TC-6535) Add possibility generate locales files and update/merge after update tokens 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Apr-2021 10:57:08 CEST | [#530](https://github.com/tradecloud/tradecloud-portal-angular/pull/530) |  local build and merge i18n files | @bohdantrc |  |
