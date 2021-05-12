@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed May 12 17:30:34 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed May 12 19:30:33 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+1. [TC-6957](https://tradecloud.atlassian.net/browse/TC-6957) As Eichholtz (GAC) I want to cancel lines by removing them from the order update [Planned release 20-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 12-May-2021 17:28:13 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+| 1 | Services (Scala) | 12-May-2021 18:42:13 CEST | [#1505](https://github.com/tradecloud/tradecloud-microservices/pull/1505) |  - cancel missing lines | @olegtradecloud |  |
 
-2. [TC-6957](https://tradecloud.atlassian.net/browse/TC-6957) As Eichholtz (GAC) I want to cancel lines by removing them from the order update [Planned release 20-May-2021]
+2. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 12-May-2021 17:11:26 CEST | [#1505](https://github.com/tradecloud/tradecloud-microservices/pull/1505) |  - cancel missing lines | @olegtradecloud |  |
+| 1 | Services (Go) | 12-May-2021 17:32:21 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
 3. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -130,9 +130,4 @@ description: Tradecloud services and portal open pull requests and changelog (We
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 15-Apr-2021 16:22:28 CEST | [#600](https://github.com/tradecloud/tradecloud-portal-angular/pull/600) |  add model | @bohdantrc |  |
-
-18. [TC-6969](https://tradecloud.atlassian.net/browse/TC-6969) Update default text for activity type OrderLineDeliveryHistoryAppendedByBuyer  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 12-Apr-2021 17:40:29 CEST | [#601](https://github.com/tradecloud/tradecloud-portal-angular/pull/601) |  update activity text | @bohdantrc |  |
 
