@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu May 13 11:30:58 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu May 13 13:30:32 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 12-May-2021 21:41:08 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+| 1 | Services (Go) | 13-May-2021 13:29:04 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
 2. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
