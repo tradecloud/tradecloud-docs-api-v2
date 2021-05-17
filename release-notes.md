@@ -1,26 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 14 23:30:34 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 17 11:30:52 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [N/A](#)  
+1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 17-May-2021 09:29:36 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
+
+2. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-May-2021 12:46:46 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
 | 2 | Web Portal | 09-May-2021 19:41:50 CEST | [#615](https://github.com/tradecloud/tradecloud-portal-angular/pull/615) | Bump hosted-git-info from 2.7.1 to 2.8.9 | @dependabot[bot] |  |
 | 3 | Web Portal | 06-May-2021 18:01:20 CEST | [#613](https://github.com/tradecloud/tradecloud-portal-angular/pull/613) | Bump highcharts from 7.0.3 to 9.0.0 | @dependabot[bot] |  |
 
-2. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
+3. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 13-May-2021 19:10:05 CEST | [#1507](https://github.com/tradecloud/tradecloud-microservices/pull/1507) |  Connection to company itself | @OlehVasylyshyn |  |
-
-3. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 13-May-2021 14:17:02 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
 4. [TC-6957](https://tradecloud.atlassian.net/browse/TC-6957) As Eichholtz (GAC) I want to cancel lines by removing them from the order update [Planned release 20-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -53,8 +53,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 2 | Services (Scala) | 11-May-2021 11:38:36 CEST | [#1504](https://github.com/tradecloud/tradecloud-microservices/pull/1504) |  Update job URL | @denys-kondartiuk |  |
 | 3 | Services (Go) | 03-May-2021 18:21:11 CEST | [#392](https://github.com/tradecloud/tradecloud-microservices-go/pull/392) |  Remove broken link from email footer | @vovinacci |  |
 | 4 | Services (Go) | 23-Apr-2021 16:21:42 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
-| 5 | Web Portal | 15-Apr-2021 11:07:49 CEST | [#603](https://github.com/tradecloud/tradecloud-portal-angular/pull/603) |  Update marathon links in the project | @denys-kondartiuk |  |
-| 6 | Services (Go) | 15-Apr-2021 11:07:33 CEST | [#385](https://github.com/tradecloud/tradecloud-microservices-go/pull/385) |  Update marathon links in the project | @denys-kondartiuk |  |
 
 4. [TC-6131](https://tradecloud.atlassian.net/browse/TC-6131) As integrated partner I would like to use a polling integration pattern for updated orders 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -125,9 +123,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 20-Apr-2021 14:14:14 CEST | [#604](https://github.com/tradecloud/tradecloud-portal-angular/pull/604) |  set default value 0 for discount price | @bohdantrc |  |
-
-17. [TC-6981](https://tradecloud.atlassian.net/browse/TC-6981) FE: add separate webhook url support 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 15-Apr-2021 16:22:28 CEST | [#600](https://github.com/tradecloud/tradecloud-portal-angular/pull/600) |  add model | @bohdantrc |  |
 
