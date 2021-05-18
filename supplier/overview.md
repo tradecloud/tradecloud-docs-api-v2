@@ -6,9 +6,9 @@ description: Overview of the supplier order process.
 
 ## Step 1. Receive an order
 
-As a supplier you can [Receive an order](webhook/)
+As a supplier you can [Receive an order](receive/)
 
-Additionally you can [Download a document attached to an order](webhook/download-document.md).
+Additionally you can [Download a document attached to an order](receive/download-document.md).
 
 ## Step 2. Send an order response
 

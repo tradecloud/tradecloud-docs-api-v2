@@ -14,9 +14,9 @@ You can [Update an existing order](update.md)
 
 ## Step 2. Receive an order response
 
-As a buyer you should [Receive an order response](webhook/) from the supplier
+As a buyer you should [Receive an order response](receive/) from the supplier
 
-Additionally you can [Download a to document attached to an order response](webhook/download-document.md).
+Additionally you can [Download a to document attached to an order response](receive/download-document.md).
 
 ## Step 3. Approve or reject a proposal
 

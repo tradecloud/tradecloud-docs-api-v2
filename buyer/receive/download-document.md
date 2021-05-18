@@ -19,8 +19,6 @@ If both `objectId` and `url` are missing in the `document`, no file is available
 
 Please check the `documents` fields in:
 
-{% page-ref page="./" %}
-
 ```text
 "documents": [
   {
@@ -121,8 +119,6 @@ This Amazon AWS S3 presigned url will expire within 1 minute.
 ```
 
 Please check the `documents` fields in:
-
-{% page-ref page="./" %}
 
 In this example the `url` is:
 

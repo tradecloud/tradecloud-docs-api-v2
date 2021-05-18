@@ -88,7 +88,7 @@ Your integration **must support** **the other party may** **add or remove a deli
 
 Your integration should only upload doucments and images with **supported Media Types and File Extensions**:
 
-{% page-ref page="/security/media-types.md" %}
+{% page-ref page="../security/media-types.md" %}
 
 ## Attach a document
 
@@ -99,3 +99,4 @@ Your integration should only upload doucments and images with **supported Media 
 ## Reopen an order
 
 ## Cancel an order
+

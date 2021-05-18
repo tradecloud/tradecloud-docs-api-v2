@@ -13,5 +13,6 @@ When a line has no goods to be delivered, for example a service, fee or text lin
 {% page-ref page="../update.md" %}
 
 {% hint style="info" %}
-Lines having the `noDeliveryExpected`  indicator set will never become`Overdue`
+Lines having the `noDeliveryExpected` indicator set will never become`Overdue`
 {% endhint %}
+

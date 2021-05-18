@@ -17,8 +17,6 @@ If both `objectId` and `url` are missing in the `document`, no file is available
 
 Please check the `documents` fields in order and lines in: 
 
-{% page-ref page="./" %}
-
 ```text
 "documents": [
   {
@@ -100,8 +98,6 @@ This Amazon AWS S3 presigned url will expire within 1 minute.
 ### Step 1. Retrieve the `url` from the document <a id="step-1-retrieve-the-url-from-the-document"></a>
 
 Please check the `documents` fields in order and lines in: 
-
-{% page-ref page="./" %}
 
 ```text
 "documents": [

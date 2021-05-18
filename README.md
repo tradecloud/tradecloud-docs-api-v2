@@ -24,13 +24,9 @@ Tradecloud will **review** your integration in the acceptance test environment *
 
 {% page-ref page="buyer/issue/" %}
 
-{% page-ref page="buyer/webhook/" %}
-
 {% page-ref page="buyer/overview.md" %}
 
 ## As a supplier
-
-{% page-ref page="supplier/webhook/" %}
 
 {% page-ref page="supplier/send-order-response/" %}
 
