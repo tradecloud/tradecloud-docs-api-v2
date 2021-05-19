@@ -19,7 +19,7 @@ It has an availability Service Level Objective of 95% per month.
 
 ## Planned production maintenance
 
-Maintenance can be planned on working days from 20:00 to 0:00 CE\(S\)T or in weekends and will be announced at least 1 working day ahead on the [Tradecloud status page](http://status.tradecloud1.com)
+Maintenance can be planned on working days from 19:00 to 23:00 UTC or in weekends and will be announced at least 1 working day ahead on the [Tradecloud status page](http://status.tradecloud1.com)
 
 ## Acceptance test environment
 
