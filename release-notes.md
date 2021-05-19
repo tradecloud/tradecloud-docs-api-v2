@@ -1,48 +1,58 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed May 19 13:30:33 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed May 19 15:30:36 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6768](https://tradecloud.atlassian.net/browse/TC-6768) Update ES cleanup script to remove pipelines when removing a PR group 
+1. [TC-6882](https://tradecloud.atlassian.net/browse/TC-6882) UAT: Verify an acknowledge task results in a contact notification 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-May-2021 12:01:01 CEST | [#1494](https://github.com/tradecloud/tradecloud-microservices/pull/1494) |  DO NOT MERGE - Test PR | @roy-tc |  |
+| 1 | Services (Scala) | 19-May-2021 15:18:04 CEST | [#1510](https://github.com/tradecloud/tradecloud-microservices/pull/1510) |  Add optional UserSettings to AddUser super user API | @marcmatt |  |
 
 2. [TC-6957](https://tradecloud.atlassian.net/browse/TC-6957) As Eichholtz (GAC) I want to cancel lines by removing them from the order update [Planned release 20-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 19-May-2021 11:52:21 CEST | [#1505](https://github.com/tradecloud/tradecloud-microservices/pull/1505) |  - cancel missing lines | @olegtradecloud |  |
+| 1 | Services (Scala) | 19-May-2021 14:48:52 CEST | [#1505](https://github.com/tradecloud/tradecloud-microservices/pull/1505) |  - cancel missing lines | @olegtradecloud |  |
 
-3. [TC-7058](https://tradecloud.atlassian.net/browse/TC-7058) The portal shows be default 2 decimals (.00) when the priceUnitQuantity ≠ 1 
+3. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 19-May-2021 14:22:12 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  IS NOT READY YET - DON&#39;T REVIEW IT added new field - origin | @OlehVasylyshyn |  |
+
+4. [TC-7036](https://tradecloud.atlassian.net/browse/TC-7036) As Exact Globe integrator I need migrated Exact Globe delivery schedule position to be set to the line position. 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 19-May-2021 14:02:52 CEST | [#1508](https://github.com/tradecloud/tradecloud-microservices/pull/1508) |  Delivery position for ExactGlobeCustomers from line code | @OlehVasylyshyn |  |
+
+5. [TC-6768](https://tradecloud.atlassian.net/browse/TC-6768) Update ES cleanup script to remove pipelines when removing a PR group 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 19-May-2021 12:01:01 CEST | [#1494](https://github.com/tradecloud/tradecloud-microservices/pull/1494) |  DO NOT MERGE - Test PR | @roy-tc |  |
+
+6. [TC-7058](https://tradecloud.atlassian.net/browse/TC-7058) The portal shows be default 2 decimals (.00) when the priceUnitQuantity ≠ 1 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 19-May-2021 10:15:32 CEST | [#617](https://github.com/tradecloud/tradecloud-portal-angular/pull/617) |  allow format 10-&gt;10 instead of 10-&gt;10.00 | @bohdantrc |  |
 
-4. [N/A](#)  
+7. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-May-2021 12:57:01 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) | Tc 6941 basic delivery line logistics | @bohdantrc |  |
 | 2 | Web Portal | 18-May-2021 11:46:55 CEST | [#613](https://github.com/tradecloud/tradecloud-portal-angular/pull/613) | Bump highcharts from 7.0.3 to 9.0.0 | @dependabot[bot] |  |
 
-5. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+8. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 18-May-2021 11:32:56 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Services (Go) | 12-May-2021 17:09:01 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
-6. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
+9. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 18-May-2021 07:11:20 CEST | [#1507](https://github.com/tradecloud/tradecloud-microservices/pull/1507) |  Connection to company itself | @OlehVasylyshyn |  |
 
-7. [TC-7036](https://tradecloud.atlassian.net/browse/TC-7036) As Exact Globe integrator I need migrated Exact Globe delivery schedule position to be set to the line position. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-May-2021 15:02:52 CEST | [#1508](https://github.com/tradecloud/tradecloud-microservices/pull/1508) |  Delivery position for ExactGlobeCustomers from line code | @OlehVasylyshyn |  |
-
-8. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
+10. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 17-May-2021 09:29:36 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
