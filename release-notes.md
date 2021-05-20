@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu May 20 11:30:58 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu May 20 13:30:36 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 20-May-2021 11:25:47 CEST | [#1507](https://github.com/tradecloud/tradecloud-microservices/pull/1507) |  Connection to company itself | @OlehVasylyshyn |  |
+| 1 | Services (Scala) | 20-May-2021 11:57:37 CEST | [#1507](https://github.com/tradecloud/tradecloud-microservices/pull/1507) |  Connection to company itself | @OlehVasylyshyn |  |
 
 2. [TC-7081](https://tradecloud.atlassian.net/browse/TC-7081) Incoming order without lines is silently ignored and not persisted. [Planned release 21-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
