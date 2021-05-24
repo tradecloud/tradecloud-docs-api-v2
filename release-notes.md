@@ -1,51 +1,52 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 21 23:30:35 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon May 24 11:30:47 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
+1. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-May-2021 18:25:20 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  added new field - origin | @OlehVasylyshyn |  |
+| 1 | Services (Go) | 24-May-2021 11:07:55 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
-2. [TC-7073](https://tradecloud.atlassian.net/browse/TC-7073) Stress test reindexing process 
+2. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-May-2021 10:51:15 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  added new field - origin | @OlehVasylyshyn |  |
+
+3. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-May-2021 17:49:59 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 2 | Services (Scala) | 23-May-2021 09:54:21 CEST | [#1516](https://github.com/tradecloud/tradecloud-microservices/pull/1516) |  Add new LogisticsStatus values | @marcmatt |  |
+| 3 | Web Portal | 21-May-2021 13:27:56 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
+| 4 | Services (Go) | 12-May-2021 17:09:01 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
+
+4. [TC-7073](https://tradecloud.atlassian.net/browse/TC-7073) Stress test reindexing process 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-May-2021 18:02:42 CEST | [#1512](https://github.com/tradecloud/tradecloud-microservices/pull/1512) |  Add support for configuring parallelism and throttling for Reindexing directly  | @roy-tc |  |
 
-3. [TC-7081](https://tradecloud.atlassian.net/browse/TC-7081) Incoming order without lines is silently ignored and not persisted. [Planned release 21-May-2021]
+5. [TC-7081](https://tradecloud.atlassian.net/browse/TC-7081) Incoming order without lines is silently ignored and not persisted. [Planned release 21-May-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-May-2021 17:52:15 CEST | [#1511](https://github.com/tradecloud/tradecloud-microservices/pull/1511) |  - issue order without lines fix | @olegtradecloud |  |
 
-4. [TC-7096](https://tradecloud.atlassian.net/browse/TC-7096) Use LOCAL_QUORUM for Scala persisted services 
+6. [TC-7096](https://tradecloud.atlassian.net/browse/TC-7096) Use LOCAL_QUORUM for Scala persisted services 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-May-2021 15:24:07 CEST | [#1515](https://github.com/tradecloud/tradecloud-microservices/pull/1515) |  Use LOCAL_QUORUM to use C* nodes from LOCAL DC only | @roy-tc |  |
 
-5. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 21-May-2021 13:27:56 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
-| 2 | Services (Scala) | 18-May-2021 11:32:56 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
-| 3 | Services (Go) | 12-May-2021 17:09:01 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
-
-6. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
+7. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 20-May-2021 14:26:23 CEST | [#1513](https://github.com/tradecloud/tradecloud-microservices/pull/1513) |  Support running buf breaking changes locally | @roy-tc |  |
 
-7. [N/A](#)  
+8. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 18-May-2021 11:46:55 CEST | [#613](https://github.com/tradecloud/tradecloud-portal-angular/pull/613) | Bump highcharts from 7.0.3 to 9.0.0 | @dependabot[bot] |  |
-
-8. [TC-6431](https://tradecloud.atlassian.net/browse/TC-6431) Webhook POST body contains JSON numbers with quotes 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 17-May-2021 09:29:36 CEST | [#390](https://github.com/tradecloud/tradecloud-microservices-go/pull/390) |  Refactor Protobuf to JSON serialisation | @vovinacci |  |
 
 ## Changelog
 
@@ -66,7 +67,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 2 | Web Portal | 11-May-2021 11:43:19 CEST | [#616](https://github.com/tradecloud/tradecloud-portal-angular/pull/616) |  Update job URL | @denys-kondartiuk |  |
 | 3 | Services (Scala) | 11-May-2021 11:38:36 CEST | [#1504](https://github.com/tradecloud/tradecloud-microservices/pull/1504) |  Update job URL | @denys-kondartiuk |  |
 | 4 | Services (Go) | 03-May-2021 18:21:11 CEST | [#392](https://github.com/tradecloud/tradecloud-microservices-go/pull/392) |  Remove broken link from email footer | @vovinacci |  |
-| 5 | Services (Go) | 23-Apr-2021 16:21:42 CEST | [#388](https://github.com/tradecloud/tradecloud-microservices-go/pull/388) |  Build all services, when Makefile changed | @vovinacci |  |
 
 4. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -107,7 +107,6 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | 1 | Services (Go) | 07-May-2021 16:26:09 CEST | [#391](https://github.com/tradecloud/tradecloud-microservices-go/pull/391) |  Extend and fix webhook API specs, bump messages | @marcmatt |  |
 | 2 | Services (Scala) | 07-May-2021 16:13:34 CEST | [#1492](https://github.com/tradecloud/tradecloud-microservices/pull/1492) |  - updated order search | @olegtradecloud |  |
 | 3 | Services (Scala) | 26-Apr-2021 15:23:22 CEST | [#1495](https://github.com/tradecloud/tradecloud-microservices/pull/1495) |  [TC-7013] Order search service changes | @olegtradecloud |  |
-| 4 | Services (Scala) | 22-Apr-2021 18:30:48 CEST | [#1493](https://github.com/tradecloud/tradecloud-microservices/pull/1493) |  - add lastUpdatedAt in order-service | @olegtradecloud |  |
 
 11. [TC-7057](https://tradecloud.atlassian.net/browse/TC-7057) Remove akka-cluster-custom-downing dependency 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -133,19 +132,4 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 26-Apr-2021 14:39:32 CEST | [#389](https://github.com/tradecloud/tradecloud-microservices-go/pull/389) |  Cleanup | @vovinacci |  |
-
-16. [TC-6866](https://tradecloud.atlassian.net/browse/TC-6866) As Eichholtz`s partner GAC I need seperate webhook URLs for OrderEvents versus OrderDocumentEvents 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 22-Apr-2021 15:39:06 CEST | [#387](https://github.com/tradecloud/tradecloud-microservices-go/pull/387) |  - build issues investigation | @olegtradecloud |  |
-
-17. [TC-6806](https://tradecloud.atlassian.net/browse/TC-6806) Move the location of the supplier search box in the Orders page, so the search boxes are grouped together  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Apr-2021 14:56:25 CEST | [#609](https://github.com/tradecloud/tradecloud-portal-angular/pull/609) |  change ordering filters | @bohdantrc |  |
-
-18. [TC-6744](https://tradecloud.atlassian.net/browse/TC-6744) As a supplier I want to see my sales order number (if exist) in the Task header 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Apr-2021 14:44:26 CEST | [#607](https://github.com/tradecloud/tradecloud-portal-angular/pull/607) |  show sales order number into workflow page | @bohdantrc |  |
 
