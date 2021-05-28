@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 28 21:30:40 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 28 23:30:39 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
+1. [TC-7104](https://tradecloud.atlassian.net/browse/TC-7104) Move Go shared package to the main repository 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-May-2021 21:17:34 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  added new field - origin | @OlehVasylyshyn |  |
+| 1 | Services (Go) | 28-May-2021 23:06:26 CEST | [#393](https://github.com/tradecloud/tradecloud-microservices-go/pull/393) |  Reorganise Go code | @vovinacci |  |
 
-2. [TC-7104](https://tradecloud.atlassian.net/browse/TC-7104) Move Go shared package to the main repository 
+2. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 28-May-2021 21:02:45 CEST | [#393](https://github.com/tradecloud/tradecloud-microservices-go/pull/393) |  Reorganise Go code | @vovinacci |  |
+| 1 | Services (Scala) | 28-May-2021 21:54:46 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  added new field - origin | @OlehVasylyshyn |  |
 
 3. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
