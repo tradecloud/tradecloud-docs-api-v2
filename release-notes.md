@@ -1,56 +1,56 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri May 28 19:30:38 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri May 28 21:30:40 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
+1. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-May-2021 19:21:31 CEST | [#1520](https://github.com/tradecloud/tradecloud-microservices/pull/1520) |  - update task contact | @olegtradecloud |  |
+| 1 | Services (Scala) | 28-May-2021 21:17:34 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  added new field - origin | @OlehVasylyshyn |  |
 
 2. [TC-7104](https://tradecloud.atlassian.net/browse/TC-7104) Move Go shared package to the main repository 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 28-May-2021 18:18:16 CEST | [#393](https://github.com/tradecloud/tradecloud-microservices-go/pull/393) |  Reorganise Go code | @vovinacci |  |
+| 1 | Services (Go) | 28-May-2021 21:02:45 CEST | [#393](https://github.com/tradecloud/tradecloud-microservices-go/pull/393) |  Reorganise Go code | @vovinacci |  |
 
-3. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+3. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 28-May-2021 19:21:31 CEST | [#1520](https://github.com/tradecloud/tradecloud-microservices/pull/1520) |  - update task contact | @olegtradecloud |  |
+
+4. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-May-2021 18:13:44 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 | 2 | Web Portal | 26-May-2021 16:35:57 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
 | 3 | Services (Go) | 12-May-2021 17:09:01 CEST | [#384](https://github.com/tradecloud/tradecloud-microservices-go/pull/384) |  Basic delivery line logistics | @marcmatt |  |
 
-4. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
+5. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-May-2021 17:41:06 CEST | [#1518](https://github.com/tradecloud/tradecloud-microservices/pull/1518) |  (Re)assign orders to users | @OlehVasylyshyn |  |
 
-5. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
+6. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-May-2021 15:23:01 CEST | [#1513](https://github.com/tradecloud/tradecloud-microservices/pull/1513) |  Support running buf breaking changes locally | @roy-tc |  |
 
-6. [TC-7101](https://tradecloud.atlassian.net/browse/TC-7101) Account code misaligned and edit button partial visible on network page using Firefox. 
+7. [TC-7101](https://tradecloud.atlassian.net/browse/TC-7101) Account code misaligned and edit button partial visible on network page using Firefox. 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-May-2021 14:44:19 CEST | [#622](https://github.com/tradecloud/tradecloud-portal-angular/pull/622) |  fix cell align for connection table | @bohdantrc |  |
 
-7. [TC-6883](https://tradecloud.atlassian.net/browse/TC-6883) Save if an search box or filter box in the portal is folded or unfolded.  
+8. [TC-6883](https://tradecloud.atlassian.net/browse/TC-6883) Save if an search box or filter box in the portal is folded or unfolded.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 28-May-2021 14:08:04 CEST | [#620](https://github.com/tradecloud/tradecloud-portal-angular/pull/620) |  add expand store and selectors for tracking expanded panels | @bohdantrc |  |
 
-8. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
+9. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 28-May-2021 10:30:04 CEST | [#1519](https://github.com/tradecloud/tradecloud-microservices/pull/1519) |  DO NOT MERGE - investigate PR cleanup error | @roy-tc |  |
-
-9. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 27-May-2021 15:36:14 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  added new field - origin | @OlehVasylyshyn |  |
 
 10. [N/A](#)  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
