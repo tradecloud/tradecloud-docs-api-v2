@@ -64,6 +64,7 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 * `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part) below.
 * `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part) below.
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line) below.
+* `deliverySchedule`: the aggregated delivery schedule line with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 
 {% hint style="warning" %}
@@ -90,11 +91,13 @@ Order and line **process** status is one of:
 {% endhint %}
 
 {% hint style="info" %}
-Order and line **logistics** status is one of:
+Order, line and delivery line **logistics** status is one of:
 
-* `Open`: not shipped or delivered
-* `Shipped`: shipped by the supplier
-* `Delivered`: delivered at the buyer
+* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
+* `Produced`: full quantity produced by the supplier
+* `ReadyToShip`: full quantity ready to be shipped by the supplier
+* `Shipped`: full quantity shipped by the supplier
+* `Delivered`: full quantity delivered at the buyer
 {% endhint %}
 
 ### Buyer line part
@@ -183,21 +186,25 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `deliverySchedule`: agreed delivery schedule, see below
 * `prices`: agreed prices, see below
 
-### Confirmed delivery schedule
+### Delivery schedule
 
-`deliverySchedule`: the confirmed planned delivery schedule.
+`deliverySchedule`: the proposed or confirmed planned delivery schedule.
 
 * `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
-### Confirmed  prices
+These additional logistics fields are only available in the order line level delivery schedule:
 
-`prices`: the confirmed price. Advised is to use only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
+* `deliverySchedule.status`: the optional delivery line logistics status.
+* `deliverySchedule.eta`: The optional logistics estimated time of arrival local date (without time zone). Date has ISO 8601 date `yyyy-MM-dd` format.
+
+### Prices
+
+`prices`: the proposed or confirmed price. Advised is to use only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
 
 * `priceInTransactionCurrency`: the  price in the transaction currency, like `CNY` in China.
 * `value`: the price value has a decimal `1234.56` format with any number of digits.
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
-

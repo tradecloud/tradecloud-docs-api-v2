@@ -34,9 +34,13 @@ Most buyers approve or reject order change proposals using portal workflow tasks
 
 [Reject a proposal](reject-proposal.md)  from the supplier
 
-## Step 4. Receive goods
+## Optional step 4. Send logistical status of goods in order update
 
-As a buyer you can [Receive goods](receive-goods.md).
+{% hint style="warning" %}
+This feature is planned and API and documentation may change.
+{% endhint %}
+
+TO BE DOCUMENTED using order line delivery schedule status.
 
 ## Step 5a. Complete an order
 
@@ -48,6 +52,3 @@ Alternatively, as a buyer you may:
 
 * [Reopen an order](reopen.md) which will restart the order process.
 * [Cancel an order](cancel.md) which will end the order process.
-
- 
-

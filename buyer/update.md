@@ -41,7 +41,6 @@ When the order line already has process status `Cancelled` the status will **NOT
 
 And the order line **logistics status may change**:
 
-* When`indicators.shipped` is set the order line will have logistics status `Shipped`
 * When the order line already has logistics status  `Delivered` the status will NOT change.
 
 ## Send an updated order to Tradecloud
