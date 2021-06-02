@@ -78,9 +78,7 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ### Additional order and line indicators
 
-* `indicators`: 
-
-{% page-ref page="ship-goods.md" %}
+* `indicators`:
 
 {% page-ref page="receive-goods.md" %}
 
