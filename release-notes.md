@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 2 21:30:37 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jun 2 23:30:36 CEST 2021)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 02-Jun-2021 21:28:16 CEST | [#396](https://github.com/tradecloud/tradecloud-microservices-go/pull/396) |  Basic delivery line logistics | @marcmatt |  |
-| 2 | Services (Scala) | 01-Jun-2021 22:45:21 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 1 | Services (Scala) | 02-Jun-2021 22:34:34 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 2 | Services (Go) | 02-Jun-2021 21:30:26 CEST | [#396](https://github.com/tradecloud/tradecloud-microservices-go/pull/396) |  Basic delivery line logistics | @marcmatt |  |
 | 3 | Web Portal | 01-Jun-2021 11:54:30 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
 
 2. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
