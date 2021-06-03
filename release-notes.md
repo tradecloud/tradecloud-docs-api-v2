@@ -1,20 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 3 17:30:41 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 3 19:30:39 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
+1. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 03-Jun-2021 18:17:18 CEST | [#623](https://github.com/tradecloud/tradecloud-portal-angular/pull/623) | [TC-6952] add assign and reassign logic | @bohdantrc |  |
+| 2 | Services (Scala) | 03-Jun-2021 12:55:36 CEST | [#1518](https://github.com/tradecloud/tradecloud-microservices/pull/1518) |  (Re)assign orders to users | @OlehVasylyshyn |  |
+
+2. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 03-Jun-2021 17:01:59 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
 | 2 | Services (Scala) | 03-Jun-2021 16:55:58 CEST | [#1524](https://github.com/tradecloud/tradecloud-microservices/pull/1524) |  Refactor the OrderSentByBuyerSplitting | @roy-tc |  |
-
-2. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Jun-2021 12:55:36 CEST | [#1518](https://github.com/tradecloud/tradecloud-microservices/pull/1518) |  (Re)assign orders to users | @OlehVasylyshyn |  |
 
 3. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -121,7 +122,6 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 1 | Services (Scala) | 20-May-2021 18:37:17 CEST | [#1514](https://github.com/tradecloud/tradecloud-microservices/pull/1514) |  Remove unsupported imgix parameters | @marcmatt |  |
 | 2 | Web Portal | 11-May-2021 11:43:19 CEST | [#616](https://github.com/tradecloud/tradecloud-portal-angular/pull/616) |  Update job URL | @denys-kondartiuk |  |
 | 3 | Services (Scala) | 11-May-2021 11:38:36 CEST | [#1504](https://github.com/tradecloud/tradecloud-microservices/pull/1504) |  Update job URL | @denys-kondartiuk |  |
-| 4 | Services (Go) | 03-May-2021 18:21:11 CEST | [#392](https://github.com/tradecloud/tradecloud-microservices-go/pull/392) |  Remove broken link from email footer | @vovinacci |  |
 
 12. [TC-6213](https://tradecloud.atlassian.net/browse/TC-6213)  Connection can be requested to company itself 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
