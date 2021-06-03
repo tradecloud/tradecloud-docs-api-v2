@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 3 15:30:42 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 3 17:30:41 CEST 2021)
 ---
 
 
@@ -8,8 +8,8 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 03-Jun-2021 14:32:30 CEST | [#1524](https://github.com/tradecloud/tradecloud-microservices/pull/1524) |  Refactor the OrderSentByBuyerSplitting | @roy-tc |  |
-| 2 | Services (Scala) | 03-Jun-2021 14:28:10 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
+| 1 | Services (Scala) | 03-Jun-2021 17:01:59 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
+| 2 | Services (Scala) | 03-Jun-2021 16:55:58 CEST | [#1524](https://github.com/tradecloud/tradecloud-microservices/pull/1524) |  Refactor the OrderSentByBuyerSplitting | @roy-tc |  |
 
 2. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
