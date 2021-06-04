@@ -1,37 +1,37 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jun 4 21:30:37 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jun 4 23:30:36 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
+1. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 04-Jun-2021 22:47:20 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 2 | Services (Go) | 02-Jun-2021 21:30:26 CEST | [#396](https://github.com/tradecloud/tradecloud-microservices-go/pull/396) |  Basic delivery line logistics | @marcmatt |  |
+| 3 | Web Portal | 01-Jun-2021 11:54:30 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
+
+2. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Jun-2021 15:03:31 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
 
-2. [TC-7073](https://tradecloud.atlassian.net/browse/TC-7073) Stress test reindexing process 
+3. [TC-7073](https://tradecloud.atlassian.net/browse/TC-7073) Stress test reindexing process 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 04-Jun-2021 11:50:17 CEST | [#1517](https://github.com/tradecloud/tradecloud-microservices/pull/1517) |  Unthrottle reindexing and increase parallelism | @roy-tc |  |
 
-3. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
+4. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 04-Jun-2021 11:45:40 CEST | [#623](https://github.com/tradecloud/tradecloud-portal-angular/pull/623) | [TC-6952] add assign and reassign logic | @bohdantrc |  |
 | 2 | Services (Scala) | 04-Jun-2021 11:39:42 CEST | [#1518](https://github.com/tradecloud/tradecloud-microservices/pull/1518) |  (Re)assign orders to users | @OlehVasylyshyn |  |
 
-4. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
+5. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 03-Jun-2021 09:28:20 CEST | [#1513](https://github.com/tradecloud/tradecloud-microservices/pull/1513) |  Support running buf breaking changes locally | @roy-tc |  |
-
-5. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 02-Jun-2021 22:34:34 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
-| 2 | Services (Go) | 02-Jun-2021 21:30:26 CEST | [#396](https://github.com/tradecloud/tradecloud-microservices-go/pull/396) |  Basic delivery line logistics | @marcmatt |  |
-| 3 | Web Portal | 01-Jun-2021 11:54:30 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
 
 6. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
