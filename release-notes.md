@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Fri Jun 4 13:31:10 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jun 4 15:30:37 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Fr
 1. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 04-Jun-2021 12:40:06 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
+| 1 | Services (Scala) | 04-Jun-2021 15:03:31 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
 
 2. [TC-7073](https://tradecloud.atlassian.net/browse/TC-7073) Stress test reindexing process 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
