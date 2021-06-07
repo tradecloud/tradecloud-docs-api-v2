@@ -1,21 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 7 17:30:39 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 7 19:30:54 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
+1. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 07-Jun-2021 18:01:16 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
+| 2 | Web Portal | 07-Jun-2021 14:51:22 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
+| 3 | Services (Go) | 07-Jun-2021 13:49:35 CEST | [#396](https://github.com/tradecloud/tradecloud-microservices-go/pull/396) |  [TC-7098] Basic delivery line logistics | @marcmatt |  |
+
+2. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Jun-2021 17:15:20 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
-
-2. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Jun-2021 14:51:22 CEST | [#605](https://github.com/tradecloud/tradecloud-portal-angular/pull/605) |  basic delivery line logistics | @bohdantrc |  |
-| 2 | Services (Go) | 07-Jun-2021 13:49:35 CEST | [#396](https://github.com/tradecloud/tradecloud-microservices-go/pull/396) |  [TC-7098] Basic delivery line logistics | @marcmatt |  |
-| 3 | Services (Scala) | 04-Jun-2021 22:47:20 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 
 3. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -45,15 +45,16 @@ description: Tradecloud services and portal open pull requests and changelog (Mo
 
 ## Changelog
 
-1. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
+1. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
+| 2 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
+
+2. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 07-Jun-2021 16:09:32 CEST | [#1509](https://github.com/tradecloud/tradecloud-microservices/pull/1509) |  added new field - origin | @OlehVasylyshyn |  |
-
-2. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
 
 3. [TC-6733](https://tradecloud.atlassian.net/browse/TC-6733) As a portal user, I want to see how many attempts I have left to login and see the time for how long I am banned if my last attempt failed.   
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
