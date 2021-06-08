@@ -59,7 +59,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part).
 * `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part).
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
-* `deliverySchedule`: the aggregated delivery schedule line with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
+* `deliverySchedule`: the aggregated delivery schedule lines with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 
 {% hint style="warning" %}
