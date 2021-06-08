@@ -67,7 +67,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
 * `status.processStatus`: the order line's [process status](#process-status).
-* `status.logisticsStatus`: the order line [logistics status](#logistics-status).
+* `status.logisticsStatus`: the order line's [logistics status](#logistics-status).
 * `eventDates`: some key line event date/times
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [item details](./#item-details).
 * `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
