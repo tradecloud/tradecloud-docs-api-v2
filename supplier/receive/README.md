@@ -184,7 +184,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 `confirmedLine`: the agreed order line between buyer and supplier.
 
 {% hint style="warning" %}
-Only if the [process status](#process-status) is `Confirmed` the line is agreed between buyer and supplier
+Only if the [process status](#process-status) is `Confirmed`, the line is agreed between buyer and supplier.
 {% endhint %}
 
 * `deliverySchedule`: agreed delivery schedule, see below
