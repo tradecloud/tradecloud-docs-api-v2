@@ -25,7 +25,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
 * `status.processStatus`: is the aggregate of all lines' [process statuses](#process-status).
-* `status.logisticsStatus`: is the aggregate of all lines [logistics status](#logistics-status).
+* `status.logisticsStatus`: is the aggregate of all lines' [logistics statuses](#logistics-status).
 * `version`: the  Tradecloud order version number
 * `eventDates`: some key order event date/times
 * `meta`: meta information, including source and trace info, about this messsage
