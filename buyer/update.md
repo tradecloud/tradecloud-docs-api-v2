@@ -69,7 +69,7 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 The logistics status may be added to the requested delivery schedule in an order update:
 
-* `lines.deliverySchedule`: the requested planned delivery schedule. Provide all delivery schedule lines in an update.
+* `lines.deliverySchedule`: the requested delivery schedule. Provide all delivery schedule lines in an update.
 * `deliverySchedule.position`: the optional position in the delivery schedule. Required when using `status`. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
