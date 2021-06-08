@@ -24,7 +24,7 @@ First choose either the webhook API or the polling API to receive order response
 The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
-* `status.processStatus`: is the aggregate of all lines [process status](#process-status).
+* `status.processStatus`: is the aggregate of all lines' [process statuses](#process-status).
 * `status.logisticsStatus`: is the aggregate of all lines [logistics status](#logistics-status).
 * `version`: the  Tradecloud order version number
 * `eventDates`: some key order event date/times
