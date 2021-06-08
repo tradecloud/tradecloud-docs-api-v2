@@ -42,8 +42,6 @@
   * [Update an existing order](buyer/update.md)
   * [Receive an order response](buyer/receive/README.md)
     * [Download a document attached to an order response](buyer/receive/download-document.md)
-  * [Approve order changes proposed by supplier](buyer/approve-proposal.md)
-  * [Reject order changes proposed by supplier](buyer/reject-proposal.md)
   * [Receive goods](buyer/receive-goods.md)
   * [Complete an order](buyer/complete.md)
   * [Reopen an order](buyer/reopen.md)

@@ -51,4 +51,3 @@ With Postman you can easily send a request to the API once you've obtained your 
 ![Set the Authorization Token](../../.gitbook/assets/postman-issue-1.png)
 
 ![Send the Request](../../.gitbook/assets/postman-issue-2.png)
-

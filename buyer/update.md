@@ -65,7 +65,26 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ## Additional fields
 
+### Logistics status in the planned delivery schedule
+
+The logistics status in the requested delivery schedule may be added in an order update:
+
+* `deliverySchedule.status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`. Also planned `date` and `quantity` must be provided.
+
+{% hint style="info" %}
+The delivery line logistics status is one of:
+
+* `ReadyToShip`: full quantity ready to be shipped by the supplier
+
+These logistics status are under development and API and documentation may change:
+
+* `Shipped`: full quantity shipped by the supplier
+* `Delivered`: full quantity delivered at the buyer
+{% endhint %}
+
 ### Actual delivery schedule
+
+The actual delivery schedule may be added in an order update:
 
 * `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery schedule lines. These will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
 * `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` versus `deliveryHistory.position` do not have to use the same values.
@@ -77,6 +96,8 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 {% endhint %}
 
 ### Additional order and line indicators
+
+Additional indicators may be set in an order update:
 
 * `indicators`:
 
