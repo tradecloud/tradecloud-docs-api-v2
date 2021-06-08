@@ -18,29 +18,21 @@ As a buyer you should [Receive an order response](receive/) from the supplier
 
 Additionally you can [Download a to document attached to an order response](receive/download-document.md).
 
-## Step 3. Approve or reject a proposal
+## Optional step 3. Add the logistical status of goods to order update
 
-The supplier can either accept or reject the issued line or alternatively **propose order changes**.
-
-As a buyer you should **approve or reject** an order change proposal.
-
-{% hint style="info" %}
-This is an optional step, only if your ERP system supports automatic approving or rejecting.
-
-Most buyers approve or reject order change proposals using portal workflow tasks.
+{% hint style="warning" %}
+This feature is planned for development. The API and documentation may change.
 {% endhint %}
 
-[Approve a proposal](approve-proposal.md) from the supplier
+You can [Add the logistical status of goods to order update](update.md#logistics-status-in-the-planned-delivery-schedule)
 
-[Reject a proposal](reject-proposal.md)  from the supplier
+## Optional step 4. Add actual delivery history to order update
 
-## Step 4. Receive goods
-
-As a buyer you can [Receive goods](receive-goods.md).
+You can [Add the actual delivery history to the order update](update.md#actual-delivery-history)
 
 ## Step 5a. Complete an order
 
-As a buyer you can [Complete an order](complete.md) which will end the order process.
+You can [Complete an order](complete.md) which will end the order process.
 
 ## Optional step 5b. Reopen or cancel an order
 
@@ -48,6 +40,3 @@ Alternatively, as a buyer you may:
 
 * [Reopen an order](reopen.md) which will restart the order process.
 * [Cancel an order](cancel.md) which will end the order process.
-
- 
-

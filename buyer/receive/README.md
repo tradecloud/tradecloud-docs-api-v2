@@ -24,12 +24,12 @@ First choose either the webhook API or the polling API to receive order response
 The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
-* `status.processStatus`: is the aggregate of all lines process status, see below
-* `status.logisticsStatus`: is the aggregate of all lines logistics status, see below
+* `status.processStatus`: is the aggregate of all lines' [process statuses](#process-status).
+* `status.logisticsStatus`: is the aggregate of all lines' [logistics statuses](#logistics-status).
 * `version`: the  Tradecloud order version number
 * `eventDates`: some key order event date/times
 * `meta`: meta information, including source and trace info, about this messsage
-* `lastUpdatedAt`: is the latest date time the order has been changed, usefull for polling.
+* `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling.
 
 ### Buyer order part
 
@@ -41,7 +41,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 
 `supplierOrder` contains the supplier order fields:
 
-* `companyId`: the supplier's Tradecloud company identifier. 
+* `companyId`: the supplier's Tradecloud company identifier.
 * `buyerAccountNumber`: your account number as known in the supplier's ERP system
 * `description`: a free format additional description of this order by the supplier
 * `contact`: the supplier employee responsible for this order. 
@@ -59,24 +59,27 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part).
 * `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part).
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
+* `deliverySchedule`: the aggregated delivery schedule lines with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 
 {% hint style="warning" %}
 The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
-* `status.processStatus`: the order line process status, see [status](./#status).
-* `status.logisticsStatus`: the order line logistics status, see [status](./#status)
+* `status.processStatus`: the order line's [process status](#process-status).
+* `status.logisticsStatus`: the order line's [logistics status](#logistics-status).
 * `eventDates`: some key line event date/times
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [item details](./#item-details).
 * `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
 
 ### Status
 
+#### Process status
+
 {% hint style="info" %}
 Order and line **process** status is one of:
 
-* `Issued`:  \(re\)issued by the buyer.
+* `Issued`:  (re)issued by the buyer.
 * `InProgress`: under negotiation between buyer and supplier
 * `Confirmed`: agreed between buyer and supplier
 * `Rejected`: rejected by supplier
@@ -84,12 +87,16 @@ Order and line **process** status is one of:
 * `Cancelled`: cancelled by either buyer or supplier
 {% endhint %}
 
-{% hint style="info" %}
-Order and line **logistics** status is one of:
+#### Logistics status
 
-* `Open`: not shipped or delivered
-* `Shipped`: shipped by the supplier
-* `Delivered`: delivered at the buyer
+{% hint style="info" %}
+Order, line and delivery line **logistics** status is one of:
+
+* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
+* `Produced`: full quantity produced by the supplier
+* `ReadyToShip`: full quantity ready to be shipped by the supplier
+* `Shipped`: full quantity shipped by the supplier
+* `Delivered`: full quantity delivered at the buyer
 {% endhint %}
 
 ### Item details
@@ -112,7 +119,7 @@ The supplier may check, change and add item details if they are not correct or i
 
 `buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
 
-### **Supplier line part**
+### Supplier line part
 
 `supplierLine` contains the supplier order line fields:
 
@@ -150,17 +157,24 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `deliverySchedule`: agreed delivery schedule, see below
 * `prices`: agreed prices, see below
 
-### Confirmed or proposed delivery schedule
+## Delivery schedule
 
-`deliverySchedule`: the confirmed or proposed planned delivery schedule.
+`deliverySchedule`: the proposed or confirmed delivery schedule.
 
 * `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
-### Confirmed or proposed prices
+### Logistics fields
 
-`prices`: the confirmed or proposed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
+These additional logistics fields are only available in the order line level delivery schedule:
+
+* `deliverySchedule.status`: the optional delivery line's [logistics status](#logistics-status).
+* `deliverySchedule.eta`: The optional logistics estimated time of arrival (local date without time zone). Date has ISO 8601 date `yyyy-MM-dd` format.
+
+## Prices
+
+`prices`: the proposed or confirmed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
 
 * `priceInTransactionCurrency`: the  price in the transaction currency of the supplier, like `CNY` in China.
 * `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
@@ -168,4 +182,3 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
-

@@ -46,11 +46,6 @@ When the order line already has process status `Completed` the process status wi
 
 When the order line already has process status `Cancelled` the process status will **NOT** change.
 
-And the **logistics status may change**:
-
-* When`indicators.shipped` is set the order line will have logistics status `Shipped`
-* When the order line already has logistics status  `Delivered` the status will NOT change.
-
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order-response" %}
 {% api-method-summary %}
 Send order response by supplier

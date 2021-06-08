@@ -41,7 +41,6 @@ When the order line already has process status `Cancelled` the status will **NOT
 
 And the order line **logistics status may change**:
 
-* When`indicators.shipped` is set the order line will have logistics status `Shipped`
 * When the order line already has logistics status  `Delivered` the status will NOT change.
 
 ## Send an updated order to Tradecloud
@@ -66,9 +65,32 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ## Additional fields
 
-### Actual delivery schedule
+### Logistics status in the planned delivery schedule
 
-* `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery schedule lines. These will be used to calculate the line `Overdue` indicator. The fields are similar as in `lines.deliverySchedule`
+The logistics status may be added to the requested delivery schedule in an order update:
+
+* `lines.deliverySchedule`: the requested delivery schedule. Provide all delivery schedule lines in an update.
+* `deliverySchedule.position`: the optional position in the delivery schedule. Required when using `status`. Not to be confused with the `line.position`
+* `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+* `deliverySchedule.status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`.
+
+{% hint style="info" %}
+The delivery line logistics status is one of:
+
+* `ReadyToShip`: full quantity ready to be shipped by the supplier
+
+These logistics statuses are under development and API and documentation may change:
+
+* `Shipped`: full quantity shipped by the supplier
+* `Delivered`: full quantity delivered at the buyer
+{% endhint %}
+
+### Actual delivery history
+
+The actual delivery history may be added in an order update:
+
+* `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery history lines. Provide all delivery history lines in an update. These will be used to calculate the line `Overdue` indicator.
 * `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` versus `deliveryHistory.position` do not have to use the same values.
 * `deliveryHistory.date`: the actual delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../api/standards.md).
 * `deliveryHistory.quantity`: the actual delivered quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
@@ -79,9 +101,9 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ### Additional order and line indicators
 
-* `indicators`: 
+Additional indicators may be set in an order update:
 
-{% page-ref page="ship-goods.md" %}
+* `indicators`:
 
 {% page-ref page="receive-goods.md" %}
 
@@ -97,4 +119,3 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 ## Response
 
 Only a HTTP status code will be returned
-

@@ -137,7 +137,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 ### Requested planned delivery schedule
 
 * `line.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
-* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
+* `deliverySchedule.position`: the optional position in the delivery schedule. Required when using `status`. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
@@ -184,4 +184,3 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 ## Response
 
 When the `/api-connector/order` API method returns HTTP status code 200, the order was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order is available in the portal and is forwarded to the supplier ERP integration.
-

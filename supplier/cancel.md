@@ -5,7 +5,7 @@ description: How to request the buyer to cancel an order or line
 # Cancel an order
 
 {% hint style="warning" %}
-This feature is planned and API and documentation may change. 
+This feature is planned and API and documentation may change.
 {% endhint %}
 
 If a purchase order line is `Issued` or `In Progress` the supplier may `reject` the line.

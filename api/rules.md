@@ -109,4 +109,3 @@ Your integration should only upload doucments and images with **supported Media 
 ## Reopen an order
 
 ## Cancel an order
-
