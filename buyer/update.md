@@ -109,6 +109,8 @@ Additional indicators may be set in an order update:
 
 {% page-ref page="complete.md" %}
 
+{% page-ref page="cancel.md" %}
+
 {% page-ref page="reopen.md" %}
 
 ## Updated order meta data

@@ -15,10 +15,10 @@ Line indicators have precedence over \(overrule\) order indicators.
 
 {% hint style="warning" %}
 This feature is planned. Ticket [TC-5564](https://tradecloud.atlassian.net/browse/TC-5564)
- As a buyer I want to set a "No delivery expected" indicator
+ As a buyer I want to set a "No delivery expected" indicator.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="info" %}.
 Order lines having `noDeliveryExpected` set will NEVER become `overdue`
 {% endhint %}
 
@@ -31,7 +31,7 @@ Order lines having `noDeliveryExpected` set will NEVER become `overdue`
 `delivered`: all goods of the order or line are completely delivered at the buyer.
 
 {% hint style="info" %}
-Order lines having logistics status `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`
+Order lines having logistics status `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`.
 {% endhint %}
 
 ### Completed at buyer
@@ -45,13 +45,15 @@ Order lines having logistics status `Open`, `Produced`, `ReadyToShip` or `Shippe
 
 ### Cancelled at buyer
 
-`cancelled`: the order or line is cancelled at the buyer
+`cancelled`: the order or line is cancelled at the buyer.
 
-{% hint style="warning" %}
-This is a **request** to the supplier to cancel an order or line.
+- `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately.
+- `Completed` lines cannot be cancelled
+- `Cancelled` lines cannot be cancelled again
 
-The supplier has to approve the cancel request.
-{% endhint %}
+### Cancel line when missing
+
+`cancelLineWhenMissing`: when set on order level, and a line is missing in the order update, the line is assumed cancelled at the buyer.
 
 - `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately (without request)
 - `Completed` lines cannot be cancelled
