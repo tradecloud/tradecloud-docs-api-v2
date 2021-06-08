@@ -21,7 +21,7 @@ Additionally you can [Download a to document attached to an order response](rece
 ## Optional step 3. Add the logistical status of goods to order update
 
 {% hint style="warning" %}
-This feature is planned and API and documentation may change.
+This feature is planned for development. The API and documentation may change.
 {% endhint %}
 
 You can [Add the logistical status of goods to order update](update.md#logistics-status-in-the-planned-delivery-schedule)
