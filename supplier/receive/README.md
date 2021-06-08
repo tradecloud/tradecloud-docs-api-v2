@@ -192,7 +192,7 @@ Only if the [process status](#process-status) is `Confirmed`, the line is agreed
 
 ## Delivery schedule
 
-`deliverySchedule`: the proposed or confirmed planned delivery schedule.
+`deliverySchedule`: the proposed or confirmed delivery schedule.
 
 * `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
