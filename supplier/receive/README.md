@@ -71,8 +71,8 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
-* `status.processStatus`: the order line [process status](#process-status).
-* `status.logisticsStatus`: the order line [logistics status](#logistics-status).
+* `status.processStatus`: the order line's [process status](#process-status).
+* `status.logisticsStatus`: the order line's [logistics status](#logistics-status).
 * `eventDates`: some key line event date/times.
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](./#item-details).
 * `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
