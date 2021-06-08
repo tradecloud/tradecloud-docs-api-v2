@@ -29,7 +29,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `version`: the  Tradecloud order version number
 * `eventDates`: some key order event date/times
 * `meta`: meta information, including source and trace info, about this messsage
-* `lastUpdatedAt`: is the latest date time the order has been changed, usefull for polling.
+* `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling.
 
 ### Buyer order part
 
@@ -164,6 +164,8 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+
+### Logistics fields
 
 These additional logistics fields are only available in the order line level delivery schedule:
 

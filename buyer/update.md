@@ -80,7 +80,7 @@ The delivery line logistics status is one of:
 
 * `ReadyToShip`: full quantity ready to be shipped by the supplier
 
-These logistics status are under development and API and documentation may change:
+These logistics statuses are under development and API and documentation may change:
 
 * `Shipped`: full quantity shipped by the supplier
 * `Delivered`: full quantity delivered at the buyer
@@ -119,4 +119,3 @@ Additional indicators may be set in an order update:
 ## Response
 
 Only a HTTP status code will be returned
-

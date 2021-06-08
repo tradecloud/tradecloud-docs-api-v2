@@ -29,7 +29,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `version`: the  Tradecloud order version number.
 * `eventDates`: some key order event date/times.
 * `meta`: meta information, including source and trace info, about this messsage
-* `lastUpdatedAt`: is the latest date time the order has been changed, usefull for polling.
+* `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling.
 
 ### Buyer order part
 
@@ -72,7 +72,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
 * `status.processStatus`: the order line [process status](#process-status).
-* `status.logisticsStatus`: the order line [logistics status](#logistics-status). below.
+* `status.logisticsStatus`: the order line [logistics status](#logistics-status).
 * `eventDates`: some key line event date/times.
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](./#item-details).
 * `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
@@ -139,7 +139,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 
 ### Requested planned delivery schedule
 
-* `line.deliverySchedule`: the requested planned delivery schedule by the buyer. 
+* `line.deliverySchedule`: the requested planned delivery schedule by the buyer.
 * `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
@@ -190,7 +190,7 @@ Only if the [process status](#process-status) is `Confirmed` the line is agreed 
 * `deliverySchedule`: agreed delivery schedule, see below
 * `prices`: agreed prices, see below
 
-### Delivery schedule
+## Delivery schedule
 
 `deliverySchedule`: the proposed or confirmed planned delivery schedule.
 
@@ -198,12 +198,14 @@ Only if the [process status](#process-status) is `Confirmed` the line is agreed 
 * `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
+### Logistics fields
+
 These additional logistics fields are only available in the order line level delivery schedule:
 
 * `deliverySchedule.status`: the optional delivery line [logistics status](#logistics-status).
 * `deliverySchedule.eta`: The optional logistics estimated time of arrival local date (without time zone). Date has ISO 8601 date `yyyy-MM-dd` format.
 
-### Prices
+## Prices
 
 `prices`: the proposed or confirmed price. Advised is to use only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
 
