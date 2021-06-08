@@ -28,7 +28,7 @@ You can [Add the logistical status of goods to order update](update.md#logistics
 
 ## Optional step 4. Add actual delivery history to order update
 
-You can [Add the actual delivery schedule to the order update](update.md#actual-delivery-schedule)
+You can [Add the actual delivery history to the order update](update.md#actual-delivery-history)
 
 ## Step 5a. Complete an order
 
