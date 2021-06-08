@@ -24,8 +24,8 @@ First choose either the webhook API or the polling API to receive orders:
 The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
-* `status.processStatus`: is the aggregate of all lines process status, see [status](./#status).
-* `status.logisticsStatus`: is the aggregate of all lines logistics status, see [status](./#status).
+* `status.processStatus`: is the aggregate of all lines [process status](#process-status).
+* `status.logisticsStatus`: is the aggregate of all lines [logistics status](#logistics-status).
 * `version`: the  Tradecloud order version number.
 * `eventDates`: some key order event date/times.
 * `meta`: meta information, including source and trace info, about this messsage
@@ -35,10 +35,10 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 
 `buyerOrder` contains the buyer order fields:
 
-* `companyId`: the buyer's Tradecloud company identifier. 
+* `companyId`: the buyer's Tradecloud company identifier.
 * `supplierAccountNumber`: your account number as known in the buyer's ERP system.
 * `description`: a free format additional description of this order added by the buyer.
-* `contact`: the buyer employee responsible for this order. 
+* `contact`: the buyer employee responsible for this order.
 * `properties`: are key-value based custom fields, added by the buyer.
 * `notes`: are simple custom fields, added by the buyer.
 * `labels`: value-added services labels on order level.
@@ -48,7 +48,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 
 ### Supplier order part
 
-`supplierOrder` is mostly an echo of your order fields as explained in[ Send order response](../send-order-response/)​.
+`supplierOrder` is mostly an echo of your order fields as explained in [Send order response](../send-order-response/)​.
 
 * `buyerAccountNumber`: the buyer account number as known in your ERP system.
 
@@ -71,24 +71,28 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 The`deliveryOverdue`feature is planned and API and documentation may change.
 {% endhint %}
 
-* `status.processStatus`: the order line process status, see [Status](./#status) below.
-* `status.logisticsStatus`: the order line logistics status, see [Status](./#status) below.
+* `status.processStatus`: the order line [process status](#process-status).
+* `status.logisticsStatus`: the order line [logistics status](#logistics-status). below.
 * `eventDates`: some key line event date/times.
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](./#item-details).
 * `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
 
 ### Status
 
+#### Process status
+
 {% hint style="info" %}
 Order and line **process** status is one of:
 
-* `Issued`:  \(re\)issued by the buyer.
+* `Issued`: (re)issued by the buyer.
 * `InProgress`: under negotiation between buyer and supplier
 * `Confirmed`: agreed between buyer and supplier
 * `Rejected`: rejected by supplier
 * `Completed`: completed at the buyer
 * `Cancelled`: cancelled by either buyer or supplier
 {% endhint %}
+
+#### Logistics status
 
 {% hint style="info" %}
 Order, line and delivery line **logistics** status is one of:
@@ -180,7 +184,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 `confirmedLine`: the agreed order line between buyer and supplier.
 
 {% hint style="warning" %}
-Only if the process status is `Confirmed` the line is agreed between buyer and supplier
+Only if the [process status](#process-status) is `Confirmed` the line is agreed between buyer and supplier
 {% endhint %}
 
 * `deliverySchedule`: agreed delivery schedule, see below
@@ -196,7 +200,7 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 These additional logistics fields are only available in the order line level delivery schedule:
 
-* `deliverySchedule.status`: the optional delivery line logistics status.
+* `deliverySchedule.status`: the optional delivery line [logistics status](#logistics-status).
 * `deliverySchedule.eta`: The optional logistics estimated time of arrival local date (without time zone). Date has ISO 8601 date `yyyy-MM-dd` format.
 
 ### Prices
