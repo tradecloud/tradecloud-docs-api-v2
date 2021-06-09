@@ -24,7 +24,7 @@ If you also provide a `cancelled` indicator on line level, it has **precedence**
 
 ## Cancelling by resending the order without the cancelled line using the `/order` API
 
-Cancel an order line by setting the `indicators.cancelLineWhenMissing` on order level, and updating the order WITHOUT the cancelled line, using the `/order` API resource.
+You can cancel an order line by using the `/order` API resource, by setting the `indicators.cancelLineWhenMissing` on order level and updating the order WITHOUT including the cancelled line.
 
 This is useful when your ERP system cannot cancel a line, but instead removes a line from the order.
 
