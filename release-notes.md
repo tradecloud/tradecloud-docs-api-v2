@@ -1,26 +1,26 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 10 17:30:37 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 10 19:30:37 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
+1. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 10-Jun-2021 17:25:59 CEST | [#1520](https://github.com/tradecloud/tradecloud-microservices/pull/1520) |  - update task contact | @olegtradecloud |  |
+| 1 | Services (Go) | 10-Jun-2021 18:30:42 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook fro reassigning contacts | @OlehVasylyshyn |  |
 
-2. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
+2. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 10-Jun-2021 18:08:35 CEST | [#1520](https://github.com/tradecloud/tradecloud-microservices/pull/1520) |  - update task contact | @olegtradecloud |  |
+
+3. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 10-Jun-2021 17:16:32 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
 | 2 | Services (Go) | 09-Jun-2021 10:25:09 CEST | [#398](https://github.com/tradecloud/tradecloud-microservices-go/pull/398) |  Add support for sending OutgoingCompletedOrderLinesRevertedByBuyer | @roy-tc |  |
 | 3 | Web Portal | 08-Jun-2021 15:44:07 CEST | [#628](https://github.com/tradecloud/tradecloud-portal-angular/pull/628) | [TC-6831] add new activity type &#39;completed-order-line-reverted-by-buyer&#39; | @bohdantrc |  |
-
-3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 10-Jun-2021 17:09:54 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook fro reassigning contacts | @OlehVasylyshyn |  |
 
 4. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
