@@ -1,30 +1,30 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 16 17:30:40 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jun 16 19:30:39 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7145](https://tradecloud.atlassian.net/browse/TC-7145) Make sure TC-6733 is available in accp &amp; prod 
+1. [TC-6974](https://tradecloud.atlassian.net/browse/TC-6974)  As Coulisse I want particular order lines to become proposals when accepted by the supplier [Planned release 28-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Jun-2021 17:28:41 CEST | [#633](https://github.com/tradecloud/tradecloud-portal-angular/pull/633) |  Refresh Docker image build and publish process | @vovinacci |  |
+| 1 | Services (Scala) | 16-Jun-2021 18:09:12 CEST | [#1535](https://github.com/tradecloud/tradecloud-microservices/pull/1535) |  - propose when accepted  | @olegtradecloud |  |
 
-2. [TC-7155](https://tradecloud.atlassian.net/browse/TC-7155) Some lines do not have a `deliverySchedule` after the release of &#34;basic logistical status&#34; 
+2. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jun-2021 17:06:40 CEST | [#1534](https://github.com/tradecloud/tradecloud-microservices/pull/1534) |  Add basic logistics model.OrderLine snapshot JIT migration | @marcmatt |  |
+| 1 | Services (Scala) | 16-Jun-2021 17:40:20 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
 
-3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
+3. [TC-7155](https://tradecloud.atlassian.net/browse/TC-7155) Some lines do not have a `deliverySchedule` after the release of &#34;basic logistical status&#34; 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 16-Jun-2021 17:40:08 CEST | [#1534](https://github.com/tradecloud/tradecloud-microservices/pull/1534) |  Add basic logistics model.OrderLine snapshot JIT migration | @marcmatt |  |
+
+4. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jun-2021 17:02:53 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  updated messages dependency | @OlehVasylyshyn |  |
 | 2 | Services (Go) | 16-Jun-2021 15:28:05 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
-
-4. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jun-2021 16:56:56 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
 
 5. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -53,7 +53,8 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-7145](https://tradecloud.atlassian.net/browse/TC-7145) Make sure TC-6733 is available in accp &amp; prod 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Jun-2021 13:37:03 CEST | [#632](https://github.com/tradecloud/tradecloud-portal-angular/pull/632) |  Refresh Docker image build and publish process, add docker image labels | @vovinacci |  |
+| 1 | Web Portal | 16-Jun-2021 17:53:22 CEST | [#633](https://github.com/tradecloud/tradecloud-portal-angular/pull/633) |  Refresh Docker image build and publish process | @vovinacci |  |
+| 2 | Web Portal | 16-Jun-2021 13:37:03 CEST | [#632](https://github.com/tradecloud/tradecloud-portal-angular/pull/632) |  Refresh Docker image build and publish process, add docker image labels | @vovinacci |  |
 
 2. [TC-700](https://tradecloud.atlassian.net/browse/TC-700) Migrate to ZeroMQ 3 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
