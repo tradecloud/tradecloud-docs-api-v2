@@ -1,36 +1,37 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 16 11:30:57 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jun 16 13:30:42 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7145](https://tradecloud.atlassian.net/browse/TC-7145) Make sure TC-6733 is available in accp &amp; prod 
+1. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 16-Jun-2021 11:29:28 CEST | [#632](https://github.com/tradecloud/tradecloud-portal-angular/pull/632) |  Refresh Docker image build and publish process, add docker image labels | @vovinacci |  |
+| 1 | Services (Go) | 16-Jun-2021 13:22:06 CEST | [#398](https://github.com/tradecloud/tradecloud-microservices-go/pull/398) |  Add support for sending OutgoingCompletedOrderLinesRevertedByBuyer | @roy-tc |  |
+| 2 | Services (Scala) | 16-Jun-2021 11:39:59 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
+| 3 | Web Portal | 16-Jun-2021 10:59:13 CEST | [#628](https://github.com/tradecloud/tradecloud-portal-angular/pull/628) | [TC-6831] add new activity type &#39;completed-order-line-reverted-by-buyer&#39; | @bohdantrc |  |
 
-2. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
+2. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jun-2021 11:27:50 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
+| 1 | Services (Scala) | 16-Jun-2021 13:15:22 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  updated messages dependency | @OlehVasylyshyn |  |
+| 2 | Services (Go) | 16-Jun-2021 13:08:11 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
 
-3. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
+3. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 16-Jun-2021 11:10:53 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
-| 2 | Web Portal | 16-Jun-2021 10:59:13 CEST | [#628](https://github.com/tradecloud/tradecloud-portal-angular/pull/628) | [TC-6831] add new activity type &#39;completed-order-line-reverted-by-buyer&#39; | @bohdantrc |  |
-| 3 | Services (Go) | 16-Jun-2021 10:13:54 CEST | [#398](https://github.com/tradecloud/tradecloud-microservices-go/pull/398) |  Add support for sending OutgoingCompletedOrderLinesRevertedByBuyer | @roy-tc |  |
+| 1 | Services (Scala) | 16-Jun-2021 12:10:34 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
 
-4. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
+4. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Jun-2021 10:03:33 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
+| 1 | Services (Scala) | 16-Jun-2021 12:10:12 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
 
-5. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
+5. [TC-7145](https://tradecloud.atlassian.net/browse/TC-7145) Make sure TC-6733 is available in accp &amp; prod 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 15-Jun-2021 23:56:38 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
+| 1 | Web Portal | 16-Jun-2021 12:07:59 CEST | [#632](https://github.com/tradecloud/tradecloud-portal-angular/pull/632) |  Refresh Docker image build and publish process, add docker image labels | @vovinacci |  |
 
 6. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
