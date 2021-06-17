@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 17 19:30:54 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 17 21:30:39 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
+1. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 17-Jun-2021 21:25:31 CEST | [#1537](https://github.com/tradecloud/tradecloud-microservices/pull/1537) |  Add Shipped to incoming delivery line status | @marcmatt |  |
+
+2. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jun-2021 17:23:22 CEST | [#1536](https://github.com/tradecloud/tradecloud-microservices/pull/1536) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 | 2 | Services (Go) | 17-Jun-2021 15:35:19 CEST | [#405](https://github.com/tradecloud/tradecloud-microservices-go/pull/405) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 
-2. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
+3. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Jun-2021 16:57:55 CEST | [#619](https://github.com/tradecloud/tradecloud-portal-angular/pull/619) |  add structure folders | @bohdantrc |  |
-
-3. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Jun-2021 16:46:22 CEST | [#1537](https://github.com/tradecloud/tradecloud-microservices/pull/1537) |  Add Shipped to incoming delivery line status | @marcmatt |  |
 
 4. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -49,7 +49,16 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 
 ## Changelog
 
-1. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  
+1. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Go) | 17-Jun-2021 21:29:06 CEST | [#406](https://github.com/tradecloud/tradecloud-microservices-go/pull/406) |  Update golangci-lint to 1.41.0 | @vovinacci |  |
+| 2 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
+| 3 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
+| 4 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
+| 5 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
+
+2. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jun-2021 15:10:56 CEST | [#1523](https://github.com/tradecloud/tradecloud-microservices/pull/1523) |  Revert completed order lines | @roy-tc |  |
@@ -57,44 +66,45 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 3 | Services (Go) | 17-Jun-2021 15:04:29 CEST | [#398](https://github.com/tradecloud/tradecloud-microservices-go/pull/398) |  Add support for sending OutgoingCompletedOrderLinesRevertedByBuyer | @roy-tc |  |
 | 4 | Services (Scala) | 04-Jun-2021 12:33:00 CEST | [#1524](https://github.com/tradecloud/tradecloud-microservices/pull/1524) |  Refactor the OrderSentByBuyerSplitting | @roy-tc |  |
 
-2. [TC-7155](https://tradecloud.atlassian.net/browse/TC-7155) Some lines do not have a `deliverySchedule` after the release of &#34;basic logistical status&#34; 
+3. [TC-7155](https://tradecloud.atlassian.net/browse/TC-7155) Some lines do not have a `deliverySchedule` after the release of &#34;basic logistical status&#34; 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 16-Jun-2021 19:38:46 CEST | [#1534](https://github.com/tradecloud/tradecloud-microservices/pull/1534) |  Add basic logistics model.OrderLine snapshot JIT migration | @marcmatt |  |
 
-3. [TC-7145](https://tradecloud.atlassian.net/browse/TC-7145) Make sure TC-6733 is available in accp &amp; prod 
+4. [TC-7145](https://tradecloud.atlassian.net/browse/TC-7145) Make sure TC-6733 is available in accp &amp; prod 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jun-2021 17:53:22 CEST | [#633](https://github.com/tradecloud/tradecloud-portal-angular/pull/633) |  Refresh Docker image build and publish process | @vovinacci |  |
 | 2 | Web Portal | 16-Jun-2021 13:37:03 CEST | [#632](https://github.com/tradecloud/tradecloud-portal-angular/pull/632) |  Refresh Docker image build and publish process, add docker image labels | @vovinacci |  |
 
-4. [TC-700](https://tradecloud.atlassian.net/browse/TC-700) Migrate to ZeroMQ 3 
+5. [TC-700](https://tradecloud.atlassian.net/browse/TC-700) Migrate to ZeroMQ 3 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 16-Jun-2021 10:25:24 CEST | [#404](https://github.com/tradecloud/tradecloud-microservices-go/pull/404) |  Don&#39;t always tag docker with latest tag | @vovinacci |  |
-| 2 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
-| 3 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
-| 4 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
-| 5 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
+| 1 | Services (Go) | 17-Jun-2021 21:29:06 CEST | [#406](https://github.com/tradecloud/tradecloud-microservices-go/pull/406) |  Update golangci-lint to 1.41.0 | @vovinacci |  |
+| 2 | Services (Go) | 16-Jun-2021 10:25:24 CEST | [#404](https://github.com/tradecloud/tradecloud-microservices-go/pull/404) |  Don&#39;t always tag docker with latest tag | @vovinacci |  |
+| 3 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
+| 4 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
+| 5 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
+| 6 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
 
-5. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  
+6. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 16-Jun-2021 09:53:28 CEST | [#623](https://github.com/tradecloud/tradecloud-portal-angular/pull/623) | [TC-6952] add assign and reassign logic | @bohdantrc |  |
 | 2 | Services (Scala) | 15-Jun-2021 14:10:37 CEST | [#1532](https://github.com/tradecloud/tradecloud-microservices/pull/1532) |  message dependecy version fix | @OlehVasylyshyn |  |
 | 3 | Services (Scala) | 15-Jun-2021 13:13:23 CEST | [#1518](https://github.com/tradecloud/tradecloud-microservices/pull/1518) |  (Re)assign orders to users | @OlehVasylyshyn |  |
 
-6. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
+7. [TC-7059](https://tradecloud.atlassian.net/browse/TC-7059) acknowledge &amp; conversation tasks are not reassigned when the contact of the related order header is updated.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Jun-2021 12:16:33 CEST | [#1520](https://github.com/tradecloud/tradecloud-microservices/pull/1520) |  - update task contact | @olegtradecloud |  |
 
-7. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
+8. [TC-6316](https://tradecloud.atlassian.net/browse/TC-6316) Add support of starting buf check locally 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 15-Jun-2021 11:58:16 CEST | [#1513](https://github.com/tradecloud/tradecloud-microservices/pull/1513) |  Support running buf breaking changes locally | @roy-tc |  |
 
-8. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
+9. [TC-6941](https://tradecloud.atlassian.net/browse/TC-6941) As buyer I want that suppliers can set logistical status using the portal - BASIC  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 14-Jun-2021 16:24:29 CEST | [#631](https://github.com/tradecloud/tradecloud-portal-angular/pull/631) |  fix typo | @bohdantrc |  |
@@ -104,7 +114,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 5 | Services (Go) | 11-Jun-2021 15:53:43 CEST | [#396](https://github.com/tradecloud/tradecloud-microservices-go/pull/396) |  [TC-7098] Basic delivery line logistics | @marcmatt |  |
 | 6 | Services (Scala) | 11-Jun-2021 15:53:17 CEST | [#1483](https://github.com/tradecloud/tradecloud-microservices/pull/1483) |  Basic delivery line logistics | @marcmatt |  |
 
-9. [TC-6693](https://tradecloud.atlassian.net/browse/TC-6693) As DevOps, I want to migrate Mesos based production environment to GCP, so that I have better platform availability 
+10. [TC-6693](https://tradecloud.atlassian.net/browse/TC-6693) As DevOps, I want to migrate Mesos based production environment to GCP, so that I have better platform availability 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 14-Jun-2021 09:36:40 CEST | [#401](https://github.com/tradecloud/tradecloud-microservices-go/pull/401) |  Remove double deployment | @vovinacci |  |
@@ -112,19 +122,11 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | 3 | Web Portal | 08-Jun-2021 12:41:54 CEST | [#627](https://github.com/tradecloud/tradecloud-portal-angular/pull/627) |  Add GCP deployment | @vovinacci |  |
 | 4 | Services (Go) | 08-Jun-2021 08:44:58 CEST | [#397](https://github.com/tradecloud/tradecloud-microservices-go/pull/397) |  Add GCP deployment | @vovinacci |  |
 
-10. [TC-7144](https://tradecloud.atlassian.net/browse/TC-7144) GCP: post-migration cleanup 
+11. [TC-7144](https://tradecloud.atlassian.net/browse/TC-7144) GCP: post-migration cleanup 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 14-Jun-2021 09:36:21 CEST | [#1530](https://github.com/tradecloud/tradecloud-microservices/pull/1530) |  Remove double deployment | @vovinacci |  |
 | 2 | Web Portal | 14-Jun-2021 09:23:36 CEST | [#630](https://github.com/tradecloud/tradecloud-portal-angular/pull/630) |  Remove double deployment | @vovinacci |  |
-
-11. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
-| 2 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
-| 3 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
-| 4 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
 
 12. [TC-7029](https://tradecloud.atlassian.net/browse/TC-7029) As legacy customer I want that migrated legacy orders to only overwrite TC One orders when the order is not changed in TC One 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
