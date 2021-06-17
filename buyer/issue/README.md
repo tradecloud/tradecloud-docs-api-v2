@@ -142,7 +142,6 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 * `deliverySchedule.position`: the optional position in the delivery schedule. Required when using `status`. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
-* `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 * `deliverySchedule.status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`.
 
 {% hint style="warning" %}
