@@ -81,7 +81,9 @@ The `supplierAccountNumber` should be set on forehand in the Tradecloud connecti
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier
-* `indicators`: 
+* `indicators`:
+
+When all order lines have no goods to be delivered, for example service, fee or text lines:
 
 {% page-ref page="no-delivery-expected.md" %}
 
@@ -140,9 +142,22 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 * `deliverySchedule.position`: the optional position in the delivery schedule. Required when using `status`. Not to be confused with the `line.position`
 * `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+* `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+* `deliverySchedule.status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`.
 
 {% hint style="warning" %}
 `deliverySchedule.position` should be unique within the delivery schedule and never change. Never renumber or re-use `deliverySchedule.position`s.
+{% endhint %}
+
+{% hint style="info" %}
+The delivery line logistics status is one of:
+
+* `ReadyToShip`: full quantity ready to be shipped by the supplier
+
+These logistics statuses are under development and API and documentation may change:
+
+* `Shipped`: full quantity shipped by the supplier
+* `Delivered`: full quantity delivered at the buyer
 {% endhint %}
 
 ### Requested prices
@@ -155,7 +170,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
-#### Other line fields
+### Other line fields
 
 * `description`: a free format additional description of this line
 * `terms`: the line terms as agreed with your supplier
@@ -166,7 +181,13 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 * `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)
 * `indicators`:
 
+When a line has no goods to be delivered, for example a service, fee or text line:
+
 {% page-ref page="no-delivery-expected.md" %}
+
+When your order process requires the buyer to always approve every line:
+
+{% page-ref page="propose-when-accepted.md" %}
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
 * `documents`: contain attached documents, see:

@@ -39,6 +39,7 @@
     * [Attach a document to an order](buyer/issue/attach-document.md)
     * [Choose attach document API](buyer/issue/attach-document-api.md)
     * [No delivery expected](buyer/issue/no-delivery-expected.md)
+    * [Propose when accepted](buyer/issue/propose-when-accepted.md)
   * [Update an existing order](buyer/update.md)
   * [Receive an order response](buyer/receive/README.md)
     * [Download a document attached to an order response](buyer/receive/download-document.md)
