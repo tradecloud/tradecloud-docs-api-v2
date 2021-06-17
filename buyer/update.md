@@ -65,27 +65,6 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ## Additional fields
 
-### Logistics status in the planned delivery schedule
-
-The logistics status may be added to the requested delivery schedule in an order update:
-
-* `lines.deliverySchedule`: the requested delivery schedule. Provide all delivery schedule lines in an update.
-* `deliverySchedule.position`: the optional position in the delivery schedule. Required when using `status`. Not to be confused with the `line.position`
-* `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
-* `deliverySchedule.status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`.
-
-{% hint style="info" %}
-The delivery line logistics status is one of:
-
-* `ReadyToShip`: full quantity ready to be shipped by the supplier
-
-These logistics statuses are under development and API and documentation may change:
-
-* `Shipped`: full quantity shipped by the supplier
-* `Delivered`: full quantity delivered at the buyer
-{% endhint %}
-
 ### Actual delivery history
 
 The actual delivery history may be added in an order update:
