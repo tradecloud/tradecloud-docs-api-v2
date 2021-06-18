@@ -1,30 +1,30 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 17 23:30:40 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jun 18 11:30:51 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
+1. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 18-Jun-2021 09:55:55 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
+
+2. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jun-2021 22:38:43 CEST | [#1537](https://github.com/tradecloud/tradecloud-microservices/pull/1537) |  Add Shipped to incoming delivery line status | @marcmatt |  |
 
-2. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
+3. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 17-Jun-2021 17:23:22 CEST | [#1536](https://github.com/tradecloud/tradecloud-microservices/pull/1536) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 | 2 | Services (Go) | 17-Jun-2021 15:35:19 CEST | [#405](https://github.com/tradecloud/tradecloud-microservices-go/pull/405) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 
-3. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
+4. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 17-Jun-2021 16:57:55 CEST | [#619](https://github.com/tradecloud/tradecloud-portal-angular/pull/619) |  add structure folders | @bohdantrc |  |
-
-4. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 17-Jun-2021 16:40:50 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
 
 5. [TC-6974](https://tradecloud.atlassian.net/browse/TC-6974)  As Coulisse I want particular order lines to become proposals when accepted by the supplier [Planned release 28-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
