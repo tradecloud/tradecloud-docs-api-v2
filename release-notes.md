@@ -1,24 +1,24 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 21 19:30:38 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 21 21:30:41 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7097](https://tradecloud.atlassian.net/browse/TC-7097) Upgrade to latest ScalaTest so we can use PrettyPair 
+1. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Jun-2021 21:28:27 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
+
+2. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 21-Jun-2021 21:25:10 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
+
+3. [TC-7097](https://tradecloud.atlassian.net/browse/TC-7097) Upgrade to latest ScalaTest so we can use PrettyPair 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 21-Jun-2021 18:26:28 CEST | [#1538](https://github.com/tradecloud/tradecloud-microservices/pull/1538) |  Updated scalatest to 3.2.9 | @OlehVasylyshyn |  |
-
-2. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Jun-2021 15:14:46 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
-
-3. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Jun-2021 13:59:29 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
 
 4. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
