@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 21 13:30:40 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Mon Jun 21 15:30:43 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
+1. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Jun-2021 13:08:47 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
+| 1 | Services (Scala) | 21-Jun-2021 15:14:46 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
 
-2. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
+2. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 21-Jun-2021 13:05:37 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
+| 1 | Services (Scala) | 21-Jun-2021 13:59:29 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
 
 3. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
