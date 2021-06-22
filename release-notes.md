@@ -1,21 +1,21 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Tue Jun 22 21:30:39 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 22 23:30:39 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6974](https://tradecloud.atlassian.net/browse/TC-6974)  As Coulisse I want particular order lines to become proposals when accepted by the supplier [Planned release 28-Jun-2021]
+1. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 22-Jun-2021 21:59:12 CEST | [#637](https://github.com/tradecloud/tradecloud-portal-angular/pull/637) |  [TC-7067] Add ETD | @marcmatt |  |
+| 2 | Services (Scala) | 17-Jun-2021 17:23:22 CEST | [#1536](https://github.com/tradecloud/tradecloud-microservices/pull/1536) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
+| 3 | Services (Go) | 17-Jun-2021 15:35:19 CEST | [#405](https://github.com/tradecloud/tradecloud-microservices-go/pull/405) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
+
+2. [TC-6974](https://tradecloud.atlassian.net/browse/TC-6974)  As Coulisse I want particular order lines to become proposals when accepted by the supplier [Planned release 28-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Jun-2021 19:22:16 CEST | [#1535](https://github.com/tradecloud/tradecloud-microservices/pull/1535) |  - propose when accepted  | @olegtradecloud |  |
-
-2. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Jun-2021 19:21:16 CEST | [#637](https://github.com/tradecloud/tradecloud-portal-angular/pull/637) |  [TC-7067] Add ETD | @marcmatt |  |
-| 2 | Services (Scala) | 17-Jun-2021 17:23:22 CEST | [#1536](https://github.com/tradecloud/tradecloud-microservices/pull/1536) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
-| 3 | Services (Go) | 17-Jun-2021 15:35:19 CEST | [#405](https://github.com/tradecloud/tradecloud-microservices-go/pull/405) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 
 3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
