@@ -22,9 +22,13 @@ This feature is planned. Ticket [TC-5564](https://tradecloud.atlassian.net/brows
 Order lines having `noDeliveryExpected` set will NEVER become `overdue`.
 {% endhint %}
 
+### ReadyToShip indicated by buyer
+
+`ReadyToShip`: this indicator is not implemented on order or line level, please use value `ReadyToShip` in the `deliverySchedule.status`.
+
 ### Shipped by supplier
 
-`shipped`: this indicator is not implemented on order or line level, please use value `Shipped` in the `deliverySchedule.status`.
+`Shipped`: this indicator is not implemented on order or line level, please use value `Shipped` in the `deliverySchedule.status`.
 
 ### Delivered at buyer
 
