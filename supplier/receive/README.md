@@ -203,7 +203,8 @@ Only if the [process status](#process-status) is `Confirmed`, the line is agreed
 These additional logistics fields are only available in the order line level delivery schedule:
 
 * `deliverySchedule.status`: the optional delivery line [logistics status](#logistics-status).
-* `deliverySchedule.eta`: The optional logistics estimated time of arrival (local date without time zone). Date has ISO 8601 date `yyyy-MM-dd` format.
+* `deliverySchedule.etd`: The optional logistics Estimated Time of Departure (local date without time zone). Date has ISO 8601 date `yyyy-MM-dd` format.
+* `deliverySchedule.eta`: The optional logistics Estimated Time of Arrival (local date without time zone). Date has ISO 8601 date `yyyy-MM-dd` format.
 
 ## Prices
 

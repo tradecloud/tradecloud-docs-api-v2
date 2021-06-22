@@ -16,13 +16,13 @@ As a supplier you should [Send an order response](send-order-response/) to the b
 
 Additionally you can [Attach a document to an order response](send-order-response/attach-document.md).
 
-## Optional step 3. Send goods logistical status and eta in order response
+## Optional step 3. Send goods logistical status, ETD and ETA in the order response
 
 {% hint style="warning" %}
 This feature is planned and API and documentation may change.
 {% endhint %}
 
-TO BE DOCUMENTED using order line delivery schedule status and eta.
+TO BE DOCUMENTED using order line delivery schedule status, ETD and ETA.
 
 ## Optional step 4. Reopen or cancel an order
 
