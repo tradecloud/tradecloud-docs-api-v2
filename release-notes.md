@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 23 17:30:39 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jun 23 19:30:39 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (We
 1. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Jun-2021 17:04:13 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  updated messages dependency | @OlehVasylyshyn |  |
+| 1 | Services (Scala) | 23-Jun-2021 19:26:45 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  updated messages dependency | @OlehVasylyshyn |  |
 | 2 | Services (Go) | 22-Jun-2021 18:56:44 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
 
 2. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
