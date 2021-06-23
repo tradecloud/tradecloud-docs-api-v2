@@ -1,54 +1,59 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 23 21:30:37 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Wed Jun 23 23:30:38 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
+1. [TC-7100](https://tradecloud.atlassian.net/browse/TC-7100) As a buyer integrator I want to merge a new buyer delivery schedule position into the order line &amp; confirmed delivery schedule&#39;s 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 23-Jun-2021 21:49:20 CEST | [#1540](https://github.com/tradecloud/tradecloud-microservices/pull/1540) |  Merge incoming delivery schedule | @marcmatt |  |
+
+2. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2021 20:31:08 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
 
-2. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
+3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2021 19:31:03 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  updated messages dependency | @OlehVasylyshyn |  |
 | 2 | Services (Go) | 22-Jun-2021 18:56:44 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
 
-3. [TC-7008](https://tradecloud.atlassian.net/browse/TC-7008) As portal user I want that TC maps SCSN unit codes to human readable unit names [Planned release 23-Jul-2021]
+4. [TC-7008](https://tradecloud.atlassian.net/browse/TC-7008) As portal user I want that TC maps SCSN unit codes to human readable unit names [Planned release 23-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jun-2021 15:20:20 CEST | [#638](https://github.com/tradecloud/tradecloud-portal-angular/pull/638) |  add mapping unit code for purchaseUnitOfMeasureIso and prices | @bohdantrc |  |
 
-4. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
+5. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jun-2021 15:14:28 CEST | [#637](https://github.com/tradecloud/tradecloud-portal-angular/pull/637) |  [TC-7067] Add ETD | @marcmatt |  |
 | 2 | Services (Scala) | 17-Jun-2021 17:23:22 CEST | [#1536](https://github.com/tradecloud/tradecloud-microservices/pull/1536) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 | 3 | Services (Go) | 17-Jun-2021 15:35:19 CEST | [#405](https://github.com/tradecloud/tradecloud-microservices-go/pull/405) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 
-5. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
+6. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jun-2021 15:13:39 CEST | [#619](https://github.com/tradecloud/tradecloud-portal-angular/pull/619) |  add structure folders | @bohdantrc |  |
 
-6. [TC-7168](https://tradecloud.atlassian.net/browse/TC-7168) Update Certification UI  
+7. [TC-7168](https://tradecloud.atlassian.net/browse/TC-7168) Update Certification UI  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 22-Jun-2021 12:59:10 CEST | [#636](https://github.com/tradecloud/tradecloud-portal-angular/pull/636) |  update showing certification fields | @bohdantrc |  |
 
-7. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
+8. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Jun-2021 12:49:11 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
 
-8. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
+9. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Jun-2021 11:03:16 CEST | [#1537](https://github.com/tradecloud/tradecloud-microservices/pull/1537) |  Add Shipped to incoming delivery line status | @marcmatt |  |
 
-9. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
+10. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jun-2021 09:00:45 CEST | [#634](https://github.com/tradecloud/tradecloud-portal-angular/pull/634) | [TC-6961] add new integration group &#39;Contacts&#39; | @bohdantrc |  |
