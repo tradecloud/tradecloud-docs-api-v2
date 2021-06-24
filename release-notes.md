@@ -1,19 +1,19 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Wed Jun 23 23:30:38 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 11:31:13 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7100](https://tradecloud.atlassian.net/browse/TC-7100) As a buyer integrator I want to merge a new buyer delivery schedule position into the order line &amp; confirmed delivery schedule&#39;s 
+1. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Jun-2021 09:51:03 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
+
+2. [TC-7100](https://tradecloud.atlassian.net/browse/TC-7100) As a buyer integrator I want to merge a new buyer delivery schedule position into the order line &amp; confirmed delivery schedule&#39;s 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2021 21:49:20 CEST | [#1540](https://github.com/tradecloud/tradecloud-microservices/pull/1540) |  Merge incoming delivery schedule | @marcmatt |  |
-
-2. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 23-Jun-2021 20:31:08 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
 
 3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
