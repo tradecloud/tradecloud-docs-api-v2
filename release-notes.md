@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 17:30:46 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 19:30:38 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
+1. [TC-7127](https://tradecloud.atlassian.net/browse/TC-7127) Later added lines do not trigger an &#34;await confirmation&#34; task  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Jun-2021 18:44:52 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
+
+2. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 24-Jun-2021 16:46:21 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
 | 2 | Services (Scala) | 24-Jun-2021 16:37:12 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  enrichment in Company service for reassigning contacts flow | @OlehVasylyshyn |  |
 
-2. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
+3. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Jun-2021 16:41:38 CEST | [#639](https://github.com/tradecloud/tradecloud-portal-angular/pull/639) |  Fix sourcemap upload user | @vovinacci |  |
-
-3. [TC-7127](https://tradecloud.atlassian.net/browse/TC-7127) Later added lines do not trigger an &#34;await confirmation&#34; task  
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jun-2021 16:30:00 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
 
 4. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -222,9 +222,4 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 27-May-2021 10:44:36 CEST | [#1515](https://github.com/tradecloud/tradecloud-microservices/pull/1515) |  Use LOCAL_QUORUM to use C* nodes from LOCAL DC only | @roy-tc |  |
-
-26. [TC-7081](https://tradecloud.atlassian.net/browse/TC-7081) Incoming order without lines is silently ignored and not persisted. 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-May-2021 18:04:03 CEST | [#1511](https://github.com/tradecloud/tradecloud-microservices/pull/1511) |  - issue order without lines fix | @olegtradecloud |  |
 
