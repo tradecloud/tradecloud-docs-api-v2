@@ -1,104 +1,100 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 21:30:45 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 23:30:39 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7127](https://tradecloud.atlassian.net/browse/TC-7127) Later added lines do not trigger an &#34;await confirmation&#34; task  
+1. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jun-2021 20:48:50 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
+| 1 | Services (Scala) | 24-Jun-2021 22:28:26 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
 
-2. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
+2. [TC-7127](https://tradecloud.atlassian.net/browse/TC-7127) Later added lines do not trigger an &#34;await confirmation&#34; task  
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Jun-2021 21:40:32 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
+
+3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Go) | 24-Jun-2021 16:46:21 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
 | 2 | Services (Scala) | 24-Jun-2021 16:37:12 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  enrichment in Company service for reassigning contacts flow | @OlehVasylyshyn |  |
 
-3. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 24-Jun-2021 16:41:38 CEST | [#639](https://github.com/tradecloud/tradecloud-portal-angular/pull/639) |  Fix sourcemap upload user | @vovinacci |  |
-
-4. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jun-2021 15:36:45 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
-
-5. [TC-7148](https://tradecloud.atlassian.net/browse/TC-7148) Sequence number [1] still missing after [10.00 s], saw unexpected seqNr [21] for persistenceId 
+4. [TC-7148](https://tradecloud.atlassian.net/browse/TC-7148) Sequence number [1] still missing after [10.00 s], saw unexpected seqNr [21] for persistenceId 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Jun-2021 15:31:48 CEST | [#1542](https://github.com/tradecloud/tradecloud-microservices/pull/1542) |  DO NOT MERGE Trigger build | @roy-tc |  |
 
-6. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
+5. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Jun-2021 14:24:02 CEST | [#619](https://github.com/tradecloud/tradecloud-portal-angular/pull/619) |  add structure folders | @bohdantrc |  |
 
-7. [TC-7100](https://tradecloud.atlassian.net/browse/TC-7100) As a buyer integrator I want to merge a new buyer delivery schedule position into the order line &amp; confirmed delivery schedule&#39;s 
+6. [TC-7100](https://tradecloud.atlassian.net/browse/TC-7100) As a buyer integrator I want to merge a new buyer delivery schedule position into the order line &amp; confirmed delivery schedule&#39;s 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Jun-2021 13:26:25 CEST | [#1540](https://github.com/tradecloud/tradecloud-microservices/pull/1540) |  Merge incoming delivery schedule | @marcmatt |  |
 
-8. [TC-7008](https://tradecloud.atlassian.net/browse/TC-7008) As portal user I want that TC maps SCSN unit codes to human readable unit names [Planned release 23-Jul-2021]
+7. [TC-7008](https://tradecloud.atlassian.net/browse/TC-7008) As portal user I want that TC maps SCSN unit codes to human readable unit names [Planned release 23-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Jun-2021 12:40:00 CEST | [#638](https://github.com/tradecloud/tradecloud-portal-angular/pull/638) |  add mapping unit code for purchaseUnitOfMeasureIso and prices | @bohdantrc |  |
 
-9. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
+8. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Jun-2021 12:11:16 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
 
-10. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
+9. [TC-7064](https://tradecloud.atlassian.net/browse/TC-7064) As supplier I want to add an ETD (Estimated Time of Departure) when change delivery line statuses to Shipped. [Planned release 30-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 23-Jun-2021 15:14:28 CEST | [#637](https://github.com/tradecloud/tradecloud-portal-angular/pull/637) |  [TC-7067] Add ETD | @marcmatt |  |
 | 2 | Services (Scala) | 17-Jun-2021 17:23:22 CEST | [#1536](https://github.com/tradecloud/tradecloud-microservices/pull/1536) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 | 3 | Services (Go) | 17-Jun-2021 15:35:19 CEST | [#405](https://github.com/tradecloud/tradecloud-microservices-go/pull/405) |  [TC-7066] Add ETD to delivery line | @marcmatt |  |
 
-11. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
+10. [TC-5667](https://tradecloud.atlassian.net/browse/TC-5667) As buyer I want to see order lines receive the logistical status &#39;&#39;Shipped&#39;&#39; when they have the status &#34;shipped&#34; in my ERP system.  [Planned release 07-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 22-Jun-2021 11:03:16 CEST | [#1537](https://github.com/tradecloud/tradecloud-microservices/pull/1537) |  Add Shipped to incoming delivery line status | @marcmatt |  |
 
-12. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
+11. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 21-Jun-2021 09:00:45 CEST | [#634](https://github.com/tradecloud/tradecloud-portal-angular/pull/634) | [TC-6961] add new integration group &#39;Contacts&#39; | @bohdantrc |  |
 
 ## Changelog
 
-1. [TC-7168](https://tradecloud.atlassian.net/browse/TC-7168) Update Certification UI  
+1. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Web Portal | 24-Jun-2021 21:53:50 CEST | [#639](https://github.com/tradecloud/tradecloud-portal-angular/pull/639) |  Fix sourcemap upload user | @vovinacci |  |
+| 2 | Web Portal | 22-Jun-2021 10:27:53 CEST | [#635](https://github.com/tradecloud/tradecloud-portal-angular/pull/635) |  SSL: Remove HSTS headers | @vovinacci |  |
+| 3 | Services (Go) | 17-Jun-2021 21:29:06 CEST | [#406](https://github.com/tradecloud/tradecloud-microservices-go/pull/406) |  Update golangci-lint to 1.41.0 | @vovinacci |  |
+| 4 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
+| 5 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
+| 6 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
+| 7 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
+
+2. [TC-7168](https://tradecloud.atlassian.net/browse/TC-7168) Update Certification UI  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Jun-2021 15:25:49 CEST | [#636](https://github.com/tradecloud/tradecloud-portal-angular/pull/636) |  update showing certification fields | @bohdantrc |  |
 
-2. [TC-6974](https://tradecloud.atlassian.net/browse/TC-6974)  As Coulisse I want particular order lines to become proposals when accepted by the supplier 
+3. [TC-6974](https://tradecloud.atlassian.net/browse/TC-6974)  As Coulisse I want particular order lines to become proposals when accepted by the supplier 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2021 16:34:09 CEST | [#1535](https://github.com/tradecloud/tradecloud-microservices/pull/1535) |  - propose when accepted  | @olegtradecloud |  |
 
-3. [TC-7097](https://tradecloud.atlassian.net/browse/TC-7097) Upgrade to latest ScalaTest so we can use PrettyPair 
+4. [TC-7097](https://tradecloud.atlassian.net/browse/TC-7097) Upgrade to latest ScalaTest so we can use PrettyPair 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2021 11:47:58 CEST | [#1538](https://github.com/tradecloud/tradecloud-microservices/pull/1538) |  Updated scalatest to 3.2.9 | @OlehVasylyshyn |  |
 
-4. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
+5. [TC-7132](https://tradecloud.atlassian.net/browse/TC-7132) Support Base64-encoded documents in object-storage 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 23-Jun-2021 08:16:49 CEST | [#1526](https://github.com/tradecloud/tradecloud-microservices/pull/1526) |  Support Base64-encoded documents in Object Storage | @roy-tc |  |
-
-5. [TC-7000](https://tradecloud.atlassian.net/browse/TC-7000) Continuous delivery and operations 
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Jun-2021 10:27:53 CEST | [#635](https://github.com/tradecloud/tradecloud-portal-angular/pull/635) |  SSL: Remove HSTS headers | @vovinacci |  |
-| 2 | Services (Go) | 17-Jun-2021 21:29:06 CEST | [#406](https://github.com/tradecloud/tradecloud-microservices-go/pull/406) |  Update golangci-lint to 1.41.0 | @vovinacci |  |
-| 3 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
-| 4 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
-| 5 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
-| 6 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
 
 6. [TC-6828](https://tradecloud.atlassian.net/browse/TC-6828) As a buyer I want to reopen Completed lines.  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
@@ -122,13 +118,14 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 9. [TC-700](https://tradecloud.atlassian.net/browse/TC-700) Migrate to ZeroMQ 3 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 22-Jun-2021 10:27:53 CEST | [#635](https://github.com/tradecloud/tradecloud-portal-angular/pull/635) |  SSL: Remove HSTS headers | @vovinacci |  |
-| 2 | Services (Go) | 17-Jun-2021 21:29:06 CEST | [#406](https://github.com/tradecloud/tradecloud-microservices-go/pull/406) |  Update golangci-lint to 1.41.0 | @vovinacci |  |
-| 3 | Services (Go) | 16-Jun-2021 10:25:24 CEST | [#404](https://github.com/tradecloud/tradecloud-microservices-go/pull/404) |  Don&#39;t always tag docker with latest tag | @vovinacci |  |
-| 4 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
-| 5 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
-| 6 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
-| 7 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
+| 1 | Web Portal | 24-Jun-2021 21:53:50 CEST | [#639](https://github.com/tradecloud/tradecloud-portal-angular/pull/639) |  Fix sourcemap upload user | @vovinacci |  |
+| 2 | Web Portal | 22-Jun-2021 10:27:53 CEST | [#635](https://github.com/tradecloud/tradecloud-portal-angular/pull/635) |  SSL: Remove HSTS headers | @vovinacci |  |
+| 3 | Services (Go) | 17-Jun-2021 21:29:06 CEST | [#406](https://github.com/tradecloud/tradecloud-microservices-go/pull/406) |  Update golangci-lint to 1.41.0 | @vovinacci |  |
+| 4 | Services (Go) | 16-Jun-2021 10:25:24 CEST | [#404](https://github.com/tradecloud/tradecloud-microservices-go/pull/404) |  Don&#39;t always tag docker with latest tag | @vovinacci |  |
+| 5 | Services (Go) | 09-Jun-2021 09:14:33 CEST | [#399](https://github.com/tradecloud/tradecloud-microservices-go/pull/399) |  Add bash to the requirements | @vovinacci |  |
+| 6 | Web Portal | 08-Jun-2021 15:50:46 CEST | [#629](https://github.com/tradecloud/tradecloud-portal-angular/pull/629) |  Add dependabot config to ignore highcharts | @roy-tc |  |
+| 7 | Web Portal | 07-Jun-2021 18:54:19 CEST | [#626](https://github.com/tradecloud/tradecloud-portal-angular/pull/626) |  Dummy changes to trigger build | @denys-kondartiuk |  |
+| 8 | Web Portal | 07-Jun-2021 14:01:11 CEST | [#625](https://github.com/tradecloud/tradecloud-portal-angular/pull/625) |  Investigate build issue: Clean up docker images after build | @denys-kondartiuk |  |
 
 10. [TC-6949](https://tradecloud.atlassian.net/browse/TC-6949) As portal user, I want to (Re)assign orders to users  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
