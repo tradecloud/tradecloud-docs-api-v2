@@ -1,5 +1,5 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 19:30:38 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 21:30:45 CEST 2021)
 ---
 
 
@@ -8,7 +8,7 @@ description: Tradecloud services and portal open pull requests and changelog (Th
 1. [TC-7127](https://tradecloud.atlassian.net/browse/TC-7127) Later added lines do not trigger an &#34;await confirmation&#34; task  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jun-2021 18:44:52 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
+| 1 | Services (Scala) | 24-Jun-2021 20:48:50 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
 
 2. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
