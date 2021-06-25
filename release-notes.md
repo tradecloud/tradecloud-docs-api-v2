@@ -1,45 +1,45 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Thu Jun 24 23:30:39 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Fri Jun 25 11:30:54 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
+1. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jun-2021 22:28:26 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
+| 1 | Services (Go) | 25-Jun-2021 11:30:11 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
+| 2 | Services (Scala) | 24-Jun-2021 16:37:12 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  enrichment in Company service for reassigning contacts flow | @OlehVasylyshyn |  |
 
 2. [TC-7127](https://tradecloud.atlassian.net/browse/TC-7127) Later added lines do not trigger an &#34;await confirmation&#34; task  
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 24-Jun-2021 21:40:32 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
+| 1 | Services (Scala) | 25-Jun-2021 11:18:52 CEST | [#1541](https://github.com/tradecloud/tradecloud-microservices/pull/1541) |  - fix workflow tasks on new lines issuing | @olegtradecloud |  |
 
-3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
+3. [TC-7008](https://tradecloud.atlassian.net/browse/TC-7008) As portal user I want that TC maps SCSN unit codes to human readable unit names [Planned release 23-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 24-Jun-2021 16:46:21 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
-| 2 | Services (Scala) | 24-Jun-2021 16:37:12 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  enrichment in Company service for reassigning contacts flow | @OlehVasylyshyn |  |
+| 1 | Web Portal | 25-Jun-2021 10:52:30 CEST | [#638](https://github.com/tradecloud/tradecloud-portal-angular/pull/638) |  add mapping unit code for purchaseUnitOfMeasureIso and prices | @bohdantrc |  |
 
-4. [TC-7148](https://tradecloud.atlassian.net/browse/TC-7148) Sequence number [1] still missing after [10.00 s], saw unexpected seqNr [21] for persistenceId 
+4. [TC-7131](https://tradecloud.atlassian.net/browse/TC-7131) Increase support large request bodies in SCI Connector 
+| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
+| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
+| 1 | Services (Scala) | 24-Jun-2021 22:28:26 CEST | [#1539](https://github.com/tradecloud/tradecloud-microservices/pull/1539) |  Default document size limit to 256MB | @roy-tc |  |
+
+5. [TC-7148](https://tradecloud.atlassian.net/browse/TC-7148) Sequence number [1] still missing after [10.00 s], saw unexpected seqNr [21] for persistenceId 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Jun-2021 15:31:48 CEST | [#1542](https://github.com/tradecloud/tradecloud-microservices/pull/1542) |  DO NOT MERGE Trigger build | @roy-tc |  |
 
-5. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
+6. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Web Portal | 24-Jun-2021 14:24:02 CEST | [#619](https://github.com/tradecloud/tradecloud-portal-angular/pull/619) |  add structure folders | @bohdantrc |  |
 
-6. [TC-7100](https://tradecloud.atlassian.net/browse/TC-7100) As a buyer integrator I want to merge a new buyer delivery schedule position into the order line &amp; confirmed delivery schedule&#39;s 
+7. [TC-7100](https://tradecloud.atlassian.net/browse/TC-7100) As a buyer integrator I want to merge a new buyer delivery schedule position into the order line &amp; confirmed delivery schedule&#39;s 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
 | 1 | Services (Scala) | 24-Jun-2021 13:26:25 CEST | [#1540](https://github.com/tradecloud/tradecloud-microservices/pull/1540) |  Merge incoming delivery schedule | @marcmatt |  |
-
-7. [TC-7008](https://tradecloud.atlassian.net/browse/TC-7008) As portal user I want that TC maps SCSN unit codes to human readable unit names [Planned release 23-Jul-2021]
-| #    | Repository | Last Updated | PR#  | Title | Username | Comments |
-| :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Web Portal | 24-Jun-2021 12:40:00 CEST | [#638](https://github.com/tradecloud/tradecloud-portal-angular/pull/638) |  add mapping unit code for purchaseUnitOfMeasureIso and prices | @bohdantrc |  |
 
 8. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
