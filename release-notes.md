@@ -1,25 +1,25 @@
 ---
-description: Tradecloud services and portal open pull requests and changelog (Mon Jun 28 23:30:38 CEST 2021)
+description: Tradecloud services and portal open pull requests and changelog (Tue Jun 29 11:30:51 CEST 2021)
 ---
 
 
 ## Open Pull Requests
 
-1. [TC-7148](https://tradecloud.atlassian.net/browse/TC-7148) Sequence number [1] still missing after [10.00 s], saw unexpected seqNr [21] for persistenceId 
+1. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 28-Jun-2021 10:43:31 CEST | [#1542](https://github.com/tradecloud/tradecloud-microservices/pull/1542) |  DO NOT MERGE Trigger build | @roy-tc |  |
+| 1 | Services (Go) | 29-Jun-2021 11:03:59 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
+| 2 | Services (Scala) | 24-Jun-2021 16:37:12 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  enrichment in Company service for reassigning contacts flow | @OlehVasylyshyn |  |
 
 2. [TC-7135](https://tradecloud.atlassian.net/browse/TC-7135) BE: authorize for (re)assigning a contact to an order 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Scala) | 25-Jun-2021 17:23:51 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
+| 1 | Services (Scala) | 29-Jun-2021 10:58:17 CEST | [#1531](https://github.com/tradecloud/tradecloud-microservices/pull/1531) |  authorize user for reassigning contacts | @OlehVasylyshyn |  |
 
-3. [TC-6958](https://tradecloud.atlassian.net/browse/TC-6958) As ERP system, I want to be updated via the webhook connector when a contact of an order is (re)assigned.   [Planned release 24-Jun-2021]
+3. [TC-7148](https://tradecloud.atlassian.net/browse/TC-7148) Sequence number [1] still missing after [10.00 s], saw unexpected seqNr [21] for persistenceId 
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
 | :--- | :---       | :---         | :--- | :---  | :---     | :--- |
-| 1 | Services (Go) | 25-Jun-2021 15:31:31 CEST | [#400](https://github.com/tradecloud/tradecloud-microservices-go/pull/400) |  Implemented webhook from reassigning contacts | @OlehVasylyshyn |  |
-| 2 | Services (Scala) | 24-Jun-2021 16:37:12 CEST | [#1533](https://github.com/tradecloud/tradecloud-microservices/pull/1533) |  enrichment in Company service for reassigning contacts flow | @OlehVasylyshyn |  |
+| 1 | Services (Scala) | 28-Jun-2021 10:43:31 CEST | [#1542](https://github.com/tradecloud/tradecloud-microservices/pull/1542) |  DO NOT MERGE Trigger build | @roy-tc |  |
 
 4. [TC-6585](https://tradecloud.atlassian.net/browse/TC-6585) As a supplier I want to download a CSV file with only the data i&#39;m interested in of the orders.    [Planned release 05-Jul-2021]
 | #    | Repository | Last Updated | PR#  | Title | Username | Comments |
