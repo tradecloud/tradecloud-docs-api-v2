@@ -80,16 +80,15 @@ Never resend **all** or **all active** orders or responses periodically.
 
 As buyer your integration **should not change the order destination or line item** when updating an order.  
 If you wish to change the order destination, or a line item, either:
-* Discuss this with your supplier through the chat function in the Portal. If your supplier agrees, update the order(line) accordingly through your integration.
-* Cancel the order(line) and create a new order(line) with the alternative destination or item.
+
+* Discuss this with your supplier through the chat function in the Portal. If your supplier agrees, update the order\(line\) accordingly through your integration.
+* Cancel the order\(line\) and create a new order\(line\) with the alternative destination or item.
 
 Your integration **must support a line delivery schedule with multiple schedule lines** when sending or receiving an order, response or event.  
 If your ERP does not support a delivery schedule in an order line, this will conflict with split lines that may be sent back by your supplier. You can either:
 
 * Map the delivery schedule lines that come in on ERP order lines in your integration.
-  
 * Aggregate Tradecloud's delivery schedule lines that are sent by your supplier as they come in, but never send an update regarding the delivery schedule after the order was created.
-
 * Reject any supplier proposal or reopen request with split delivery lines.
 
 Your integration **must support the other party may add or remove a delivery schedule line**.
@@ -109,3 +108,4 @@ Your integration should only upload doucments and images with **supported Media 
 ## Reopen an order
 
 ## Cancel an order
+

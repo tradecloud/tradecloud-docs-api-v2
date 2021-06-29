@@ -15,3 +15,4 @@ When a line has no goods to be delivered, for example a service, fee or text lin
 {% hint style="info" %}
 Lines having the `noDeliveryExpected` indicator set will never become`Overdue`
 {% endhint %}
+

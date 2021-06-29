@@ -17,7 +17,7 @@ The supplier can request to cancel by setting `indicators.cancel`on either order
 {% page-ref page="send-order-response/" %}
 
 {% hint style="warning" %}
-This is a **request** to the buyer to cancel an order or line. 
+This is a **request** to the buyer to cancel an order or line.
 
 The buyer has to **approve** the cancel request before Tradecloud accepts it.
 {% endhint %}

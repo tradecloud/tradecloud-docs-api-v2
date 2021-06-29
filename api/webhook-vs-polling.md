@@ -161,3 +161,4 @@ Store the **latest** \(in the last order in the response body\) `lastUpdatedAt` 
 * The latest `lastUpdatedAt` should be stored **persistent**. When your integration is restarted or crashes, `lastUpdatedAt` should still be available.
 * If there is no order in the order response body, use the same `lastUpdatedSince` in the next polling request.
 * The very first time, use a date in the past, from the point you want to receive existing order responses.
+

@@ -40,3 +40,4 @@ Alternatively, as a buyer you may:
 
 * [Reopen an order](reopen.md) which will restart the order process.
 * [Cancel an order](cancel.md) which will end the order process.
+

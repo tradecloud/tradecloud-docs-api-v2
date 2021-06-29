@@ -135,3 +135,4 @@ A request can have an XML body, such as purchase order sent to the `sci-connecto
 Tradecloud supports XML following the [SCSN Standard](https://smartconnected.semantic-treehouse.nl/#/Standards)
 
 * XML text [MUST be encoded using UTF-8](https://tools.ietf.org/html/rfc8259#section-8.1)
+

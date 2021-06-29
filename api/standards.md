@@ -83,3 +83,4 @@ Since URLs often contain characters outside the ASCII set, the URL has to be con
 ISO/IEC 10646-1 defines a large character set called the Universal Character Set \(UCS\) which encompasses most of the world's writing systems. The originally proposed encodings of the UCS, however, were not compatible with many current applications and protocols, and this has led to the development of UTF-8
 
 Published as [RFC 9259](https://tools.ietf.org/html/rfc8259#section-8.1)
+

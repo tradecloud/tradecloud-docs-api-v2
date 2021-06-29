@@ -106,8 +106,6 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 * `indicators.rejected`: explicitly **reject** the order, the responded lines`delivery schedule` and `prices`will be ignored.
 * Additional `indicators`:
 
-{% page-ref page="../ship-goods.md" %}
-
 {% page-ref page="../cancel.md" %}
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
@@ -173,8 +171,6 @@ The supplier may check, change and add item details if they are not correct or i
 * `indicators.accepted`: explicitly **accept** the order line as is, the responded `delivery schedule` and `prices` will be ignored.
 * `indicators.rejected`: explicitly **reject** the order line, the responded`delivery schedule` and `prices`will be ignored. When possible provide the `reason` , see below.
 * Additional `indicators`:
-
-{% page-ref page="../ship-goods.md" %}
 
 {% page-ref page="../cancel.md" %}
 

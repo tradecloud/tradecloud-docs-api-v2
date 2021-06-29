@@ -204,3 +204,4 @@ When your order process requires the buyer to always approve every line:
 ## Response
 
 When the `/api-connector/order` API method returns HTTP status code 200, the order was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order is available in the portal and is forwarded to the supplier ERP integration.
+
