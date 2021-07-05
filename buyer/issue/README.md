@@ -152,10 +152,10 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 The delivery line logistics status is one of:
 
 * `ReadyToShip`: full quantity ready to be shipped by the supplier
-
-These logistics statuses are under development and API and documentation may change:
-
 * `Shipped`: full quantity shipped by the supplier
+
+This logistics status is planned and API and documentation may change:
+
 * `Delivered`: full quantity delivered at the buyer
 {% endhint %}
 
