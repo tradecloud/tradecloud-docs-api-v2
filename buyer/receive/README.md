@@ -167,6 +167,10 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 ### Logistics fields
 
+{% hint style="warning" %}
+The buyer must provide a `deliverySchedule.position` when sending an order to be able to receive additional logistics fields.
+{% endhint %}
+
 These additional logistics fields are only available in the order line level delivery schedule:
 
 * `deliverySchedule.status`: the optional delivery line's [logistics status](./#logistics-status).
