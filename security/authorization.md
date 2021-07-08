@@ -1,6 +1,6 @@
 # Authorization
 
-In the Tradecloud1 API, almost all endpoints are protected with permission-based checks that ensure that the request is only processed if the authenticated user is authorized to execute this operation.
+In the API v2, almost all endpoints are protected with permission-based checks that ensure that the request is only processed if the authenticated user is authorized to execute this operation.
 
 Below you will find an overview of how these _user identity permissions_ \(in short, _permissions_\) are currently configured in our platform. 
 
