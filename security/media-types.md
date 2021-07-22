@@ -33,8 +33,6 @@ You may upload documents and images using below Media Type and File Extension co
 | text/plain | dxf, step, stp, txt |  |
 | text/xml | xml |  |
 | video/mp4 | mp4 |  |
-| x-psm | psm |  |
-| x-step | stp |  |
 
 ## References
 
