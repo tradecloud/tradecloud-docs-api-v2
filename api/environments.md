@@ -9,7 +9,11 @@ Tradecloud has 3 environments available for customers:
 * [Production live environment](environments.md#production-environment)
 * [Acceptance test environment](environments.md#acceptance-test-environment)
 
+TODO: point to swagger docs
+
 ## Production environment
+
+TODO: this points to the api listing. Should this point to the gitbook instead?
 
 There is one [production environment](https://api.tradecloud1.com/) a.k.a. LIVE environment. Use [https://api.tradecloud1.com/v2/api-connector/](https://api.tradecloud1.com/v2/api-connector/) to send order \(responses\).
 
@@ -22,6 +26,8 @@ It has an availability Service Level Objective of 95% per month.
 Maintenance can be planned on working days from 19:00 to 23:00 UTC \(20:00 to 00:00 CET and 21:00 to 01:00 CEST during daylight saving time\) or in weekends and will be announced at least 1 working day ahead on the [Tradecloud status page](http://status.tradecloud1.com)
 
 ## Acceptance test environment
+
+TODO: this points to the api listing. Should this point to the gitbook instead?
 
 There is one [acceptance test environment](https://api.accp.tradecloud1.com). Use [https://api.accp.tradecloud1.com/v2/api-connector/](https://api.accp.tradecloud1.com/v2/api-connector/) to send order \(responses\).
 
