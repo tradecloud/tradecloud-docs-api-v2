@@ -16,13 +16,18 @@ You can use the [Swagger UI](https://swagger.io/tools/swagger-ui/) to explore an
 | sci-connector | [YAML](https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) | [YAML](https://api.tradecloud1.com/v2/sci-connector/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/sci-connector/specs.yaml) |
 
 
-## Getting a token using the Swagger UI
-
-TODO: fill this or remove it.
-
-TO DO some screenshots with a little text
-
 ## Send an order using the Swagger UI
 
-TO DO some screenshots with a simple order with a little text
+1. Click the "Authorize" button on the top right  
+   ![](../../.gitbook/assets/swagger-ui/step1.png)
+2. Fill in your Basic Authorization credentials of the integration user that was provided to you. Click "Authorize" and then "close".  
+   ![](../../.gitbook/assets/swagger-ui/step2.png)
+3. Click the endpoint you want to use and click on "Try it out".
+   ![](../../.gitbook/assets/swagger-ui/step3.png)
+4. Adjust the request body according to the data you want to send to Tradecloud.
+   ![](../../.gitbook/assets/swagger-ui/step4.png)
+5. Click the "Execute" button.  
+   The "Responses" section in the Swagger UI should display the API response and the effects of your request should now be visible in the Tradecloud Portal.
+
+
 
