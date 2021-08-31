@@ -4,17 +4,9 @@ description: Using Swagger UI for API client development
 
 # Swagger UI
 
-You can use the [Swagger UI](https://swagger.io/tools/swagger-ui/) to explore and test the Tradecloud API:
+You can use the [Swagger UI](https://swagger.io/tools/swagger-ui/) to explore and test the Tradecloud API.
 
-| Service | Acceptance | Production |
-|---|---|---|
-| api-connector | [YAML](https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) | [YAML](https://api.tradecloud1.com/v2/api-connector/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml) |
-| authentication | [YAML](https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) | [YAML](https://api.tradecloud1.com/v2/authentication/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/authentication/specs.yaml) |
-| object-storage | [YAML](https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml) | [YAML](https://api.tradecloud1.com/v2/object-storage/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/object-storage/specs.yaml) |
-| order-search | [YAML](https://api.accp.tradecloud1.com/v2/order-search/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml) | [YAML](https://api.tradecloud1.com/v2/order-search/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/order-search/specs.yaml) |
-| order-webhook-client | [YAML](https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml) | [YAML](https://api.tradecloud1.com/v2/order-webhook-client/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/order-webhook-client/specs.yaml) |
-| sci-connector | [YAML](https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) | [YAML](https://api.tradecloud1.com/v2/sci-connector/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/sci-connector/specs.yaml) |
-
+Please refer to the [API Environments page](../environments.md) for an overview of the available Swagger UI documentation.
 
 ## Send an order using the Swagger UI
 

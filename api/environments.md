@@ -9,31 +9,55 @@ Tradecloud has 3 environments available for customers:
 * [Production live environment](environments.md#production-environment)
 * [Acceptance test environment](environments.md#acceptance-test-environment)
 
-TODO: point to swagger docs
-
 ## Production environment
 
-TODO: this points to the api listing. Should this point to the gitbook instead?
-
-There is one [production environment](https://api.tradecloud1.com/) a.k.a. LIVE environment. Use [https://api.tradecloud1.com/v2/api-connector/](https://api.tradecloud1.com/v2/api-connector/) to send order \(responses\).
-
+There is one production environment a.k.a. LIVE environment. 
 The latest features will be made available by the Tradecloud continuous delivery process.
 
 It has an availability Service Level Objective of 95% per month.
 
-## Planned production maintenance
+#### Documentation
+
+You can use the endpoints below to integrate with the production environment 
+Most integration processes start by sending an order (response) to [https://api.tradecloud1.com/v2/api-connector/](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml).
+
+You can use the [Swagger UI](tools/swagger-ui.md) to explore and test the Tradecloud API:
+
+| Service | Production |
+|---|---|
+| https://api.tradecloud1.com/v2/api-connector | [YAML](https://api.tradecloud1.com/v2/api-connector/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml) |
+| https://api.tradecloud1.com/v2/authentication | [YAML](https://api.tradecloud1.com/v2/authentication/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/authentication/specs.yaml) |
+| https://api.tradecloud1.com/v2/object-storage | [YAML](https://api.tradecloud1.com/v2/object-storage/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/object-storage/specs.yaml) |
+| https://api.tradecloud1.com/v2/order-search | [YAML](https://api.tradecloud1.com/v2/order-search/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/order-search/specs.yaml) |
+| https://api.tradecloud1.com/v2/order-webhook-client | [YAML](https://api.tradecloud1.com/v2/order-webhook-client/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/order-webhook-client/specs.yaml) |
+| https://api.tradecloud1.com/v2/sci-connector | [YAML](https://api.tradecloud1.com/v2/sci-connector/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/sci-connector/specs.yaml) |
+
+
+### Planned production maintenance
 
 Maintenance can be planned on working days from 19:00 to 23:00 UTC \(20:00 to 00:00 CET and 21:00 to 01:00 CEST during daylight saving time\) or in weekends and will be announced at least 1 working day ahead on the [Tradecloud status page](http://status.tradecloud1.com)
 
 ## Acceptance test environment
 
-TODO: this points to the api listing. Should this point to the gitbook instead?
-
-There is one [acceptance test environment](https://api.accp.tradecloud1.com). Use [https://api.accp.tradecloud1.com/v2/api-connector/](https://api.accp.tradecloud1.com/v2/api-connector/) to send order \(responses\).
+There is one [acceptance test environment](https://api.accp.tradecloud1.com). 
 
 Buyers and suppliers can test new features and develop and test their Tradecloud API integration.
-
 The latest features will be made available by the Tradecloud continuous delivery process.
 
 It has an availability Service Level Objective of 90% per month.
 
+#### Documentation 
+
+You can use the endpoints below to integrate with the acceptance environment
+Most integration processes start by sending an order (response) to [https://api.accp.tradecloud1.com/v2/api-connector/](https://swagger-ui.accp.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml).
+
+You can [use the Swagger UI](tools/swagger-ui.md) to explore and test the Tradecloud API:
+
+| Service | Production |
+|---|---|
+| https://api.accp.tradecloud1.com/v2/api-connector | [YAML](https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) |
+| https://api.accp.tradecloud1.com/v2/authentication | [YAML](https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) |
+| https://api.accp.tradecloud1.com/v2/object-storage | [YAML](https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml) |
+| https://api.accp.tradecloud1.com/v2/order-search | [YAML](https://api.accp.tradecloud1.com/v2/order-search/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml) |
+| https://api.accp.tradecloud1.com/v2/order-webhook-client | [YAML](https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml) |
+| https://api.accp.tradecloud1.com/v2/sci-connector | [YAML](https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) |
