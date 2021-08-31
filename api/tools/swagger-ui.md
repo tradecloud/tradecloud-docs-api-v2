@@ -6,7 +6,9 @@ description: Using Swagger UI for API client development
 
 You can use the [Swagger UI](https://swagger.io/tools/swagger-ui/) to explore and test the Tradecloud API.
 
-Please refer to the [API Environments page](../environments.md) for an overview of the available Swagger UI documentation.
+Please refer to the API Environments page for an overview of the available Swagger UI documentation.
+
+{% page-ref page="../environments.md" %}
 
 ## Send an order using the Swagger UI
 

@@ -18,12 +18,12 @@ It has an availability Service Level Objective of 95% per month.
 
 #### Documentation
 
-You can use the endpoints below to integrate with the production environment 
-Most integration processes start by sending an order (response) to [https://api.tradecloud1.com/v2/api-connector/](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml).
+You can use the endpoints below to integrate with the production environment. 
+Use [https://api.tradecloud1.com/v2/api-connector/](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml) to send an order (response).
 
-You can use the [Swagger UI](tools/swagger-ui.md) to explore and test the Tradecloud API:
+You can [use the Swagger UI](tools/swagger-ui.md) to explore and test the Tradecloud API:
 
-| Service | Production |
+| Service | Docs |
 |---|---|
 | https://api.tradecloud1.com/v2/api-connector | [YAML](https://api.tradecloud1.com/v2/api-connector/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml) |
 | https://api.tradecloud1.com/v2/authentication | [YAML](https://api.tradecloud1.com/v2/authentication/specs.yaml) / [Swagger UI](https://swagger-ui.prod.tradecloud1.com/?url=https://api.tradecloud1.com/v2/authentication/specs.yaml) |
@@ -48,12 +48,12 @@ It has an availability Service Level Objective of 90% per month.
 
 #### Documentation 
 
-You can use the endpoints below to integrate with the acceptance environment
-Most integration processes start by sending an order (response) to [https://api.accp.tradecloud1.com/v2/api-connector/](https://swagger-ui.accp.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml).
+You can use the endpoints below to integrate with the acceptance environment.
+Use [https://api.accp.tradecloud1.com/v2/api-connector/](https://swagger-ui.accp.tradecloud1.com/?url=https://api.tradecloud1.com/v2/api-connector/specs.yaml) to send an order (response).
 
 You can [use the Swagger UI](tools/swagger-ui.md) to explore and test the Tradecloud API:
 
-| Service | Production |
+| Service | Docs |
 |---|---|
 | https://api.accp.tradecloud1.com/v2/api-connector | [YAML](https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) |
 | https://api.accp.tradecloud1.com/v2/authentication | [YAML](https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml) |
