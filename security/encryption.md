@@ -16,5 +16,5 @@ Check the quality of the Tradecloud certificate using [SSL Labs](https://www.ssl
 
 ## Encrypted and hashed tokens
 
-The Tradecloud API uses hashed [JSON Web Tokens](https://jwt.io/) therefore the token can only be compromised.
+The Tradecloud API uses hashed [JSON Web Tokens](https://jwt.io/) therefore the token cannot be compromised.
 
