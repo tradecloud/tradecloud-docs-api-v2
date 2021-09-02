@@ -2,9 +2,9 @@
 description: Tradecloud API encryption
 ---
 
-# Encryption
+# Connection Encryption
 
-Tradecloud API uses encryption on two levels:
+Tradecloud API uses encryption to secure your connection to the API on two levels:
 
 ## Transport Layer Security
 
@@ -16,5 +16,5 @@ Check the quality of the Tradecloud certificate using [SSL Labs](https://www.ssl
 
 ## Encrypted and hashed tokens
 
-The Tradecloud API uses hashed [JSON Web Tokens](https://jwt.io/) therefor the token cannot be changed.
+The Tradecloud API uses hashed [JSON Web Tokens](https://jwt.io/) therefore the token can only be compromised.
 
