@@ -2,7 +2,7 @@
 description: Tradecloud API encryption
 ---
 
-# Connection Encryption
+# Encryption
 
 Tradecloud API uses encryption to secure your connection to the API on two levels:
 

@@ -48,8 +48,6 @@ Therefor **XML** based transformations **expecting ordering** will break.
 
 Tradecloud supports a sub set of the [RFC 6838 Media Type Specifications](https://tools.ietf.org/html/rfc6838).
 
-{% page-ref page="../security/media-types.md" %}
-
 ## OpenAPI
 
 The [OpenAPI Version 2.0 Specification \(OAS 2.0\)](https://swagger.io/specification/v2/) creates a RESTful interface for easily developing and consuming an API by effectively mapping all the resources and operations associated with it.
