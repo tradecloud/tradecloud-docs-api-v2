@@ -70,7 +70,7 @@ Bearer Access-Token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": "67aa8ece-5d41-496f-a94c-483e360b833b",
   "filename": "test.pdf",

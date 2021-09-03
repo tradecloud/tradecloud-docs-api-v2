@@ -38,7 +38,7 @@ Create user body
 User created \(HTTP status code and user id will be returned\)
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
