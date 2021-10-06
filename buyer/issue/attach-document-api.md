@@ -93,7 +93,7 @@ Successfully verified and attached order documents.
 
 {% api-method-response-example httpCode=202 %}
 {% api-method-response-example-description %} 
-Successfully queued order documents. The purchase order number has not yet been verified.
+Successfully queued the order documents attachment. The purchase order number has not yet been verified.
 {% endapi-method-response-example-description %}
 {% endapi-method-response-example %}
 
@@ -112,7 +112,7 @@ Order not found.
 {% endhint %}
 
 {% hint style="info" %}
-When ataching documents the provided purchase order number will be verified. 
+When attaching documents the provided purchase order number will be verified. 
 
 Response status codes:
 - 200 OK - the purchase order number exists and the documents will be attached.

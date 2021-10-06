@@ -120,7 +120,7 @@ Successfully verified and attached order response documents.
 
 {% api-method-response-example httpCode=202 %}
 {% api-method-response-example-description %} 
-Successfully queued order response documents. The buyer account number and purchase order number has not yet been verified.
+Successfully queued order response documents attachment. The buyer account number and purchase order number have not yet been verified.
 {% endapi-method-response-example-description %}
 {% endapi-method-response-example %}
 

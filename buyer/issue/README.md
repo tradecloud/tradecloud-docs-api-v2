@@ -56,7 +56,7 @@ Successfully verified and sent order.
 
 {% api-method-response-example httpCode=202 %}
 {% api-method-response-example-description %} 
-Successfully queued order. The order has not yet been verified.
+Successfully queued order. The supplier account code has not yet been verified.
 {% endapi-method-response-example-description %}
 {% endapi-method-response-example %}
 
