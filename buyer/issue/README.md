@@ -56,9 +56,8 @@ Successfully verified and sent order.
 
 {% api-method-response-example httpCode=202 %}
 {% api-method-response-example-description %} 
-Cake successfully retrieved. 
-{% endapi-method-response-example-description %}
 Successfully queued order. The order has not yet been verified.
+{% endapi-method-response-example-description %}
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=404 %}
@@ -76,7 +75,9 @@ Supplier not found.
 {% endhint %}
 
 {% hint style="info" %}
-When sending an order the provided supplier account number will be verified. Response status codes:
+When sending an order the provided supplier account number will be verified. 
+
+Response status codes:
 - 200 OK - the supplier account number exists and the order will be processed.
 - 202 Accepted - the supplier verification has been skipped due to service unavailability and the order has been queued.
 - 404 Not Found - the supplier account number has not been found. 
