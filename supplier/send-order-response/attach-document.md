@@ -2,6 +2,10 @@
 description: How to attach a document to an order or line response
 ---
 
+{% hint style="warning" %}
+This feature is not available yet. Please contact support@tradecloud1.com if you need this feature.
+{% endhint %}
+
 # Attach a document to an order response
 
 You can attach documents using three methods:
@@ -107,21 +111,40 @@ See OpenAPI specs
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
+{% api-method-response-example-description %} 
+Successfully verified and attached order response documents.
 {% endapi-method-response-example-description %}
-
-```text
-
-```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=202 %}
+{% api-method-response-example-description %} 
+Successfully queued order response documents attachment. The buyer account number and purchase order number have not yet been verified.
+{% endapi-method-response-example-description %}
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %} 
+Order not found.
+{% endapi-method-response-example-description %}
+{% endapi-method-response-example %}
+
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% hint style="info" %}
 TO DO: Attach order documents by supplier OpenAPI specs
+{% endhint %}
+
+{% hint style="info" %}
+When ataching documents the provided buyer account number and purchase order number will be verified. 
+
+Response status codes:
+- 200 OK - the buyer account number and purchase order number exist and the documents will be attached.
+- 202 Accepted - the order verification has been skipped due to service unavailability and the document attachment has been queued.
+- 404 Not Found - either the buyer account number or the purchase order number has not been found. 
 {% endhint %}
 
 ## Order response documents body

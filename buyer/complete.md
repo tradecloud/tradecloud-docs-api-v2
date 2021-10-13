@@ -62,7 +62,25 @@ application/json
 {% endapi-method-request %}
 
 {% api-method-response %}
+
 {% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %} 
+Successfully verified and sent order indicators.
+{% endapi-method-response-example-description %}
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=202 %}
+{% api-method-response-example-description %} 
+Successfully queued order indicators. The purchase order number has not yet been verified.
+{% endapi-method-response-example-description %}
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %} 
+Order not found.
+{% endapi-method-response-example-description %}
+{% endapi-method-response-example %}
+
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -92,3 +110,11 @@ Body example:
 [Send order indicators OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute)
 {% endhint %}
 
+{% hint style="info" %}
+When sending order indicators the provided purchase order number will be verified. 
+
+Response status codes:
+- 200 OK - the purchase order number exists and the order indicators will be processed.
+- 202 Accepted - the order verification has been skipped due to service unavailability and the order indicators have been queued.
+- 404 Not Found - the purchase order number has not been found. 
+{% endhint %}
