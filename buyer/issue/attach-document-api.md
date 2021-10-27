@@ -13,6 +13,8 @@ You can attach documents using two methods:
 
 You can attach documents body using the `documents` field on either `order` or `lines` level in the order body of the `/order` API.
 
+This will NOT create an `OrderDocumentsAttachedByBuyer`activity and NO acknowledge task for the supplier.
+
 {% page-ref page="./" %}
 
 ### Documents body
@@ -61,6 +63,8 @@ Body example:
 ## 2. Attach to an existing order using the `/order/documents` API
 
 You can attach documents to existing orders using the `documents` field on either `order` or `lines` level in the body of the `/order/documents` API.
+
+This will create  `OrderDocumentsAttachedByBuyer` and, if enabled, an acknowledge task for the supplier.
 
 {% hint style="warn" %}
 Before attaching a document to an order, the order must have been sent to Tradecloud first.
