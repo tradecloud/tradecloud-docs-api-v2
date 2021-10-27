@@ -4,11 +4,14 @@ description: Choose an appropriate API to attach a document to an order or line
 
 # Choose attach document API
 
-You can attach documents using either of the following API's:
+You can attach documents using two methods:
 
-## 1. Embedded in the order message using the /order API
+1. Embedded in the order, using the `/order` API
+2. Attach to an existing order, using the `/order/documents` API
 
-You can attach documents body using `documents` field of either `order` or `lines` fields of the order body.
+## 1. Embedded in the order message using the `/order` API
+
+You can attach documents body using the `documents` field on either `order` or `lines` level in the order body of the `/order` API.
 
 {% page-ref page="./" %}
 
@@ -32,7 +35,8 @@ Body example:
        {
          "code": "Document0Code",
          "revision": "Document0Revision",
-         "name": "Document0Name"
+         "name": "Document0Name",
+         "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
       }
     ],
     ...
@@ -41,19 +45,26 @@ Body example:
     {
       "position": "0001",
       "documents": [
-         {
-           "code": "Document1Code",
-           "revision": "Document1Revision",
-           "name": "Document1Name"
-         }
-       ],
-       ...
+        {
+          "code": "Document1Code",
+          "revision": "Document1Revision",
+          "name": "Document1Name",
+          "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
+        }
+      ],
+      ...
     }
   ]
 }
 ```
 
-## 2. Separate from the order message using the /order/documents API
+## 2. Attach to an existing order using the `/order/documents` API
+
+You can attach documents to existing orders using the `documents` field on either `order` or `lines` level in the body of the `/order/documents` API.
+
+{% hint style="warn" %}
+Before attaching a document to an order, the order must have been sent to Tradecloud first.
+{% endhint %}
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order/documents" %}
 {% api-method-summary %}
@@ -137,7 +148,12 @@ Response status codes:
 
 #### Documents
 
-* `code` : optional document code or number. The document code should be unique within your company and immutable.
+* `code` : optional document code or number. The document code should be unique within your company and immutable. 
+
+{% hint style="info" %}
+If a document for an order(line) has the same code as an existing document at that order(line), the original will be overwritten. Otherwise, the newly attached document will be appended.
+{% endhint %}
+
 * `revision`: optional document revision \(or version\) code or number
 * `name` : optional document short \(file\) name
 * `description` : optional document description or long name
@@ -145,7 +161,34 @@ Response status codes:
 * `objectId`: optional Tradecloud object identifier which was returned by the Tradecloud object-storage upload
 * `url`: optional document location if it is not stored in the Tradecloud object-storage.
 
-### Response
 
-When the `/api-connector/order/documents` API method returns HTTP status code 200, the order documents were successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order documents are available in the portal and are forwarded to the supplier ERP integration.
+Body example:
 
+```text
+{
+  "order": {
+    "purchaseOrderNumber": "PO123456789",
+    "documents": [
+       {
+         "code": "Document0Code",
+         "revision": "Document0Revision",
+         "name": "Document0Name",
+         "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
+      }
+    ],
+  },
+  "lines": [
+    {
+      "position": "0001",
+      "documents": [
+        {
+          "code": "Document1Code",
+          "revision": "Document1Revision",
+          "name": "Document1Name",
+          "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
+        }
+      ],
+    }
+  ]
+}
+```
