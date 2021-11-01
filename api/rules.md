@@ -68,7 +68,7 @@ Tradecloud may respond with [HTTP Status Code 429](https://tools.ietf.org/html/r
 
 ### Queue and retry messages with an exponential backoff.
 
-The Tradecloud [environments](environments.md) are not 100% available. It is the API client's responsibility to queue the message and automatically retry with exponential backoff till Tradecloud is available again. An alternative is to warn the ERP user, who is trying to send the message to Tradecloud, so the user can manually retry later.
+The Tradecloud [environments](environments.md) do not have an availability SLO of 100%. If Tradecloud is temporarily unavailable, it is the API client's responsibility to queue the message and automatically retry with exponential backoff till Tradecloud is available again. An alternative is to warn the ERP user, who is trying to send the message to Tradecloud, so the user can manually retry later.
 
 When Tradecloud responds with either a: 
 
