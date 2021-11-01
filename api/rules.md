@@ -70,13 +70,13 @@ Tradecloud may respond with [HTTP Status Code 429](https://tools.ietf.org/html/r
 
 The Tradecloud [environments](environments.md) do not have an availability SLO of 100%. If Tradecloud is temporarily unavailable, it is the API client's responsibility to queue the message and automatically retry with exponential backoff till Tradecloud is available again. An alternative is to warn the ERP user, who is trying to send the message to Tradecloud, so the user can manually retry later.
 
-When Tradecloud responds with either a: 
+If Tradecloud responds with either: 
 
-- any HTTP Status Code 5xx Server Error or
+- a HTTP Status Code 5xx Server Error or
 - [HTTP Status Code 429](https://tools.ietf.org/html/rfc6585#section-4) `Too Many Requests` or 
 - the requests does time out (currently 5 secs. at Tradecloud API side)
   
-Then the client must automatically retry using an exponential backoff strategy or use a manual retry strategy. 
+Then the client must automatically retry, using an exponential backoff strategy, or use a manual retry strategy. 
 The [Exponential Backoff Calculator](http://backoffcalculator.com/?interval=5&rate=2&attempts=5) is handy to verify the retry plan.
 
 ### Only send new or changed orders or order responses
