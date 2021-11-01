@@ -17,6 +17,10 @@ This will NOT create an `OrderDocumentsAttachedByBuyer`activity and NO acknowled
 
 {% page-ref page="./" %}
 
+{% hint style="info" %}
+[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
+{% endhint %}
+
 ### Documents body
 
 * `code` : optional document code or number. The document code should be unique within your company and immutable.
@@ -27,38 +31,6 @@ This will NOT create an `OrderDocumentsAttachedByBuyer`activity and NO acknowled
 * `objectId`: optional Tradecloud object identifier which was returned by the Tradecloud object-storage upload
 * `url`: optional document location if it is not stored in the Tradecloud object-storage.
 
-Body example:
-
-```text
-{
-  "order": {
-    "purchaseOrderNumber": "PO123456789",
-    "documents": [
-       {
-         "code": "Document0Code",
-         "revision": "Document0Revision",
-         "name": "Document0Name",
-         "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
-      }
-    ],
-    ...
-  },
-  "lines": [
-    {
-      "position": "0001",
-      "documents": [
-        {
-          "code": "Document1Code",
-          "revision": "Document1Revision",
-          "name": "Document1Name",
-          "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
-        }
-      ],
-      ...
-    }
-  ]
-}
-```
 
 ## 2. Attach to an existing order using the `/order/documents` API
 
@@ -164,35 +136,3 @@ If a document for an order(line) has the same code as an existing document at th
 * `type`: optional document business type
 * `objectId`: optional Tradecloud object identifier which was returned by the Tradecloud object-storage upload
 * `url`: optional document location if it is not stored in the Tradecloud object-storage.
-
-
-Body example:
-
-```text
-{
-  "order": {
-    "purchaseOrderNumber": "PO123456789",
-    "documents": [
-       {
-         "code": "Document0Code",
-         "revision": "Document0Revision",
-         "name": "Document0Name",
-         "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
-      }
-    ],
-  },
-  "lines": [
-    {
-      "position": "0001",
-      "documents": [
-        {
-          "code": "Document1Code",
-          "revision": "Document1Revision",
-          "name": "Document1Name",
-          "objectId": "00f03b98-2511-489f-9695-13791b3f66b6"
-        }
-      ],
-    }
-  ]
-}
-```
