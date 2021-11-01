@@ -14,8 +14,8 @@ The delivery history contains the actual physical deliveries. With the actual de
 
 There are two ways to send the delivery history to Tradecloud:
 
-- send the delivery history using the `lines.deliveryHistory` field and updating the order using the `/order` API.
-- send one or more delivery events using the `/api-connector/order/deliveries` API.
+- by sending the delivery history using the `lines.deliveryHistory` field and updating the order using the `/order` API.
+- by sending one or more delivery events using the `/api-connector/order/deliveries` API.
 
 ### Send the delivery history by resending an order using the `/order` API
 
