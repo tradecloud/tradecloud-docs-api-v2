@@ -10,7 +10,7 @@ There are two ways to announce the buyer has received goods:
 
 ## Actual delivery history
 
-The delivery history contains the actual physical deliveries. With the actual deliveries versus the planned deliveries Tradecloud can calculate which goods should still be delivered or are overdue.
+The delivery history contains the actual physical deliveries. With the actual deliveries versus the planned deliveries, Tradecloud can calculate which goods should still be delivered or are overdue.
 
 There are two ways to send the delivery history to Tradecloud:
 
