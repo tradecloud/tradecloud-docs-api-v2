@@ -117,14 +117,14 @@ Response status codes:
 * `buyerAccountNumber`: the buyer account number as known in your ERP system.
 
 {% hint style="warning" %}
-The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
+The `buyerAccountNumber` should be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
 {% endhint %}
 
 * `purchaseOrderNumber`: the purchase order number as sent by the buyer.
-* `contact`: the supplier employee responsible for this order. You can either send his/her email or userName as known in your ERP system.
+* `contact.email`: the supplier employee responsible for this order. The user with this email address should be active in Tradecloud.
 
 {% hint style="warning" %}
-`buyerAccountNumber`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
+`buyerAccountNumber` and `contact.email` should be unique within your company and never change. Never renumber or re-use numbers or code's.
 {% endhint %}
 
 ### Other order fields

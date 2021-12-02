@@ -89,7 +89,7 @@ Response status codes:
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
 
 {% hint style="warning" %}
-The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
+The `supplierAccountNumber` should be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
 {% endhint %}
 
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system.
@@ -99,11 +99,11 @@ The `purchaseOrderNumber` must not contain whitespace characters
 {% endhint %}
 
 * `destination`: the delivery destination of this order as known in your ERP system
-* `contact`: the employee responsible for this order. You can either send his/her email or userName as known in your ERP system
-* `supplierContact.email`: if known, the supplier employee responsible for this order.
+* `contact.email`: the buyer employee responsible for this order. The user with this email address should be active in Tradecloud.
+* `supplierContact.email`: if known, the supplier employee responsible for this order. The user with this email address should be active in Tradecloud.
 
 {% hint style="warning" %}
-`supplierAccountNumber`, `purchaseOrderNumber`, `destination.code`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
+`supplierAccountNumber`, `purchaseOrderNumber`, `destination.code` and `contact.email` should be unique within your company and never change. Never renumber or re-use numbers or code's.
 {% endhint %}
 
 ### Other order fields
