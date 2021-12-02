@@ -43,6 +43,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `notes`: are simple custom fields, added by the buyer.
 * `labels`: value-added services labels on order level.
 * `documents`: contain meta data and link of attached documents by the buyer, see:
+* `orderType`: the order type, one of `Purchase` or `Forecast`.
 
 {% page-ref page="download-document.md" %}
 

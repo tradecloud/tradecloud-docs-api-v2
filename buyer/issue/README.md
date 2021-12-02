@@ -85,23 +85,25 @@ Response status codes:
 
 ## Order
 
-* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company permissions.
+* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company authorization.
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
+
+{% hint style="warning" %}
+The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
+{% endhint %}
+
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system.
 
 {% hint style="warning" %}
-The purchase order number must not contain whitespace characters
+The `purchaseOrderNumber` must not contain whitespace characters
 {% endhint %}
 
 * `destination`: the delivery destination of this order as known in your ERP system
 * `contact`: the employee responsible for this order. You can either send his/her email or userName as known in your ERP system
+* `supplierContact.email`: if known, the supplier employee responsible for this order.
 
 {% hint style="warning" %}
 `supplierAccountNumber`, `purchaseOrderNumber`, `destination.code`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
-{% endhint %}
-
-{% hint style="warning" %}
-The `supplierAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
 ### Other order fields
@@ -118,6 +120,7 @@ When all order lines have no goods to be delivered, for example service, fee or 
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `labels`: value-added services labels on order level. Please note the practicable number of labels is dependent on the supplier.
 * `documents`: contain meta data and link of attached documents, see:
+* `orderType`: the order type, one of `Purchase` or `Forecast`. Default `Purchase`.
 
 {% page-ref page="attach-document.md" %}
 

@@ -113,17 +113,18 @@ Response status codes:
 
 ## Order
 
-* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company permissions.
+* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company authorization.
 * `buyerAccountNumber`: the buyer account number as known in your ERP system.
+
+{% hint style="warning" %}
+The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
+{% endhint %}
+
 * `purchaseOrderNumber`: the purchase order number as sent by the buyer.
 * `contact`: the supplier employee responsible for this order. You can either send his/her email or userName as known in your ERP system.
 
 {% hint style="warning" %}
 `buyerAccountNumber`, `contact.email` and `contact.userName` should be unique within your company and never change. Never renumber or re-use numbers or code's.
-{% endhint %}
-
-{% hint style="warning" %}
-The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your supplier. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
 ### Other order fields
