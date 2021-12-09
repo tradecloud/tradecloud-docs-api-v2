@@ -24,4 +24,3 @@ Availability and booking:
 [https://meet.intercom.com/roydebokx](https://meet.intercom.com/roydebokx)
 
 Booked per half hour with a Zoom meeting link
-
