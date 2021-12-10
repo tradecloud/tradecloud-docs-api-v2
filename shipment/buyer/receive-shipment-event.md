@@ -31,7 +31,7 @@ Contact support if you need the polling API to receive shipment messages:
 * `supplierShipment`: the supplier side header of the shipment, see [Supplier shipment header](#buyer-shipment-header)
 * `buyerShipment`: the buyer side header part of the shipment, see [Buyer shipment header](#buyer-shipment-header)
 * `lines`: a list of all the shipment lines, see [Shipment line](#shipment-line)
-* `locations`: 	the departure, next destination and final destination locations of a shipment, see [Shipment locations](#shipment-locations)
+* `locations`: the departure, next destination and final destination locations of a shipment, see [Shipment locations](#shipment-locations)
 * `meta`: meta information about the shipment, see [Shipment meta information](#shipment-meta-information)
 
 ### Supplier shipment header 
