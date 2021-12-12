@@ -104,7 +104,7 @@ When a purchase order number is provided, but the item is not or partly provided
 
 * `location`: the location where the shipment should arrive next, see [Shipment location](#shipment-location)
 
-Scheduled start and end date/times indicate the scheduled time window of arrival.
+Scheduled start and end date/times indicate the scheduled time window of arrival:
 
 * `scheduledStartDate`: start local date of the arrival time window
 * `scheduledStartTime`: start local time of the arrival time window
@@ -115,7 +115,7 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
 
 * `location`: the location where the shipment should arrive finally, see [Shipment location](#shipment-location)
 
-Scheduled start and end date/times indicate the scheduled time window of arrival.
+Scheduled start and end date/times indicate the scheduled time window of arrival:
 
 * `scheduledStartDate`: start local date of the arrival time window. 
 * `scheduledStartTime`: start local time of the arrival time window.
@@ -130,7 +130,7 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
   * PortOfLoading (used with FAS, FOB)
   * PortOfDestination (used with CFR, CIF)
   * PlaceOfDestination (used with CPT, CIP)
-  * FinalDestination (used withDAP, DPU, DDP)
+  * FinalDestination (used with DAP, DPU, DDP)
 
 * `id`: the required identifier for the location, in context of `idSchema`
 * `idScheme`: scheme, providing context to the location identifier. For example GLN
@@ -146,7 +146,7 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
 * `purchaseOrderNumber`: the related purchase order number as provided by the buyer
 * `purchaseOrderLinePosition`: the line position in the purchase order as provided by the buyer
 * `item`: the item that is shipped, see [Shipment item](#shipment-item)
-* `despatchQuantity` the scheduled or despatched quantity of this purchase order line or delivery schedule position.
+* `despatchQuantity` the despatched quantity of this purchase order line or delivery schedule position.
 * `backorderQuantity`: the backorder quantity of this purchase order line or delivery schedule position.
 
 ### Despatch advice item

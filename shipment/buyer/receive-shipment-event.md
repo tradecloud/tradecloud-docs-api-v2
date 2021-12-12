@@ -67,9 +67,8 @@ Contact support if you need the polling API to receive shipment messages:
 
 * `despatchAdviceNumber`: the unique despatch advice number as provided by the supplier
 * `despatchAdviceLinePosition` the position in the despatch advice as provided by the supplier. The position is unique within the despatch advice and immutable.
-* `despatchQuantity` the scheduled or despatched quantity of this purchase order line or delivery schedule position.
+* `despatchQuantity` the despatched quantity of this purchase order line or delivery schedule position.
 * `backorderQuantity`: the backorder quantity of this purchase order line or delivery schedule position.
-
 
 ### Shipment line meta information
 * `lastUpdatedAt`: local date and time at which the shipment line was last updated in Tradecloud. A line has been changed if the line.lastUpdatedAt is equal to the shipment.lastUpdatedAt
@@ -91,7 +90,7 @@ Contact support if you need the polling API to receive shipment messages:
 
 * `location`: the location where the shipment should arrive next, see [Shipment location](#shipment-location)
 
-Scheduled start and end date/times indicate the scheduled time window of arrival.
+Scheduled start and end date/times indicate the scheduled time window of arrival:
 
 * `scheduledStartDate`: start local date of the arrival time window
 * `scheduledStartTime`: start local time of the arrival time window
@@ -102,7 +101,7 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
 
 * `location`: the location where the shipment should arrive finally, see [Shipment location](#shipment-location)
 
-Scheduled start and end date/times indicate the scheduled time window of arrival.
+Scheduled start and end date/times indicate the scheduled time window of arrival:
 
 * `scheduledStartDate`: start local date of the arrival time window. 
 * `scheduledStartTime`: start local time of the arrival time window.
@@ -117,7 +116,7 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
   * PortOfLoading (used with FAS, FOB)
   * PortOfDestination (used with CFR, CIF)
   * PlaceOfDestination (used with CPT, CIP)
-  * FinalDestination (used withDAP, DPU, DDP)
+  * FinalDestination (used with DAP, DPU, DDP)
 
 * `id`: the required identifier for the location, in context of `idSchema`
 * `idScheme`: scheme, providing context to the location identifier. For example GLN
@@ -128,14 +127,14 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
 * `countryCodeIso`: country code
 
 ## Shipment meta information
-* `lastUpdatedAt`: local date and time at which the shipment was last updated in Tradecloud.
+* `lastUpdatedAt`: local date and time at which the shipment was last updated in Tradecloud
 * `supplierErpMeta` the supplier's ERP meta information about this shipment
   * `despatchAdviceErpIssueDateTime`: local date and time at which the despatch advice of this shipment was issued in the supplier's ERP system
 
 ## Message meta information
 
 * `messageId`: the Tradecloud identifier of this message.
-* `source`: includes meta information about the source of this message
+* `source`: includes meta information about the source of this message:
 
   * `traceId`: the Tradecloud trace identifier of this message. All related messages in a flow will have the same tradeId.
   * `userId`: the Tradecloud user identifier which triggered the first message in a flow
