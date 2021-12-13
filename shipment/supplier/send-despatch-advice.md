@@ -73,6 +73,9 @@ Response status codes:
 
 When a purchase order number is provided, but the item is not or partly provided, the item in the despatch advice will be enriched if Tradecloud can find the purchase order.
 
+{% hint style="warning" %}
+This shipment module is under development. The API and documentation may change.
+{% endhint %}
 # Despatch advice
 
 * `header`: the despatch advice header, see [Despatch advice header](#despatch-advice-header)
