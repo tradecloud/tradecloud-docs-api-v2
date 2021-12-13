@@ -8,7 +8,7 @@ description: Backward and forward compatibility responsibilities
 
 **Tradecloud** promises and is responsible that the **API** and **web hook request** are **backwards** compatible.
 
-The _\*\*_API and web hook request are compatible with previous versions of itself, which means:
+The API and web hook request are compatible with previous versions of itself, which means:
 
 * Fields will not be removed, renamed or become mandatory
 * Values will not be removed, renamed or become mandatory

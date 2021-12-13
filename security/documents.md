@@ -1,6 +1,6 @@
 # Document storage
 
-Documents that are uploaded to our Object Storage \([buyer](../buyer/issue/attach-document.md#step-1-upload-a-document-to-the-tradecloud-object-storage) / [supplier](../supplier/send-order-response/attach-document.md#step-1-upload-a-document-to-the-tradecloud-object-storage)\) are securely stored in our cloud.
+Documents that are uploaded to our Object Storage \([buyer](../order/buyer/issue/attach-document.md#step-1-upload-a-document-to-the-tradecloud-object-storage) / [supplier](../order/supplier/send-order-response/attach-document.md#step-1-upload-a-document-to-the-tradecloud-object-storage)\) are securely stored in our cloud.
 
 We protect your documents and the users that receive your documents as follows:
 
