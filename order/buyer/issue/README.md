@@ -85,7 +85,7 @@ Response status codes:
 
 ## Order
 
-* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company authorization.
+* `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has authorization for multiple companies.
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
 
 {% hint style="warning" %}
