@@ -22,15 +22,15 @@ Tradecloud will **review** your integration in the acceptance test environment *
 
 ## As a buyer
 
-{% page-ref page="buyer/issue/" %}
+{% page-ref page="order/buyer/overview.md" %}
 
-{% page-ref page="buyer/overview.md" %}
+{% page-ref page="shipment/buyer/overview.md" %}
 
 ## As a supplier
 
-{% page-ref page="supplier/send-order-response/" %}
+{% page-ref page="order/supplier/overview.md" %}
 
-{% page-ref page="supplier/overview.md" %}
+{% page-ref page="shipment/supplier/overview.md" %}
 
 ## Support
 

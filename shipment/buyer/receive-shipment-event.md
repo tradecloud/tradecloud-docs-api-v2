@@ -112,11 +112,11 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
 
 * `locationType`: a location type according to Incoterms 2020:
 
-  * AgreedPlace (used with EXW, FCA)
-  * PortOfLoading (used with FAS, FOB)
-  * PortOfDestination (used with CFR, CIF)
-  * PlaceOfDestination (used with CPT, CIP)
-  * FinalDestination (used with DAP, DPU, DDP)
+  * `AgreedPlace` (used with EXW, FCA)
+  * `PortOfLoading` (used with FAS, FOB)
+  * `PortOfDestination` (used with CFR, CIF)
+  * `PlaceOfDestination` (used with CPT, CIP)
+  * `FinalDestination` (used with DAP, DPU, DDP)
 
 * `id`: the required identifier for the location, in context of `idSchema`
 * `idScheme`: scheme, providing context to the location identifier. For example GLN
