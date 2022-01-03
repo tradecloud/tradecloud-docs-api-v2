@@ -33,7 +33,9 @@ You can [use the Swagger UI](tools/swagger-ui.md) to explore and test the Tradec
 
 ### Planned production maintenance
 
-Maintenance can be planned on working days from 19:00 to 23:00 UTC \(20:00 to 00:00 CET and 21:00 to 01:00 CEST during daylight saving time\) or in weekends and will be announced at least 1 working day ahead on the [Tradecloud status page](http://status.tradecloud1.com)
+Maintenance can be planned on working days from 19:00 to 23:00 UTC \(20:00 to 00:00 CET and 21:00 to 01:00 CEST during daylight saving time\) or in weekends and will be announced at least 1 working day ahead on the [Tradecloud status page](http://status.tradecloud1.com).
+
+Please subscribe to the status updates using the blue button on the top right of the [Tradecloud status page](http://status.tradecloud1.com).
 
 ## Acceptance test environment
 
@@ -58,3 +60,14 @@ You can [use the Swagger UI](tools/swagger-ui.md) to explore and test the Tradec
 | [https://api.accp.tradecloud1.com/v2/order-search](https://api.accp.tradecloud1.com/v2/order-search) | [YAML](https://api.accp.tradecloud1.com/v2/order-search/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml) |
 | [https://api.accp.tradecloud1.com/v2/order-webhook-client](https://api.accp.tradecloud1.com/v2/order-webhook-client) | [YAML](https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml) |
 | [https://api.accp.tradecloud1.com/v2/sci-connector](https://api.accp.tradecloud1.com/v2/sci-connector) | [YAML](https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) / [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml) |
+
+## Source IP addresses
+
+The Tradecloud source IP addresses, for both production and acceptance environments, usable for white listing in your firewall, are:
+
+- 35.204.224.107
+- 34.90.20.233
+
+Any changes will be announced at least 5 working days ahead on the [Tradecloud status page](http://status.tradecloud1.com).
+
+If you use white listing you must subscribe to the status updates using the blue button on the top right of the [Tradecloud status page](http://status.tradecloud1.com).
