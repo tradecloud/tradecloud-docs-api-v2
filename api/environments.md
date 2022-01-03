@@ -63,7 +63,7 @@ You can [use the Swagger UI](tools/swagger-ui.md) to explore and test the Tradec
 
 ## Source IP addresses
 
-The Tradecloud source IP addresses, for both production and acceptance environments, usable for white listing in your firewall, are:
+The Tradecloud source IP addresses, for both production and acceptance environments, usable for whitelisting in your firewall, are:
 
 - 35.204.224.107
 - 34.90.20.233
