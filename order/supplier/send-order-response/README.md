@@ -99,7 +99,7 @@ Buyer account number or purchase order number not found.
 {% endapi-method %}
 
 {% hint style="info" %}
-S[end order response OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute)
+S[end order response OpenAPI Specification](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute)
 {% endhint %}
 
 {% hint style="info" %}

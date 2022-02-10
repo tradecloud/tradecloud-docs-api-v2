@@ -77,7 +77,7 @@ Document upload failed, the document size exceeds 100 MB
 {% endapi-method %}
 
 {% hint style="info" %}
-[Upload document OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument)
+[Upload document OpenAPI specs](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument)
 {% endhint %}
 
 ### Step 2. Attach the uploaded document `objectId` to the order or line

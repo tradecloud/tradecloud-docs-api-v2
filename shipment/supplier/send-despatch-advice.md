@@ -59,7 +59,7 @@ Buyer not found.
 {% endapi-method %}
 
 {% hint style="info" %}
-[Send despatch advice OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendDespatchAdviceBySupplierRoute)
+[Send despatch advice OpenAPI Specification](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendDespatchAdviceBySupplierRoute)
 {% endhint %}
 
 {% hint style="info" %}

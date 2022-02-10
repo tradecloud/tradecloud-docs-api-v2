@@ -68,5 +68,5 @@ Search limit
 
 ## Response
 
-See the response body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/connection-search/specs.yaml#/connection-search/searchConnectionsRoute)
+See the response body in [Swagger UI](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/connection-search/specs.yaml#/connection-search/searchConnectionsRoute)
 

@@ -53,7 +53,7 @@
 										"document"
 									]
 								},
-								"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Select the document you wish to upload in the request **Body** tab.\n\nSee also [the api-connector API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument)"
+								"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Select the document you wish to upload in the request **Body** tab.\n\nSee also [the api-connector API specs](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument)"
 							},
 							"response": []
 						},
@@ -97,7 +97,7 @@
 										"documents"
 									]
 								},
-								"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Make sure the `companyId` and `purchaseOrderNumber` are set correctly.\n3. Provide the data related to the documents that you wish to attach on order header and/or order line level.\n\nSee also [the api-connector API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/attachOrderDocumentsByBuyerRoute)"
+								"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Make sure the `companyId` and `purchaseOrderNumber` are set correctly.\n3. Provide the data related to the documents that you wish to attach on order header and/or order line level.\n\nSee also [the api-connector API specs](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/attachOrderDocumentsByBuyerRoute)"
 							},
 							"response": []
 						}
@@ -145,7 +145,7 @@
 								"order"
 							]
 						},
-						"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Make sure the `companyId` and `supplierAccountNumber` are set correctly.\n3. Choose a unique `purchaseOrderNumber` to issue a new order. Otherwise, the order will be reissued.\n\nSee also [the api-connector API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)"
+						"description": "Before sending this request:\n\n1. Make sure you are logged in with an Integration account and the **Bearer Token** is set in the **Authorization** header.\n2. Make sure the `companyId` and `supplierAccountNumber` are set correctly.\n3. Choose a unique `purchaseOrderNumber` to issue a new order. Otherwise, the order will be reissued.\n\nSee also [the api-connector API specs](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)"
 					},
 					"response": []
 				}
@@ -197,7 +197,7 @@
 						"login"
 					]
 				},
-				"description": "See also [the authentication API specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml#/authentication/login)"
+				"description": "See also [the authentication API specs](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml#/authentication/login)"
 			},
 			"response": []
 		}

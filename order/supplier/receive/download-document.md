@@ -82,7 +82,7 @@ Bearer Access-Token
 {% endapi-method %}
 
 {% hint style="info" %}
-[GET document metadata OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/getDocumentMetadata)
+[GET document metadata OpenAPI specification](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/getDocumentMetadata)
 {% endhint %}
 
 ### Step 3. Download the document using the `downloadUrl` <a id="step-3-download-the-document-using-the-downloadurl"></a>

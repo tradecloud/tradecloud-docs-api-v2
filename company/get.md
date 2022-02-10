@@ -48,5 +48,5 @@ Bearer Access-Token
 
 ## Response
 
-See the response body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/findCompanyByIdRoute)
+See the response body in [Swagger UI](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/findCompanyByIdRoute)
 

@@ -72,7 +72,7 @@ Common used services are:
 
 ### Methods
 
-In each [OpenAPI 2.0 Specification](https://swagger.io/specification/v2/) you can find the methods supported by the service. For example the [`api-connector`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) service:
+In each [OpenAPI 2.0 Specification](https://swagger.io/specification/v2/) you can find the methods supported by the service. For example the [`api-connector`](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml) service:
 
 `POST /api-connector/order` [sends an order by the buyer](../buyer/issue/)
 
@@ -86,19 +86,19 @@ Most service methods have either path parameters, query parameters and/or a [JSO
 
 A request can have a path parameter such as an `{id}` in `object-storage` service `download` method:
 
-[`GET /object-storage/download/{id}`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/download)
+[`GET /object-storage/download/{id}`](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/download)
 
 #### Query parameters
 
 A GET request can have a query parameter such as a `query` in `company-search`:
 
-[`GET /company-search?query=name`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company-search/specs.yaml#/company-search/CompanySearchRoute)
+[`GET /company-search?query=name`](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company-search/specs.yaml#/company-search/CompanySearchRoute)
 
 ### JSON body
 
 A POST request has a [JSON](requests.md#json) body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
 
-[`POST /api-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
+[`POST /api-connector/order`](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 
 ```javascript
 {
@@ -120,7 +120,7 @@ JSON is a standard published as [RFC 8259](https://tools.ietf.org/html/rfc8259) 
 
 A request can have an XML body, such as purchase order sent to the `sci-connector` service `order` method:
 
-[`PUT /sci-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml#/sci-connector/sendOrderByBuyerRoute)
+[`PUT /sci-connector/order`](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml#/sci-connector/sendOrderByBuyerRoute)
 
 ```markup
 <?xml version="1.0" encoding="UTF-8"?>

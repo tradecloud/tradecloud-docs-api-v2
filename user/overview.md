@@ -28,7 +28,7 @@ You can invite new users for your company. Create a specialized standard user fo
 
 ## OpenAPI specs
 
-[User API](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/user/specs.yaml)
+[User API](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/user/specs.yaml)
 
-[User Search API](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/user-search/specs.yaml)
+[User Search API](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/user-search/specs.yaml)
 

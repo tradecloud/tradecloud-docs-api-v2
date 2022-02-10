@@ -18,7 +18,7 @@ This will NOT create an `OrderDocumentsAttachedByBuyer`activity and NO acknowled
 {% page-ref page="./" %}
 
 {% hint style="info" %}
-[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
+[Send order OpenAPI Specification](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 {% endhint %}
 
 ### Documents body
@@ -95,7 +95,7 @@ Order not found.
 {% endapi-method %}
 
 {% hint style="info" %}
-[Attach order documents by buyer OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/attachOrderDocumentsByBuyerRoute)
+[Attach order documents by buyer OpenAPI specs](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/attachOrderDocumentsByBuyerRoute)
 {% endhint %}
 
 {% hint style="info" %}

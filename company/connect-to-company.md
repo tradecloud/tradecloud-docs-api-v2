@@ -56,5 +56,5 @@ Connection requested
 {% endapi-method-spec %}
 {% endapi-method %}
 
-See the full description in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/requestConnectionRoute)
+See the full description in [Swagger UI](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/requestConnectionRoute)
 

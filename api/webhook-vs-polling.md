@@ -26,9 +26,9 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 
 When using `POST` or `PUT` the webhook request body will contain:
 
-* `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
-* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\) and [Receive order response](./).
-* `orderDocumentsEvent`: Or the actual order documents event, see see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
+* `eventName:`The [eventName](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
+* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\) and [Receive order response](./).
+* `orderDocumentsEvent`: Or the actual order documents event, see see [OrderDocumentEvent](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
 
 Use `POST` or `PUT` when:
 
@@ -143,12 +143,12 @@ application/json
 {% endapi-method %}
 
 {% hint style="info" %}
-[Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute)
+[Search orders OpenAPI Specification](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute)
 {% endhint %}
 
 #### Step 2. Process the orders in the search response body
 
-See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) and [Receive order response](./) for order fields descriptions.
+See the [Search orders OpenAPI Specification](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) and [Receive order response](./) for order fields descriptions.
 
 * Use the `lastUpdatedAt` on order line level to filter on the line has been changed.
 * Use the `status` field to filter on process and logistics status.

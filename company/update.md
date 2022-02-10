@@ -54,7 +54,7 @@ In the request body you may update:
 * integration settings, either webhook or ftp
 * as the PUT method will overwrite the complete company profile and settings object, copy remaining fields from [Get company profile and settings](get.md)
 
-See the request body in [Swagger UI](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/updateCompanyRoute)
+See the request body in [Swagger UI](https://swagger-ui.s.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company/specs.yaml#/company/updateCompanyRoute)
 
 ## Response
 
