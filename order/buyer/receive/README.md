@@ -135,8 +135,8 @@ The supplier may check, change and add item details if they are not correct or i
 
 ### Supplier requests
 
-* `requests.proposal`: the supplier has proposed a different delivery schedule, prices and charge lines compared to the issued order line.
-* `requests.reopenRequest`: the supplier requests to reopen the confirmed order line. The supplier has requested a different delivery schedule, prices and charge lines compared to the confirmed order line.
+* `requests.proposal`: the supplier has proposed a different delivery schedule, prices and/or charge lines compared to the issued order line.
+* `requests.reopenRequest`: the supplier requests to reopen the confirmed order line. The supplier has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
 * `deliverySchedule`: requested alternative delivery schedule, see below
 * `prices`: requested alternative prices, see below
 * `chargeLines`: requested alternative charge lines, see below

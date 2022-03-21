@@ -171,7 +171,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 
 ### Buyer requests
 
-* `requests.reopenRequest`: the buyer requests to reopen the confirmed order line. The buyer has requested a different delivery schedule, prices and charge lines compared to the confirmed order line.
+* `requests.reopenRequest`: the buyer requests to reopen the confirmed order line. The buyer has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
 * `deliverySchedule`: requested alternative delivery schedule
 * `prices`: requested alternative prices
 * `chargeLines`: requested alternative charge lines
