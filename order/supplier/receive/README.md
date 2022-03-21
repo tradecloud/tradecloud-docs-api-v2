@@ -155,6 +155,44 @@ The `mergedItemDetails` will contain the original item details added by the buye
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
+### Requested charge lines
+
+* `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+* `chargeLines.position`: the position used to identify a charge line.
+* `chargeLines.chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+* `chargeLines.chargeDescription`: a mandatory free text description, like "Transport costs".
+* `chargeLines.quantity`: the mandatory quantity of this charge line.
+* `chargeLines.price`: the mandatory price of this charge line.
+* `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+* `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+* `value`: the price value has a decimal `1234.56` format with any number of digits.
+* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
+
+### Buyer requests
+
+* `requests.reopenRequest`: the buyer requests to reopen the confirmed order line. The buyer has requested a different delivery schedule, prices and charge lines compared to the confirmed order line.
+* `deliverySchedule`: requested alternative delivery schedule
+* `prices`: requested alternative prices
+* `chargeLines`: requested alternative charge lines
+* `reason`: the reason of this request given by the buyer
+* `status`: the [request status](./#request-status).
+
+#### Request status
+
+{% hint style="info" %}
+The **request** status is one of:
+
+* `Open`: Requested by the buyer. To be approved or rejected by the supplier.
+* `Approved`: The request is approved by the supplier.
+* `Rejected`:  The request is approved by the supplier.
+* `Closed`: The request is closed because it is not relevant anymore.
+{% endhint %}
+
+{% hint style="warning" %}
+If the request status is `Open` the supplier must approve or reject it.
+{% endhint %}
+
 #### Other buyer line fields
 
 * `description`: a free format additional description of this line
@@ -173,7 +211,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 
 {% page-ref page="download-document.md" %}
 
-### **Supplier line part**
+### Supplier line part
 
 `supplierLine` is mostly an echo of your order line fields as explained in [Send order response](../send-order-response/)​.
 
@@ -216,4 +254,3 @@ These additional logistics fields are only available in the order line level del
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
-

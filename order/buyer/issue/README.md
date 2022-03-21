@@ -201,6 +201,20 @@ This logistics status is planned and API and documentation may change:
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
+### Requested charge lines
+
+* `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+* `chargeLines.position`: the position used to identify a charge line.
+* `chargeLines.chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+* `chargeLines.chargeDescription`: a mandatory free text description, like "Transport costs".
+* `chargeLines.quantity`: the mandatory quantity of this charge line.
+* `chargeLines.price`: the mandatory price of this charge line.
+* `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+* `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+* `value`: the price value has a decimal `1234.56` format with any number of digits.
+* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
+
 ### Other line fields
 
 * `description`: a free format additional description of this line

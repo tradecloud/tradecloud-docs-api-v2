@@ -146,7 +146,11 @@ The `buyerAccountNumber` should be set in the Tradecloud connection in the porta
 
 * `lines`: a purchase order response contains one or multiple lines
 * `line`: a purchase order line which contains at least the position and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
-* `purchaseOrderLinePosition`: the line position within the purchase order as sent by the buyer.
+* `purchaseOrderLinePosition`: the line position within the purchase order.
+
+{% hint style="warning" %}
+The supplier must echo the `purchaseOrderLinePosition` as sent by the buyer.
+{% endhint %}
 
 ### Item
 
@@ -175,13 +179,15 @@ The supplier may check, change and add item details if they are not correct or i
 ### Responded planned delivery schedule
 
 * `line.deliverySchedule`: the responded planned delivery schedule. Provide at least one or multiple delivery schedule lines.
-* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
-* `deliverySchedule.date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `deliverySchedule.quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
+* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`.
 
 {% hint style="warning" %}
-`deliverySchedule.position` should be unique within the delivery schedule and never change. Never renumber or re-use `deliverySchedule.position`s.
+The supplier must echo the `deliverySchedule.position` as sent by the buyer.
+When sending a new delivery line do NOT provide a `position`. The buyer will assign a `position`.
 {% endhint %}
+
+* `deliverySchedule.date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `deliverySchedule.quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
 
 ### Responded prices
 
@@ -192,6 +198,26 @@ The supplier may check, change and add item details if they are not correct or i
 * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+
+### Responded charge lines
+
+* `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+* `chargeLines.position`: the position used to identify a charge line.
+  
+{% hint style="warning" %}
+The supplier must echo the `chargeLines.position` as sent by the buyer. 
+When sending a new charge line do NOT provide a `position`. The buyer will assign a `position`.
+{% endhint %}
+
+* `chargeLines.chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+* `chargeLines.chargeDescription`: a mandatory free text description, like "Transport costs".
+* `chargeLines.quantity`: the mandatory quantity of this charge line.
+* `chargeLines.price`: the mandatory price of this charge line.
+* `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+* `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+* `value`: the price value has a decimal `1234.56` format with any number of digits.
+* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
 
 #### Other line fields
 
@@ -218,4 +244,3 @@ The supplier may check, change and add item details if they are not correct or i
 ## Response
 
 When the `/api-connector/order-response` API method returns HTTP status code 200, the order response was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order response is available in the portal and is forwarded to the buyer ERP integration.
-
