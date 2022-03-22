@@ -126,8 +126,7 @@ When all order lines have no goods to be delivered, for example service, fee or 
 
 ## Lines
 
-* `lines`: a purchase order contains one or multiple lines
-* `line`: a purchase order line which contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
+lines`: a purchase order contains one or multiple lines. A purchase order line contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
 * `position`: the required line position identifier within the purchase order
 * `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. Do NOT use row as identifier.
 
@@ -137,12 +136,12 @@ When all order lines have no goods to be delivered, for example service, fee or 
 
 ### Item
 
-* `lines.item`: the item \(or article, goods\) to be delivered
-* `lines.item.number`: the item code or number as known in your ERP
-* `lines.item.revision`: the revision \(or version\) of this item number
-* `lines.item.name`: the item short name
-* `lines.item.purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
-* `lines.item.supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
+`lines.item`: the item \(or article, goods\) to be delivered
+* `number`: the item code or number as known in your ERP
+* `revision`: the revision \(or version\) of this item number
+* `name`: the item short name
+* `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
+* `supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
 
 {% hint style="warning" %}
 `item.number` should be unique within your company and never change. Never renumber or re-use `item.number`s.
@@ -150,7 +149,7 @@ When all order lines have no goods to be delivered, for example service, fee or 
 
 ### Item details
 
-* `lines.itemDetails`: detailed part information initially provided by buyer.
+`lines.itemDetails`: detailed part information initially provided by buyer.
 
 {% hint style="info" %}
 The buyer may send item details to inform the supplier about part information.  
@@ -168,11 +167,11 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 ### Requested planned delivery schedule
 
-* `line.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
-* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`.
-* `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
-* `deliverySchedule.status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`.
+`lines.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
+* `position`: the optional position in the delivery schedule. Not to be confused with the `lines.position`.
+* `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+* `status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`.
 
 {% hint style="warning" %}
 `deliverySchedule.position` should be unique within the delivery schedule and never change. Never renumber or re-use a `deliverySchedule.position`.
@@ -193,34 +192,37 @@ This logistics status is planned and API and documentation may change:
 
 ### Requested prices
 
-* `lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
-* `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
-* `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
-* `value`: the price value has a decimal `1234.56` format with any number of digits.
-* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+`lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
+* `grossPrice`: the gross price. Use together with `discountPercentage`.
+* `discountPercentage`: the discount percentage. Use together with `grossPrice`.
+* `netPrice`: the net price.
+    * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+    * `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
 ### Requested charge lines
 
-* `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
-* `chargeLines.position`: the position used to identify a charge line.
-* `chargeLines.chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
-* `chargeLines.chargeDescription`: a mandatory free text description, like "Transport costs".
-* `chargeLines.quantity`: the mandatory quantity of this charge line.
-* `chargeLines.price`: the mandatory price of this charge line.
-* `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
-* `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
-* `value`: the price value has a decimal `1234.56` format with any number of digits.
-* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+`lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+* `position`: the position used to identify a charge line.
+* `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+* `chargeDescription`: a mandatory free text description, like "Transport costs".
+* `quantity`: the mandatory quantity of this charge line.
+* `price`: the mandatory price of this charge line.
+    * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+    * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
 
 ### Other line fields
 
 * `description`: a free format additional description of this line
 * `terms`: the line terms as agreed with your supplier
-* `terms.contractNumber`: the agreed framework contract number
-* `terms.contractPosition`: the related position within the framework contract
+    * `contractNumber`: the agreed framework contract number
+    * `contractPosition`: the related position within the framework contract
 * `projectNumber`: Your project number reference
 * `productionNumber`:  Your production number reference
 * `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)
