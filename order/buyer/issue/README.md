@@ -126,7 +126,7 @@ When all order lines have no goods to be delivered, for example service, fee or 
 
 ## Lines
 
-lines`: a purchase order contains one or multiple lines. A purchase order line contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
+`lines`: a purchase order contains one or multiple lines. A purchase order line contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
 * `position`: the required line position identifier within the purchase order
 * `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. Do NOT use row as identifier.
 
