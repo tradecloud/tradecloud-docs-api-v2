@@ -49,7 +49,7 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `notes`: are simple custom fields, added by the supplier
 * `documents`: contain meta data and link of attached documents by the supplier.
 
-  {% page-ref page="download-document.md" %}
+{% page-ref page="download-document.md" %}
 
 ## Order lines
 
@@ -126,25 +126,37 @@ The supplier may check, change and add item details if they are not correct or i
 * `salesOrderNumber`: the sales order number as known in the supplier's ERP system
 * `salesOrderPosition`: the position within the supplier's sales order
 * `description`: a free format additional description of this line by the supplier
-* `proposal`: the supplier can propose a different delivery schedule and prices, see below
+* `requests`: the supplier can request different delivery schedule, prices and charge lines, see below
 * `properties`: are key-value based custom fields, added by the supplier
 * `notes`: are simple custom fields, added by the supplier
 * `documents`: contain meta data and link of attached documents by the supplier.  
 
 {% page-ref page="download-document.md" %}
 
-## Supplier proposal
+### Supplier requests
 
-`proposal`: in stead of accepting or rejecting an order line, the supplier can alternatively propose a different delivery schedule and prices.
+`requests.proposal`: the supplier has proposed a different delivery schedule, prices and/or charge lines compared to the issued order line.
+`requests.reopenRequest`: the supplier requests to reopen the confirmed order line. The supplier has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
+* `deliverySchedule`: requested alternative delivery schedule, see below
+* `prices`: requested alternative prices, see below
+* `chargeLines`: requested alternative charge lines, see below
+* `reason`: the reason of this request given by the supplier
+* `status`: the [request status](./#request-status).
 
-{% hint style="warning" %}
-If the proposal status is `Proposed`the buyer should approve or reject it.
+#### Request status
+
+{% hint style="info" %}
+The **request** status is one of:
+
+* `Open`: Requested by the supplier. To be approved or rejected by the buyer.
+* `Approved`: The request is approved by the buyer.
+* `Rejected`:  The request is approved by the supplier.
+* `Closed`: The request is closed because it is not relevant anymore.
 {% endhint %}
 
-* `deliverySchedule`: proposed alternative delivery schedule, see below
-* `prices`:proposed alternative prices, see below
-* `reason`: the reason of this proposal given by the supplier
-* `status`: one of`Proposed`by the supplier, or `Approved` or `Rejected` by the buyer.
+{% hint style="warning" %}
+If the request status is `Open` the buyer must approve or reject it.
+{% endhint %}
 
 ## Confirmed line
 
@@ -156,14 +168,14 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 * `deliverySchedule`: agreed delivery schedule, see below
 * `prices`: agreed prices, see below
+* `chargeLines`: agreed charge lines, see below
 
 ## Delivery schedule
 
-`deliverySchedule`: the proposed or confirmed delivery schedule.
-
-* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
-* `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+`deliverySchedule`: the requested or confirmed delivery schedule.
+  * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
+  * `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+  * `quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 ### Logistics fields
 
@@ -173,18 +185,34 @@ The buyer must provide a `deliverySchedule.position` when sending an order to be
 
 These additional logistics fields are only available in the order line level delivery schedule:
 
-* `deliverySchedule.status`: the optional delivery line's [logistics status](./#logistics-status).
-* `deliverySchedule.etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
-* `deliverySchedule.eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+`deliverySchedule`: the requested or confirmed delivery schedule.
+* `status`: the optional delivery line's [logistics status](./#logistics-status).
+* `etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+* `eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 
 ## Prices
 
-`prices`: the proposed or confirmed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
+`prices`: the requested or confirmed price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
+  * `grossPrice`: the gross price. Used together with `discountPercentage`.
+  * `discountPercentage`: the discount percentage. Used together with `grossPrice`.
+  * `netPrice`: the net price.
+    * `priceInTransactionCurrency`: the  price in the transaction currency of the supplier, like `CNY` in China.
+    * `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
+      * `value`: the price value has a decimal `1234.56` format with any number of digits.
+      * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+  * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+  * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
-* `priceInTransactionCurrency`: the  price in the transaction currency of the supplier, like `CNY` in China.
-* `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
-* `value`: the price value has a decimal `1234.56` format with any number of digits.
-* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
-* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-* `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+### Charge lines
 
+`chargeLines`: the requested or confirmed additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+* `position`: the position used to identify a charge line.
+* `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+* `chargeDescription`: a mandatory free text description, like "Transport costs".
+* `quantity`: the mandatory quantity of this charge line.
+* `price`: the mandatory price of this charge line.
+  * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+    * `value`: the price value has a decimal `1234.56` format with any number of digits.
+    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+  * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.

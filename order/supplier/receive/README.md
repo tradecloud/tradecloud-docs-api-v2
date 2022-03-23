@@ -113,16 +113,16 @@ Order, line and delivery line **logistics** status is one of:
 
 ### Item
 
-* `item`: the item \(or article, goods\) to be delivered
-* `item.number`: the item code or number as known in the buyer ERP system.
-* `item.revision`: the revision \(or version\) of this item number
-* `item.name`: the item short name
-* `item.purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
-* `item.supplierItemNumber`: the item code or number as known at the supplier. 
+`item`: the item \(or article, goods\) to be delivered
+* `number`: the item code or number as known in the buyer ERP system.
+* `revision`: the revision \(or version\) of this item number
+* `name`: the item short name
+* `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
+* `supplierItemNumber`: the item code or number as known at the supplier. 
 
 ### Item details
 
-* `lines.itemDetails`: detailed part information initially provided by buyer.
+`lines.itemDetails`: detailed part information initially provided by buyer.
 
 {% hint style="info" %}
 The buyer may send item details to inform the supplier about part information.  
@@ -140,27 +140,68 @@ The `mergedItemDetails` will contain the original item details added by the buye
 
 ### Requested planned delivery schedule
 
-* `line.deliverySchedule`: the requested delivery schedule by the buyer.
-* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
-* `deliverySchedule.date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `deliverySchedule.quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+`lines.deliverySchedule`: the requested delivery schedule by the buyer.
+* `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
+* `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 ### Requested prices
 
-* `lines.prices`: the requested price. Buyers are advised to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`. 
-* `priceInTransactionCurrency`: the price in the transaction currency, like `CNY` in China.
-* `priceInBaseCurrency`: optional price in the buyer's base currency, like `EUR` in the EU.
-* `value`: the price value has a decimal `1234.56` format with any number of digits.
-* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+`lines.prices`: the requested price. Buyers are advised to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`. 
+* `grossPrice`: the gross price. Used together with `discountPercentage`.
+* `discountPercentage`: the discount percentage. Used together with `grossPrice`.
+* `netPrice`: the net price.
+    * `priceInTransactionCurrency`: the price in the transaction currency, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+    * `priceInBaseCurrency`: optional price in the buyer's base currency, like `EUR` in the EU.
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+
+### Requested charge lines
+
+`lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+* `position`: the position used to identify a charge line.
+* `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+* `chargeDescription`: a mandatory free text description, like "Transport costs".
+* `quantity`: the mandatory quantity of this charge line.
+* `price`: the mandatory price of this charge line.
+    * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+    * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
+
+### Buyer requests
+
+`requests.reopenRequest`: the buyer requests to reopen the confirmed order line. The buyer has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
+* `deliverySchedule`: requested alternative delivery schedule, see below
+* `prices`: requested alternative prices, see below
+* `chargeLines`: requested alternative charge lines, see below
+* `reason`: the reason of this request given by the buyer
+* `status`: the [request status](./#request-status).
+
+#### Request status
+
+{% hint style="info" %}
+The **request** status is one of:
+
+* `Open`: Requested by the buyer. To be approved or rejected by the supplier.
+* `Approved`: The request is approved by the supplier.
+* `Rejected`:  The request is approved by the supplier.
+* `Closed`: The request is closed because it is not relevant anymore.
+{% endhint %}
+
+{% hint style="warning" %}
+If the request status is `Open` the supplier must approve or reject it.
+{% endhint %}
 
 #### Other buyer line fields
 
 * `description`: a free format additional description of this line
 * `terms`: the line terms as agreed with your buyer
-* `terms.contractNumber`: the agreed framework contract number
-* `terms.contractPosition`: the related position within the framework contract
+    * `contractNumber`: the agreed framework contract number
+    * `contractPosition`: the related position within the framework contract
 * `projectNumber`: The buyer's project number reference
 * `productionNumber`:  The buyer's production number reference
 * `salesOrderNumber`:  The buyer's sales order number \(not be confused with your sales order number\)
@@ -173,7 +214,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 
 {% page-ref page="download-document.md" %}
 
-### **Supplier line part**
+### Supplier line part
 
 `supplierLine` is mostly an echo of your order line fields as explained in [Send order response](../send-order-response/)​.
 
@@ -190,30 +231,46 @@ Only if the [process status](./#process-status) is `Confirmed`, the line is agre
 
 * `deliverySchedule`: agreed delivery schedule, see below
 * `prices`: agreed prices, see below
+* `chargeLines`: agreed charge lines, see below
 
 ## Delivery schedule
 
 `deliverySchedule`: the proposed or confirmed delivery schedule.
-
-* `deliverySchedule.position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
-* `deliverySchedule.date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `deliverySchedule.quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+* `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
+* `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 ### Logistics fields
 
 These additional logistics fields are only available in the order line level delivery schedule:
 
-* `deliverySchedule.status`: the optional delivery line [logistics status](./#logistics-status).
-* `deliverySchedule.etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
-* `deliverySchedule.eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+`deliverySchedule`: the requested or confirmed delivery schedule.
+* `status`: the optional delivery line [logistics status](./#logistics-status).
+* `etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+* `eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 
 ## Prices
 
-`prices`: the proposed or confirmed price. Advised is to use only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
+`prices`: the requested or confirmed price. Advised is to use only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
+* `grossPrice`: the gross price. Used together with `discountPercentage`.
+* `discountPercentage`: the discount percentage. Used together with `grossPrice`.
+* `netPrice`: the net price.
+    * `priceInTransactionCurrency`: the  price in the transaction currency, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+    * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+    * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
-* `priceInTransactionCurrency`: the  price in the transaction currency, like `CNY` in China.
-* `value`: the price value has a decimal `1234.56` format with any number of digits.
-* `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
-* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-* `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+## Charge lines
 
+`chargeLines`: the requested or confirmed additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+* `position`: the position used to identify a charge line.
+* `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+* `chargeDescription`: a mandatory free text description, like "Transport costs".
+* `quantity`: the mandatory quantity of this charge line.
+* `price`: the mandatory price of this charge line.
+  * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+    * `value`: the price value has a decimal `1234.56` format with any number of digits.
+    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+  * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
