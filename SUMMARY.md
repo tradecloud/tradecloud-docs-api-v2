@@ -60,4 +60,5 @@
   * [Send despatch advice](shipment/supplier/send-despatch-advice.md)
 * [Buyer shipment process](shipment/buyer/README.md)
   * [Buyer shipment process overview](shipment/buyer/overview.md)
-  * [Receive a shipment event](shipment/buyer/receive-shipment-event.md)
+  * [Receive a shipment event](shipment/buyer/receive/README.md)
+    * [Download a document attached to a shipment](shipment/buyer/receive/download-document.md)

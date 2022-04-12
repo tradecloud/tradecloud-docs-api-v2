@@ -43,11 +43,27 @@ This shipment module is under development. The API and documentation may change.
 * `companyId`: the Tradecloud company identifier of the supplier
 * `buyerAccountNumber`: the buyer account code or number as used by the supplier
 * `shipmentNumber`: the related shipment number as known in the supplier's ERP system
+* `documents`: contain meta data, objectId or url, of attached documents by the supplier, see [Shipment document](#shipment-document) and:
+
+{% page-ref page="download-document.md" %}
 
 ### Buyer shipment header
 
 * `companyId`: the Tradecloud company identifier of the buyer
 * `supplierAccountNumber`: the supplier account code or number as known at the buyer
+* `documents`: contain meta data, objectId or url, of attached documents by the buyer, see [Shipment document](#shipment-document) and:
+
+### Shipment document
+
+* `code`: the unique identifier of the document as provided by the supplier or buyer
+* `revision`: the revision of the document
+* `name`: the short name of the document
+* `description`: the description of the document
+* `type`: the type of the document. Eg. General, Invoice, Packing List, etc...
+* `objectId`: the object ID as known by the Tradecloud Object Storage, if this document stored in Tradecloud
+* `url`: the location of the document if is not stored in Tradecloud
+* `meta`: meta information about the shipment document
+  * `lastUpdatedAt`: ISO date and time with timezone at which the shipment document was last updated in Tradecloud. A document has been added or changed if the document.meta.lastUpdatedAt is equal to the shipment.meta.lastUpdatedAt 
 
 ## Shipment line
 
@@ -75,7 +91,7 @@ This shipment module is under development. The API and documentation may change.
 * `backorderQuantity`: the backorder quantity of this purchase order line or delivery schedule position.
 
 ### Shipment line meta information
-* `lastUpdatedAt`: local date and time at which the shipment line was last updated in Tradecloud. A line has been changed if the line.lastUpdatedAt is equal to the shipment.lastUpdatedAt
+* `lastUpdatedAt`: ISO date and time with timezone at which the shipment line was last updated in Tradecloud. A line has been added or changed if the line.meta.lastUpdatedAt is equal to the shipment.meta.lastUpdatedAt
 * `supplierErpMeta` the supplier's ERP meta information about this shipment line
   * `despatchAdviceErpIssueDateTime`: local date and time at which the despatch advice of this shipment line was issued in the supplier's ERP system
 
@@ -131,7 +147,7 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
 * `countryCodeIso`: country code
 
 ## Shipment meta information
-* `lastUpdatedAt`: local date and time at which the shipment was last updated in Tradecloud
+* `lastUpdatedAt`: ISO date and time with timezone at which the shipment was last updated in Tradecloud
 * `supplierErpMeta` the supplier's ERP meta information about this shipment
   * `despatchAdviceErpIssueDateTime`: local date and time at which the despatch advice of this shipment was issued in the supplier's ERP system
 
