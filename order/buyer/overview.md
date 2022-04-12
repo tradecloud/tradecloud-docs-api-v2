@@ -16,7 +16,7 @@ You can [Update an existing order](update.md)
 
 As a buyer you should [Receive an order response](receive/) from the supplier
 
-Additionally you can [Download a to document attached to an order response](receive/download-document.md).
+Additionally you can [Download a document attached to an order response](receive/download-document.md).
 
 ## Optional step 3. Add the logistical status of goods to order update
 

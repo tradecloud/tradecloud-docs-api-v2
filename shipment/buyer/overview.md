@@ -8,4 +8,4 @@ description: Overview of the buyer shipment process.
 
 As a buyer you can [Receive a shipment event](receive/README.md) when a shipment is new or updated.
 
-Additionally you can [Download a to document attached to a shipment](receive/download-document.md).
+Additionally you can [Download a document attached to a shipment](receive/download-document.md).
