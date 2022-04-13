@@ -75,7 +75,7 @@ Bearer Access-Token
   "id": "67aa8ece-5d41-496f-a94c-483e360b833b",
   "filename": "test.pdf",
   "contentType": "application/octet-stream",
-  "downloadUrl": "https://tradecloud-accp-documents.s3.eu-central-1.amazonaws.com/67aa8ece-5d41-496f-a94c-483e360b833b?response-content-disposition=attachment%3B%20filename%3Dtest.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200406T203728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=59&X-Amz-Credential=AKIAUXFSTTRHS7FN2JKY%2F20200406%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=8bda9e2b4d810e0d7650e363373874c4f2e52aa53f1e46d82c5bf3eaf907832d"
+  "downloadUrl": "`downloadUrl`"
 }
 ```
 {% endapi-method-response-example %}
@@ -88,11 +88,6 @@ Bearer Access-Token
 {% endhint %}
 
 In this example the `downloadUrl` is:
-
-```text
-https://tradecloud-accp-documents.s3.eu-central-1.amazonaws.com/67aa8ece-5d41-496f-a94c-483e360b833b?response-content-disposition=attachment%3B%20filename%3Dtest.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200406T203728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=59&X-Amz-Credential=AKIAUXFSTTRHS7FN2JKY%2F20200406%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=8bda9e2b4d810e0d7650e363373874c4f2e52aa53f1e46d82c5bf3eaf907832d
-```
-
 ### Step 3. Download the document using the `downloadUrl`
 
 Just GET the `downloadUrl`
