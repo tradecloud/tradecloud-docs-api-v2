@@ -129,7 +129,7 @@ The supplier may check, change and add item details if they are not correct or i
 * `requests`: the supplier can request different delivery schedule, prices and charge lines, see below
 * `properties`: are key-value based custom fields, added by the supplier
 * `notes`: are simple custom fields, added by the supplier
-* `documents`: contain meta data and link of attached documents by the supplier.  
+* `documents`: contain meta data, objectId or url, of attached documents by the supplier.  
 
 {% page-ref page="download-document.md" %}
 

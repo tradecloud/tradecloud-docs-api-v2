@@ -1,13 +1,13 @@
 ---
-description: How to download a document from an order or line response
+description: How to download a document from a shipment
 ---
 
-# Download a document attached to an order response
+# Download a document attached to a shipment
 
 You can download documents using two methods:
 
-1. If the webhook order or line `document` contains an `objectId`: Download the supplier's document from the Tradecloud object-storage using the `objectId` and `downloadUrl`
-2. If the webhook order or line `document` contains an `url`: Download the document from the supplier's content server.
+1. If the webhook shipment `document` contains an `objectId`: Download the supplier's document from the Tradecloud object-storage using the `objectId` and `downloadUrl`.
+2. If the webhook shipment `document` contains an `url`: Download the document from the supplier's content server.
 
 {% hint style="info" %}
 If both `objectId` and `url` are missing in the `document`, no file is available for download.
@@ -22,12 +22,15 @@ Please check the `documents` fields in:
 ```text
 "documents": [
   {
-    "code": "123456789",
+    "code": "10007563",
     "revision": "B",
     "name": "Tradecloud API Manual",
-    "objectId": "67aa8ece-5d41-496f-a94c-483e360b833b",
+    "description": "General document",
     "type": "General",
-    "description": "General document"
+    "objectId": "05d251f0-0166-4e1e-8110-8d7a507b18f4",
+    "meta": {
+      "lastUpdatedAt": "2019-12-31T10:11:12"
+    }
   }
 ],
 ```
@@ -35,7 +38,7 @@ Please check the `documents` fields in:
 In this example the `objectId` is:
 
 ```text
-67aa8ece-5d41-496f-a94c-483e360b833b
+05d251f0-0166-4e1e-8110-8d7a507b18f4
 ```
 
 ### Step. 2. Retrieve the `downloadUrl` from the object storage
@@ -72,7 +75,7 @@ Bearer Access-Token
 
 ```
 {
-  "id": "67aa8ece-5d41-496f-a94c-483e360b833b",
+  "id": "05d251f0-0166-4e1e-8110-8d7a507b18f4",
   "filename": "test.pdf",
   "contentType": "application/octet-stream",
   "downloadUrl": "`downloadUrl`"
@@ -87,7 +90,6 @@ Bearer Access-Token
 [GET document metadata OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/getDocumentMetadata)
 {% endhint %}
 
-In this example the `downloadUrl` is:
 ### Step 3. Download the document using the `downloadUrl`
 
 Just GET the `downloadUrl`
@@ -103,12 +105,15 @@ This Amazon AWS S3 presigned url will expire within 1 minute.
 ```text
 "documents": [
   {
-    "code": "123456789",
+    "code": "10007563",
     "revision": "B",
     "name": "Tradecloud API Manual",
-    "url": "http://supplier.com/content/manual.pdf",
+    "description": "General document",
     "type": "General",
-    "description": "General document"
+    "url": "http://supplier.com/content/manual.pdf",
+    "meta": {
+      "lastUpdatedAt": "2019-12-31T10:11:12"
+    }
   }
 ],
 ```
@@ -124,4 +129,3 @@ http://supplier.com/content/manual.pdf
 ### Step 2. Download the document using the `url`
 
 Just GET the `url`
-
