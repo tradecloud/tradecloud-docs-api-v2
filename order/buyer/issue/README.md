@@ -198,8 +198,10 @@ This logistics status is planned and API and documentation may change:
 * `netPrice`: the net price.
     * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
         * `value`: the price value has a decimal `1234.56` format with any number of digits.
-        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
     * `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
@@ -215,6 +217,8 @@ This logistics status is planned and API and documentation may change:
         * `value`: the price value has a decimal `1234.56` format with any number of digits.
         * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
     * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
 
 ### Other line fields
