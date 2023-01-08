@@ -119,14 +119,15 @@ When all order lines have no goods to be delivered, for example service, fee or 
 * `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `labels`: value-added services labels on order level. Please note the practicable number of labels is dependent on the supplier.
-* `documents`: contain meta data and link of attached documents, see:
-* `orderType`: the order type, one of `Purchase` or `Forecast`. Default `Purchase`.
+* `documents`: contain meta data and link of attached documents. The total number of documents is limited to 100 documents per order header. See:
 
 {% page-ref page="attach-document.md" %}
 
+* `orderType`: the order type, one of `Purchase` or `Forecast`. Default `Purchase`.
+
 ## Lines
 
-`lines`: a purchase order contains one or multiple lines. A purchase order line contains at least the position, item and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
+`lines`: a purchase order contains one or multiple lines. The total number of lines is limited to 500 lines per order. It is structured as a JSON element in the `lines` JSON array. 
 * `position`: the required line position identifier within the purchase order
 * `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. Do NOT use row as identifier.
 
@@ -167,7 +168,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 ### Requested planned delivery schedule
 
-`lines.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines.
+`lines.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines. The total number of delivery schedule lines is limited to 100 lines per order line.
 * `position`: the optional position in the delivery schedule. Not to be confused with the `lines.position`.
 * `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
@@ -241,7 +242,7 @@ When your order process requires the buyer to always approve every line:
 {% page-ref page="propose-when-accepted.md" %}
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
-* `documents`: contain attached documents, see:
+* `documents`: contain attached documents. The total number of documents is limited to 100 documents per order line. See:
 
 {% page-ref page="attach-document.md" %}
 

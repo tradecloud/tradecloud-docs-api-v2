@@ -15,6 +15,10 @@ You can attach documents body using the `documents` field on either `order` or `
 
 This will NOT create an `OrderDocumentsAttachedByBuyer`activity and NO acknowledge task for the supplier.
 
+{% hint style="warning" %}
+The total number of documents is limited to 100 documents per order header and per order line.
+{% endhint %}
+
 {% page-ref page="./" %}
 
 {% hint style="info" %}
@@ -38,7 +42,11 @@ You can attach documents to existing orders using the `documents` field on eithe
 
 This will create  `OrderDocumentsAttachedByBuyer` and, if enabled, an acknowledge task for the supplier.
 
-{% hint style="warn" %}
+{% hint style="warning" %}
+The total number of documents is limited to 100 documents per order header and per order line.
+{% endhint %}
+
+{% hint style="warning" %}
 Before attaching a document to an order, the order must have been sent to Tradecloud first.
 {% endhint %}
 

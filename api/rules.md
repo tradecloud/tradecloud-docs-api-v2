@@ -83,13 +83,30 @@ The [Exponential Backoff Calculator](http://backoffcalculator.com/?interval=5&ra
 
 Only send an **order** or **order response** that either **is new** or **has an actual change**
 
+### Never send all orders or responses periodically
+
+Never resend **all** or **all active** orders or responses periodically.
+
 ### The order or order response should only contain new or changed lines
 
 The order or order response should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
 
-### Never send all orders or responses periodically
+### Arrays are limited to 100 objects.
 
-Never resend **all** or **all active** orders or responses periodically.
+The TOTAL number of objects is default limited to 100 objects per collection.
+
+Examples are:
+
+- 100 documents per order in total
+- 100 documents per order line in total
+- 100 delivery lines per delivery schedule
+- 100 delivery lines per delivery history
+
+Exceptions are:
+
+- 500 lines per order in total
+- 500 lines per shipment in total
+- 500 lines per supplier forecast in total
 
 ## Orders and lines
 
@@ -107,18 +124,3 @@ If your ERP does not support a delivery schedule in an order line, this will con
 * Reject any supplier proposal or reopen request with split delivery lines.
 
 Your integration **must support the other party may add or remove a delivery schedule line**.
-
-## Upload a document or image
-
-Your integration should only upload doucments and images with **supported Media Types and File Extensions**:
-
-## Attach a document
-
-## Receive goods
-
-## Complete an order
-
-## Reopen an order
-
-## Cancel an order
-

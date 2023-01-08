@@ -79,7 +79,7 @@ This shipment module is under development. The API and documentation may change.
 # Despatch advice
 
 * `header`: the despatch advice header, see [Despatch advice header](#despatch-advice-header)
-* `lines`: the despatch advice lines, see [Despatch advice line](#despatch-advice-line)
+* `lines`: the despatch advice lines, see [Despatch advice line](#despatch-advice-line). The total number of lines is limited to 500 lines per shipment.
 * `erpIssueDateTime`: local date and time at which the despatch advice of this shipment was issued in the supplier's ERP system
 
 ## Despatch advice header
