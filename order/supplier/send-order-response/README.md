@@ -138,9 +138,6 @@ The `buyerAccountNumber` should be set in the Tradecloud connection in the porta
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
-* `documents`: contain meta data and link of attached documents, see:
-
-{% page-ref page="attach-document.md" %}
 
 ## Lines
 
@@ -181,7 +178,6 @@ The supplier may check, change and add item details if they are not correct or i
   * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`.
   * `date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
   * `quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
-
 
 {% hint style="warning" %}
 The supplier must echo the `deliverySchedule.position` as sent by the buyer.
