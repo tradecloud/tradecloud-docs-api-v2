@@ -95,7 +95,7 @@ The `supplierAccountNumber` must be set in the Tradecloud connection in the port
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system.
 
 {% hint style="warning" %}
-The `purchaseOrderNumber` must not contain whitespace characters
+The `purchaseOrderNumber` must not contain whitespace characters.
 {% endhint %}
 
 * `destination`: the delivery destination of this order as known in your ERP system

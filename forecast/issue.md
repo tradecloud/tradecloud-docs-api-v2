@@ -11,7 +11,7 @@ A forecast cannot be updated, a forecast will always be appended.
 {% endhint %}
 
 {% hint style="warning" %}
-The shipment module is under development. The API and documentation may change.
+The forecast module is under development. The API and documentation may change.
 {% endhint %}
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/forecast" %}
@@ -82,7 +82,7 @@ Response status codes:
 ## Header
 
 * `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has authorization for multiple companies.
-* `supplierAccountNumber`: the supplier account number as known in your ERP system
+* `supplierAccountNumber`: the supplier account number as known in your ERP system.
 
 {% hint style="warning" %}
 The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
@@ -91,7 +91,7 @@ The `supplierAccountNumber` must be set in the Tradecloud connection in the port
 * `forecastNumber`: the mandatory forecast identifier, like code, number or timestamp as known in your forecast or ERP system. The number must be the same for all items for all suppliers in the same generated forecast.
 
 {% hint style="warning" %}
-The `forecastNumber` must not contain whitespace characters
+The `forecastNumber` must not contain whitespace characters.
 {% endhint %}
 
 ## Lines
@@ -100,12 +100,12 @@ The `forecastNumber` must not contain whitespace characters
 
 ### Item
 
-`lines.item`: the forecasted item \(or article, goods\)
-* `buyerItemNumber`: the mandatory item code or number as known in your ERP
-* `buyerItemRevision`: the revision \(or version\) of this item number
-* `buyerItemName`: the mandatory item short name
+`lines.item`: the forecasted item \(or article, goods\).
+* `buyerItemNumber`: the mandatory item code or number as known in your ERP.
+* `buyerItemRevision`: the revision \(or version\) of this item number.
+* `buyerItemName`: the mandatory item short name.
 * `supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
-* `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
+* `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`.
 
 {% hint style="warning" %}
 `buyerItemNumber` should be unique within your company and never change. Never renumber or re-use `buyerItemNumber`s.

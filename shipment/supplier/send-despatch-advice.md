@@ -92,7 +92,12 @@ When a purchase order number is provided, but the item is not or partly provided
 
 ## Despatch advice shipment
 
-* `shipmentNumber`: the related shipment number as known in the supplier's ERP system
+* `shipmentNumber`: the related shipment number as known in the supplier's ERP system.
+
+{% hint style="warning" %}
+The `shipmentNumber` must not contain whitespace characters.
+{% endhint %}
+
 * `shipmentCompanyName`: the shipment company name, like the carrier or courier name.
 * `trackingNumber`: the tracking number of the shipment as provided by the carrier or courier
 * `departure`: the departure location and date of a shipment, see [Shipment departure ](#shipment-departure)
