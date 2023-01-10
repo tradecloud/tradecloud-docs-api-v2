@@ -154,13 +154,21 @@ Response status codes:
 * `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has multiple company permissions.
 * `buyerAccountNumber`: the buyer account number as known in your ERP system
 * `purchaseOrderNumber`: the purchase order number as sent by the buyer
-* `documents`: the documents to be attached to this order
+* `documents`: the documents to be attached to this order.
+
+{% hint style="warning" %}
+The total number of documents is limited to 100 documents per order header.
+{% endhint %}
 
 ### Lines
 
 * `lines`: the purchase order lines having a new document attached
 * `position`: the purchase order line position within the purchase order
 * `documents`: the documents to be attached to this line
+
+{% hint style="warning" %}
+The total number of documents is limited to 100 documents per order line.
+{% endhint %}
 
 ### Documents
 

@@ -83,21 +83,46 @@ The [Exponential Backoff Calculator](http://backoffcalculator.com/?interval=5&ra
 
 Only send an **order** or **order response** that either **is new** or **has an actual change**
 
+### Never resend all orders or responses periodically
+
+Never *re*send **all** or **all active** orders, responses, dispatch advices or forecasts periodically.
+
+Resending periodically will result in processing delays and excessive network, server and storage resource usage.
+
 ### The order or order response should only contain new or changed lines
 
-The order or order response should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+The order or response should only contain **order lines** that are **new or changed**.
 
-### Never send all orders or responses periodically
+Sending all lines may result in processing delays and unnecessary network, server and storage resource usage.
 
-Never resend **all** or **all active** orders or responses periodically.
+### Arrays are limited to 100 objects
+
+The TOTAL number of objects is limited to 100 objects per collection by default.
+
+Examples are:
+
+- 100 documents in total per order 
+- 100 documents in total per order line
+- 100 delivery lines per delivery schedule
+- 100 delivery lines per delivery history
+
+Exceptions are:
+
+- 500 lines in total per order 
+- 500 lines in total per shipment
+- 500 lines in total per supplier forecast
 
 ## Orders and lines
+
+### Do not change destination or item
 
 As buyer your integration **should not change the order destination or line item** when updating an order.  
 If you wish to change the order destination, or a line item, either:
 
 * Discuss this with your supplier through the chat function in the Portal. If your supplier agrees, update the order\(line\) accordingly through your integration.
 * Cancel the order\(line\) and create a new order\(line\) with the alternative destination or item.
+
+### Support delivery schedule
 
 Your integration **must support a line delivery schedule with multiple schedule lines** when sending or receiving an order, response or event.  
 If your ERP does not support a delivery schedule in an order line, this will conflict with split lines that may be sent back by your supplier. You can either:
@@ -107,18 +132,3 @@ If your ERP does not support a delivery schedule in an order line, this will con
 * Reject any supplier proposal or reopen request with split delivery lines.
 
 Your integration **must support the other party may add or remove a delivery schedule line**.
-
-## Upload a document or image
-
-Your integration should only upload doucments and images with **supported Media Types and File Extensions**:
-
-## Attach a document
-
-## Receive goods
-
-## Complete an order
-
-## Reopen an order
-
-## Cancel an order
-

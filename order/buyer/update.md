@@ -67,9 +67,9 @@ The update is event oriented, you only have to send the lines new or updated. Bu
 
 ### Actual delivery history
 
-The actual delivery history may be added in an order update:
+The actual delivery history may be added in an order update. These will be used to calculate the line `Overdue` indicator.
 
-* `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery history lines. Provide all delivery history lines in an update. These will be used to calculate the line `Overdue` indicator.
+* `lines.deliveryHistory`: the historical actual delivery schedule. Provide zero, one or multiple delivery history lines. Provide all delivery history lines in an update. The total number of delivery history lines is limited to 100 lines per order line. 
 * `deliveryHistory.position`: the position in the delivery schedule. Not to be confused with the `line.position`. `deliverySchedule.position` versus `deliveryHistory.position` do not have to use the same values.
 * `deliveryHistory.date`: the actual delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../api/standards.md).
 * `deliveryHistory.quantity`: the actual delivered quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
