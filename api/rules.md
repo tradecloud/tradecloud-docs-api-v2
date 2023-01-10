@@ -83,30 +83,32 @@ The [Exponential Backoff Calculator](http://backoffcalculator.com/?interval=5&ra
 
 Only send an **order** or **order response** that either **is new** or **has an actual change**
 
-### Never send all orders or responses periodically
+### Never resend all orders or responses periodically
 
-Never resend **all** or **all active** orders or responses periodically.
+Never *re*send **all** or **all active** orders, responses, dispatch advices or forecasts periodically.
+
+Resending all orders, responses, dispatch advices or forecasts periodically will result in processing delays and excessive network, server and storage resource usage.
 
 ### The order or order response should only contain new or changed lines
 
 The order or order response should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
 
-### Arrays are limited to 100 objects.
+### Arrays are limited to 100 objects
 
-The TOTAL number of objects is default limited to 100 objects per collection.
+The TOTAL number of objects is limited to 100 objects per collection by default.
 
 Examples are:
 
-- 100 documents per order in total
-- 100 documents per order line in total
+- 100 documents in total per order 
+- 100 documents in total per order line
 - 100 delivery lines per delivery schedule
 - 100 delivery lines per delivery history
 
 Exceptions are:
 
-- 500 lines per order in total
-- 500 lines per shipment in total
-- 500 lines per supplier forecast in total
+- 500 lines in total per order 
+- 500 lines in total per shipment
+- 500 lines in total per supplier forecast
 
 ## Orders and lines
 
