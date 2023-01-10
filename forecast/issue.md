@@ -104,7 +104,7 @@ The `forecastNumber` must not contain whitespace characters.
 * `buyerItemNumber`: the mandatory item code or number as known in your ERP.
 * `buyerItemRevision`: the revision \(or version\) of this item number.
 * `buyerItemName`: the mandatory item short name.
-* `supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
+* `supplierItemNumber`: the item code or number as known at the supplier. Required in case of wholesale suppliers.
 * `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`.
 
 {% hint style="warning" %}
