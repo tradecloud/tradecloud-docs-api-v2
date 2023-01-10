@@ -87,11 +87,13 @@ Only send an **order** or **order response** that either **is new** or **has an 
 
 Never *re*send **all** or **all active** orders, responses, dispatch advices or forecasts periodically.
 
-Resending all orders, responses, dispatch advices or forecasts periodically will result in processing delays and excessive network, server and storage resource usage.
+Resending periodically will result in processing delays and excessive network, server and storage resource usage.
 
 ### The order or order response should only contain new or changed lines
 
-The order or order response should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+The order or response should only contain **order lines** that are **new or changed**.
+
+Sending all lines may result in processing delays and unnecessary network, server and storage resource usage.
 
 ### Arrays are limited to 100 objects
 
@@ -112,11 +114,15 @@ Exceptions are:
 
 ## Orders and lines
 
+### Do not change destination or item
+
 As buyer your integration **should not change the order destination or line item** when updating an order.  
 If you wish to change the order destination, or a line item, either:
 
 * Discuss this with your supplier through the chat function in the Portal. If your supplier agrees, update the order\(line\) accordingly through your integration.
 * Cancel the order\(line\) and create a new order\(line\) with the alternative destination or item.
+
+### Support delivery schedule
 
 Your integration **must support a line delivery schedule with multiple schedule lines** when sending or receiving an order, response or event.  
 If your ERP does not support a delivery schedule in an order line, this will conflict with split lines that may be sent back by your supplier. You can either:
