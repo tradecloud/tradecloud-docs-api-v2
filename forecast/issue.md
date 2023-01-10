@@ -7,7 +7,7 @@ description: How to issue a forecast as a buyer
 As buyer you can send a new forecast to your supplier.
 
 {% hint style="info" %}
-A forecast cannot be updated, a forecast will always be appended.
+A forecast cannot be updated. Issued forecasts will always be appended to the existing set of forecasts.
 {% endhint %}
 
 {% hint style="warning" %}
