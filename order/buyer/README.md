@@ -6,7 +6,7 @@ description: Overview of the buyer order process.
 
 ## Step 1. Send an order
 
-As a buyer you can [Issue a new order](issue/)
+As a buyer you can [Issue a new order](issue/README.md)
 
 Additionally you can [Attach a document to the order](issue/attach-document.md)
 
@@ -14,7 +14,7 @@ You can [Update an existing order](update.md)
 
 ## Step 2. Receive an order response
 
-As a buyer you should [Receive an order response](receive/) from the supplier
+As a buyer you should [Receive an order response](receive/README.md) from the supplier
 
 Additionally you can [Download a document attached to an order response](receive/download-document.md).
 
