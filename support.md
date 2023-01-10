@@ -17,10 +17,10 @@ API support is best effort, usually you will receive a response within 2 hours w
 
 Plan an online meeting for intensive API support in English or Dutch.
 
-We support [Zoom](https://zoom.us/), [Google Hangouts](https://hangouts.google.com/) and Microsoft Teams.
-
-Availability and booking:  
+Availability:  
 [https://meet.intercom.com/marcelmatthijs](https://meet.intercom.com/marcelmatthijs)  
 [https://meet.intercom.com/roydebokx](https://meet.intercom.com/roydebokx)
 
-Booked per half hour with a Zoom meeting link
+Do not book in Intercom, but send an invite to [support@tradecloud1.com](mailto:support@tradecloud.nl).
+
+We support Microsoft Teams and [Zoom](https://zoom.us/).

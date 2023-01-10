@@ -16,7 +16,7 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 
 Contact support if you need the polling API to receive shipment messages:
 
-{% page-ref page="../../api/webhook-vs-polling.md" %}
+{% page-ref page="../../../../api/webhook-vs-polling.md" %}
 
 {% hint style="warning" %}
 The shipment module is under development. The API and documentation may change.
