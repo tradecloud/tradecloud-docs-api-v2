@@ -89,13 +89,13 @@ Response status codes:
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
 
 {% hint style="warning" %}
-The `supplierAccountNumber` should be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
+The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
 {% endhint %}
 
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system.
 
 {% hint style="warning" %}
-The `purchaseOrderNumber` must not contain whitespace characters
+The `purchaseOrderNumber` must not contain whitespace characters.
 {% endhint %}
 
 * `destination`: the delivery destination of this order as known in your ERP system
@@ -142,7 +142,7 @@ When all order lines have no goods to be delivered, for example service, fee or 
 * `revision`: the revision \(or version\) of this item number
 * `name`: the item short name
 * `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
-* `supplierItemNumber`: the item code or number as known at the supplier. Advised in case of wholesale suppliers.
+* `supplierItemNumber`: the item code or number as known at the supplier. Required in case of wholesale suppliers.
 
 {% hint style="warning" %}
 `item.number` should be unique within your company and never change. Never renumber or re-use `item.number`s.
