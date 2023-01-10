@@ -1,5 +1,7 @@
 # Table of contents
 
+## Introduction
+
 * [Welcome](README.md)
 * [Support](support.md)
 * [Release notes](release-notes.md)
@@ -20,6 +22,9 @@
   * [Authorization](security/authorization.md)
   * [Encryption](security/encryption.md)
   * [Document storage](security/documents.md)
+
+## Processes
+
 * [Forecasts](forecast/README.md)
   * [Issue a new forecast](forecast/issue.md)
 * [Orders](order/README.md)
@@ -49,14 +54,3 @@
   * [Buyer shipment process](shipment/buyer/README.md)
     * [Receive a shipment event](shipment/buyer/receive/README.md)
       * [Download a document attached to a shipment](shipment/buyer/receive/download-document.md)
-* [Company](company/README.md)
-  * [Get your company](company/get.md)
-  * [Update your company](company/update.md)
-  * [List connected companies](company/list-connected-companies.md)
-  * [Search for new connections](company/search-new-companies.md)
-  * [Invite new connection](company/connect-to-company.md)
-* [Users](user/README.md)
-  * [List your company's users](user/list.md)
-  * [Get a user](user/get.md)
-  * [Update an user](user/update.md)
-  * [Invite a new user](user/invite-new.md)
