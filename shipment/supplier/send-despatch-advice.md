@@ -6,6 +6,10 @@ description: How to send a new or updated despatch advice to Tradecloud
 
 As supplier you can send either a **new or updated** despatch advice to your buyer.
 
+{% hint style="warning" %}
+The shipment module is under development. The API and documentation may change.
+{% endhint %}
+
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/shipment/despatch-advice" %}
 {% api-method-summary %}
 Send despatch advice by supplier
@@ -73,9 +77,6 @@ Response status codes:
 
 When a purchase order number is provided, but the item is not or partly provided, the item in the despatch advice will be enriched if Tradecloud can find the purchase order.
 
-{% hint style="warning" %}
-This shipment module is under development. The API and documentation may change.
-{% endhint %}
 # Despatch advice
 
 * `header`: the despatch advice header, see [Despatch advice header](#despatch-advice-header)

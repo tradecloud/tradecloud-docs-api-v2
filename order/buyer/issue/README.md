@@ -89,7 +89,7 @@ Response status codes:
 * `supplierAccountNumber`: the supplier account number as known in your ERP system
 
 {% hint style="warning" %}
-The `supplierAccountNumber` should be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
+The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
 {% endhint %}
 
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system.
