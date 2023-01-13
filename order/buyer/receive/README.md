@@ -19,11 +19,6 @@ First choose either the webhook API or the polling API to receive order response
 * `buyerOrder`: the buyer part of the order
 * `supplierOrder`: the supplier part of the order, see below
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
-
-{% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change.
-{% endhint %}
-
 * `status.processStatus`: is the aggregate of all lines' [process statuses](./#process-status).
 * `status.logisticsStatus`: is the aggregate of all lines' [logistics statuses](./#logistics-status).
 * `version`: the  Tradecloud order version number
@@ -61,11 +56,6 @@ The`deliveryOverdue`feature is planned and API and documentation may change.
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
 * `deliverySchedule`: the aggregated delivery schedule lines with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
-
-{% hint style="warning" %}
-The`deliveryOverdue`feature is planned and API and documentation may change.
-{% endhint %}
-
 * `status.processStatus`: the order line's [process status](./#process-status).
 * `status.logisticsStatus`: the order line's [logistics status](./#logistics-status).
 * `eventDates`: some key line event date/times
