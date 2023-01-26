@@ -172,12 +172,13 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 * `position`: the optional position in the delivery schedule. Not to be confused with the `lines.position`.
 * `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
-* `status`: The logistics status of this delivery line according to the buyer. The `deliverySchedule.position` MUST be set when providing `status`.
+* `status`: The logistics status of this delivery line according to the buyer.
+* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. UNECE.org Recommendation 19 is advised for Mode of Transport values.
 
 {% hint style="warning" %}
-`deliverySchedule.position` should be unique within the delivery schedule and never change. Never renumber or re-use a `deliverySchedule.position`.
+`deliverySchedule.position` must be unique within the delivery schedule and never change. Never renumber or re-use a `deliverySchedule.position`.
 
-The buyer must provide a `deliverySchedule.position` when providing the `status` field and to be able to receive additional logistics fields.
+The buyer must provide a `deliverySchedule.position` when providing the `status` or `transportMode` fields.
 {% endhint %}
 
 {% hint style="info" %}
@@ -185,9 +186,6 @@ The delivery line logistics status is one of:
 
 * `ReadyToShip`: full quantity ready to be shipped by the supplier
 * `Shipped`: full quantity shipped by the supplier
-
-This logistics status is planned and API and documentation may change:
-
 * `Delivered`: full quantity delivered at the buyer
 {% endhint %}
 
