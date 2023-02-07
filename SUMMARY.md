@@ -26,6 +26,7 @@
 
 * [Forecasts](forecast/README.md)
   * [Issue a new forecast](forecast/issue.md)
+  * [Issue a new Slimstock forecast](forecast/slimstock.md)
 * [Orders](order/README.md)
   * [Buyer order process](order/buyer/README.md)
     * [Issue a new order](order/buyer/issue/README.md)
