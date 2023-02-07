@@ -16,7 +16,7 @@ The forecast module is under development. The API and documentation may change.
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/forecast/slimstock" %}
 {% api-method-summary %}
-Send forecast by buyer
+Send new Slimstock forecast by buyer
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -85,7 +85,7 @@ Response status codes:
 * `supplierAccountNumber`: the supplier account number as known in your ERP system.
 
 {% hint style="warning" %}
-The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
+The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted.
 {% endhint %}
 
 * `forecastNumber`: the mandatory forecast identifier in Slimstock. The number must be the same for each supplier forecast from the same generated forecast.
@@ -96,7 +96,7 @@ The `forecastNumber` must not contain whitespace characters.
 
 ## Lines
 
-`lines`: a forecast contains one or multiple lines. A forecast line contains item, period and demand in this period.Lines are grouped into a schedule based on the same `buyerItemNumber`. When multiple lines with the same `buyerItemNumber` are provided, the item data of an arbitrary line will be used.
+`lines`: a forecast contains one or multiple lines. A forecast line contains item, period and demand in this period. Lines are grouped into a schedule based on the same `buyerItemNumber`. When multiple lines with the same `buyerItemNumber` are provided, the item data of an arbitrary line will be used.
 
 ### Item
 

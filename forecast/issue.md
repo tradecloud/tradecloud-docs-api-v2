@@ -16,7 +16,7 @@ The forecast module is under development. The API and documentation may change.
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/forecast" %}
 {% api-method-summary %}
-Send forecast by buyer
+Send new forecast by buyer
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -67,7 +67,7 @@ Supplier not found.
 {% endapi-method %}
 
 {% hint style="info" %}
-[Send forecast OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendForecastByBuyerRoute)
+[Send Slimstock forecast OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendForecastByBuyerRoute)
 {% endhint %}
 
 {% hint style="info" %}
@@ -85,10 +85,10 @@ Response status codes:
 * `supplierAccountNumber`: the supplier account number as known in your ERP system.
 
 {% hint style="warning" %}
-The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
+The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted.
 {% endhint %}
 
-* `forecastNumber`: the mandatory forecast identifier, like code, number or timestamp as known in your forecast or ERP system. The number must be the same for all items for all suppliers in the same generated forecast.
+* `forecastNumber`: the mandatory forecast identifier, like code or number as known in your forecast or ERP system. The number must be the same for all items for all suppliers in the same generated forecast.
 
 {% hint style="warning" %}
 The `forecastNumber` must not contain whitespace characters.
