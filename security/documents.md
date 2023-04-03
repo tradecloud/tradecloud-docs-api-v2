@@ -5,6 +5,8 @@ Documents that are uploaded to our Object Storage \([buyer](../order/buyer/issue
 We protect your documents and the users that receive your documents as follows:
 
 * Documents can only be uploaded or downloaded through an [encrypted connection](encryption.md)
+* The following file extensions are blocked by our API:   
+    `.ade`, `.adp`, `.apk`, `.appx`, `.appxbundle`, `.bat`, `.cab`, `.chm`, `.cmd`, `.com`, `.cpl`, `.diagcab`, `.diagcfg`, `.diagpack`, `.dll`, `.dmg`, `.ex`, `.ex_`, `.exe`, `.hta`, `.img`, `.ins`, `.iso`, `.isp`, `.jar`, `.jnlp`, `.js`, `.jse`, `.lib`, `.lnk`, `.mde`, `.msc`, `.msi`, `.msix`, `.msixbundle`, `.msp`, `.mst`, `.nsh`, `.pif`, `.ps1`, `.scr`, `.sct`, `.shb`, `.sys`, `.vb`, `.vbe`, `.vbs`, `.vhd`, `.vxd`, `.wsc`, `.wsf`, `.wsh`, `.xll`
 * Once a document is uploaded:
   * It is stored on \(hardware-level\) encrypted disks. 
   * it is stored spanning multiple EU data centers. 
