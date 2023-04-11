@@ -114,7 +114,7 @@ The `purchaseOrderNumber` must not contain whitespace characters.
 The optional buyer, buyer accounting or supplier company party:
 
 * `id`: the optional identifier for the party, for example a GLN.
-* `idScheme`: the optional scheme, providing context to the identifier. Eg. KvK, GLN, etc.
+* `idScheme`: the optional scheme, providing context to the identifier. Eg. `"KvK"`, `"GLN"`, etc.
 * `names`: the legal names of the party. It is recommended to provide at least one name.
 * `addressLines`: the location address lines of the party. It is recommended to provide at least one address line.
 * `postalCode`: the location postal code of the party. Provide when `addressLines` are provided.
