@@ -86,12 +86,15 @@ Response status codes:
 ## Order
 
 * `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has authorization for multiple companies.
-* `supplierAccountNumber`: the supplier account number as known in your ERP system
+* `buyerParty`: the optional legal entity that purchases the goods or services. See [Company party](#company-party).
+* `buyerAccountingParty`: the optional legal entity that receives and handles the invoice. The supplier must send the invoice to the buyer accounting party when specified. See [Company party](#company-party).
+* `supplierAccountNumber`: the supplier account number as known in your ERP system.
 
 {% hint style="warning" %}
 The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
 {% endhint %}
 
+* `supplierParty`: the optional legal entity that sells the goods or services. See [Company party](#company-party).
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system.
 
 {% hint style="warning" %}
@@ -103,8 +106,21 @@ The `purchaseOrderNumber` must not contain whitespace characters.
 * `supplierContact.email`: if known, the supplier employee responsible for this order. The user with this email address should be active in Tradecloud.
 
 {% hint style="warning" %}
-`supplierAccountNumber`, `purchaseOrderNumber`, `destination.code` and `contact.email` should be unique within your company and never change. Never renumber or re-use numbers or code's.
+`id`, `supplierAccountNumber`, `purchaseOrderNumber`, `destination.code` and `contact.email` should be unique within your company and never change. Never renumber or re-use identifiers, numbers or code's.
 {% endhint %}
+
+### Company party
+
+The optional buyer, buyer accounting or supplier company party:
+
+* `id`: the optional identifier for the party, for example a GLN.
+* `idScheme`: the optional scheme, providing context to the identifier. Eg. KvK, GLN, etc.
+* `names`: the legal names of the party. It is recommended to provide at least one name.
+* `addressLines`: the location address lines of the party. It is recommended to provide at least one address line.
+* `postalCode`: the location postal code of the party. Provide when `addressLines` are provided.
+* `city`: the location city of the party. Provide when `addressLines` are provided.
+* `countryCodeIso2` the ISO 3166-1 alpha-2 country code of the party. Provide when `addressLines` are provided.
+* `countryName` the optional country name of the party.
 
 ### Other order fields
 
