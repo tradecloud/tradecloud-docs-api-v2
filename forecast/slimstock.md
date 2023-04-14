@@ -10,10 +10,6 @@ As buyer you can send a new forecast from Slimstock to your supplier.
 A forecast cannot be updated. Issued forecasts will always be appended to the existing set of forecasts.
 {% endhint %}
 
-{% hint style="warning" %}
-The forecast module is under development. The API and documentation may change.
-{% endhint %}
-
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/forecast/slimstock" %}
 {% api-method-summary %}
 Send new Slimstock forecast by buyer
@@ -96,23 +92,20 @@ The `forecastNumber` must not contain whitespace characters.
 
 ## Lines
 
-`lines`: a forecast contains one or multiple lines. A forecast line contains item, period and demand in this period. Lines are grouped into a schedule based on the same `buyerItemNumber`. When multiple lines with the same `buyerItemNumber` are provided, the item data of an arbitrary line will be used.
+`lines`: a forecast contains one or multiple lines. A forecast line contains item information and up to 36 months of demand forecasts for this item.
 
-### Item
-
-`lines.item`: the forecasted item \(or article, goods\).
 * `buyerItemNumber`: the mandatory item code or number as known in Slimstock and your ERP.
 * `buyerItemRevision`: the revision \(or version\) of this item number.
 * `buyerItemName`: the mandatory item short name.
 * `supplierItemNumber`: the item code or number as known at the supplier. Required in case of wholesale suppliers.
 * `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`.
+* `startDate`: the date at which the forecasts periods start. Only the month and year of this date are used (day of month is ignored).
+* `M0`: The forecasted demand for the 0th month, being the month of `startDate`. Quantity has a decimal `1234.56` format with any number of digits.
+* `M1` - `M35`: The forecasted demands for the consecutive months. Quantity has a decimal `1234.56` format with any number of digits.
 
 {% hint style="warning" %}
 `buyerItemNumber` should be unique within your company and never change. Never renumber or re-use `buyerItemNumber`s.
 {% endhint %}
-
-* `period`: the Slimstock relative forecast period. M0 is current month, M1 is next month etc.
-* `quantity`: the forecasted demand of this item, in this period, for this supplier. Quantity has a decimal `1234.56` format with any number of digits.
 
 ## issueDateTime
 
