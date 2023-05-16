@@ -4,38 +4,25 @@ description: How to use order and line indicators as a buyer
 
 # Buyer indicators overview
 
-## Indicators
+## Order & line indicators
 
 You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
 
-### No delivery expected
-
-`noDeliveryExpected`: no goods of are expected to be delivered to the buyer.
-
-{% hint style="warning" %}
-This feature is planned. Ticket [TC-5564](https://tradecloud.atlassian.net/browse/TC-5564)
- As a buyer I want to set a "No delivery expected" indicator.
-{% endhint %}
-
-{% hint style="info" %}
-Order lines having `noDeliveryExpected` set will NEVER become `overdue`.
-{% endhint %}
-
-### ReadyToShip indicated by buyer
-
-`ReadyToShip`: this indicator is not implemented on order or line level, please use value `ReadyToShip` in the `deliverySchedule.status`.
-
 ### Shipped by supplier
 
-`Shipped`: this indicator is not implemented on order or line level, please use value `Shipped` in the `deliverySchedule.status`.
+`shipped`: all goods of this order or line are completely shipped by the supplier.
+
+{% hint style="info" %}
+The order or line having logistics status `Open`, `Produced`, `ReadyToShip`  will become `Shipped`.
+{% endhint %}
 
 ### Delivered at buyer
 
 `delivered`: all goods of the order or line are completely delivered at the buyer.
 
 {% hint style="info" %}
-Order lines having logistics status `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`.
+The order or line having logistics status `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`.
 {% endhint %}
 
 ### Completed at buyer
@@ -47,18 +34,38 @@ Order lines having logistics status `Open`, `Produced`, `ReadyToShip` or `Shippe
 - `Completed` lines cannot be completed again.
 - Completing has precedence over cancelling at the same time.
 
-### Cancelled at buyer
+### Cancelled by buyer
 
-`cancelled`: the order or line is cancelled at the buyer.
+`cancelled`: the order or line is cancelled by the buyer.
 
 - `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately.
 - `Completed` lines cannot be cancelled.
 - `Cancelled` lines cannot be cancelled again.
+
+## Order only indicators
+
+### Auto confirm
+
+`autoConfirm`: If this flag is set to true then the order lines will be automatically confirmed in case of a supplier proposal or reopen request.
 
 ### Cancel line when missing
 
-`cancelLineWhenMissing`: when set on order level, and a line is missing in the order update, the line is assumed cancelled at the buyer.
+`cancelLineWhenMissing`: If this flag set to true and existing order lines positions are not present among incoming lines then they will be cancelled.
 
 - `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately.
 - `Completed` lines cannot be cancelled.
 - `Cancelled` lines cannot be cancelled again.
+
+## Order line only indicators
+
+### No delivery expected
+
+`noDeliveryExpected`: no goods of are expected to be delivered to the buyer.
+
+{% page-ref page="no-delivery-expected.md" %}
+
+### Propose when accepted
+
+`proposeWhenAccepted`: If this flag is set to true then this line becomes automatically a supplier proposal in case the supplier the accepts a line.
+
+{% page-ref page="propose-when-accepted.md" %}
