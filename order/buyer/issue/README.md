@@ -126,11 +126,9 @@ The optional buyer, buyer accounting or supplier company party:
 
 * `description`: a free format additional description of this order
 * `terms`: the order terms as agreed with your supplier
-* `indicators`:
+* `indicators`: various order level indicators, see:
 
-When all order lines have no goods to be delivered, for example service, fee or text lines:
-
-{% page-ref page="no-delivery-expected.md" %}
+{% page-ref page="indicators.md" %}
 
 * `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
 * `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
@@ -245,7 +243,9 @@ The delivery line logistics status is one of:
 * `projectNumber`: Your project number reference
 * `productionNumber`:  Your production number reference
 * `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)
-* `indicators`:
+* `indicators`: various line level indicators, see:
+
+{% page-ref page="indicators.md" %}
 
 When a line has no goods to be delivered, for example a service, fee or text line:
 
