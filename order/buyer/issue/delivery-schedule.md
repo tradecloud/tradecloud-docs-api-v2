@@ -33,7 +33,7 @@ Provide at least one or multiple delivery schedule lines. The total number of de
 {% hint style="warning" %}
 `position` must be unique within the delivery schedule and never change. Never renumber or re-use a `position`.
 
-When no `deliverySchedule.position` is provided, most delivery schedule features are disabled.
+When no `position` is provided, most delivery schedule features are disabled.
 {% endhint %}
 
 ## Simple delivery schedule
@@ -49,14 +49,14 @@ Provide one `scheduledDelivery` per order line. The total number of `scheduledDe
 {% hint style="info" %}
 Tradecloud will merge `scheduledDelivery`'s of order lines with the same item number into one order line having a delivery schedule. The `lines.position` will be taken as `deliverySchedule.position`. 
 
-Later, in the order response Tradecloud will do the opposite, expand the this order line delivery schedule into order lines having `scheduledDelivery`'s
+In the order response Tradecloud will do the opposite: expand this order line delivery schedule into order lines having `scheduledDelivery`'s
 {% endhint %}
 
 ### `scheduledDelivery` fields
 
-* `date`: the requested delivery date of this scheduled delivery. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the requested quantity of this scheduled delivery. Quantity has a decimal `1234.56` format with any number of digits.
-* `status`: The [logistics status](#logistics-status) of this scheduled delivery according to the buyer. See .
+* `date`: the requested delivery date of this order line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `quantity`: the requested quantity of this order line. Quantity has a decimal `1234.56` format with any number of digits.
+* `status`: The [logistics status](#logistics-status) of this scheduled delivery according to the buyer.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. UNECE.org Recommendation 19 is advised for Mode of Transport values.
 
 ## Logistics status
