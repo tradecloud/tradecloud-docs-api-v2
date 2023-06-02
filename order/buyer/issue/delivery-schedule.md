@@ -10,7 +10,7 @@ description: >-
 Tradecloud works with a delivery schedule per order line.
 Each delivery line in a schedule consists of a delivery date and a quantity.
 
-Some ERP systems like SAP work natively with delivery schedule's.
+Some ERP systems like SAP work natively with delivery schedules.
 Use the Tradecloud **standard** delivery schedule in this case.
 
 Other ERP systems can only work with one date and one quantity per order line.
