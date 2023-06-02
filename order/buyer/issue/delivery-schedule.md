@@ -24,16 +24,14 @@ Provide at least one or multiple delivery schedule lines. The total number of de
 
 ### `deliverySchedule` fields
 
-* `position`: the position in the delivery schedule. Not to be confused with the `lines.position`.
+* `position`: the mandatory position in the delivery schedule. Not to be confused with the `lines.position`.
 * `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 * `status`: The [logistics status](#logistics-status) of this delivery line according to the buyer.
-* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. UNECE.org Recommendation 19 is advised for Mode of Transport values.
+* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
 {% hint style="warning" %}
 `position` must be unique within the delivery schedule and never change. Never renumber or re-use a `position`.
-
-When no `position` is provided, most delivery schedule features are disabled.
 {% endhint %}
 
 ## Simple delivery schedule
@@ -57,7 +55,7 @@ In the order response Tradecloud will do the opposite: expand this order line de
 * `date`: the requested delivery date of this order line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `quantity`: the requested quantity of this order line. Quantity has a decimal `1234.56` format with any number of digits.
 * `status`: The [logistics status](#logistics-status) of this scheduled delivery according to the buyer.
-* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. UNECE.org Recommendation 19 is advised for Mode of Transport values.
+* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
 ## Logistics status
 
