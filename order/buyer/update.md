@@ -10,39 +10,6 @@ As buyer you can send either a [new](issue/) or updated purchase order to Tradec
 The order should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
 {% endhint %}
 
-## Order process
-
-After sending an updated order to Tradecloud the order line **process status may change**:
-
-A new order line will have status `Issued` and a **confirm** task for the supplier will be created.
-
-When the order line has status `Issued` the **confirm** task for the supplier will be updated.
-
-When the order line has status `InProgress`:
-
-* When the by buyer **requested** `delivery schedule` and `prices` are **equal** to the by supplier **responded** \(either via a proposal or reopen request\)`delivery schedule` and `prices` the order process status will become `Confirmed`
-* When the **requested** `delivery schedule` and `prices` are **NOT** equal to the **responded**
-
-  `delivery schedule` and `prices` the order process status will stay `InProgress`.  
-  If there is an open reopen request, it will be updated.
-
-When the order line has status `Confirmed`:
-
-* When the by buyer **requested** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** to the supplier will be created.
-* When the **requested** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
-
-When the order line has status `Rejected`:
-
-* The process status will become `InProgress`and a confirm task for the supplier will be created
-
-When the order line already has process status `Completed` the status will **NOT** change.
-
-When the order line already has process status `Cancelled` the status will **NOT** change.
-
-And the order line **logistics status may change**:
-
-* When the order line already has logistics status  `Delivered` the status will NOT change.
-
 ## Send an updated order to Tradecloud
 
 As a buyer you can send an updated purchase order to Tradecloud.
@@ -75,7 +42,7 @@ The actual delivery history may be added in an order update. These will be used 
 * `deliveryHistory.quantity`: the actual delivered quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 {% hint style="warning" %}
-`deliveryHistory.position` should be unique within the delivery history and never change. Never renumber or re-use `deliveryHistory.position`s.
+The simple delivery history variant is under development. For now only the above standard delivery history is available.
 {% endhint %}
 
 ### Additional order and line indicators

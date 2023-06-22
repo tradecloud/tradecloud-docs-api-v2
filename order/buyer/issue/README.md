@@ -182,26 +182,11 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 ### Requested planned delivery schedule
 
-`lines.deliverySchedule`: the requested planned delivery schedule. Provide at least one or multiple delivery schedule lines. The total number of delivery schedule lines is limited to 100 lines per order line.
-* `position`: the optional position in the delivery schedule. Not to be confused with the `lines.position`.
-* `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
-* `status`: The logistics status of this delivery line according to the buyer.
-* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. UNECE.org Recommendation 19 is advised for Mode of Transport values.
+Use `lines.deliverySchedule` for the requested planned delivery schedule.
+Or alternatively use `lines.scheduledDelivery`for the requested scheduled delivery.
+Please see this page to choose between the standard or simple delivery schedule:
 
-{% hint style="warning" %}
-`deliverySchedule.position` must be unique within the delivery schedule and never change. Never renumber or re-use a `deliverySchedule.position`.
-
-The buyer must provide a `deliverySchedule.position` when providing the `status` or `transportMode` fields.
-{% endhint %}
-
-{% hint style="info" %}
-The delivery line logistics status is one of:
-
-* `ReadyToShip`: full quantity ready to be shipped by the supplier
-* `Shipped`: full quantity shipped by the supplier
-* `Delivered`: full quantity delivered at the buyer
-{% endhint %}
+{% page-ref page="delivery-schedule.md" %}
 
 ### Requested prices
 
@@ -233,6 +218,10 @@ The delivery line logistics status is one of:
         * `value`: the price value has a decimal `1234.56` format with any number of digits.
         * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
+
+{% hint style="warning" %}
+The simple variant, where charge lines are spread over multiple order lines having the same item number and each only one charge line, is not supported. Send a support request if you need it.
+{% endhint %}
 
 ### Other line fields
 
