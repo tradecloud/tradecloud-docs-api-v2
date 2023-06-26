@@ -8,7 +8,7 @@ Tradecloud will send a shipment event to the buyer when a shipment event has bee
 
 At this moment a shipment event will only be triggered when the supplier issues or updates a despatch advice.
 
-## Choose the appropriate API to receive the shipment message
+## Choose the appropriate API to receive a shipment event
 
 First choose either the webhook API or the polling API to receive shipment messages:
 

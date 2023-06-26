@@ -6,7 +6,7 @@ description: How to receive a purchase order response sent by the supplier
 
 Tradecloud will send a purchase order response to the buyer when an order event has been triggered.
 
-## Choose the appropriate API to receive the order response message
+## Choose the appropriate API to receive an order response
 
 First choose either the webhook API or the polling API to receive order response messages:
 

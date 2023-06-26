@@ -28,7 +28,7 @@ When using `POST` or `PUT` the webhook request body will contain:
 * `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
 * `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\) and [Receive order response](./).
 * `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
-* `shipmentEvent`: The actual shipment event, see [ShipmentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model" and "ShipmentEvent"\).
+* `shipmentEvent`: The actual shipment, see [Shipment](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model" and "Shipment"\).
 
 Use `POST` or `PUT` when:
 
@@ -82,7 +82,7 @@ Con's:
 
 Check if there are new or updated orders every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order.
 
-The polling pattern is most suitable for companies with low volume orders and shipments, and not willing to invest in a web server, firewall and SSL certificate.
+The polling pattern is most suitable for companies with low volume orders, and not willing to invest in a web server, firewall and SSL certificate.
 
 {% hint style="info" %}
 Pro's:

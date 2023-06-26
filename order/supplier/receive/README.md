@@ -6,7 +6,7 @@ description: How to receive a purchase order sent by the buyer.
 
 Tradecloud will send a new purchase order to the supplier when an order event has been triggered.
 
-## Choose the appropriate API to receive the order message
+## Choose the appropriate API to receive an order
 
 First choose either the webhook API or the polling API to receive order messages:
 
