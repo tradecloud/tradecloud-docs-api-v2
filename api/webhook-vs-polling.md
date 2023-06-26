@@ -1,12 +1,11 @@
 ---
 description: >-
-  Choose between the webhook API or polling API to receive an order or order
-  response
+  Choose between the webhook API or polling API to receive an order, order response or shipment message
 ---
 
 # Webhook versus polling
 
-To receive an order or order response you can use either:
+To receive an order, order response or shipment message you can use either:
 
 * The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `POST` or `PUT`.
 * The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `GET`.
@@ -14,7 +13,7 @@ To receive an order or order response you can use either:
 
 ## The Webhook Connector
 
-When an order has been changed at Tradecloud, we will trigger your webhook, which optionally contains the order event.
+When an order or shipment has been changed at Tradecloud, we will trigger your webhook, which optionally contains the order or shipment event.
 
 The webhook is most suitable for companies with real time, high volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
@@ -28,7 +27,8 @@ When using `POST` or `PUT` the webhook request body will contain:
 
 * `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
 * `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\) and [Receive order response](./).
-* `orderDocumentsEvent`: Or the actual order documents event, see see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
+* `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
+* `shipmentEvent`: The actual shipment event, see [ShipmentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model" and "ShipmentEvent"\).
 
 Use `POST` or `PUT` when:
 
@@ -82,7 +82,7 @@ Con's:
 
 Check if there are new or updated orders every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order.
 
-The polling pattern is most suitable for companies with low volume order responses and not willing to invest in a web server, firewall and SSL certificate.
+The polling pattern is most suitable for companies with low volume orders and shipments, and not willing to invest in a web server, firewall and SSL certificate.
 
 {% hint style="info" %}
 Pro's:
@@ -94,7 +94,7 @@ Con's:
 * Not real time, a polling period is typically 5 mins.
 * You need to build or configure a periodic polling pattern at your side.
 * You cannot filter on which order events to receive, you will receive any order line change.
-* You cannot see what order event happened.
+* You cannot see what order event happened, multiple events may have happened.
 {% endhint %}
 
 ### Polling usage

@@ -8,13 +8,9 @@ Tradecloud will send a shipment event to the buyer when a shipment event has bee
 
 At this moment a shipment event will only be triggered when the supplier issues or updates a despatch advice.
 
-## Choose the appropriate API to receive the shipment event
+## Choose the appropriate API to receive the shipment message
 
-Currently only the shipment webhook API is supported.
-
-See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) for setting up and using the webhook.
-
-Contact support if you need the polling API to receive shipment messages:
+First choose either the webhook API or the polling API to receive shipment messages:
 
 {% page-ref page="../../../../api/webhook-vs-polling.md" %}
 
@@ -147,7 +143,7 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
 * `countryCodeIso`: country code
 
 ## Shipment meta information
-* `lastUpdatedAt`: ISO date and time with timezone at which the shipment was last updated in Tradecloud
+* `lastUpdatedAt`: ISO date and time with timezone at which the shipment was last updated in Tradecloud, useful for polling shipments.
 * `supplierErpMeta` the supplier's ERP meta information about this shipment
   * `despatchAdviceErpIssueDateTime`: local date and time at which the despatch advice of this shipment was issued in the supplier's ERP system
 
