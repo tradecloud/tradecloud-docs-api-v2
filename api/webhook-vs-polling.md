@@ -32,17 +32,17 @@ When using `POST` or `PUT` the webhook request body will contain:
 
 Use `POST` or `PUT` when:
 
-* You want to receive real time order events.
-* You want to receive the order event content.
-* You only want to receive selected order events.
+* You want to receive real time order or shipment events.
+* You want to receive the order event or shipment event content.
+* You only want to receive selected order or shipment events.
 * You **only** need to receive the order lines that are **changed**, not all the lines of the order.
 
 {% hint style="info" %}
 Pro's:
 
-* Real time, receive the order event within a second.
-* Order event content included.
-* You can filter on which order events to receive \(in the company integration settings or filter in your integration\).
+* Real time, receive the order or shipment event within a second.
+* Order or shipment event content included.
+* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company profile or filter events yourself in your integration.
 * You do not have to build or configure the polling pattern.
 
 Con's:
@@ -64,15 +64,14 @@ Use `GET` when:
 {% hint style="info" %}
 Pro's:
 
-* Semi real time, receive the order within seconds.
-* You can filter on which order events to receive \(in the company integration settings only\).
+* Semi real time, receive the order or shipment within seconds.
+* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company profile.
 * You do not have to build or configure the polling pattern.
 
 Con's:
 
-* You need to fetch the order.
-* Basic authentication is not yet supported for the GET `/order/:orderId` API. Send a support request if you need it.
-* You cannot see what order event happened.
+* You need to fetch the order or shipment.
+* You cannot see what order or shipment event happened.
 * You need to build or configure a webhook at your side.
 * You need to publish the webhook on the internet \(web server and firewall required\).
 * You need to obtain and configure a public SSL certificate.
@@ -80,7 +79,7 @@ Con's:
 
 ## The polling pattern
 
-Check if there are new or updated orders every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order.
+Check if there are new or updated orders or shipments every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order or shipment.
 
 The polling pattern is most suitable for companies with low volume orders, and not willing to invest in a web server, firewall and SSL certificate.
 
@@ -93,20 +92,20 @@ Con's:
 
 * Not real time, a polling period is typically 5 mins.
 * You need to build or configure a periodic polling pattern at your side.
-* You cannot filter on which order events to receive, you will receive any order line change.
-* You cannot see what order event happened, multiple events may have happened.
+* You cannot filter on which order or shipments events to receive, you will receive any order line change.
+* You cannot see what order or shipment event happened, multiple events may have happened.
 {% endhint %}
 
 ### Polling usage
 
-#### Step 1. Fetch updated orders periodically
+#### Step 1. Fetch updated orders or shipments periodically
 
-Fetch every polling period, typically 5 minutes, all orders which are new or changed since last date time.
+Fetch every polling period, typically 5 minutes, all orders or shipments which are new or changed since last date time.
 
 * Use the latest `lastUpdatedAt` from previous poll request in the `lastUpdatedSince` filter.
 * Sorting is set automatically to `lastUpdatedAt` order `asc` \(latest `lastUpdatedAt` will be in the last order in the response body\)
-* Set `limit` to the maximum of `100` orders.
-* Optionally use `offset` for paging, but if you receive more than `100` orders, it is easier to reduce the polling period, so you receive less orders per request.
+* Set `limit` to the maximum of `100` orders or shipments.
+* Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
 
 {% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order-search/search" %}
 {% api-method-summary %}
@@ -146,18 +145,26 @@ application/json
 [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute)
 {% endhint %}
 
+{% hint style="info" %}
+[Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute)
+{% endhint %}
+
 #### Step 2. Process the orders in the search response body
 
-See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) and [Receive order response](./) for order fields descriptions.
+See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute).
 
-* Use the `lastUpdatedAt` on order line level to filter on the line has been changed.
-* Use the `status` field to filter on process and logistics status.
+* Use the `lastUpdatedAt` on order line level to filter on if the line has been changed.
+* Use the `status` field to filter on order process and logistics status.
+
+See the [Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute).
+
+* Use the `status` field to filter on shipment process and logistics status.
 
 #### Step 4. Store the `lastUpdatedAt` for the next polling request
 
-Store the **latest** \(in the last order in the response body\) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
+Store the **latest** \(in the last order or shipment in the response body\) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
 
 * `lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ`, but to keep it simple just store it as a `String`.
 * The latest `lastUpdatedAt` should be stored **persistent**. When your integration is restarted or crashes, `lastUpdatedAt` should still be available.
-* If there is no order in the order response body, use the same `lastUpdatedSince` in the next polling request.
+* If there is no order in the order or shipment response body, use the same `lastUpdatedSince` in the next polling request.
 * The very first time, use a date in the past, from the point you want to receive existing order responses.
