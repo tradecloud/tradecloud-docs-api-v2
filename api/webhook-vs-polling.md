@@ -64,7 +64,7 @@ Use `GET` when:
 {% hint style="info" %}
 Pro's:
 
-* Semi real time, receive the order or shipment within seconds.
+* Real time, receive the order or shipment within a second.
 * You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company profile.
 * You do not have to build or configure the polling pattern.
 
