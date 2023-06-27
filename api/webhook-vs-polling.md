@@ -34,7 +34,7 @@ Use `POST` when:
 
 * You want to receive real time order or shipment events.
 * You want to receive the order event or shipment event content.
-* You only want to receive selected order or shipment events.
+* You only want to receive order or shipment events of a specific type.
 * You **only** need to receive the order lines that are **changed**, not all the lines of the order.
 
 {% hint style="info" %}
