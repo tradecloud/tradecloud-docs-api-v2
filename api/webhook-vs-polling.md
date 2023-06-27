@@ -30,7 +30,7 @@ When using `POST` or `PUT` the webhook request body will contain:
 * `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
 * `shipmentEvent`: The actual shipment, see [Shipment](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model" and "Shipment"\).
 
-Use `POST` or `PUT` when:
+Use `POST` when:
 
 * You want to receive real time order or shipment events.
 * You want to receive the order event or shipment event content.
