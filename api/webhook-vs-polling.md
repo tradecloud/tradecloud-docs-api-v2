@@ -153,7 +153,7 @@ application/json
 
 See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute).
 
-* Use the `lastUpdatedAt` on order line level to filter on if the line has been changed.
+* Use the `lastUpdatedAt` on order line level to filter the lines that have been changed.
 * Use the `status` field to filter on order process and logistics status.
 
 See the [Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute).
