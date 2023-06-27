@@ -7,7 +7,7 @@ description: >-
 
 To receive an order, order response or shipment message you can use either:
 
-* The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `POST` or `PUT`.
+* The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `POST`.
 * The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) using `GET`.
 * The polling pattern.
 
@@ -17,17 +17,21 @@ When an order or shipment has been changed at Tradecloud, we will trigger your w
 
 The webhook is most suitable for companies with real time, high volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
-You can either use `POST` or `PUT` or alternatively `GET`.
+You can either use `POST` or alternatively `GET`.
 
 See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) for setting up and using the webhook.
 
-### Using `POST` or `PUT`
+### Using `POST`
 
-When using `POST` or `PUT` the webhook request body will contain:
+When using `POST` the **order** webhook request body contains:
 
-* `eventName:`The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
-* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\) and [Receive order response](./).
+* `eventName`: The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
+* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\)
 * `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
+
+When using `POST` the **shipment** webhook request body contains:
+
+* `eventName`: The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model") summarizes what has happened.
 * `shipmentEvent`: The actual shipment, see [Shipment](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model" and "Shipment"\).
 
 Use `POST` when:
@@ -58,7 +62,7 @@ When using `GET` the webhook request URL will contain the Tradecloud `orderId`, 
 
 Use `GET` when:
 
-* Same as `POST` and `PUT` above, but:
+* Same as `POST` above, but:
 * You need to receive the **complete** order with **all** the order lines, regardless they are changed or not.
 
 {% hint style="info" %}
@@ -92,7 +96,7 @@ Con's:
 
 * Not real time, a polling period is typically 5 mins.
 * You need to build or configure a periodic polling pattern at your side.
-* You cannot filter on which order or shipments events to receive, you will receive any order line change.
+* You cannot filter on which order or shipment events to act on, you will receive any order or shipment change.
 * You cannot see what order or shipment event happened, multiple events may have happened.
 {% endhint %}
 
@@ -106,40 +110,6 @@ Fetch every polling period, typically 5 minutes, all orders or shipments which a
 * Sorting is set automatically to `lastUpdatedAt` order `asc` \(latest `lastUpdatedAt` will be in the last order in the response body\)
 * Set `limit` to the maximum of `100` orders or shipments.
 * Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
-
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/order-search/search" %}
-{% api-method-summary %}
-Search orders
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Basic Authentication or Bearer Access-Token
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-{ "filters": { "lastUpdatedSince": "YYYY-MM-DDThh:mm:ss.SSSZ" }, "offset": 0, "limit": 100 }
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
 {% hint style="info" %}
 [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute)
@@ -158,9 +128,7 @@ See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud
 
 See the [Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute).
 
-* Use the `status` field to filter on shipment process and logistics status.
-
-#### Step 4. Store the `lastUpdatedAt` for the next polling request
+#### Step 3. Store the `lastUpdatedAt` for the next polling request
 
 Store the **latest** \(in the last order or shipment in the response body\) `lastUpdatedAt` to be used as `lastUpdatedSince` in the next polling request.
 
