@@ -6,9 +6,9 @@ description: How to receive a purchase order sent by the buyer.
 
 Tradecloud will send a new purchase order to the supplier when an order event has been triggered.
 
-## Choose the appropriate API to receive the order
+## Choose the appropriate API to receive an order
 
-First choose either the webhook API or the polling API to receive orders:
+First choose either the webhook API or the polling API to receive order messages:
 
 {% page-ref page="../../../../api/webhook-vs-polling.md" %}
 
@@ -24,8 +24,7 @@ First choose either the webhook API or the polling API to receive orders:
 * `version`: the  Tradecloud order version number.
 * `eventDates`: some key order event date/times.
 * `meta`: meta information, including source and trace info, about this messsage
-* `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling.
-
+* `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling orders.
 ### Buyer order part
 
 `buyerOrder` contains the buyer order fields:
