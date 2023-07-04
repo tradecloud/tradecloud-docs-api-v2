@@ -31,8 +31,11 @@ First choose either the webhook API or the polling API to receive shipment messa
 
 ## Shipment state
 
+The shipment data:
+
 * `id`: the Tradecloud shipment identifier
-* `trackingNumber`: the tracking number of the shipment as provided by the carrier or courier
+* `identifiers`: 	the identifiers related to this shipment, see [Shipment identifiers](#shipment-identifiers)
+* `transportMode`: the Mode of Transport name used for the delivery of goods. [Unece Code List Recommendation 19](https://unece.org/trade/uncefact/cl-recommendations) is advised for Mode of Transport names.
 * `supplierShipment`: the supplier side header of the shipment, see [Supplier shipment header](#buyer-shipment-header)
 * `buyerShipment`: the buyer side header part of the shipment, see [Buyer shipment header](#buyer-shipment-header)
 * `loadCarriers`: a list of all the load carriers in this shipment, each load carrier containing shipment lines, see [Load carrier](#load-carrier)
@@ -40,20 +43,46 @@ First choose either the webhook API or the polling API to receive shipment messa
 * `locations`: the departure, next destination and final destination locations of a shipment, see [Shipment locations](#shipment-locations)
 * `meta`: meta information about the shipment, see [Shipment meta information](#shipment-meta-information)
 
+### Shipment identifiers
+
+The identifiers related to this shipment:
+
+* `billOfLadingNumber`: the bill of lading number as provided by the carrier
+* `imoNumber`: the IMO [ship identification number](https://www.imo.org/en/ourwork/msas/pages/imo-identification-number-scheme.aspx) as provided by the carrier
+* `carrierShipmentNumber`: the shipment number as provided by the carrier
+* `trackingNumber`: the tracking number as provided by the carrier or courier
+
 ### Supplier shipment header 
 
-* `companyId`: the Tradecloud company identifier of the supplier
+The supplier side header of this shipment:
+
+* `companyId`: the mandatory Tradecloud company identifier of the supplier
+* `supplierParty`: the unique party identifier and scheme, like [GLN](https://www.gs1.org/standards/id-keys/gln), of the supplier
 * `buyerAccountNumber`: the buyer account code or number as used by the supplier
 * `shipmentNumber`: the related shipment number as known in the supplier's ERP system
-* `documents`: contain meta data, objectId or url, of attached documents by the supplier, see [Shipment document](#shipment-document) and:
-
-{% page-ref page="download-document.md" %}
+* `invoiceNumbers`: the related invoice numbers as known in the supplier's ERP system
+* `documents`: the supplier documents attached to this shipment, see [Shipment document](#shipment-document)
+* `contacts`: the supplier contacts related to this shipment
 
 ### Buyer shipment header
 
-* `companyId`: the Tradecloud company identifier of the buyer
+The buyer side header of this shipment:
+
+* `companyId`: the mandatory Tradecloud company identifier of the buyer
+* `buyerParty`: the unique party identifier and scheme, like [GLN](https://www.gs1.org/standards/id-keys/gln), of the buyer
 * `supplierAccountNumber`: the supplier account code or number as known at the buyer
-* `documents`: contain meta data, objectId or url, of attached documents by the buyer, see [Shipment document](#shipment-document) and:
+* `documents`: the buyer documents attached to this shipment, see [Shipment document](#shipment-document)
+* `contacts`: the buyer contacts related to this shipment
+* `purchaseOrderTerms`: the purchase order terms as agreed between buyer and supplier:
+
+### Purchase order terms
+
+The purchase order terms, as agreed between buyer and supplier, related to this shipment:
+
+* `incotermsCode`: the incoterms code according to ICC [Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/).
+* `incoterms`: the incoterms named place (delivery, terminal, port or destination)
+* `paymentTermsCode`: the payment terms code as defined in the buyers ERP system
+* `paymentTerms`: the payment terms text as defined in the buyers ERP system
 
 ### Shipment document
 
@@ -62,7 +91,10 @@ First choose either the webhook API or the polling API to receive shipment messa
 * `name`: the short name of the document
 * `description`: the description of the document
 * `type`: the type of the document. Eg. General, Invoice, Packing List, etc...
-* `objectId`: the object ID as known by the Tradecloud Object Storage, if this document stored in Tradecloud
+* `objectId`: the object ID as known by the Tradecloud Object Storage, if this document is stored in Tradecloud, see also:
+
+{% page-ref page="download-document.md" %}
+
 * `url`: the location of the document if is not stored in Tradecloud
 * `meta`: meta information about the shipment document
   * `lastUpdatedAt`: ISO date and time with timezone at which the shipment document was last updated in Tradecloud. A document has been added or changed if the document.meta.lastUpdatedAt is equal to the shipment.meta.lastUpdatedAt 
@@ -89,13 +121,16 @@ A load carrier containing shipment lines. Either use the container or the generi
 
 A shipment line containing identifiers, item and supplier data including quantities. A line has been added to either a shipment directly or to a load carrier.
 
-* `purchaseOrderNumber`: the related purchase order number as provided by the buyer
-* `purchaseOrderLinePosition`: the line position in the purchase order as provided by the buyer
+* `purchaseOrderNumber`: the mandatory related purchase order number as provided by the buyer
+* `purchaseOrderLinePosition`: the mandatory line position in the purchase order as provided by the buyer
+* `deliverySchedulePosition`: the related delivery schedule position in the purchase order line as provided by the buyer
 * `item`: the item that is shipped, see [Shipment item](#shipment-item)
-* `supplierLine`: the supplier side of the shipment line, details see below
+* `supplierLine`: the supplier side of the shipment line, see [Supplier shipment line](#supplier-shipment-line)
 * `meta`: meta information about the shipment line, see [Shipment line meta information](#shipment-line-meta-information)
 
 ### Shipment item
+
+The item (article, goods) that is being shipped:
 
 * `buyerItemNumber`: the item number as provided by the buyer
 * `buyerItemRevision`: the revision of the item as provided by the buyer
@@ -107,48 +142,48 @@ A shipment line containing identifiers, item and supplier data including quantit
 
 ### Supplier shipment line
 
-* `despatchAdviceNumber`: the unique despatch advice number as provided by the supplier
-* `despatchAdviceLinePosition` the position in the despatch advice as provided by the supplier. The position is unique within the despatch advice and immutable.
-* `despatchQuantity` the despatched quantity of this purchase order line or delivery schedule position.
+The supplier side of the shipment line:
+
+* `despatchAdviceNumber`: the mandatory unique despatch advice number as provided by the supplier
+* `despatchAdviceLinePosition` the mandatory position in the despatch advice as provided by the supplier. The position is unique within the despatch advice and immutable.
+* `despatchQuantity` the mandatory despatched quantity of this purchase order line or delivery schedule position.
 * `backorderQuantity`: the backorder quantity of this purchase order line or delivery schedule position.
 
 ### Shipment line meta information
-* `lastUpdatedAt`: ISO date and time with timezone at which the shipment line was last updated in Tradecloud. A line has been added or changed if the line.meta.lastUpdatedAt is equal to the shipment.meta.lastUpdatedAt
-* `supplierErpMeta` the supplier's ERP meta information about this shipment line
-  * `despatchAdviceErpIssueDateTime`: local date and time at which the despatch advice of this shipment line was issued in the supplier's ERP system
+* `lastUpdatedAt`: ISO date and time with timezone at which the shipment line was last updated in Tradecloud. A line has been added or changed if the `lines.meta.lastUpdatedAt` is equal to the `shipment.meta.lastUpdatedAt`
 
 ## Shipment locations
 
-* `departure`: the departure location and date of a shipment, see [Shipment departure ](#shipment-departure)
-* `destination`: the next destination location and scheduled arrival date/time, see [Shipment next destination](#shipment-next-destination)
-* `finalDestination`: the final destination location and scheduled arrival date/time, see [Shipment final destination](#shipment-final-destination)
+The departure and destination locations and date/times of a shipment:
+
+* `departure`: the departure location and dates, see [Shipment departure ](#shipment-departure)
+* `destinations`: one or more destination locations, arrival and departure dates, see [Shipment destination](#shipment-destination)
 
 ### Shipment departure 
 
-* `location`: the departure location, see [Shipment location](#shipment-location)
-* `actualDate`: the actual departure local date
+A shipment departure location with ETD and ATD dates:
 
-### Shipment next destination 
+* `location`: the departure location, see [Shipment location](#shipment-location)
+
+* `etdDate`: the Estimated Time of Departure of this shipment from this location
+* `atdDate`: the Actual Time of Departure of this shipment from this location
+
+### Shipment destination 
+
+A shipment place, port or final destination with location, ETA time window, ATA, ETD and ATD dates:
 
 * `location`: the location where the shipment should arrive next, see [Shipment location](#shipment-location)
 
-Scheduled start and end date/times indicate the scheduled time window of arrival:
+Estimated start and end date/times indicate the scheduled time window of arrival:
 
-* `scheduledStartDate`: start local date of the arrival time window
-* `scheduledStartTime`: start local time of the arrival time window
-* `scheduledEndDate`: end local date of the arrival time window
-* `scheduledEndTime`: end local time of the arrival time window
+* `etaStartDate`: the Estimated Time of Arrival period start date of this shipment at this destination
+* `etaStartTime`: the Estimated Time of Arrival period start time of this shipment at this destination
+* `etaEndDate`: the Estimated Time of Arrival period end date of this shipment at this destination
+* `etaEndTime`: the Estimated Time of Arrival period end time of this shipment at this destination
 
-### Shipment final destination
-
-* `location`: the location where the shipment should arrive finally, see [Shipment location](#shipment-location)
-
-Scheduled start and end date/times indicate the scheduled time window of arrival:
-
-* `scheduledStartDate`: start local date of the arrival time window. 
-* `scheduledStartTime`: start local time of the arrival time window.
-* `scheduledEndDate`: end local date of the arrival time window.
-* `scheduledEndTime`: end local time of the arrival time window.
+* `ataDate`: the Actual Time of Arrival of this shipment at this destination
+* `etdDate`: the Estimated Time of Departure of this shipment from this location
+* `atdDate`: the Actual Time of Departure of this shipment from this location
 
 ## Shipment location
 
@@ -161,12 +196,12 @@ Scheduled start and end date/times indicate the scheduled time window of arrival
   * `FinalDestination` (used with DAP, DPU, DDP)
 
 * `id`: the required identifier for the location, in context of `idSchema`
-* `idScheme`: scheme, providing context to the location identifier. For example GLN
+* `idScheme`: scheme, providing context to the location identifier, like [GLN](https://www.gs1.org/standards/id-keys/gln)
 * `names`: one or more location names. It is recommended to provide at least one name.
 * `addressLines`: one or more location address lines
 * `postalCode`: location postal code
 * `city`: location city
-* `countryCodeIso`: country code
+* `countryCodeIso`: [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code
 
 ## Shipment meta information
 * `lastUpdatedAt`: ISO date and time with timezone at which the shipment was last updated in Tradecloud, useful for polling shipments.
