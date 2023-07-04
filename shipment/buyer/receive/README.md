@@ -73,13 +73,13 @@ A load carrier containing shipment lines. Either use the container or the generi
 
 ### Container fields
 
-* `containerNumber`: the BIC ISO 6346 Container Identification Number, see https://www.bic-code.org/identification-number/
-* `containerSizeAndType`: the BIC ISO 6346 Container Size & Type Code, see https://www.bic-code.org/size-type-code/
+* `containerNumber`: the BIC ISO 6346 [Container Identification Number](https://www.bic-code.org/identification-number/)
+* `containerSizeAndType`: the BIC ISO 6346 [Container Size & Type Code](https://www.bic-code.org/size-type-code/)
 
 ### Generic package fields
 
-* `packageSSCC`: the package GS1 Serial Shipping Container Code (SSCC) based on ISO/IEC 15459–1, see https://www.gs1.org/standards/id-keys/sscc
-* `packageType`: the package type, Unece Code List Recommendation 21 is advised, see https://unece.org/trade/uncefact/cl-recommendations
+* `packageSSCC`: the package GS1 [Serial Shipping Container Code (SSCC)]( https://www.gs1.org/standards/id-keys/sscc)
+* `packageType`: the package type, [Unece Code List Recommendation 21](https://unece.org/trade/uncefact/cl-recommendations) is advised
 
 ### Lines
 
