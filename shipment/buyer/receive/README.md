@@ -105,21 +105,25 @@ A contact person related to this shipment:
 
 The purchase order terms, as agreed between buyer and supplier, related to this shipment:
 
-* `incotermsCode`: the incoterms code according to ICC [Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/).
+* `incotermsCode`: the incoterms code according to ICC [Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/)
 * `incoterms`: the incoterms named place (delivery, terminal, port or destination)
 * `paymentTermsCode`: the payment terms code as defined in the buyers ERP system
 * `paymentTerms`: the payment terms text as defined in the buyers ERP system
 
 ## Load carrier
 
-A load carrier containing shipment lines. Either use the container or the generic package fields together with `lines`.
+A load carrier containing shipment lines. Either use the [container fields](#container-fields) or the [generic package fields](#generic-package-fields) together with [lines](#lines).
 
 ### Container fields
+
+When the load carrier is a container:
 
 * `containerNumber`: the BIC ISO 6346 [Container Identification Number](https://www.bic-code.org/identification-number/)
 * `containerSizeAndType`: the BIC ISO 6346 [Container Size & Type Code](https://www.bic-code.org/size-type-code/)
 
 ### Generic package fields
+
+When the load carrier is NOT a container:
 
 * `packageSSCC`: the package GS1 [Serial Shipping Container Code (SSCC)]( https://www.gs1.org/standards/id-keys/sscc)
 * `packageType`: the package type, [Unece Code List Recommendation 21](https://unece.org/trade/uncefact/cl-recommendations) is advised
@@ -198,7 +202,7 @@ Estimated start and end date/times indicate the scheduled time window of arrival
 
 ## Shipment location
 
-* `locationType`: a location type according to Incoterms 2020:
+* `locationType`: a location type according to ICC [Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/):
 
   * `AgreedPlace` (used with EXW, FCA)
   * `PortOfLoading` (used with FAS, FOB)
