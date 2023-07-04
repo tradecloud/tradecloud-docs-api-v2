@@ -34,7 +34,7 @@ First choose either the webhook API or the polling API to receive shipment messa
 The shipment data:
 
 * `id`: the Tradecloud shipment identifier
-* `identifiers`: 	the identifiers related to this shipment, see [Shipment identifiers](#shipment-identifiers)
+* `identifiers`: the identifiers related to this shipment, see [Shipment identifiers](#shipment-identifiers)
 * `transportMode`: the Mode of Transport name used for the delivery of goods. [Unece Code List Recommendation 19](https://unece.org/trade/uncefact/cl-recommendations) is advised for Mode of Transport names.
 * `supplierShipment`: the supplier side header of the shipment, see [Supplier shipment header](#buyer-shipment-header)
 * `buyerShipment`: the buyer side header part of the shipment, see [Buyer shipment header](#buyer-shipment-header)
@@ -61,8 +61,8 @@ The supplier side header of this shipment:
 * `buyerAccountNumber`: the buyer account code or number as used by the supplier
 * `shipmentNumber`: the related shipment number as known in the supplier's ERP system
 * `invoiceNumbers`: the related invoice numbers as known in the supplier's ERP system
-* `documents`: the supplier documents attached to this shipment, see [Shipment document](#shipment-document)
-* `contacts`: the supplier contacts related to this shipment
+* `documents`: the supplier documents attached to this shipment, see [Document](#document)
+* `contacts`: the supplier contacts related to this shipment, see [Contact](#contact)
 
 ### Buyer shipment header
 
@@ -71,20 +71,22 @@ The buyer side header of this shipment:
 * `companyId`: the mandatory Tradecloud company identifier of the buyer
 * `buyerParty`: the unique party identifier and scheme, like [GLN](https://www.gs1.org/standards/id-keys/gln), of the buyer
 * `supplierAccountNumber`: the supplier account code or number as known at the buyer
-* `documents`: the buyer documents attached to this shipment, see [Shipment document](#shipment-document)
-* `contacts`: the buyer contacts related to this shipment
-* `purchaseOrderTerms`: the purchase order terms as agreed between buyer and supplier:
+* `documents`: the buyer documents attached to this shipment, see [Document](#document)
+* `contacts`: the buyer contacts related to this shipment, see [Contact](#contact)
+* `purchaseOrderTerms`: the purchase order terms as agreed between buyer and supplier, see [Purchase order terms](#purchase-order-terms)
 
-### Purchase order terms
+#### Contact
 
-The purchase order terms, as agreed between buyer and supplier, related to this shipment:
+A contact person related to this shipment:
 
-* `incotermsCode`: the incoterms code according to ICC [Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/).
-* `incoterms`: the incoterms named place (delivery, terminal, port or destination)
-* `paymentTermsCode`: the payment terms code as defined in the buyers ERP system
-* `paymentTerms`: the payment terms text as defined in the buyers ERP system
+* `userId`: the Tradecloud user identifier
+* `email`: the contact email as known in Tradecloud
+* `firstName`: the personal name of the contact person
+* `lastName`: the family name of the contact person
+* `position`: the business role of the contact person within the company
+* `phoneNumber` the phone number of the contact person
 
-### Shipment document
+#### Document
 
 * `code`: the unique identifier of the document as provided by the supplier or buyer
 * `revision`: the revision of the document
@@ -97,7 +99,16 @@ The purchase order terms, as agreed between buyer and supplier, related to this 
 
 * `url`: the location of the document if is not stored in Tradecloud
 * `meta`: meta information about the shipment document
-  * `lastUpdatedAt`: ISO date and time with timezone at which the shipment document was last updated in Tradecloud. A document has been added or changed if the document.meta.lastUpdatedAt is equal to the shipment.meta.lastUpdatedAt 
+  * `lastUpdatedAt`: ISO date and time with timezone at which the shipment document was last updated in Tradecloud. A document has been added or changed if the `document.meta.lastUpdatedAt` is equal to the `shipment.meta.lastUpdatedAt` 
+
+#### Purchase order terms
+
+The purchase order terms, as agreed between buyer and supplier, related to this shipment:
+
+* `incotermsCode`: the incoterms code according to ICC [Incoterms 2020](https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/).
+* `incoterms`: the incoterms named place (delivery, terminal, port or destination)
+* `paymentTermsCode`: the payment terms code as defined in the buyers ERP system
+* `paymentTerms`: the payment terms text as defined in the buyers ERP system
 
 ## Load carrier
 
@@ -217,4 +228,4 @@ Estimated start and end date/times indicate the scheduled time window of arrival
   * `userId`: the Tradecloud user identifier which triggered the first message in a flow
   * `companyId`: the Tradecloud company identifier which triggered the first message in a flow
 
-* `createdDateTime`: date and time, in UTC time zone, at which this message was created
+* `createdDateTime`: date and time with time zone, at which this message was created
