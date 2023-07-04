@@ -30,7 +30,8 @@ The shipment module is under development. The API and documentation may change.
 * `trackingNumber`: the tracking number of the shipment as provided by the carrier or courier
 * `supplierShipment`: the supplier side header of the shipment, see [Supplier shipment header](#buyer-shipment-header)
 * `buyerShipment`: the buyer side header part of the shipment, see [Buyer shipment header](#buyer-shipment-header)
-* `lines`: a list of all the shipment lines, see [Shipment line](#shipment-line)
+* `loadCarriers`: a list of all the load carriers in this shipment, each load carrier containing shipment lines, see [Load carrier](#load-carrier)
+* `lines`: a list of all the shipment lines, not loaded in a load carrier, see [Shipment line](#shipment-line)
 * `locations`: the departure, next destination and final destination locations of a shipment, see [Shipment locations](#shipment-locations)
 * `meta`: meta information about the shipment, see [Shipment meta information](#shipment-meta-information)
 
@@ -61,7 +62,27 @@ The shipment module is under development. The API and documentation may change.
 * `meta`: meta information about the shipment document
   * `lastUpdatedAt`: ISO date and time with timezone at which the shipment document was last updated in Tradecloud. A document has been added or changed if the document.meta.lastUpdatedAt is equal to the shipment.meta.lastUpdatedAt 
 
+## Load carrier
+
+A load carrier containing shipment lines. Either use the container or the generic package fields together with `lines`.
+
+### Container fields
+
+* `containerNumber`: the BIC ISO 6346 Container Identification Number, see https://www.bic-code.org/identification-number/
+* `containerSizeAndType`: the BIC ISO 6346 Container Size & Type Code, see https://www.bic-code.org/size-type-code/
+
+### Generic package fields
+
+* `packageSSCC`: the package GS1 Serial Shipping Container Code (SSCC) based on ISO/IEC 15459–1, see https://www.gs1.org/standards/id-keys/sscc
+* `packageType`: the package type, Unece Code List Recommendation 21 is advised, see https://unece.org/trade/uncefact/cl-recommendations
+
+### Lines
+
+* `lines`: a list of all the shipment lines, loaded in this load carrier, see [Shipment line](#shipment-line)
+
 ## Shipment line
+
+A shipment line containing identifiers, item and supplier data including quantities. A line has been added to either a shipment directly or to a load carrier.
 
 * `purchaseOrderNumber`: the related purchase order number as provided by the buyer
 * `purchaseOrderLinePosition`: the line position in the purchase order as provided by the buyer
