@@ -40,7 +40,7 @@ The shipment data:
 * `buyerShipment`: the buyer side header part of the shipment, see [Buyer shipment header](#buyer-shipment-header)
 * `loadCarriers`: a list of all the load carriers in this shipment, each load carrier containing shipment lines, see [Load carrier](#load-carrier)
 * `lines`: a list of all the shipment lines, not loaded in a load carrier, see [Shipment line](#shipment-line)
-* `locations`: the departure, next destination and final destination locations of a shipment, see [Shipment locations](#shipment-locations)
+* `locations`: the departure and destination locations with arrival and departure date/times, see [Shipment locations](#shipment-locations)
 * `meta`: meta information about the shipment, see [Shipment meta information](#shipment-meta-information)
 
 ### Shipment identifiers
@@ -169,10 +169,10 @@ The supplier side of the shipment line:
 
 ## Shipment locations
 
-The departure and destination locations and date/times of a shipment:
+The departure and destination locations together with arrival and departure date/times of a shipment:
 
 * `departure`: the departure location and dates, see [Shipment departure ](#shipment-departure)
-* `destinations`: one or more destination locations, arrival and departure dates, see [Shipment destination](#shipment-destination)
+* `destinations`: one or more destination locations with arrival and departure date/times, see [Shipment destination](#shipment-destination)
 
 ### Shipment departure 
 
