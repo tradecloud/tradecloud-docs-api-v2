@@ -20,10 +20,10 @@ First choose either the webhook API or the polling API to receive shipment messa
 
 ## ShipmentEvent
 
-* `eventName`: the event name, currently `ShipmentIssuedBySupplier`, `ShipmentApprovedByBuyer` or `ShipmentResentByBuyer`.
+* `eventName`: the event name, currently `ShipmentIssuedBySupplier`, `ShipmentApprovedByBuyer`,  `ShipmentRejectedByBuyer` or `ShipmentResentByBuyer`.
 
 {% hint style="warning" %}
-Event names will be extended by `ShipmentRejectedByBuyer` and other events in the future.
+Event names may be extended by other shipment events in the future.
 {% endhint %}
 
 * `shipment`: the shipment state, see [Shipment state](#shipment-state)
@@ -42,7 +42,8 @@ The shipment data:
 * `lines`: a list of all the shipment lines, not loaded in a load carrier, see [Shipment line](#shipment-line)
 * `locations`: the departure and destination locations with arrival and departure date/times, see [Shipment locations](#shipment-locations)
 * `status`: the shipment status
-  * `processStatus`: the shipment process status, currently `Issued` and `Approved`, will be extended with `Rejected` and other values in the future.
+  * `processStatus`: the shipment process status, currently `Issued`, `Approved` or `Rejected`, and may be extended with other values in the future
+  * `processStatusReason`: the optional reason of the current process status, for example the reason why the shipment is rejected
 * `meta`: meta information about the shipment, see [Shipment meta information](#shipment-meta-information)
 
 ### Shipment identifiers
