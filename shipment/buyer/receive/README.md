@@ -20,10 +20,10 @@ First choose either the webhook API or the polling API to receive shipment messa
 
 ## ShipmentEvent
 
-* `eventName`: the event name, currently only `ShipmentDespatchedBySupplier`
+* `eventName`: the event name, currently only `ShipmentIssuedBySupplier` or `ShipmentResentByBuyer`.
 
 {% hint style="warning" %}
-`ShipmentDespatchedBySupplier` will be replaced by `ShipmentIssuedBySupplier`, `ShipmentApprovedByBuyer` and `ShipmentRejectedByBuyer` and other events in the future.
+Event names will be extended by `ShipmentApprovedByBuyer` and `ShipmentRejectedByBuyer` and other events in the future.
 {% endhint %}
 
 * `shipment`: the shipment state, see [Shipment state](#shipment-state)
@@ -41,6 +41,8 @@ The shipment data:
 * `loadCarriers`: a list of all the load carriers in this shipment, each load carrier containing shipment lines, see [Load carrier](#load-carrier)
 * `lines`: a list of all the shipment lines, not loaded in a load carrier, see [Shipment line](#shipment-line)
 * `locations`: the departure and destination locations with arrival and departure date/times, see [Shipment locations](#shipment-locations)
+* `status`: the shipment status
+  * `processStatus`: the shipment process status, currently only `Issued`, will be extended with `Approved` and `Rejected` and other values in the future.
 * `meta`: meta information about the shipment, see [Shipment meta information](#shipment-meta-information)
 
 ### Shipment identifiers
@@ -161,7 +163,7 @@ The supplier side of the shipment line:
 
 * `despatchAdviceNumber`: the mandatory unique despatch advice number as provided by the supplier
 * `despatchAdviceLinePosition` the mandatory position in the despatch advice as provided by the supplier. The position is unique within the despatch advice and immutable.
-* `despatchQuantity` the mandatory despatched quantity of this purchase order line or delivery schedule position.
+* `despatchQuantity` the mandatory despatch quantity of this purchase order line or delivery schedule position.
 * `backorderQuantity`: the backorder quantity of this purchase order line or delivery schedule position.
 
 ### Shipment line meta information
