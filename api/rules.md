@@ -91,7 +91,7 @@ Resending periodically will result in processing delays and excessive network, s
 
 ### The order or order response should only contain new or changed lines
 
-The order or response should only contain **order lines** that are **new or changed**.
+The order or response should preferable only contain **order lines** that are **new or changed**. But you can also send all lines anyway.
 
 Sending all lines may result in processing delays and unnecessary network, server and storage resource usage.
 
