@@ -6,10 +6,6 @@ description: How to update an existing purchase order as a buyer
 
 As buyer you can send either a [new](issue/) or updated purchase order to Tradecloud.
 
-{% hint style="warning" %}
-The order should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
-{% endhint %}
-
 ## Send an updated order to Tradecloud
 
 As a buyer you can send an updated purchase order to Tradecloud.
@@ -27,7 +23,9 @@ If an order line has order process status `Issued` or `In Progress` and it is up
 Using the `/api-connector/order` API method is the same as when [sending a new order](issue/) with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. Lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
 
 {% hint style="info" %}
-The update is event oriented, you only have to send the lines new or updated. But you can also send all lines anyway.
+The order update should preferable only contain **order lines** that are **new or changed**. But you can also send all lines anyway.
+
+Sending all lines may result in processing delays and unnecessary network, server and storage resource usage.
 {% endhint %}
 
 ## Additional fields
