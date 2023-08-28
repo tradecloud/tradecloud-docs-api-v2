@@ -9,9 +9,18 @@ description: How to use order and line indicators as a buyer
 You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
 
+### Confirmed by buyer
+
+`confirmed`: all goods of this order or line are confirmed by the supplier, according to the buyer.
+
+{% hint style="info" %}
+The order or line must have process status `issued` and will become `confirmed`. 
+This indicator is only intended for onboarding or migration of order lines which are already confirmed.
+{% endhint %}
+
 ### Shipped by supplier
 
-`shipped`: all goods of this order or line are completely shipped by the supplier.
+`shipped`: all goods of this order or line are completely shipped by the supplier, according to the buyer.
 
 {% hint style="info" %}
 The order or line having logistics status `Open`, `Produced`, `ReadyToShip`  will become `Shipped`.
