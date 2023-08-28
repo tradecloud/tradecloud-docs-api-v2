@@ -38,8 +38,8 @@ The order or line having logistics status `Open`, `Produced`, `ReadyToShip` or `
 
 `completed`: the order or line is completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.
 
-- `Issued`, `Rejected` and `Confirmed` lines will become `Completed`.
-- `In progress` and `Cancelled` lines cannot be completed.
+- `Issued`, `In progress`, `Rejected` and `Confirmed` lines will become `Completed`.
+- `Cancelled` lines cannot be completed.
 - `Completed` lines cannot be completed again.
 - Completing has precedence over cancelling at the same time.
 
