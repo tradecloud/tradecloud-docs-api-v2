@@ -54,8 +54,8 @@ First choose either the webhook API or the polling API to receive order response
 * `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part).
 * `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part).
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
-* `deliverySchedule`: the actual aggregated delivery schedule line with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
-* `deliveryScheduleIncludingRequests`: the actual aggregated delivery schedule line including any open supplier or buyer requests.
+* `deliverySchedule`: the actual aggregated delivery schedule with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
+* `deliveryScheduleIncludingRequests`: the actual aggregated delivery schedule including any open supplier or buyer requests.
 * `prices`: the actual prices, see [Prices](./#prices) below.
 * `pricesIncludingRequests`: the actual prices, including any open supplier or buyer requests.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
@@ -66,11 +66,11 @@ First choose either the webhook API or the polling API to receive order response
 * `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
 
 {% hint style="info" %}
-It is advised to use `deliverySchedule` or alternatively `deliveryScheduleIncludingRequests` with `prices` or alternatively `pricesIncludingRequests`. These fields give a summary of the current delivery schedule and prices. Use the `IncludingRequests` fields when you also send proposal or reopen request events to your ERP.
+It is advised to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`. These fields give a summary of the current delivery schedule and prices. Use the `IncludingRequests` fields when you also send proposal or reopen request events to your ERP.
 
 When using these fields it is not necessary to use the `deliverySchedule` and `prices` fields in `buyerLine`, `buyerLine.requests`, `supplierLine.requests` or `confirmedLine`.
 
-`deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company profile page. The old webhook, using the "Integration" configuration, is deprecated.
+`deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company profile page. These fields are also available in the `order-search` API when using polling.
 {% endhint %}
 
 ### Status
