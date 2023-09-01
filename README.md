@@ -34,6 +34,6 @@ This [checklist](checklist.md) contains important info and decisions to consider
 
 ## Support
 
-If you get stuck just ask:
+If you have any question just ask:
 
 {% page-ref page="support.md" %}

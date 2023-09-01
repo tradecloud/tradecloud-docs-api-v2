@@ -49,7 +49,7 @@ Some Tradecloud customers build 1-1 connections on the tools or framework the ER
 
 ## Flows scope?
 
-Now you have choosen to buy or build message-oriented middleware or make a 1-1 connection, lets look at the scope:
+Now you have choosen to buy or build message-oriented middleware or 1-1 connection, lets look at the scope:
 
 The Tradecloud modules (order/shipment/forecast) are agreed in the contract with Tradecloud, but within these modules there are several message flows possible dependent on the buyer or supplier role:
 
@@ -75,10 +75,9 @@ As a supplier, what message flows are you going to build?
 
 * [orders](order/supplier/receive/README.md) - receive orders and updates from your buyers
 * [order documents](order/supplier/receive/download-document.md) - receive attached documents from your buyers
-* [order responses](order/supplier/send-order-response/README.md) - confirm order lines, or propose alternatives, to you buyer
+* [order responses](order/supplier/send-order-response/README.md) - confirm order lines, or propose alternatives, to your buyer
 * [order response documents](order/supplier/send-order-response/attach-document.md) - attach documents to your confirmations
 * [despatch advices](shipment/send-despatch-advice.md) - send shipment despatch advices to your buyers
-
 
 ## ERP checklist
 
@@ -86,9 +85,7 @@ Now you know your scope, the checklist continues with ERP specific questions:
 
 ### Native or simple delivery schedule?
 
-Now you know your scope, which probably includes orders and responses, the next question is:
-
-Does your ERP system natelivy support a delivery schedule? A delivery schedule consists of one or more deliveries (date & quantity) for the same item within one order line.
+Does your ERP system natively support a delivery schedule? A delivery schedule consists of one or more deliveries (date & quantity) for the same item within one order line.
 
 Tradecloud works natively with delivery schedule's. It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which fields to use:
 
@@ -111,7 +108,7 @@ Tradecloud sends only touched lines in an order/response message. It is no probl
 
 Tradecloud sends always all lines in a shipment message. It is no problem if you only need touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:
 
-{% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" }
+{% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" %}
 
 ## API checklist
 
@@ -119,22 +116,41 @@ The checklist continues with more API technical questions:
 
 ### Basic or JWT authentication?
 
+Do you want to use Basic Authentication or JSON Web Tokens? Both have pros and cons:
 
+{% page-ref page="security/authentication.md" %}
 
 ### JSON or XML?
 
+Do you want to use [JSON](api/standards#json) or [XML](api/standards.md#xml)?
 
-### Are you compatibility?
+Tradecloud default works with JSON but some API endpoints also work with XML and more will be added on request. 
 
+XML documentation will be added soon. Please let [support](support.md) know when you are interested in using XML.
 
 ### Webhook or polling?
 
+Do you want to use a webhook or polling to receive messages? Check out:
+
+{% page-ref page="api/webhook-vs-polling.md" %}
 
 #### Ip source filtering?
 
+When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as an integration does not use MFA or SSO. You may find the Tradecloud ip adresses here:
+
+{% page-ref page="api/environments.md#source-ip-addresses" %}
+
+### Are you compatible?
+
+Your integration must be compatibility, especially following the forward compatibility rules:
+
+{% page-ref page="api/compatibility.md" %}
 
 ### Do you have a test environment?
 
+Tradecloud provides a test environment which you may use to develop and test against:
+
+{% page-ref page="api/environments.md#acceptance-test-environment" %}
 
 ### Rules
 
@@ -144,3 +160,8 @@ There are some [rules and limits](#api/rules) which you may want to check.
 
 There are some [tools][#api/tools] which you may want to use. Let [support](#support) know if you need some example.
 
+### Support
+
+If you have any question just ask:
+
+{% page-ref page="support.md" %}

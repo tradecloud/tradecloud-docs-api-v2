@@ -6,8 +6,6 @@ description: API rules check list
 
 {% hint style="danger" %}
 Your integration **must follow** these rules.
-
-Tradecloud will **review** your integration in the acceptance test environment **before going live.**
 {% endhint %}
 
 ## Support the Tradecloud standards
