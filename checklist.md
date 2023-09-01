@@ -12,31 +12,31 @@ This checklist contains important info and decisions to consider before start bu
 
 Are you going to use a Tradecloud connector or the API?
 
-Available Tradecloud connectors:
+Available Tradecloud connectors are:
 
 * AFAS Connector - available from partner [Improvit](https://www.improvit.nl/)
-* [Copernicus Niklas](https://www.copernicus.nl/en/products/niklas-integration-platform/) with Tradecloud templates
+* [Copernicus Niklas integration platform](https://www.copernicus.nl/en/products/niklas-integration-platform/) with Tradecloud templates
 * CSV Connector - available from partner [Supply Drive](https://supplydrive.cloud/)
 * Edifact Connector - available from partner [Supply Drive](https://supplydrive.cloud/)
-* Exact Globe Connector - for Exact Globe ERP Systems by parter [AB Software](https://www.wijzijnab.nl/)
+* Exact Globe Connector - available from partner [AB Software](https://www.wijzijnab.nl/)
 * Infor LN Connector - available from partner [Xibis](https://xibis.nl/)
 * Isah API Connector - available from partner [Tambien](https://tambien.nl)
-* Isah SCI Connector - for Isah ERP systems by partner [Isah](https://isah.com)
+* Isah SCI Connector - available from partner [Isah](https://isah.com)
 * Microsoft Dynamics 365 Business Central [Connectivity Studio](https://www.to-increase.com/business-integration/microsoft-dynamics-bc/connectivity-studio) - available from partner To-Increase 
 * Microsoft Dynamics 365 Finance & Operations [Connectivity Studio](https://www.to-increase.com/business-integration/connectivity-studio) - available from partner To-Increase
 * SAP SOAP Connector - for single SAP ERP instances - available from Tradecloud
 * [SCSN](https://smart-connected.nl) Connector - available from partner [Supply Drive](https://supplydrive.cloud/)
 
-When choosing to build a custom API integration instead, consider an integration/ERP partner for your ERP system.
+When choosing to build a custom API integration yourself instead, consider an integration/ERP partner for your ERP system.
 Tradecloud sales can help you to find a partner.
 
-## Middleware
+## Middleware or 1-1?
 
 Now you have choosen to build a custom API integration, lets look at the integration architecture: 
 
 Do you have multiple business systems, like EPR, WMS and PLM, that have to integrate with Tradecloud?
 Do you already or plan to integrate with the outside world like webshops and logistics partners?
-In these cases it is recommended to use, or you are probably already using, message-oriented middleware.
+In these cases it is recommended to use message-oriented middleware.
 
 Some Tradecloud customers buy middleware like [ConnectPlaza](https://www.connectplaza.com/#1), [Mulesoft](https://www.mulesoft.com/), [Orbis](https://www.orbis-software.nl/) and [WebMethods](https://www.softwareag.com/en_corporate/platform/integration-apis/webmethods-integration.html). Be aware you still have to build message flows & data transformations.
 
@@ -47,67 +47,100 @@ Some Tradecloud customers build on Microsoft [Azure Integration Services](https:
 
 Some Tradecloud customers build 1-1 connections on the tools or framework the ERP system provides itself. Be aware that these tools may be limited, like missing a HTTP client or server, or missing security or data transformation features.
 
-## Scope
+## Flows scope?
 
 Now you have choosen to buy or build message-oriented middleware or make a 1-1 connection, lets look at the scope:
 
-The Tradecloud modules (order/shipment/forecast) are agreed in the Tradecloud contract, but within these modules there are several message flows possible dependent on the buyer or supplier role:
+The Tradecloud modules (order/shipment/forecast) are agreed in the contract with Tradecloud, but within these modules there are several message flows possible dependent on the buyer or supplier role:
 
 ### As a buyer
 
 As a buyer, what message flows are you going to build?
 
-* [orders](order/buyer/issue/README.md)
-* [order updates](order/buyer/update.md)
-* [order documents](order/buyer/issue/attach-document.md)
-* [order responses](order/buyer/receive/README.md)
-* [order response documents](order/buyer/receive/download-document.md)
-* [goods receipt advices](order/buyer/receive-goods.md)
-* [complete an order](order/buyer/complete.md)
-* [cancel an order](order/buyer/cancel.md)
-* [shipments](shipment/buyer/receive.md)
-* [shipment documents](shipment/buyer/download-documents.md)
-* [forecasts](forecast/issue.md)
+* [orders](order/buyer/issue/README.md) - send orders to your suppliers
+* [order updates](order/buyer/update.md) - update an order 
+* [order documents](order/buyer/issue/attach-document.md) - attach documents to an order or line
+* [order responses](order/buyer/receive/README.md) - receive confirmations, or proposed alternatives, from your suppliers
+* [order response documents](order/buyer/receive/download-document.md) - receive attached documents from your suppliers
+* [goods receipt advices](order/buyer/receive-goods.md) - notify suppliers about received goods
+* [complete an order](order/buyer/complete.md) - notify suppliers about completed order lines
+* [cancel an order](order/buyer/cancel.md) - notify suppliers about cancelled order lines
+* [shipments](shipment/buyer/receive.md) - receive shipment planning and updates from suppliers
+* [shipment documents](shipment/buyer/download-documents.md) - receive attached shipment documents
+* [forecasts](forecast/issue.md) - send forecasts to your suppliers
 
 ### As a supplier
 
 As a supplier, what message flows are you going to build?
 
-* [orders](order/supplier/receive/README.md)
-* [order documents](order/supplier/receive/download-document.md)
-* [order responses](order/supplier/send-order-response/README.md)
-* [order response documents](order/supplier/send-order-response/attach-document.md)
-* [despatch advices](shipment/send-despatch-advice.md)
+* [orders](order/supplier/receive/README.md) - receive orders and updates from your buyers
+* [order documents](order/supplier/receive/download-document.md) - receive attached documents from your buyers
+* [order responses](order/supplier/send-order-response/README.md) - confirm order lines, or propose alternatives, to you buyer
+* [order response documents](order/supplier/send-order-response/attach-document.md) - attach documents to your confirmations
+* [despatch advices](shipment/send-despatch-advice.md) - send shipment despatch advices to your buyers
 
-## Native or simple delivery schedule
 
-Now you know your scope, which probably includes orders and order responses, the next question is:
+## ERP checklist
 
-Does your ERP system natelivy support a delivery schedule within an order line?
-A delivery schedule consists of one or more deliveries (date & quantity) for the same item within one order line.
+Now you know your scope, the checklist continues with ERP specific questions:
 
-It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which fields to use:
+### Native or simple delivery schedule?
+
+Now you know your scope, which probably includes orders and responses, the next question is:
+
+Does your ERP system natelivy support a delivery schedule? A delivery schedule consists of one or more deliveries (date & quantity) for the same item within one order line.
+
+Tradecloud works natively with delivery schedule's. It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which fields to use:
 
 {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
 
 The simple delivery schedule feature is only available for buyers at this moment.
+Please let [support](support.md) know when you are interested in a simple delivery schedule at the supplier side.
 
-## All or touched order lines
+### Touched or all order lines?
 
 Does your ERP expect only new and updated or always all lines in an order, order response or shipment message?
 
-### Order/response message
+#### Order/response message
 
-Tradecloud sends only touched lines in an order/response message.
-
-If you need all order/response lines, you may fetch the complete order, see:
+Tradecloud sends only touched lines in an order/response message. It is no problem when your ERP needs all order/response lines, you may fetch the complete order, see:
 
 {% page-ref page="api/webhook-vs-polling.md#using-get" %}
 
-### Shipment message
+#### Shipment message
 
-Tradecloud sends always all lines in a shipment message.
+Tradecloud sends always all lines in a shipment message. It is no problem if you only need touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:
 
-If you only need only touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:
+{% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" }
 
-{% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information }
+## API checklist
+
+The checklist continues with more API technical questions:
+
+### Basic or JWT authentication?
+
+
+
+### JSON or XML?
+
+
+### Are you compatibility?
+
+
+### Webhook or polling?
+
+
+#### Ip source filtering?
+
+
+### Do you have a test environment?
+
+
+### Rules
+
+There are some [rules and limits](#api/rules) which you may want to check.
+
+### Tools
+
+There are some [tools][#api/tools] which you may want to use. Let [support](#support) know if you need some example.
+
