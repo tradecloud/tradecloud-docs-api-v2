@@ -59,13 +59,26 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 * `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part) below.
 * `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part) below.
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line) below.
-* `deliverySchedule`: the aggregated delivery schedule line with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
+* `deliverySchedule`: the actual aggregated delivery schedule with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
+* `deliveryScheduleIncludingRequests`: the actual aggregated delivery schedule including any open supplier or buyer requests.
+* `prices`: the actual prices, see [Prices](./#prices) below.
+* `pricesIncludingRequests`: the actual prices, including any open supplier or buyer requests.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 * `status.processStatus`: the order line's [process status](./#process-status).
 * `status.logisticsStatus`: the order line's [logistics status](./#logistics-status).
 * `eventDates`: some key line event date/times.
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](./#item-details).
 * `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
+
+{% hint style="info" %}
+It is advised to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
+
+These fields give a summary of the current delivery schedule and prices. Use the `IncludingRequests` fields when you also send proposal or reopen requests events to your ERP.
+
+When using these fields it is not necessary to use the `deliverySchedule` and `prices` fields in `buyerLine`, `buyerLine.requests`, `supplierLine.requests` or `confirmedLine`.
+
+`deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company profile page, and also available in the `order-search` API when using polling.
+{% endhint %}
 
 ### Status
 
@@ -226,7 +239,10 @@ Only if the [process status](./#process-status) is `Confirmed`, the line is agre
 
 ## Delivery schedule
 
-`deliverySchedule`: the proposed or confirmed delivery schedule.
+`deliverySchedule`: the actual delivery schedule, either `Issued` or `Confirmed`.
+
+`deliveryScheduleIncludingRequests`: the actual delivery schedule, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`.
+
 * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
 * `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
 * `quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
@@ -242,7 +258,10 @@ These additional logistics fields are only available in the order line level del
 
 ## Prices
 
-`prices`: the requested or confirmed price. Advised is to use only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
+`prices`: the actual prices, either `Issued` or `Confirmed`. 
+
+`pricesIncludingRequests`: the actual prices, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`.
+
 * `grossPrice`: the gross price. Used together with `discountPercentage`.
 * `discountPercentage`: the discount percentage. Used together with `grossPrice`.
 * `netPrice`: the net price.
@@ -254,6 +273,10 @@ These additional logistics fields are only available in the order line level del
         * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.    
     * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
     * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+
+{% hint style="info" %}
+It is advised to only use `netPrice` for its simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
+{% endhint %}
 
 ## Charge lines
 
