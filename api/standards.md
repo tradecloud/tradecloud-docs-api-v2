@@ -40,6 +40,10 @@ The JSON syntax does not assign any significance to the **ordering** of name/val
 Therefor **XML** based transformations **expecting ordering** will break.
 {% endhint %}
 
+{% hint style="warning" %}
+The Tradecloud [compatibility rules](compatibility.md) apply to the JSON usage.
+{% endhint %}
+
 ## JWT
 
 [JSON Web Tokens](https://jwt.io/) are an open, industry standard [RFC 7519](https://tools.ietf.org/html/rfc7519) method for representing claims securely between two parties.
@@ -84,7 +88,7 @@ Published as [RFC 9259](https://tools.ietf.org/html/rfc8259#section-8.1)
 
 ## XML
 
-Tradecloud supports XML and [JSON](#json). The [Extensible Markup Language](https://en.wikipedia.org/wiki/XML) is a markup language and its main purpose is serialization, i.e. transmitting arbitrary data.
+Tradecloud supports XML and [JSON](#json). The [Extensible Markup Language](https://en.wikipedia.org/wiki/XML) its main purpose is serialization, i.e. transmitting arbitrary data.
 
 Published as [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/)
 

@@ -85,9 +85,7 @@ Now you know your scope, the checklist continues with ERP specific questions:
 
 ### Native or simple delivery schedule?
 
-Does your ERP system natively support a delivery schedule? A delivery schedule consists of one or more deliveries (date & quantity) for the same item within one order line.
-
-Tradecloud works natively with delivery schedule's. It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which fields to use:
+Does your ERP system natively support a delivery schedule? A delivery schedule consists of one or more deliveries (date & quantity) for the same item within one order line. It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which fields to use:
 
 {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
 
@@ -122,10 +120,9 @@ Do you want to use Basic Authentication or JSON Web Tokens? Both have pros and c
 
 ### JSON or XML?
 
-Do you want to use [JSON](api/standards#json) or [XML](api/standards.md#xml)?
+Do you want to use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?
 
 Tradecloud default works with JSON but some API endpoints also work with XML and more will be added on request. 
-
 XML documentation will be added soon. Please let [support](support.md) know when you are interested in using XML.
 
 ### Webhook or polling?
@@ -154,11 +151,11 @@ Tradecloud provides a test environment which you may use to develop and test aga
 
 ### Rules
 
-There are some [rules and limits](#api/rules) which you may want to check.
+There are some [rules and limits](#api/rules.md) which you may want to check.
 
 ### Tools
 
-There are some [tools][#api/tools] which you may want to use. Let [support](#support) know if you need some example.
+There are some [tools][#api/tools.md] which you may want to use. Let [support](#support.md) know if you need some example.
 
 ### Support
 
