@@ -3,7 +3,8 @@
 ## Introduction
 
 * [Welcome](README.md)
-* [Support](support.md)
+  * [Checklist](checklist.md)
+  * [Support](support.md)
 * [API](api/README.md)
   * [Rules](api/rules.md)
   * [Requests](api/requests.md)
