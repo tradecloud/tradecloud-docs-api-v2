@@ -151,11 +151,11 @@ Tradecloud provides a test environment which you may use to develop and test aga
 
 ### Rules
 
-There are some [rules and limits](#api/rules.md) which you may want to check.
+There are some [rules and limits](api/rules.md) which you may want to check.
 
 ### Tools
 
-There are some [tools][#api/tools.md] which you may want to use. Let [support](#support.md) know if you need some example.
+There are some [tools][api/tools.md] which you may want to use. Let [support](support.md) know if you need some example.
 
 ### Support
 
