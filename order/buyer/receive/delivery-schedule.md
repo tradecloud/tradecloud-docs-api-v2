@@ -3,7 +3,7 @@ description: >-
   Choose between the native or simple delivery schedule
 ---
 
-# Issue a delivery schedule
+# Receive a delivery schedule
 
 ## Native versus simple delivery schedule
 
@@ -18,16 +18,14 @@ Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in 
 
 ## Native delivery schedule
 
-Use the field `lines.deliverySchedule` to issue the requested planned delivery schedule of this order line. 
-
-Provide at least one or multiple delivery schedule lines. The total number of delivery lines is limited to 100 lines per order line.
+The field `lines.deliverySchedule` contains the planned delivery schedule of this order line. 
 
 ### `deliverySchedule` fields
 
-* `position`: the mandatory position in the delivery schedule. Not to be confused with the `lines.position`.
+* `position`: the position in the delivery schedule. Not to be confused with the `lines.position`.
 
 {% hint style="warning" %}
-The `position` must be unique within the delivery schedule and never change. Never renumber or re-use a `position`.
+The `position` may be unassigned in case of a delivery line split by a supplier. The ERP system must assign a position to the split delivery line and update the order line to Tradecloud.
 {% endhint %}
 
 * `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
@@ -37,12 +35,14 @@ The `position` must be unique within the delivery schedule and never change. Nev
 
 ## Simple delivery schedule
 
-Use the field `lines.scheduledDelivery` to issue the requested planned delivery of this order line.
-
-Provide one `scheduledDelivery` per order line. The total number of `scheduledDelivery`'s is limited to 100 deliveries per item number.
+The field `lines.scheduledDelivery` contains the planned delivery of this order line.
 
 {% hint style="info" %}
-Tradecloud will merge `scheduledDelivery`'s of order lines with the same item number into one order line having a delivery schedule. The `lines.position` will be taken as `deliverySchedule.position`. 
+Tradecloud will expand a delivery schedule into order lines with the same item number having `scheduledDelivery`'s. The `deliverySchedule.position` will be taken as `lines.position`. 
+{% endhint %}
+
+{% hint style="warning" %}
+The order line `position` may be unassigned in case of an order line split by a supplier The ERP system must assign a position to the split order line and update the order line to Tradecloud.
 {% endhint %}
 
 ### `scheduledDelivery` fields

@@ -85,12 +85,18 @@ Now you know your scope, the checklist continues with ERP specific questions:
 
 ### Native or simple delivery schedule?
 
-Does your ERP system natively support a delivery schedule? A delivery schedule consists of one or more deliveries (date & quantity) for the same item within one order line. It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which fields to use:
+Does your ERP system natively support a delivery schedule? A delivery schedule consists of one or more deliveries, having a position, date & quantity, for the same item within one order line. It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which alternative fields to use:
 
 {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
 
 The simple delivery schedule feature is only available for buyers at this moment.
 Please let [support](support.md) know when you are interested in a simple delivery schedule at the supplier side.
+
+### Can you split a delivery schedule?
+
+Does you ERP system support delivery or order lines split by a supplier? A supplier may split a line into multiple lines. A split line will have no position assigned by Tradecloud. THe ERP system must assign a position to the split line and update the order line to Tradecloud, check out:
+
+{% page-ref page="order/buyer/receive/delivery-schedule.md" %}
 
 ### Touched or all order lines?
 

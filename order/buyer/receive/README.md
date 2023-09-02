@@ -140,9 +140,9 @@ The supplier may check, change and add item details if they are not correct or i
 
 `requests.proposal`: the supplier has proposed a different delivery schedule, prices and/or charge lines compared to the issued order line.
 `requests.reopenRequest`: the supplier requests to reopen the confirmed order line. The supplier has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
-* `deliverySchedule`: requested alternative delivery schedule, see below
-* `prices`: requested alternative prices, see below
-* `chargeLines`: requested alternative charge lines, see below
+* `deliverySchedule`: the requested alternative delivery schedule
+* `prices`: the requested alternative prices
+* `chargeLines`: the requested alternative charge lines
 * `reason`: the reason of this request given by the supplier
 * `status`: the [request status](./#request-status).
 
@@ -169,15 +169,21 @@ If the request status is `Open` the buyer must approve or reject it.
 Only if the process status is `Confirmed` the line is agreed between buyer and supplier
 {% endhint %}
 
-* `deliverySchedule`: agreed delivery schedule, see below
-* `prices`: agreed prices, see below
-* `chargeLines`: agreed charge lines, see below
+* `deliverySchedule`: the agreed delivery schedule
+* `prices`: the agreed prices
+* `chargeLines`: the agreed charge lines
 
 ## Delivery schedule
 
-`deliverySchedule`: the actual delivery schedule, either `Issued` or `Confirmed`.
+`lines.deliverySchedule`: the actual delivery schedule, either `Issued` or `Confirmed`.
 
-`deliveryScheduleIncludingRequests`: the actual delivery schedule, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`.
+Use `lines.deliverySchedule` when your ERP system supports a delivery schedule natively.
+Or alternatively use `lines.scheduledDelivery` when using the simple delivery schedule.
+Please see this page to choose between the native or simple delivery schedule:
+
+{% page-ref page="delivery-schedule.md" %}
+
+`lines.deliveryScheduleIncludingRequests`: the actual delivery schedule, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`. This field is only supported as native delivery schedule.
 
   * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
   * `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
@@ -185,20 +191,15 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 ### Logistics fields
 
-{% hint style="warning" %}
-The buyer must provide a `deliverySchedule.position` when sending an order to be able to receive additional logistics fields.
-{% endhint %}
-
 These additional logistics fields are only available in the order line level delivery schedule:
 
-`deliverySchedule`: the requested or confirmed delivery schedule.
 * `status`: the optional delivery line's [logistics status](./#logistics-status).
 * `etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 * `eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 
 ## Prices
 
-`prices`: the actual prices, either `Issued` or `Confirmed`. 
+`lines.prices`: the actual prices, either `Issued` or `Confirmed`. 
 
 `pricesIncludingRequests`: the actual prices, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`.
 
