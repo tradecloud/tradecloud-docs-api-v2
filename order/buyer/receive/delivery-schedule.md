@@ -18,7 +18,7 @@ Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in 
 
 ## Native delivery schedule
 
-The field `lines.deliverySchedule` contains the planned delivery schedule of this order line. 
+The field `lines.deliverySchedule` contains the current planned delivery schedule of this order line. 
 
 ### `deliverySchedule` fields
 
@@ -35,7 +35,7 @@ The `position` may be unassigned in case of a delivery line split by a supplier.
 
 ## Simple delivery schedule
 
-The field `lines.scheduledDelivery` contains the planned delivery of this order line.
+The field `lines.scheduledDelivery` contains the current planned delivery of this order line.
 
 {% hint style="info" %}
 Tradecloud will expand a delivery schedule into order lines with the same item number having `scheduledDelivery`'s. The `deliverySchedule.position` will be taken as `lines.position`. 

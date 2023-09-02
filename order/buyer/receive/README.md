@@ -54,10 +54,10 @@ First choose either the webhook API or the polling API to receive order response
 * `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part).
 * `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part).
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
-* `deliverySchedule`: the actual aggregated delivery schedule with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
-* `deliveryScheduleIncludingRequests`: the actual aggregated delivery schedule including any open supplier or buyer requests.
-* `prices`: the actual prices, see [Prices](./#prices) below.
-* `pricesIncludingRequests`: the actual prices, including any open supplier or buyer requests.
+* `deliverySchedule`: the current aggregated delivery schedule with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including any open supplier or buyer requests.
+* `prices`: the current prices, see [Prices](./#prices) below.
+* `pricesIncludingRequests`: the current prices, including any open supplier or buyer requests.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
 * `status.processStatus`: the order line's [process status](./#process-status).
 * `status.logisticsStatus`: the order line's [logistics status](./#logistics-status).
@@ -175,7 +175,7 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 ## Delivery schedule
 
-`lines.deliverySchedule`: the actual delivery schedule, either `Issued` or `Confirmed`.
+`lines.deliverySchedule`: the current planned delivery schedule, either `Issued` or `Confirmed`.
 
 Use `lines.deliverySchedule` when your ERP system supports a delivery schedule natively.
 Or alternatively use `lines.scheduledDelivery` when using the simple delivery schedule.
@@ -183,7 +183,7 @@ Please see this page to choose between the native or simple delivery schedule:
 
 {% page-ref page="delivery-schedule.md" %}
 
-`lines.deliveryScheduleIncludingRequests`: the actual delivery schedule, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`. This field is only supported as native delivery schedule.
+`lines.deliveryScheduleIncludingRequests`: the current planned delivery schedule, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`. This field is only supported as native delivery schedule.
 
   * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
   * `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
@@ -199,9 +199,9 @@ These additional logistics fields are only available in the order line level del
 
 ## Prices
 
-`lines.prices`: the actual prices, either `Issued` or `Confirmed`. 
+`lines.prices`: the current prices, either `Issued` or `Confirmed`. 
 
-`pricesIncludingRequests`: the actual prices, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`.
+`pricesIncludingRequests`: the current prices, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`.
 
   * `grossPrice`: the gross price. Used together with `discountPercentage`.
   * `discountPercentage`: the discount percentage. Used together with `grossPrice`.
