@@ -8,11 +8,21 @@ description: This checklist page contains important info and decisions to make b
 This checklist contains important info and decisions to consider before start building an API integration with Tradecloud.
 {% endhint %}
 
-## Connector or API
 
-Are you going to use a Tradecloud connector or the API?
+## Architecture checklist
 
-Available Tradecloud connectors are:
+When you are going to connect your ERP to Tradecloud you have to make some **integration architecture decisions**:
+
+- should I buy a Connector or build an API integration?
+- should I buy or build middleware or build a 1-1 connection?
+- based on these choices, which team members do I need?
+- which message flows should I build?
+
+### Connector or API?
+
+Are you going to buy a Tradecloud connector or build an API integration?
+Tradecloud Connectors already contain the necessary components, message flows and data transformations to connect with Tradecloud.
+Available Tradecloud Connectors are:
 
 * AFAS Connector - available from partner [Improvit](https://www.improvit.nl/)
 * [Copernicus Niklas integration platform](https://www.copernicus.nl/en/products/niklas-integration-platform/) with Tradecloud templates
@@ -27,31 +37,37 @@ Available Tradecloud connectors are:
 * SAP SOAP Connector - for single SAP ERP instances - available from Tradecloud
 * [SCSN](https://smart-connected.nl) Connector - available from partner [Supply Drive](https://supplydrive.cloud/)
 
-When choosing to build a custom API integration yourself instead, consider an integration/ERP partner for your ERP system.
-Tradecloud sales can help you to find a partner.
+### Middleware or 1-1 connection?
 
-## Middleware or 1-1?
+When you choose to build an API integration, lets look at the integration architecture: 
 
-Now you have choosen to build a custom API integration, lets look at the integration architecture: 
-
-Do you have multiple business systems, like EPR, WMS and PLM, that have to integrate with Tradecloud?
-Do you already or plan to integrate with the outside world like webshops and logistics partners?
+Do you have multiple business systems, like EPR, WMS and PLM systems, that have to integrate with Tradecloud?
+Do you already or plan to integrate with the outside world, like webshops and logistics partners?
 In these cases it is recommended to use message-oriented middleware.
 
 Some Tradecloud customers buy middleware like [ConnectPlaza](https://www.connectplaza.com/#1), [Mulesoft](https://www.mulesoft.com/), [Orbis](https://www.orbis-software.nl/) and [WebMethods](https://www.softwareag.com/en_corporate/platform/integration-apis/webmethods-integration.html). Be aware you still have to build message flows & data transformations.
 
 Some Tradecloud customers build on Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) mostly using [API Management](https://azure.microsoft.com/en-us/products/api-management), [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) and [Service Bus](https://azure.microsoft.com/en-us/products/service-bus). 
  
- If you have only an ERP system and are planning to only connect to Tradecloud, you may consider to build a 1-1 connection, 
- without message-oriented middleware, as it may be quicker and cheaper. 
+ If you have only one ERP system and are planning to connect to Tradecloud only, you may consider to build a 1-1 connection, without message-oriented middleware.
 
-Some Tradecloud customers build 1-1 connections on the tools or framework the ERP system provides itself. Be aware that these tools may be limited, like missing a HTTP client or server, or missing security or data transformation features.
+Some Tradecloud customers build 1-1 connections using the tools provided by the ERP system. Be aware that these tools may be limited, and may miss for example a HTTP client or server, or security or data transformation features.
 
-## Flows scope?
+### Which team members do I need?
+
+When using a Tradecloud Connector, in most cases a partner consultant will configure and maintain the Connector for you.
+
+In the case of message-oriented middleware, you will need an integration consultant to build and maintain the message flows & data transformations and install & configure the middleware components.
+
+When building an API integration, you will need developers and a tester to build and maintain the message flows & data transformations and install & configure the components.
+
+In all cases you will need a cloud or system engineer, to configure a firewall, configure SSL, install and configure a web server or Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) components.
+
+### Which **message flows** should I build?
 
 Now you have choosen to buy or build message-oriented middleware or 1-1 connection, lets look at the scope:
 
-The Tradecloud modules (order/shipment/forecast) are agreed in the contract with Tradecloud, but within these modules there are several message flows possible dependent on the buyer or supplier role:
+The Tradecloud modules (order/shipment/forecast) are agreed in the contract with Tradecloud, but within these modules there are several **message flows** possible dependent on the buyer or supplier role:
 
 ### As a buyer
 
@@ -83,7 +99,7 @@ As a supplier, what message flows are you going to build?
 
 Now you know your scope, the checklist continues with ERP specific questions:
 
-### Native or simple delivery schedule?
+### Use a **native** or **simple** delivery schedule?
 
 Does your ERP system natively support a delivery schedule? A delivery schedule consists of one or more deliveries, having a position, date & quantity, for the same item within one order line. It is no problem when your ERP system does not support a delivery schedule natively, but you have to be aware which alternative fields to use:
 
@@ -92,13 +108,13 @@ Does your ERP system natively support a delivery schedule? A delivery schedule c
 The simple delivery schedule feature is only available for buyers at this moment.
 Please let [support](support.md) know when you are interested in a simple delivery schedule at the supplier side.
 
-### Can you split a delivery schedule?
+### Can you **split** a delivery schedule?
 
 Does you ERP system support delivery or order lines split by a supplier? A supplier may split a line into multiple lines. A split line will have no position assigned by Tradecloud. THe ERP system must assign a position to the split line and update the order line to Tradecloud, check out:
 
 {% page-ref page="order/buyer/receive/delivery-schedule.md" %}
 
-### Touched or all order lines?
+### **Touched** or **all** order lines?
 
 Does your ERP expect only new and updated or always all lines in an order, order response or shipment message?
 
@@ -116,40 +132,44 @@ Tradecloud sends always all lines in a shipment message. It is no problem if you
 
 ## API checklist
 
-The checklist continues with more API technical questions:
+The checklist continues with more API technical questions.
 
-### Basic or JWT authentication?
+### **Basic** or **JWT** authentication?
 
-Do you want to use Basic Authentication or JSON Web Tokens? Both have pros and cons:
+Do you want to use Basic Authentication or JSON Web Tokens for your API client? Both have pros and cons:
 
 {% page-ref page="security/authentication.md" %}
 
-### JSON or XML?
+### **JSON** or **XML**?
 
 Do you want to use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?
 
 Tradecloud default works with JSON but some API endpoints also work with XML and more will be added on request. 
 XML documentation will be added soon. Please let [support](support.md) know when you are interested in using XML.
 
-### Webhook or polling?
+### **Webhooks** or **polling**?
 
-Do you want to use a webhook or polling to receive messages? Check out:
+Do you want to use webhooks or polling to receive messages? Check out:
 
 {% page-ref page="api/webhook-vs-polling.md" %}
 
+#### Webhook **Basic** or **Bearer Token** authentication?
+
+When using webhooks, Do you want to use Basic Authentication or Bearer Tokens for your webhooks?
+
 #### Ip source filtering?
 
-When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as an integration does not use MFA or SSO. You may find the Tradecloud ip adresses here:
+When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as a webhook does not use MFA or SSO. You may find the Tradecloud ip adresses here:
 
 {% page-ref page="api/environments.md#source-ip-addresses" %}
 
-### Are you compatible?
+### Are you **forward compatible**?
 
 Your integration must be compatibility, especially following the forward compatibility rules:
 
 {% page-ref page="api/compatibility.md" %}
 
-### Do you have a test environment?
+### Do you have a **test environment**?
 
 Tradecloud provides a test environment which you may use to develop and test against:
 
