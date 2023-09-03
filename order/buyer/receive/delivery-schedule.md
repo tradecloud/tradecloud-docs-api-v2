@@ -42,7 +42,7 @@ Tradecloud will expand a delivery schedule into order lines with the same item n
 {% endhint %}
 
 {% hint style="warning" %}
-The order line `position` may be unassigned in case of an order line split by a supplier The ERP system must assign a position to the split order line and update the order line to Tradecloud.
+The order line `position` may be unassigned in case of an order line split by a supplier. The ERP system must assign a position to the split order line and update the order line to Tradecloud.
 {% endhint %}
 
 ### `scheduledDelivery` fields
