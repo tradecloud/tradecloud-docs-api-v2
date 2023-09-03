@@ -7,7 +7,7 @@ description: API v2 welcome page.
 If you want to integrate your ERP system using the Tradecloud API v2 you are at the right place.
 
 {% hint style="danger" %}
-This [checklist](checklist.md) contains important info and decisions to consider before start building an API integration with Tradecloud.
+This [checklist](checklist.md) contains important info and decisions to consider before starting to build an API integration with Tradecloud.
 {% endhint %}
 
 ## Some pages to get you started

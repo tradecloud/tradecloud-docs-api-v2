@@ -5,7 +5,7 @@ description: This checklist page contains architecture, ERP and API checklists.
 # Checklist
 
 {% hint style="danger" %}
-This checklist contains important info and decisions to consider before start building an API integration with Tradecloud.
+This checklist contains important info and decisions to consider before starting to build an API integration with Tradecloud.
 {% endhint %}
 
 
