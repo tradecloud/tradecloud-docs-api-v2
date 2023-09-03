@@ -1,5 +1,5 @@
 ---
-description: This checklist page contains important info and decisions to make before starting API client development.
+description: This checklist page contains architecture, ERP and API checklists.
 ---
 
 # Checklist
@@ -80,7 +80,7 @@ As a buyer, what message flows are you going to build?
 * [complete an order](order/buyer/complete.md) - notify suppliers about completed order lines
 * [cancel an order](order/buyer/cancel.md) - notify suppliers about cancelled order lines
 * [shipments](shipment/buyer/receive/README.md) - receive shipment planning and updates from suppliers
-* [shipment documents](shipment/buyer/receive/download-documents.md) - receive attached shipment documents
+* [shipment documents](shipment/buyer/receive/download-document.md) - receive attached shipment documents
 * [forecasts](forecast/issue.md) - send forecasts to your suppliers
 
 #### As a supplier
