@@ -4,7 +4,9 @@ description: How to send a new or updated despatch advice to Tradecloud
 
 # Send a despatch advice
 
-As supplier you can send either a **new or updated** despatch advice to your buyer.
+## Despatch advice process
+
+As supplier you can send either a **new or updated** despatch advice to Tradecloud.
 
 {% hint style="info" %}
 When a purchase order number is provided, but the item is not or partly provided, the item in the despatch advice will be enriched if Tradecloud can find the purchase order.

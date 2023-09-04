@@ -12,15 +12,15 @@ Cancel an order line in Tradecloud when it is cancelled at the buyer.
 
 ## Cancelling by resending an order using the `/order` API
 
-You can cancel the order or line by setting `indicators.cancelled` on either order or line level and updating the order using the `/order` API resource.
+You can cancel the order or line by setting `indicators.cancelled` on either order or line level and updating the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:
+
+{% page-ref page="update.md" %}
 
 {% hint style="info" %}
 If you provide a `cancelled` indicator on order level, **ONLY** the lines provided in this order message will be cancelled.
 
 If you also provide a `cancelled` indicator on line level, it has **precedence** over the order level `cancelled` indicator.
 {% endhint %}
-
-{% page-ref page="update.md" %}
 
 ## Cancelling by resending the order without the cancelled line using the `/order` API
 
@@ -34,15 +34,13 @@ This is useful when your ERP system cannot cancel a line, but instead removes a 
 
 ## Cancelling by sending the cancelled indicator using the `/order/indicators` API
 
-You can cancel the order or line by setting `indicators.cancelled` on either order or line level and sending this indicator only, using the `/order/indicators` API resource.
+You can cancel the order or line by setting `indicators.cancelled` on either order or line level, using the [Send order indicators](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute) endpoint to send the cancelled indicator to Tradecloud.
 
 {% hint style="info" %}
 If you provide a `cancelled` indicator on order level, **ALL** the lines in the order will be cancelled.
 
 If you also provide a `cancelled` indicator on line level, it has **precedence** over the order level `cancelled` indicator.
 {% endhint %}
-
-Use the [Send order indicators](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute) endpoint to send the cancelled indicator to Tradecloud.
 
 {% hint style="info" %}
 When sending order indicators the provided purchase order number will be verified. 

@@ -4,15 +4,17 @@ description: How to issue a forecast as a buyer
 
 # Issue a new forecast
 
-As buyer you can send a new forecast to your supplier.
+## Forecast process
+
+As buyer you can send a new forecast to Tradecloud.
 
 {% hint style="info" %}
 A forecast cannot be updated. Issued forecasts will always be appended to the existing set of forecasts.
 {% endhint %}
 
-{% hint style="info" %}
-Use the [Send Slimstock forecast](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendForecastByBuyerRoute) endpoint to send a forecast to Tradecloud.
-{% endhint %}
+## Endpoint
+
+Use the [Send forecast](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendForecastByBuyerRoute) endpoint to send a forecast to Tradecloud.
 
 {% hint style="info" %}
 When sending a forecast the provided supplier account number will be verified. 
