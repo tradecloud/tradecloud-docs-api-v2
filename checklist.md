@@ -14,11 +14,11 @@ TODO: flow diagram?
 
 ## Checklist Architecture Design
 
-When you are going to connect your ERP to Tradecloud One, you have to make some **integration architecture decisions**
+When you are going to connect your ERP to Tradecloud One, you have to make some **integration architecture decisions**:
 
 ### Connector or API Integration?
 
-- [ ] Should I buy a Connector or build an API integration?
+- [ ] **Should I buy a Connector or build an API integration?**
 
 This mainly depends on your ERP system.  
 If your ERP is compaible with one of the Tradecloud connectors below, we advise to use one of our connectors. These connectors already contain the necessary components, message flows and data transformations to connect with Tradecloud One. 
@@ -29,7 +29,6 @@ This will require in-depth knowledge about your [ERP](#checklist-erp-design) and
 
 **Tradecloud One Connectors**  
 
-TODO: page per connector? (eg. does it send back all lines, or only updated? What team members does it require? Partner?)
 ERP-specific connectors: 
 
 * AFAS Connector _(by [Improvit](https://www.improvit.nl/))_
@@ -53,7 +52,7 @@ Generic Connectors:
 
 ### Middleware or 1-1 connection?
 
-- [ ] Should I buy or build middleware or build a 1-1 connection?
+- [ ] **Should I buy or build middleware or build a 1-1 connection?**
 
 **Using Message-oriented Middleware**  
 You will need message-oriented middleware if one of the following applies:
@@ -73,7 +72,7 @@ Some Tradecloud customers build 1-1 connections using the tools provided by the 
 
 ### Required team members
 
-- [ ] Which team members do I need?
+- [ ] **Which team members do I need?**
 
 * When using a **Tradecloud One Connector**, in most cases a partner consultant will install, configure and maintain the Connector for you.
 * When using **message-oriented middleware**, you will need an integration consultant to build and maintain the message flows & data transformations and install & configure the middleware components.
@@ -83,7 +82,7 @@ Some Tradecloud customers build 1-1 connections using the tools provided by the 
 
 ### Message flows
 
-- [ ] Which message flows should I build?
+- [ ] **Which message flows should I build?**
 
 This depends on the Tradecloud One modules (order/shipment/forecast) that are agreed upon in the contract with Tradecloud.  
 Within each module, there are several **message flows** possible dependent on the buyer or supplier role. 
@@ -137,27 +136,27 @@ TODO: this is only needed when you build your own integration. Make this clear i
 
 When starting to build and integration with the Tradecloud One API, make sure to check the following:
 
-- [ ] Use [Basic](api/standards.md#basic-http-authentication) or [JWT](api/standards.md#jwt) authentication?  
+- [ ] **Use [Basic](api/standards.md#basic-http-authentication) or [JWT](api/standards.md#jwt) authentication?**  
   {% page-ref page="security/authentication.md" %}
-- [ ] Use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?  
+- [ ] **Use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?**  
   By default, Tradecloud works with JSON but some API endpoints also work with XML and more will be added on request.
   XML documentation will be added soon. Please let [support](support.md) know when you are interested in using XML.
-- [ ] Use **Webhooks** or **polling**?  
+- [ ] **Use _Webhooks_ or _polling_?**  
   {% page-ref page="api/webhook-vs-polling.md" %}
-- [ ] If using Webhooks, use **Basic** or **Bearer Token** authentication?  
+- [ ] **If using Webhooks, use _Basic_ or _Bearer Token_ authentication?**  
   In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication or a Bearer Token.
-- [ ] Use Ip source filtering?  
+- [ ] **Use Ip source filtering?**  
   When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as a webhook does not use MFA or SSO. You may find the Tradecloud egress ip addresses here:  
   {% page-ref page="api/environments.md#source-ip-addresses" %}
-- [ ] Are you **forward compatible**?  
+- [ ] **Are you forward compatible?**  
   Your integration must follow the forward compatibility rules:  
   {% page-ref page="api/compatibility.md" %}
-- [ ] Do you have a **test environment**?  
+- [ ] **Do you have a test environment?**  
   Tradecloud provides a test environment which you may use to develop and test against:  
   {% page-ref page="api/environments.md#acceptance-test-environment" %} 
-- [ ] Usage rules  
+- [ ] **Usage rules**  
   There are [rules and limits](api/rules.md) which you may want to check. 
-- [ ] Tools  
+- [ ] *Tools**  
   There are [tools](api/tools/README.md) which you may want to use. Let [support](support.md) know if you need some example.
 
 ### Support
