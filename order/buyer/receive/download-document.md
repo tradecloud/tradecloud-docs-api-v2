@@ -40,54 +40,8 @@ In this example the `objectId` is:
 
 ### Step. 2. Retrieve the `downloadUrl` from the object storage
 
-{% api-method method="get" host="https://api.accp.tradecloud1.com/v2" path="/object-storage/document/{objectId}/metadata" %}
-{% api-method-summary %}
-Get document metadata
-{% endapi-method-summary %}
+Apply the `objectId` in the [GET document metadata](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/getDocumentMetadata) end point to retrieve the `downloadUrl` from the object storage.
 
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="objectId" type="string" required=false %}
-document objectId
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
-Bearer Access-Token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-  "id": "67aa8ece-5d41-496f-a94c-483e360b833b",
-  "filename": "test.pdf",
-  "contentType": "application/octet-stream",
-  "downloadUrl": "`downloadUrl`"
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% hint style="info" %}
-[GET document metadata OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/getDocumentMetadata)
-{% endhint %}
-
-In this example the `downloadUrl` is:
 ### Step 3. Download the document using the `downloadUrl`
 
 Just GET the `downloadUrl`

@@ -14,9 +14,11 @@ You can attach documents using three methods:
 
 ### Step 1. Upload a document to the Tradecloud object-storage
 
-Use the [Upload order document](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument) to up
+Use the [Upload document](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument) endpoint to upload the document to the Tradecloud object-storage and remember the returned document `objectId`.
 
 ### Step 2. Choose an appropriate API to attach the document
+
+You can attach the uploaded document using two methods:
 
 {% page-ref page="attach-document-api.md" %}
 
@@ -28,13 +30,15 @@ Upload documents to your company's content server and remember the returned docu
 
 ### Step 2. Choose an appropriate API to attach the document
 
+Choose an appropriate API to attach the document:
+
 {% page-ref page="attach-document-api.md" %}
 
 ## Method 3. Only provide document meta data
 
 Only provide document meta data like code, revision, name, description and type.
 
-Choose an appropriate API to attach the document
+Choose an appropriate API to attach the document:
 
 {% page-ref page="attach-document-api.md" %}
 

@@ -19,7 +19,7 @@ There are two ways to send the delivery history to Tradecloud:
 
 ### Send the delivery history by resending an order using the `/order` API
 
-Send the actual delivery schedule by setting the `lines.deliveryHistory` and updating the order using the `/order` API resource:
+Send the actual delivery schedule by setting the `lines.deliveryHistory` and updating the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:
 
 {% page-ref page="update.md" %}
 

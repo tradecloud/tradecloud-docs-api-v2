@@ -6,76 +6,21 @@ description: How to send a new or updated despatch advice to Tradecloud
 
 As supplier you can send either a **new or updated** despatch advice to your buyer.
 
+{% hint style="info" %}
+When a purchase order number is provided, but the item is not or partly provided, the item in the despatch advice will be enriched if Tradecloud can find the purchase order.
+{% endhint %}
+
+## Endpoint 
+
 {% hint style="warning" %}
 The shipment module is under development. The API and documentation may change.
 {% endhint %}
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/shipment/despatch-advice" %}
-{% api-method-summary %}
-Send despatch advice by supplier
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-Despatch advice JSON body
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %} 
-Successfully verified and sent despatch advice.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=202 %}
-{% api-method-response-example-description %} 
-Successfully queued despatch advice. The buyer account code has not yet been verified.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %} 
-Buyer not found.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% hint style="info" %}
-[Send despatch advice OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendDespatchAdviceBySupplierRoute)
-{% endhint %}
+Use the [Send despatch advice](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendDespatchAdviceBySupplierRoute) to send a despatch advice to Tradecloud.
 
 {% hint style="info" %}
 When sending a despatch advice the provided buyer account number will be verified.
-
-Response status codes:
-- 200 OK - the buyer account number exists and the order will be processed.
-- 202 Accepted - the buyer verification has been skipped due to service unavailability and the despatch advice has been queued.
-- 404 Not Found - the buyer account number has not been found. 
 {% endhint %}
-
-When a purchase order number is provided, but the item is not or partly provided, the item in the despatch advice will be enriched if Tradecloud can find the purchase order.
 
 # Despatch advice
 

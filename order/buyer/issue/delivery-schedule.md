@@ -46,7 +46,7 @@ Use the field `lines.scheduledDelivery` to issue the requested planned delivery 
 
 Provide one `scheduledDelivery` per order line. The total number of `scheduledDelivery`'s is limited to 100 deliveries per item number.
 
-Use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint to send an order with a native delivery schedule to Tradecloud.
+Use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint to send an order with a simple delivery schedule to Tradecloud.
 
 {% hint style="info" %}
 Tradecloud will merge `scheduledDelivery`'s of order lines with the same item number into one order line having a delivery schedule. The `lines.position` will be taken as `deliverySchedule.position`. 

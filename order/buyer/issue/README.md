@@ -4,21 +4,18 @@ description: How to issue a new purchase order as a buyer
 
 # Issue a new order
 
-As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
-
-{% hint style="warning" %}
-The order should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
-{% endhint %}
 
 ## Order process
 
-As a buyer you can send a new purchase order to Tradecloud.
-
-Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint to send an order to Tradecloud.
+As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
 
 {% hint style="info" %}
 The new order lines will have order process status `Issued`and logistics status `Open`
 {% endhint %}
+
+## Endpoint
+
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint to send an order to Tradecloud.
 
 {% hint style="info" %}
 When sending an order the provided supplier account number will be verified. 
