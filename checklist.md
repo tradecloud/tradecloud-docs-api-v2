@@ -41,6 +41,7 @@ ERP-specific connectors:
 * Microsoft Dynamics 365 Business Central [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/microsoft-dynamics-bc/connectivity-studio) 
 * Microsoft Dynamics 365 Finance & Operations [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/connectivity-studio)
 * SAP SOAP Connector - for single SAP ERP instances
+* Slim4 Forecast Connector _(by [Slimstock](https://www.slimstock.com))_
 
 Generic Connectors:
 
@@ -50,8 +51,6 @@ Generic Connectors:
   _Compatible with any ERP that supports the [Edifact](https://www.stylusstudio.com/edifact/D96A/ORDERS.htm) format_
 * [SCSN](https://smart-connected.nl) Connector _(by [Supply Drive](https://supplydrive.cloud/))_  
   _Compatible with any ERP that supports the [SCSN](https://smart-connected.nl) format._ 
-
-
 
 ### Middleware or 1-1 connection?
 

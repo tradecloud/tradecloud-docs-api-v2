@@ -24,13 +24,13 @@ If you also provide a `cancelled` indicator on line level, it has **precedence**
 
 ## Cancelling by resending the order without the cancelled line using the `/order` API
 
-You can cancel an order line by using the `/order` API resource, by setting the `indicators.cancelLineWhenMissing` on order level and updating the order WITHOUT including the cancelled line.
-
-You can cancel a full order \(all the lines\) by setting the `indicators.cancelLineWhenMissing` on order level and updating the order WITHOUT any lines.
-
-This is useful when your ERP system cannot cancel a line, but instead removes a line from the order.
+When your ERP system cannot cancel a line, but instead removes a line from the order, you still still cancel an order line by setting the `indicators.cancelLineWhenMissing` on order level and updating the order WITHOUT including the cancelled line using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:
 
 {% page-ref page="update.md" %}
+
+{% hint style="info" %}
+You can cancel a full order \(all the lines\) by setting the `indicators.cancelLineWhenMissing` on order level and updating the order WITHOUT any lines.
+{% endhint %}
 
 ## Cancelling by sending the cancelled indicator using the `/order/indicators` API
 

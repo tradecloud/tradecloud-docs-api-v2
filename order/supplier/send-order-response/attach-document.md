@@ -3,7 +3,7 @@ description: How to attach a document to an order or line response
 ---
 
 {% hint style="warning" %}
-This feature is not available yet. Please contact support@tradecloud1.com if you need this feature.
+This feature is not available yet. Please contact [support](../../../support.md) if you need this feature.
 {% endhint %}
 
 # Attach a document to an order response
