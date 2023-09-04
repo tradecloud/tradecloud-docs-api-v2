@@ -21,11 +21,12 @@ When you are going to connect your ERP to Tradecloud One, you have to make some 
 **Tradecloud One Connectors**  
 
 Tradecloud One Connectors already contain the necessary components, message flows and data transformations to connect with Tradecloud One.  
-Together with our partners, Tradcloud offers the following connector:
+Together with our partners, Tradcloud offers the following connectors.
+
+ERP-specific connectors: 
 
 * AFAS Connector _(by [Improvit](https://www.improvit.nl/))_
 * Tradecloud templates at _[Copernicus Niklas integration platform](https://www.copernicus.nl/en/products/niklas-integration-platform/)_
-* CSV Connector _(by [Supply Drive](https://supplydrive.cloud/))_
 * Edifact Connector _(by [Supply Drive](https://supplydrive.cloud/))_
 * Exact Globe Connector _(by [AB Software](https://www.wijzijnab.nl/))_
 * Infor LN Connector _(by [Xibis](https://xibis.nl/))_
@@ -34,7 +35,17 @@ Together with our partners, Tradcloud offers the following connector:
 * Microsoft Dynamics 365 Business Central [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/microsoft-dynamics-bc/connectivity-studio) 
 * Microsoft Dynamics 365 Finance & Operations [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/connectivity-studio)
 * SAP SOAP Connector - for single SAP ERP instances
-* [SCSN](https://smart-connected.nl) Connector _(by [Supply Drive](https://supplydrive.cloud/))_
+
+Generic Connectors:
+
+* [SCSN](https://smart-connected.nl) Connector _(by [Supply Drive](https://supplydrive.cloud/))_  
+  _Compatible with any ERP that supports the [SCSN](https://smart-connected.nl) format._ 
+* CSV Connector _(by [Supply Drive](https://supplydrive.cloud/))_  
+  _Compatible with any ERP that supports the CSV format_
+
+**API Integration**  
+If your ERP is not compatible with one of the connectors above, it is possible to build an integration with our [JSON/XML API](#checklist-api-integration-design).
+This will require in-depth knowledge about your [ERP](#checklist-erp-design) and a partner or in-house software developer that has experience with web-based API integrations.
 
 ### Middleware or 1-1 connection?
 
@@ -98,7 +109,7 @@ As a supplier, what message flows are you going to build?
 * [order response documents](order/supplier/send-order-response/attach-document.md) - attach documents to your confirmations
 * [despatch advices](shipment/supplier/send-despatch-advice.md) - send shipment despatch advices to your buyers
 
-## ERP checklist
+## Checklist ERP Design
 
 The checklist continues with ERP specific questions:
 
@@ -133,7 +144,7 @@ Tradecloud sends always all lines in a shipment message. It is no problem if you
 
 {% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" %}
 
-## API checklist
+## Checklist API Integration Design
 
 The checklist continues with technical API questions:
 
