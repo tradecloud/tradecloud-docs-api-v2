@@ -1,43 +1,44 @@
----
-description: This checklist page contains architecture, ERP and API checklists.
----
-
 # Checklist
 
 {% hint style="danger" %}
-This checklist contains important info and decisions to consider before starting to build an API integration with Tradecloud.
+This checklist an overview of all technical design decisions you need to make before starting to build an API integration with Tradecloud One.
 {% endhint %}
 
+This is divided in:
 
-## Architecture checklist
+- Architecture Design
+- ERP Design
+- API Integration Design
 
-When you are going to connect your ERP to Tradecloud you have to make some **integration architecture decisions**:
+## Checklist Architecture Design
 
-- should I buy a Connector or build an API integration?
-- should I buy or build middleware or build a 1-1 connection?
-- based on these choices, which team members do I need?
-- which message flows should I build?
+When you are going to connect your ERP to Tradecloud One, you have to make some **integration architecture decisions**
 
-### Connector or API?
+### Connector or API Integration?
 
-Are you going to buy a Tradecloud connector or build an API integration?
-Tradecloud Connectors already contain the necessary components, message flows and data transformations to connect with Tradecloud.
-Available Tradecloud Connectors are:
+- [ ] Should I buy a Connector or build an API integration?
 
-* AFAS Connector - available from partner [Improvit](https://www.improvit.nl/)
-* [Copernicus Niklas integration platform](https://www.copernicus.nl/en/products/niklas-integration-platform/) with Tradecloud templates
-* CSV Connector - available from partner [Supply Drive](https://supplydrive.cloud/)
-* Edifact Connector - available from partner [Supply Drive](https://supplydrive.cloud/)
-* Exact Globe Connector - available from partner [AB Software](https://www.wijzijnab.nl/)
-* Infor LN Connector - available from partner [Xibis](https://xibis.nl/)
-* Isah API Connector - available from partner [Tambien](https://tambien.nl)
-* Isah [SCI](https://help.isah.com/r511/#/home/71601/1043/isah) Connector - available from partner [Isah](https://isah.com)
-* Microsoft Dynamics 365 Business Central [Connectivity Studio](https://www.to-increase.com/business-integration/microsoft-dynamics-bc/connectivity-studio) - available from partner To-Increase 
-* Microsoft Dynamics 365 Finance & Operations [Connectivity Studio](https://www.to-increase.com/business-integration/connectivity-studio) - available from partner To-Increase
-* SAP SOAP Connector - for single SAP ERP instances - available from Tradecloud
-* [SCSN](https://smart-connected.nl) Connector - available from partner [Supply Drive](https://supplydrive.cloud/)
+**Tradecloud One Connectors**  
+
+Tradecloud One Connectors already contain the necessary components, message flows and data transformations to connect with Tradecloud One.  
+Together with our partners, Tradcloud offers the following connector:
+
+* AFAS Connector _(by [Improvit](https://www.improvit.nl/))_
+* Tradecloud templates at _[Copernicus Niklas integration platform](https://www.copernicus.nl/en/products/niklas-integration-platform/)_
+* CSV Connector _(by [Supply Drive](https://supplydrive.cloud/))_
+* Edifact Connector _(by [Supply Drive](https://supplydrive.cloud/))_
+* Exact Globe Connector _(by [AB Software](https://www.wijzijnab.nl/))_
+* Infor LN Connector _(by [Xibis](https://xibis.nl/))_
+* Isah API Connector _(by [Tambien](https://tambien.nl))_
+* Isah [SCI](https://help.isah.com/r511/#/home/71601/1043/isah) Connector _(by [Isah](https://isah.com))_
+* Microsoft Dynamics 365 Business Central [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/microsoft-dynamics-bc/connectivity-studio) 
+* Microsoft Dynamics 365 Finance & Operations [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/connectivity-studio)
+* SAP SOAP Connector - for single SAP ERP instances
+* [SCSN](https://smart-connected.nl) Connector _(by [Supply Drive](https://supplydrive.cloud/))_
 
 ### Middleware or 1-1 connection?
+
+- [ ] Should I buy or build middleware or build a 1-1 connection?
 
 When building an API integration, lets look at the integration architecture: 
 
@@ -55,6 +56,8 @@ Some Tradecloud customers build 1-1 connections using the tools provided by the 
 
 ### Which team members do I need?
 
+- [ ] Based on these choices, which team members do I need?
+
 When using a Tradecloud Connector, in most cases a partner consultant will install, configure and maintain the Connector for you.
 
 In the case of message-oriented middleware, you will need an integration consultant to build and maintain the message flows & data transformations and install & configure the middleware components.
@@ -64,6 +67,8 @@ When building an API integration, you will need developers and a tester to build
 In all cases you will need a cloud or system engineer, to configure a firewall, configure SSL, install and configure a web server or Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) components.
 
 ### Which **message flows** should I build?
+
+- [ ] Which message flows should I build?
 
 When building an API integration, lets look at the scope: The Tradecloud modules (order/shipment/forecast) are agreed in the contract with Tradecloud, but within these modules there are several **message flows** possible dependent on the buyer or supplier role:
 
