@@ -14,63 +14,7 @@ You can attach documents using three methods:
 
 ### Step 1. Upload a document to the Tradecloud object-storage
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/object-storage/document" %}
-{% api-method-summary %}
-Upload a new document
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Upload the document to Tradecloud's object storage which will return an `objectId`
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/???
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-Document body
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Document upload successful, returning the object id
-{% endapi-method-response-example-description %}
-
-```text
-{
-  "id": "40fef20d-8769-4a0b-aa2d-90a0b00750b4"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=413 %}
-{% api-method-response-example-description %}
-Document upload failed, the document size exceeds 100 MB
-{% endapi-method-response-example-description %}
-
-```text
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% hint style="info" %}
-[Upload document OpenAPI specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument)
-{% endhint %}
+Use the [Upload order document](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/object-storage/specs.yaml#/object-storage/uploadDocument) to up
 
 ### Step 2. Choose an appropriate API to attach the document
 

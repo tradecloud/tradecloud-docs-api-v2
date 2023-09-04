@@ -14,73 +14,14 @@ The order should only contain **order lines** that are **new or changed**. Sendi
 
 As a buyer you can send a new purchase order to Tradecloud.
 
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint to send an order to Tradecloud.
+
 {% hint style="info" %}
 The new order lines will have order process status `Issued`and logistics status `Open`
 {% endhint %}
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order" %}
-{% api-method-summary %}
-Send order by buyer
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-Order JSON body
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %} 
-Successfully verified and sent order.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=202 %}
-{% api-method-response-example-description %} 
-Successfully queued order. The supplier account code has not yet been verified.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %} 
-Supplier not found.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% hint style="info" %}
-[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
-{% endhint %}
-
 {% hint style="info" %}
 When sending an order the provided supplier account number will be verified. 
-
-Response status codes:
-- 200 OK - the supplier account number exists and the order will be processed.
-- 202 Accepted - the supplier verification has been skipped due to service unavailability and the order has been queued.
-- 404 Not Found - the supplier account number has not been found. 
 {% endhint %}
 
 ## Order

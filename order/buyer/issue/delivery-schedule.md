@@ -22,6 +22,8 @@ Use the field `lines.deliverySchedule` for the requested planned delivery schedu
 
 Provide at least one or multiple delivery schedule lines. The total number of delivery schedule lines is limited to 100 lines per order line.
 
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint to send an order with a native delivery schedule to Tradecloud.
+
 ### `deliverySchedule` fields
 
 * `position`: the mandatory position in the delivery schedule. Not to be confused with the `lines.position`.
@@ -43,6 +45,8 @@ The simple delivery schedule is under development. The API and documentation may
 Use the field `lines.scheduledDelivery` for the requested planned delivery of this order line.
 
 Provide one `scheduledDelivery` per order line. The total number of `scheduledDelivery`'s is limited to 100 deliveries per item number.
+
+Use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint to send an order with a native delivery schedule to Tradecloud.
 
 {% hint style="info" %}
 Tradecloud will merge `scheduledDelivery`'s of order lines with the same item number into one order line having a delivery schedule. The `lines.position` will be taken as `deliverySchedule.position`. 
