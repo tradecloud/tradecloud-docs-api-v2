@@ -30,7 +30,7 @@ Published as [ISO 8601-1:2019](https://www.iso.org/standard/70907.htm)
 
 ## JSON
 
-Tradecloud supports JSON and [XML](#xml). JavaScript Object Notation is a lightweight, text-based, language-independent data interchange format.
+Tradecloud supports JSON and [XML](#xml). JavaScript Object Notation (JSON) is a lightweight, text-based, language-independent data interchange format.
 
 Published as [RFC 8259](https://tools.ietf.org/html/rfc8259) and [ECMA-404](https://www.ecma-international.org/publications/standards/Ecma-404.htm) [\(PDF\)](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)
 
