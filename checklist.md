@@ -10,8 +10,6 @@ This is divided in:
 - ERP Design
 - API Integration Design
 
-TODO: flow diagram?
-
 ## Checklist Architecture Design
 
 When you are going to connect your ERP to Tradecloud One, you have to make some **integration architecture decisions**:
