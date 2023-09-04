@@ -112,6 +112,10 @@ For more information about the available message flows for suppliers, check out:
 
 ## Checklist ERP Design
 
+{% hint style="info" %}
+This part of the checklist is not applicable if you use one of the [Tradecloud One Connectors](#connector-or-api-integration)
+{% endhint %}
+
 Before starting the actual implementation, you need to verify the capabilities and requirements of your ERP system for an integration.
 
 - [ ] **Use a _native_ or _simple_ delivery schedule?**  
@@ -132,7 +136,9 @@ Before starting the actual implementation, you need to verify the capabilities a
 
 ## Checklist API Integration Design
 
-TODO: this is only needed when you build your own integration. Make this clear in a flow diagram??
+{% hint style="info" %}
+This part of the checklist is not applicable if you use one of the [Tradecloud One Connectors](#connector-or-api-integration)
+{% endhint %}
 
 When starting to build and integration with the Tradecloud One API, make sure to check the following:
 
