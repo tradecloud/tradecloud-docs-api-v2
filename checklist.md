@@ -25,9 +25,11 @@ If your ERP is compaible with one of the Tradecloud connectors below, we advise 
 They are battle-tested by our customers and will speed up your onboarding onto the Tradecloud One platform.
 
 If your ERP is not compatible with one of these connectors, it is possible to build an integration with our [JSON/XML API](#checklist-api-integration-design).
-This will require in-depth knowledge about your [ERP](#checklist-erp-design) and a partner or in-house software developer that has experience with web-based API integrations.
+This will require in-depth knowledge about your [ERP](#checklist-erp-design) and a partner or in-house software developer that has experience with web-based [API integrations](#checklist-api-integration-design).
 
 **Tradecloud One Connectors**  
+
+Together with our partners, Tradecloud offers the following connectors.
 
 ERP-specific connectors: 
 
@@ -66,7 +68,7 @@ Examples of message-oriented middleware that some of our customers use are:
 * Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) mostly using [API Management](https://azure.microsoft.com/en-us/products/api-management), [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) and [Service Bus](https://azure.microsoft.com/en-us/products/service-bus).
 
 **Using a 1-1 connection**  
-If you have only one ERP system and are planning to connect to Tradecloud only, building a 1-1 connection, without message-oriented middleware, will suffice.
+If you have only one ERP system and are planning to connect to Tradecloud only, building a 1-1 connection without message-oriented middleware will suffice.
 
 Some Tradecloud customers build 1-1 connections using the tools provided by the ERP system. Be aware that these tools may be limited, and may miss for example a HTTP client or server, or security or data transformation features.
 
@@ -84,10 +86,9 @@ Some Tradecloud customers build 1-1 connections using the tools provided by the 
 
 - [ ] **Which message flows should I build?**
 
-This depends on the Tradecloud One modules (order/shipment/forecast) that are agreed upon in the contract with Tradecloud.  
-Within each module, there are several **message flows** possible dependent on the buyer or supplier role. 
+This depends on the Tradecloud One modules (order/shipment/forecast) that are agreed upon in the contract with Tradecloud.
 
-The more flows are implemented, the less manual work remains. Whether a flow can be implemented depends on:
+Within each module, there are several **message flows** possible dependent on the buyer or supplier role. The more flows are implemented, the less manual work remains. Whether a flow can be implemented depends on:
 
 * The capabilities of your ERP system
 * The process flow in your business
@@ -113,7 +114,7 @@ For more information about the available message flows for suppliers, check out:
 ## Checklist ERP Design
 
 {% hint style="info" %}
-This part of the checklist is not applicable if you use one of the [Tradecloud One Connectors](#connector-or-api-integration)
+This part of the checklist is not applicable if you use a [Tradecloud One Connectors](#connector-or-api-integration)
 {% endhint %}
 
 Before starting the actual implementation, you need to verify the capabilities and requirements of your ERP system for an integration.
@@ -127,17 +128,16 @@ Before starting the actual implementation, you need to verify the capabilities a
   {% page-ref page="order/buyer/receive/delivery-schedule.md" %}
 - [ ] **Receive only _changed_ or _all_ order/shipment lines?**  
   When order updates are sent from Tradecloud One to your ERP, what does your ERP require?  
-  Does your ERP expect only new and updated lines, or does it always expect all lines in an order, order response or shipment message?
-  - TODO: sum up which connectors send the whole order or updated. Reword text below
-  - **Order/response** Tradecloud sends only touched lines in an order/response message. It is no problem when your ERP needs all order/response lines, you may fetch the complete order, see:  
-    {% page-ref page="api/webhook-vs-polling.md#using-get" %}
-  - **Shipment**: Tradecloud sends always all lines in a shipment message. It is no problem if you only need touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:  
-    {% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" %}  
+  Does your ERP expect only new and updated lines, or does it always expect all lines of an order in an order/order response and all shipment lines in a shipment message?
+**Order/response** Tradecloud sends only touched lines in an order/response message. It is no problem when your ERP needs all order/response lines, you may fetch the complete order, see:  
+{% page-ref page="api/webhook-vs-polling.md#using-get" %}
+**Shipment**: Tradecloud sends always all lines in a shipment message. It is no problem if you only need touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:  
+{% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" %}  
 
 ## Checklist API Integration Design
 
 {% hint style="info" %}
-This part of the checklist is not applicable if you use one of the [Tradecloud One Connectors](#connector-or-api-integration)
+This part of the checklist is not applicable if you use a [Tradecloud One Connectors](#connector-or-api-integration)
 {% endhint %}
 
 When starting to build and integration with the Tradecloud One API, make sure to check the following:
@@ -162,11 +162,11 @@ When starting to build and integration with the Tradecloud One API, make sure to
   {% page-ref page="api/environments.md#acceptance-test-environment" %} 
 - [ ] **Usage rules**  
   There are [rules and limits](api/rules.md) which you may want to check. 
-- [ ] *Tools**  
+- [ ] **Tools**  
   There are [tools](api/tools/README.md) which you may want to use. Let [support](support.md) know if you need some example.
 
 ### Support
 
-If you have any question just ask:
+If you have any question, just ask:
 
 {% page-ref page="support.md" %}
