@@ -18,8 +18,9 @@ When you are going to connect your ERP to Tradecloud One, you have to make some 
 
 - [ ] **Should I buy a Connector or build an API integration?**
 
-This mainly depends on your ERP system.  
-If your ERP is compaible with one of the Tradecloud connectors below, we advise to use one of our connectors. These connectors already contain the necessary components, message flows and data transformations to connect with Tradecloud One. 
+This mainly depends on your ERP system.
+
+If your ERP is compatible with one of the Tradecloud connectors below, we advise to use one of our connectors. These connectors already contain the necessary components, message flows and data transformations to connect with Tradecloud One. 
 They are battle-tested by our customers and will speed up your onboarding onto the Tradecloud One platform.
 
 If your ERP is not compatible with one of these connectors, it is possible to build an integration with our [JSON/XML API](#checklist-api-integration-design).
@@ -33,7 +34,6 @@ ERP-specific connectors:
 
 * AFAS Connector _(by [Improvit](https://www.improvit.nl/))_
 * Tradecloud templates at _[Copernicus Niklas integration platform](https://www.copernicus.nl/en/products/niklas-integration-platform/)_
-* Edifact Connector _(by [Supply Drive](https://supplydrive.cloud/))_
 * Exact Globe Connector _(by [AB Software](https://www.wijzijnab.nl/))_
 * Infor LN Connector _(by [Xibis](https://xibis.nl/))_
 * Isah API Connector _(by [Tambien](https://tambien.nl))_
@@ -44,10 +44,13 @@ ERP-specific connectors:
 
 Generic Connectors:
 
-* [SCSN](https://smart-connected.nl) Connector _(by [Supply Drive](https://supplydrive.cloud/))_  
-  _Compatible with any ERP that supports the [SCSN](https://smart-connected.nl) format._ 
 * CSV Connector _(by [Supply Drive](https://supplydrive.cloud/))_  
   _Compatible with any ERP that supports the CSV format_
+* Edifact Connector _(by [Supply Drive](https://supplydrive.cloud/))_
+  _Compatible with any ERP that supports the [Edifact](https://www.stylusstudio.com/edifact/D96A/ORDERS.htm) format_
+* [SCSN](https://smart-connected.nl) Connector _(by [Supply Drive](https://supplydrive.cloud/))_  
+  _Compatible with any ERP that supports the [SCSN](https://smart-connected.nl) format._ 
+
 
 
 ### Middleware or 1-1 connection?
@@ -61,9 +64,10 @@ You will need message-oriented middleware if one of the following applies:
 * You plan to integrate with the outside world, eg. with webshops or logistics partners
 
 Examples of message-oriented middleware that some of our customers use are:
-* [ConnectPlaza](https://www.connectplaza.com/#1), [Mulesoft](https://www.mulesoft.com/), [Orbis](https://www.orbis-software.nl/) and [WebMethods](https://www.softwareag.com/en_corporate/platform/integration-apis/webmethods-integration.html).   
-  Be aware you still have to build and maintain message flows & data transformations and install and configure the middleware components.
+* [ConnectPlaza](https://www.connectplaza.com/#1), [Mulesoft](https://www.mulesoft.com/), [Orbis](https://www.orbis-software.nl/) and [WebMethods](https://www.softwareag.com/en_corporate/platform/integration-apis/webmethods-integration.html).
 * Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) mostly using [API Management](https://azure.microsoft.com/en-us/products/api-management), [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) and [Service Bus](https://azure.microsoft.com/en-us/products/service-bus).
+
+Be aware you still have to build and maintain message flows & data transformations and install and configure the middleware components.
 
 **Using a 1-1 connection**  
 If you have only one ERP system and are planning to connect to Tradecloud only, building a 1-1 connection without message-oriented middleware will suffice.
@@ -75,8 +79,8 @@ Some Tradecloud customers build 1-1 connections using the tools provided by the 
 - [ ] **Which team members do I need?**
 
 * When using a **Tradecloud One Connector**, in most cases a partner consultant will install, configure and maintain the Connector for you.
-* When using **message-oriented middleware**, you will need an integration consultant to build and maintain the message flows & data transformations and install & configure the middleware components.
-* When building an **API integration**, you will need developers and a tester to build and maintain the message flows & data transformations and install & configure the components.
+* When using **message-oriented middleware**, you will need an integration consultant with ERP knowledge to build and maintain the message flows & data transformations and install & configure the middleware components.
+* When building an **API integration**, you will need developers and a tester, both with ERP knowledge, to build and maintain the message flows & data transformations and install & configure the components.
 
 **In all cases** you will need a cloud or system engineer, to configure a firewall, configure SSL, install and configure a web server or Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) components.
 
@@ -84,12 +88,12 @@ Some Tradecloud customers build 1-1 connections using the tools provided by the 
 
 - [ ] **Which message flows should I build?**
 
-This depends on the Tradecloud One modules (order/shipment/forecast) that are agreed upon in the contract with Tradecloud.
+This depends on the Tradecloud One modules that are agreed upon in the contract with Tradecloud.
 
 Within each module, there are several **message flows** possible dependent on the buyer or supplier role. The more flows are implemented, the less manual work remains. Whether a flow can be implemented depends on:
 
-* The capabilities of your ERP system
 * The process flow in your business
+* The capabilities of your ERP system
 * The capabilities of the integration
 
 We are happy to [support](support.md) you in making this decision, sharing our expertise of the ERP and Supply Chain landscape.
@@ -128,9 +132,11 @@ Before starting the actual implementation, you need to verify the capabilities a
   When order updates are sent from Tradecloud One to your ERP, what does your ERP require?  
   Does your ERP expect only new and updated lines, or does it always expect all lines of an order in an order/order response and all shipment lines in a shipment message?
 
-**Order/response** Tradecloud sends only touched lines in an order/response message. It is no problem when your ERP needs all order/response lines, you may fetch the complete order, see:  
+**Order/response**  
+Tradecloud sends only touched lines in an order/response message. It is no problem when your ERP needs all order/response lines, you may fetch the complete order, see:  
 {% page-ref page="api/webhook-vs-polling.md#using-get" %}
-**Shipment**: Tradecloud sends always all lines in a shipment message. It is no problem if you only need touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:  
+**Shipment**  
+Tradecloud sends always all lines in a shipment message. It is no problem if you only need touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:  
 {% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" %}  
 
 ## Checklist API Integration Design
@@ -142,11 +148,13 @@ This part of the checklist is not applicable if you use a [Tradecloud One Connec
 When starting to build and integration with the Tradecloud One API, make sure to check the following:
 
 - [ ] **Use [Basic](api/standards.md#basic-http-authentication) or [JWT](api/standards.md#jwt) authentication?**  
+  Your integration must either use Basic Authentication or authentication based on a JWT token:
   {% page-ref page="security/authentication.md" %}
 - [ ] **Use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?**  
   By default, Tradecloud works with JSON but some API endpoints also work with XML and more will be added on request.
   XML documentation will be added soon. Please let [support](support.md) know when you are interested in using XML.
 - [ ] **Use _Webhooks_ or _polling_?**  
+  Depending on the capabilities of your integration, you may choose for using Webhooks or Polling:
   {% page-ref page="api/webhook-vs-polling.md" %}
 - [ ] **If using Webhooks, use _Basic_ or _Bearer Token_ authentication?**  
   In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication or a Bearer Token.
