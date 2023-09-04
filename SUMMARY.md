@@ -3,7 +3,8 @@
 ## Introduction
 
 * [Welcome](README.md)
-* [Support](support.md)
+  * [Checklist](checklist.md)
+  * [Support](support.md)
 * [API](api/README.md)
   * [Rules](api/rules.md)
   * [Requests](api/requests.md)
@@ -38,6 +39,7 @@
       * [Choose attach document API](order/buyer/issue/attach-document-api.md)
     * [Update an existing order](order/buyer/update.md)
     * [Receive an order response](order/buyer/receive/README.md)
+      * [Delivery schedule](order/buyer/receive/delivery-schedule.md)
       * [Download a document attached to an order response](order/buyer/receive/download-document.md)
     * [Receive goods](order/buyer/receive-goods.md)
     * [Complete an order](order/buyer/complete.md)

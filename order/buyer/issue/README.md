@@ -182,9 +182,9 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 ### Requested planned delivery schedule
 
-Use `lines.deliverySchedule` for the requested planned delivery schedule.
-Or alternatively use `lines.scheduledDelivery`for the requested scheduled delivery.
-Please see this page to choose between the standard or simple delivery schedule:
+Use `lines.deliverySchedule` when your ERP system supports a delivery schedule natively.
+Or alternatively use `lines.scheduledDelivery` for the simple delivery schedule.
+Please see this page to choose between the native or simple delivery schedule:
 
 {% page-ref page="delivery-schedule.md" %}
 

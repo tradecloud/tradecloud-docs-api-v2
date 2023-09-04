@@ -30,7 +30,7 @@ Published as [ISO 8601-1:2019](https://www.iso.org/standard/70907.htm)
 
 ## JSON
 
-JavaScript Object Notation is a lightweight, text-based, language-independent data interchange format.
+Tradecloud supports JSON and [XML](#xml). JavaScript Object Notation (JSON) is a lightweight, text-based, language-independent data interchange format.
 
 Published as [RFC 8259](https://tools.ietf.org/html/rfc8259) and [ECMA-404](https://www.ecma-international.org/publications/standards/Ecma-404.htm) [\(PDF\)](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)
 
@@ -38,6 +38,10 @@ Published as [RFC 8259](https://tools.ietf.org/html/rfc8259) and [ECMA-404](http
 The JSON syntax does not assign any significance to the **ordering** of name/value pairs.
 
 Therefor **XML** based transformations **expecting ordering** will break.
+{% endhint %}
+
+{% hint style="warning" %}
+The Tradecloud [compatibility rules](compatibility.md) apply to the JSON usage.
 {% endhint %}
 
 ## JWT
@@ -56,12 +60,12 @@ The [OpenAPI Version 2.0 Specification \(OAS 2.0\)](https://swagger.io/specifica
 
 [Representational state transfer \(REST\)](https://en.wikipedia.org/wiki/Representational_state_transfer%20) is not a standard but a software architectural style that defines a set of constraints to be used for creating Web services. The Tradecloud API additionally uses a command and query style.
 
-## TLS v1.2
+## TLS v1.2 and v1.3
 
 [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) is a cryptographic protocol designed to provide communications security over a computer network.
 
 {% hint style="warning" %}
-The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) published as [RFC 5246](https://tools.ietf.org/html/rfc5246).
+The Tradecloud API only supports [TLS v1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) published as [RFC 5246](https://tools.ietf.org/html/rfc5246) and [TLS v1.3](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3) published as [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446)
 {% endhint %}
 
 ## URI
@@ -82,3 +86,18 @@ ISO/IEC 10646-1 defines a large character set called the Universal Character Set
 
 Published as [RFC 9259](https://tools.ietf.org/html/rfc8259#section-8.1)
 
+## XML
+
+Tradecloud supports XML and [JSON](#json). The [Extensible Markup Language](https://en.wikipedia.org/wiki/XML) its main purpose is serialization, i.e. transmitting arbitrary data.
+
+Published as [Extensible Markup Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/REC-xml/)
+
+{% hint style="warning" %}
+Tradecloud does not assign any significance to the **ordering** of XML tags.
+
+Therefor **XML** based transformations **expecting ordering** will break.
+{% endhint %}
+
+{% hint style="warning" %}
+The Tradecloud [compatibility rules](compatibility.md) apply to the XML usage.
+{% endhint %}
