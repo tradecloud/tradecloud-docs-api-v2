@@ -16,6 +16,9 @@ Use the Tradecloud [**native** delivery schedule](#native-delivery-schedule) in 
 Other ERP systems can only work with one date and one quantity per order line.
 Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
 
+The simple delivery schedule feature is only available for buyers at this moment.
+Please let [support](support.md) know when you are interested in a simple delivery schedule at the supplier side.
+
 ## Native delivery schedule
 
 Use the field `lines.deliverySchedule` to issue the requested planned delivery schedule of this order line. 

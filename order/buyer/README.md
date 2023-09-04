@@ -8,7 +8,7 @@ description: Overview of the buyer order process.
 
 As a buyer you can [Issue a new order](issue/README.md)
 
-Additionally you can [Attach a document to the order](issue/attach-document.md)
+Additionally, you can [Attach a document to the order](issue/attach-document.md)
 
 You can [Update an existing order](update.md)
 
@@ -16,13 +16,9 @@ You can [Update an existing order](update.md)
 
 As a buyer you should [Receive an order response](receive/README.md) from the supplier
 
-Additionally you can [Download a document attached to an order response](receive/download-document.md).
+Additionally, you can [Download a document attached to an order response](receive/download-document.md).
 
 ## Optional step 3. Add the logistical status of goods to order update
-
-{% hint style="warning" %}
-This feature is planned for development. The API and documentation may change.
-{% endhint %}
 
 You can [Add the logistical status of goods to order update](update.md#logistics-status-in-the-planned-delivery-schedule)
 
