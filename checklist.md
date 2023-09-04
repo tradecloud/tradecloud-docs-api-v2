@@ -129,6 +129,7 @@ Before starting the actual implementation, you need to verify the capabilities a
 - [ ] **Receive only _changed_ or _all_ order/shipment lines?**  
   When order updates are sent from Tradecloud One to your ERP, what does your ERP require?  
   Does your ERP expect only new and updated lines, or does it always expect all lines of an order in an order/order response and all shipment lines in a shipment message?
+
 **Order/response** Tradecloud sends only touched lines in an order/response message. It is no problem when your ERP needs all order/response lines, you may fetch the complete order, see:  
 {% page-ref page="api/webhook-vs-polling.md#using-get" %}
 **Shipment**: Tradecloud sends always all lines in a shipment message. It is no problem if you only need touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:  
