@@ -2,7 +2,7 @@
 description: Backward and forward compatibility responsibilities
 ---
 
-# Compatibility
+# Compatibility rules
 
 ## Backward compatibility
 
