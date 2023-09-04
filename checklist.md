@@ -132,7 +132,7 @@ Before starting the actual implementation, you need to verify the capabilities a
 
 ## Checklist API Integration Design
 
-TODO: this is only needed when you build your own integration. Make this clear in a flow diagram?
+TODO: this is only needed when you build your own integration. Make this clear in a flow diagram??
 
 When starting to build and integration with the Tradecloud One API, make sure to check the following:
 
