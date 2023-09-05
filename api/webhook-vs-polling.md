@@ -26,7 +26,8 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 When using `POST` the **order** webhook request body contains:
 
 * `eventName`: The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
-* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\)
+* `orderEvent`: The actual order event, when using native delivery schedules, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\)
+* `simpleOrderEvent`: The actual order event, when using simple delivery schedules, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "SimpleOrderEvent"\)
 * `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
 
 When using `POST` the **shipment** webhook request body contains:
@@ -111,22 +112,21 @@ Fetch every polling period, typically 5 minutes, all orders or shipments which a
 * Set `limit` to the maximum of `100` orders or shipments.
 * Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
 
-{% hint style="info" %}
-[Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute)
-{% endhint %}
+Use the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint for polling orders.
 
-{% hint style="info" %}
-[Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute)
-{% endhint %}
+Use the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint for polling shipments.
 
-#### Step 2. Process the orders in the search response body
+#### Step 2. Process the orders or shipments in the search response body
 
-See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute).
+See the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint:
 
-* Use the `lastUpdatedAt` on order line level to filter the lines that have been changed.
+* Use the `lines.lastUpdatedAt` field to filter the order lines that have been changed.
 * Use the `status` field to filter on order process and logistics status.
 
-See the [Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute).
+See the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint:
+
+* Use the `lines.meta.lastUpdatedAt` to filter the shipment lines that have been changed.
+* Use the `status` field to filter on shipment process and logistics status.
 
 #### Step 3. Store the `lastUpdatedAt` for the next polling request
 

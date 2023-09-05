@@ -17,6 +17,7 @@ Other ERP systems can only work with one date and one quantity per order line.
 Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
 
 ## Native delivery schedule
+**TODO** Use the `orderEvent` field .,,
 
 The field `lines.deliverySchedule` contains the current planned delivery schedule of this order line. 
 

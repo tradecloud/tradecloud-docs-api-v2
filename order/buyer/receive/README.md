@@ -12,6 +12,10 @@ First choose either the webhook API or the polling API to receive order response
 
 {% page-ref page="../../../../api/webhook-vs-polling.md" %}
 
+**TODO** In case of a 
+
+
+
 ## Order or OrderEvent
 
 * `id` \(in case of an Order\): the Tradecloud order identifier

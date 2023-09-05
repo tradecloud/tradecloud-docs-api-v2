@@ -59,7 +59,7 @@ Generic Connectors:
 **Using Message-oriented Middleware**  
 You will need message-oriented middleware if one of the following applies:
 
-* You have multiple business systems, like ERP, WMS and PLM systems, that have ot integrate with Tradecloud One
+* You have multiple business systems, like ERP, WMS and PLM systems, that have to integrate with Tradecloud One
 * You plan to integrate with the outside world, eg. with webshops or logistics partners
 
 Examples of message-oriented middleware that some of our customers use are:
