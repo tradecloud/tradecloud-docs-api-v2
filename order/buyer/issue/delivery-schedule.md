@@ -3,21 +3,21 @@ description: >-
   Choose between the native or simple delivery schedule
 ---
 
-# Issue a delivery schedule
+# Send a delivery schedule
 
 ## Native versus simple delivery schedule
 
 Tradecloud works with a delivery schedule per order line.
 Each delivery line in a schedule consists of a position, delivery date and a quantity.
 
-Some ERP systems like SAP work natively with delivery schedules.
+Some ERP systems like SAP work natively with mulitple delivery lines per order line.
 Use the Tradecloud [**native** delivery schedule](#native-delivery-schedule) in this case.
 
-Other ERP systems can only work with one date and one quantity per order line.
+Other ERP systems can only work with only one delivery per order line.
 Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
 
-The simple delivery schedule feature is only available for buyers at this moment.
-Please let [support](support.md) know when you are interested in a simple delivery schedule at the supplier side.
+Sending a simple delivery schedule is only available for buyers at this moment.
+Please let [support](support.md) know when you are interested in a sending a simple delivery schedule from the supplier side.
 
 ## Native delivery schedule
 

@@ -41,13 +41,15 @@ Use `POST` when:
 * You want to receive the order event or shipment event content.
 * You only want to receive order or shipment events of a specific type.
 * You **only** need to receive the order lines that are **changed**, not all the lines of the order.
+* You want to use the simple delivery schedule.
 
 {% hint style="info" %}
 Pro's:
 
 * Real time, receive the order or shipment event within a second.
 * Order or shipment event content included.
-* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company profile or filter events yourself in your integration.
+* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
+* You can configure to receive the simple delivery schedule, in the order webhook settings in your company settings.
 * You do not have to build or configure the polling pattern.
 
 Con's:
@@ -65,6 +67,7 @@ Use `GET` when:
 
 * Same as `POST` above, but:
 * You need to receive the **complete** order with **all** the order lines, regardless they are changed or not.
+* You can handle the native delivery schedule yourself.
 
 {% hint style="info" %}
 Pro's:
@@ -77,6 +80,7 @@ Con's:
 
 * You need to fetch the order or shipment.
 * You cannot see what order or shipment event happened.
+* You cannot receive the simple delivery schedule.
 * You need to build or configure a webhook at your side.
 * You need to publish the webhook on the internet \(web server and firewall required\).
 * You need to obtain and configure a public SSL certificate.
@@ -99,6 +103,7 @@ Con's:
 * You need to build or configure a periodic polling pattern at your side.
 * You cannot filter on which order or shipment events to act on, you will receive any order or shipment change.
 * You cannot see what order or shipment event happened, multiple events may have happened.
+* You cannot receive the simple delivery schedule.
 {% endhint %}
 
 ### Polling usage

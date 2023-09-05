@@ -10,16 +10,18 @@ description: >-
 Tradecloud works with a delivery schedule per order line.
 Each delivery line in a schedule consists of a position, delivery date and a quantity.
 
-Some ERP systems like SAP work natively with delivery schedules.
+Some ERP systems like SAP work natively with mulitple delivery lines per order line.
 Use the Tradecloud [**native** delivery schedule](#native-delivery-schedule) in this case.
 
-Other ERP systems can only work with one date and one quantity per order line.
+Other ERP systems can only work with only one delivery per order line.
 Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
 
 ## Native delivery schedule
-**TODO** Use the `orderEvent` field .,,
+To use the native delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Multiple delivery lines per order line**".
 
-The field `lines.deliverySchedule` contains the current planned delivery schedule of this order line. 
+Use the `orderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+
+The field `lines.deliverySchedule` contains the current delivery schedule of this order line. 
 
 ### `deliverySchedule` fields
 
@@ -35,8 +37,11 @@ The `position` may be unassigned in case of a delivery line split by a supplier.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
 ## Simple delivery schedule
+To use the simple delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one delivery line per order line**".
 
-The field `lines.scheduledDelivery` contains the current planned delivery of this order line.
+Use the `simpleOrderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+
+The field `lines.scheduledDelivery` contains the current delivery line of this order line.
 
 {% hint style="info" %}
 Tradecloud will expand a delivery schedule into order lines with the same item number having `scheduledDelivery`'s. The `deliverySchedule.position` will be taken as `lines.position`. 
