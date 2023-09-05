@@ -14,7 +14,7 @@ First choose either the webhook API or the polling API to receive order response
 
 ## Choose to receive the native or simple delivery schedule 
 
-Please see this page to choose between the native or simple delivery schedule:
+If you choose the webhook API, you may choose between the native or simple delivery schedule:
 
 {% page-ref page="delivery-schedule.md" %}
 

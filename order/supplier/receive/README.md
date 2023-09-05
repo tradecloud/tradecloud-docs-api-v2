@@ -25,6 +25,7 @@ First choose either the webhook API or the polling API to receive order messages
 * `eventDates`: some key order event date/times.
 * `meta`: meta information, including source and trace info, about this messsage
 * `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling orders.
+
 ### Buyer order part
 
 `buyerOrder` contains the buyer order fields:
