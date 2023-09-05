@@ -24,6 +24,11 @@ The total number of documents is limited to 100 documents per order header and p
 ### Documents body
 
 * `code` : optional document code or number. The document code should be unique within your company and immutable.
+
+{% hint style="info" %}
+If a document with the same code is already attached to the order or line, the document will be replaced, else it will be appended.
+{% endhint %}
+
 * `revision`: optional document revision \(or version\) code or number
 * `name` : optional document short \(file\) name
 * `description` : optional document description or long name
@@ -69,7 +74,7 @@ When attaching documents the provided purchase order number will be verified.
 * `code` : optional document code or number. The document code should be unique within your company and immutable. 
 
 {% hint style="info" %}
-If a document for an order(line) has the same code as an existing document at that order(line), the original will be overwritten. Otherwise, the newly attached document will be appended.
+If a document with the same code is already attached to the order or line, the document will be replaced, else it will be appended.
 {% endhint %}
 
 * `revision`: optional document revision \(or version\) code or number
