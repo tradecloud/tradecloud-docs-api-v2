@@ -13,9 +13,15 @@ As buyer you can send either a **new or** [**updated**](../update.md) purchase o
 The new order lines will have order process status `Issued`and logistics status `Open`
 {% endhint %}
 
-## Endpoint
+## Endpoints
 
-Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint to send an order to Tradecloud.
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint when your ERP system supports a delivery schedule natively.
+
+Or use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) for the simple delivery schedule.
+
+Please see this page to choose between the native or simple delivery schedule:
+
+{% page-ref page="delivery-schedule.md" %}
 
 {% hint style="info" %}
 When sending an order the provided supplier account number will be verified. 
@@ -120,8 +126,10 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 ### Requested planned delivery schedule
 
-Use `lines.deliverySchedule` when your ERP system supports a delivery schedule natively.
-Or alternatively use `lines.scheduledDelivery` for the simple delivery schedule.
+Use the `lines.deliverySchedule` field when your ERP system supports a delivery schedule natively.
+
+Or use the `lines.scheduledDelivery` field for the simple delivery schedule.
+
 Please see this page to choose between the native or simple delivery schedule:
 
 {% page-ref page="delivery-schedule.md" %}
@@ -198,4 +206,3 @@ When your order process requires the buyer to always approve every line:
 ## Response
 
 When the `/api-connector/order` API method returns HTTP status code 200, the order was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order is available in the portal and is forwarded to the supplier ERP integration.
-
