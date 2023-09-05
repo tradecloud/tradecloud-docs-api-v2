@@ -11,18 +11,14 @@ You can attach documents using two methods:
 
 ## 1. Embedded in the order message using the `/order` API
 
-You can attach documents body using the `documents` field on either `order` or `lines` level in the order body of the `/order` API.
+You can attach documents using the `documents` field on either `order` or `lines` level in the body of the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:
+
+{% page-ref page="./" %}
 
 This will NOT create an `OrderDocumentsAttachedByBuyer`activity and NO acknowledge task for the supplier.
 
 {% hint style="warning" %}
 The total number of documents is limited to 100 documents per order header and per order line.
-{% endhint %}
-
-{% page-ref page="./" %}
-
-{% hint style="info" %}
-[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 {% endhint %}
 
 ### Documents body
@@ -34,7 +30,6 @@ The total number of documents is limited to 100 documents per order header and p
 * `type`: optional document business type
 * `objectId`: optional Tradecloud object identifier which was returned by the Tradecloud object-storage upload
 * `url`: optional document location if it is not stored in the Tradecloud object-storage.
-
 
 ## 2. Attach to an existing order using the `/order/documents` API
 
