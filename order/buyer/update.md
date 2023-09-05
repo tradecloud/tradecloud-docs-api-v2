@@ -18,14 +18,14 @@ Most supplier ERP integrations do not have the capability to automatically proce
 If an order line has order process status `Issued` or `In Progress` and it is updated, it will keep the same status. If the line has status `Rejected` \(by supplier\) and it is reissued, it will become `In Progress`. If the line has status `Confirmed` and it is reopened, it will become `In Progress`. In case of any other status like `Completed` or `Cancelled` the order update will be ignored.
 {% endhint %}
 
-### Send updated order API method
+### Endpoints
 
-Using the `/api-connector/order` API method is the same as when [sending a new order](issue/) with additional JSON objects as mentioned below. Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. Lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
+Using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) or [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint is the same as when [sending a new order](issue/) with additional JSON objects as mentioned below. 
+
+Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. Lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
 
 {% hint style="info" %}
 The order update should preferable only contain **order lines** that are **new or changed**. But you can also send all lines anyway.
-
-Sending all lines may result in processing delays and unnecessary network, server and storage resource usage.
 {% endhint %}
 
 ## Additional fields
