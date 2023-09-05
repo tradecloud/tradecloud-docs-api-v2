@@ -2,10 +2,6 @@
 description: How to attach a document to an order or line response
 ---
 
-{% hint style="warning" %}
-This feature is not available yet. Please contact [support](../../../support.md) if you need this feature.
-{% endhint %}
-
 # Attach a document to an order response
 
 You can attach documents using three methods:
@@ -39,7 +35,7 @@ The total number of documents is limited to 100 documents per order header and p
 * `name` : optional document short \(file\) name
 * `description` : optional document description or long name
 * `type`: optional document business type
-* `objectId`: optional Tradecloud object identifier which was returned by the Tradecloud object-storage upload
+* `objectId`: the Tradecloud object identifier which was returned by the Tradecloud object-storage upload
 
 ## Method 2. Attach a document using your company's content server
 
@@ -47,7 +43,7 @@ The total number of documents is limited to 100 documents per order header and p
 
 Upload documents to your company's content server and remember the returned document `url`.
 
-You can send the `url` using the `documents` field on either `order` or `lines` level in the order body of the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint.
+You can attach the `url` using the `documents` field on either `order` or `lines` level in the order body of the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint.
 
 ### Documents body
 
@@ -56,13 +52,13 @@ You can send the `url` using the `documents` field on either `order` or `lines` 
 * `name` : optional document short \(file\) name
 * `description` : optional document description or long name
 * `type`: optional document business type
-* `url`: optional document location if it is not stored in the Tradecloud object-storage.
+* `url`: the document location on the company's content server
 
 ## Method 3. Only provide document meta data
 
 Only provide document meta data like code, revision, name, description and type.
 
-You can send the meta data using the `documents` field on either `order` or `lines` level in the order body of the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint.
+You can attach the meta data using the `documents` field on either `order` or `lines` level in the order body of the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint.
 
 ### Documents body
 
