@@ -46,69 +46,12 @@ When the order line already has process status `Completed` the process status wi
 
 When the order line already has process status `Cancelled` the process status will **NOT** change.
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order-response" %}
-{% api-method-summary %}
-Send order response by supplier
-{% endapi-method-summary %}
+## Endpoint
 
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-Order response JSON body, see below.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %} 
-Successfully verified and sent order response.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=202 %}
-{% api-method-response-example-description %} 
-Successfully queued order response. The order response buyer account number and purchase order number have not yet been verified.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %} 
-Buyer account number or purchase order number not found.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% hint style="info" %}
-S[end order response OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute)
-{% endhint %}
+Use the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint to send an order response to Tradecloud.
 
 {% hint style="info" %}
 When sending an order response the provided buyer account number and purchase order number will be verified. 
-
-Response status codes:
-- 200 OK - the buyer account number and purchase order number exist and the order response will be processed.
-- 202 Accepted - the buyer and order verification has been skipped due to service unavailability and the order response has been queued.
-- 404 Not Found - either the buyer account number or purchase order number has not been found. 
 {% endhint %}
 
 ## Order

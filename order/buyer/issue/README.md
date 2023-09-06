@@ -4,83 +4,27 @@ description: How to issue a new purchase order as a buyer
 
 # Issue a new order
 
-As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
-
-{% hint style="warning" %}
-The order should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
-{% endhint %}
 
 ## Order process
 
-As a buyer you can send a new purchase order to Tradecloud.
+As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
 
 {% hint style="info" %}
 The new order lines will have order process status `Issued`and logistics status `Open`
 {% endhint %}
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/order" %}
-{% api-method-summary %}
-Send order by buyer
-{% endapi-method-summary %}
+## Endpoints
 
-{% api-method-description %}
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint when your ERP system supports a delivery schedule natively.
 
-{% endapi-method-description %}
+Or use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint for the simple delivery schedule.
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
-{% endapi-method-parameter %}
+Please see this page to choose between the native or simple delivery schedule:
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-Order JSON body
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %} 
-Successfully verified and sent order.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=202 %}
-{% api-method-response-example-description %} 
-Successfully queued order. The supplier account code has not yet been verified.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %} 
-Supplier not found.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% hint style="info" %}
-[Send order OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
-{% endhint %}
+{% page-ref page="delivery-schedule.md" %}
 
 {% hint style="info" %}
 When sending an order the provided supplier account number will be verified. 
-
-Response status codes:
-- 200 OK - the supplier account number exists and the order will be processed.
-- 202 Accepted - the supplier verification has been skipped due to service unavailability and the order has been queued.
-- 404 Not Found - the supplier account number has not been found. 
 {% endhint %}
 
 ## Order
@@ -182,8 +126,10 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 ### Requested planned delivery schedule
 
-Use `lines.deliverySchedule` when your ERP system supports a delivery schedule natively.
-Or alternatively use `lines.scheduledDelivery` for the simple delivery schedule.
+Use the `lines.deliverySchedule` field when your ERP system supports a delivery schedule natively.
+
+Or use the `lines.scheduledDelivery` field for the simple delivery schedule.
+
 Please see this page to choose between the native or simple delivery schedule:
 
 {% page-ref page="delivery-schedule.md" %}
@@ -260,4 +206,3 @@ When your order process requires the buyer to always approve every line:
 ## Response
 
 When the `/api-connector/order` API method returns HTTP status code 200, the order was successfully queued for processing by Tradecloud. Processing takes usually less then a second, after which the order is available in the portal and is forwarded to the supplier ERP integration.
-

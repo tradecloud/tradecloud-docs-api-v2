@@ -4,79 +4,20 @@ description: How to issue a forecast as a buyer
 
 # Issue a new forecast
 
-As buyer you can send a new forecast to your supplier.
+## Forecast process
+
+As buyer you can send a new forecast to Tradecloud.
 
 {% hint style="info" %}
 A forecast cannot be updated. Issued forecasts will always be appended to the existing set of forecasts.
 {% endhint %}
 
-{% hint style="warning" %}
-The forecast module is under development. The API and documentation may change.
-{% endhint %}
+## Endpoint
 
-{% api-method method="post" host="https://api.accp.tradecloud1.com/v2" path="/api-connector/forecast" %}
-{% api-method-summary %}
-Send new forecast by buyer
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer Access-Token
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
-Forecast JSON body
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %} 
-Successfully verified and sent forecast.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=202 %}
-{% api-method-response-example-description %} 
-Successfully queued forecast. The supplier account code has not yet been verified.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %} 
-Supplier not found.
-{% endapi-method-response-example-description %}
-{% endapi-method-response-example %}
-
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% hint style="info" %}
-[Send Slimstock forecast OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendForecastByBuyerRoute)
-{% endhint %}
+Use the [Send forecast](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendForecastByBuyerRoute) endpoint to send a forecast to Tradecloud.
 
 {% hint style="info" %}
 When sending a forecast the provided supplier account number will be verified. 
-
-Response status codes:
-- 200 OK - the supplier account number exists and the forecast will be processed.
-- 202 Accepted - the supplier verification has been skipped due to service unavailability and the forecast has been queued.
-- 404 Not Found - the supplier account number has not been found. 
 {% endhint %}
 
 ## Header
