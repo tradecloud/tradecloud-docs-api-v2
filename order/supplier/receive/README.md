@@ -86,11 +86,11 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 {% hint style="info" %}
 It is advised to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
 
-These fields give a summary of the current delivery schedule and prices. Use the `IncludingRequests` fields when you also send proposal or reopen request events to your ERP.
+These fields give a summary of the current delivery schedule and prices. The `IncludingRequests` fields also include any open supplier or buyer request. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
 
 When using these fields it is not necessary to use the `deliverySchedule` and `prices` fields in `buyerLine`, `buyerLine.requests`, `supplierLine.requests` or `confirmedLine`.
 
-`deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company settings page, and are also available in the `order-search` API when using polling.
+The `deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` fields are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company settings page, and are also available in the `order-search` API when using polling.
 {% endhint %}
 
 ### Current delivery line
@@ -98,7 +98,7 @@ When using these fields it is not necessary to use the `deliverySchedule` and `p
 * `scheduledDelivery`: the current aggregated delivery line with logistics info, see [Simple Delivery Schedule](#simple-delivery-schedule) below.
 
 {% hint style="warning" %}
-`scheduledDelivery` includes any open supplier or buyer request, there is no separate `scheduledDeliveryIncludingRequests` variant available.
+The `scheduledDelivery` field includes any open supplier or buyer request, there is no separate `scheduledDeliveryIncludingRequests` variant available.
 {% endhint %}
 
 ### Status
