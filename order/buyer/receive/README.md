@@ -57,20 +57,20 @@ If you choose the POST webhook API, you may choose between the native or simple 
 `lines` contains one or more order lines:
 
 * `id`: the Tradecloud line identifier
-* `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part).
-* `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part).
-* `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
-* `deliverySchedule`: the current aggregated delivery schedule, see [current delivery schedule](#current-delivery-schedule).
-* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [current delivery schedule](#current-delivery-schedule).
-* `scheduledDelivery`: the current aggregated delivery line, see [current scheduled delivery](#current-delivery-line).
-* `prices`: the current prices, see [Prices](./#prices) below.
-* `pricesIncludingRequests`: the current prices, including any open supplier or buyer requests.
+* `buyerLine`: the buyer part of the order line, see [Buyer line part](#buyer-line-part).
+* `supplierLine`: the supplier part of the order line, see [Supplier line part](#supplier-line-part).
+* `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](#confirmed-line).
+* `deliverySchedule`: the current aggregated delivery schedule, see [Current delivery schedule](#current-delivery-schedule).
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [Current delivery schedule](#current-delivery-schedule).
+* `scheduledDelivery`: the current aggregated delivery line, see [Current scheduled delivery](#current-delivery-line).
+* `prices`: the current prices, see [Prices](#prices) below.
+* `pricesIncludingRequests`: the current prices, including any open supplier or buyer requests, see [Prices](#prices).
 * `indicators.deliveryOverdue` is true when the order line is overdue.
-* `status.processStatus`: the order line's [process status](./#process-status).
-* `status.logisticsStatus`: the order line's [logistics status](./#logistics-status).
+* `status.processStatus`: the order line's [Process status](#process-status).
+* `status.logisticsStatus`: the order line's [Logistics status](#logistics-status).
 * `eventDates`: some key line event date/times
-* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [item details](./#item-details).
-* `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
+* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](#item-details).
+* `lastUpdatedAt`: is the latest date time the order line has been changed, useful for polling.
 
 ### Current delivery schedule
 
@@ -91,7 +91,7 @@ When using these fields it is not necessary to use the `deliverySchedule` and `p
 
 * `scheduledDelivery`: the current aggregated delivery line with logistics info, see [Simple Delivery Schedule](#simple-delivery-schedule) below.
 
-{% hint style="warn" %}
+{% hint style="warning" %}
 `scheduledDelivery` includes any open supplier or buyer request, there is no separate `scheduledDeliveryIncludingRequests` variant available.
 {% endhint %}
 
