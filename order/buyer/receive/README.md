@@ -43,11 +43,11 @@ If you choose the POST webhook API, you may choose between the native or simple 
 `supplierOrder` contains the supplier order fields:
 
 * `companyId`: the supplier's Tradecloud company identifier.
-* `buyerAccountNumber`: your account number as known in the supplier's ERP system
-* `description`: a free format additional description of this order by the supplier
+* `buyerAccountNumber`: your account number as known in the supplier's ERP system.
+* `description`: a free format additional description of this order by the supplier.
 * `contact`: the supplier employee responsible for this order. 
-* `properties`: are key-value based custom fields, added by the supplier
-* `notes`: are simple custom fields, added by the supplier
+* `properties`: are key-value based custom fields, added by the supplier.
+* `notes`: are simple custom fields, added by the supplier.
 * `documents`: contain meta data and link of attached documents by the supplier.
 
 {% page-ref page="download-document.md" %}
@@ -60,6 +60,9 @@ If you choose the POST webhook API, you may choose between the native or simple 
 * `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part).
 * `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part).
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line).
+* `deliverySchedule`: the current aggregated delivery schedule, see [current delivery schedule](#current-delivery-schedule).
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [current delivery schedule](#current-delivery-schedule).
+* `scheduledDelivery`: the current aggregated delivery line, see [current scheduled delivery](#current-delivery-line).
 * `prices`: the current prices, see [Prices](./#prices) below.
 * `pricesIncludingRequests`: the current prices, including any open supplier or buyer requests.
 * `indicators.deliveryOverdue` is true when the order line is overdue.
@@ -72,7 +75,7 @@ If you choose the POST webhook API, you may choose between the native or simple 
 ### Current delivery schedule
 
 * `deliverySchedule`: the current aggregated delivery schedule with logistics info, see [Native Delivery Schedule](#native-delivery-schedule) below.
-* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including any open supplier or buyer requestso, see [Native Delivery Schedule](#native-delivery-schedule) below.
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including any open supplier or buyer requests, see [Native Delivery Schedule](#native-delivery-schedule) below.
 
 {% hint style="info" %}
 It is advised to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
@@ -81,14 +84,16 @@ These fields give a summary of the current delivery schedule and prices. Use the
 
 When using these fields it is not necessary to use the `deliverySchedule` and `prices` fields in `buyerLine`, `buyerLine.requests`, `supplierLine.requests` or `confirmedLine`.
 
-`deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company profile page, and are also available in the `order-search` API when using polling.
+`deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company settings page, and are also available in the `order-search` API when using polling.
 {% endhint %}
 
 ### Current delivery line
 
 * `scheduledDelivery`: the current aggregated delivery line with logistics info, see [Simple Delivery Schedule](#simple-delivery-schedule) below.
 
-In case of the simple delivery schedule, there is no `scheduledDeliveryIncludingRequests` variant available. Please let [support](../../../support.md) know when you need this field.
+{% hint style="warn" %}
+`scheduledDelivery` includes any open supplier or buyer request, there is no separate `scheduledDeliveryIncludingRequests` variant available.
+{% endhint %}
 
 ### Status
 
@@ -208,7 +213,7 @@ These additional logistics fields are only available in the order line level del
 
 ## Simple Delivery schedule
 
-`lines.scheduledDelivery`: the current delivery line, when using the simple delivery schedule.
+`lines.scheduledDelivery`: the current delivery line, including open proposal or reopen requests, when using the simple delivery schedule.
 
   * `date`: the delivery date of this delivery line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
   * `quantity`: the quantity of this delivery line. Quantity has a decimal `1234.56` format with any number of digits.
