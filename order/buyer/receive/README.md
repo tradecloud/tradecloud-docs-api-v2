@@ -84,11 +84,11 @@ When using these fields it is not necessary to use the `deliverySchedule` and `p
 `deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company profile page, and are also available in the `order-search` API when using polling.
 {% endhint %}
 
-## Current delivery line
+### Current delivery line
 
 * `scheduledDelivery`: the current aggregated delivery line with logistics info, see [Simple Delivery Schedule](#simple-delivery-schedule) below.
 
-In case of the simple delivery schedule, there is no `scheduledDeliveryIncludingRequests` variant available. Please let [support](support.md) know when you need this field.
+In case of the simple delivery schedule, there is no `scheduledDeliveryIncludingRequests` variant available. Please let [support](../../../support.md) know when you need this field.
 
 ### Status
 

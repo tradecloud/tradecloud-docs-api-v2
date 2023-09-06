@@ -17,7 +17,7 @@ Other ERP systems can only work with only one delivery per order line.
 Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
 
 ## Native delivery schedule
-To receive the native delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Multiple delivery lines per order line**".
+The default is to receive the native delivery schedule. The "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple delivery lines per order line**".
 
 Use the `orderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
