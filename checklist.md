@@ -59,7 +59,7 @@ Generic Connectors:
 **Using Message-oriented Middleware**  
 You will need message-oriented middleware if one of the following applies:
 
-* You have multiple business systems, like ERP, WMS and PLM systems, that have ot integrate with Tradecloud One
+* You have multiple business systems, like ERP, WMS and PLM systems, that have to integrate with Tradecloud One
 * You plan to integrate with the outside world, eg. with webshops or logistics partners
 
 Examples of message-oriented middleware that some of our customers use are:
@@ -126,7 +126,7 @@ Before starting the actual implementation, you need to verify the capabilities a
   {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
 - [ ] **Can you split a delivery schedule?**  
   Does you ERP system support delivery or order lines split by a supplier? A supplier may split a line into multiple lines. A split line will have no position assigned by Tradecloud. The ERP system must assign a position to the split line and update the order line to Tradecloud.  
-  {% page-ref page="order/buyer/receive/delivery-schedule.md" %}
+  {% page-ref page="api/delivery-schedule.md" %}
 - [ ] **Receive only _changed_ or _all_ order/shipment lines?**  
   When order updates are sent from Tradecloud One to your ERP, what does your ERP require?  
   Does your ERP expect only new and updated lines, or does it always expect all lines of an order in an order/order response and all shipment lines in a shipment message?

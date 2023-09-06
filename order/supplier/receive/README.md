@@ -10,7 +10,13 @@ Tradecloud will send a new purchase order to the supplier when an order event ha
 
 First choose either the webhook API or the polling API to receive order messages:
 
-{% page-ref page="../../../../api/webhook-vs-polling.md" %}
+{% page-ref page="../../../api/webhook-vs-polling.md" %}
+
+## Choose to receive the native or simple delivery schedule 
+
+If you choose the POST webhook API, you may choose between the native or simple delivery schedule:
+
+{% page-ref page="../../../api/delivery-schedule.md" %}
 
 ## Order or OrderEvent
 
@@ -25,6 +31,7 @@ First choose either the webhook API or the polling API to receive order messages
 * `eventDates`: some key order event date/times.
 * `meta`: meta information, including source and trace info, about this messsage
 * `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling orders.
+
 ### Buyer order part
 
 `buyerOrder` contains the buyer order fields:
@@ -56,28 +63,42 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 `lines` contains one or more order lines:
 
 * `id`: the Tradecloud line identifier.
-* `buyerLine`: the buyer part of the order line, see [Buyer line part](./#buyer-line-part) below.
-* `supplierLine`: the supplier part of the order line, see [Supplier line part](./#supplier-line-part) below.
-* `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](./#confirmed-line) below.
-* `deliverySchedule`: the actual aggregated delivery schedule with logistics info, see [Delivery Schedule](./#delivery-schedule) below.
-* `deliveryScheduleIncludingRequests`: the actual aggregated delivery schedule including any open supplier or buyer requests.
-* `prices`: the actual prices, see [Prices](./#prices) below.
-* `pricesIncludingRequests`: the actual prices, including any open supplier or buyer requests.
+* `buyerLine`: the buyer part of the order line, see [Buyer line part](#buyer-line-part) below.
+* `supplierLine`: the supplier part of the order line, see [Supplier line part](#supplier-line-part) below.
+* `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](#confirmed-line) below.
+* `deliverySchedule`: the current aggregated delivery schedule, see [Current delivery schedule](#current-delivery-schedule).
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [Current delivery schedule](#current-delivery-schedule).
+* `scheduledDelivery`: the current aggregated delivery line, see [Current scheduled delivery](#current-delivery-line).
+* `prices`: the actual prices, see [Prices](#prices) below.
+* `pricesIncludingRequests`: the actual prices, including any open supplier or buyer requests, see [Prices](#prices).
 * `indicators.deliveryOverdue` is true when the order line is overdue.
-* `status.processStatus`: the order line's [process status](./#process-status).
-* `status.logisticsStatus`: the order line's [logistics status](./#logistics-status).
+* `status.processStatus`: the order line's [Process status](#process-status).
+* `status.logisticsStatus`: the order line's [Logistics status](#logistics-status).
 * `eventDates`: some key line event date/times.
-* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](./#item-details).
-* `lastUpdatedAt`: is the latest date time the order line has been changed, usefull for polling.
+* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](#item-details).
+* `lastUpdatedAt`: is the latest date time the order line has been changed, useful for polling.
+
+### Current delivery schedule
+
+* `deliverySchedule`: the current aggregated delivery schedule with logistics info, see [Native Delivery Schedule](#native-delivery-schedule) below.
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including any open supplier or buyer requests, see [Native Delivery Schedule](#native-delivery-schedule) below.
 
 {% hint style="info" %}
 It is advised to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
 
-These fields give a summary of the current delivery schedule and prices. Use the `IncludingRequests` fields when you also send proposal or reopen requests events to your ERP.
+These fields give a summary of the current delivery schedule and prices. The `IncludingRequests` fields also include any open supplier or buyer request. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
 
 When using these fields it is not necessary to use the `deliverySchedule` and `prices` fields in `buyerLine`, `buyerLine.requests`, `supplierLine.requests` or `confirmedLine`.
 
-`deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company profile page, and also available in the `order-search` API when using polling.
+The `deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` fields are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company settings page, and are also available in the `order-search` API when using polling.
+{% endhint %}
+
+### Current delivery line
+
+* `scheduledDelivery`: the current aggregated delivery line with logistics info, see [Simple Delivery Schedule](#simple-delivery-schedule) below.
+
+{% hint style="warning" %}
+The `scheduledDelivery` field includes any open supplier or buyer request, there is no separate `scheduledDeliveryIncludingRequests` variant available.
 {% endhint %}
 
 ### Status
@@ -140,12 +161,36 @@ The `mergedItemDetails` will contain the original item details added by the buye
 * `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
 * `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer
 
-### Requested planned delivery schedule
+## Native Delivery schedule
 
-`lines.deliverySchedule`: the requested delivery schedule by the buyer.
-* `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
-* `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+`lines.deliverySchedule`: the current delivery schedule, either `Issued` or `Confirmed`.
+
+`lines.deliveryScheduleIncludingRequests`: the current planned delivery schedule, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`. This field is only supported as native delivery schedule.
+
+  * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
+  * `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+  * `quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+
+### Logistics fields
+
+These additional logistics fields are only available in the order line level delivery schedule:
+
+  * `status`: the optional delivery line's [logistics status](./#logistics-status).
+  * `etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+  * `eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+
+## Simple Delivery schedule
+
+`lines.scheduledDelivery`: the current delivery line, including open proposal or reopen requests, when using the simple delivery schedule.
+
+  * `date`: the delivery date of this delivery line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+  * `quantity`: the quantity of this delivery line. Quantity has a decimal `1234.56` format with any number of digits.
+
+### Logistics fields
+
+  * `status`: the optional delivery line's [logistics status](./#logistics-status).
+  * `etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+  * `eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 
 ### Requested prices
 

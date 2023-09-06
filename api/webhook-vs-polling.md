@@ -26,7 +26,8 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 When using `POST` the **order** webhook request body contains:
 
 * `eventName`: The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
-* `orderEvent`: The actual order event, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\)
+* `orderEvent`: The actual order event, when using native delivery schedules, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\)
+* `simpleOrderEvent`: The actual order event, when using simple delivery schedules, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "SimpleOrderEvent"\)
 * `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
 
 When using `POST` the **shipment** webhook request body contains:
@@ -40,13 +41,15 @@ Use `POST` when:
 * You want to receive the order event or shipment event content.
 * You only want to receive order or shipment events of a specific type.
 * You **only** need to receive the order lines that are **changed**, not all the lines of the order.
+* You want to use the simple delivery schedule.
 
 {% hint style="info" %}
 Pro's:
 
 * Real time, receive the order or shipment event within a second.
 * Order or shipment event content included.
-* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company profile or filter events yourself in your integration.
+* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
+* You can configure to receive the simple delivery schedule, in the order webhook settings in your company settings.
 * You do not have to build or configure the polling pattern.
 
 Con's:
@@ -64,6 +67,7 @@ Use `GET` when:
 
 * Same as `POST` above, but:
 * You need to receive the **complete** order with **all** the order lines, regardless they are changed or not.
+* You can handle the native delivery schedule yourself.
 
 {% hint style="info" %}
 Pro's:
@@ -76,6 +80,7 @@ Con's:
 
 * You need to fetch the order or shipment.
 * You cannot see what order or shipment event happened.
+* You cannot receive the simple delivery schedule.
 * You need to build or configure a webhook at your side.
 * You need to publish the webhook on the internet \(web server and firewall required\).
 * You need to obtain and configure a public SSL certificate.
@@ -98,6 +103,7 @@ Con's:
 * You need to build or configure a periodic polling pattern at your side.
 * You cannot filter on which order or shipment events to act on, you will receive any order or shipment change.
 * You cannot see what order or shipment event happened, multiple events may have happened.
+* You cannot receive the simple delivery schedule.
 {% endhint %}
 
 ### Polling usage
@@ -111,22 +117,21 @@ Fetch every polling period, typically 5 minutes, all orders or shipments which a
 * Set `limit` to the maximum of `100` orders or shipments.
 * Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
 
-{% hint style="info" %}
-[Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute)
-{% endhint %}
+Use the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint for polling orders.
 
-{% hint style="info" %}
-[Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute)
-{% endhint %}
+Use the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint for polling shipments.
 
-#### Step 2. Process the orders in the search response body
+#### Step 2. Process the orders or shipments in the search response body
 
-See the [Search orders OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute).
+See the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint:
 
-* Use the `lastUpdatedAt` on order line level to filter the lines that have been changed.
+* Use the `lines.lastUpdatedAt` field to filter the order lines that have been changed.
 * Use the `status` field to filter on order process and logistics status.
 
-See the [Search shipments OpenAPI Specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute).
+See the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint:
+
+* Use the `lines.meta.lastUpdatedAt` to filter the shipment lines that have been changed.
+* Use the `status` field to filter on shipment process and logistics status.
 
 #### Step 3. Store the `lastUpdatedAt` for the next polling request
 
