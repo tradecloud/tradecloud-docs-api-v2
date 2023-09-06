@@ -22,7 +22,7 @@ You can attach documents using the `documents` field on either `order` or `lines
 
 {% page-ref page="./" %}
 
-This will NOT create an `OrderDocumentsAttachedBySupplier`activity and NO acknowledge task for the buyer.
+This will NOT create an `OrderDocumentsAttachedBySupplier` activity and NO acknowledge task for the buyer.
 
 {% hint style="warning" %}
 The total number of documents is limited to 100 documents per order header and per order line.
@@ -52,6 +52,8 @@ Upload documents to your company's content server and remember the returned docu
 
 You can provide the `url` using the `documents` field on either `order` or `lines` level in the order body of the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint.
 
+This will NOT create an `OrderDocumentsAttachedBySupplier` activity and NO acknowledge task for the buyer.
+
 ### Documents body
 
 * `code` : optional document code or number. The document code should be unique within your company and immutable.
@@ -71,6 +73,8 @@ If a document with the same code is already attached to the order or line, the d
 Only provide document meta data like code, revision, name, description and type.
 
 You can provide the meta data using the `documents` field on either `order` or `lines` level in the order body of the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint.
+
+This will NOT create an `OrderDocumentsAttachedBySupplier` activity and NO acknowledge task for the buyer.
 
 ### Documents body
 
