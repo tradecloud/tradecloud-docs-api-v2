@@ -17,7 +17,7 @@ Other ERP systems can only work with only one delivery per order line.
 Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
 
 ## Native delivery schedule
-To use the native delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Multiple delivery lines per order line**".
+To receive the native delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Multiple delivery lines per order line**".
 
 Use the `orderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
@@ -28,7 +28,7 @@ The field `lines.deliverySchedule` contains the current delivery schedule of thi
 * `position`: the position in the delivery schedule. Not to be confused with the `lines.position`.
 
 {% hint style="warning" %}
-The `position` may be unassigned in case of a delivery line split by a supplier. The ERP system must assign a position to the split delivery line and update the order line to Tradecloud.
+The `position` may be unassigned in case of a delivery line split by a supplier. The buyer ERP system must assign a position to the split delivery line and update the order line to Tradecloud.
 {% endhint %}
 
 * `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
@@ -37,7 +37,7 @@ The `position` may be unassigned in case of a delivery line split by a supplier.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
 ## Simple delivery schedule
-To use the simple delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one delivery line per order line**".
+To receive the simple delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one delivery line per order line**".
 
 Use the `simpleOrderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
@@ -49,6 +49,10 @@ Tradecloud will expand a delivery schedule into order lines with the same item n
 
 {% hint style="warning" %}
 The order line `position` may be unassigned in case of an order line split by a supplier. The ERP system must assign a position to the split order line and update the order line to Tradecloud.
+{% endhint %}
+
+{% hint style="warning" %}
+The simple delivery schedule is only supported by the POST webhook API, and not supported by the GET webhook API and polling.
 {% endhint %}
 
 ### `scheduledDelivery` fields

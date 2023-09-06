@@ -10,13 +10,13 @@ Tradecloud will send a purchase order response to the buyer when an order event 
 
 First choose either the webhook API or the polling API to receive order response messages:
 
-{% page-ref page="../../../../api/webhook-vs-polling.md" %}
+{% page-ref page="../../../api/webhook-vs-polling.md" %}
 
 ## Choose to receive the native or simple delivery schedule 
 
-If you choose the webhook API, you may choose between the native or simple delivery schedule:
+If you choose the POST webhook API, you may choose between the native or simple delivery schedule:
 
-{% page-ref page="delivery-schedule.md" %}
+{% page-ref page="../../../api/delivery-schedule.md" %}
 
 ## Order or OrderEvent
 
