@@ -25,7 +25,7 @@ Or use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=http
 
 Please see this page to choose between the native or simple delivery schedule:
 
-{% page-ref page="delivery-schedule.md" %}
+{% page-ref page="issue/delivery-schedule.md" %}
 
 Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. 
 

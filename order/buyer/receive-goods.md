@@ -26,8 +26,12 @@ Send the actual delivery by setting the `lines.actualDelivery` field when using 
 
 Send delivery events for one or multiple existing order lines using the [Send order deliveries events](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderDeliveriesByBuyer) endpoint. This will append the deliveries to the order line's delivery history. 
 
-{% hint style="warn" %}
+{% hint style="warning" %}
 Before adding a delivery to an order, the order must have been sent to Tradecloud first.
+{% endhint %}
+
+{% hint style="warning" %}
+When using the simple delivery schedule, the deliveries endpoint only supports the first order line of each item number. The deliveries of the first line will be applied to all order lines having the same item number.
 {% endhint %}
 
 ## Delivered indicator
@@ -35,7 +39,7 @@ Before adding a delivery to an order, the order must have been sent to Tradeclou
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
 {% hint style="warning" %}
-The delivered indicator is not supported when using the simple delivery schedule.
+When using the simple delivery schedule, the `delivered` indicator is only supported for the first order line of each item number. The other lines with the same item number will also be marked as delivered together with the first line.
 {% endhint %}
 
 ### Mark as delivered by updating an order using the `/order` API
