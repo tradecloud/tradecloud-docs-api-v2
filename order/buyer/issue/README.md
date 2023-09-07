@@ -4,10 +4,9 @@ description: How to issue a new purchase order as a buyer
 
 # Issue a new order
 
+As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
 
 ## Order process
-
-As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
 
 {% hint style="info" %}
 The new order lines will have order process status `Issued`and logistics status `Open`
@@ -128,7 +127,7 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 Use the `lines.deliverySchedule` field when your ERP system supports a delivery schedule natively.
 
-Or use the `lines.scheduledDelivery` field for the simple delivery schedule.
+Or use the `lines.scheduledDelivery` field when using the simple delivery schedule.
 
 Please see this page to choose between the native or simple delivery schedule:
 

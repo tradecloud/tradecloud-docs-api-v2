@@ -40,6 +40,10 @@ The `position` must be unique within the delivery schedule and never change. Nev
 * `status`: The [logistics status](#logistics-status) of this delivery line according to the buyer.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
+### `deliveryHistory`
+
+The actual `deliveryHistory` field may be used when your ERP system supports a delivery schedule natively.
+
 ## Simple delivery schedule
 
 Use the field `lines.scheduledDelivery` to issue the requested planned delivery of this order line.
@@ -58,6 +62,10 @@ Tradecloud will merge `scheduledDelivery`'s of order lines with the same item nu
 * `quantity`: the requested quantity of this order line. Quantity has a decimal `1234.56` format with any number of digits.
 * `status`: The [logistics status](#logistics-status) of this scheduled delivery according to the buyer.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
+
+### `actualDelivery`
+
+The `actualDelivery` field may be used when using the simple delivery schedule.
 
 ## Logistics status
 
