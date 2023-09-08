@@ -9,6 +9,10 @@ description: How to use order and line indicators as a buyer
 You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
 
+{% hint style="warning" %}
+When using the simple delivery schedule, these indicator are only supported for the first order line of each item number. The indicator will also be applied to the other lines with the same item number together with the first line.
+{% endhint %}
+
 ### Confirmed by buyer
 
 `confirmed`: all goods of this order or line are confirmed by the supplier, according to the buyer.
