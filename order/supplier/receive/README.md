@@ -84,11 +84,9 @@ The `buyerAccountNumber` should be set on forehand in the Tradecloud connection 
 * `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including any open supplier or buyer requests, see [Native Delivery Schedule](#native-delivery-schedule) below.
 
 {% hint style="info" %}
-It is advised to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
+It is **strongly advised** to use the `lines.deliverySchedule` together with the `lines.prices` fields, which are **the current delivery schedule and prices**. It gives a simpler alternative for the `deliverySchedule` and `prices` fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests` and `confirmedLine`.
 
-These fields give a summary of the current delivery schedule and prices. The `IncludingRequests` fields also include any open supplier or buyer request. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
-
-When using these fields it is not necessary to use the `deliverySchedule` and `prices` fields in `buyerLine`, `buyerLine.requests`, `supplierLine.requests` or `confirmedLine`.
+The `lines.deliveryScheduleIncludingRequests` together with `lines.pricesIncludingRequests` fields **include any open supplier or buyer request**. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
 
 The `deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` fields are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company settings page, and are also available in the `order-search` API when using polling.
 {% endhint %}
@@ -165,7 +163,15 @@ The `mergedItemDetails` will contain the original item details added by the buye
 
 `lines.deliverySchedule`: the current delivery schedule, either `Issued` or `Confirmed`.
 
-`lines.deliveryScheduleIncludingRequests`: the current planned delivery schedule, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed`. This field is only supported as native delivery schedule.
+{% hint style="warning" %}
+The `deliverySchedule` field does **NOT** include any open supplier or buyer request. Be aware that the `Issued` or `Confirmed` values are returned, dependent on the line status.
+{% endhint %}
+
+`lines.deliveryScheduleIncludingRequests`: the current delivery schedule, including any open supplier or buyer request, either `Issued`, `In Progress` or `Confirmed` values.
+
+{% hint style="warning" %}
+The `deliveryScheduleIncludingRequests` field **does** include any open supplier or buyer request. Be aware that either the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
+{% endhint %}
 
   * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
   * `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
@@ -182,6 +188,10 @@ These additional logistics fields are only available in the order line level del
 ## Simple Delivery schedule
 
 `lines.scheduledDelivery`: the current delivery line, including open proposal or reopen requests, when using the simple delivery schedule.
+
+{% hint style="warning" %}
+The `scheduledDelivery` field **does** include any open supplier or buyer request. Be aware that either the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
+{% endhint %}
 
   * `date`: the delivery date of this delivery line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
   * `quantity`: the quantity of this delivery line. Quantity has a decimal `1234.56` format with any number of digits.
