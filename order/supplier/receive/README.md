@@ -166,7 +166,7 @@ The `mergedItemDetails` will contain the original item details added by the buye
 `lines.deliverySchedule`: the current delivery schedule, either `Issued` or `Confirmed`.
 
 {% hint style="warning" %}
-The `deliverySchedule` field does **NOT** include any open supplier or buyer request. Be aware you always get back either the `Issued` or `Confirmed` values dependent on the line status.
+The `deliverySchedule` field does **NOT** include any open supplier or buyer request. Be aware that the `Issued` or `Confirmed` values are returned, dependent on the line status.
 {% endhint %}
 
 `lines.deliveryScheduleIncludingRequests`: the current delivery schedule, including any open supplier or buyer request, either `Issued`, `In Progress` or `Confirmed` values.
