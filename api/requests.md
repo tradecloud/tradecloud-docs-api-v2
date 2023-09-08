@@ -97,7 +97,7 @@ A GET request can have a query parameter such as a `query` in `company-search`:
 ### JSON body
 The Tradecloud API supports a proprietary [JSON](standards.md#json) format, called `TSON`:
 
-A POST request has a [JSON](requests.md#json) body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
+A POST request has a JSON body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
 
 [`POST /api-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 
@@ -146,7 +146,7 @@ A POST request has a `tXML` body \(payload\), such as a purchase order sent to t
 
 #### Isah SCI API
 
-A `sci-connector` POST request has a [SCSN](https://smartconnected.semantic-treehouse.nl/#/Standards) body \(payload\), such as a purchase order sent to the `sci-connector` service `order` method:
+A `sci-connector` POST request has a [SCSN](https://smartconnected.semantic-treehouse.nl/#/Projects) body \(payload\), such as a purchase order sent to the `sci-connector` service `order` method:
 
 [`PUT /sci-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml#/sci-connector/sendOrderByBuyerRoute)
 
