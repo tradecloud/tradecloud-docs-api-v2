@@ -196,13 +196,13 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 `lines.deliverySchedule`: the current delivery schedule, either `Issued` or `Confirmed`.
 
 {% hint style="warning" %}
-The `deliverySchedule` field does **NOT** include any open supplier or buyer request. Be aware you always get back either the `Issued` or `Confirmed` values dependent on the line status.
+The `deliverySchedule` field does **NOT** include any open supplier or buyer request. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
 {% endhint %}
 
 `lines.deliveryScheduleIncludingRequests`: the current delivery schedule, including any open supplier or buyer request, either `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
-The `deliveryScheduleIncludingRequests` field **does** include any open supplier or buyer request. Be aware you always get back either the `Issued`, proposal or reopen request or `Confirmed` values dependent on the line and request status.
+The `deliveryScheduleIncludingRequests` field **does** include any open supplier or buyer request. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
 {% endhint %}
 
   * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
@@ -222,7 +222,7 @@ These additional logistics fields are only available in the order line level del
 `lines.scheduledDelivery`: the current delivery line, including open proposal or reopen requests, when using the simple delivery schedule.
 
 {% hint style="warning" %}
-The `scheduledDelivery` field **does** include any open supplier or buyer request. Be aware you always get back either the `Issued`, proposal or reopen request or `Confirmed` values dependent on the line and request status.
+The `scheduledDelivery` field **does** include any open supplier or buyer request. Be aware that either the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
 {% endhint %}
 
   * `date`: the delivery date of this delivery line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
