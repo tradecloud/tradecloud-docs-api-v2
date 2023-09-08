@@ -31,7 +31,7 @@ When using `POST` the **order** webhook request body contains:
 * `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
 
 {% hint style="info" %}
-The [POST Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint [XML](json-vs-xml. md#xml) support is under development.
+The [POST Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint [XML](json-vs-xml.md#xml) support is under development.
 {% endhint %}
 
 When using `POST` the **shipment** webhook request body contains:
@@ -56,7 +56,7 @@ Pro's:
 * You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
 * You can configure to receive the simple delivery schedule, in the order webhook settings in your company settings.
 * You can use the simple delivery schedule.
-* You can use XML instead of JSON.
+* You can choose to use XML instead of JSON.
 * You do not have to build or configure the polling pattern.
 
 Con's:
