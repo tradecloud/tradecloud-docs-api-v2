@@ -224,7 +224,7 @@ These additional logistics fields are only available in the order line level del
 `lines.scheduledDelivery`: the current delivery line, including open proposal or reopen requests, when using the simple delivery schedule.
 
 {% hint style="warning" %}
-The `scheduledDelivery` field **does** include any open supplier or buyer request. Be aware you always get back either the `Issued`, proposal or reopen request or `Confirmed` values dependent on the line and request status.
+The `scheduledDelivery` field **does** include any open supplier or buyer request. Be aware that either the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
 {% endhint %}
 
   * `date`: the delivery date of this delivery line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
