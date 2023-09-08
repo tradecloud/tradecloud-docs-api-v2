@@ -78,11 +78,11 @@ If you choose the POST webhook API, you may choose between the native or simple 
 * `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including any open supplier or buyer requests, see [Native Delivery Schedule](#native-delivery-schedule) below.
 
 {% hint style="info" %}
-It is strongly advised to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
+It is **strongly advised** to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
 
-These fields give a summary of the current delivery schedule and prices. It gives a simpler alternative for the `deliverySchedule` and `prices` fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests` and `confirmedLine`.
+These fields give a summary of **the current delivery schedule and prices**. It gives a simpler alternative for the `deliverySchedule` and `prices` fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests` and `confirmedLine`.
 
-The `IncludingRequests` fields **include** any open supplier or buyer request. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
+The `IncludingRequests` fields **include any open supplier or buyer request**. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
 
 The `deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` fields are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company settings page, and are also available in the `order-search` API when using polling.
 {% endhint %}
@@ -201,7 +201,7 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 The `deliverySchedule` field does **NOT** include any open supplier or buyer request. Be aware you always get back either the `Issued` or `Confirmed` values dependent on the line status.
 {% endhint %}
 
-`lines.deliveryScheduleIncludingRequests`: the current planned delivery schedule, including any open supplier or buyer request, either `Issued`, `In Progress` or `Confirmed` values.
+`lines.deliveryScheduleIncludingRequests`: the current delivery schedule, including any open supplier or buyer request, either `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
 The `deliveryScheduleIncludingRequests` field **does** include any open supplier or buyer request. Be aware you always get back either the `Issued`, proposal or reopen request or `Confirmed` values dependent on the line and request status.
@@ -222,6 +222,10 @@ These additional logistics fields are only available in the order line level del
 ## Simple Delivery schedule
 
 `lines.scheduledDelivery`: the current delivery line, including open proposal or reopen requests, when using the simple delivery schedule.
+
+{% hint style="warning" %}
+The `scheduledDelivery` field **does** include any open supplier or buyer request. Be aware you always get back either the `Issued`, proposal or reopen request or `Confirmed` values dependent on the line and request status.
+{% endhint %}
 
   * `date`: the delivery date of this delivery line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
   * `quantity`: the quantity of this delivery line. Quantity has a decimal `1234.56` format with any number of digits.
