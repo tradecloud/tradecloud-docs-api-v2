@@ -23,4 +23,4 @@ You can see an XML example by selecting "application/xml" in the "Parameter cont
 
 We are currently adding `tXML` support to the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
- Let [support](support.md) know if you need `tXML` support for additional API endpoints.
+ Let [support](../support.md) know if you need `tXML` support for additional API endpoints.

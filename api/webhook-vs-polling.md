@@ -30,6 +30,10 @@ When using `POST` the **order** webhook request body contains:
 * `simpleOrderEvent`: The actual order event, when using simple delivery schedules, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "SimpleOrderEvent"\)
 * `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
 
+{% hint style="info" %}
+The [POST Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint [XML](json-vs-xml. md#xml) support is under development.
+{% endhint %}
+
 When using `POST` the **shipment** webhook request body contains:
 
 * `eventName`: The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model") summarizes what has happened.
@@ -42,6 +46,7 @@ Use `POST` when:
 * You only want to receive order or shipment events of a specific type.
 * You **only** need to receive the order lines that are **changed**, not all the lines of the order.
 * You want to use the simple delivery schedule.
+* You want to use XML instead of JSON.
 
 {% hint style="info" %}
 Pro's:
@@ -50,6 +55,8 @@ Pro's:
 * Order or shipment event content included.
 * You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
 * You can configure to receive the simple delivery schedule, in the order webhook settings in your company settings.
+* You can use the simple delivery schedule.
+* You can use XML instead of JSON.
 * You do not have to build or configure the polling pattern.
 
 Con's:
@@ -81,6 +88,7 @@ Con's:
 * You need to fetch the order or shipment.
 * You cannot see what order or shipment event happened.
 * You cannot receive the simple delivery schedule.
+* You cannot choose XML, but must use JSON.
 * You need to build or configure a webhook at your side.
 * You need to publish the webhook on the internet \(web server and firewall required\).
 * You need to obtain and configure a public SSL certificate.
@@ -104,6 +112,7 @@ Con's:
 * You cannot filter on which order or shipment events to act on, you will receive any order or shipment change.
 * You cannot see what order or shipment event happened, multiple events may have happened.
 * You cannot receive the simple delivery schedule.
+* You cannot choose XML, but must use JSON.
 {% endhint %}
 
 ### Polling usage
