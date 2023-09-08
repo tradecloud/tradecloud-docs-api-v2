@@ -11,6 +11,10 @@ Complete an order line in Tradecloud when it is completely handled at the buyer,
 * `Completed` lines cannot be completed again
 * Completing has precedence over cancelling at the same time
 
+{% hint style="warning" %}
+When using the simple delivery schedule, the `completed` indicator is only supported for the first order line of each item number. The other lines with the same item number will also be completed together with the first line.
+{% endhint %}
+
 ## Completing by resending an order using the `/order` API
 
 The order or line can be marked as completed by setting `indicators.completed` on either order or line level and updating the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:

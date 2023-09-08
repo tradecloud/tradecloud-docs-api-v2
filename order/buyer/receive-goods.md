@@ -14,12 +14,11 @@ The delivery history contains the actual physical deliveries. With the actual de
 
 There are two ways to send the delivery history to Tradecloud:
 
-- by sending the delivery history using the `lines.deliveryHistory` field and updating the order using the `/order` API.
-- by sending one or more delivery events using the `/api-connector/order/deliveries` API.
+### Send the delivery history by updating an order using the `/order` API
 
-### Send the delivery history by resending an order using the `/order` API
+Send the actual delivery schedule by setting the `lines.deliveryHistory` field when your ERP system supports a delivery schedule natively, and update the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint.
 
-Send the actual delivery schedule by setting the `lines.deliveryHistory` and updating the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:
+Send the actual delivery by setting the `lines.actualDelivery` field when using the simple delivery schedule, and update the order using the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint.
 
 {% page-ref page="update.md" %}
 
@@ -27,25 +26,33 @@ Send the actual delivery schedule by setting the `lines.deliveryHistory` and upd
 
 Send delivery events for one or multiple existing order lines using the [Send order deliveries events](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderDeliveriesByBuyer) endpoint. This will append the deliveries to the order line's delivery history. 
 
-{% hint style="warn" %}
+{% hint style="warning" %}
 Before adding a delivery to an order, the order must have been sent to Tradecloud first.
+{% endhint %}
+
+{% hint style="warning" %}
+When using the simple delivery schedule, the deliveries endpoint only supports the first order line of each item number. The deliveries of the first line will be applied to all order lines having the same item number.
 {% endhint %}
 
 ## Delivered indicator
 
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
-### Mark as delivered by resending an order using the `/order` API
+{% hint style="warning" %}
+When using the simple delivery schedule, the `delivered` indicator is only supported for the first order line of each item number. The other lines with the same item number will also be marked as delivered together with the first line.
+{% endhint %}
 
-The existing order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and updating the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint.
+### Mark as delivered by updating an order using the `/order` API
+
+The existing order or line can be marked as delivered by setting `indicators.delivered` on either order or line level and updating the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:
+
+{% page-ref page="update.md" %}
 
 {% hint style="info" %}
 If you provide a `delivered` indicator on order level, **ONLY** the lines provided in this order message will be marked as delivered.
 
 If you also provide a `delivered` indicator on line level, it has **precedence** over the order level `delivered` indicator.
 {% endhint %}
-
-{% page-ref page="update.md" %}
 
 ### Mark as delivered by sending the delivered indicator using the `/order/indicators` API
 
