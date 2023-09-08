@@ -78,11 +78,9 @@ If you choose the POST webhook API, you may choose between the native or simple 
 * `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including any open supplier or buyer requests, see [Native Delivery Schedule](#native-delivery-schedule) below.
 
 {% hint style="info" %}
-It is **strongly advised** to use `deliverySchedule` with `prices` or alternatively `deliveryScheduleIncludingRequests` with `pricesIncludingRequests`.
+It is **strongly advised** to use the `lines.deliverySchedule` together with the `lines.prices` fields, which are **the current delivery schedule and prices**. It gives a simpler alternative for the `deliverySchedule` and `prices` fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests` and `confirmedLine`.
 
-These fields give a summary of **the current delivery schedule and prices**. It gives a simpler alternative for the `deliverySchedule` and `prices` fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests` and `confirmedLine`.
-
-The `IncludingRequests` fields **include any open supplier or buyer request**. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
+The `lines.deliveryScheduleIncludingRequests` together with `lines.pricesIncludingRequests` fields **include any open supplier or buyer request**. You can use the `IncludingRequests` fields when you need the `deliverySchedule` and `prices` fields in the proposal or reopen requests as soon as possible, before approving, in your ERP.
 
 The `deliveryScheduleIncludingRequests`, `prices` and `pricesIncludingRequests` fields are only available in the new webhook, using the "Orders Webhook Integration" configuration in your company settings page, and are also available in the `order-search` API when using polling.
 {% endhint %}
