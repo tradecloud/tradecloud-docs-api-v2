@@ -8,6 +8,7 @@
 * [API](api/README.md)
   * [Rules](api/rules.md)
   * [Requests](api/requests.md)
+  * [JSON versus XML](api/json-vs-xml.md)
   * [Environments](api/environments.md)
   * [Standards](api/standards.md)
   * [Compatibility](api/compatibility.md)
