@@ -2,11 +2,11 @@
 description: Overview of the supplier order process.
 ---
 
-# Supplier order process
+# Supplier order process overview
 
 ## Step 1. Receive an order
 
-As a supplier you can [Receive an order](broken-reference)
+As a supplier you can [Receive an order](receive/)
 
 Additionally you can [Download a document attached to an order](receive/download-document.md).
 
@@ -30,3 +30,4 @@ As a supplier you may:
 
 * [Reopen an order](reopen.md) which will restart the order process.
 * [Cancel an order](cancel.md) which will end the order process.
+

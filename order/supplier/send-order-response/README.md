@@ -25,9 +25,10 @@ When the order line has process status `InProgress`:
 
 * When`indicators.accepted` is set the process status will become`Confirmed`
 * When`indicators.rejected` is set the process status will become`Rejected`
-*   When the by supplier **responded** `delivery schedule` and `prices` are **equal** to the by buyer
+* When the by supplier **responded** `delivery schedule` and `prices` are **equal** to the by buyer
 
-    **requested** `delivery schedule` and `prices` the process status will become `Confirmed`
+  **requested** `delivery schedule` and `prices` the process status will become `Confirmed`
+
 * When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices` the process status will stay `InProgress`.
 
 When the order line has process status `Confirmed`:
@@ -50,7 +51,7 @@ When the order line already has process status `Cancelled` the process status wi
 Use the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint to send an order response to Tradecloud.
 
 {% hint style="info" %}
-When sending an order response the provided buyer account number and purchase order number will be verified.
+When sending an order response the provided buyer account number and purchase order number will be verified. 
 {% endhint %}
 
 ## Order
@@ -76,16 +77,14 @@ The `buyerAccountNumber` should be set in the Tradecloud connection in the porta
 * `indicators.rejected`: explicitly **reject** the order, the responded lines`delivery schedule` and `prices`will be ignored.
 * Additional `indicators`:
 
-{% content-ref url="../cancel.md" %}
-[cancel.md](../cancel.md)
-{% endcontent-ref %}
+{% page-ref page="../cancel.md" %}
 
-* `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use  for a new line in the value.
-* `notes`: are simple custom fields. You can use as many as needed, but too many will clutter the portal. Use  for a new line.
+* `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
+* `notes`: are simple custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 
 ## Lines
 
-* `lines`: a purchase order response contains one or multiple lines. A purchase order line contains at least the position and delivery schedule. It is structured as a JSON element in the `lines` JSON array.
+* `lines`: a purchase order response contains one or multiple lines. A purchase order line contains at least the position and delivery schedule. It is structured as a JSON element in the `lines` JSON array. 
   * `purchaseOrderLinePosition`: the line position within the purchase order.
 
 {% hint style="warning" %}
@@ -95,7 +94,7 @@ The supplier must echo the `purchaseOrderLinePosition` as sent by the buyer.
 ### Item
 
 {% hint style="info" %}
-It is not possible to propose an alternative item.\
+It is not possible to propose an alternative item.  
 If you need this feature, send a request to support.
 {% endhint %}
 
@@ -104,7 +103,7 @@ If you need this feature, send a request to support.
 * `lines.itemDetails`: detailed part information changed by the supplier.
 
 {% hint style="info" %}
-The buyer may send item details to inform the supplier about part information.\
+The buyer may send item details to inform the supplier about part information.  
 The supplier may check, change and add item details if they are not correct or incomplete.
 {% endhint %}
 
@@ -120,32 +119,33 @@ The supplier may check, change and add item details if they are not correct or i
 
 * `lines.deliverySchedule`: the responded planned delivery schedule. Provide at least one or multiple delivery schedule lines.
   * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`.
-  * `date`: the responded delivery date of this delivery schedule position. If the delivery date is yet unknown, leave this date empty. If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-  * `quantity`: the responded quantity of this delivery schedule position. If the quantity that can be delivered is yet unknown, leave this quantity empty. If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
+  * `date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+  * `quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
 
 {% hint style="warning" %}
-The supplier must echo the `deliverySchedule.position` as sent by the buyer. When sending a new delivery line do NOT provide a `position`. The buyer will assign a `position`.
+The supplier must echo the `deliverySchedule.position` as sent by the buyer.
+When sending a new delivery line do NOT provide a `position`. The buyer will assign a `position`.
 {% endhint %}
 
 ### Responded prices
 
-* `lines.prices`: the responded price. Advised is to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
-  * `grossPrice`: the gross price. Used together with `discountPercentage`.
-  * `discountPercentage`: the discount percentage. Used together with `grossPrice`.
-  * `netPrice`: the net price.
-    * `priceInTransactionCurrency`: at least provide a price in the transaction currency, like `CNY` in China.
-      * `value`: the price value has a decimal `1234.56` format with any number of digits.
-      * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-    * `priceInBaseCurrency`: optionally provide a price in your base currency, like `EUR` in the EU.
-      * `value`: the price value has a decimal `1234.56` format with any number of digits.
-      * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
-  * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-  * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items)
+* `lines.prices`: the responded price. Advised is to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`. 
+    * `grossPrice`: the gross price. Used together with `discountPercentage`.
+    * `discountPercentage`: the discount percentage. Used together with `grossPrice`.
+    * `netPrice`: the net price.
+      * `priceInTransactionCurrency`: at least provide a price in the transaction currency, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+      * `priceInBaseCurrency`: optionally provide a price in your base currency, like `EUR` in the EU.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
+    * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+    * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
 ### Responded charge lines
 
 * `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
-  * `position`: the position used to identify a charge line.
+  * `position`: the position used to identify a charge line.  
   * `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
   * `chargeDescription`: a mandatory free text description, like "Transport costs".
   * `quantity`: the mandatory quantity of this charge line.
@@ -159,7 +159,8 @@ The supplier must echo the `deliverySchedule.position` as sent by the buyer. Whe
   * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
 
 {% hint style="warning" %}
-The supplier must echo the `chargeLines.position` as sent by the buyer. When sending a new charge line do NOT provide a `position`. The buyer will assign a `position`.
+The supplier must echo the `chargeLines.position` as sent by the buyer. 
+When sending a new charge line do NOT provide a `position`. The buyer will assign a `position`.
 {% endhint %}
 
 #### Other line fields
@@ -169,13 +170,11 @@ The supplier must echo the `chargeLines.position` as sent by the buyer. When sen
 * `indicators.rejected`: explicitly **reject** the order line, the responded`delivery schedule` and `prices`will be ignored. When possible provide the `reason` , see below.
 * Additional `indicators`:
 
-{% content-ref url="../cancel.md" %}
-[cancel.md](../cancel.md)
-{% endcontent-ref %}
+{% page-ref page="../cancel.md" %}
 
-* `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use  for a new line in the value.
-* `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use  for a new line.
-* `reason`: optional reason in case
+* `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
+* `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
+* `reason`: optional reason in case 
   * the order line is **rejected**
   * the **responded** `delivery schedule` and `prices` are **NOT** **equal** to the **requested** or **confirmed**`delivery schedule` and `prices`
   * a [**reopen** request](../reopen.md)
@@ -183,7 +182,7 @@ The supplier must echo the `chargeLines.position` as sent by the buyer. When sen
 
 ## Order response meta data
 
-* `erpResponseDateTime`: Date and time the order was responded from your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../../api/standards.md).
+* `erpResponseDateTime`: Date and time the order was responded from your ERP system.  `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../../api/standards.md).
 * `erpRespondedBy`: the user email or user name as known in your ERP system who responded this order
 
 ## Response

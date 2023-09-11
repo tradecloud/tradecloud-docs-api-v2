@@ -20,26 +20,24 @@ Or use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=http
 
 Please see this page to choose between the native or simple delivery schedule:
 
-{% content-ref url="delivery-schedule.md" %}
-[delivery-schedule.md](delivery-schedule.md)
-{% endcontent-ref %}
+{% page-ref page="delivery-schedule.md" %}
 
 {% hint style="info" %}
-When sending an order the provided supplier account number will be verified.
+When sending an order the provided supplier account number will be verified. 
 {% endhint %}
 
 ## Order
 
 * `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has authorization for multiple companies.
-* `buyerParty`: the optional legal entity that purchases the goods or services. See [Company party](./#company-party).
-* `buyerAccountingParty`: the optional legal entity that receives and handles the invoice. The supplier must send the invoice to the buyer accounting party when specified. See [Company party](./#company-party).
+* `buyerParty`: the optional legal entity that purchases the goods or services. See [Company party](#company-party).
+* `buyerAccountingParty`: the optional legal entity that receives and handles the invoice. The supplier must send the invoice to the buyer accounting party when specified. See [Company party](#company-party).
 * `supplierAccountNumber`: the supplier account number as known in your ERP system.
 
 {% hint style="warning" %}
 The `supplierAccountNumber` must be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
 {% endhint %}
 
-* `supplierParty`: the optional legal entity that sells the goods or services. See [Company party](./#company-party).
+* `supplierParty`: the optional legal entity that sells the goods or services. See [Company party](#company-party).
 * `purchaseOrderNumber`: the purchase order number as known in your ERP system.
 
 {% hint style="warning" %}
@@ -73,25 +71,20 @@ The optional buyer, buyer accounting or supplier company party:
 * `terms`: the order terms as agreed with your supplier
 * `indicators`: various order level indicators, see:
 
-{% content-ref url="indicators.md" %}
-[indicators.md](indicators.md)
-{% endcontent-ref %}
+{% page-ref page="indicators.md" %}
 
-* `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use  for a new line in the value.
-* `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use  for a new line.
+* `properties`: are key-value based custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
+* `notes`: are simple custom fields. You can user as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `labels`: value-added services labels on order level. Please note the practicable number of labels is dependent on the supplier.
 * `documents`: contain meta data and link of attached documents. The total number of documents is limited to 100 documents per order header. See:
 
-{% content-ref url="attach-document.md" %}
-[attach-document.md](attach-document.md)
-{% endcontent-ref %}
+{% page-ref page="attach-document.md" %}
 
 * `orderType`: the order type, one of `Purchase` or `Forecast`. Default `Purchase`.
 
 ## Lines
 
-`lines`: a purchase order contains one or multiple lines. The total number of lines is limited to 500 lines per order. It is structured as a JSON element in the `lines` JSON array.
-
+`lines`: a purchase order contains one or multiple lines. The total number of lines is limited to 500 lines per order. It is structured as a JSON element in the `lines` JSON array. 
 * `position`: the required line position identifier within the purchase order
 * `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. Do NOT use row as identifier.
 
@@ -101,10 +94,9 @@ The optional buyer, buyer accounting or supplier company party:
 
 ### Item
 
-`lines.item`: the item (or article, goods) to be delivered
-
+`lines.item`: the item \(or article, goods\) to be delivered
 * `number`: the item code or number as known in your ERP
-* `revision`: the revision (or version) of this item number
+* `revision`: the revision \(or version\) of this item number
 * `name`: the item short name
 * `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
 * `supplierItemNumber`: the item code or number as known at the supplier. Required in case of wholesale suppliers.
@@ -118,8 +110,8 @@ The optional buyer, buyer accounting or supplier company party:
 `lines.itemDetails`: detailed part information initially provided by buyer.
 
 {% hint style="info" %}
-The buyer may send item details to inform the supplier about part information.\
-The supplier may check, change and add item details if they are not correct or incomplete.\
+The buyer may send item details to inform the supplier about part information.  
+The supplier may check, change and add item details if they are not correct or incomplete.  
 The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the merged original item details added by the buyer merged with the changed or added item details by the supplier.
 {% endhint %}
 
@@ -139,41 +131,37 @@ Or use the `lines.scheduledDelivery` field when using the simple delivery schedu
 
 Please see this page to choose between the native or simple delivery schedule:
 
-{% content-ref url="delivery-schedule.md" %}
-[delivery-schedule.md](delivery-schedule.md)
-{% endcontent-ref %}
+{% page-ref page="delivery-schedule.md" %}
 
 ### Requested prices
 
-`lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
-
+`lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
 * `grossPrice`: the gross price. Use together with `discountPercentage`.
 * `discountPercentage`: the discount percentage. Use together with `grossPrice`.
 * `netPrice`: the net price.
-  * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-  * `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
+    * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+    * `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-* `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items)
+* `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
 ### Requested charge lines
 
 `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
-
 * `position`: the position used to identify a charge line.
 * `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
 * `chargeDescription`: a mandatory free text description, like "Transport costs".
 * `quantity`: the mandatory quantity of this charge line.
 * `price`: the mandatory price of this charge line.
-  * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-  * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
+    * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+    * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+        * `value`: the price value has a decimal `1234.56` format with any number of digits.
+        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
 
 {% hint style="warning" %}
@@ -184,37 +172,29 @@ The simple variant, where charge lines are spread over multiple order lines havi
 
 * `description`: a free format additional description of this line
 * `terms`: the line terms as agreed with your supplier
-  * `contractNumber`: the agreed framework contract number
-  * `contractPosition`: the related position within the framework contract
+    * `contractNumber`: the agreed framework contract number
+    * `contractPosition`: the related position within the framework contract
 * `projectNumber`: Your project number reference
-* `productionNumber`: Your production number reference
-* `salesOrderNumber`: Your sales order reference (not be confused with the supplier sales order number)
+* `productionNumber`:  Your production number reference
+* `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)
 * `indicators`: various line level indicators, see:
 
-{% content-ref url="indicators.md" %}
-[indicators.md](indicators.md)
-{% endcontent-ref %}
+{% page-ref page="indicators.md" %}
 
 When a line has no goods to be delivered, for example a service, fee or text line:
 
-{% content-ref url="no-delivery-expected.md" %}
-[no-delivery-expected.md](no-delivery-expected.md)
-{% endcontent-ref %}
+{% page-ref page="no-delivery-expected.md" %}
 
 When your order process requires the buyer to always approve every line:
 
-{% content-ref url="propose-when-accepted.md" %}
-[propose-when-accepted.md](propose-when-accepted.md)
-{% endcontent-ref %}
+{% page-ref page="propose-when-accepted.md" %}
 
-* `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use  for a new line in the value.
+* `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
 * `documents`: contain attached documents. The total number of documents is limited to 100 documents per order line. See:
 
-{% content-ref url="attach-document.md" %}
-[attach-document.md](attach-document.md)
-{% endcontent-ref %}
+{% page-ref page="attach-document.md" %}
 
-* `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use  for a new line.
+* `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
 * `labels`: value-added services labels on line level. Please note the practicable number of labels is dependent on the supplier.
 
 ## New order meta data
