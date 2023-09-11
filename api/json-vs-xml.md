@@ -5,7 +5,7 @@ description: >-
 
 # JSON versus XML
 
-The Tradecloud API supports default a proprietary JSON format, but for some API endpoints a proprietary XML format is supported.
+The Tradecloud API by default supports a proprietary JSON format, but for some API endpoints a proprietary XML format is supported.
 
 ## JSON
 
