@@ -19,7 +19,9 @@ The Tradecloud API supports a proprietary Tradecloud [XML format](requests.md#xm
 
 Only the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) and [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoints support `tXML` at this moment.
 
-You can see an XML example by selecting "application/xml" in the "Parameter content type" dropdown, under the "Example Value" in above API specifications.
+You can see an XML example by selecting "application/xml" in the "Parameter content type" dropdown, under the "Example Value" in above API specifications:
+
+![Select XML content type](../.gitbook/assets/select-xml-content-type.png)
 
 We are currently adding `tXML` support to the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
