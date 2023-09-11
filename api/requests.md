@@ -95,7 +95,7 @@ A GET request can have a query parameter such as a `query` in `company-search`:
 [`GET /company-search?query=name`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company-search/specs.yaml#/company-search/CompanySearchRoute)
 
 ### JSON body
-The Tradecloud API supports a proprietary [JSON](standards.md#json) format, called `TSON`:
+The Tradecloud API supports a proprietary [JSON](standards.md#json) format:
 
 A POST request has a JSON body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
 
@@ -126,7 +126,7 @@ Tradecloud supports [XML](standards.md#xml):
 
 #### tXML
 
-The Tradecloud API supports a proprietary XML format, called `tXML`, which is a 1-on-1 translation of the proprietary `TSON` format:
+The Tradecloud API supports a proprietary XML format, called `tXML`, which is a 1-on-1 translation of the proprietary JSON format:
 
 A POST request has a `tXML` body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
 

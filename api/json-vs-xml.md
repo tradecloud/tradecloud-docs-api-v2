@@ -9,13 +9,13 @@ The Tradecloud API by default supports a proprietary JSON format, but for some A
 
 ## JSON
 
-The Tradecloud API by default supports a proprietary Tradecloud [JSON format](requests.md#json-body), called `TSON`.
+The Tradecloud API by default supports a proprietary Tradecloud [JSON format](requests.md#json-body.
 
-All `api-connector`, `order-search`, `shipment-search`, `order-webhook-connector` and `shipment-webhook-connector` API endpoints support `TSON`.
+All `api-connector`, `order-search`, `shipment-search`, `order-webhook-connector` and `shipment-webhook-connector` API endpoints support JSON.
 
 ## XML
 
-The Tradecloud API supports a proprietary Tradecloud [XML format](requests.md#xml-body), called `tXML`, which is a 1-on-1 translation of the `TSON` format:
+The Tradecloud API supports a proprietary Tradecloud [XML format](requests.md#xml-body), called `tXML`, which is a 1-on-1 translation of the proprietary JSON format:
 
 Only the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) and [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoints support `tXML` at this moment.
 
