@@ -2,8 +2,8 @@
 description: Overview of the supplier order process.
 ---
 
-# Supplier order process overview
+# Supplier shipment process
 
 ## Send a despatch advice
 
-As a supplier you can [Send a despatch advice](send-despatch-advice.md) to the buyer.
+As a supplier you can [Send a despatch advice](broken-reference) to the buyer.

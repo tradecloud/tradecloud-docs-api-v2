@@ -68,14 +68,13 @@ Tradecloud may respond with [HTTP Status Code 429](https://tools.ietf.org/html/r
 
 The Tradecloud [environments](environments.md) do not have an availability SLO of 100%. If Tradecloud is temporarily unavailable, it is the API client's responsibility to queue the message and automatically retry with exponential backoff till Tradecloud is available again. An alternative is to warn the ERP user, who is trying to send the message to Tradecloud, so the user can manually retry later.
 
-If Tradecloud responds with either: 
+If Tradecloud responds with either:
 
-- a HTTP Status Code 5xx Server Error or
-- [HTTP Status Code 429](https://tools.ietf.org/html/rfc6585#section-4) `Too Many Requests` or 
-- the requests does time out (currently 5 secs. at Tradecloud API side)
-  
-Then the client must automatically retry, using an exponential backoff strategy, or use a manual retry strategy. 
-The [Exponential Backoff Calculator](http://backoffcalculator.com/?interval=5&rate=2&attempts=5) is handy to verify the retry plan.
+* a HTTP Status Code 5xx Server Error or
+* [HTTP Status Code 429](https://tools.ietf.org/html/rfc6585#section-4) `Too Many Requests` or
+* the requests does time out (currently 5 secs. at Tradecloud API side)
+
+Then the client must automatically retry, using an exponential backoff strategy, or use a manual retry strategy. The [Exponential Backoff Calculator](http://backoffcalculator.com/?interval=5\&rate=2\&attempts=5) is handy to verify the retry plan.
 
 ### Only send new or changed orders or order responses
 
@@ -83,7 +82,7 @@ Only send an **order** or **order response** that either **is new** or **has an 
 
 ### Never resend all orders or responses periodically
 
-Never *re*send **all** or **all active** orders, responses, dispatch advices or forecasts periodically.
+Never _re_send **all** or **all active** orders, responses, dispatch advices or forecasts periodically.
 
 Resending periodically will result in processing delays and excessive network, server and storage resource usage.
 
@@ -99,23 +98,23 @@ The TOTAL number of objects is limited to 100 objects per collection by default.
 
 Examples are:
 
-- 100 documents in total per order 
-- 100 documents in total per order line
-- 100 delivery lines per delivery schedule
-- 100 delivery lines per delivery history
+* 100 documents in total per order
+* 100 documents in total per order line
+* 100 delivery lines per delivery schedule
+* 100 delivery lines per delivery history
 
 Exceptions are:
 
-- 500 lines in total per order 
-- 500 lines in total per shipment
-- 500 lines in total per supplier forecast
+* 500 lines in total per order
+* 500 lines in total per shipment
+* 500 lines in total per supplier forecast
 
 ## Orders and lines
 
 ### Do not change destination or item
 
-As buyer your integration **should not change the order destination or line item** when updating an order.  
+As buyer your integration **should not change the order destination or line item** when updating an order.\
 If you wish to change the order destination, or a line item, either:
 
-* Discuss this with your supplier through the chat function in the Portal. If your supplier agrees, update the order\(line\) accordingly through your integration.
-* Cancel the order\(line\) and create a new order\(line\) with the alternative destination or item.
+* Discuss this with your supplier through the chat function in the Portal. If your supplier agrees, update the order(line) accordingly through your integration.
+* Cancel the order(line) and create a new order(line) with the alternative destination or item.
