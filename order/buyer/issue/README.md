@@ -26,6 +26,10 @@ Please see this page to choose between the native or simple delivery schedule:
 When sending an order the provided supplier account number will be verified. 
 {% endhint %}
 
+{% hint style="info" %}
+[Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) and [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoints support [XML](../../../api/json-vs-xml.md#xml).
+{% endhint %}
+
 ## Order
 
 * `companyId`: the optional Tradecloud company identifier. You only have to provide a companyId when your integration user account has authorization for multiple companies.

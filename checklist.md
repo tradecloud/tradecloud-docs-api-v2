@@ -150,8 +150,8 @@ When starting to build and integration with the Tradecloud One API, make sure to
   Your integration must either use Basic Authentication or authentication based on a JWT token:
   {% page-ref page="security/authentication.md" %}
 - [ ] **Use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?**  
-  By default, Tradecloud works with JSON but some API endpoints also work with XML and more will be added on request.
-  XML documentation will be added soon. Please let [support](support.md) know when you are interested in using XML.
+  By default, Tradecloud works with JSON but some API endpoints also work with XML and more will be added on request:
+  {% page-ref page="api/json-vs-xml.md" %}
 - [ ] **Use _Webhooks_ or _polling_?**  
   Depending on the capabilities of your integration, you may choose for using Webhooks or Polling:
   {% page-ref page="api/webhook-vs-polling.md" %}

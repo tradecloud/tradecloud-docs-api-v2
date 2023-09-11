@@ -95,8 +95,9 @@ A GET request can have a query parameter such as a `query` in `company-search`:
 [`GET /company-search?query=name`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/company-search/specs.yaml#/company-search/CompanySearchRoute)
 
 ### JSON body
+The Tradecloud API supports a proprietary [JSON](standards.md#json) format:
 
-A POST request has a [JSON](requests.md#json) body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
+A POST request has a JSON body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
 
 [`POST /api-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 
@@ -118,7 +119,34 @@ JSON is a standard published as [RFC 8259](https://tools.ietf.org/html/rfc8259) 
 
 ### XML body
 
-A request can have an XML body, such as purchase order sent to the `sci-connector` service `order` method:
+Tradecloud supports [XML](standards.md#xml):
+
+- Following the [tXML standard](json-vs-xml.md) for some `api-connector` and `order-webhook-connector` API endpoints.
+- Following the [SCSN Standard](https://smartconnected.semantic-treehouse.nl/#/Standards) for the `sci-connector` API endpoint.
+
+#### tXML
+
+The Tradecloud API supports a proprietary XML format, called `tXML`, which is a 1-on-1 translation of the proprietary JSON format:
+
+A POST request has a `tXML` body \(payload\), such as a purchase order sent to the `api-connector` service `order` method:
+
+[`POST /api-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<SendOrderByBuyer>
+    <companyId>00f03b98-2511-489f-9695-13791b3f66b6</companyId>
+    <supplierAccountNumber>12345</supplierAccountNumber>
+    <purchaseOrderNumber>PO123456789</purchaseOrderNumber>
+    <destination>
+       ...
+```
+
+* XML text [MUST be encoded using UTF-8](https://tools.ietf.org/html/rfc8259#section-8.1)
+
+#### Isah SCI API
+
+A `sci-connector` POST request has a [SCSN](https://smartconnected.semantic-treehouse.nl/#/Projects) body \(payload\), such as a purchase order sent to the `sci-connector` service `order` method:
 
 [`PUT /sci-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/sci-connector/specs.yaml#/sci-connector/sendOrderByBuyerRoute)
 
@@ -132,7 +160,4 @@ A request can have an XML body, such as purchase order sent to the `sci-connecto
         ...
 ```
 
-Tradecloud supports XML following the [SCSN Standard](https://smartconnected.semantic-treehouse.nl/#/Standards)
-
 * XML text [MUST be encoded using UTF-8](https://tools.ietf.org/html/rfc8259#section-8.1)
-
