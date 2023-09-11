@@ -132,7 +132,7 @@ A POST request has a `tXML` body \(payload\), such as a purchase order sent to t
 
 [`POST /api-connector/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
 
-```markup
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SendOrderByBuyer>
     <companyId>00f03b98-2511-489f-9695-13791b3f66b6</companyId>
