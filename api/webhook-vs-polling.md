@@ -23,21 +23,25 @@ See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connect
 
 ### Using `POST`
 
-When using `POST` the **order** webhook request body contains:
+To receive order response messages use the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-* `eventName`: The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model"\) summarizes what has happened.
-* `orderEvent`: The actual order event, when using native delivery schedules, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderEvent"\)
-* `simpleOrderEvent`: The actual order event, when using simple delivery schedules, see [OrderEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "SimpleOrderEvent"\)
-* `orderDocumentsEvent`: Or the actual order documents event, see [OrderDocumentEvent](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) \(click "Model" and "OrderDocumentsEvent"\).
+When using `POST` the order webhook request body contains:
+
+* `eventName`: The event name summarizes what has happened.
+* `orderEvent`: The order event, when using native delivery schedules.
+* `simpleOrderEvent`: The order event, when using simple delivery schedules.
+* `orderDocumentsEvent`:The order documents event, when using documents.
 
 {% hint style="info" %}
-The [POST Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint [XML](json-vs-xml.md#xml) support is under development.
+The [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint [XML](json-vs-xml.md#xml) support is under development.
 {% endhint %}
 
-When using `POST` the **shipment** webhook request body contains:
+To receive shipment messages use the [POST Shipment Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) endpoint.
 
-* `eventName`: The [eventName](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model") summarizes what has happened.
-* `shipmentEvent`: The actual shipment, see [Shipment](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) \(click "Model" and "Shipment"\).
+When using `POST` the shipment webhook request body contains:
+
+* `eventName`: The event name summarizes what has happened.
+* `shipmentEvent`: The actual shipment.
 
 Use `POST` when:
 
@@ -68,7 +72,13 @@ Con's:
 
 ### Using `GET`
 
+To receive the `orderId` use the [GET Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookGet) endpoint.
+
 When using `GET` the webhook request URL will contain the Tradecloud `orderId`, which you must use to fetch the order.
+
+To receive the `shipmentId` use the [GET Shipment Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookGet) endpoint.
+
+When using `GET` the webhook request URL will contain the Tradecloud `shipmentId`, which you must use to fetch the shipment.
 
 Use `GET` when:
 
