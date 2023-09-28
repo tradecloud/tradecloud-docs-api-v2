@@ -13,35 +13,35 @@ To receive an order, order response or shipment message you can use either:
 
 ## The Webhook Connector
 
-When an order or shipment has been changed at Tradecloud, we will trigger your webhook, which optionally contains the order or shipment event.
+When an order or shipment has been changed at Tradecloud, we will trigger your webhook.
 
 The webhook is most suitable for companies with real time, high volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
-You can either use `POST` or alternatively `GET`.
+You can either use `POST` to receive order or shipment content or alternatively `GET` to only receive an `orderId` or `shipmentId`.
 
 See [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector) for setting up and using the webhook.
 
 ### Using `POST`
 
-To receive order response messages use the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+To receive order event messages use the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 When using `POST` the order webhook request body contains:
 
 * `eventName`: The event name summarizes what has happened.
 * `orderEvent`: The order event, when using native delivery schedules.
 * `simpleOrderEvent`: The order event, when using simple delivery schedules.
-* `orderDocumentsEvent`:The order documents event, when using documents.
+* `orderDocumentsEvent`: The order documents event, when using documents.
 
 {% hint style="info" %}
 The [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint [XML](json-vs-xml.md#xml) support is under development.
 {% endhint %}
 
-To receive shipment messages use the [POST Shipment Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) endpoint.
+To receive shipment event messages use the [POST Shipment Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) endpoint.
 
 When using `POST` the shipment webhook request body contains:
 
 * `eventName`: The event name summarizes what has happened.
-* `shipmentEvent`: The actual shipment.
+* `shipment`: The actual shipment.
 
 Use `POST` when:
 
@@ -71,6 +71,8 @@ Con's:
 {% endhint %}
 
 ### Using `GET`
+
+The `GET` endpoint is an alternative to the `POST` endpoint and can be used to receive the `orderId` or `shipmentId` of the order or shipment that has been changed.
 
 To receive the `orderId` use the [GET Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookGet) endpoint.
 
@@ -106,7 +108,9 @@ Con's:
 
 ## The polling pattern
 
-Check if there are new or updated orders or shipments every polling period, typically 5 minutes, by using the last updated date time stamp of the last fetched order or shipment.
+The polling pattern is an alternative to the webhook pattern and can be used to receive an order or shipment by polling the Tradecloud API.
+
+Periodically, typically each 5 minutes, check if there are new or updated orders or shipments by using the last updated date time stamp of the last fetched order or shipment.
 
 The polling pattern is most suitable for companies with low volume orders, and not willing to invest in a web server, firewall and SSL certificate.
 
