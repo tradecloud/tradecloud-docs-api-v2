@@ -17,12 +17,17 @@ All `api-connector`, `order-search`, `shipment-search`, `order-webhook-connector
 
 The Tradecloud API supports a proprietary Tradecloud [XML format](requests.md#xml-body), called `tXML`, which is a 1-on-1 translation of the proprietary JSON format:
 
-Only the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) and [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoints support `tXML` at this moment.
+* [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) and 
+* [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoints support `tXML`.
 
 You can see an XML example by selecting "application/xml" in the "Parameter content type" dropdown, under the "Example Value" in above API specifications:
 
-![Select XML content type](../.gitbook/assets/select-xml-content-type.png)
+![Select order API XML content type](../.gitbook/assets/select-order-api-xml-content-type.png)
 
-We are currently adding `tXML` support to the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+Also the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint supports `tXML`.
+
+You can see an XML example by selecting "application/xml" in the "Parameter content type" dropdown, under the "Example Value" in above API specification:
+
+![Select order webhook XML content type](../.gitbook/assets/select-order-webhook-xml-content-type.png)
 
  Let [support](../support.md) know if you need `tXML` support for additional API endpoints.
