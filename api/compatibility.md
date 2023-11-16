@@ -27,5 +27,4 @@ In practice:
 
 * The API client should **only expect fields** in the response body **it is actually using.**
 * The web hook service should **only expect fields** in the request body **it is actually using.**
-* **fields may move** according to the [JSON](https://tradecloud.gitbook.io/api/api/standards#json) standard.
-
+* **fields may move** for both [JSON](standards.md#json) and [XML](standards.md#xml) formats.

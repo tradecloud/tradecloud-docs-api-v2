@@ -9,7 +9,7 @@ The Tradecloud API by default supports a proprietary JSON format, but for some A
 
 ## JSON
 
-The Tradecloud API by default supports a proprietary Tradecloud [JSON format](requests.md#json-body.
+The Tradecloud API by default supports a proprietary Tradecloud [JSON format](requests.md#json-body).
 
 All `api-connector`, `order-search`, `shipment-search`, `order-webhook-connector` and `shipment-webhook-connector` API endpoints support JSON.
 
