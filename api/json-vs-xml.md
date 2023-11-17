@@ -28,4 +28,4 @@ You can see an XML example by selecting "application/xml" in the "Parameter cont
 
 ![Select order webhook XML content type](../.gitbook/assets/select-order-webhook-xml-content-type.png)
 
- Let [support](../support.md) know if you need `tXML` support for additional API endpoints.
+Let [support](../support.md) know if you need `tXML` support for additional API endpoints.

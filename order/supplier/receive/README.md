@@ -18,10 +18,6 @@ If you choose the POST webhook API, you may choose between the native or simple 
 
 {% page-ref page="../../../api/delivery-schedule.md" %}
 
-{% hint style="info" %}
-The [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint supports [XML](../../../api/json-vs-xml.md#xml).
-{% endhint %}
-
 ## Order or OrderEvent
 
 * `id` \(in case of an Order\): the Tradecloud order identifier
