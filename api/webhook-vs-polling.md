@@ -32,10 +32,6 @@ When using `POST` the order webhook request body contains:
 * `simpleOrderEvent`: The order event, when using simple delivery schedules.
 * `orderDocumentsEvent`: The order documents event, when using documents.
 
-{% hint style="info" %}
-The [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint [XML](json-vs-xml.md#xml) support is under development.
-{% endhint %}
-
 To receive shipment event messages use the [POST Shipment Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) endpoint.
 
 When using `POST` the shipment webhook request body contains:

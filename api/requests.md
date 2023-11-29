@@ -30,9 +30,9 @@ Use the `Authorization` header for basic authentication and token authorization,
 
 ### Content-Type
 
-Use the `Content-Type: application/json` header in case of `POST` or `PUT` with a JSON body.
+Use the `Content-Type: application/json` header in case of a `POST` with a JSON body.
 
-Use the `Content-Type: application/xml` header in case of `PUT` with an XML body.
+Use the `Content-Type: application/xml` header in case of a `POST` with an XML body.
 
 ## URL
 
