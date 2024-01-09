@@ -194,15 +194,15 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 
 ## Native Delivery schedule
 
-When using the `orderEvent` the native delivery schedule is used:
+When using `orderEvent` the native delivery schedule is used:
 
-`lines.deliverySchedule`: the current delivery schedule, either `Issued` or `Confirmed`.
+`lines.deliverySchedule`: the current delivery schedule, either having `Issued` or `Confirmed` values.
 
 {% hint style="warning" %}
 The `deliverySchedule` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
 {% endhint %}
 
-`lines.deliveryScheduleIncludingRequests`: the current delivery schedule, including any open supplier or buyer request, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed` values.
+`lines.deliveryScheduleIncludingRequests`: the current delivery schedule, either having `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
 The `deliveryScheduleIncludingRequests` field **does include any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
@@ -222,9 +222,9 @@ These additional logistics fields are only available in the order line level del
 
 ## Simple Delivery schedule
 
-When using the `simpleOrderEvent` the simple delivery schedule is used:
+When using `simpleOrderEvent` the simple delivery schedule is used:
 
-`lines.scheduledDelivery`: the current delivery line, including open proposal or reopen requests, when using the simple delivery schedule.
+`lines.scheduledDelivery`: the current delivery line when using the simple delivery schedule, either having `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
 The `scheduledDelivery` field **includes any open supplier or buyer request**. Be aware that either the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
@@ -243,15 +243,15 @@ The `scheduledDelivery` field **includes any open supplier or buyer request**. B
 
 ### Native prices
 
-When using the `orderEvent` the native prices are used:
+When using `orderEvent` the native prices are used:
 
-`lines.prices`: the current prices, either `Issued` or `Confirmed`.
+`lines.prices`: the current prices, either having `Issued` or `Confirmed` values.
 
 {% hint style="warning" %}
-The `prices` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
-% endhint %}
+The native `prices` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
+{% endhint %}
 
-`pricesIncludingRequests`: the current prices, including any open supplier or buyer request, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed` values.
+`pricesIncludingRequests`: the current prices, either having `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
 The `pricesIncludingRequests` field **includes any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
@@ -259,12 +259,12 @@ The `pricesIncludingRequests` field **includes any open supplier or buyer reques
 
 ### Simple prices
 
-When using the simpleOrderEvent the native prices are used:
+When using `simpleOrderEvent` the simple prices are used:
 
-`lines.prices`: the current prices, including any open supplier or buyer request, either `Issued`, `In Progress` (having an open `Proposal` or `Reopen Request`) or `Confirmed` values.
+`lines.prices`: the current prices, either having `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
-The `prices` field **includes any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
+The simple `prices` field **includes any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
 {% endhint %}
 
 ### Prices fields
@@ -287,7 +287,7 @@ These fields may be used in both native and simple prices:
 It is advised to only use `netPrice` for its simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
 {% endhint %}
 
-### Charge lines
+## Charge lines
 
 `chargeLines`: the requested or confirmed additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
 
