@@ -30,6 +30,7 @@ This page assumes you either chose the native delivery schedule using the `order
 * `orderId` (in case of an `OrderEvent`): the Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
+* `lines`: one or more lines of the order, see [Order lines](#order-lines)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
 * `status.processStatus`: is the aggregate of all lines' [Process statuses](#process-status).
 * `status.logisticsStatus`: is the aggregate of all lines' [Logistics statuses](#logistics-status).
@@ -107,11 +108,11 @@ Order, line and delivery line **logistics** status is one of:
 
 ### Buyer line
 
-`buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
+`lines.buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
 
 ### Supplier line
 
-`supplierLine` contains the supplier order line fields:
+`lines.supplierLine` contains the supplier order line fields:
 
 * `salesOrderNumber`: the sales order number as known in the supplier's ERP system
 * `salesOrderPosition`: the position within the supplier's sales order
@@ -125,8 +126,8 @@ Order, line and delivery line **logistics** status is one of:
 
 #### Supplier requests
 
-`requests.proposal`: the supplier has proposed a different delivery schedule, prices and/or charge lines compared to the issued order line.
-`requests.reopenRequest`: the supplier requests to reopen the confirmed order line. The supplier has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
+`lines.supplierLine.requests.proposal`: the supplier has proposed a different delivery schedule, prices and/or charge lines compared to the issued order line.
+`lines.supplierLine.requests.reopenRequest`: the supplier requests to reopen the confirmed order line. The supplier has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
 
 * `deliverySchedule`: the requested alternative delivery schedule
 * `prices`: the requested alternative prices
@@ -151,15 +152,15 @@ If the request status is `Open` the buyer must approve or reject it.
 
 ### Confirmed line
 
-`confirmedLine`: the agreed order line between buyer and supplier.
+`lines.confirmedLine`: the agreed order line between buyer and supplier.
 
 {% hint style="warning" %}
 Only if the process status is `Confirmed` the line is agreed between buyer and supplier
 {% endhint %}
 
-* `deliverySchedule`: the agreed delivery schedule
-* `prices`: the agreed prices
-* `chargeLines`: the agreed charge lines, see [Charge lines](#charge-lines)
+* `lines.confirmedLine.deliverySchedule`: the agreed delivery schedule
+* `lines.confirmedLine.prices`: the agreed prices
+* `lines.confirmedLine.chargeLines`: the agreed charge lines, see [Charge lines](#charge-lines)
 
 ### Native delivery schedule
 
@@ -172,58 +173,58 @@ The `lines.deliverySchedule` together with the `lines.prices` fields give a simp
 * `lines.deliverySchedule`: the current delivery schedule, either having `Issued` or `Confirmed` values.
 
 {% hint style="warning" %}
-The `deliverySchedule` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
+The `lines.deliverySchedule` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
 {% endhint %}
 
 * `lines.deliveryScheduleIncludingRequests`: the current delivery schedule, either having `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
-The `deliveryScheduleIncludingRequests` field **does include any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
+The `lines.deliveryScheduleIncludingRequests` field **does include any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
 {% endhint %}
 
 #### Delivery schedule fields
 
-* `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
-* `date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+* `lines.deliverySchedule[IncludingRequests].position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
+* `lines.deliverySchedule[IncludingRequests].date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+* `lines.deliverySchedule[IncludingRequests].quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
 
 ##### Logistics fields
 
 These additional logistics fields are only available in the order line level delivery schedule:
 
-* `status`: the optional delivery line's [Logistics status](./#logistics-status).
-* `etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
-* `eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+* `lines.deliverySchedule[IncludingRequests].status`: the optional delivery line's [Logistics status](./#logistics-status).
+* `lines.deliverySchedule[IncludingRequests].etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+* `lines.deliverySchedule[IncludingRequests].eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 
 ### Prices
 
 * `lines.prices`: the current prices, either having `Issued` or `Confirmed` values.
 
 {% hint style="warning" %}
-The native `prices` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
+The `lines.prices` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
 {% endhint %}
 
-* `pricesIncludingRequests`: the current prices, either having `Issued`, `In Progress` or `Confirmed` values.
+* `lines.pricesIncludingRequests`: the current prices, either having `Issued`, `In Progress` or `Confirmed` values.
 
 {% hint style="warning" %}
-The `pricesIncludingRequests` field **includes any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
+The `lines.pricesIncludingRequests` field **includes any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
 {% endhint %}
 
 #### Prices fields
 
 These fields may be used in both native and simple prices:
 
-* `grossPrice`: the gross price. Used together with `discountPercentage`.
-* `discountPercentage`: the discount percentage. Used together with `grossPrice`.
-* `netPrice`: the net price.
+* `lines.prices[IncludingRequests].grossPrice`: the gross price. Used together with `discountPercentage`.
+* `lines.prices[IncludingRequests].discountPercentage`: the discount percentage. Used together with `grossPrice`.
+* `lines.prices[IncludingRequests].netPrice`: the net price.
   * `priceInTransactionCurrency`: the price in the transaction currency of the supplier, like `CNY` in China.
     * `value`: the price value has a decimal `1234.56` format with any number of digits.
     * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
   * `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
     * `value`: the price value has a decimal `1234.56` format with any number of digits.
     * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
-* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-* `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+* `lines.prices[IncludingRequests].priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+* `lines.prices[IncludingRequests].priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
 {% hint style="info" %}
 It is advised to only use `netPrice` for its simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
@@ -251,7 +252,7 @@ It is advised to only use `netPrice` for its simplicity, or alternatively use `g
 {% hint style="info" %}
 The buyer may send item details to inform the supplier about part information.  
 The supplier may check, change and add item details if they are not correct or incomplete.  
-`mergedItemDetails` will contain the original item details added by the buyer merged with the changed or added item details by the supplier.
+`lines.mergedItemDetails` will contain the original item details added by the buyer merged with the changed or added item details by the supplier.
 {% endhint %}
 
 * `countryOfOriginCodeIso2`: The ISO 3166-1 alpha-2 country code of manufacture, production, or growth where an article or product comes from.
