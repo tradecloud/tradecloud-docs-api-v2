@@ -24,7 +24,7 @@ When choosing the simple delivery schedule and using the `simpleOrderEvent` plea
 
 ## `orderEvent` or `order`
 
-This page assumes you either choosethe webhook API with the native delivery schedule using the `orderEvent` or the polling API using `order`.
+This page assumes you either chose the native delivery schedule using the `orderEvent` webhook API or the `order` polling API.
 
 * `id` (in case of an `order`): the Tradecloud order identifier
 * `orderId` (in case of an `OrderEvent`): the Tradecloud order identifier
