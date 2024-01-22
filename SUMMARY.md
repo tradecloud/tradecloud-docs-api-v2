@@ -42,6 +42,7 @@
     * [Update an existing order](order/buyer/update.md)
     * [Receive an order response](order/buyer/receive/README.md)
       * [Download a document attached to an order response](order/buyer/receive/download-document.md)
+      * [Simple order event](order/buyer/receive/simple-order-event.md)
     * [Receive goods](order/buyer/receive-goods.md)
     * [Complete an order](order/buyer/complete.md)
     * [Reopen an order](order/buyer/reopen.md)
