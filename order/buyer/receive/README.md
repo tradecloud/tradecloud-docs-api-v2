@@ -110,6 +110,18 @@ Order, line and delivery line **logistics** status is one of:
 
 `lines.buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
 
+* `requests`: the buyer can request different delivery schedule, prices and charge lines
+
+#### Buyer requests
+
+`lines.buyerLine.requests.reopenRequest`: the buyer requests to reopen the confirmed order line. The buyer has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
+
+* `deliverySchedule`: the requested alternative delivery schedule
+* `prices`: the requested alternative prices
+* `chargeLines`: the requested alternative charge lines, see [Charge lines](#charge-lines)
+* `reason`: the reason of this request given by the supplier
+* `status`: the [Request status](./#request-status).
+
 ### Supplier line
 
 `lines.supplierLine` contains the supplier order line fields:
@@ -133,21 +145,21 @@ Order, line and delivery line **logistics** status is one of:
 * `prices`: the requested alternative prices
 * `chargeLines`: the requested alternative charge lines, see [Charge lines](#charge-lines)
 * `reason`: the reason of this request given by the supplier
-* `status`: the [request status](./#request-status).
+* `status`: the [Request status](./#request-status).
 
 ##### Request status
 
 {% hint style="info" %}
 The **request** status is one of:
 
-* `Open`: Requested by the supplier. To be approved or rejected by the buyer.
-* `Approved`: The request is approved by the buyer.
-* `Rejected`: The request is approved by the supplier.
+* `Open`: Requested by one party. To be approved or rejected by the other party.
+* `Approved`: The request is approved by the other party.
+* `Rejected`: The request is rejected by the other party.
 * `Closed`: The request is closed because it is not relevant anymore.
   {% endhint %}
 
 {% hint style="warning" %}
-If the request status is `Open` the buyer must approve or reject it.
+If the request status is `Open` the other party must approve or reject it.
 {% endhint %}
 
 ### Confirmed line

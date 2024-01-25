@@ -33,7 +33,7 @@ Use the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://
 Process the fetched new or updated orders or shipments.
 
 {% hint style="warning" %}
-You may receive any order or shipment change, including echoed changes from your ERP system. How to handle your own open request is explained in [Polling requests](requests.md):
+You may receive any order or shipment change, including echoed changes from your ERP system. How to handle your own open request is explained in [Polling echo](echo.md):
 {% endhint %}
 
 See the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint:
