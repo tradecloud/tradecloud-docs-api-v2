@@ -17,6 +17,8 @@
     * [Postman](api/tools/postman.md)
     * [.NET SDK](api/tools/.net-sdk.md)
   * [Webhook versus polling](api/webhook-vs-polling.md)
+    * [Polling usage](api/polling/README.md)
+    * [Polling echo](api/polling/echo.md)
   * [Delivery schedule](api/delivery-schedule.md)
 * [Security](security/README.md)
   * [Security overview](security/security-overview.md)
