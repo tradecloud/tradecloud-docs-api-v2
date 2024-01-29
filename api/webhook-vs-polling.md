@@ -131,7 +131,7 @@ Con's:
 
 Fetch every polling period, typically 5 minutes, all orders or shipments which are new or changed after last date time.
 
-* Use the latest `lastUpdatedAt` from previous poll request in the `lastUpdatedAfter` filter, which will fetch only updated orders after last date time.
+* Use the latest `lastUpdatedAt` from previous poll request in the `lastUpdatedAfter` filter, which will only return orders that are updated after this date time.
 * Sorting is set automatically to `lastUpdatedAt` order `asc` \(the latest `lastUpdatedAt` will be in the last order or shipment in the response body\)
 * Set `limit` to the maximum of `100` orders or shipments.
 * Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
