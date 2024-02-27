@@ -1,10 +1,10 @@
 ---
-description: How to receive a simple order response sent by the supplier
+description: How to receive a simple order sent by the buyer.
 ---
 
-# Receive an order response
+# Receive an order
 
-Tradecloud will send a purchase order response to the buyer when an order event has been triggered.
+Tradecloud will send a purchase order, either new or updated, to the supplier when an order event has been triggered.
 
 ## `simpleOrderEvent`
 
@@ -24,23 +24,29 @@ This page assumes you are using the webhook with the simple delivery schedule in
 
 ### Buyer order
 
-`buyerOrder` is mostly an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
+`buyerOrder` contains the buyer order fields:
 
-* `supplierAccountNumber`: the supplier account number as known in your ERP system
+* `companyId`: the buyer's Tradecloud company identifier.
+* `supplierAccountNumber`: your account number as known in the buyer's ERP system.
+* `description`: a free format additional description of this order added by the buyer.
+* `contact`: the buyer employee responsible for this order.
+* `properties`: are key-value based custom fields, added by the buyer.
+* `notes`: are simple custom fields, added by the buyer.
+* `labels`: value-added services labels on order level.
+* `documents`: contain meta data, objectId or url, of attached documents by the buyer, see:
+* `orderType`: the order type, one of `Purchase` or `Forecast`.
+
+{% page-ref page="download-document.md" %}
 
 ### Supplier order
 
-`supplierOrder` contains the supplier order fields:
+`supplierOrder` is mostly an echo of your order fields as explained in [Send order response](../send-order-response/)​.
 
-* `companyId`: the supplier's Tradecloud company identifier.
-* `buyerAccountNumber`: your account number as known in the supplier's ERP system.
-* `description`: a free format additional description of this order by the supplier.
-* `contact`: the supplier employee responsible for this order.
-* `properties`: are key-value based custom fields, added by the supplier.
-* `notes`: are simple custom fields, added by the supplier.
-* `documents`: contain meta data and link of attached documents by the supplier.
+* `buyerAccountNumber`: the buyer account number as known in your ERP system.
 
-{% page-ref page="download-document.md" %}
+{% hint style="warning" %}
+The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your buyer. You can set the account code when inviting a new connection or in the connection overview in the portal.
+{% endhint %}
 
 ### Order status
 
@@ -91,23 +97,40 @@ The order **logistics** status is one of:
 
 ### Buyer line
 
-`lines.buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
+`buyerLine` contains the buyer order line fields:
 
 * `position`: the line position within the purchase order
+* `description`: a free format additional description of this line
+* `item`: the item (or article, goods) to be delivered, see [Item](#item)
+* `requests`: the buyer can request different delivery schedule, prices and charge lines. Advised is to use the `statusLine.deliveryScheduleInclRequests` and `statusLine.pricesInclRequests` fields instead.
+* `terms`: the line terms as agreed with your buyer
+  * `contractNumber`: the agreed framework contract number
+  * `contractPosition`: the related position within the framework contract
+* `projectNumber`: The buyer's project number reference
+* `productionNumber`:  The buyer's production number reference
+* `salesOrderNumber`:  The buyer's sales order number \(not be confused with your sales order number\)
+* `indicators.noDeliveryExpected`: No goods are expected to be delivered to the buyer, for example a service, fee or text line.
+* `indicators.delivered`: All goods are delivered at the buyer.
+* `properties`: are key-value based custom fields. `\n` may be used for a new line in the value.
+* `notes`: are simple custom fields. `\n` may be used for a new line.
+* `labels`: value-added services labels on line level.
+* `documents`: contain meta data and link of attached documents, see:
+
+{% page-ref page="download-document.md" %}
+
+#### Item
+
+`lines.buyerLine.item`: The item (or article, goods) to be delivered.
+
+* `number`: the item code or number as known in the buyer ERP system.
+* `revision`: the revision (or version) of this item number
+* `name`: the item short name
+* `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
+* `supplierItemNumber`: the item code or number as known at the supplier.
 
 ### Supplier line
 
-`lines.supplierLine` contains the supplier order line fields:
-
-* `salesOrderNumber`: the sales order number as known in the supplier's ERP system
-* `salesOrderPosition`: the position within the supplier's sales order
-* `description`: a free format additional description of this line by the supplier
-* `requests`: the supplier can request different delivery schedule, prices and charge lines. Advised is to use the `statusLine.deliveryScheduleInclRequests` and `statusLine.pricesInclRequests` fields instead.
-* `properties`: are key-value based custom fields, added by the supplier
-* `notes`: are simple custom fields, added by the supplier
-* `documents`: contain meta data, objectId or url, of attached documents by the supplier.
-
-{% page-ref page="download-document.md" %}
+`supplierLine` is an echo of your order line fields as explained in [Send order response](../send-order-response/)​.
 
 ### Status line
 

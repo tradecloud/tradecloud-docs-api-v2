@@ -52,6 +52,7 @@
   * [Supplier order process](order/supplier/README.md)
     * [Receive an order](order/supplier/receive/README.md)
       * [Download a document attached to an order](order/supplier/receive/download-document.md)
+      * [Simple order event](order/supplier/receive/simple-order-event.md)
     * [Send order response](order/supplier/send-order-response/README.md)
       * [Attach a document to an order response](order/supplier/send-order-response/attach-document.md)
     * [Reopen an order](order/supplier/reopen.md)

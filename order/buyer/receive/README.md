@@ -32,8 +32,8 @@ This page assumes you either chose the native delivery schedule using the `order
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
 * `lines`: one or more lines of the order, see [Order lines](#order-lines)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
-* `status.processStatus`: is the aggregate of all lines' [Order process statuses](#order-process-status).
-* `status.logisticsStatus`: is the aggregate of all lines' [Order logistics statuses](#order-logistics-status).
+* `status.processStatus`: is the aggregate of all lines [Order process statuses](#order-process-status).
+* `status.logisticsStatus`: is the aggregate of all lines [Order logistics statuses](#order-logistics-status).
 * `version`: the Tradecloud order version number
 * `eventDates`: some key order event date/times
 * `meta`: meta information, including source and trace info, about this messsage
@@ -65,6 +65,7 @@ The order status is the aggregation of all the lines statuses.
 
 #### Order process status
 
+{% hint style="info" %}
 The order **process** status is one of:
 
 * `Issued`: the order is \(re\)issued by the buyer.
@@ -73,9 +74,11 @@ The order **process** status is one of:
 * `Rejected`: the order is completely rejected by supplier
 * `Completed`: the order is completed at the buyer
 * `Cancelled`: the order is cancelled by the buyer
+{% endhint %}
 
 #### Order logistics status
 
+{% hint style="info" %}
 The order **logistics** status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
@@ -84,6 +87,7 @@ The order **logistics** status is one of:
 * `Shipped`: the order full quantity is shipped by the supplier
 * `Delivered`: the order full quantity is delivered at the buyer
 * `Cancelled`: the order is cancelled by the buyer
+{% endhint %}
 
 ## Order lines
 
@@ -109,17 +113,7 @@ The order **logistics** status is one of:
 
 `lines.buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
 
-* `requests`: the buyer can request different delivery schedule, prices and charge lines
-
-#### Buyer requests
-
-`lines.buyerLine.requests.reopenRequest`: the buyer requests to reopen the confirmed order line. The buyer has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
-
-* `deliverySchedule`: the requested alternative delivery schedule
-* `prices`: the requested alternative prices
-* `chargeLines`: the requested alternative charge lines, see [Charge lines](#charge-lines)
-* `reason`: the reason of this request given by the supplier
-* `status`: the [Request status](./#request-status).
+* `position`: the line position within the purchase order
 
 ### Supplier line
 
@@ -155,7 +149,7 @@ The **request** status is one of:
 * `Approved`: The request is approved by the other party.
 * `Rejected`: The request is rejected by the other party.
 * `Closed`: The request is closed because it is not relevant anymore.
-  {% endhint %}
+{% endhint %}
 
 {% hint style="warning" %}
 If the request status is `Open` the other party must approve or reject it.
@@ -209,6 +203,7 @@ These additional logistics fields are only available in the order line level del
 
 ##### Scheduled delivery logistics status
 
+{% hint style="info" %}
 The delivery line **logistics** status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
@@ -216,6 +211,7 @@ The delivery line **logistics** status is one of:
 * `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
 * `Shipped`: the delivery line quantity is shipped by the supplier
 * `Delivered`: the delivery line quantity is delivered at the buyer
+{% endhint %}
 
 ### Prices
 
@@ -255,6 +251,7 @@ It is advised to only use `netPrice` for its simplicity, or alternatively use `g
 
 #### Line process status
 
+{% hint style="info" %}
 The line **process** status is one of:
 
 * `Issued`: the line is \(re\)issued by the buyer
@@ -264,8 +261,11 @@ The line **process** status is one of:
 * `Completed`: the line is completed at the buyer
 * `Cancelled`: the line is cancelled by the buyer
 
+{% endhint %}
+
 #### Line in Progress status
 
+{% hint style="info" %}
 The line **in progress** status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
 
 * `OpenSupplierProposal`: There is an open proposal from the supplier.
@@ -274,9 +274,11 @@ The line **in progress** status is a more fine-grained status when an order line
 * `OpenSupplierReopenRequest`: There is an open reopen request from the supplier.
 * `OpenBuyerReopenRequest`: There is an open reopen request from the buyer.
 * `RevertedCompletedLine`: The completion of this line was reverted.
+{% endhint %}
 
 #### Line logistics status
 
+{% hint style="info" %}
 The line **logistics** status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
@@ -285,6 +287,7 @@ The line **logistics** status is one of:
 * `Shipped`: the line quantity shipped by the supplier
 * `Delivered`: the line quantity delivered at the buyer
 * `Cancelled`: the line is cancelled by the buyer
+{% endhint %}
 
 ### Charge lines
 
