@@ -13,14 +13,14 @@ This page explains the polling pattern usage, which consists of 3 steps:
 
 1. Every polling period, fetch order or shipments which are changed after last time.
 2. Process the fetched new or updated orders or shipments.
-3. Persist the `lastUpdatedAt` for the next polling request
+3. Persist the `data.lastUpdatedAt` for the next polling request
 
 ## Step 1. Fetch updated orders or shipments periodically
 
 Fetch every polling period, typically 5 minutes, all orders or shipments which are new or changed after last time.
 
-* Use the latest `lastUpdatedAt` from previous poll request in the `lastUpdatedAfter` filter.
-* Sorting is set automatically to `lastUpdatedAt` order `asc` \(the latest `lastUpdatedAt` will be in the last order or shipment in the response body\)
+* Use the latest `data.lastUpdatedAt` from previous poll request in the `lastUpdatedAfter` filter.
+* Sorting is set automatically to `data.lastUpdatedAt` order `asc` \(the latest `data.lastUpdatedAt` will be in the last order or shipment in the response body\)
 * Set `limit` to the maximum of `100` orders or shipments.
 * Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
 
@@ -38,13 +38,13 @@ You may receive any order or shipment change, including echoed changes from your
 
 See the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint:
 
-* Use the `lines.lastUpdatedAt` field to filter the order lines that have been changed.
-* Use the `status` field to filter on order process and logistics status.
+* Use the `data.lines.lastUpdatedAt` field to filter the order lines that have been changed, when `lines.lastUpdatedAt` is greater than `lastUpdatedAfter`.
+* Use the `data.lines.status` fields to filter the order lines on `processStatus`, `inProgressStatus`, `logisticsStatus` and `deliveryLineStatus` fields.
 
 See the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint:
 
-* Use the `lines.meta.lastUpdatedAt` to filter the shipment lines that have been changed.
-* Use the `status` field to filter on shipment process and logistics status.
+* Use the `data.lines.meta.lastUpdatedAt` to filter the shipment lines that have been changed.
+* Use the `data.status` field to filter on shipment process and logistics status sub fields.
 
 ## Step 3. Persist the `lastUpdatedAt` for the next polling request
 

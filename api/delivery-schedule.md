@@ -17,6 +17,7 @@ Other ERP systems can only work with only one delivery per order line.
 Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
 
 ## Native delivery schedule
+
 The default is to receive the native delivery schedule. The "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple delivery lines per order line**".
 
 Use the `orderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
@@ -37,6 +38,7 @@ The `position` may be unassigned in case of a delivery line split by a supplier.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
 ## Simple delivery schedule
+
 To receive the simple delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one delivery line per order line**".
 
 Use the `simpleOrderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
@@ -64,8 +66,10 @@ The simple delivery schedule is only supported by the POST webhook API, and not 
 
 ## Logistics status
 
-The logistics status is one of:
+The **logistics** status is one of:
 
-* `ReadyToShip`: full quantity ready to be shipped by the supplier
-* `Shipped`: full quantity shipped by the supplier
-* `Delivered`: full quantity delivered at the buyer
+* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
+* `Produced`: the delivery line quantity is produced by the supplier
+* `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
+* `Shipped`: the delivery line quantity is shipped by the supplier
+* `Delivered`: the delivery line quantity is delivered at the buyer

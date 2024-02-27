@@ -32,8 +32,8 @@ This page assumes you either chose the native delivery schedule using the `order
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
 * `lines`: one or more lines of the order, see [Order lines](#order-lines)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
-* `status.processStatus`: is the aggregate of all lines' [Process statuses](#process-status).
-* `status.logisticsStatus`: is the aggregate of all lines' [Logistics statuses](#logistics-status).
+* `status.processStatus`: is the aggregate of all lines' [Order process statuses](#order-process-status).
+* `status.logisticsStatus`: is the aggregate of all lines' [Order logistics statuses](#order-logistics-status).
 * `version`: the Tradecloud order version number
 * `eventDates`: some key order event date/times
 * `meta`: meta information, including source and trace info, about this messsage
@@ -59,33 +59,31 @@ This page assumes you either chose the native delivery schedule using the `order
 
 {% page-ref page="download-document.md" %}
 
-### Status
+### Order status
 
-#### Process status
+The order status is the aggregation of all the lines statuses.
 
-{% hint style="info" %}
-Order and line **process** status is one of:
+#### Order process status
 
-* `Issued`: \(re\)issued by the buyer.
-* `InProgress`: under negotiation between buyer and supplier
-* `Confirmed`: agreed between buyer and supplier
-* `Rejected`: rejected by supplier
-* `Completed`: completed at the buyer
-* `Cancelled`: cancelled by the buyer
-  {% endhint %}
+The order **process** status is one of:
 
-#### Logistics status
+* `Issued`: the order is \(re\)issued by the buyer.
+* `InProgress`: the order is under negotiation between buyer and supplier
+* `Confirmed`: the order is completely agreed between buyer and supplier
+* `Rejected`: the order is completely rejected by supplier
+* `Completed`: the order is completed at the buyer
+* `Cancelled`: the order is cancelled by the buyer
 
-{% hint style="info" %}
-Order, line and delivery line **logistics** status is one of:
+#### Order logistics status
+
+The order **logistics** status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
-* `Produced`: full quantity produced by the supplier
-* `ReadyToShip`: full quantity ready to be shipped by the supplier
-* `Shipped`: full quantity shipped by the supplier
-* `Delivered`: full quantity delivered at the buyer
-* `Cancelled`: cancelled by the buyer
-  {% endhint %}
+* `Produced`: the order full quantity is produced by the supplier
+* `ReadyToShip`: the order full quantity is ready to be shipped by the supplier
+* `Shipped`: the order full quantity is shipped by the supplier
+* `Delivered`: the order full quantity is delivered at the buyer
+* `Cancelled`: the order is cancelled by the buyer
 
 ## Order lines
 
@@ -100,8 +98,9 @@ Order, line and delivery line **logistics** status is one of:
 * `prices`: the current prices, see [Prices](#prices) below.
 * `pricesIncludingRequests`: the current prices, including any open supplier or buyer requests, see [Prices](#prices).
 * `indicators.deliveryOverdue` is true when the order line is overdue.
-* `status.processStatus`: the order line's [Process status](#process-status).
-* `status.logisticsStatus`: the order line's [Logistics status](#logistics-status).
+* `status.processStatus`: the order line's [Line process status](#line-process-status).
+* `status.inProgressStatus` the order line's [Line in progress status](#line-in-progress-status).
+* `status.logisticsStatus`: the order line's [Line logistics status](#line-logistics-status).
 * `eventDates`: some key line event date/times
 * `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](#item-details).
 * `lastUpdatedAt`: is the latest date time the order line has been changed, useful for polling.
@@ -204,9 +203,19 @@ The `lines.deliveryScheduleIncludingRequests` field **does include any open supp
 
 These additional logistics fields are only available in the order line level delivery schedule:
 
-* `lines.deliverySchedule[IncludingRequests].status`: the optional delivery line's [Logistics status](./#logistics-status).
+* `lines.deliverySchedule[IncludingRequests].status`: the optional delivery line's [Scheduled delivery logistics status](#scheduled-delivery-logistics-status).
 * `lines.deliverySchedule[IncludingRequests].etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 * `lines.deliverySchedule[IncludingRequests].eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+
+##### Scheduled delivery logistics status
+
+The delivery line **logistics** status is one of:
+
+* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
+* `Produced`: the delivery line quantity is produced by the supplier
+* `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
+* `Shipped`: the delivery line quantity is shipped by the supplier
+* `Delivered`: the delivery line quantity is delivered at the buyer
 
 ### Prices
 
@@ -241,6 +250,41 @@ These fields may be used in both native and simple prices:
 {% hint style="info" %}
 It is advised to only use `netPrice` for its simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
 {% endhint %}
+
+### Line status
+
+#### Line process status
+
+The line **process** status is one of:
+
+* `Issued`: the line is \(re\)issued by the buyer
+* `InProgress`: the line is under negotiation between buyer and supplier
+* `Confirmed`: the line is agreed between buyer and supplier
+* `Rejected`: the line is rejected by supplier
+* `Completed`: the line is completed at the buyer
+* `Cancelled`: the line is cancelled by the buyer
+
+#### Line in Progress status
+
+The line **in progress** status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
+
+* `OpenSupplierProposal`: There is an open proposal from the supplier.
+* `RejectedSupplierProposal`: The proposal from the supplier was rejected and no other requests are open.
+* `ReissuedRejectedLine`: The rejected order line was reissued by the buyer.
+* `OpenSupplierReopenRequest`: There is an open reopen request from the supplier.
+* `OpenBuyerReopenRequest`: There is an open reopen request from the buyer.
+* `RevertedCompletedLine`: The completion of this line was reverted.
+
+#### Line logistics status
+
+The line **logistics** status is one of:
+
+* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
+* `Produced`: the line quantity is produced by the supplier
+* `ReadyToShip`: the line quantity ready to be shipped by the supplier
+* `Shipped`: the line quantity shipped by the supplier
+* `Delivered`: the line quantity delivered at the buyer
+* `Cancelled`: the line is cancelled by the buyer
 
 ### Charge lines
 
