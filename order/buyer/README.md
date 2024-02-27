@@ -20,7 +20,7 @@ Additionally, you can [Download a document attached to an order response](receiv
 
 ## Optional step 3. Add the logistical status of goods to order update
 
-You can [Add the logistical status of goods to order update](update.md#logistics-status-in-the-planned-delivery-schedule)
+You can [Add the logistical status of goods to the order update](update.md#logistics-status-in-the-planned-delivery-schedule)
 
 ## Optional step 4. Add actual delivery history to order update
 
