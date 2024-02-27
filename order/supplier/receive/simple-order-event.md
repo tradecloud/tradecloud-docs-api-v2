@@ -10,16 +10,16 @@ Tradecloud will send a purchase order, either new or updated, to the supplier wh
 
 This page assumes you are using the webhook with the simple delivery schedule in the `simpleOrderEvent`.
 
-* `orderId`: the Tradecloud order identifier
-* `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
-* `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
-* `lines`: one or more lines of the order, see [Order lines](#order-lines)
+* `orderId`: the Tradecloud order identifier.
+* `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order).
+* `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order).
+* `lines`: one or more lines of the order, see [Order lines](#order-lines).
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
-* `status.processStatus`: is the aggregate of all lines' [Order process statuses](#order-process-status).
-* `status.logisticsStatus`: is the aggregate of all lines' [Order logistics statuses](#order-logistics-status).
-* `version`: the Tradecloud order version number
-* `eventDates`: some key order event date/times
-* `meta`: meta information, including source and trace info, about this messsage
+* `status.processStatus`: is the aggregate of all lines statuses, see [Order process status](#order-process-status).
+* `status.logisticsStatus`: is the aggregate of all lines statuses, see [Order logistics status](#order-logistics-status).
+* `version`: the Tradecloud order version number.
+* `eventDates`: some key order event date/times.
+* `meta`: meta information, including source and trace info, about this messsage.
 * `lastUpdatedAt`: is the latest date time the order has been changed.
 
 ### Buyer order
@@ -33,7 +33,7 @@ This page assumes you are using the webhook with the simple delivery schedule in
 * `properties`: are key-value based custom fields, added by the buyer.
 * `notes`: are simple custom fields, added by the buyer.
 * `labels`: value-added services labels on order level.
-* `documents`: contain meta data, objectId or url, of attached documents by the buyer, see:
+* `documents`: contain meta data, objectId or url, of attached documents by the buyer.
 * `orderType`: the order type, one of `Purchase` or `Forecast`.
 
 {% page-ref page="download-document.md" %}
@@ -134,7 +134,7 @@ The order **logistics** status is one of:
 
 ### Status line
 
-`lines.statusLine` represents the current order line values related to the current `Issued`, `Confirmed` or `InProgress` status. The `InclRequests` fields include the `InProgress` status and open buyer or supplier request values.
+`lines.statusLine` represents the current order line values related to the current `Issued`, `Confirmed` or `InProgress` process status. The `InclRequests` fields also include the `InProgress` status and related open buyer or supplier request values.
 
 #### Simple delivery schedule
 
@@ -226,9 +226,9 @@ The line **logistics** status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the line quantity is produced by the supplier
-* `ReadyToShip`: the line quantity ready to be shipped by the supplier
-* `Shipped`: the line quantity shipped by the supplier
-* `Delivered`: the line quantity delivered at the buyer
+* `ReadyToShip`: the line quantity is ready to be shipped by the supplier
+* `Shipped`: the line quantity is shipped by the supplier
+* `Delivered`: the line quantity is delivered at the buyer
 * `Cancelled`: the line is cancelled by the buyer
 {% endhint %}
 

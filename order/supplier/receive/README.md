@@ -26,8 +26,8 @@ When choosing the simple delivery schedule and using the `simpleOrderEvent` plea
 
 This page assumes you either chose the native delivery schedule using the `orderEvent` webhook API or the `order` polling API.
 
-* `id` \(in case of an Order\): the Tradecloud order identifier
-* `orderId` \(in case of an OrderEvent\): the Tradecloud order identifier
+* `id` (in case of an `order`): the Tradecloud order identifier.
+* `orderId` (in case of an `orderEvent`): the Tradecloud order identifier.
 * `buyerOrder`: the buyer part of the order, see below.
 * `supplierOrder`: the supplier part of the order.
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
@@ -35,7 +35,7 @@ This page assumes you either chose the native delivery schedule using the `order
 * `status.logisticsStatus`: is the aggregate of all lines [Order logistics statuses](#order-logistics-status).
 * `version`: the  Tradecloud order version number.
 * `eventDates`: some key order event date/times.
-* `meta`: meta information, including source and trace info, about this messsage
+* `meta`: meta information, including source and trace info, about this messsage.
 * `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling orders.
 
 ### Buyer order
@@ -99,12 +99,11 @@ The order **logistics** status is one of:
 `lines` contains one or more order lines:
 
 * `id`: the Tradecloud line identifier.
-* `buyerLine`: the buyer part of the order line, see [Buyer line part](#buyer-line-part) below.
-* `supplierLine`: the supplier part of the order line, see [Supplier line part](#supplier-line-part) below.
+* `buyerLine`: the buyer part of the order line, see [Buyer line](#buyer-line) below.
+* `supplierLine`: the supplier part of the order line, see [Supplier line](#supplier-line) below.
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](#confirmed-line) below.
-* `deliverySchedule`: the current aggregated delivery schedule, see [Current delivery schedule](#current-delivery-schedule).
-* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [Current delivery schedule](#current-delivery-schedule).
-* `scheduledDelivery`: the current aggregated delivery line, see [Current scheduled delivery](#current-delivery-line).
+* `deliverySchedule`: the current aggregated delivery schedule, see [Native delivery schedule](#native-delivery-schedule).
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [Native delivery schedule](#native-delivery-schedule).
 * `prices`: the actual prices, see [Prices](#prices) below.
 * `pricesIncludingRequests`: the actual prices, including any open supplier or buyer requests, see [Prices](#prices).
 * `indicators.deliveryOverdue` is true when the order line is overdue.
@@ -305,9 +304,9 @@ The line **logistics** status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the line quantity is produced by the supplier
-* `ReadyToShip`: the line quantity ready to be shipped by the supplier
-* `Shipped`: the line quantity shipped by the supplier
-* `Delivered`: the line quantity delivered at the buyer
+* `ReadyToShip`: the line quantity is ready to be shipped by the supplier
+* `Shipped`: the line quantity is shipped by the supplier
+* `Delivered`: the line quantity is delivered at the buyer
 * `Cancelled`: the line is cancelled by the buyer
 {% endhint %}
 

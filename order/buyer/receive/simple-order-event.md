@@ -15,8 +15,8 @@ This page assumes you are using the webhook with the simple delivery schedule in
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
 * `lines`: one or more lines of the order, see [Order lines](#order-lines)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
-* `status.processStatus`: is the aggregate of all lines' [Order process statuses](#order-process-status).
-* `status.logisticsStatus`: is the aggregate of all lines' [Order logistics statuses](#order-logistics-status).
+* `status.processStatus`: is the aggregate of all lines statuses, see [Order process status](#order-process-status).
+* `status.logisticsStatus`: is the aggregate of all lines statuses, see [Order logistics status](#order-logistics-status).
 * `version`: the Tradecloud order version number
 * `eventDates`: some key order event date/times
 * `meta`: meta information, including source and trace info, about this messsage
@@ -111,7 +111,7 @@ The order **logistics** status is one of:
 
 ### Status line
 
-`lines.statusLine` represents the current order line values related to the current `Issued`, `Confirmed` or `InProgress` status. The `InclRequests` fields include the `InProgress` status and open buyer or supplier request values.
+`lines.statusLine` represents the current order line values related to the current `Issued`, `Confirmed` or `InProgress` process status. The `InclRequests` fields also include the `InProgress` status and related open buyer or supplier request values.
 
 #### Simple delivery schedule
 
