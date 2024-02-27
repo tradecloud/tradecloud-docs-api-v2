@@ -132,4 +132,3 @@ For polling usage see:
 For handling echoed changes from your ERP system see:
 
 {% page-ref page="api/polling/echo.md" %}
-
