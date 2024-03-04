@@ -7,7 +7,7 @@ description: >-
 
 The polling API is an alternative for the webhook API. The pro's and cons are explained in:
 
-{% page-ref page="../api/webhook-vs-polling.md" %}
+{% page-ref page="../webhook-vs-polling.md" %}
 
 This page explains the polling pattern usage, which consists of 3 steps:
 
