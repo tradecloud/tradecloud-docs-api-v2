@@ -6,9 +6,13 @@ description: How to receive a simple order response sent by the supplier
 
 Tradecloud will send a purchase order response to the buyer when an order event has been triggered.
 
-## `simpleOrderEvent`
-
 This page assumes you are using the webhook with the simple delivery schedule in the `simpleOrderEvent`.
+
+When choosing polling or the native delivery schedule in the `orderEvent` please continue on:
+
+{% page-ref page="README.md" %}
+
+## `simpleOrderEvent` header
 
 * `orderId`: the Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
@@ -49,7 +53,7 @@ The order status is the aggregation of all the lines statuses.
 #### Order process status
 
 {% hint style="info" %}
-The order **process** status is one of:
+The order process status is one of:
 
 * `Issued`: the order is \(re\)issued by the buyer.
 * `InProgress`: the order is under negotiation between buyer and supplier
@@ -62,7 +66,7 @@ The order **process** status is one of:
 #### Order logistics status
 
 {% hint style="info" %}
-The order **logistics** status is one of:
+The order logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the order full quantity is produced by the supplier
@@ -72,7 +76,7 @@ The order **logistics** status is one of:
 * `Cancelled`: the order is cancelled by the buyer
 {% endhint %}
 
-## Order lines
+## `simpleOrderEvent` lines
 
 `lines` contains one or more order lines:
 
@@ -136,7 +140,7 @@ These additional logistics fields are only available in the status line schedule
 ##### Scheduled delivery logistics status
 
 {% hint style="info" %}
-The delivery line **logistics** status is one of:
+The delivery line logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the delivery line quantity is produced by the supplier
@@ -173,7 +177,7 @@ It is advised to only use `netPrice` for its simplicity, or alternatively use `g
 #### Line process status
 
 {% hint style="info" %}
-The line **process** status is one of:
+The line process status is one of:
 
 * `Issued`: the line is \(re\)issued by the buyer
 * `InProgress`: the line is under negotiation between buyer and supplier
@@ -186,7 +190,7 @@ The line **process** status is one of:
 #### Line in Progress status
 
 {% hint style="info" %}
-The line **in progress** status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
+The line in progress status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
 
 * `OpenSupplierProposal`: There is an open proposal from the supplier.
 * `RejectedSupplierProposal`: The proposal from the supplier was rejected and no other requests are open.
@@ -199,7 +203,7 @@ The line **in progress** status is a more fine-grained status when an order line
 #### Line logistics status
 
 {% hint style="info" %}
-The line **logistics** status is one of:
+The line logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the line quantity is produced by the supplier

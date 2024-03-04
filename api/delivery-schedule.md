@@ -66,7 +66,7 @@ The simple delivery schedule is only supported by the POST webhook API, and not 
 
 ## Logistics status
 
-The **logistics** status is one of:
+The logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the delivery line quantity is produced by the supplier

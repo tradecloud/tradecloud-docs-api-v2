@@ -18,11 +18,11 @@ If you choose the POST webhook API, you may choose between the native or simple 
 
 {% page-ref page="../../../api/delivery-schedule.md" %}
 
-When choosing the simple delivery schedule and using the `simpleOrderEvent` please continue on:
+When choosing the simple delivery schedule with the `simpleOrderEvent` please continue on:
 
 {% page-ref page="simple-order-event.md" %}
 
-## `orderEvent` or `order`
+## `orderEvent` or `order` header
 
 This page assumes you either chose the native delivery schedule using the `orderEvent` webhook API or the `order` polling API.
 
@@ -71,7 +71,7 @@ The order status is the aggregation of all the lines statuses.
 #### Order process status
 
 {% hint style="info" %}
-The order **process** status is one of:
+The order process status is one of:
 
 * `Issued`: the order is \(re\)issued by the buyer.
 * `InProgress`: the order is under negotiation between buyer and supplier
@@ -84,7 +84,7 @@ The order **process** status is one of:
 #### Order logistics status
 
 {% hint style="info" %}
-The order **logistics** status is one of:
+The order logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the order full quantity is produced by the supplier
@@ -94,7 +94,7 @@ The order **logistics** status is one of:
 * `Cancelled`: the order is cancelled by the buyer
 {% endhint %}
 
-## Order lines
+## `orderEvent` or `order` lines
 
 `lines` contains one or more order lines:
 
@@ -160,7 +160,7 @@ The order **logistics** status is one of:
 ##### Request status
 
 {% hint style="info" %}
-The **request** status is one of:
+The request status is one of:
 
 * `Open`: Requested by one party. To be approved or rejected by the other party.
 * `Approved`: The request is approved by the other party.
@@ -225,7 +225,7 @@ These additional logistics fields are only available in the order line level del
 ##### Scheduled delivery logistics status
 
 {% hint style="info" %}
-The delivery line **logistics** status is one of:
+The delivery line logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the delivery line quantity is produced by the supplier
@@ -273,7 +273,7 @@ It is advised to only use `netPrice` for its simplicity, or alternatively use `g
 #### Line process status
 
 {% hint style="info" %}
-The line **process** status is one of:
+The line process status is one of:
 
 * `Issued`: the line is \(re\)issued by the buyer
 * `InProgress`: the line is under negotiation between buyer and supplier
@@ -287,7 +287,7 @@ The line **process** status is one of:
 #### Line in Progress status
 
 {% hint style="info" %}
-The line **in progress** status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
+The line in progress status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
 
 * `OpenSupplierProposal`: There is an open proposal from the supplier.
 * `RejectedSupplierProposal`: The proposal from the supplier was rejected and no other requests are open.
@@ -300,7 +300,7 @@ The line **in progress** status is a more fine-grained status when an order line
 #### Line logistics status
 
 {% hint style="info" %}
-The line **logistics** status is one of:
+The line logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the line quantity is produced by the supplier

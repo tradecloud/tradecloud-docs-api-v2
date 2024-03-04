@@ -127,8 +127,8 @@ Con's:
 
 For polling usage see:
 
-{% page-ref page="api/polling/README.md" %}
+{% page-ref page="polling/README.md" %}
 
 For handling echoed changes from your ERP system see:
 
-{% page-ref page="api/polling/echo.md" %}
+{% page-ref page="polling/echo.md" %}

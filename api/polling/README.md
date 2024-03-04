@@ -7,22 +7,24 @@ description: >-
 
 The polling API is an alternative for the webhook API. The pro's and cons are explained in:
 
-{% page-ref page="api/webhook-vs-polling.md" %}
+{% page-ref page="../api/webhook-vs-polling.md" %}
 
 This page explains the polling pattern usage, which consists of 3 steps:
 
-1. Every polling period, fetch the orders or shipments which are changed after last time.
+1. Fetch the orders or shipments which are changed after last time.
 2. Process the fetched, either new or updated, orders or shipments.
-3. Persist the lastest `data.lastUpdatedAt` for the next polling request
+3. Persist the latest `data.lastUpdatedAt`.
 
 ## Step 1. Fetch updated orders or shipments periodically
 
-Fetch every polling period, typically 5 minutes, all orders or shipments which are new or changed after last time.
+Every polling period, fetch all orders or shipments which are new or changed after last time. A polling period is typically 5 minutes.
 
 * Use the latest `data.lastUpdatedAt` from previous poll request in the `lastUpdatedAfter` filter.
-* Sorting is set automatically to `data.lastUpdatedAt` order `asc` \(the latest `data.lastUpdatedAt` will be in the last order or shipment in the response body\)
+* Sorting is set to `data.lastUpdatedAt` (`asc`) by default when the `lastUpdatedAfter` filter is applied. The last updated order or shipment will be ordered last in the response body.
 * Set `limit` to the maximum of `100` orders or shipments.
-* Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
+* If the response body contains a `total` of more than `100`, it means that not all recently updated orders or shipments were returned. You can either:
+  * Decrease the polling period (advised)
+  * Use `offset` for paging, to receive the next 100 orders or shipments.
 
 Use the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint for polling orders.
 
@@ -38,7 +40,7 @@ You may receive any order or shipment change, including echoed changes from your
 
 When using the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint:
 
-* Optionally use the `data.lines.lastUpdatedAt` field to filter the order lines that have been changed, when `lines.lastUpdatedAt` is greater than `lastUpdatedAfter`.
+* Optionally use the `data.lines.lastUpdatedAt` field to filter the order lines that have been changed: Only consider lines where `lines.lastUpdatedAt` is after the `lastUpdatedAfter` filter value.
 * Optionally use the `data.lines.status` fields to filter the order lines on `processStatus`, `inProgressStatus`, `logisticsStatus` and `deliveryLineStatus` fields.
 
 When using the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint:
@@ -53,4 +55,4 @@ Persist the **latest** \(in the last order or shipment in the response body\) `l
 * `lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ`, but to keep it simple just store it as a `String`.
 * The latest `lastUpdatedAt` should be stored **persistent**. When your integration is restarted or crashes, `lastUpdatedAt` should still be available.
 * If there is no data in the response body, use the same `lastUpdatedAfter` again in the next polling request.
-* The very first time, use a `lastUpdatedAfter` date in the past, from the point you want to receive existing orders or shipments.
+* In the very first polling request, set the `lastUpdatedAfter` to a date in the past from which you want to receive existing orders or shipments.
