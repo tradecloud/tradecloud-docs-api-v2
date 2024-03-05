@@ -30,7 +30,6 @@ This page assumes you either chose the native delivery schedule using the `order
 * `orderId` (in case of an `OrderEvent`): the Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
-* `lines`: one or more lines of the order, see [Order lines](#order-lines)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
 * `status.processStatus`: is the aggregate of all lines [Order process statuses](#order-process-status).
 * `status.logisticsStatus`: is the aggregate of all lines [Order logistics statuses](#order-logistics-status).
