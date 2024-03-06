@@ -2,7 +2,7 @@
 description: How to receive a simple order sent by the buyer.
 ---
 
-# Receive an order
+# Simple Order Event
 
 Tradecloud will send a purchase order, either new or updated, to the supplier when an order event has been triggered.
 
