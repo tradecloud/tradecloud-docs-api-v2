@@ -84,7 +84,8 @@ The optional buyer, buyer accounting or supplier company party:
 
 ## Lines
 
-`lines`: a purchase order contains one or multiple lines. The total number of lines is limited to 500 lines per order. It is structured as a JSON element in the `lines` JSON array. 
+`lines`: a purchase order contains one or multiple lines. The total number of lines is limited to 500 lines per order. It is structured as a JSON element in the `lines` JSON array.
+
 * `position`: the required line position identifier within the purchase order
 * `row`: the optional row label for this position. Only use a row when there is a distinction between position and row in your ERP system. Do NOT use row as identifier.
 
@@ -95,6 +96,7 @@ The optional buyer, buyer accounting or supplier company party:
 ### Item
 
 `lines.item`: the item \(or article, goods\) to be delivered
+
 * `number`: the item code or number as known in your ERP
 * `revision`: the revision \(or version\) of this item number
 * `name`: the item short name
@@ -135,7 +137,8 @@ Please see this page to choose between the native or simple delivery schedule:
 
 ### Requested prices
 
-`lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`. 
+`lines.prices`: the requested price. Advised is to provide only `netPrice` for its simplicity, used by most buyers, or alternatively `grossPrice` together with `discountPercentage`.
+
 * `grossPrice`: the gross price. Use together with `discountPercentage`.
 * `discountPercentage`: the discount percentage. Use together with `grossPrice`.
 * `netPrice`: the net price.
@@ -151,6 +154,7 @@ Please see this page to choose between the native or simple delivery schedule:
 ### Requested charge lines
 
 `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+
 * `position`: the position used to identify a charge line.
 * `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
 * `chargeDescription`: a mandatory free text description, like "Transport costs".
