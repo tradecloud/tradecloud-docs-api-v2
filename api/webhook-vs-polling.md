@@ -102,6 +102,15 @@ Con's:
 * You need to obtain and configure a public SSL certificate.
 {% endhint %}
 
+### Webhook Response
+
+Your webhook is required to return a response with a valid [HTTP Status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) after processing the incoming request.  
+Based on the HTTP Status code of this response, Tradecloud's Webhook Connector will react as follows:
+
+* `2xx` - **Success response**: Tradecloud will consider the order event to be successfully processed.
+* `4xx` - **Client error response**: Tradecloud considers the order as not successfully processed. The request will not be retried, the DevOps team will be alerted to investigate the issue.
+* **Unexpected response**: If any other status code is returned, Tradecloud will indefinitely retry the request with exponential back-off. The DevOps team is alerted to investigate the issue.
+
 ## The polling pattern
 
 The polling pattern is an alternative to the webhook pattern and can be used to receive an order or shipment by polling the Tradecloud API.
