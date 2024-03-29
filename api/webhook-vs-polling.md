@@ -107,8 +107,8 @@ Con's:
 Your webhook is required to return a response with a valid [HTTP Status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) after processing the incoming request.  
 Based on the HTTP Status code of this response, Tradecloud's Webhook Connector will react as follows:
 
-* `2xx` - **Success response**: Tradecloud will consider the order event to be successfully processed.
-* `4xx` - **Client error response**: Tradecloud considers the order as not successfully processed. The request will not be retried, the DevOps team will be alerted to investigate the issue.
+* `2xx` - **Success response**: Tradecloud will consider the event to be successfully processed by your webhook..
+* `4xx` - **Client error response**: Tradecloud considers the event as not successfully processed. The request will not be retried, the DevOps team will be alerted to investigate the issue.
 * **Unexpected response**: If any other status code is returned, Tradecloud will indefinitely retry the request with exponential back-off. The DevOps team is alerted to investigate the issue.
 
 ## The polling pattern
