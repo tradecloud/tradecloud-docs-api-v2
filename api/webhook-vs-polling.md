@@ -119,7 +119,7 @@ Tradecloud considers the event as not successfully processed, but resending the 
 The request will not be retried, the DevOps team will be alerted to investigate the issue.  
 Commonly used client error responses are:
 
-* `400` - Bad Request: Your webhook found a **functional** error in the incoming request body and cannot process it.
+* `400` - Bad Request: Your webhook found a **functional** error during the processing of the incoming request.
 * `401` - Unauthorized: The supplied authentication (eg. credentials) are not valid.
 * `403` - Forbidden: Tradecloud is not authorized to perform this action.
 * `404` - Not Found: The requested resource, such as the related order, could not be found.
