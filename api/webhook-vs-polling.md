@@ -150,44 +150,16 @@ Con's:
 
 * Not real time, a polling period is typically 5 mins.
 * You need to build or configure a periodic polling pattern at your side.
-* You cannot filter on which order or shipment events to act on, you will receive any order or shipment change.
+* You cannot filter on which order or shipment events to act on, you will receive any order or shipment change, including echoed changes from your ERP system.
 * You cannot see what order or shipment event happened, multiple events may have happened.
 * You cannot receive the simple delivery schedule.
 * You cannot choose XML, but must use JSON.
 {% endhint %}
 
-### Polling usage
+For polling usage see:
 
-#### Step 1. Fetch updated orders or shipments periodically
+{% page-ref page="polling/README.md" %}
 
-Fetch every polling period, typically 5 minutes, all orders or shipments which are new or changed after last date time.
+For handling echoed changes from your ERP system see:
 
-* Use the latest `lastUpdatedAt` from previous poll request in the `lastUpdatedAfter` filter, which will only return orders that are updated after this date time.
-* Sorting is set automatically to `lastUpdatedAt` order `asc` \(the latest `lastUpdatedAt` will be in the last order or shipment in the response body\)
-* Set `limit` to the maximum of `100` orders or shipments.
-* Optionally use `offset` for paging, but if you receive more than `100` orders or shipments, it is easier to reduce the polling period, so you receive less orders or shipments per request.
-
-Use the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint for polling orders.
-
-Use the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint for polling shipments.
-
-#### Step 2. Process the orders or shipments in the search response body
-
-See the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint:
-
-* Use the `lines.lastUpdatedAt` field to filter the order lines that have been changed.
-* Use the `status` field to filter on order process and logistics status.
-
-See the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint:
-
-* Use the `lines.meta.lastUpdatedAt` to filter the shipment lines that have been changed.
-* Use the `status` field to filter on shipment process and logistics status.
-
-#### Step 3. Store the `lastUpdatedAt` for the next polling request
-
-Store the **latest** \(in the last order or shipment in the response body\) `lastUpdatedAt` to be used as `lastUpdatedAfter` in the next polling request.
-
-* `lastUpdatedAt` has type `String` with format `YYYY-MM-DDThh:mm:ss.SSSZ`, but to keep it simple just store it as a `String`.
-* The latest `lastUpdatedAt` should be stored **persistent**. When your integration is restarted or crashes, `lastUpdatedAt` should still be available.
-* If there is no order in the order or shipment response body, use the same `lastUpdatedAfter` in the next polling request.
-* The very first time, use a date in the past, from the point you want to receive existing orders.
+{% page-ref page="polling/echo.md" %}
