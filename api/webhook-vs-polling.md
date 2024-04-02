@@ -102,6 +102,37 @@ Con's:
 * You need to obtain and configure a public SSL certificate.
 {% endhint %}
 
+### Webhook Response
+
+Your webhook is required to return a response with a valid [HTTP Status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) after processing the incoming request.
+Based on the HTTP Status code of this response, Tradecloud's Webhook Connector will react as follows:
+
+**`2xx` - Success response**  
+Tradecloud considers the event to be successfully processed by your webhook.  
+Commonly used success responses are:
+
+* `200` - OK: Your webhook has successfully processed the response.
+* `202` - Accepted: Your webhook has verified that the incoming request can be processed and has queued it for processing.
+
+**`4xx` - Client error response**  
+Tradecloud considers the event as not successfully processed, but resending the same request is expected to result in the same error.
+The request will not be retried, the DevOps team will be alerted to investigate the issue.  
+Commonly used client error responses are:
+
+* `400` - Bad Request: Your webhook found a **functional** error during the processing of the incoming request.
+* `401` - Unauthorized: The supplied authentication (eg. credentials) are not valid.
+* `403` - Forbidden: Tradecloud is not authorized to perform this action.
+* `404` - Not Found: The requested resource, such as the related order, could not be found.
+
+**`5xx` - Server error response**  
+Tradecloud considers the event not successfully processed due to an error in the webhook. Tradecloud will indefinitely retry the request with exponential back-off. The DevOps team is alerted to monitor the issue.  
+Commonly used server error responses are:
+
+* `500` - Internal Server Error: A technical error occurred in the webhook.
+* `502` - Bad Gateway: The upstream ERP system is not available.
+* `503` - Service Unavailable: The webhook is currently not available.
+* `504` - Gateway Timeout: There was a timeout when connecting to the upstream ERP system.
+
 ## The polling pattern
 
 The polling pattern is an alternative to the webhook pattern and can be used to receive an order or shipment by polling the Tradecloud API.
