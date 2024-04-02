@@ -104,11 +104,11 @@ Con's:
 
 ### Webhook Response
 
-Your webhook is required to return a response with a valid [HTTP Status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) after processing the incoming request.  
+Your webhook is required to return a response with a valid [HTTP Status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) after processing the incoming request.
 Based on the HTTP Status code of this response, Tradecloud's Webhook Connector will react as follows:
 
 **`2xx` - Success response**  
-Tradecloud will consider the event to be successfully processed by your webhook.  
+Tradecloud considers the event to be successfully processed by your webhook.  
 Commonly used success responses are:
 
 * `200` - OK: Your webhook has successfully processed the response.
@@ -129,9 +129,9 @@ Tradecloud considers the event not successfully processed due to an error in the
 Commonly used server error responses are:
 
 * `500` - Internal Server Error: A technical error occurred in the webhook.
-* `502` - Bad Gateway: The upstream ERP system is not available
-* `503` - Service Unavailable: The webhook is currently not available, but is expected to be available soon.
-* `504` - Gateway Timeout: There was a timeout when connecting to the upstream ERP system
+* `502` - Bad Gateway: The upstream ERP system is not available.
+* `503` - Service Unavailable: The webhook is currently not available.
+* `504` - Gateway Timeout: There was a timeout when connecting to the upstream ERP system.
 
 ## The polling pattern
 
