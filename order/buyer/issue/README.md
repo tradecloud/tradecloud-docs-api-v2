@@ -16,14 +16,14 @@ The new order lines will have order process status `Issued`and logistics status 
 
 Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint when your ERP system supports a delivery schedule natively.
 
-Or use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint for the simple delivery schedule.
+Or use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryByBuyerRoute) endpoint for the single delivery per order line.
 
-Please see this page to choose between the native or simple delivery schedule:
+Please see this page to choose between the delivery schedule or single delivery per order line:
 
 {% page-ref page="delivery-schedule.md" %}
 
 {% hint style="info" %}
-When sending an order the provided supplier account number will be verified. 
+When sending an order the provided supplier account number will be verified.
 {% endhint %}
 
 ## Order
@@ -129,9 +129,9 @@ The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the me
 
 Use the `lines.deliverySchedule` field when your ERP system supports a delivery schedule natively.
 
-Or use the `lines.scheduledDelivery` field when using the simple delivery schedule.
+Or use the `lines.scheduledDelivery` field when using single delivery per order line.
 
-Please see this page to choose between the native or simple delivery schedule:
+Please see this page to choose between the delivery schedule or single delivery per order line:
 
 {% page-ref page="delivery-schedule.md" %}
 
@@ -142,12 +142,12 @@ Please see this page to choose between the native or simple delivery schedule:
 * `grossPrice`: the gross price. Use together with `discountPercentage`.
 * `discountPercentage`: the discount percentage. Use together with `grossPrice`.
 * `netPrice`: the net price.
-    * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
-        * `value`: the price value has a decimal `1234.56` format with any number of digits.
-        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-    * `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
-        * `value`: the price value has a decimal `1234.56` format with any number of digits.
-        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
+  * `priceInTransactionCurrency`: at least provide a price in the transaction currency of the supplier, like `CNY` in China.
+    * `value`: the price value has a decimal `1234.56` format with any number of digits.
+    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+  * `priceInBaseCurrency`: provide a price in your base currency, like `EUR` in the EU.
+    * `value`: the price value has a decimal `1234.56` format with any number of digits.
+    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
 * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
 * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
@@ -160,24 +160,24 @@ Please see this page to choose between the native or simple delivery schedule:
 * `chargeDescription`: a mandatory free text description, like "Transport costs".
 * `quantity`: the mandatory quantity of this charge line.
 * `price`: the mandatory price of this charge line.
-    * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
-        * `value`: the price value has a decimal `1234.56` format with any number of digits.
-        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-    * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
-        * `value`: the price value has a decimal `1234.56` format with any number of digits.
-        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
+  * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
+    * `value`: the price value has a decimal `1234.56` format with any number of digits.
+    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+  * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
+    * `value`: the price value has a decimal `1234.56` format with any number of digits.
+    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
 
 {% hint style="warning" %}
-The simple variant, where charge lines are spread over multiple order lines having the same item number and each only one charge line, is not supported. Send a support request if you need it.
+The single delivery variant, where charge lines are spread over multiple order lines having the same item number and each only one charge line, is not supported. Send a support request if you need it.
 {% endhint %}
 
 ### Other line fields
 
 * `description`: a free format additional description of this line
 * `terms`: the line terms as agreed with your supplier
-    * `contractNumber`: the agreed framework contract number
-    * `contractPosition`: the related position within the framework contract
+  * `contractNumber`: the agreed framework contract number
+  * `contractPosition`: the related position within the framework contract
 * `projectNumber`: Your project number reference
 * `productionNumber`:  Your production number reference
 * `salesOrderNumber`:  Your sales order reference \(not be confused with the supplier sales order number\)

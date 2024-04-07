@@ -10,7 +10,7 @@ You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
 
 {% hint style="warning" %}
-When using the simple delivery schedule, these indicator are only supported for the first order line of each item number. The indicator will also be applied to the other lines with the same item number together with the first line.
+When using the single delivery per order line feature, these indicator are only supported for the first order line of each item number. The indicator will also be applied to the other lines with the same item number together with the first line.
 {% endhint %}
 
 ### Confirmed by buyer
