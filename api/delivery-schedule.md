@@ -1,28 +1,28 @@
 ---
 description: >-
-  Choose between the native or simple delivery schedule
+  Choose between delivery schedule or single delivery per order line.
 ---
 
 # Receive a delivery schedule
 
-## Native versus simple delivery schedule
+## Delivery schedule versus single delivery
 
 Tradecloud works with a delivery schedule per order line.
 Each delivery line in a schedule consists of a position, delivery date and a quantity.
 
 Some ERP systems like SAP work natively with multiple delivery lines per order line.
-Use the Tradecloud [**native** delivery schedule](#native-delivery-schedule) in this case.
+Use [**delivery schedule**](#delivery-schedule) in this case.
 
 Other ERP systems can only work with only one delivery per order line.
-Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
+Use [**single delivery**](#single-delivery) in this case.
 
-## Native delivery schedule
+## Delivery schedule
 
-The default is to receive the native delivery schedule. The "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple delivery lines per order line**".
+The default is to receive a delivery schedule. The "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple deliveries per order line**".
 
 Use the `orderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-The field `lines.deliverySchedule` contains the current delivery schedule of this order line. 
+The field `lines.deliverySchedule` contains the current delivery schedule of this order line.
 
 ### `deliverySchedule` fields
 
@@ -37,16 +37,16 @@ The `position` may be unassigned in case of a delivery line split by a supplier.
 * `status`: The [logistics status](#logistics-status) of this delivery line according to the buyer.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
-## Simple delivery schedule
+## Single delivery
 
-To receive the simple delivery schedule you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one delivery line per order line**".
+To receive a single delivery per order line you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one single delivery per order line**".
 
-Use the `simpleOrderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+Use the `singleDeliveryOrderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 The field `lines.scheduledDelivery` contains the current delivery line of this order line.
 
 {% hint style="info" %}
-Tradecloud will expand a delivery schedule into order lines with the same item number having `scheduledDelivery`'s. The `deliverySchedule.position` will be taken as `lines.position`. 
+Tradecloud will expand a delivery schedule into order lines with the same item number. The `deliverySchedule.position` will be taken as `lines.position`.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -54,7 +54,7 @@ The order line `position` may be unassigned in case of an order line split by a 
 {% endhint %}
 
 {% hint style="warning" %}
-The simple delivery schedule is only supported by the POST webhook API, and not supported by the GET webhook API and polling.
+The single delivery per order line is only supported by the POST webhook API, and not supported by the GET webhook API or polling.
 {% endhint %}
 
 ### `scheduledDelivery` fields

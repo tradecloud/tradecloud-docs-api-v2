@@ -1,18 +1,18 @@
 ---
-description: How to receive a simple order sent by the buyer.
+description: How to receive a single delivery order sent by the buyer.
 ---
 
-# Simple Order Event
+# Receive a single delivery order
 
 Tradecloud will send a purchase order, either new or updated, to the supplier when an order event has been triggered.
 
-This page assumes you are using the webhook with the simple delivery schedule in the `simpleOrderEvent`.
+This page assumes you are using the webhook with a single delivery per order line in the `singleDeliveryOrderEvent`.
 
-When choosing polling or the native delivery schedule in the `orderEvent` please continue on:
+When choosing polling or the delivery schedule in the `orderEvent` please continue on:
 
 {% page-ref page="README.md" %}
 
-## `simpleOrderEvent` header
+## `singleDeliveryOrderEvent` header
 
 * `orderId`: the Tradecloud order identifier.
 * `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order).
@@ -81,7 +81,7 @@ The order logistics status is one of:
 * `Cancelled`: the order is cancelled by the buyer
 {% endhint %}
 
-## `simpleOrderEvent` lines
+## `singleDeliveryOrderEvent` lines
 
 `lines` contains one or more order lines:
 
@@ -139,9 +139,9 @@ The order logistics status is one of:
 
 `lines.statusLine` represents the current order line values related to the current `Issued`, `Confirmed` or `InProgress` process status. The `InclRequests` fields also include the `InProgress` status and related open buyer or supplier request values.
 
-#### Simple delivery schedule
+#### Single delivery
 
-When using `simpleOrderEvent` the simple delivery schedule is used:
+When using `singleDeliveryOrderEvent` one single delivery per order line is used:
 
 * `lines.statusLine.scheduledDelivery`: the current delivery line, either having `Issued` or `Confirmed` values.
 * `lines.statusLine.scheduledDeliveryInclRequests`: the current delivery line, either having `Issued`, `InProgress` requests or `Confirmed` values.

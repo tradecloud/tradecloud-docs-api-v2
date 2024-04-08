@@ -5,6 +5,7 @@ description: How to announce the buyer has received goods
 # Receive goods
 
 There are two ways to announce the buyer has received goods:
+
 - using the actual delivery, which is preferred over the delivered indicator, as it is more precise regarding partial deliveries.
 - using the delivered indicator
 
@@ -18,7 +19,7 @@ There are two ways to send the delivery history to Tradecloud:
 
 Send the actual delivery schedule by setting the `lines.deliveryHistory` field when your ERP system supports a delivery schedule natively, and update the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint.
 
-Send the actual delivery by setting the `lines.actualDelivery` field when using the simple delivery schedule, and update the order using the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint.
+Send the actual delivery by setting the `lines.actualDelivery` field when using the single delivery per order line feature, and update the order using the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint.
 
 {% page-ref page="update.md" %}
 
@@ -31,7 +32,7 @@ Before adding a delivery to an order, the order must have been sent to Tradeclou
 {% endhint %}
 
 {% hint style="warning" %}
-When using the simple delivery schedule, the deliveries endpoint only supports the first order line of each item number. The deliveries of the first line will be applied to all order lines having the same item number.
+When using the single delivery per order line feature, the deliveries endpoint only supports the first order line of each item number. The deliveries of the first line will be applied to all order lines having the same item number.
 {% endhint %}
 
 ## Delivered indicator
@@ -39,7 +40,7 @@ When using the simple delivery schedule, the deliveries endpoint only supports t
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
 {% hint style="warning" %}
-When using the simple delivery schedule, the `delivered` indicator is only supported for the first order line of each item number. The other lines with the same item number will also be marked as delivered together with the first line.
+When using the single delivery per order line feature, the `delivered` indicator is only supported for the first order line of each item number. The other lines with the same item number will also be marked as delivered together with the first line.
 {% endhint %}
 
 ### Mark as delivered by updating an order using the `/order` API

@@ -1,31 +1,30 @@
 ---
 description: >-
-  Choose between the native or simple delivery schedule
+  Choose between delivery schedule or single delivery per order line
 ---
 
 # Send a delivery schedule
 
-## Native versus simple delivery schedule
+## Delivery schedule versus single delivery
 
 Tradecloud works with a delivery schedule per order line.
 Each delivery line in a schedule consists of a position, delivery date and a quantity.
 
 Some ERP systems like SAP work natively with multiple delivery lines per order line.
-Use the Tradecloud [**native** delivery schedule](#native-delivery-schedule) in this case.
+Use the [delivery schedule](#delivery-schedule) in this case.
 
 Other ERP systems can only work with only one delivery per order line.
-Use the Tradecloud [**simple** delivery schedule](#simple-delivery-schedule) in this case.
+Use the [single delivery](#single-delivery) in this case.
 
-Sending a simple delivery schedule is only available for buyers at this moment.
-Please let [support](support.md) know when you are interested in a sending a simple delivery schedule from the supplier side.
+Sending a single delivery per order line is only available for buyers at this moment.
 
-## Native delivery schedule
+## Delivery schedule
 
 Use the field `lines.deliverySchedule` to issue the requested planned delivery schedule of this order line. 
 
 Provide at least one or multiple delivery schedule lines. The total number of delivery lines is limited to 100 lines per order line.
 
-Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint to send an order with a native delivery schedule to Tradecloud.
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint.
 
 ### `deliverySchedule` fields
 
@@ -40,16 +39,16 @@ The `position` must be unique within the delivery schedule and never change. Nev
 * `status`: The [logistics status](#logistics-status) of this delivery line according to the buyer.
 * `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
-## Simple delivery schedule
+## Single delivery
 
 Use the field `lines.scheduledDelivery` to issue the requested planned delivery of this order line.
 
-Provide one `scheduledDelivery` per order line. The total number of `scheduledDelivery`'s is limited to 100 deliveries per item number.
+Provide only one single `scheduledDelivery` per order line. The total number of `scheduledDelivery`'s is limited to 100 deliveries per item number.
 
-Use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint to send an order with a simple delivery schedule to Tradecloud.
+Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryByBuyerRoute) endpoint.
 
 {% hint style="info" %}
-Tradecloud will merge `scheduledDelivery`'s of order lines with the same item number into one order line having a delivery schedule. The `lines.position` will be taken as `deliverySchedule.position`. 
+Tradecloud will merge `scheduledDelivery`'s of order lines with the same item number into one order line having a delivery schedule. The `lines.position` will be taken as `deliverySchedule.position`.
 {% endhint %}
 
 ### `scheduledDelivery` fields

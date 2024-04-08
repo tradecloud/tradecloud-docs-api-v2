@@ -12,19 +12,19 @@ First choose either the webhook API or the polling API to receive order response
 
 {% page-ref page="../../../api/webhook-vs-polling.md" %}
 
-## Choose to receive the native or simple delivery schedule
+## Choose to receive a delivery schedule or single deliver per order line
 
-If you choose the POST webhook API, you may choose between the native or simple delivery schedule:
+If you choose the POST webhook API, you must choose between a delivery schedule or single delivery per order line:
 
 {% page-ref page="../../../api/delivery-schedule.md" %}
 
-When choosing the simple delivery schedule with the `simpleOrderEvent` please continue on:
+When choosing single delivery with the `singleDeliveryOrderEvent` please continue on:
 
-{% page-ref page="simple-order-event.md" %}
+{% page-ref page="single-delivery-order-event.md" %}
 
 ## `orderEvent` or `order` header
 
-This page assumes you either chose the native delivery schedule using the `orderEvent` webhook API or the `order` polling API.
+This page assumes you either chose delivery schedules using the `orderEvent` webhook API or the `order` polling API.
 
 * `id` (in case of an `order`): the Tradecloud order identifier
 * `orderId` (in case of an `OrderEvent`): the Tradecloud order identifier
@@ -96,8 +96,8 @@ The order logistics status is one of:
 * `buyerLine`: the buyer part of the order line, see [Buyer line](#buyer-line).
 * `supplierLine`: the supplier part of the order line, see [Supplier line](#supplier-line).
 * `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](#confirmed-line).
-* `deliverySchedule`: the current aggregated delivery schedule, see [Native delivery schedule](#native-delivery-schedule).
-* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [Native delivery schedule](#native-delivery-schedule).
+* `deliverySchedule`: the current aggregated delivery schedule, see [Delivery schedule](#delivery-schedule).
+* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [Delivery schedule](#delivery-schedule).
 * `prices`: the current prices, see [Prices](#prices) below.
 * `pricesIncludingRequests`: the current prices, including any open supplier or buyer requests, see [Prices](#prices).
 * `indicators.deliveryOverdue` is true when the order line is overdue.
@@ -166,9 +166,9 @@ Only if the process status is `Confirmed` the line is agreed between buyer and s
 * `lines.confirmedLine.prices`: the agreed prices
 * `lines.confirmedLine.chargeLines`: the agreed charge lines, see [Charge lines](#charge-lines)
 
-### Native delivery schedule
+### Delivery schedule
 
-When using `order` or `orderEvent` the native delivery schedule is used.
+When using `order` or `orderEvent` the delivery schedule is used.
 
 {% hint style="info" %}
 The `lines.deliverySchedule` together with the `lines.prices` fields give a simpler alternative for the `deliverySchedule` and `prices` fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests` and `confirmedLine`.
@@ -227,8 +227,6 @@ The `lines.pricesIncludingRequests` field **includes any open supplier or buyer 
 {% endhint %}
 
 #### Prices fields
-
-These fields may be used in both native and simple prices:
 
 * `lines.prices[IncludingRequests].grossPrice`: the gross price. Used together with `discountPercentage`.
 * `lines.prices[IncludingRequests].discountPercentage`: the discount percentage. Used together with `grossPrice`.

@@ -120,9 +120,9 @@ This part of the checklist is not applicable if you use a [Tradecloud One Connec
 
 Before starting the actual implementation, you need to verify the capabilities and requirements of your ERP system for an integration.
 
-- [ ] **Use a _native_ or _simple_ delivery schedule?**  
-  A delivery schedule consists of one or more deliveries, having a position, date & quantity, for the same item within one order line. 
-  If your ERP system does not natively support multiple deliveries per order line, you should use so called _simple deliveries_. Else, we advise to use native delivery schedules.    
+- [ ] **Use a _delivery schedule_ or _single delivery_ per order line?**  
+  A delivery schedule consists of one or more deliveries, having a position, date & quantity, for the same item within one order line.
+  If your ERP system does not natively support multiple deliveries per order line, you should use the so called _single delivery_ feature. Else, we advise to use delivery schedules.
   {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
 - [ ] **Can you split a delivery schedule?**  
   Does you ERP system support delivery or order lines split by a supplier? A supplier may split a line into multiple lines. A split line will have no position assigned by Tradecloud. The ERP system must assign a position to the split line and update the order line to Tradecloud.  

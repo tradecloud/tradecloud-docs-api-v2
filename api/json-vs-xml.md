@@ -15,8 +15,8 @@ The Tradecloud API by default supports a proprietary Tradecloud [JSON format](re
 
 The Tradecloud API supports a proprietary Tradecloud [XML format](requests.md#xml-body), called `tXML`, which is a 1-on-1 translation of the proprietary JSON format:
 
-* [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) and 
-* [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoints support `tXML`.
+* [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) and
+* [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoints support `tXML`.
 
 You can see an XML example by selecting "application/xml" in the "Parameter content type" dropdown, under the "Example Value" in above API specifications:
 

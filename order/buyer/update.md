@@ -21,9 +21,9 @@ Most supplier ERP integrations do not have the capability to automatically proce
 
 Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint when your ERP system supports a delivery schedule natively.
 
-Or use the [Send simple order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSimpleOrderByBuyerRoute) endpoint for the simple delivery schedule.
+Or use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint for the single delivery per order line feature.
 
-Please see this page to choose between the native or simple delivery schedule:
+Please see this page to choose between the delivery schedule or single delivery per order line:
 
 {% page-ref page="issue/delivery-schedule.md" %}
 
@@ -48,7 +48,7 @@ The actual delivery history may be added in an order update when your ERP system
 
 ### Actual delivery
 
-Or use the actual delivery field when using the simple delivery schedule:
+Or use the actual delivery field when using the single delivery per order line:
 
 * `lines.actualDelivery`: the actual delivery at the buyer for this order line. 
 * `actualDelivery.date`: the actual delivery date of this delivery. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../api/standards.md).

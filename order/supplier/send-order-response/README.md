@@ -174,7 +174,7 @@ When sending a new charge line do NOT provide a `position`. The buyer will assig
 
 * `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal.  Use `\n` for a new line in the value.
 * `notes`: are simple custom fields.You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
-* `reason`: optional reason in case 
+* `reason`: optional reason in case:
   * the order line is **rejected**
   * the **responded** `delivery schedule` and `prices` are **NOT** **equal** to the **requested** or **confirmed**`delivery schedule` and `prices`
   * a [**reopen** request](../reopen.md)
