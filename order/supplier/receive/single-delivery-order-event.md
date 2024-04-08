@@ -2,7 +2,7 @@
 description: How to receive a single delivery order sent by the buyer.
 ---
 
-# Som Order Event
+# Receive a single delivery order
 
 Tradecloud will send a purchase order, either new or updated, to the supplier when an order event has been triggered.
 

@@ -1,8 +1,8 @@
 ---
-description: How to receive a simple order response sent by the supplier
+description: How to receive a single delivery order response sent by the supplier
 ---
 
-# Receive an order response
+# Receive a single delivery order response
 
 Tradecloud will send a purchase order response to the buyer when an order event has been triggered.
 
