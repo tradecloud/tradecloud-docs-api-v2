@@ -5,7 +5,7 @@ description: >-
 
 # Send a delivery schedule
 
-## Ddelivery schedule versus single delivery
+## Delivery schedule versus single delivery
 
 Tradecloud works with a delivery schedule per order line.
 Each delivery line in a schedule consists of a position, delivery date and a quantity.
