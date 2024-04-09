@@ -80,7 +80,7 @@ The optional buyer, buyer accounting or supplier company party:
 
 {% page-ref page="attach-document.md" %}
 
-* `orderType`: the order type, one of `Purchase` or `Forecast`. Default `Purchase`.
+* `orderType`: the order type, one of `Purchase`, `Forecast` or `RFQ`. Default `Purchase`.
 
 ## Lines
 

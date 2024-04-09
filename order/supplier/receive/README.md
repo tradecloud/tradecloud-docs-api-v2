@@ -49,10 +49,11 @@ This page assumes you either chose the `orderEvent` webhook API or the `order` p
 * `properties`: are key-value based custom fields, added by the buyer.
 * `notes`: are simple custom fields, added by the buyer.
 * `labels`: value-added services labels on order level.
-* `documents`: contain meta data, objectId or url, of attached documents by the buyer, see:
-* `orderType`: the order type, one of `Purchase` or `Forecast`.
+* `documents`: contain meta data, objectId or url, of attached documents by the buyer. See:
 
 {% page-ref page="download-document.md" %}
+
+* `orderType`: the order type, one of `Purchase`, `Forecast` or `RFQ`. Default `Purchase`.
 
 ### Supplier order
 
