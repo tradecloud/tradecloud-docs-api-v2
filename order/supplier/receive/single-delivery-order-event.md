@@ -36,10 +36,11 @@ When choosing polling or the delivery schedule in the `orderEvent` please contin
 * `properties`: are key-value based custom fields, added by the buyer.
 * `notes`: are simple custom fields, added by the buyer.
 * `labels`: value-added services labels on order level.
-* `documents`: contain meta data, objectId or url, of attached documents by the buyer.
-* `orderType`: the order type, one of `Purchase` or `Forecast`.
+* `documents`: contain meta data, objectId or url, of attached documents by the buyer. See:
 
 {% page-ref page="download-document.md" %}
+
+* `orderType`: the order type, one of `Purchase`, `Forecast` or `RFQ`. Default `Purchase`.
 
 ### Supplier order
 
