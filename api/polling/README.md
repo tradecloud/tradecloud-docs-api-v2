@@ -28,7 +28,7 @@ Every polling period, fetch all orders or shipments which are new or changed aft
 
 Use the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint for polling orders.
 
-Use the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint for polling shipments.
+Use the [Poll shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/pollShipmentsRoute) endpoint for polling shipments.
 
 ## Step 2. Process the orders or shipments in the search response body
 
@@ -43,7 +43,7 @@ When using the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=http
 * Optionally use the `data.lines.lastUpdatedAt` field to filter the order lines that have been changed: Only consider lines where `lines.lastUpdatedAt` is after the `lastUpdatedAfter` filter value.
 * Optionally use the `data.lines.status` fields to filter the order lines on `processStatus`, `inProgressStatus`, `logisticsStatus` and `deliveryLineStatus` fields.
 
-When using the [Search shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/searchShipmentsRoute) endpoint:
+When using the [Poll shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/pollShipmentsRoute) endpoint:
 
 * Optionally use the `data.lines.meta.lastUpdatedAt` to filter the shipment lines that have been changed.
 * Optionally use the `data.status` field to filter on shipment process and logistics status sub fields.
