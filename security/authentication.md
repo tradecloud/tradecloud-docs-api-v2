@@ -4,12 +4,16 @@ description: How to use JSON Web Tokens
 
 # Authentication
 
-The `api-connector`, `object-storage/document` and `order-search/search` API's support two means of authentication:
+The `api-connector`, `object-storage/document`, `order-search/poll` and `shipment/poll` integration API's support two means of authentication:
 
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) upon every HTTP request.
 * Using "Basic" HTTP authentication scheme \([RFC 7617](https://tools.ietf.org/html/rfc7617)\) to obtain a [JSON Web Token](https://jwt.io/) \([RFC 7519](https://tools.ietf.org/html/rfc7519)\). The JWT is used for authentication for all following requests.
 
-Other API's only support the "Basic" HTTP authentication scheme with JSON Web Tokens.
+{% hint style="warning" %}
+Only an integration user is authorised to access the integration API's.
+
+Please contact <support@tradecloud1.com> to assign the `integration` role to your integration user.
+{% endhint %}
 
 ## Basic Authentication upon every request
 

@@ -26,7 +26,7 @@ Every polling period, fetch all orders or shipments which are new or changed aft
   * Decrease the polling period (advised)
   * Use `offset` for paging, to receive the next 100 orders or shipments.
 
-Use the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint for polling orders.
+Use the [Poll orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint for polling orders.
 
 Use the [Poll shipments](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/pollShipmentsRoute) endpoint for polling shipments.
 
@@ -38,7 +38,7 @@ Process the fetched new or updated orders or shipments.
 You may receive any order or shipment change, including echoed changes from your ERP system. How to handle your own open request is explained in [Polling echo](echo.md).
 {% endhint %}
 
-When using the [Search orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/searchRoute) endpoint:
+When using the [Poll orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint:
 
 * Optionally use the `data.lines.lastUpdatedAt` field to filter the order lines that have been changed: Only consider lines where `lines.lastUpdatedAt` is after the `lastUpdatedAfter` filter value.
 * Optionally use the `data.lines.status` fields to filter the order lines on `processStatus`, `inProgressStatus`, `logisticsStatus` and `deliveryLineStatus` fields.
