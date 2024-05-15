@@ -45,7 +45,6 @@ Use `POST` when:
 * You want to receive the order event or shipment event content.
 * You only want to receive order or shipment events of a specific type.
 * You **only** need to receive the order lines that are **changed**, not all the lines of the order.
-* You want to use only one single delivery per order line.
 * You want to use XML instead of JSON.
 
 {% hint style="info" %}
@@ -144,6 +143,7 @@ The polling pattern is most suitable for companies with low volume orders, and n
 Pro's:
 
 * No webhook needed: no web server, firewall or SSL certificate needed.
+* You can use the single delivery per order line feature.
 
 Con's:
 
@@ -151,7 +151,6 @@ Con's:
 * You need to build or configure a periodic polling pattern at your side.
 * You cannot filter on which order or shipment events to act on, you will receive any order or shipment change, including echoed changes from your ERP system.
 * You cannot see what order or shipment event happened, multiple events may have happened.
-* You cannot use the single delivery per order line feature.
 * You cannot choose XML, but must use JSON.
 {% endhint %}
 
