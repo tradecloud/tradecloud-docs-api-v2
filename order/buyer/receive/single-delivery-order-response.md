@@ -1,56 +1,50 @@
 ---
-description: How to receive a single delivery order sent by the buyer.
+description: How to receive a single delivery order response sent by the supplier
 ---
 
-# Receive a single delivery order
+# Receive a single delivery order response
 
-Tradecloud will send a purchase order, either new or updated, to the supplier when an order event has been triggered.
+Tradecloud will send a purchase order response, either new or updated, to the buyer when an order event has been triggered.
 
-This page assumes you are using the webhook with a single delivery per order line in the `singleDeliveryOrderEvent`.
+This page assumes you are using the webhook or polling with a single delivery schedule per order line.
 
-When choosing polling or the delivery schedule in the `orderEvent` please continue on:
+When choosing the delivery schedule please continue on:
 
 {% page-ref page="README.md" %}
 
-## `singleDeliveryOrderEvent` header
+## `singleDeliveryOrderEvent` or `order` header
 
-* `orderId`: the Tradecloud order identifier.
-* `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order).
-* `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order).
+* `id` (in case of an `order`): the Tradecloud order identifier
+* `orderId` (in case of an `singleDeliveryOrderEvent`): the Tradecloud order identifier
+* `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
+* `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
 * `status.processStatus`: is the aggregate of all lines statuses, see [Order process status](#order-process-status).
 * `status.logisticsStatus`: is the aggregate of all lines statuses, see [Order logistics status](#order-logistics-status).
-* `version`: the Tradecloud order version number.
-* `eventDates`: some key order event date/times.
-* `meta`: meta information, including source and trace info, about this messsage.
+* `version`: the Tradecloud order version number
+* `eventDates`: some key order event date/times
+* `meta`: meta information, including source and trace info, about this messsage
 * `lastUpdatedAt`: is the latest date time the order has been changed.
 
 ### Buyer order
 
-`buyerOrder` contains the buyer order fields:
+`buyerOrder` is mostly an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
 
-* `companyId`: the buyer's Tradecloud company identifier.
-* `supplierAccountNumber`: your account number as known in the buyer's ERP system.
-* `description`: a free format additional description of this order added by the buyer.
-* `contact`: the buyer employee responsible for this order.
-* `properties`: are key-value based custom fields, added by the buyer.
-* `notes`: are simple custom fields, added by the buyer.
-* `labels`: value-added services labels on order level.
-* `documents`: contain meta data, objectId or url, of attached documents by the buyer. See:
-
-{% page-ref page="download-document.md" %}
-
-* `orderType`: the order type, one of `Purchase`, `Forecast` or `RFQ`. Default `Purchase`.
+* `supplierAccountNumber`: the supplier account number as known in your ERP system
 
 ### Supplier order
 
-`supplierOrder` is mostly an echo of your order fields as explained in [Send order response](../send-order-response/)​.
+`supplierOrder` contains the supplier order fields:
 
-* `buyerAccountNumber`: the buyer account number as known in your ERP system.
+* `companyId`: the supplier's Tradecloud company identifier.
+* `buyerAccountNumber`: your account number as known in the supplier's ERP system.
+* `description`: a free format additional description of this order by the supplier.
+* `contact`: the supplier employee responsible for this order.
+* `properties`: are key-value based custom fields, added by the supplier.
+* `notes`: are simple custom fields, added by the supplier.
+* `documents`: contain meta data and link of attached documents by the supplier.
 
-{% hint style="warning" %}
-The `buyerAccountNumber` should be set on forehand in the Tradecloud connection with your buyer. You can set the account code when inviting a new connection or in the connection overview in the portal.
-{% endhint %}
+{% page-ref page="download-document.md" %}
 
 ### Order status
 
@@ -101,48 +95,31 @@ The order logistics status is one of:
 
 ### Buyer line
 
-`buyerLine` contains the buyer order line fields:
+`lines.buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
 
 * `position`: the line position within the purchase order
-* `description`: a free format additional description of this line
-* `item`: the item (or article, goods) to be delivered, see [Item](#item)
-* `requests`: the buyer can request different delivery schedule, prices and charge lines. Advised is to use the `statusLine.deliveryScheduleInclRequests` and `statusLine.pricesInclRequests` fields instead.
-* `terms`: the line terms as agreed with your buyer
-  * `contractNumber`: the agreed framework contract number
-  * `contractPosition`: the related position within the framework contract
-* `projectNumber`: The buyer's project number reference
-* `productionNumber`:  The buyer's production number reference
-* `salesOrderNumber`:  The buyer's sales order number \(not be confused with your sales order number\)
-* `indicators.noDeliveryExpected`: No goods are expected to be delivered to the buyer, for example a service, fee or text line.
-* `indicators.delivered`: All goods are delivered at the buyer.
-* `properties`: are key-value based custom fields. `\n` may be used for a new line in the value.
-* `notes`: are simple custom fields. `\n` may be used for a new line.
-* `labels`: value-added services labels on line level.
-* `documents`: contain meta data and link of attached documents, see:
-
-{% page-ref page="download-document.md" %}
-
-#### Item
-
-`lines.buyerLine.item`: The item (or article, goods) to be delivered.
-
-* `number`: the item code or number as known in the buyer ERP system.
-* `revision`: the revision (or version) of this item number
-* `name`: the item short name
-* `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
-* `supplierItemNumber`: the item code or number as known at the supplier.
 
 ### Supplier line
 
-`supplierLine` is an echo of your order line fields as explained in [Send order response](../send-order-response/)​.
+`lines.supplierLine` contains the supplier order line fields:
+
+* `salesOrderNumber`: the sales order number as known in the supplier's ERP system
+* `salesOrderPosition`: the position within the supplier's sales order
+* `description`: a free format additional description of this line by the supplier
+* `requests`: the supplier can request different delivery schedule, prices and charge lines. Advised is to use the `statusLine.deliveryScheduleInclRequests` and `statusLine.pricesInclRequests` fields instead.
+* `properties`: are key-value based custom fields, added by the supplier
+* `notes`: are simple custom fields, added by the supplier
+* `documents`: contain meta data, objectId or url, of attached documents by the supplier.
+
+{% page-ref page="download-document.md" %}
 
 ### Status line
 
 `lines.statusLine` represents the current order line values related to the current `Issued`, `Confirmed` or `InProgress` process status. The `InclRequests` fields also include the `InProgress` status and related open buyer or supplier request values.
 
-#### Single delivery
+#### Single delivery per order line
 
-When using `singleDeliveryOrderEvent` one single delivery per order line is used:
+When using `singleDeliveryOrderEvent` only one single delivery per order line is used:
 
 * `lines.statusLine.scheduledDelivery`: the current delivery line, either having `Issued` or `Confirmed` values.
 * `lines.statusLine.scheduledDeliveryInclRequests`: the current delivery line, either having `Issued`, `InProgress` requests or `Confirmed` values.
@@ -230,9 +207,9 @@ The line logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the line quantity is produced by the supplier
-* `ReadyToShip`: the line quantity is ready to be shipped by the supplier
-* `Shipped`: the line quantity is shipped by the supplier
-* `Delivered`: the line quantity is delivered at the buyer
+* `ReadyToShip`: the line quantity ready to be shipped by the supplier
+* `Shipped`: the line quantity shipped by the supplier
+* `Delivered`: the line quantity delivered at the buyer
 * `Cancelled`: the line is cancelled by the buyer
 {% endhint %}
 

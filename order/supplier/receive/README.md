@@ -8,19 +8,19 @@ Tradecloud will send a purchase order, either new or updated, to the supplier wh
 
 ## Choose the appropriate API to receive an order
 
-First choose either the webhook API or the polling API to receive order messages:
+You must choose between the webhook API or the polling API to receive order messages:
 
 {% page-ref page="../../../api/webhook-vs-polling.md" %}
 
 ## Choose to receive a delivery schedule or single delivery per order line
 
-If you choose the POST webhook API, you must choose between delivery schedule or single delivery per order line:
+You must choose between delivery schedule or single delivery per order line:
 
 {% page-ref page="../../../api/delivery-schedule.md" %}
 
-When choosing the single delivery with the `singleDeliveryOrderEvent` please continue on:
+When choosing the single delivery please continue on:
 
-{% page-ref page="single-delivery-order-event.md" %}
+{% page-ref page="single-delivery-order.md" %}
 
 ## `orderEvent` or `order` header
 

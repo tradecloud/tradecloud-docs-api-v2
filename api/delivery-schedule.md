@@ -54,7 +54,7 @@ The order line `position` may be unassigned in case of an order line split by a 
 {% endhint %}
 
 {% hint style="warning" %}
-The single delivery per order line is only supported by the POST webhook API, and not supported by the GET webhook API or polling.
+The single delivery per order line is supported by the POST webhook API and polling API, but not supported by the GET webhook API.
 {% endhint %}
 
 ### `scheduledDelivery` fields
