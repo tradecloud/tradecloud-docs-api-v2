@@ -25,7 +25,7 @@ Pro: this is a simple authentication method, supported by all integrations
 Con's:
 
 * The response time is long, average 1 second, up to 3 seconds.
-* It is only supported by `api-connector`, `object-storage/document` and `order-search/search` API's, not by other service API's.
+* It is only supported by `api-connector`, `object-storage/document`, `order-search/poll` and `shipment/poll` API's, not by other service API's.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -33,7 +33,7 @@ Con's:
 
 * You send one order or response occasionally; less then 1 per minute.
 * And you do not need to integrate with other API's, like the user and company API's
-* Or when your integration system does not support [**JSON Web Tokens**](https://jwt.io/) \([RFC 7519](https://tools.ietf.org/html/rfc7519)\)
+* Or when your integration system does not support [**JSON Web Tokens**](https://jwt.io/) [RFC 7519](https://datatracker.ietf.org/doc/html/rfc7519)
 {% endhint %}
 
 ### How to Authenticate
@@ -156,4 +156,3 @@ POST https://api.accp.tradecloud1.com/v2/authentication/logout
 Refresh-Token: <Refresh-Token>
 // no body
 ```
-
