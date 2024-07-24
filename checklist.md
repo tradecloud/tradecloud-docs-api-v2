@@ -152,11 +152,11 @@ When starting to build and integration with the Tradecloud One API, make sure to
 - [ ] **Use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?**  
   By default, Tradecloud works with JSON but some API endpoints also work with XML and more will be added on request:
   {% page-ref page="api/json-vs-xml.md" %}
-- [ ] **Use _Webhooks_ or _polling_?**  
+- [ ] **Use _webhooks_ or _polling_?**  
   Depending on the capabilities of your integration, you may choose for using Webhooks or Polling:
   {% page-ref page="api/webhook-vs-polling.md" %}
-- [ ] **If using Webhooks, use _Basic_ or _Bearer Token_ authentication?**  
-  In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication or a Bearer Token.
+- [ ] **If using webhooks, use _Basic_, _Bearer Token_ or  _OAuth_ authentication?**  
+  In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication, a static Bearer token, or OAuth 2.0 Client Credentials Grant.
 - [ ] **Use Ip source filtering?**  
   When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as a webhook does not use MFA or SSO. You may find the Tradecloud egress ip addresses here:  
   {% page-ref page="api/environments.md#source-ip-addresses" %}
