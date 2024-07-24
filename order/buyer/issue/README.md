@@ -169,7 +169,7 @@ Please see this page to choose between the delivery schedule or single delivery 
 * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
 
 {% hint style="warning" %}
-The single delivery variant, where charge lines are spread over multiple order lines having the same item number and each only one charge line, is not supported. Send a support request if you need it.
+The single delivery variant, where charge lines are spread over multiple order lines having the same item, prices and terms, and each only one charge line, is not supported. Send a support request if you need it.
 {% endhint %}
 
 ### Other line fields

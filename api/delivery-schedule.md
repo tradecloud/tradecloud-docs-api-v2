@@ -46,7 +46,11 @@ Use the `singleDeliveryOrderEvent` field of the [POST order webhook](https://swa
 The field `lines.scheduledDelivery` contains the current delivery line of this order line.
 
 {% hint style="info" %}
-Tradecloud will expand a delivery schedule into order lines with the same item number. The `deliverySchedule.position` will be taken as `lines.position`.
+Tradecloud represents order lines having the same item, prices and terms as one order line having a delivery schedule.
+
+In the single delivery order response Tradecloud will split the delivery schedule into order line's having only one delivery.
+
+The `deliverySchedule.position` will be mapped to the order response `lines.buyerLine.position`
 {% endhint %}
 
 {% hint style="warning" %}

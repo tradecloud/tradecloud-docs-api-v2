@@ -12,9 +12,9 @@ As buyer you can send either a [new](issue/) or updated purchase order to Tradec
 Most supplier ERP integrations do not have the capability to automatically process an updated order. It will be processed manually by the supplier and the order will have a longer human response time.
 {% endhint %}
 
-* If an order line has order process status `Issued` or `In Progress` and it is updated, it will keep the same status. 
-* If the line has status `Rejected` \(by supplier\) and it is reissued, it will become `In Progress`. 
-* If the line has status `Confirmed` and it is reopened, it will become `In Progress`. 
+* If an order line has order process status `Issued` or `In Progress` and it is updated, it will keep the same status.
+* If the line has status `Rejected` \(by supplier\) and it is reissued, it will become `In Progress`.
+* If the line has status `Confirmed` and it is reopened, it will become `In Progress`.
 * In case of any other status like `Completed` or `Cancelled` the order update will be ignored.
 
 ### Endpoints
@@ -27,7 +27,7 @@ Please see this page to choose between the delivery schedule or single delivery 
 
 {% page-ref page="issue/delivery-schedule.md" %}
 
-Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed. 
+Tradecloud will update the order based on the `purchaseOrderNumber` and will add or update lines, delivery schedules and delivery histories where needed.
 
 Order lines will be matched based on `lines.position`, `deliverySchedule.position` and `deliveryHistory.position`.
 
@@ -50,7 +50,7 @@ The actual delivery history may be added in an order update when your ERP system
 
 Or use the actual delivery field when using the single delivery per order line:
 
-* `lines.actualDelivery`: the actual delivery at the buyer for this order line. 
+* `lines.actualDelivery`: the actual delivery at the buyer for this order line.
 * `actualDelivery.date`: the actual delivery date of this delivery. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../api/standards.md).
 * `actualDelivery.quantity`: the actual delivered quantity of this delivery. Quantity has a decimal `1234.56` format with any number of digits.
 

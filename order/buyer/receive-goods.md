@@ -32,7 +32,7 @@ Before adding a delivery to an order, the order must have been sent to Tradeclou
 {% endhint %}
 
 {% hint style="warning" %}
-When using the single delivery per order line feature, the deliveries endpoint only supports the first order line of each item number. The deliveries of the first line will be applied to all order lines having the same item number.
+When using the single delivery per order line feature, the deliveries endpoint only supports the first order line of each item number. The deliveries of the first line will be applied to all order lines having the same item, prices and terms.
 {% endhint %}
 
 ## Delivered indicator
@@ -40,7 +40,7 @@ When using the single delivery per order line feature, the deliveries endpoint o
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
 {% hint style="warning" %}
-When using the single delivery per order line feature, the `delivered` indicator is only supported for the first order line of each item number. The other lines with the same item number will also be marked as delivered together with the first line.
+When using the single delivery per order line feature, the `delivered` indicator is only supported for the first order line of each item number. The other lines with the same item, prices and terms will also be marked as delivered together with the first line.
 {% endhint %}
 
 ### Mark as delivered by updating an order using the `/order` API
