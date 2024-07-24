@@ -3,9 +3,7 @@ description: >-
   Choose between delivery schedule or single delivery per order line.
 ---
 
-# Receive a delivery schedule
-
-## Delivery schedule versus single delivery
+# Delivery schedule versus single delivery
 
 Tradecloud works with a delivery schedule per order line.
 Each delivery line in a schedule consists of a position, delivery date and a quantity.
@@ -18,7 +16,17 @@ Use [**single delivery**](#single-delivery) in this case.
 
 ## Delivery schedule
 
-The default is to receive a delivery schedule. The "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple deliveries per order line**".
+The default is to send and receive a delivery schedule.
+
+### Sending an order with a delivery schedule
+
+When sending and order, use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint.
+
+The field `lines.deliverySchedule` contains the requested delivery schedule of this order line.
+
+### Receiving an order response with a delivery schedule
+
+When receiving an order response, the "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple deliveries per order line**".
 
 Use the `orderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
@@ -39,11 +47,25 @@ The `position` may be unassigned in case of a delivery line split by a supplier.
 
 ## Single delivery
 
-To receive a single delivery per order line you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one single delivery per order line**".
+The alternative is to send and receive a single delivery per order line.
+
+### Sending an order with a single delivery
+
+When sending an order, Tradecloud will merge `scheduledDelivery`'s of order lines with the same item, prices and terms into one order line having a delivery schedule.
+
+Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryByBuyerRoute) endpoint.
+
+The field `lines.scheduledDelivery` contains the scheduled delivery of this order line.
+
+### Receiving an order response with single delivery
+
+When receiving an order rerponse, Tradecloud will split the delivery schedule into order line's having only one delivery.
+
+You must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one single delivery per order line**".
 
 Use the `singleDeliveryOrderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-The field `lines.scheduledDelivery` contains the current delivery line of this order line.
+The field `lines.statusLine.scheduledDelivery` contains the current scheduled delivery of this order line.
 
 {% hint style="info" %}
 Tradecloud represents order lines having the same item, prices and terms as one order line having a delivery schedule.
