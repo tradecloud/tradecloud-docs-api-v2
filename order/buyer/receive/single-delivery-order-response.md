@@ -12,6 +12,14 @@ When choosing the delivery schedule please continue on:
 
 {% page-ref page="README.md" %}
 
+{% hint style="info" %}
+Tradecloud represents order lines having the same item, prices and terms as one order line having a delivery schedule.
+
+In the single delivery order response Tradecloud will split the delivery schedule into order line's having only one delivery.
+
+The `deliverySchedule.position` will be mapped to the order response `lines.buyerLine.position`
+{% endhint %}
+
 ## `singleDeliveryOrderEvent` or `order` header
 
 * `id` (in case of an `order`): the Tradecloud order identifier
@@ -97,7 +105,8 @@ The order logistics status is one of:
 
 `lines.buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
 
-* `position`: the line position within the purchase order
+* `position`: the line position within the purchase order. The position is unique and immutable within the order. Position is empty in case of a newly split line.
+* `originalPosition`: The original position when `position` is empty in case of a split line.
 
 ### Supplier line
 

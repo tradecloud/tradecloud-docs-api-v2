@@ -121,7 +121,7 @@ This part of the checklist is not applicable if you use a [Tradecloud One Connec
 Before starting the actual implementation, you need to verify the capabilities and requirements of your ERP system for an integration.
 
 - [ ] **Use a _delivery schedule_ or _single delivery_ per order line?**  
-  A delivery schedule consists of one or more deliveries, having a position, date & quantity, for the same item within one order line.
+  A delivery schedule consists of one or more deliveries, having a position, date & quantity, for the same item, prices and terms within one order line.
   If your ERP system does not natively support multiple deliveries per order line, you should use the so called _single delivery_ feature. Else, we advise to use delivery schedules.
   {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
 - [ ] **Can you split a delivery schedule?**  
