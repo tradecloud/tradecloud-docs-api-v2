@@ -26,7 +26,7 @@ When choosing the single delivery please continue on:
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-* `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events) when working with the POST order webhook API
+* `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
 * `orderEvent` contains the actual order event
 
 ## When working with the polling API
