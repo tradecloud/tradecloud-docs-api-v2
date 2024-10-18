@@ -118,7 +118,7 @@ When correctly authenticated, your request will be processed and if all is well,
 
 ### Refreshing the token
 
-An access token will **expire after 10 minutes and a refresh token after 24 hours**. When your access token has expired you have to use the refresh token. If your refresh token expires you have to log in again.
+An access token will **expire after 1 hour and a refresh token after 24 hours**. When your access token has expired you have to use the refresh token. If your refresh token expires you have to log in again.
 
 You can refresh your access token by placing an HTTP request to `/authentication/refresh`, using  
 **only** **the Refresh-Token header.** **Do NOT use the Authorization header**.
