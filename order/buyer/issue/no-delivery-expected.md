@@ -14,5 +14,5 @@ When a line has no goods to be delivered, for example a service, fee or text lin
 You can set `No delivery expected` by using the `/order` API resource, by setting the `indicators.noDeliveryExpected` on line level.
 
 {% hint style="info" %}
-Lines having the `noDeliveryExpected` indicator set will never become`Overdue`
+Lines having the `noDeliveryExpected` indicator set will never become `Overdue`.
 {% endhint %}

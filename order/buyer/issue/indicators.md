@@ -10,7 +10,7 @@ You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
 
 {% hint style="warning" %}
-When using the single delivery per order line feature, these indicator are only supported for the first order line of each item number. The indicator will also be applied to the other lines with the same item, prices and terms together with the first line.
+When working with the single delivery per order line feature, these indicator behave slighty different, check the [single delivery feature](#single-delivery).
 {% endhint %}
 
 ### Confirmed by buyer
@@ -18,8 +18,17 @@ When using the single delivery per order line feature, these indicator are only 
 `confirmed`: all goods of this order or line are confirmed by the supplier, according to the buyer.
 
 {% hint style="info" %}
-The order or line must have process status `issued` and will become `confirmed`. 
+The order or line must have process status `Issued` and will become `Confirmed`.
 This indicator is only intended for onboarding or migration of order lines which are already confirmed.
+{% endhint %}
+
+### Reconfirmation request by buyer
+
+`requestReconfirmation`: the supplier is requested to reconfirm the order line. The supplier either reconfirms the order line with requested values or alternatively does a reopen request with different values.
+
+{% hint style="info" %}
+The order or line must have process status `Confirmed` and will become `InProgress`.
+The In Progress status will become `OpenBuyerReconfirmationRequest`
 {% endhint %}
 
 ### Shipped by supplier
@@ -82,3 +91,35 @@ The order or line having logistics status `Open`, `Produced`, `ReadyToShip` or `
 `proposeWhenAccepted`: If this flag is set to true then this line becomes automatically a supplier proposal in case the supplier the accepts a line.
 
 {% page-ref page="propose-when-accepted.md" %}
+
+## Single delivery
+
+When working with the single delivery per order line feature, lines with the same item, prices and terms are grouped into one parent order line with a delivery schedule. In this case, these indicators behave slighty different:
+
+### Confirmed by buyer
+
+Only the parent order line will become confirmed, when all grouped lines are confirmed.
+
+### Reconfirmation request by buyer
+
+Only the parent order line has to be reconfirmed.
+
+### Shipped by supplier
+
+This line will become shipped, and the parent order line will become shipped when all grouped lines are marked as shipped.
+
+### Delivered at buyer
+
+This line will become delivered, and the parent order line will become delivered when all grouped lines are marked as delivered.
+
+### Completed at buyer
+
+Only the parent order line will become completed when all grouped lines are marked as completed.
+
+### Cancelled by buyer
+
+This line will be removed from the delivery schedule, and the parent order line will become cancelled when all lines are marked as cancelled.
+
+### Propose when accepted
+
+Only the parent order line will become a proposal.
