@@ -122,4 +122,4 @@ This line will be removed from the delivery schedule, and the parent order line 
 
 ### Propose when accepted
 
-Only the parent order line will become a proposal.
+Only the parent order line will get a proposal when the grouped lines are accepted.
