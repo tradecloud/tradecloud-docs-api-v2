@@ -98,7 +98,7 @@ When working with the single delivery per order line feature, lines with the sam
 
 ### Confirmed by buyer
 
-Only the parent order line will become confirmed, when all grouped lines are confirmed.
+The parent order line will only become confirmed, when all grouped lines are confirmed.
 
 ### Reconfirmation request by buyer
 
