@@ -28,7 +28,7 @@ This indicator is only intended for onboarding or migration of order lines which
 
 {% hint style="info" %}
 The order or line must have process status `Confirmed` and will become `InProgress`.
-The In Progress status will become `OpenBuyerReconfirmationRequest`
+The `inProgressStatus` will become `OpenBuyerReconfirmationRequest`
 {% endhint %}
 
 ### Shipped by supplier
