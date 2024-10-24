@@ -10,7 +10,7 @@ You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
 
 {% hint style="warning" %}
-When working with the single delivery per order line feature, these indicator behave slighty different, check the [single delivery feature](#single-delivery).
+When working with the single delivery per order line feature, these indicators behave slighty different, check the [single delivery feature](#single-delivery).
 {% endhint %}
 
 ### Confirmed by buyer
