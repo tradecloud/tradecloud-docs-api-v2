@@ -31,7 +31,7 @@ Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https:
 
 Use the [POST poll/single-delivery](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersSingleDeliveryRoute) endpoint.
 
-* `order` contains the actual order
+* `order` contains the actual order in its current state
 
 ## `singleDeliveryOrderEvent` or `order` header
 
