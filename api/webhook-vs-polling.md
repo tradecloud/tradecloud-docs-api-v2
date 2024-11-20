@@ -12,7 +12,7 @@ To receive an order, order response or shipment message you can use either:
 
 ## The Webhook Connector
 
-When an order or shipment has been changed at Tradecloud, we will trigger your webhook.
+When an order or shipment has been changed at Tradecloud, we will trigger your webhook realtime.
 
 The webhook is most suitable for companies with real time, high volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
