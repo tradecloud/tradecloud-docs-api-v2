@@ -28,7 +28,7 @@ The field `lines.deliverySchedule` contains the delivery schedule of this order 
 
 When receiving an order response, the "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple deliveries per order line**".
 
-Use the `orderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+Use the `orderEvent` field of the [order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 The field `lines.deliverySchedule` contains the current delivery schedule of this order line.
 
@@ -61,7 +61,7 @@ Tradecloud will merge `scheduledDelivery`'s of order lines with the same item, p
 
 When receiving an order response, you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one single delivery per order line**".
 
-Use the `singleDeliveryOrderEvent` field of the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+Use the `singleDeliveryOrderEvent` field of the [order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 The field `lines.statusLine.scheduledDelivery` contains the current scheduled delivery of this order line.
 
@@ -69,10 +69,6 @@ The field `lines.statusLine.scheduledDelivery` contains the current scheduled de
 
 {% hint style="warning" %}
 The order line `position` may be unassigned in case of an order line split by a supplier. The ERP system must assign a position to the split order line and update the order line to Tradecloud.
-{% endhint %}
-
-{% hint style="warning" %}
-The single delivery per order line is supported by the POST webhook API and polling API, but not supported by the GET webhook API.
 {% endhint %}
 
 ### `scheduledDelivery` fields

@@ -22,7 +22,7 @@ You can see an XML example by selecting "application/xml" in the "Parameter cont
 
 ![Select order API XML content type](../.gitbook/assets/select-order-api-xml-content-type.png)
 
-Also the [POST Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint supports `tXML`.
+Also the [Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint supports `tXML`.
 
 You can see an XML example by selecting "application/xml" in the "Parameter content type" dropdown, under the "Example Value" in above API specification:
 

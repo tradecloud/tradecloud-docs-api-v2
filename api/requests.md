@@ -8,7 +8,7 @@ description: How to make API requests
 
 An API request consist of:
 
-* [HTTP method](requests.md#HTTP-method): `GET`, `POST`, `PUT` or `DELETE`
+* [HTTP method](requests.md#HTTP-method): `GET`, `POST` or `DELETE`
 * [HTTP headers](requests.md#HTTP-headers): authorization and content type
 * [URL](requests.md#URL): HTTPS, environment, service, method and parameters
 * [JSON body](requests.md#json-body) which contains the payload
@@ -19,7 +19,6 @@ The API supports
 
 * `GET` to get a specific JSON object, like a purchase order, or to download a document \(one JSON object or document is returned\) or to query objects \(a JSON collection is returned\)
 * `POST` to create a new JSON object or upload a document
-* `PUT` to update an existing JSON object
 * `DELETE` to delete an existing JSON object or document
 
 ## HTTP headers
