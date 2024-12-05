@@ -20,6 +20,19 @@ In the single delivery order response Tradecloud will split the delivery schedul
 The `deliverySchedule.position` will be mapped to the order response `lines.buyerLine.position`
 {% endhint %}
 
+## When working with the webhook API
+
+Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+
+* `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
+* `singleDeliveryOrderEvent` contains the actual order event
+
+## When working with the polling API
+
+Use the [POST poll/single-delivery](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersSingleDeliveryRoute) endpoint.
+
+* `order` contains the actual order in its current state
+
 ## `singleDeliveryOrderEvent` or `order` header
 
 * `id` (in case of an `order`): the Tradecloud order identifier
