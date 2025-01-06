@@ -161,6 +161,14 @@ The order logistics status is one of:
 * `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a typical example is `PCE`
 * `supplierItemNumber`: the item code or number as known at the supplier.
 
+{% hint style="warning" %}
+`item.number` and `supplierItemNumber` are optional and may be left empty by the buyer, for example in case of service or RFQ orders or text lines.
+
+If the supplier cannot process the order line without `item.number` or `item.supplierItemNumber`, the supplier should reject the order line and provide a reason.
+
+`item.number` should be unique within the buyer's company and should never change.
+{% endhint %}
+
 #### Buyer requests
 
 `lines.buyerLine.requests.reopenRequest`: the buyer requests to reopen the confirmed order line. The buyer has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
