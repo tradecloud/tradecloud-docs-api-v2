@@ -162,7 +162,7 @@ The order logistics status is one of:
 * `supplierItemNumber`: the item code or number as known at the supplier.
 
 {% hint style="warning" %}
-`item.number` and `supplierItemNumber` are optional and may be left empty by the buyer, for example in case of service or RFQ orders or text lines.
+`item.number` and `supplierItemNumber` are optional and may be left empty by the buyer, for example in case of service or RFQ orders.
 
 If the supplier cannot process the order line without `item.number` or `item.supplierItemNumber`, the supplier should reject the order line and provide a reason.
 
