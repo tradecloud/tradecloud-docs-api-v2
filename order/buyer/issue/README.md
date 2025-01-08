@@ -108,7 +108,7 @@ The optional buyer, buyer accounting or supplier company party:
 
 Leaving the `item.number` and `item.supplierItemNumber` both empty is not recommended for integrated suppliers, as the supplier might reject the order line.
 
-`item.number` should be unique within the buyer's company and never change. Never renumber or re-use `item.number`s.
+`item.number` should be unique within the buyer's company and never change. Never renumber or re-use `item.number`s for a different item.
 {% endhint %}
 
 ### Item details
