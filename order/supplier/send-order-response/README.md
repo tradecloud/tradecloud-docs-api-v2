@@ -36,10 +36,6 @@ When the order line has process status `Confirmed`:
 * When the by supplier **responded** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices` the process status will become `InProgress` and a **reopen request** task for the buyer will be created.
 * When the **responded** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices` the process status will stay `Confirmed`
 
-{% hint style="warning" %}
-This [reopen request](../reopen.md) feature is under development and API and documentation may change.
-{% endhint %}
-
 When the order line already has process status `Rejected`the process status will **NOT** change.
 
 When the order line already has process status `Completed` the process status will **NOT** change.
@@ -130,17 +126,17 @@ When sending a new delivery line do NOT provide a `position`. The buyer will ass
 ### Responded prices
 
 * `lines.prices`: the responded price. Advised is to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`. 
-    * `grossPrice`: the gross price. Used together with `discountPercentage`.
-    * `discountPercentage`: the discount percentage. Used together with `grossPrice`.
-    * `netPrice`: the net price.
-      * `priceInTransactionCurrency`: at least provide a price in the transaction currency, like `CNY` in China.
-        * `value`: the price value has a decimal `1234.56` format with any number of digits.
-        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-      * `priceInBaseCurrency`: optionally provide a price in your base currency, like `EUR` in the EU.
-        * `value`: the price value has a decimal `1234.56` format with any number of digits.
-        * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
-    * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-    * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+  * `grossPrice`: the gross price. Used together with `discountPercentage`.
+  * `discountPercentage`: the discount percentage. Used together with `grossPrice`.
+  * `netPrice`: the net price.
+    * `priceInTransactionCurrency`: at least provide a price in the transaction currency, like `CNY` in China.
+      * `value`: the price value has a decimal `1234.56` format with any number of digits.
+      * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
+    * `priceInBaseCurrency`: optionally provide a price in your base currency, like `EUR` in the EU.
+      * `value`: the price value has a decimal `1234.56` format with any number of digits.
+      * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
+  * `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
+  * `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
 
 ### Responded charge lines
 
@@ -167,7 +163,7 @@ When sending a new charge line do NOT provide a `position`. The buyer will assig
 
 * `description`: a free format additional description of this line
 * `indicators.accepted`: explicitly **accept** the order line as is, the responded `delivery schedule` and `prices` will be ignored.
-* `indicators.rejected`: explicitly **reject** the order line, the responded`delivery schedule` and `prices`will be ignored. When possible provide the `reason` , see below.
+* `indicators.rejected`: explicitly **reject** the order line, the responded`delivery schedule` and `prices`will be ignored. When possible provide the `reason`, see below.
 * Additional `indicators`:
 
 {% page-ref page="../cancel.md" %}

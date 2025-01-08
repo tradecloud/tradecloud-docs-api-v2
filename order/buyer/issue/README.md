@@ -104,7 +104,11 @@ The optional buyer, buyer accounting or supplier company party:
 * `supplierItemNumber`: the item code or number as known at the supplier. Required in case of wholesale suppliers.
 
 {% hint style="warning" %}
-`item.number` should be unique within your company and never change. Never renumber or re-use `item.number`s.
+`item.number` and `item.supplierItemNumber` are optional and may be left empty, for example in case of service or RFQ orders.
+
+Leaving the `item.number` and `item.supplierItemNumber` both empty is not recommended for integrated suppliers, as the supplier might reject the order line.
+
+`item.number` should be unique within the buyer's company and never change. Never renumber or re-use `item.number`s for a different item.
 {% endhint %}
 
 ### Item details
