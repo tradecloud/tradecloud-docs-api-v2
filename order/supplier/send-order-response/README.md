@@ -125,7 +125,7 @@ The supplier may check, change and add item details if they are not correct or i
 
 * `lines.deliverySchedule`:
   * `date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-  * `quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
+  * `quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested quantity, when possible provide a `reason`, see below. Quantity has a decimal `1234.56` format with any number of digits.
 
 
 ### Responded prices
