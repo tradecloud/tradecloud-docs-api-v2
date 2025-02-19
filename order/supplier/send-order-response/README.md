@@ -117,9 +117,9 @@ The supplier may check, change and add item details if they are not correct or i
   * `position`: an optional position in the delivery schedule, distinct from `line.position`.
 
 {% hint style="warning" %}
-* The supplier must either echo the `deliverySchedule.position` as received from the buyer or leave it empty.
+* The supplier must either echo the `position` as received from the buyer or leave it empty.
 * When sending a new split delivery line, do not provide a `position`; the buyer will assign it.
-* If `deliverySchedule.position` is left empty, the supplier must preserve the order of the original delivery schedule sent by the buyer.
+* If `position` is left empty, the supplier must preserve the order of the original delivery schedule sent by the buyer.
 * Any new split delivery line should be appended to the end of the delivery schedule.
 {% endhint %}
 
@@ -149,7 +149,7 @@ The supplier may check, change and add item details if they are not correct or i
   * `position`: the position used to identify a charge line.  
 
 {% hint style="warning" %}
-* The supplier must echo the `chargeLines.position` as received from the buyer. 
+* The supplier must echo the `position` as received from the buyer. 
 * When sending a new charge line, do not provide a `position`; the buyer will assign it.
 {% endhint %}
 
