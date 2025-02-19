@@ -111,17 +111,22 @@ The supplier may check, change and add item details if they are not correct or i
 * `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
 * `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer
 
-### Responded planned delivery schedule
+### Responded delivery schedule
 
-* `lines.deliverySchedule`: the responded planned delivery schedule. Provide at least one or multiple delivery schedule lines.
-  * `position`: the optional position in the delivery schedule. Not to be confused with the `line.position`.
-  * `date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-  * `quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested date, when possible provide a `reason` , see below. Quantity has a decimal `1234.56` format with any number of digits.
+* `lines.deliverySchedule`: the responded delivery schedule. At least one delivery schedule line must be provided.
+  * `position`: an optional position in the delivery schedule, distinct from `line.position`.
 
 {% hint style="warning" %}
-The supplier must echo the `deliverySchedule.position` as sent by the buyer.
-When sending a new delivery line do NOT provide a `position`. The buyer will assign a `position`.
+* The supplier must either echo the `position` as received from the buyer or leave it empty.
+* When sending a new split delivery line, do not provide a `position`; the buyer will assign it.
+* If `position` is left empty, the supplier must preserve the order of the original delivery schedule sent by the buyer.
+* Any new split delivery line should be appended to the end of the delivery schedule.
 {% endhint %}
+
+* `lines.deliverySchedule`:
+  * `date`: the responded delivery date of this delivery schedule position.  If the delivery date is yet unknown, leave this date empty.  If the date is not equal to the requested date, when possible provide a `reason` , see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
+  * `quantity`: the responded quantity of this delivery schedule position.  If the quantity that can be delivered is yet unknown, leave this quantity empty.  If the quantity is not equal to the requested quantity, when possible provide a `reason`, see below. Quantity has a decimal `1234.56` format with any number of digits.
+
 
 ### Responded prices
 
@@ -142,6 +147,13 @@ When sending a new delivery line do NOT provide a `position`. The buyer will ass
 
 * `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
   * `position`: the position used to identify a charge line.  
+
+{% hint style="warning" %}
+* The supplier must echo the `position` as received from the buyer. 
+* When sending a new charge line, do not provide a `position`; the buyer will assign it.
+{% endhint %}
+
+* `lines.chargeLines`:
   * `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
   * `chargeDescription`: a mandatory free text description, like "Transport costs".
   * `quantity`: the mandatory quantity of this charge line.
@@ -153,11 +165,6 @@ When sending a new delivery line do NOT provide a `position`. The buyer will ass
       * `value`: the price value has a decimal `1234.56` format with any number of digits.
       * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
   * `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
-
-{% hint style="warning" %}
-The supplier must echo the `chargeLines.position` as sent by the buyer. 
-When sending a new charge line do NOT provide a `position`. The buyer will assign a `position`.
-{% endhint %}
 
 #### Other line fields
 
