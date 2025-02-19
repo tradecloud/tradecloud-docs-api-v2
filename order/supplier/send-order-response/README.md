@@ -153,6 +153,7 @@ The supplier may check, change and add item details if they are not correct or i
 * When sending a new charge line, do not provide a `position`; the buyer will assign it.
 {% endhint %}
 
+* `lines.chargeLines`:
   * `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
   * `chargeDescription`: a mandatory free text description, like "Transport costs".
   * `quantity`: the mandatory quantity of this charge line.
