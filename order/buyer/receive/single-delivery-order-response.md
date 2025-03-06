@@ -10,14 +10,6 @@ If you prefer to work with delivery schedules (multiple deliveries per order lin
 
 {% page-ref page="README.md" %}
 
-{% hint style="info" %}
-When converting between delivery formats:
-
-- Tradecloud internally represents order lines with the same item, prices, and terms as one order line with a delivery schedule
-- For single delivery responses, Tradecloud splits the delivery schedule into separate order lines, each with one delivery
-- The `deliverySchedule.position` value is mapped to the order response `lines.buyerLine.position`
-{% endhint %}
-
 ## Receiving Methods
 
 There are two methods to receive order responses with single deliveries:
@@ -121,7 +113,7 @@ The `lines.buyerLine` section echoes your original order line fields as explaine
 - `originalPosition`: Position of the original order line when the current order line was split.
 
 {% hint style="info" %}
-When converting from delivery schedules to single deliveries, Tradecloud automatically splits each delivery line into a separate order line. Each order line contains one `lines.statusLine.scheduledDelivery` and maintains the relationship to the original order line through the `originalPosition` value.
+Tradecloud splits each delivery line into a separate order line. Each order line contains one `lines.statusLine.scheduledDelivery` and maintains the relationship to the original order line through the `originalPosition` value.
 {% endhint %}
 
 ### Supplier Line

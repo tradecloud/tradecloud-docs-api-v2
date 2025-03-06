@@ -42,7 +42,7 @@ Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?ur
 Provide only one `scheduledDelivery` per order line, with a maximum of 100 deliveries per item number across all order lines.
 
 {% hint style="info" %}
-When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule of the line with the matching position number.
+When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule and history of the line with the matching position number.
 {% endhint %}
 
 ### `scheduledDelivery` Fields

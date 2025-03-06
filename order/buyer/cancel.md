@@ -11,7 +11,14 @@ Cancel an order line in Tradecloud when it is cancelled at the buyer.
 * `Cancelled` lines cannot be cancelled again
 
 {% hint style="warning" %}
-When using the single delivery per order line feature, the `cancelled` indicator is only supported for the first order line of each item number. The other lines with the same item, prices and terms will also be cancelled together with the first line.
+**Single Delivery Order Line Cancellation Behavior:**
+
+When using the single delivery per order line feature:
+
+1. The `cancelled` indicator should only be set on the **primary order line** (the first line with a specific item number)
+2. Tradecloud will automatically cancel all related split lines that reference the primary line via their `originalPosition` field.
+
+This ensures consistent cancellation across all related order lines without requiring individual cancellation of each split line.
 {% endhint %}
 
 ## Cancelling by resending an order using the `/order` API
@@ -47,5 +54,5 @@ If you also provide a `cancelled` indicator on line level, it has **precedence**
 {% endhint %}
 
 {% hint style="info" %}
-When sending order indicators the provided purchase order number will be verified. 
+When sending order indicators the provided purchase order number will be verified.
 {% endhint %}

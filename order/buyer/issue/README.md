@@ -86,10 +86,15 @@ The optional buyer, buyer accounting, or supplier company party:
 The `lines` array contains one or multiple order lines (limited to 500 per order):
 
 - `position`: Required line position identifier within the purchase order
+- `originalPosition`: Optional original line position identifier within the purchase order
 - `row`: Optional row label for this position (only use when your ERP distinguishes between position and row)
 
 {% hint style="warning" %}
 `lines.position` should be unique within the order and never change. Never renumber or reuse position numbers.
+{% endhint %}
+
+{% hint style="info" %}
+When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule and history of the line with the matching position number.
 {% endhint %}
 
 ### Item Information

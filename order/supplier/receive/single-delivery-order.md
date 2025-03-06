@@ -112,6 +112,12 @@ The `lines` array contains one or more order lines:
 The `buyerLine` section contains:
 
 - `position`: Line position within the purchase order
+- `originalPosition`: Position of the original order line when the current order line was split.
+
+{% hint style="info" %}
+Tradecloud splits each delivery line into a separate order line. Each order line contains one `lines.statusLine.scheduledDelivery` and maintains the relationship to the original order line through the `originalPosition` value.
+{% endhint %}
+
 - `description`: Additional description of this line
 - `item`: Item to be delivered (see [Item](#item))
 - `requests`: Buyer requests for different delivery schedule, prices, and charge lines

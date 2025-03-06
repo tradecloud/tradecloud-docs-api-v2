@@ -121,12 +121,38 @@ This part of the checklist is not applicable if you use a [Tradecloud One Connec
 Before starting the actual implementation, you need to verify the capabilities and requirements of your ERP system for an integration.
 
 - [ ] **Use a _delivery schedule_ or _single delivery_ per order line?**  
-  A delivery schedule consists of one or more deliveries, having a position, date & quantity, for the same item, prices and terms within one order line.
-  If your ERP system does not natively support multiple deliveries per order line, you should use the so called _single delivery_ feature. Else, we advise to use delivery schedules.
+
+  **Delivery Schedule vs. Single Delivery:**
+  
+  - **Delivery Schedule**: Multiple deliveries per order line (default method)
+    - Best for ERP systems that natively support multiple deliveries per order line (e.g., SAP)
+    - Provides more flexibility for complex delivery arrangements
+    - Maintains all deliveries within a single order line
+  
+  - **Single Delivery**: One delivery per order line
+    - Best for ERP systems that only support one delivery date/quantity per order line
+    - Tradecloud will automatically split delivery schedules into separate order lines
+    - Each split line maintains a reference to the original line via `originalPosition`
+  
+  Choose based on your ERP system's capabilities and your business requirements.
+  
   {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
-- [ ] **Can you split a delivery schedule?**  
-  Does you ERP system support delivery or order lines split by a supplier? A supplier may split a line into multiple lines. A split line will have no position assigned by Tradecloud. The ERP system must assign a position to the split line and update the order line to Tradecloud.  
+
+- [ ] **Can your ERP system handle split order lines?**  
+
+  When a supplier splits an order line (e.g., partial acceptance or multiple shipments):
+  
+  - Tradecloud creates new order lines with empty `position` values
+  - These new lines include an `originalPosition` reference to the original line
+  - Your ERP system must:
+    1. Assign new unique position identifiers to these split lines
+    2. Update the lines in Tradecloud with these new positions
+    3. Maintain the relationship to the original line via the `originalPosition` value
+  
+  If your ERP cannot handle this, you may need custom logic in your integration.
+  
   {% page-ref page="api/delivery-schedule.md" %}
+
 - [ ] **Receive only _changed_ or _all_ order/shipment lines?**  
   When order updates are sent from Tradecloud One to your ERP, what does your ERP require?  
   Does your ERP expect only new and updated lines, or does it always expect all lines of an order in an order/order response and all shipment lines in a shipment message?

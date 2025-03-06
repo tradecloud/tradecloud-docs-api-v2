@@ -32,7 +32,14 @@ Before adding a delivery to an order, the order must have been sent to Tradeclou
 {% endhint %}
 
 {% hint style="warning" %}
-When using the single delivery per order line feature, the deliveries endpoint only supports the first order line of each item number. The deliveries of the first line will be applied to all order lines having the same item, prices and terms.
+**Single Delivery Order Line Behavior for Delivery Events:**
+
+When using the single delivery per order line feature:
+
+1. The deliveries endpoint only supports the **primary order line** (the first line with a specific item number)
+2. Tradecloud will automatically apply deliveries from the primary line to all related split lines that reference it via their `originalPosition` field.
+
+This ensures consistent delivery tracking across all related order lines without requiring individual delivery events for each split line.
 {% endhint %}
 
 ## Delivered indicator
@@ -40,7 +47,14 @@ When using the single delivery per order line feature, the deliveries endpoint o
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
 {% hint style="warning" %}
-When using the single delivery per order line feature, the `delivered` indicator is only supported for the first order line of each item number. The other lines with the same item, prices and terms will also be marked as delivered together with the first line.
+**Single Delivery Order Line Delivery Indicator Behavior:**
+
+When using the single delivery per order line feature:
+
+1. The `delivered` indicator should only be set on the **primary order line** (the first line with a specific item number)
+2. Tradecloud will automatically mark all related split lines that reference the primary line via their `originalPosition` field as delivered.
+
+This ensures consistent delivery status across all related order lines without requiring individual delivery indicators for each split line.
 {% endhint %}
 
 ### Mark as delivered by updating an order using the `/order` API

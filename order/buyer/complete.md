@@ -12,7 +12,14 @@ Complete an order line in Tradecloud when it is completely handled at the buyer,
 * Completing has precedence over cancelling at the same time
 
 {% hint style="warning" %}
-When using the single delivery per order line feature, the `completed` indicator is only supported for the first order line of each item number. The other lines with the same item, prices and terms will also be completed together with the first line.
+**Single Delivery Order Line Completion Behavior:**
+
+When using the single delivery per order line feature:
+
+1. The `completed` indicator should only be set on the **primary order line** (the first line with a specific item number)
+2. Tradecloud will automatically complete all related split lines that reference the primary line via their `originalPosition` field.
+
+This ensures consistent completion across all related order lines without requiring individual completion of each split line.
 {% endhint %}
 
 ## Completing by resending an order using the `/order` API
