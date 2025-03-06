@@ -2,332 +2,336 @@
 description: How to receive a purchase order response sent by the supplier
 ---
 
-# Receive an order response
+# Receive an Order Response
 
-Tradecloud will send a purchase order response to the buyer when an order event has been triggered.
+Tradecloud sends purchase order responses to buyers when order events are triggered.
 
-## Choose the appropriate API to receive an order response
+## Receiving Methods
 
-You must choose between the webhook API or the polling API to receive order response messages:
+### Choose Your API Method
+
+You must choose between two methods to receive order responses:
+
+- **Webhook API (Push)**: Tradecloud pushes responses to your system
+- **Polling API (Pull)**: Your system periodically checks for new responses
+
+For details on choosing between these methods:
 
 {% page-ref page="../../../api/webhook-vs-polling.md" %}
 
-## Choose to receive a delivery schedule or single delivery per order line
+### Choose Your Delivery Format
 
-You must choose between a delivery schedule or single delivery per order line:
+You must also choose between two delivery formats:
+
+- **Delivery Schedule**: Multiple deliveries per order line
+- **Single Delivery**: One delivery per order line
+
+For details on choosing between these formats:
 
 {% page-ref page="../../../api/delivery-schedule.md" %}
 
-When choosing single delivery please continue on:
+If you're using single delivery format, please see:
 
 {% page-ref page="single-delivery-order-response.md" %}
 
-## When working with the webhook API
+## Implementation Options
+
+### Using the Webhook API
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-* `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
-* `orderEvent` contains the actual order event
+- `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
+- `orderEvent`: Contains the actual order event
 
-## When working with the polling API
+### Using the Polling API
 
 Use the [POST poll](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint.
 
-* `order` contains the actual order in its current state
+- `order`: Contains the actual order in its current state
 
-## `orderEvent` or `order` header
+## Response Structure
 
-This page assumes you either chose delivery schedules using the `orderEvent` webhook API or the `order` polling API.
+This section assumes you're using delivery schedules with either the `orderEvent` webhook API or the `order` polling API.
 
-* `id` (in case of an `order`): the Tradecloud order identifier
-* `orderId` (in case of an `OrderEvent`): the Tradecloud order identifier
-* `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
-* `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
-* `indicators.deliveryOverdue` is true when at least one order line is overdue.
-* `status.processStatus`: is the aggregate of all lines [Order process statuses](#order-process-status).
-* `status.logisticsStatus`: is the aggregate of all lines [Order logistics statuses](#order-logistics-status).
-* `version`: the Tradecloud order version number
-* `eventDates`: some key order event date/times
-* `meta`: meta information, including source and trace info, about this messsage
-* `lastUpdatedAt`: is the latest date time the order has been changed, useful for polling orders.
+### Order Header
 
-### Buyer order
+The order header contains:
 
-`buyerOrder` is mostly an echo of your order fields as explained in [Issue a new order](../issue/#order-body-json-objects)
+- `id` (in `order`) or `orderId` (in `orderEvent`): Tradecloud order identifier
+- `buyerOrder`: Buyer part of the order (see [Buyer order](#buyer-order))
+- `supplierOrder`: Supplier part of the order (see [Supplier order](#supplier-order))
+- `indicators.deliveryOverdue`: `true` when at least one order line is overdue
+- `status.processStatus`: Aggregate of all line statuses (see [Order process status](#order-process-status))
+- `status.logisticsStatus`: Aggregate of all line statuses (see [Order logistics status](#order-logistics-status))
+- `version`: Tradecloud order version number
+- `eventDates`: Key order event timestamps
+- `meta`: Meta information, including source and trace info
+- `lastUpdatedAt`: Latest timestamp when the order was changed (useful for polling)
 
-* `supplierAccountNumber`: the supplier account number as known in your ERP system
+### Buyer Order
 
-### Supplier order
+The `buyerOrder` section mostly echoes your original order fields as explained in [Issue a new order](../issue/#order-body-json-objects).
 
-`supplierOrder` contains the supplier order fields:
+- `supplierAccountNumber`: Supplier account number as known in your ERP system
 
-* `companyId`: the supplier's Tradecloud company identifier.
-* `buyerAccountNumber`: your account number as known in the supplier's ERP system.
-* `description`: a free format additional description of this order by the supplier.
-* `contact`: the supplier employee responsible for this order.
-* `properties`: are key-value based custom fields, added by the supplier.
-* `notes`: are simple custom fields, added by the supplier.
-* `documents`: contain meta data and link of attached documents by the supplier.
+### Supplier Order
+
+The `supplierOrder` section contains:
+
+- `companyId`: Supplier's Tradecloud company identifier
+- `buyerAccountNumber`: Your account number as known in the supplier's ERP system
+- `description`: Additional description of this order by the supplier
+- `contact`: Supplier employee responsible for this order
+- `properties`: Key-value based custom fields added by the supplier
+- `notes`: Simple custom fields added by the supplier
+- `documents`: Meta data and links to attached documents from the supplier
 
 {% page-ref page="download-document.md" %}
 
-### Order status
+### Order Status
 
-The order status is the aggregation of all the lines statuses.
+#### Order Process Status
 
-#### Order process status
-
-{% hint style="info" %}
 The order process status is one of:
 
-* `Issued`: the order is \(re\)issued by the buyer.
-* `InProgress`: the order is under negotiation between buyer and supplier
-* `Confirmed`: the order is completely agreed between buyer and supplier
-* `Rejected`: the order is completely rejected by supplier
-* `Completed`: the order is completed at the buyer
-* `Cancelled`: the order is cancelled by the buyer
-{% endhint %}
+- `Issued`: Order (re)issued by the buyer
+- `InProgress`: Order under negotiation between buyer and supplier
+- `Confirmed`: Order completely agreed between buyer and supplier
+- `Rejected`: Order completely rejected by supplier
+- `Completed`: Order completed at the buyer
+- `Cancelled`: Order cancelled by the buyer
 
-#### Order logistics status
+#### Order Logistics Status
 
-{% hint style="info" %}
 The order logistics status is one of:
 
-* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
-* `Produced`: the order full quantity is produced by the supplier
-* `ReadyToShip`: the order full quantity is ready to be shipped by the supplier
-* `Shipped`: the order full quantity is shipped by the supplier
-* `Delivered`: the order full quantity is delivered at the buyer
-* `Cancelled`: the order is cancelled by the buyer
-{% endhint %}
+- `Open`: No or partial quantity Produced, ReadyToShip, Shipped or Delivered
+- `Produced`: Order full quantity produced by the supplier
+- `ReadyToShip`: Order full quantity ready to be shipped by the supplier
+- `Shipped`: Order full quantity shipped by the supplier
+- `Delivered`: Order full quantity delivered to the buyer
+- `Cancelled`: Order cancelled by the buyer
 
-## `orderEvent` or `order` lines
+## Order Lines
 
-`lines` contains one or more order lines:
+The `lines` array contains one or more order lines:
 
-* `id`: the Tradecloud line identifier
-* `buyerLine`: the buyer part of the order line, see [Buyer line](#buyer-line).
-* `supplierLine`: the supplier part of the order line, see [Supplier line](#supplier-line).
-* `confirmedLine`: the order line as agreed between buyer and supplier, see [Confirmed line](#confirmed-line).
-* `deliverySchedule`: the current aggregated delivery schedule, see [Delivery schedule](#delivery-schedule).
-* `deliveryScheduleIncludingRequests`: the current aggregated delivery schedule including requests, see [Delivery schedule](#delivery-schedule).
-* `prices`: the current prices, see [Prices](#prices) below.
-* `pricesIncludingRequests`: the current prices, including any open supplier or buyer requests, see [Prices](#prices).
-* `indicators.deliveryOverdue` is true when the order line is overdue.
-* `status.processStatus`: the order line's [Line process status](#line-process-status).
-* `status.inProgressStatus` the order line's [Line in progress status](#line-in-progress-status).
-* `status.logisticsStatus`: the order line's [Line logistics status](#line-logistics-status).
-* `eventDates`: some key line event date/times
-* `mergedItemDetails`: detailed part information provided by both buyer and supplier, see [Item details](#item-details).
-* `lastUpdatedAt`: is the latest date time the order line has been changed, useful for polling.
+- `id`: Tradecloud line identifier
+- `buyerLine`: Buyer part of the order line (see [Buyer line](#buyer-line))
+- `supplierLine`: Supplier part of the order line (see [Supplier line](#supplier-line))
+- `confirmedLine`: Order line as agreed between buyer and supplier (see [Confirmed line](#confirmed-line))
+- `deliverySchedule`: Current aggregated delivery schedule (see [Delivery schedule](#delivery-schedule))
+- `deliveryScheduleIncludingRequests`: Current aggregated delivery schedule including requests
+- `prices`: Current prices (see [Prices](#prices))
+- `pricesIncludingRequests`: Current prices including any open supplier or buyer requests
+- `indicators.deliveryOverdue`: `true` when the order line is overdue
+- `status.processStatus`: Order line's [Line process status](#line-process-status)
+- `status.inProgressStatus`: Order line's [Line in progress status](#line-in-progress-status)
+- `status.logisticsStatus`: Order line's [Line logistics status](#line-logistics-status)
+- `eventDates`: Key line event timestamps
+- `mergedItemDetails`: Detailed part information (see [Item details](#item-details))
+- `lastUpdatedAt`: Latest timestamp when the order line was changed (useful for polling)
 
-### Buyer line
+### Buyer Line
 
-`lines.buyerLine` is an echo of your order line fields as explained in [Issue a new order](../issue/#lines)
+The `lines.buyerLine` section echoes your original order line fields as explained in [Issue a new order](../issue/#lines).
 
-* `position`: the line position within the purchase order
+- `position`: Line position within the purchase order
 
-### Supplier line
+### Supplier Line
 
-`lines.supplierLine` contains the supplier order line fields:
+The `lines.supplierLine` section contains:
 
-* `salesOrderNumber`: the sales order number as known in the supplier's ERP system
-* `salesOrderPosition`: the position within the supplier's sales order
-* `description`: a free format additional description of this line by the supplier
-* `requests`: the supplier can request different delivery schedule, prices and charge lines, see below
-* `properties`: are key-value based custom fields, added by the supplier
-* `notes`: are simple custom fields, added by the supplier
-* `documents`: contain meta data, objectId or url, of attached documents by the supplier.
+- `salesOrderNumber`: Sales order number in the supplier's ERP system
+- `salesOrderPosition`: Position within the supplier's sales order
+- `description`: Additional description of this line by the supplier
+- `requests`: Supplier requests for different delivery schedule, prices, or charge lines (see [Supplier requests](#supplier-requests))
+- `properties`: Key-value based custom fields added by the supplier
+- `notes`: Simple custom fields added by the supplier
+- `documents`: Meta data of attached documents from the supplier
 
 {% page-ref page="download-document.md" %}
 
-#### Supplier requests
+#### Supplier Requests
 
-`lines.supplierLine.requests.proposal`: the supplier has proposed a different delivery schedule, prices and/or charge lines compared to the issued order line.
-`lines.supplierLine.requests.reopenRequest`: the supplier requests to reopen the confirmed order line. The supplier has requested a different delivery schedule, prices and/or charge lines compared to the confirmed order line.
+- `lines.supplierLine.requests.proposal`: Supplier proposal for different delivery schedule, prices, and/or charge lines
+- `lines.supplierLine.requests.reopenRequest`: Supplier request to reopen a confirmed order line with changes
 
-* `deliverySchedule`: the requested alternative delivery schedule
-* `prices`: the requested alternative prices
-* `chargeLines`: the requested alternative charge lines, see [Charge lines](#charge-lines)
-* `reason`: the reason of this request given by the supplier
-* `status`: the [Request status](./#request-status).
+Request details include:
 
-##### Request status
+- `deliverySchedule`: Requested alternative delivery schedule
+- `prices`: Requested alternative prices
+- `chargeLines`: Requested alternative charge lines (see [Charge lines](#charge-lines))
+- `reason`: Reason for this request given by the supplier
+- `status`: [Request status](#request-status)
 
-{% hint style="info" %}
+##### Request Status
+
 The request status is one of:
 
-* `Open`: Requested by one party. To be approved or rejected by the other party.
-* `Approved`: The request is approved by the other party.
-* `Rejected`: The request is rejected by the other party.
-* `Closed`: The request is closed because it is not relevant anymore.
-{% endhint %}
+- `Open`: Requested by one party, awaiting approval or rejection by the other party
+- `Approved`: Request approved by the other party
+- `Rejected`: Request rejected by the other party
+- `Closed`: Request closed because it is no longer relevant
 
 {% hint style="warning" %}
-If the request status is `Open` the other party must approve or reject it.
+If the request status is `Open`, the other party must approve or reject it.
 {% endhint %}
 
-### Confirmed line
+### Confirmed Line
 
-`lines.confirmedLine`: the agreed order line between buyer and supplier.
+The `lines.confirmedLine` section represents the agreed order line between buyer and supplier.
 
 {% hint style="warning" %}
-Only if the process status is `Confirmed` the line is agreed between buyer and supplier
+Only if the process status is `Confirmed` is the line agreed between buyer and supplier.
 {% endhint %}
 
-* `lines.confirmedLine.deliverySchedule`: the agreed delivery schedule
-* `lines.confirmedLine.prices`: the agreed prices
-* `lines.confirmedLine.chargeLines`: the agreed charge lines, see [Charge lines](#charge-lines)
+- `lines.confirmedLine.deliverySchedule`: Agreed delivery schedule
+- `lines.confirmedLine.prices`: Agreed prices
+- `lines.confirmedLine.chargeLines`: Agreed charge lines (see [Charge lines](#charge-lines))
 
-### Delivery schedule
+### Delivery Schedule
 
-When using `order` or `orderEvent` the delivery schedule is used.
+When using `order` or `orderEvent`, the delivery schedule is used.
 
 {% hint style="info" %}
-The `lines.deliverySchedule` together with the `lines.prices` fields give a simpler alternative for the `deliverySchedule` and `prices` fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests` and `confirmedLine`.
+The `lines.deliverySchedule` and `lines.prices` fields provide a simpler alternative to the delivery schedule and prices fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests`, and `confirmedLine`.
 {% endhint %}
 
-* `lines.deliverySchedule`: the current delivery schedule, either having `Issued` or `Confirmed` values.
+- `lines.deliverySchedule`: Current delivery schedule with either `Issued` or `Confirmed` values
 
 {% hint style="warning" %}
-The `lines.deliverySchedule` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
+The `lines.deliverySchedule` field does **NOT include any open supplier or buyer request**. Either the `Issued` or `Confirmed` values are returned, depending on the line status.
 {% endhint %}
 
-* `lines.deliveryScheduleIncludingRequests`: the current delivery schedule, either having `Issued`, `In Progress` or `Confirmed` values.
+- `lines.deliveryScheduleIncludingRequests`: Current delivery schedule with either `Issued`, `In Progress`, or `Confirmed` values
 
 {% hint style="warning" %}
-The `lines.deliveryScheduleIncludingRequests` field **does include any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
+The `lines.deliveryScheduleIncludingRequests` field **does include any open supplier or buyer request**. The `Issued`, proposal or reopen request, or `Confirmed` values are returned, depending on the line and request status.
 {% endhint %}
 
-#### Delivery schedule fields
+#### Delivery Schedule Fields
 
-* `lines.deliverySchedule[IncludingRequests].position`: the optional position in the delivery schedule. Not to be confused with the `line.position`
-* `lines.deliverySchedule[IncludingRequests].date`: the delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `lines.deliverySchedule[IncludingRequests].quantity`: the quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
+- `position`: Optional position in the delivery schedule (distinct from `line.position`)
+- `date`: Delivery date (ISO 8601 format `yyyy-MM-dd`)
+- `quantity`: Quantity (decimal format, e.g., `1234.56`)
 
-##### Logistics fields
+##### Logistics Fields
 
-These additional logistics fields are only available in the order line level delivery schedule:
+Additional logistics fields available in the order line level delivery schedule:
 
-* `lines.deliverySchedule[IncludingRequests].status`: the optional delivery line's [Scheduled delivery logistics status](#scheduled-delivery-logistics-status).
-* `lines.deliverySchedule[IncludingRequests].etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
-* `lines.deliverySchedule[IncludingRequests].eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
+- `status`: Optional [Scheduled delivery logistics status](#scheduled-delivery-logistics-status)
+- `etd`: Optional Estimated Time of Departure (ISO 8601 date `yyyy-MM-dd`)
+- `eta`: Optional Estimated Time of Arrival (ISO 8601 date `yyyy-MM-dd`)
 
-##### Scheduled delivery logistics status
+##### Scheduled Delivery Logistics Status
 
-{% hint style="info" %}
 The delivery line logistics status is one of:
 
-* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
-* `Produced`: the delivery line quantity is produced by the supplier
-* `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
-* `Shipped`: the delivery line quantity is shipped by the supplier
-* `Delivered`: the delivery line quantity is delivered at the buyer
-{% endhint %}
+- `Open`: No or partial quantity Produced, ReadyToShip, Shipped or Delivered
+- `Produced`: Delivery line quantity produced by the supplier
+- `ReadyToShip`: Delivery line quantity ready to be shipped by the supplier
+- `Shipped`: Delivery line quantity shipped by the supplier
+- `Delivered`: Delivery line quantity delivered to the buyer
 
 ### Prices
 
-* `lines.prices`: the current prices, either having `Issued` or `Confirmed` values.
+- `lines.prices`: Current prices with either `Issued` or `Confirmed` values
 
 {% hint style="warning" %}
-The `lines.prices` field does **NOT include any open supplier or buyer request**. Be aware that either the `Issued` or `Confirmed` values are returned, dependent on the line status.
+The `lines.prices` field does **NOT include any open supplier or buyer request**. Either the `Issued` or `Confirmed` values are returned, depending on the line status.
 {% endhint %}
 
-* `lines.pricesIncludingRequests`: the current prices, either having `Issued`, `In Progress` or `Confirmed` values.
+- `lines.pricesIncludingRequests`: Current prices with either `Issued`, `In Progress`, or `Confirmed` values
 
 {% hint style="warning" %}
-The `lines.pricesIncludingRequests` field **includes any open supplier or buyer request**. Be aware that the `Issued`, proposal or reopen request or `Confirmed` values are returned, dependent on the line and request status.
+The `lines.pricesIncludingRequests` field **includes any open supplier or buyer request**. The `Issued`, proposal or reopen request, or `Confirmed` values are returned, depending on the line and request status.
 {% endhint %}
 
-#### Prices fields
+#### Price Fields
 
-* `lines.prices[IncludingRequests].grossPrice`: the gross price. Used together with `discountPercentage`.
-* `lines.prices[IncludingRequests].discountPercentage`: the discount percentage. Used together with `grossPrice`.
-* `lines.prices[IncludingRequests].netPrice`: the net price.
-  * `priceInTransactionCurrency`: the price in the transaction currency of the supplier, like `CNY` in China.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`
-  * `priceInBaseCurrency`: the price in your base currency, like `EUR` in the EU.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
-* `lines.prices[IncludingRequests].priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-* `lines.prices[IncludingRequests].priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 \(unit price\) or 100 \(the price applies to 100 items\)
+- `grossPrice`: Gross price (used with `discountPercentage`)
+- `discountPercentage`: Discount percentage (used with `grossPrice`)
+- `netPrice`: Net price
+  - `priceInTransactionCurrency`: Price in supplier's transaction currency
+    - `value`: Price value (decimal format, e.g., `1234.56`)
+    - `currencyIso`: 3-letter currency code (ISO 4217)
+  - `priceInBaseCurrency`: Price in your base currency
+    - `value`: Price value (decimal format, e.g., `1234.56`)
+    - `currencyIso`: 3-letter currency code (ISO 4217)
+- `priceUnitOfMeasureIso`: 3-letter price unit (ISO 80000-1)
+- `priceUnitQuantity`: Item quantity at which the price applies (typically 1 or 100)
 
 {% hint style="info" %}
-It is advised to only use `netPrice` for its simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
+It is recommended to use `netPrice` for simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
 {% endhint %}
 
-### Line status
+### Line Status
 
-#### Line process status
+#### Line Process Status
 
-{% hint style="info" %}
 The line process status is one of:
 
-* `Issued`: the line is \(re\)issued by the buyer
-* `InProgress`: the line is under negotiation between buyer and supplier
-* `Confirmed`: the line is agreed between buyer and supplier
-* `Rejected`: the line is rejected by supplier
-* `Completed`: the line is completed at the buyer
-* `Cancelled`: the line is cancelled by the buyer
+- `Issued`: Line (re)issued by the buyer
+- `InProgress`: Line under negotiation between buyer and supplier
+- `Confirmed`: Line agreed between buyer and supplier
+- `Rejected`: Line rejected by supplier
+- `Completed`: Line completed at the buyer
+- `Cancelled`: Line cancelled by the buyer
 
-{% endhint %}
+#### Line In Progress Status
 
-#### Line in Progress status
+When an order line's `processStatus` is `InProgress`, the in progress status is one of:
 
-{% hint style="info" %}
-The line in progress status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
+- `OpenSupplierProposal`: Open proposal from the supplier
+- `RejectedSupplierProposal`: Supplier proposal was rejected with no other open requests
+- `ReissuedRejectedLine`: Rejected order line reissued by the buyer
+- `OpenSupplierReopenRequest`: Open reopen request from the supplier
+- `OpenBuyerReopenRequest`: Open reopen request from the buyer
+- `RevertedCompletedLine`: Line completion was reverted
 
-* `OpenSupplierProposal`: There is an open proposal from the supplier.
-* `RejectedSupplierProposal`: The proposal from the supplier was rejected and no other requests are open.
-* `ReissuedRejectedLine`: The rejected order line was reissued by the buyer.
-* `OpenSupplierReopenRequest`: There is an open reopen request from the supplier.
-* `OpenBuyerReopenRequest`: There is an open reopen request from the buyer.
-* `RevertedCompletedLine`: The completion of this line was reverted.
-{% endhint %}
+#### Line Logistics Status
 
-#### Line logistics status
-
-{% hint style="info" %}
 The line logistics status is one of:
 
-* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
-* `Produced`: the line quantity is produced by the supplier
-* `ReadyToShip`: the line quantity ready to be shipped by the supplier
-* `Shipped`: the line quantity shipped by the supplier
-* `Delivered`: the line quantity delivered at the buyer
-* `Cancelled`: the line is cancelled by the buyer
-{% endhint %}
+- `Open`: No or partial quantity Produced, ReadyToShip, Shipped or Delivered
+- `Produced`: Line quantity produced by the supplier
+- `ReadyToShip`: Line quantity ready to be shipped by the supplier
+- `Shipped`: Line quantity shipped by the supplier
+- `Delivered`: Line quantity delivered to the buyer
+- `Cancelled`: Line cancelled by the buyer
 
-### Charge lines
+### Charge Lines
 
-`chargeLines`: the requested or confirmed additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
+Additional cost lines independent of order line prices:
 
-* `position`: the position used to identify a charge line.
-* `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
-* `chargeDescription`: a mandatory free text description, like "Transport costs".
-* `quantity`: the mandatory quantity of this charge line.
-* `price`: the mandatory price of this charge line.
-  * `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-  * `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
-    * `value`: the price value has a decimal `1234.56` format with any number of digits.
-    * `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
-* `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
+- `position`: Position identifier for the charge line
+- `chargeTypeCode`: Charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
+- `chargeDescription`: Free text description (e.g., "Transport costs")
+- `quantity`: Quantity of this charge line
+- `price`: Price of this charge line
+  - `priceInTransactionCurrency`: Price in supplier's transaction currency
+    - `value`: Price value (decimal format, e.g., `1234.56`)
+    - `currencyIso`: 3-letter currency code (ISO 4217)
+  - `priceInBaseCurrency`: Price in your base currency (optional)
+    - `value`: Price value (decimal format, e.g., `1234.56`)
+    - `currencyIso`: 3-letter currency code (ISO 4217)
+- `priceUnitOfMeasureIso`: 3-letter price unit (ISO 80000-1)
 
-### Item details
+### Item Details
+
+The `lines.mergedItemDetails` contains item details from both buyer and supplier:
+
+- `countryOfOriginCodeIso2`: ISO 3166-1 alpha-2 country code of origin
+- `combinedNomenclatureCode`: Classification code for customs and EU trade statistics
+- `netWeight`: Net weight of one item
+- `netWeightUnitOfMeasureIso`: Net weight unit (ISO 80000-1)
+- `dangerousGoodsCodeUnece`: UN number for dangerous goods identification
+- `serialNumber`: Unique identifier assigned to an item
+- `batchNumber`: Identification number for a particular quantity/lot of material
 
 {% hint style="info" %}
-The buyer may send item details to inform the supplier about part information.  
-The supplier may check, change and add item details if they are not correct or incomplete.  
-`lines.mergedItemDetails` will contain the original item details added by the buyer merged with the changed or added item details by the supplier.
+The buyer may send item details to inform the supplier about part information.
+The supplier may check, change, and add item details if they are not correct or incomplete.
+The merged details contain the original buyer information combined with supplier changes or additions.
 {% endhint %}
-
-* `countryOfOriginCodeIso2`: The ISO 3166-1 alpha-2 country code of manufacture, production, or growth where an article or product comes from.
-* `combinedNomenclatureCode`: A tool for classifying goods, set up to meet the requirements both of the Common Customs Tariff and of the EU's external trade statistics.
-* `netWeight`: Net weight of one item.
-* `netWeightUnitOfMeasureIso`: Net weight unit according to ISO 80000-1.
-* `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that identify dangerous goods, hazardous substances and articles in the framework of international transport.
-* `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
-* `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer

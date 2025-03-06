@@ -1,39 +1,47 @@
 ---
-description: Overview of the buyer order process.
+description: Overview of the buyer order process
 ---
 
-# Buyer order process overview
+# Buyer Order Process
 
-## Step 1. Send an order
+## Order Process Steps
 
-As a buyer you can [Issue a new order](issue/README.md)
+### 1. Issue a Purchase Order
 
-Additionally, you can [Attach a document to the order](issue/attach-document.md)
+As a buyer, you can [issue new purchase orders](issue/README.md) to your suppliers.
 
-You can [Update an existing order](update.md)
+You can also:
 
-## Step 2. Receive an order response
+- [Attach documents](issue/attach-document.md) to your orders
+- [Configure delivery schedules](issue/delivery-schedule.md) for your order lines
+- [Set various indicators](issue/indicators.md) for special order handling
 
-As a buyer you should [Receive an order response](receive/README.md) from the supplier
+### 2. Receive Order Responses
 
-Additionally, you can [Download a document attached to an order response](receive/download-document.md).
+After sending an order, you will [receive order responses](receive/README.md) from your suppliers.
 
-## Optional step 3. Add the logistical status of goods to order update
+You can receive responses:
 
-You can [Add the logistical status of goods to the order update](update.md#logistics-status-in-the-planned-delivery-schedule)
+- With [multiple deliveries per order line](receive/README.md)
+- With [single delivery per order line](receive/single-delivery-order-response.md)
+- Including [attached documents](receive/download-document.md) from suppliers
 
-## Optional step 4. Add actual delivery history to order update
+### 3. Update Orders
 
-You can [Add the actual delivery history to the order update](update.md#actual-delivery-history)
+You can [update existing orders](update.md) when changes are needed.
 
-## Step 5a. Complete an order
+You can also:
 
-You can [Complete an order](complete.md) which will end the order process.
+- [Add logistical status of goods](update.md#logistics-status-in-the-planned-delivery-schedule) to order updates
+- [Add actual delivery history](update.md#actual-delivery-history) to order updates
 
-## Optional step 5b. Reopen or cancel an order
+### 4. Complete Orders
 
-Alternatively, as a buyer you may:
+When all deliveries are fulfilled, you can [complete orders](complete.md) to close the order process.
 
-* [Reopen an order](reopen.md) which will restart the order process.
-* [Cancel an order](cancel.md) which will end the order process.
+### 5. Additional Order Management
 
+You can also:
+
+- [Reopen an order](reopen.md) to restart the order process
+- [Cancel an order](cancel.md) to terminate the order process

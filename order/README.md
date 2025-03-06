@@ -1,7 +1,27 @@
 ---
-description: Overview of order process pages available.
+description: Overview of order processes in Tradecloud
 ---
 
-If you are a buyer take a look at the [Buyer order process](buyer/README.md).
+# Order Processes
 
-If you are a supplier take a look at the [Supplier order process](supplier/README.md).
+Tradecloud supports standardized order processes for both buyers and suppliers.
+
+## Documentation by Role
+
+### [Buyer Order Process](buyer/README.md)
+
+Documentation for purchasing organizations, including:
+
+- Issuing purchase orders
+- Receiving order responses
+- Managing delivery schedules
+- Handling order changes
+
+### [Supplier Order Process](supplier/README.md)
+
+Documentation for supplying organizations, including:
+
+- Receiving purchase orders
+- Responding to orders
+
+Select the appropriate section based on your role in the supply chain.
