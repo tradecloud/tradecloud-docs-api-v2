@@ -2,7 +2,7 @@
 description: How to receive a single delivery order sent by the buyer
 ---
 
-# Receive a Single Delivery Order
+# Receive a single delivery order
 
 Tradecloud sends purchase orders (new or updated) to suppliers when order events are triggered. This page covers receiving orders with a single delivery per order line.
 
@@ -10,24 +10,24 @@ If you prefer to work with delivery schedules (multiple deliveries per order lin
 
 {% page-ref page="README.md" %}
 
-## Implementation Options
+## Implementation options
 
-### Using the Webhook API
+### Using the webhook API
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 - `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
 - `singleDeliveryOrderEvent`: Contains the actual order event
 
-### Using the Polling API
+### Using the polling API
 
 Use the [POST poll/single-delivery](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersSingleDeliveryRoute) endpoint.
 
 - `order`: Contains the actual order in its current state
 
-## Order Structure
+## Order structure
 
-### Order Header
+### Order header
 
 The order header contains:
 
@@ -42,7 +42,7 @@ The order header contains:
 - `meta`: Meta information, including source and trace info
 - `lastUpdatedAt`: Latest timestamp when the order was changed
 
-### Buyer Order
+### Buyer order
 
 The `buyerOrder` section contains:
 
@@ -56,7 +56,7 @@ The `buyerOrder` section contains:
 - `documents`: Meta data of attached documents from the buyer (see [Download document](download-document.md))
 - `orderType`: Order type (`Purchase`, `Forecast`, or `RFQ`; default is `Purchase`)
 
-### Supplier Order
+### Supplier order
 
 The `supplierOrder` section mostly echoes your order fields as explained in [Send order response](../send-order-response/).
 
@@ -66,9 +66,9 @@ The `supplierOrder` section mostly echoes your order fields as explained in [Sen
 The `buyerAccountNumber` should be set in advance in the Tradecloud connection with your buyer. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
-### Order Status
+### Order status
 
-#### Order Process Status
+#### Order process status
 
 The order process status is one of:
 
@@ -79,7 +79,7 @@ The order process status is one of:
 - `Completed`: Order completed at the buyer
 - `Cancelled`: Order cancelled by the buyer
 
-#### Order Logistics Status
+#### Order logistics status
 
 The order logistics status is one of:
 
@@ -90,7 +90,7 @@ The order logistics status is one of:
 - `Delivered`: Order full quantity delivered to the buyer
 - `Cancelled`: Order cancelled by the buyer
 
-## Order Lines
+## Order lines
 
 The `lines` array contains one or more order lines:
 
@@ -107,7 +107,7 @@ The `lines` array contains one or more order lines:
 - `mergedItemDetails`: Detailed part information (see [Item details](#item-details))
 - `lastUpdatedAt`: Latest timestamp when the order line was changed
 
-### Buyer Line
+### Buyer line
 
 The `buyerLine` section contains:
 
@@ -144,27 +144,27 @@ The `lines.buyerLine.item` section contains:
 - `purchaseUnitOfMeasureIso`: Purchase unit according to ISO 80000-1 (e.g., `PCE`)
 - `supplierItemNumber`: Item code/number as known at the supplier
 
-### Supplier Line
+### Supplier line
 
 The `supplierLine` section echoes your order line fields as explained in [Send order response](../send-order-response/).
 
-### Status Line
+### Status line
 
 The `lines.statusLine` represents the current order line values related to the current `Issued`, `Confirmed`, or `InProgress` process status. The `InclRequests` fields also include the `InProgress` status and related open buyer or supplier request values.
 
-#### Single Delivery
+#### Single delivery
 
 When using `singleDeliveryOrderEvent`, one single delivery per order line is used:
 
 - `lines.statusLine.scheduledDelivery`: Current delivery line with either `Issued` or `Confirmed` values
 - `lines.statusLine.scheduledDeliveryInclRequests`: Current delivery line with either `Issued`, `InProgress` requests, or `Confirmed` values
 
-##### Scheduled Delivery Fields
+##### Scheduled delivery fields
 
 - `date`: Delivery date (ISO 8601 format `yyyy-MM-dd`)
 - `quantity`: Quantity (decimal format, e.g., `1234.56`)
 
-##### Scheduled Delivery Logistics Fields
+##### Scheduled delivery logistics fields
 
 Additional logistics fields available in the status line scheduled delivery:
 
@@ -172,7 +172,7 @@ Additional logistics fields available in the status line scheduled delivery:
 - `etd`: Optional Estimated Time of Departure (ISO 8601 date `yyyy-MM-dd`)
 - `eta`: Optional Estimated Time of Arrival (ISO 8601 date `yyyy-MM-dd`)
 
-##### Scheduled Delivery Logistics Status
+##### Scheduled delivery logistics status
 
 The delivery line logistics status is one of:
 
@@ -187,7 +187,7 @@ The delivery line logistics status is one of:
 - `lines.statusLine.prices`: Current prices with either `Issued` or `Confirmed` values
 - `lines.statusLine.pricesInclRequests`: Current prices with either `Issued`, `InProgress` requests, or `Confirmed` values
 
-##### Price Fields
+##### Price fields
 
 - `grossPrice`: Gross price (used with `discountPercentage`)
 - `discountPercentage`: Discount percentage (used with `grossPrice`)
@@ -205,9 +205,9 @@ The delivery line logistics status is one of:
 It is recommended to use `netPrice` for simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
 {% endhint %}
 
-### Line Status
+### Line status
 
-#### Line Process Status
+#### Line process status
 
 The line process status is one of:
 
@@ -218,7 +218,7 @@ The line process status is one of:
 - `Completed`: Line completed at the buyer
 - `Cancelled`: Line cancelled by the buyer
 
-#### Line In Progress Status
+#### Line in progress status
 
 When an order line's `processStatus` is `InProgress`, the in progress status is one of:
 
@@ -229,7 +229,7 @@ When an order line's `processStatus` is `InProgress`, the in progress status is 
 - `OpenBuyerReopenRequest`: Open reopen request from the buyer
 - `RevertedCompletedLine`: Line completion was reverted
 
-#### Line Logistics Status
+#### Line logistics status
 
 The line logistics status is one of:
 
@@ -240,7 +240,7 @@ The line logistics status is one of:
 - `Delivered`: Line quantity delivered to the buyer
 - `Cancelled`: Line cancelled by the buyer
 
-### Item Details
+### Item details
 
 The `lines.mergedItemDetails` contains item details from both buyer and supplier:
 

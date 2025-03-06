@@ -32,7 +32,7 @@ Before adding a delivery to an order, the order must have been sent to Tradeclou
 {% endhint %}
 
 {% hint style="warning" %}
-**Single Delivery Order Line Behavior for Delivery Events:**
+**Single delivery order line behavior for delivery events:**
 
 When using the single delivery per order line feature:
 
@@ -47,7 +47,7 @@ This ensures consistent delivery tracking across all related order lines without
 When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
 {% hint style="warning" %}
-**Single Delivery Order Line Delivery Indicator Behavior:**
+**Single delivery order line delivery indicator behavior:**
 
 When using the single delivery per order line feature:
 

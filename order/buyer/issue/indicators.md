@@ -92,17 +92,17 @@ The order or line having logistics status `Open`, `Produced`, `ReadyToShip` or `
 
 {% page-ref page="propose-when-accepted.md" %}
 
-## Single Delivery Order Line Behavior
+## Single delivery order line behavior
 
 {% hint style="info" %}
-**How Indicators Work with Single Delivery Per Order Line:**
+**How indicators work with single delivery per order line:**
 
 When using the single delivery per order line feature, Tradecloud manages related lines through the `originalPosition` reference. This affects how indicators behave:
 {% endhint %}
 
-### Indicator Behaviors
+### Indicator behaviors
 
-| Indicator | Behavior with Single Delivery |
+| Indicator | Behavior with single delivery |
 |-----------|-------------------------------|
 | **Confirmed by buyer** | The primary order line and all related split lines will only become confirmed when all are confirmed |
 | **Reconfirmation request** | Only needs to be set on the primary order line; Tradecloud will apply it to all related split lines |

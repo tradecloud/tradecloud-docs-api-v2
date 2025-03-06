@@ -2,13 +2,13 @@
 description: How to receive a purchase order sent by the buyer
 ---
 
-# Receive an Order
+# Receive an order
 
 Tradecloud sends purchase orders (new or updated) to suppliers when order events are triggered.
 
-## Receiving Methods
+## Receiving methods
 
-### Choose Your API Method
+### Choose your API method
 
 You must choose between two methods to receive orders:
 
@@ -34,26 +34,26 @@ If you're using single delivery format, please see:
 
 {% page-ref page="single-delivery-order.md" %}
 
-## Implementation Options
+## Implementation options
 
-### Using the Webhook API
+### Using the webhook API
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 - `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
 - `orderEvent`: Contains the actual order event
 
-### Using the Polling API
+### Using the polling API
 
 Use the [POST poll](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint.
 
 - `order`: Contains the actual order in its current state
 
-## Order Structure
+## Order structure
 
 This section assumes you're using either the `orderEvent` webhook API or the `order` polling API.
 
-### Order Header
+### Order header
 
 The order header contains:
 
@@ -68,7 +68,7 @@ The order header contains:
 - `meta`: Meta information, including source and trace info
 - `lastUpdatedAt`: Latest timestamp when the order was changed (useful for polling)
 
-### Buyer Order
+### Buyer order
 
 The `buyerOrder` section contains:
 
@@ -82,7 +82,7 @@ The `buyerOrder` section contains:
 - `documents`: Meta data of attached documents from the buyer (see [Download document](download-document.md))
 - `orderType`: Order type (`Purchase`, `Forecast`, or `RFQ`; default is `Purchase`)
 
-### Supplier Order
+### Supplier order
 
 The `supplierOrder` section mostly echoes your order fields as explained in [Send order response](../send-order-response/).
 
@@ -92,9 +92,9 @@ The `supplierOrder` section mostly echoes your order fields as explained in [Sen
 The `buyerAccountNumber` should be set in advance in the Tradecloud connection with your buyer. You can set the account code when inviting a new connection or in the connection overview in the portal.
 {% endhint %}
 
-### Order Status
+### Order status
 
-#### Order Process Status
+#### Order process status
 
 The order process status is one of:
 
@@ -105,7 +105,7 @@ The order process status is one of:
 - `Completed`: Order completed at the buyer
 - `Cancelled`: Order cancelled by the buyer
 
-#### Order Logistics Status
+#### Order logistics status
 
 The order logistics status is one of:
 
@@ -116,7 +116,7 @@ The order logistics status is one of:
 - `Delivered`: Order full quantity delivered to the buyer
 - `Cancelled`: Order cancelled by the buyer
 
-## Order Lines
+## Order lines
 
 The `lines` array contains one or more order lines:
 
@@ -136,7 +136,7 @@ The `lines` array contains one or more order lines:
 - `mergedItemDetails`: Detailed part information (see [Item details](#item-details))
 - `lastUpdatedAt`: Latest timestamp when the order line was changed (useful for polling)
 
-### Buyer Line
+### Buyer line
 
 The `buyerLine` section contains:
 
@@ -175,7 +175,7 @@ If you cannot process the order line without these numbers, you should reject th
 `item.number` should be unique within the buyer's company and should never change.
 {% endhint %}
 
-#### Buyer Requests
+#### Buyer requests
 
 The `lines.buyerLine.requests.reopenRequest` section contains the buyer's request to reopen a confirmed order line:
 
@@ -185,7 +185,7 @@ The `lines.buyerLine.requests.reopenRequest` section contains the buyer's reques
 - `reason`: Reason for this request given by the supplier
 - `status`: [Request status](#request-status)
 
-##### Request Status
+##### Request status
 
 The request status is one of:
 
@@ -198,11 +198,11 @@ The request status is one of:
 If the request status is `Open`, you must approve or reject it.
 {% endhint %}
 
-### Supplier Line
+### Supplier line
 
 The `supplierLine` section echoes your order line fields as explained in [Send order response](../send-order-response/).
 
-### Confirmed Line
+### Confirmed line
 
 The `lines.confirmedLine` section represents the agreed order line between buyer and supplier:
 
@@ -214,7 +214,7 @@ The `lines.confirmedLine` section represents the agreed order line between buyer
 Only if the process status is `Confirmed` is the line agreed between buyer and supplier.
 {% endhint %}
 
-### Delivery Schedule
+### Delivery schedule
 
 When using `order` or `orderEvent`, the delivery schedule is used:
 
@@ -234,13 +234,13 @@ The `lines.deliveryScheduleIncludingRequests` field **does include any open supp
 The `lines.deliverySchedule` and `lines.prices` fields provide a simpler alternative to the delivery schedule and prices fields in different places like `buyerLine`, `buyerLine.requests`, `supplierLine.requests`, and `confirmedLine`.
 {% endhint %}
 
-#### Delivery Schedule Fields
+#### Delivery schedule fields
 
 - `position`: Optional position in the delivery schedule (distinct from `line.position`)
 - `date`: Delivery date (ISO 8601 format `yyyy-MM-dd`)
 - `quantity`: Quantity (decimal format, e.g., `1234.56`)
 
-##### Logistics Fields
+##### Logistics fields
 
 Additional logistics fields available in the order line level delivery schedule:
 
@@ -272,7 +272,7 @@ The `lines.prices` field does **NOT include any open supplier or buyer request**
 The `lines.pricesIncludingRequests` field **includes any open supplier or buyer request**. The `Issued`, proposal or reopen request, or `Confirmed` values are returned, depending on the line and request status.
 {% endhint %}
 
-#### Price Fields
+#### Price fields
 
 - `grossPrice`: Gross price (used with `discountPercentage`)
 - `discountPercentage`: Discount percentage (used with `grossPrice`)
@@ -290,9 +290,9 @@ The `lines.pricesIncludingRequests` field **includes any open supplier or buyer 
 It is recommended to use `netPrice` for simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
 {% endhint %}
 
-### Line Status
+### Line status
 
-#### Line Process Status
+#### Line process status
 
 The line process status is one of:
 
@@ -303,7 +303,7 @@ The line process status is one of:
 - `Completed`: Line completed at the buyer
 - `Cancelled`: Line cancelled by the buyer
 
-#### Line In Progress Status
+#### Line in progress status
 
 When an order line's `processStatus` is `InProgress`, the in progress status is one of:
 
@@ -314,7 +314,7 @@ When an order line's `processStatus` is `InProgress`, the in progress status is 
 - `OpenBuyerReopenRequest`: Open reopen request from the buyer
 - `RevertedCompletedLine`: Line completion was reverted
 
-#### Line Logistics Status
+#### Line logistics status
 
 The line logistics status is one of:
 
@@ -325,7 +325,7 @@ The line logistics status is one of:
 - `Delivered`: Line quantity delivered to the buyer
 - `Cancelled`: Line cancelled by the buyer
 
-### Charge Lines
+### Charge lines
 
 Additional cost lines independent of order line prices:
 
@@ -342,7 +342,7 @@ Additional cost lines independent of order line prices:
     - `currencyIso`: 3-letter currency code (ISO 4217)
 - `priceUnitOfMeasureIso`: 3-letter price unit (ISO 80000-1)
 
-### Item Details
+### Item details
 
 The `lines.mergedItemDetails` contains item details from both buyer and supplier:
 

@@ -12,9 +12,9 @@ As a buyer, you can send either a **new order** or an [**updated order**](../upd
 New order lines will have order process status `Issued` and logistics status `Open`
 {% endhint %}
 
-## Sending Methods
+## Sending methods
 
-### Delivery Schedule Options
+### Delivery schedule options
 
 Choose the appropriate endpoint based on your ERP system's delivery handling capabilities:
 
@@ -29,9 +29,9 @@ For more details on choosing between delivery schedule options:
 When sending an order, the provided supplier account number will be verified.
 {% endhint %}
 
-## Order Structure
+## Order structure
 
-### Order Header
+### Order header
 
 - `companyId`: Optional Tradecloud company identifier. Only required when your integration user account has authorization for multiple companies.
 - `buyerParty`: Optional legal entity that purchases the goods or services. See [Company party](#company-party).
@@ -57,7 +57,7 @@ The `purchaseOrderNumber` must not contain whitespace characters.
 `id`, `supplierAccountNumber`, `purchaseOrderNumber`, `destination.code` and `contact.email` should be unique within your company and never change. Never renumber or reuse identifiers, numbers or codes.
 {% endhint %}
 
-### Company Party
+### Company party
 
 The optional buyer, buyer accounting, or supplier company party:
 
@@ -70,7 +70,7 @@ The optional buyer, buyer accounting, or supplier company party:
 - `countryCodeIso2`: ISO 3166-1 alpha-2 country code (required when `addressLines` are provided)
 - `countryName`: Optional country name
 
-### Additional Order Fields
+### Additional order fields
 
 - `description`: Free format additional description
 - `terms`: Order terms as agreed with your supplier
@@ -81,7 +81,7 @@ The optional buyer, buyer accounting, or supplier company party:
 - `documents`: Attached documents (limited to 100 per order header, see [Attach Document](attach-document.md))
 - `orderType`: Order type (`Purchase`, `Forecast`, or `RFQ`; default is `Purchase`)
 
-## Order Lines
+## Order lines
 
 The `lines` array contains one or multiple order lines (limited to 500 per order):
 
@@ -97,7 +97,7 @@ The `lines` array contains one or multiple order lines (limited to 500 per order
 When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule and history of the line with the matching position number.
 {% endhint %}
 
-### Item Information
+### Item information
 
 `lines.item`: The item (article, goods) to be delivered:
 
@@ -115,7 +115,7 @@ Leaving both empty is not recommended for integrated suppliers, as they might re
 `item.number` should be unique within your company and never change.
 {% endhint %}
 
-### Item Details
+### Item details
 
 `lines.itemDetails`: Detailed part information provided by the buyer:
 
@@ -132,16 +132,16 @@ The supplier may check, change, and add item details if needed.
 The webhook `orderEvent.lines.itemDetails.mergedItemDetails` will contain the merged information.
 {% endhint %}
 
-### Delivery Information
+### Delivery information
 
 Choose one of these options:
 
 - Use `lines.deliverySchedule` when your ERP system supports delivery schedules natively
 - Use `lines.scheduledDelivery` when using single delivery per order line
 
-For details, see [Delivery Schedule](delivery-schedule.md).
+For details, see [Delivery schedule](delivery-schedule.md).
 
-### Pricing Information
+### Pricing information
 
 `lines.prices`: The requested price information:
 
@@ -157,7 +157,7 @@ For details, see [Delivery Schedule](delivery-schedule.md).
 - `priceUnitOfMeasureIso`: Price unit (ISO 80000-1)
 - `priceUnitQuantity`: Item quantity at which the price applies (typically 1 or 100)
 
-### Charge Lines
+### Charge lines
 
 `lines.chargeLines`: Additional cost lines independent of order line prices:
 
@@ -174,7 +174,7 @@ For details, see [Delivery Schedule](delivery-schedule.md).
 Single delivery with charge lines spread over multiple order lines is not supported. Contact support if needed.
 {% endhint %}
 
-### Additional Line Fields
+### Additional line fields
 
 - `description`: Free format additional description
 - `terms`: Line terms agreed with your supplier
@@ -189,7 +189,7 @@ Single delivery with charge lines spread over multiple order lines is not suppor
 - `notes`: Simple custom fields
 - `labels`: Value-added services labels on line level
 
-## Meta Data
+## Meta data
 
 - `erpIssueDateTime`: Date/time the order was issued in your ERP (ISO 8601 format `yyyy-MM-ddThh:mm:ss`)
 - `erpIssuedBy`: User email or name from your ERP who issued this order

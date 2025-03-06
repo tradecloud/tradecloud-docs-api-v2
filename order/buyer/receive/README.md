@@ -2,13 +2,13 @@
 description: How to receive a purchase order response sent by the supplier
 ---
 
-# Receive an Order Response
+# Receive an order response
 
 Tradecloud sends purchase order responses to buyers when order events are triggered.
 
-## Receiving Methods
+## Receiving methods
 
-### Choose Your API Method
+### Choose your API method
 
 You must choose between two methods to receive order responses:
 
@@ -19,12 +19,12 @@ For details on choosing between these methods:
 
 {% page-ref page="../../../api/webhook-vs-polling.md" %}
 
-### Choose Your Delivery Format
+### Choose your delivery format
 
 You must also choose between two delivery formats:
 
-- **Delivery Schedule**: Multiple deliveries per order line
-- **Single Delivery**: One delivery per order line
+- **Delivery schedule**: Multiple deliveries per order line
+- **Single delivery**: One delivery per order line
 
 For details on choosing between these formats:
 
@@ -34,26 +34,26 @@ If you're using single delivery format, please see:
 
 {% page-ref page="single-delivery-order-response.md" %}
 
-## Implementation Options
+## Implementation options
 
-### Using the Webhook API
+### Using the webhook API
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 - `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
 - `orderEvent`: Contains the actual order event
 
-### Using the Polling API
+### Using the polling API
 
 Use the [POST poll](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint.
 
 - `order`: Contains the actual order in its current state
 
-## Response Structure
+## Response structure
 
 This section assumes you're using delivery schedules with either the `orderEvent` webhook API or the `order` polling API.
 
-### Order Header
+### Order header
 
 The order header contains:
 
@@ -68,13 +68,13 @@ The order header contains:
 - `meta`: Meta information, including source and trace info
 - `lastUpdatedAt`: Latest timestamp when the order was changed (useful for polling)
 
-### Buyer Order
+### Buyer order
 
 The `buyerOrder` section mostly echoes your original order fields as explained in [Issue a new order](../issue/#order-body-json-objects).
 
 - `supplierAccountNumber`: Supplier account number as known in your ERP system
 
-### Supplier Order
+### Supplier order
 
 The `supplierOrder` section contains:
 
@@ -88,9 +88,9 @@ The `supplierOrder` section contains:
 
 {% page-ref page="download-document.md" %}
 
-### Order Status
+### Order status
 
-#### Order Process Status
+#### Order process status
 
 The order process status is one of:
 
@@ -101,7 +101,7 @@ The order process status is one of:
 - `Completed`: Order completed at the buyer
 - `Cancelled`: Order cancelled by the buyer
 
-#### Order Logistics Status
+#### Order logistics status
 
 The order logistics status is one of:
 
@@ -112,7 +112,7 @@ The order logistics status is one of:
 - `Delivered`: Order full quantity delivered to the buyer
 - `Cancelled`: Order cancelled by the buyer
 
-## Order Lines
+## Order lines
 
 The `lines` array contains one or more order lines:
 
@@ -132,13 +132,13 @@ The `lines` array contains one or more order lines:
 - `mergedItemDetails`: Detailed part information (see [Item details](#item-details))
 - `lastUpdatedAt`: Latest timestamp when the order line was changed (useful for polling)
 
-### Buyer Line
+### Buyer line
 
 The `lines.buyerLine` section echoes your original order line fields as explained in [Issue a new order](../issue/#lines).
 
 - `position`: Line position within the purchase order
 
-### Supplier Line
+### Supplier line
 
 The `lines.supplierLine` section contains:
 
@@ -152,7 +152,7 @@ The `lines.supplierLine` section contains:
 
 {% page-ref page="download-document.md" %}
 
-#### Supplier Requests
+#### Supplier requests
 
 - `lines.supplierLine.requests.proposal`: Supplier proposal for different delivery schedule, prices, and/or charge lines
 - `lines.supplierLine.requests.reopenRequest`: Supplier request to reopen a confirmed order line with changes
@@ -165,7 +165,7 @@ Request details include:
 - `reason`: Reason for this request given by the supplier
 - `status`: [Request status](#request-status)
 
-##### Request Status
+##### Request status
 
 The request status is one of:
 
@@ -178,7 +178,7 @@ The request status is one of:
 If the request status is `Open`, the other party must approve or reject it.
 {% endhint %}
 
-### Confirmed Line
+### Confirmed line
 
 The `lines.confirmedLine` section represents the agreed order line between buyer and supplier.
 
@@ -190,7 +190,7 @@ Only if the process status is `Confirmed` is the line agreed between buyer and s
 - `lines.confirmedLine.prices`: Agreed prices
 - `lines.confirmedLine.chargeLines`: Agreed charge lines (see [Charge lines](#charge-lines))
 
-### Delivery Schedule
+### Delivery schedule
 
 When using `order` or `orderEvent`, the delivery schedule is used.
 
@@ -210,13 +210,13 @@ The `lines.deliverySchedule` field does **NOT include any open supplier or buyer
 The `lines.deliveryScheduleIncludingRequests` field **does include any open supplier or buyer request**. The `Issued`, proposal or reopen request, or `Confirmed` values are returned, depending on the line and request status.
 {% endhint %}
 
-#### Delivery Schedule Fields
+#### Delivery schedule fields
 
 - `position`: Optional position in the delivery schedule (distinct from `line.position`)
 - `date`: Delivery date (ISO 8601 format `yyyy-MM-dd`)
 - `quantity`: Quantity (decimal format, e.g., `1234.56`)
 
-##### Logistics Fields
+##### Logistics fields
 
 Additional logistics fields available in the order line level delivery schedule:
 
@@ -224,7 +224,7 @@ Additional logistics fields available in the order line level delivery schedule:
 - `etd`: Optional Estimated Time of Departure (ISO 8601 date `yyyy-MM-dd`)
 - `eta`: Optional Estimated Time of Arrival (ISO 8601 date `yyyy-MM-dd`)
 
-##### Scheduled Delivery Logistics Status
+##### Scheduled delivery logistics status
 
 The delivery line logistics status is one of:
 
@@ -248,7 +248,7 @@ The `lines.prices` field does **NOT include any open supplier or buyer request**
 The `lines.pricesIncludingRequests` field **includes any open supplier or buyer request**. The `Issued`, proposal or reopen request, or `Confirmed` values are returned, depending on the line and request status.
 {% endhint %}
 
-#### Price Fields
+#### Price fields
 
 - `grossPrice`: Gross price (used with `discountPercentage`)
 - `discountPercentage`: Discount percentage (used with `grossPrice`)
@@ -266,9 +266,9 @@ The `lines.pricesIncludingRequests` field **includes any open supplier or buyer 
 It is recommended to use `netPrice` for simplicity, or alternatively use `grossPrice` together with `discountPercentage`.
 {% endhint %}
 
-### Line Status
+### Line status
 
-#### Line Process Status
+#### Line process status
 
 The line process status is one of:
 
@@ -279,7 +279,7 @@ The line process status is one of:
 - `Completed`: Line completed at the buyer
 - `Cancelled`: Line cancelled by the buyer
 
-#### Line In Progress Status
+#### Line in progress status
 
 When an order line's `processStatus` is `InProgress`, the in progress status is one of:
 
@@ -290,7 +290,7 @@ When an order line's `processStatus` is `InProgress`, the in progress status is 
 - `OpenBuyerReopenRequest`: Open reopen request from the buyer
 - `RevertedCompletedLine`: Line completion was reverted
 
-#### Line Logistics Status
+#### Line logistics status
 
 The line logistics status is one of:
 
@@ -301,7 +301,7 @@ The line logistics status is one of:
 - `Delivered`: Line quantity delivered to the buyer
 - `Cancelled`: Line cancelled by the buyer
 
-### Charge Lines
+### Charge lines
 
 Additional cost lines independent of order line prices:
 
@@ -318,7 +318,7 @@ Additional cost lines independent of order line prices:
     - `currencyIso`: 3-letter currency code (ISO 4217)
 - `priceUnitOfMeasureIso`: 3-letter price unit (ISO 80000-1)
 
-### Item Details
+### Item details
 
 The `lines.mergedItemDetails` contains item details from both buyer and supplier:
 
