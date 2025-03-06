@@ -44,7 +44,7 @@ This ensures consistent delivery tracking across all related order lines without
 
 ## Delivered indicator
 
-When an order or line is received, regardless of actual quantity or date, it can can be marked as delivered by setting `indicators.delivered` on either order or line level.
+When an order or line is received, regardless of actual quantity or date, it can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
 {% hint style="warning" %}
 **Single delivery order line delivery indicator behavior:**
