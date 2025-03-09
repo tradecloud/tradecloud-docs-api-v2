@@ -18,7 +18,7 @@ Contact [Tradecloud Support](../support.md) to request an Integration account an
 To gain access to the Tradecloud Acceptance environment, we will need:
 
 * 2 email addresses:
-  * **An integration email address**: This should be a non-personal email address, of which the mailbox should be accessible by the integrator.
+  * **An integration email address**: This should be a non-personal email address, of which the mailbox is accessible to the integrator.
   * **A buyer email address**: This can be a personal or non-personal email address, which will be used to log into the Web Portal.
 * Your company name
 * Company names of two suppliers you want to use for testing, including their supplier number in your ERP. We will initially add test accounts to these supplier companies, so your supplier will not be involved in testing the integration yet.

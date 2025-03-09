@@ -6,13 +6,12 @@ This page explains how to send your first, very minimal order to Tradecloud usin
 
 {% hint style="info" %}
 Note that this guide helps you to send a first order with only the bare minimal information. This can be used as a Proof-of-Concept for a new integration with Tradecloud.
-Note that this minimal example will need to be extended with additional information, based on the functional requirements of the integration.
+This minimal example will need to be extended with additional information, based on the functional requirements of the integration.
 
 For more information about the full buyer order process and additional properties that can be sent in, please refer to the following page.
+{% endhint %}
 
 {% page-ref page="order/buyer/README.md" %}
-
-{% endhint %}
 
 ### Configure the supplier account number
 
@@ -26,11 +25,12 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 
 ### My first order with a Delivery Schedule
 
-If you integration can support [Delivery Schedules](../api/delivery-schedule.md#delivery-schedule) by default, follow these instructions. Else, skip to [Sending my first order with a Single Delivery](#my-first-order-with-a-single-delivery)
+If you integration can support [Delivery Schedules](../api/delivery-schedule.md#delivery-schedule) by default, follow these instructions.  
+Else, skip to [Sending my first order with a Single Delivery](#my-first-order-with-a-single-delivery)
 
 1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order`
 2. Set the HTTP Method to `POST`
-3. Set the Authentication type to Basic Authentication, and provide your [username and password](getting-started.md#2-getting-an-integration-account) in the authentication header.
+3. Provide a **Basic Authentication** header, which contains the [username and password](getting-started.md#2-getting-an-integration-account) of the integration account.
 4. Provide the JSON below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](#configure-the-supplier-account-number) for a test supplier.
 
 ```json
@@ -83,7 +83,7 @@ If you integration only supports a [single delivery per order line](../api/deliv
 
 1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order/single-delivery`
 2. Set the HTTP Method to `POST`
-3. Set the Authentication type to Basic Authentication, and provide your [username and password](getting-started.md#2-getting-an-integration-account) in the authentication header.
+3. Provide a **Basic Authentication** header, which contains the [username and password](getting-started.md#2-getting-an-integration-account) of the integration account.
 4. Provide the JSON below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](#configure-the-supplier-account-number) for a test supplier.
 
 ```json

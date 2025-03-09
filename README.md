@@ -20,7 +20,7 @@ This [checklist](checklist.md) contains important info and decisions to consider
 
 {% page-ref page="guide/getting-started.md" %}
 
-{% page-ref page="guide/sending-my-first-order" %}
+{% page-ref page="guide/sending-my-first-order.md" %}
 
 ## As a buyer
 
