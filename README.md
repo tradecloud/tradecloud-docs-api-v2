@@ -18,6 +18,10 @@ This [checklist](checklist.md) contains important info and decisions to consider
 
 {% page-ref page="api/tools/" %}
 
+{% page-ref page="guide/getting-started.md" %}
+
+{% page-ref page="guide/sending-my-first-order" %}
+
 ## As a buyer
 
 {% page-ref page="order/buyer/README.md" %}

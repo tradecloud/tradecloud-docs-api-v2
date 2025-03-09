@@ -27,6 +27,10 @@
   * [Encryption](security/encryption.md)
   * [Document storage](security/documents.md)
 
+## API Guide
+* [Getting Started](guide/getting-started.md)
+* [Sending my first order](guide/sending-my-first-order.md)
+
 ## Processes
 
 * [Forecasts](forecast/README.md)
