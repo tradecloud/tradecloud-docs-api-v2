@@ -128,10 +128,13 @@ If you integration only supports a [single delivery per order line](../api/deliv
 **That's all!**  
 You can now log into the [Web Portal](https://portal.accp.tradecloud1.com) and go to the Order overview page. Your test order should be visible to you and the test supplier.
 
+### XML
+
+The examples above use JSON for their request body. If your integration only supports XML, please contact [support](../support.md) to get a minimal example of an XML request body.
+
 ### What's next?
 The following pages may be good to continue on when you wish to extend this minimal example:
 
 {% page-ref page="api/README.md" %}
 
 {% page-ref page="order/buyer/README.md" %}
-
