@@ -10,7 +10,7 @@ description: >-
 Tradecloud supports two delivery methods for order lines:
 
 1. **Delivery schedule** — multiple deliveries per order line
-2. **Single delivery** — one delivery per order line (currently only available for buyers)
+2. **Single delivery** — one delivery per order line
 
 Each delivery contains a position number, delivery date, and quantity.
 

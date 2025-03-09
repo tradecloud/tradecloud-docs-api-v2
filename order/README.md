@@ -2,13 +2,13 @@
 description: Overview of order processes in Tradecloud
 ---
 
-# Order Processes
+# Order processes
 
 Tradecloud supports standardized order processes for both buyers and suppliers.
 
-## Documentation by Role
+## Documentation by role
 
-### [Buyer Order Process](buyer/README.md)
+### [Buyer order process](buyer/README.md)
 
 Documentation for purchasing organizations, including:
 
@@ -17,7 +17,7 @@ Documentation for purchasing organizations, including:
 - Managing delivery schedules
 - Handling order changes
 
-### [Supplier Order Process](supplier/README.md)
+### [Supplier order process](supplier/README.md)
 
 Documentation for supplying organizations, including:
 

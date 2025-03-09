@@ -2,11 +2,11 @@
 description: How to issue a new purchase order as a buyer
 ---
 
-# Issue a New Order
+# Issue a new order
 
 As a buyer, you can send either a **new order** or an [**updated order**](../update.md) to your supplier.
 
-## Order Process
+## Order process
 
 {% hint style="info" %}
 New order lines will have order process status `Issued` and logistics status `Open`

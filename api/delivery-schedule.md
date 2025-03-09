@@ -75,7 +75,7 @@ Use the [Poll single delivery orders](https://swagger-ui.accp.tradecloud1.com/?u
 With either method, the current delivery information will be in the `lines.statusLine.scheduledDelivery` field.
 
 {% hint style="warning" %}
-When a supplier splits an order line, the new line's `position` will be empty. The buyer's ERP system must assign a new unique position identifier to this split line and update it in Tradecloud.
+When a supplier splits an order line, the new line's `position` may be unassigned. The buyer's ERP system must assign a new unique position identifier to this split line and update it in Tradecloud.
 {% endhint %}
 
 {% hint style="warning" %}
