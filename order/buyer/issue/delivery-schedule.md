@@ -39,7 +39,7 @@ The `position` must be unique within the delivery schedule and should never chan
 
 Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint with delivery details in the `lines.scheduledDelivery` field.
 
-Provide only one `scheduledDelivery` per order line, with a maximum of 100 deliveries per item number across all order lines.
+Provide only one `scheduledDelivery` per order line, with a maximum of 100 deliveries per `originalPosition` across all order lines.
 
 {% hint style="info" %}
 When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule and history of the line with the matching position number.

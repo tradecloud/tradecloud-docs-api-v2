@@ -3,7 +3,7 @@ description: >-
   Choose between delivery schedule or single delivery per order line.
 ---
 
-# Delivery Schedule versus Single Delivery
+# Delivery schedule versus single delivery
 
 Tradecloud supports two delivery methods for order lines:
 
@@ -12,7 +12,7 @@ Tradecloud supports two delivery methods for order lines:
 
 ## Delivery schedule
 
-The delivery schedule is the default method, where each order line can have multiple delivery lines. Each delivery line contains a position number, delivery date, and quantity.
+The delivery schedule is the default method, where each order line can have multiple delivery lines. Each delivery line contains a position number, delivery date, and quantity. Delivery schedules represent Tradecloud's native approach to handling deliveries, as the platform is designed from the ground up to work with this structure. Using delivery schedules provides the most direct and efficient integration experience, since it aligns perfectly with how deliveries are organized and displayed throughout the Tradecloud portal.
 
 Some ERP systems like SAP natively support multiple deliveries per order line, while others only support one delivery per order line.
 
@@ -47,11 +47,11 @@ With either method, the current delivery schedule will be in the `lines.delivery
 When a supplier splits a delivery line, the `position` may be unassigned. The buyer's ERP system must assign a position to the split delivery line and update the order line in Tradecloud.
 {% endhint %}
 
-## Single Delivery
+## Single delivery
 
 The single delivery method allows only one delivery per order line.
 
-### Sending an Order with Single Delivery
+### Sending an order with single delivery
 
 Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint with delivery details in the `lines.scheduledDelivery` field.
 
@@ -59,7 +59,7 @@ Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?ur
 When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule of the line with the matching position number.
 {% endhint %}
 
-### Receiving an Order Response with Single Delivery
+### Receiving an order response with single delivery
 
 There are two methods to receive order responses:
 

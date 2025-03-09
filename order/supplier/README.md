@@ -1,29 +1,21 @@
 ---
-description: Overview of the supplier order process
+description: Overview of the supplier order process.
 ---
 
-# Supplier Order Process
+# Supplier order process overview
 
-## Order Process Steps
+## Step 1. Receive an order
 
-### 1. Receive Purchase Orders
+As a supplier you can [Receive an order](receive/)
 
-As a supplier, you can [receive purchase orders](receive/) from your buyers.
+Additionally you can [Download a document attached to an order](receive/download-document.md).
 
-You can also:
+## Step 2. Send an order response
 
-- [Download documents](receive/download-document.md) attached to orders
+As a supplier you should [Send an order response](send-order-response/) to the buyer.
 
-### 2. Respond to Orders
+Additionally you can [Attach a document to an order response](send-order-response/attach-document.md).
 
-After receiving an order, you should [send an order response](send-order-response/) to the buyer.
+## Step 3. Reopen an order
 
-You can:
-
-- Accept or reject the order (in whole or by line)
-- Propose changes to delivery dates, quantities, or prices
-- [Attach documents](send-order-response/attach-document.md) to your responses
-
-### 3. Reopen Orders
-
-If needed, you can [reopen an order](reopen.md) to restart the order process after it has been completed.
+As a supplier you may [Reopen an order](reopen.md) which will restart the order process.

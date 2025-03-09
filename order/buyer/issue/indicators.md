@@ -104,12 +104,12 @@ When using the single delivery per order line feature, Tradecloud manages relate
 
 | Indicator | Behavior with single delivery |
 |-----------|-------------------------------|
-| **Confirmed by buyer** | The primary order line and all related split lines will only become confirmed when all are confirmed |
-| **Reconfirmation request** | Only needs to be set on the primary order line; Tradecloud will apply it to all related split lines |
-| **Shipped by supplier** | Can be set on individual lines; the primary order line will become shipped when all related split lines are shipped |
-| **Delivered at buyer** | Can be set on individual lines; the primary order line will become delivered when all related split lines are delivered |
-| **Completed at buyer** | Should only be set on the primary order line; Tradecloud will automatically complete all related split lines |
-| **Cancelled by buyer** | Should only be set on the primary order line; Tradecloud will automatically cancel all related split lines |
-| **Propose when accepted** | Should only be set on the primary order line; Tradecloud will apply the proposal to all related split lines when accepted |
+| `confirmed` | The primary order line and all related split lines will only become confirmed when all are confirmed |
+| `requestReconfirmation` | Only needs to be set on the primary order line; Tradecloud will apply it to all related split lines |
+| `shipped` | Can be set on individual lines; the primary order line will become shipped when all related split lines are shipped |
+| `delivered` | Can be set on individual lines; the primary order line will become delivered when all related split lines are delivered |
+| `completed`| Should only be set on the primary order line; Tradecloud will automatically complete all related split lines |
+| `cancelled`| Should only be set on the primary order line; Tradecloud will automatically cancel all related split lines |
+| `proposeWhenAccepted` | Should only be set on the primary order line; Tradecloud will apply the proposal to all related split lines when accepted |
 
 This approach ensures consistent status tracking across all related order lines while minimizing the need to set indicators on each individual split line.
