@@ -72,61 +72,6 @@ Else, skip to [Sending my first order with a Single Delivery](#my-first-order-wi
 **That's all!**  
 You can now log into the [Web Portal](https://portal.accp.tradecloud1.com) and go to the Order overview page. Your test order should be visible to you and the test supplier.
 
-### My first order with a Single Delivery
-
-If you integration only supports a [single delivery per order line](../../api/delivery-schedule.md#single-delivery), follow these instructions instead.
-
-1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order/single-delivery`
-2. Set the HTTP Method to `POST`
-3. Provide a **Basic Authentication** header, which contains the [username and password](../getting-started.md#2-getting-an-integration-account) of the integration account.
-4. Provide the JSON below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](#configure-the-supplier-account-number) for a test supplier.
-
-```json
-{
-  "order": {
-    "supplierAccountNumber": "{{supplierAccountNumber}}",
-    "purchaseOrderNumber": "PO123456789",
-    "destination": {
-      "names": [
-        "My Company Warehouse",
-        "Dock 12"
-      ],
-      "countryCodeIso2": "NL"
-    }
-  },
-  "lines": [
-    {
-      "position": "0001",
-      "item": {
-        "name": "Round tube 60x45",
-        "purchaseUnitOfMeasureIso": "PCE"
-      },
-      "prices": {
-        "netPrice": {
-          "priceInTransactionCurrency": {
-            "value": 1234.56,
-            "currencyIso": "EUR"
-          }
-        },
-        "priceUnitOfMeasureIso": "PCE",
-        "priceUnitQuantity": 100
-      },
-      "scheduledDelivery": {
-        "date": "2019-12-31",
-        "quantity": 1234.56
-      }
-    }
-  ]
-}
-```
-
-**That's all!**  
-You can now log into the [Web Portal](https://portal.accp.tradecloud1.com) and go to the Order overview page. Your test order should be visible to you and the test supplier.
-
-### XML
-
-The examples above use JSON for their request body. If your integration only supports XML, please contact [support](../../support.md) to get a minimal example of an XML request body.
-
 ### What's next?
 The following pages may be good to continue on when you wish to extend this minimal example:
 
