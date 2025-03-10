@@ -11,7 +11,7 @@ Cancel an order line in Tradecloud when it is cancelled at the buyer.
 - `Cancelled` lines cannot be cancelled again
 
 {% hint style="warning" %}
-**Single delivery order line cancellation behavior:**
+**Single delivery behavior:**
 
 When using the single delivery per order line feature, cancellation works differently depending on whether you're cancelling all order lines or an individual line:
 

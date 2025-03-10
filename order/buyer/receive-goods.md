@@ -41,7 +41,7 @@ Let [support](../support.md) know when you need this endpoint for single deliver
 When an order or line is received, regardless of actual quantity or date, it can be marked as delivered by setting `indicators.delivered` on either order or line level.
 
 {% hint style="warning" %}
-**Single delivery order line delivery indicator behavior:**
+**Single delivery behavior:**
 
 When the primary or any related split lines is delivered; the corresponding delivery line will become delivered.
 {% endhint %}

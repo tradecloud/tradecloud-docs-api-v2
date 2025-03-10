@@ -94,6 +94,11 @@ The order or line having logistics status `Open`, `Produced`, `ReadyToShip` or `
 
 ## Single delivery order line behavior
 
+{% hint style="warning" %}
+The `/order/indicators` endpoint is not supported when using the single delivery feature.
+Let [support](../support.md) know when you need this endpoint for single delivery.
+{% endhint %}
+
 {% hint style="info" %}
 **How indicators work with single delivery per order line:**
 
@@ -111,8 +116,3 @@ When using the single delivery per order line feature, Tradecloud manages relate
 | `completed`| When all primary and related split lines are completed; the primary order line will become completed |
 | `cancelled`| When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule |
 | `proposeWhenAccepted` | When set on the primary or any related split line; the primary order line will open a proposal request when accepted |
-
-{% hint style="warning" %}
-The `/order/indicators` endpoint is not supported when using the single delivery feature.
-Let [support](../support.md) know when you need this endpoint for single delivery.
-{% endhint %}

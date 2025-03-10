@@ -12,7 +12,7 @@ Complete an order line in Tradecloud when it is completely handled at the buyer,
 * Completing has precedence over cancelling at the same time
 
 {% hint style="warning" %}
-**Single delivery order line completion behavior:**
+**Single delivery behavior:**
 
 When all primary and related split lines are completed; the primary order line will become completed.
 {% endhint %}
