@@ -104,12 +104,15 @@ When using the single delivery per order line feature, Tradecloud manages relate
 
 | Indicator | Behavior with single delivery |
 |-----------|-------------------------------|
-| `confirmed` | The primary order line and all related split lines will only become confirmed when all are confirmed |
-| `requestReconfirmation` | Only needs to be set on the primary order line; Tradecloud will apply it to all related split lines |
-| `shipped` | Can be set on individual lines; the primary order line will become shipped when all related split lines are shipped |
-| `delivered` | Can be set on individual lines; the primary order line will become delivered when all related split lines are delivered |
-| `completed`| Should only be set on the primary order line; Tradecloud will automatically complete all related split lines |
-| `cancelled`| Should only be set on the primary order line; Tradecloud will automatically cancel all related split lines |
-| `proposeWhenAccepted` | Should only be set on the primary order line; Tradecloud will apply the proposal to all related split lines when accepted |
+| `confirmed` | When all primary and related split lines are confirmed; the primary order line will become confirmed |
+| `requestReconfirmation` | When set on the primary or any related split line the primary order line will open a reconfirmation request |
+| `shipped` | When the primary or any related split lines is shipped; the corresponding delivery line will become shipped |
+| `delivered` | When the primary or any related split lines is delivered; the corresponding delivery line will become delivered |
+| `completed`| When all primary and related split lines are completed; the primary order line will become completed |
+| `cancelled`| When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule |
+| `proposeWhenAccepted` | When set on the primary or any related split line; the primary order line will open a proposal request when accepted |
 
-This approach ensures consistent status tracking across all related order lines while minimizing the need to set indicators on each individual split line.
+{% hint style="warning" %}
+The `/order/indicators` endpoint is not supported when using the single delivery feature.
+Let [support](../support.md) know when you need this endpoint for single delivery.
+{% endhint %}

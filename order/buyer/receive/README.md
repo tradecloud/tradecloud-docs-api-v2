@@ -23,8 +23,8 @@ For details on choosing between these methods:
 
 You must also choose between two delivery formats:
 
-- **Delivery schedule**: Multiple deliveries per order line
-- **Single delivery**: One delivery per order line
+- **Delivery schedule**: Multiple scheduled deliveries per order line
+- **Single delivery**: One scheduled delivery per order line
 
 For details on choosing between these formats:
 

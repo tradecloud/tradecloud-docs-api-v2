@@ -14,15 +14,10 @@ Complete an order line in Tradecloud when it is completely handled at the buyer,
 {% hint style="warning" %}
 **Single delivery order line completion behavior:**
 
-When using the single delivery per order line feature:
-
-1. The `completed` indicator should only be set on the **primary order line** (the first line with a specific item number)
-2. Tradecloud will automatically complete all related split lines that reference the primary line via their `originalPosition` field.
-
-This ensures consistent completion across all related order lines without requiring individual completion of each split line.
+When all primary and related split lines are completed; the primary order line will become completed.
 {% endhint %}
 
-## Completing by resending an order using the `/order` API
+## Completing by resending an order using the `/order` endpoint
 
 The order or line can be marked as completed by setting `indicators.completed` on either order or line level and updating the order using the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint:
 
@@ -34,12 +29,19 @@ If you provide a `completed` indicator on order level, **ONLY** the lines provid
 If you also provide a `completed` indicator on line level, it has **precedence** over the order level `completed` indicator.
 {% endhint %}
 
-## Completing by sending the completed indicator using the `/order/indicators` API
+## Completing by sending the completed indicator using the `/order/indicators` endpoint
 
-The order or line can be marked as completed by setting `indicators.completed` on either order or line level and sending this indicator only, using the `/order/indicators` API resource.
+The order or line can be marked as completed by setting `indicators.completed` on either order or line level and sending this indicator only, using the `/order/indicators` endpoint.
 
 Use the [Send order indicators](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderIndicatorsByBuyerRoute) endpoint to send the completed indicator to Tradecloud.
 
+{% hint style="warning" %}
+The `/order/indicators` endpoint is not supported when using the single delivery feature.
+Let [support](../support.md) know when you need this endpoint for single delivery.
+{% endhint %}
+
 {% hint style="info" %}
-When sending order indicators the provided purchase order number will be verified. 
+If you provide a `completed` indicator on order level, **ALL** the lines in the order will be completed.
+
+If you also provide a `completed` indicator on line level, it has **precedence** over the order level `completed` indicator.
 {% endhint %}

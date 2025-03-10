@@ -4,7 +4,7 @@ description: How to receive a single delivery order response sent by the supplie
 
 # Receive a single delivery order response
 
-Tradecloud sends purchase order responses to buyers when order events are triggered. This page covers receiving responses with a single delivery per order line.
+Tradecloud sends purchase order responses to buyers when order events are triggered. This page covers receiving responses with a single scheduled delivery per order line.
 
 If you prefer to work with delivery schedules (multiple deliveries per order line), please refer to:
 

@@ -7,14 +7,17 @@ description: >-
 
 Tradecloud supports two delivery methods for order lines:
 
-1. Delivery schedule — multiple deliveries per order line
-2. Single delivery — one delivery per order line
+1. Delivery schedule — multiple scheduled deliveries per order line
+2. Single delivery — one scheduled delivery per order line
+
+ERP system compatibility is an important consideration when choosing between delivery methods:
+
+- **Multiple deliveries support**: Some ERP systems (like SAP) natively support multiple deliveries per order line, making them fully compatible with Tradecloud's delivery schedule approach.
+- **Single delivery limitation**: Other ERP systems can only handle one delivery per order line. If your ERP system has this limitation, the [single delivery](#single-delivery) method is recommended for seamless integration.
 
 ## Delivery schedule
 
-The delivery schedule is the default method, where each order line can have multiple delivery lines. Each delivery line contains a position number, delivery date, and quantity. Delivery schedules represent Tradecloud's native approach to handling deliveries, as the platform is designed from the ground up to work with this structure. Using delivery schedules provides the most direct and efficient integration experience, since it aligns perfectly with how deliveries are organized and displayed throughout the Tradecloud portal.
-
-Some ERP systems like SAP natively support multiple deliveries per order line, while others only support one delivery per order line.
+The delivery schedule is the default method, where each order line can have multiple delivery lines. Each delivery line contains a position number, delivery date, and quantity. Delivery schedules represent Tradecloud's native approach to handling deliveries, as the platform is designed from the ground up to work with this structure.
 
 ### Sending an order with a delivery schedule
 
@@ -49,7 +52,7 @@ When a supplier splits a delivery line, the `position` may be unassigned. The bu
 
 ## Single delivery
 
-The single delivery method allows only one delivery per order line.
+The single delivery method allows only one scheduled delivery per order line in the communications between Tradecloud and your ERP system. This approach simplifies order management for ERP systems that don't support multiple deliveries per line. With single delivery each order line has exactly one scheduled delivery date and quantity.
 
 ### Sending an order with single delivery
 

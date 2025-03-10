@@ -19,7 +19,7 @@ New order lines will have order process status `Issued` and logistics status `Op
 Choose the appropriate endpoint based on your ERP system's delivery handling capabilities:
 
 - Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint when your ERP system supports delivery schedules natively
-- Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryByBuyerRoute) endpoint for single delivery per order line
+- Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryByBuyerRoute) endpoint for single scheduled delivery per order line
 
 For more details on choosing between delivery schedule options:
 

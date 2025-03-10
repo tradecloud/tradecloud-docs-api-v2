@@ -124,14 +124,14 @@ Before starting the actual implementation, you need to verify the capabilities a
 
   **Delivery Schedule vs. Single Delivery:**
   
-  - **Delivery Schedule**: Multiple deliveries per order line (default method)
+  - **Delivery Schedule**: Multiple scheduled deliveries per order line (default method)
     - Best for ERP systems that natively support multiple deliveries per order line (e.g., SAP)
     - Provides more flexibility for complex delivery arrangements
-    - Maintains all deliveries within a single order line
+    - Maintains all scheduled deliveries within a single order line
   
-  - **Single Delivery**: One delivery per order line
-    - Best for ERP systems that only support one delivery date/quantity per order line
-    - Tradecloud will automatically split delivery schedules into separate order lines
+  - **Single Delivery**: One scheduled delivery per order line
+    - Best for ERP systems that only support one scheduled delivery date/quantity per order line
+    - Tradecloud will automatically split delivery schedules into separate order lines in the communication with your ERP system
     - Each split line maintains a reference to the original line via `originalPosition`
   
   Choose based on your ERP system's capabilities and your business requirements.
@@ -140,7 +140,7 @@ Before starting the actual implementation, you need to verify the capabilities a
 
 - [ ] **Can your ERP system handle split order lines?**  
 
-  When a supplier splits an order line (e.g., partial acceptance or multiple shipments):
+ When a supplier splits an order line (e.g., it cannot deliver 10 pieces on date X, but it can deliver 6 on date X and 4 on date Y):
   
   - Tradecloud creates new order lines with empty `position` values
   - These new lines include an `originalPosition` reference to the original line
