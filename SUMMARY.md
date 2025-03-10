@@ -29,7 +29,11 @@
 
 ## API Guide
 * [Getting Started](guide/getting-started.md)
-* [Sending my first order](guide/sending-my-first-order.md)
+* [Sending my first order](guide/sending-my-first-order/README.md)
+  * [Sending my first order with a Delivery Schedule in JSON](guide/sending-my-first-order/sending-my-first-order-delivery-schedule-json.md)
+  * [Sending my first order with a Delivery Schedule in XML](guide/sending-my-first-order/sending-my-first-order-delivery-schedule-xml.md)
+  * [Sending my first order with a Single Delivery in JSON](guide/sending-my-first-order/sending-my-first-order-single-delivery-json.md)
+  * [Sending my first order with a Single Delivery in XML](guide/sending-my-first-order/sending-my-first-order-single-delivery-xml.md)
 
 ## Processes
 

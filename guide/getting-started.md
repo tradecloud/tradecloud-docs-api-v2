@@ -1,6 +1,6 @@
 # Getting started
 
-This page describes all the prerequisites for that should be covered before [sending your first](sending-my-first-order.md) order to Tradecloud.
+This page describes all the prerequisites for that should be covered before [sending your first](sending-my-first-order/sending-my-first-order-delivery-schedule-json) order to Tradecloud.
 
 ### 1. Design and checklist
 
