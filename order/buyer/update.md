@@ -54,6 +54,11 @@ Or use the actual delivery field when using the single delivery per order line:
 * `actualDelivery.date`: the actual delivery date of this delivery. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../api/standards.md).
 * `actualDelivery.quantity`: the actual delivered quantity of this delivery. Quantity has a decimal `1234.56` format with any number of digits.
 
+{% hint style="warning" %}
+The `deliveryHistory` (multiple actual deliveries) field is not supported when using the single delivery feature.
+Let [support](../support.md) know when you need `deliveryHistory` for single delivery.
+{% endhint %}
+
 ### Additional order and line indicators
 
 Additional indicators may be set in an order update:
