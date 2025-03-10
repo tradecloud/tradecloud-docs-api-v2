@@ -25,9 +25,6 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 
 ### My first order with a Delivery Schedule
 
-If you integration can support [Delivery Schedules](../../api/delivery-schedule.md#delivery-schedule) by default, follow these instructions.  
-Else, skip to [Sending my first order with a Single Delivery](#my-first-order-with-a-single-delivery)
-
 1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order`
 2. Set the HTTP Method to `POST`
 3. Provide a **Basic Authentication** header, which contains the [username and password](../getting-started.md#2-getting-an-integration-account) of the integration account.
