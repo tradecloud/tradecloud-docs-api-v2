@@ -4,21 +4,24 @@ description: How to issue a new purchase order as a buyer
 
 # Issue a new order
 
-As buyer you can send either a **new or** [**updated**](../update.md) purchase order to your supplier.
+As a buyer, you can send either a **new order** or an [**updated order**](../update.md) to your supplier.
 
 ## Order process
 
 {% hint style="info" %}
-The new order lines will have order process status `Issued`and logistics status `Open`
+New order lines will have order process status `Issued` and logistics status `Open`
 {% endhint %}
 
-## Endpoints
+## Sending methods
 
-Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint when your ERP system supports a delivery schedule natively.
+### Delivery schedule options
 
-Or use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryByBuyerRoute) endpoint for the single delivery per order line.
+Choose the appropriate endpoint based on your ERP system's delivery handling capabilities:
 
-Please see this page to choose between the delivery schedule or single delivery per order line:
+- Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint when your ERP system supports delivery schedules natively
+- Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryByBuyerRoute) endpoint for single scheduled delivery per order line
+
+For more details on choosing between delivery schedule options:
 
 {% page-ref page="delivery-schedule.md" %}
 

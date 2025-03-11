@@ -10,7 +10,7 @@ You can set indicators on both order and line levels.
 Line indicators have precedence over \(overrule\) order indicators.
 
 {% hint style="warning" %}
-When working with the single delivery per order line feature, these indicators behave slighty different, check the [single delivery feature](#single-delivery).
+When working with the single delivery per order line feature, these indicators behave slightly different, check the [single delivery order line behavior](#single-delivery-order-line-behavior).
 {% endhint %}
 
 ### Confirmed by buyer
@@ -92,34 +92,27 @@ The order or line having logistics status `Open`, `Produced`, `ReadyToShip` or `
 
 {% page-ref page="propose-when-accepted.md" %}
 
-## Single delivery
+## Single delivery order line behavior
 
-When working with the single delivery per order line feature, lines with the same item, prices and terms are grouped into one parent order line with a delivery schedule. In this case, these indicators behave slighty different:
+{% hint style="warning" %}
+The `/order/indicators` endpoint is not supported when using the single delivery feature.
+Let [support](../support.md) know when you need this endpoint for single delivery.
+{% endhint %}
 
-### Confirmed by buyer
+{% hint style="info" %}
+**How indicators work with single delivery per order line:**
 
-The parent order line will only become confirmed, when all grouped lines are confirmed.
+When using the single delivery per order line feature, Tradecloud manages related lines through the `originalPosition` reference. This affects how indicators behave:
+{% endhint %}
 
-### Reconfirmation request by buyer
+### Indicator behaviors
 
-Only the parent order line has to be reconfirmed.
-
-### Shipped by supplier
-
-This line will become shipped, and the parent order line will become shipped when all grouped lines are marked as shipped.
-
-### Delivered at buyer
-
-This line will become delivered, and the parent order line will become delivered when all grouped lines are marked as delivered.
-
-### Completed at buyer
-
-Only the parent order line will become completed when all grouped lines are marked as completed.
-
-### Cancelled by buyer
-
-This line will be removed from the delivery schedule, and the parent order line will become cancelled when all lines are marked as cancelled.
-
-### Propose when accepted
-
-Only the parent order line will get a proposal when the grouped lines are accepted.
+| Indicator | Behavior with single delivery |
+|-----------|-------------------------------|
+| `confirmed` | When all primary and related split lines are confirmed; the primary order line will become confirmed |
+| `requestReconfirmation` | When set on the primary or any related split line the primary order line will open a reconfirmation request |
+| `shipped` | When the primary or any related split lines is shipped; the corresponding delivery line will become shipped |
+| `delivered` | When the primary or any related split lines is delivered; the corresponding delivery line will become delivered |
+| `completed`| When all primary and related split lines are completed; the primary order line will become completed |
+| `cancelled`| When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule |
+| `proposeWhenAccepted` | When set on the primary or any related split line; the primary order line will open a proposal request when accepted |

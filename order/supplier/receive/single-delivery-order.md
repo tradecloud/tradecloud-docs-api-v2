@@ -1,34 +1,37 @@
 ---
-description: How to receive a single delivery order sent by the buyer.
+description: How to receive a single delivery order sent by the buyer
 ---
 
 # Receive a single delivery order
 
-Tradecloud will send a purchase order, either new or updated, to the supplier when an order event has been triggered.
+Tradecloud sends purchase orders (new or updated) to suppliers when order events are triggered. This page covers receiving orders with a single delivery per order line.
 
-This page assumes you are using the webhook with a single delivery per order line.
-
-When choosing the delivery schedule please continue on:
+If you prefer to work with delivery schedules (multiple deliveries per order line), please refer to:
 
 {% page-ref page="README.md" %}
 
-## When working with the webhook API
+## Implementation options
+
+### Using the webhook API
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-* `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
-* `singleDeliveryOrderEvent` contains the actual order event
+- `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
+- `singleDeliveryOrderEvent`: Contains the actual order event
 
-## When working with the polling API
+### Using the polling API
 
 Use the [POST poll/single-delivery](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersSingleDeliveryRoute) endpoint.
 
-* `order` contains the actual order in its current state
+- `order`: Contains the actual order in its current state
 
-## `singleDeliveryOrderEvent` or `order` header
+## Order structure
 
-* `id` (in case of an `order`): the Tradecloud order identifier
-* `orderId` (in case of an `singleDeliveryOrderEvent`): the Tradecloud order identifier
+### Order header
+
+The order header contains:
+
+* `id` (in `order`) or `orderId` (in `singleDeliveryOrderEvent`): Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order).
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order).
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.

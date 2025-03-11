@@ -4,43 +4,60 @@ description: How to receive a purchase order response sent by the supplier
 
 # Receive an order response
 
-Tradecloud will send a purchase order response to the buyer when an order event has been triggered.
+Tradecloud sends purchase order responses to buyers when order events are triggered.
 
-## Choose the appropriate API to receive an order response
+## Receiving methods
 
-You must choose between the webhook API or the polling API to receive order response messages:
+### Choose your API method
+
+You must choose between two methods to receive order responses:
+
+- **Webhook API (Push)**: Tradecloud pushes responses to your system
+- **Polling API (Pull)**: Your system periodically checks for new responses
+
+For details on choosing between these methods:
 
 {% page-ref page="../../../api/webhook-vs-polling.md" %}
 
-## Choose to receive a delivery schedule or single delivery per order line
+### Choose your delivery format
 
-You must choose between a delivery schedule or single delivery per order line:
+You must also choose between two delivery formats:
+
+- **Delivery schedule**: Multiple scheduled deliveries per order line
+- **Single delivery**: One scheduled delivery per order line
+
+For details on choosing between these formats:
 
 {% page-ref page="../../../api/delivery-schedule.md" %}
 
-When choosing single delivery please continue on:
+If you're using single delivery format, please see:
 
 {% page-ref page="single-delivery-order-response.md" %}
 
-## When working with the webhook API
+## Implementation options
+
+### Using the webhook API
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-* `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
-* `orderEvent` contains the actual order event
+- `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
+- `orderEvent`: Contains the actual order event
 
-## When working with the polling API
+### Using the polling API
 
 Use the [POST poll](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint.
 
-* `order` contains the actual order in its current state
+- `order`: Contains the actual order in its current state
 
-## `orderEvent` or `order` header
+## Response structure
 
-This page assumes you either chose delivery schedules using the `orderEvent` webhook API or the `order` polling API.
+This section assumes you're using delivery schedules with either the `orderEvent` webhook API or the `order` polling API.
 
-* `id` (in case of an `order`): the Tradecloud order identifier
-* `orderId` (in case of an `OrderEvent`): the Tradecloud order identifier
+### Order header
+
+The order header contains:
+
+* `id` (in `order`) or `orderId` (in `orderEvent`): Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.

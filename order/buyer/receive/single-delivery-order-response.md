@@ -4,39 +4,36 @@ description: How to receive a single delivery order response sent by the supplie
 
 # Receive a single delivery order response
 
-Tradecloud will send a purchase order response, either new or updated, to the buyer when an order event has been triggered.
+Tradecloud sends purchase order responses to buyers when order events are triggered. This page covers receiving responses with a single scheduled delivery per order line.
 
-This page assumes you are using the webhook or polling with a single delivery schedule per order line.
-
-When choosing the delivery schedule please continue on:
+If you prefer to work with delivery schedules (multiple deliveries per order line), please refer to:
 
 {% page-ref page="README.md" %}
 
-{% hint style="info" %}
-Tradecloud represents order lines having the same item, prices and terms as one order line having a delivery schedule.
+## Receiving methods
 
-In the single delivery order response Tradecloud will split the delivery schedule into order line's having only one delivery.
+There are two methods to receive order responses with single deliveries:
 
-The `deliverySchedule.position` will be mapped to the order response `lines.buyerLine.position`
-{% endhint %}
-
-## When working with the webhook API
+### Method 1: Order webhook (Push)
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
-* `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
-* `singleDeliveryOrderEvent` contains the actual order event
+- `eventName` contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
+- `singleDeliveryOrderEvent` contains the actual order event
 
-## When working with the polling API
+### Method 2: Polling (Pull)
 
 Use the [POST poll/single-delivery](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersSingleDeliveryRoute) endpoint.
 
-* `order` contains the actual order in its current state
+- `order` contains the actual order in its current state
 
-## `singleDeliveryOrderEvent` or `order` header
+## Response structure
 
-* `id` (in case of an `order`): the Tradecloud order identifier
-* `orderId` (in case of an `singleDeliveryOrderEvent`): the Tradecloud order identifier
+### Order header
+
+The order header contains:
+
+* `id` (in `order`) or `orderId` (in `singleDeliveryOrderEvent`): Tradecloud order identifier
 * `buyerOrder`: the buyer part of the order, see [Buyer order](#buyer-order)
 * `supplierOrder`: the supplier part of the order, see [Supplier order](#supplier-order)
 * `indicators.deliveryOverdue` is true when at least one order line is overdue.
