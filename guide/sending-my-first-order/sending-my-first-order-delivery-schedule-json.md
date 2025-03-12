@@ -21,7 +21,7 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 2. Click on the pencil in the "Account Code" column, on the row of a test supplier.
 3. Enter the supplier account number that matches the test supplier in your ERP and save.
 
-![](../../.gitbook/assets/configure-supplier-account-numer.png)
+![](../../.gitbook/assets/configure-supplier-account-number.png)
 
 ### Sending the order
 
