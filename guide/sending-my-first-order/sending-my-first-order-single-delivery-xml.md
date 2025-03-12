@@ -28,7 +28,7 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order`
 2. Set the HTTP Method to `POST`
 3. Provide a **Basic Authentication** header, which contains the [username and password](../getting-started.md#2-getting-an-integration-account) of the integration account.
-4. Provide the JSON below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](#configure-the-supplier-account-number) for a test supplier.
+4. Provide the XML below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](#configure-the-supplier-account-number) for a test supplier.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
