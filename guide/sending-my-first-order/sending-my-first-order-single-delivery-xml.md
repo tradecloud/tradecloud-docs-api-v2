@@ -23,7 +23,7 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 
 ![](../../.gitbook/assets/configure-supplier-account-numer.png)
 
-### My first order with a Delivery Schedule
+### Sending the order
 
 1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order`
 2. Set the HTTP Method to `POST`
