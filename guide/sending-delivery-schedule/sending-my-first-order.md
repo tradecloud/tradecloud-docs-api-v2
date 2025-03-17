@@ -1,27 +1,6 @@
-# Sending my first order with a Delivery Schedule in JSON
+# Option A: Sending a Delivery Schedule per order line
 
-This page explains how to send your first, very minimal order to Tradecloud using the API.
-
-**This page assumes that you have all the prerequisites set up, as explained on the [Getting Started](getting-started.md) page.**
-
-{% hint style="info" %}
-Note that this guide helps you to send a first order with only the bare minimal information. This can be used as a Proof-of-Concept for a new integration with Tradecloud.
-This minimal example will need to be extended with additional information, based on the functional requirements of the integration.
-
-For more information about the full buyer order process and additional properties that can be sent in, please refer to the following page.
-{% endhint %}
-
-{% page-ref page="order/buyer/README.md" %}
-
-### Configure the supplier account number
-
-If Tradecloud Support hasn't done so already, make sure that a supplier account number is configured in the Tradecloud portal for the (test) supplier you want to send your first order to.
-
-1. Log into the [Web Portal](https://portal.accp.tradecloud1.com), and click on "My Network" in the menu.
-2. Click on the pencil in the "Account Code" column, on the row of a test supplier.
-3. Enter the supplier account number that matches the test supplier in your ERP and save.
-
-![](../.gitbook/assets/configure-supplier-account-number.png)
+This page explains how to request deliveries for order lines by means of a Delivery Schedule. A Delivery Schedule can contain 0, 1 or multiple requested deliveries for a single order line.
 
 ### Sending the order
 
@@ -33,6 +12,8 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 
 {% tabs %}
 {% tab title="JSON" %}
+
+Set the request body MIME-type to `application/json`.
 
 ```json
 {
@@ -66,8 +47,12 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
       },
       "deliverySchedule": [
         {
-          "date": "2019-12-31",
-          "quantity": 1234.56
+          "date": "2026-01-31",
+          "quantity": 5
+        },
+        {
+          "date": "2026-02-07",
+          "quantity": 10
         }
       ]
     }
@@ -77,6 +62,8 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 
 {% endtab %}
 {% tab title="XML" %}
+
+Set the request MIME-type to `application/xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -97,9 +84,13 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 			<purchaseUnitOfMeasureIso>PCE</purchaseUnitOfMeasureIso>
 		</item>
 		<deliveryScheduleLine>
-			<date>2019-12-31</date>
-			<quantity>1234.56</quantity>
+			<date>2026-01-31</date>
+			<quantity>5</quantity>
 		</deliveryScheduleLine>
+        <deliveryScheduleLine>
+            <date>2026-02-07</date>
+            <quantity>10</quantity>
+        </deliveryScheduleLine>
 		<prices>
 			<netPrice>
 				<priceInTransactionCurrency>
@@ -118,5 +109,5 @@ If Tradecloud Support hasn't done so already, make sure that a supplier account 
 
 
 **That's all!**  
-You can now log into the [Web Portal](https://portal.accp.tradecloud1.com) and go to the Order overview page. Your test order should be visible to you and the test supplier.
+You can now log into the [Web Portal](https://portal.accp.tradecloud1.com) and go to the Order overview page. When you click the order line, you can now see the requested Delivery Schedule.
 
