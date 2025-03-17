@@ -1,11 +1,11 @@
 # Option B: Sending a Single Delivery per order line
 
 This page explains how to request deliveries for order lines by means of a Single Delivery per order line.  
-Order lines with the same `originalPosition` are grouped by tradecloud, meaning that their (single) deliveries are merged into a single delivery schedule in one order line.
+Order lines with the same `originalPosition` are grouped by Tradecloud One, meaning that their (single) deliveries are merged into a delivery schedule in one order line.
 
 ### Sending the order
 
-1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order`
+1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order/single-delivery`
 2. Set the HTTP Method to `POST`
 3. Provide a **Basic Authentication** header, which contains the [username and password](getting-started.md#2-getting-an-integration-account) of the integration account.
 4. Provide the JSON below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](#configure-the-supplier-account-number) for a test supplier.
