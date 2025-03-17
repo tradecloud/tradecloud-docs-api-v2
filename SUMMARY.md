@@ -31,9 +31,9 @@
 * [1. Getting an Account](guide/setup-integration-account.md)
 * [2. Setting up your Tradecloud Network](guide/setup-network-connections.md)
 * [3. Sending your first order](guide/sending-my-first-order.md)
-* \4. Sending requested deliveries
-  * [4a. Sending a Delivery Schedule per order line](guide/sending-delivery-schedule/sending-my-first-order.md)
-  * [4b. Sending a Single Delivery per order line](guide/sending-single-delivery/sending-my-first-order.md)
+* [4. Sending requested deliveries](guide/sending-requested-deliveries.md)
+  * [Option A: Sending a Delivery Schedule per order line](guide/sending-delivery-schedule/sending-my-first-order.md)
+  * [Option B: Sending a Single Delivery per order line](guide/sending-single-delivery/sending-my-first-order.md)
 
 ## Processes
 

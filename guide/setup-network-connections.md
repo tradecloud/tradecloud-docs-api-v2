@@ -1,28 +1,9 @@
-# Getting started
+# 2. Setting up your Tradecloud Network
 
-This page describes all the prerequisites for that should be covered before [sending your first](sending-my-first-order/sending-my-first-order-delivery-schedule-json) order to Tradecloud.
+If Tradecloud Support hasn't done so already, make sure that a supplier account number is configured in the Tradecloud portal for the (test) supplier you want to send your first order to.
 
-### 1. Design and checklist
+1. Log into the [Web Portal](https://portal.accp.tradecloud1.com), and click on "My Network" in the menu.
+2. Click on the pencil in the "Account Code" column, on the row of a test supplier.
+3. Enter the supplier account number that matches the test supplier in your ERP and save.
 
-Make sure you have familiarized yourself with [this checklist](../checklist.md). For a minimal PoC, it is important that you made design decisions related to:
-
-* [Delivery Schedules vs Single Deliveries](../api/delivery-schedule.md)
-* [Basic Authentication or JWT](../security/authentication). This example will assume you chose Basic Authentication, as this is suitable for most integrations.
-* [JSON vs XML](../api/json-vs-xml.md). This example will assume you use JSON. Minimal XML examples can be [provided upon request](../support.md).
-
-After you have set up a PoC, it is advised to go through the full [Checklist](../checklist.md) again and cover the remaining points.
-
-### 2. Getting an integration account
-
-Contact [Tradecloud Support](../support.md) to request an Integration account and some test suppliers.
-To gain access to the Tradecloud Acceptance environment, we will need:
-
-* 2 email addresses:
-  * **An integration email address**: This should be a non-personal email address, of which the mailbox is accessible to the integrator.
-  * **A buyer email address**: This can be a personal or non-personal email address, which will be used to log into the Web Portal.
-* Your company name
-* Company names of two suppliers you want to use for testing, including their supplier number in your ERP. We will initially add test accounts to these supplier companies, so your supplier will not be involved in testing the integration yet.
-
-Once you have received an integration account, you can test its username and password against `https://api.tradecloud1.com/v2/authentication/login` (See [Swagger API Specs](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/authentication/specs.yaml#/authentication/login))
-
-
+![](../.gitbook/assets/configure-supplier-account-number.png)
