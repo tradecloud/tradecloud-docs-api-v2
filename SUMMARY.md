@@ -27,7 +27,7 @@
   * [Encryption](security/encryption.md)
   * [Document storage](security/documents.md)
 
-## API Guide
+## Guide
 * [1. Getting an Account](guide/setup-integration-account.md)
 * [2. Setting up your Tradecloud Network](guide/setup-network-connections.md)
 * [3. Sending your first order](guide/sending-my-first-order.md)

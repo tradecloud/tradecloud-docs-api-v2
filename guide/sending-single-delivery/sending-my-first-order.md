@@ -36,6 +36,10 @@ Set the request body MIME-type to `application/json`.
         "name": "Round tube 60x45",
         "purchaseUnitOfMeasureIso": "PCE"
       },
+      "scheduledDelivery": {
+        "date": "2026-01-31",
+        "quantity": 5
+      },
       "prices": {
         "netPrice": {
           "priceInTransactionCurrency": {
@@ -45,10 +49,6 @@ Set the request body MIME-type to `application/json`.
         },
         "priceUnitOfMeasureIso": "PCE",
         "priceUnitQuantity": 100
-      },
-      "scheduledDelivery": {
-        "date": "2026-01-31",
-        "quantity": 5
       }
     },
     {

@@ -89,5 +89,5 @@ Set the request MIME-type to `application/xml`
 
 
 **That's all!**  
-You can now log into the [Web Portal](https://portal.accp.tradecloud1.com) and go to the Order overview page. Your test order should be visible to you and the test supplier.
+You can now log into the [Web Portal](https://portal.accp.tradecloud1.com) and go to the Order overview page. Your test order should be visible.
 
