@@ -123,4 +123,3 @@ When the poll response is empty, keep using the same timestamp until you get res
 - Your storage solution must survive application restarts or crashes
 - If the response contains no data, reuse your current `lastUpdatedAfter` value
 - For first-time polling, use a historical date to fetch existing records
-- **Empty responses**: Keep using the same timestamp until you get results
