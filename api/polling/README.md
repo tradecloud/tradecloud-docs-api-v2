@@ -3,9 +3,9 @@ description: >-
   Implementation guide for the polling pattern in Tradecloud API v2
 ---
 
-# Polling Pattern Implementation Guide
+# Polling pattern implementation guide
 
-The polling API offers an alternative to the webhook API for retrieving order updates. Both approaches have different advantages and considerations:
+The polling API offers an alternative to the webhook API for retrieving order or shipment updates. Both approaches have different advantages and considerations:
 
 {% page-ref page="../webhook-vs-polling.md" %}
 
@@ -30,7 +30,7 @@ Set up a scheduled process to fetch all orders or shipments that have been creat
 - Set `limit=100` (maximum allowed value) to control response size
 - Handle pagination when needed:
   - If response contains `total` > 100, not all updates were returned
-  - Either decrease polling frequency (recommended) or use `offset` parameter for paging
+  - Either decrease the polling period (recommended) or use `offset` parameter for paging
 
 #### Available endpoints
 
@@ -58,6 +58,7 @@ GET /v2/order-search/poll
 Implement logic to handle the fetched new or updated orders or shipments.
 
 #### Example response
+
 ```http
 {
   "data": [
@@ -95,7 +96,7 @@ Your poll results may include outdated data in case of a request. See [Polling E
 
 When working with order endpoints:
 
-- Use `data.lines.lastUpdatedAt` to identify which specific lines changed
+- Use `data.lines.lastUpdatedAt` to identify which specific lines changed since the `lastUpdatedAfter` time you provided.
 - Filter by status using `data.lines.status` fields:
   - `processStatus`
   - `inProgressStatus`
@@ -106,12 +107,14 @@ When working with order endpoints:
 
 When working with shipment endpoint:
 
-- Use `data.lines.meta.lastUpdatedAt` to identify changed shipment lines
+- Use `data.lines.meta.lastUpdatedAt` to identify changed shipment lines since the `lastUpdatedAfter` time you provided.
 - Filter by `data.status` to focus on relevant shipment statuses
 
 ### Step 3: Persist the timestamp
 
 Store the `lastUpdatedAt` value to use as `lastUpdatedAfter` in subsequent requests.
+
+When the poll response is empty, keep using the same timestamp until you get results.
 
 #### Implementation tips
 
@@ -120,8 +123,4 @@ Store the `lastUpdatedAt` value to use as `lastUpdatedAfter` in subsequent reque
 - Your storage solution must survive application restarts or crashes
 - If the response contains no data, reuse your current `lastUpdatedAfter` value
 - For first-time polling, use a historical date to fetch existing records
-
-#### Edge cases
-
-- **Initial setup**: Set `lastUpdatedAfter` to retrieve historical data as needed
 - **Empty responses**: Keep using the same timestamp until you get results
