@@ -5,85 +5,99 @@ description: >-
 
 # Delivery schedule versus single delivery
 
-Tradecloud works with a delivery schedule per order line.
-Each delivery line in a schedule consists of a position, delivery date and a quantity.
+Tradecloud supports two delivery methods for order lines:
 
-Some ERP systems like SAP work natively with multiple delivery lines per order line.
-Use [**delivery schedule**](#delivery-schedule) in this case.
+1. Delivery schedule — multiple scheduled deliveries per order line
+2. Single delivery — one scheduled delivery per order line
 
-Other ERP systems can only work with only one delivery per order line.
-Use [**single delivery**](#single-delivery) in this case.
+ERP system compatibility is an important consideration when choosing between delivery methods:
+
+- **Multiple deliveries support**: Some ERP systems (like SAP) natively support multiple deliveries per order line, making them fully compatible with Tradecloud's delivery schedule approach.
+- **Single delivery limitation**: Other ERP systems can only handle one delivery per order line. If your ERP system has this limitation, the [single delivery](#single-delivery) method is recommended for seamless integration.
 
 ## Delivery schedule
 
-The default is to send and receive a delivery schedule.
+The delivery schedule is the default method, where each order line can have multiple delivery lines. Each delivery line contains a position number, delivery date, and quantity. Delivery schedules represent Tradecloud's native approach to handling deliveries, as the platform is designed from the ground up to work with this structure.
 
 ### Sending an order with a delivery schedule
 
-When sending an order, use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint.
-
-The field `lines.deliverySchedule` contains the delivery schedule of this order line.
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint with the delivery schedule specified in the `lines.deliverySchedule` field.
 
 ### Receiving an order response with a delivery schedule
 
-When receiving an order response, the "Orders Webhook Integration" setting "My system supports" must be set to the default "**Multiple deliveries per order line**".
+There are two methods to receive order responses:
 
-Use the `orderEvent` field of the [order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+#### Method 1: Order webhook (Push)
 
-The field `lines.deliverySchedule` contains the current delivery schedule of this order line.
+- Ensure your "Orders Webhook Integration" setting has "My system supports" set to "**Multiple deliveries per order line**" (this is the default)
+- Process the `orderEvent` field in the [order webhook payload](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost)
 
-### `deliverySchedule` fields
+#### Method 2: Polling (Pull)
 
-* `position`: the position in the delivery schedule. Not to be confused with the `lines.position`.
+Use the [Poll orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint to periodically check for updates.
+
+With either method, the current delivery schedule will be in the `lines.deliverySchedule` field.
+
+### Delivery schedule fields
+
+- `position`: Position number in the delivery schedule (distinct from `lines.position`)
+- `date`: Requested delivery date (ISO 8601 format `yyyy-MM-dd`)
+- `quantity`: Requested quantity (decimal format, e.g. `1234.56`)
+- `status`: [Logistics status](#logistics-status) of this delivery line according to the buyer
+- `transportMode`: Required mode of transport for goods delivery. We recommend using [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) codes.
 
 {% hint style="warning" %}
-The `position` may be unassigned in case of a delivery line split by a supplier. The buyer ERP system must assign a position to the split delivery line and update the order line to Tradecloud.
+When a supplier splits a delivery line, the `position` may be unassigned. The buyer's ERP system must assign a position to the split delivery line and update the order line in Tradecloud.
 {% endhint %}
-
-* `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
-* `status`: The [logistics status](#logistics-status) of this delivery line according to the buyer.
-* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
 
 ## Single delivery
 
-The alternative is to send and receive a single delivery per order line.
+The single delivery method allows only one scheduled delivery per order line in the communications between Tradecloud and your ERP system. This approach simplifies order management for ERP systems that don't support multiple deliveries per line. With single delivery each order line has exactly one scheduled delivery date and quantity.
 
-### Sending an order with a single delivery
+### Sending an order with single delivery
 
-When sending an order, use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint.
+Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint with delivery details in the `lines.scheduledDelivery` field.
 
-The field `lines.scheduledDelivery` contains the scheduled delivery of this order line.
-
-Tradecloud will merge `scheduledDelivery`'s of order lines with the same item, prices and terms into one order line having a delivery schedule.
+{% hint style="info" %}
+When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule of the line with the matching position number.
+{% endhint %}
 
 ### Receiving an order response with single delivery
 
-When receiving an order response, you must have the "Orders Webhook Integration" setting "My system supports" set to "**Only one single delivery per order line**".
+There are two methods to receive order responses:
 
-Use the `singleDeliveryOrderEvent` field of the [order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
+#### Method 1: Order Webhook (Push)
 
-The field `lines.statusLine.scheduledDelivery` contains the current scheduled delivery of this order line.
+- Set your "Orders Webhook Integration" setting "My system supports" to "**Only one single delivery per order line**"
+- Process the `singleDeliveryOrderEvent` field in the [order webhook payload](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost)
 
- Tradecloud will split the delivery schedule into order line's having only one `lines.statusLine.scheduledDelivery`.
+#### Method 2: Polling (Pull)
+
+Use the [Poll single delivery orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersSingleDeliveryRoute) endpoint to periodically check for updates.
+
+With either method, the current delivery information will be in the `lines.statusLine.scheduledDelivery` field.
 
 {% hint style="warning" %}
-The order line `position` may be unassigned in case of an order line split by a supplier. The ERP system must assign a position to the split order line and update the order line to Tradecloud.
+When a supplier splits an order line, the new line's `position` may be unassigned. The buyer's ERP system must assign a new unique position identifier to this split line and update it in Tradecloud.
 {% endhint %}
 
-### `scheduledDelivery` fields
+{% hint style="warning" %}
+When updating a split order line in Tradecloud, the buyer's ERP system must include the `originalPosition` value that references the original line. This preserves the relationship between the split line and the original order line, ensuring proper tracking and data integrity.
+{% endhint %}
 
-* `date`: the requested delivery date of this order line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the requested quantity of this order line. Quantity has a decimal `1234.56` format with any number of digits.
-* `status`: The [logistics status](#logistics-status) of this scheduled delivery according to the buyer.
-* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
+### Scheduled delivery fields
 
-## Logistics status
+- `date`: Requested delivery date (ISO 8601 format `yyyy-MM-dd`)
+- `quantity`: Requested quantity (decimal format, e.g. `1234.56`)
+- `status`: [Logistics status](#logistics-status) of this scheduled delivery according to the buyer
+- `transportMode`: Required mode of transport for goods delivery. We recommend using [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) codes.
 
-The logistics status is one of:
+## Logistics Status
 
-* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
-* `Produced`: the delivery line quantity is produced by the supplier
-* `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
-* `Shipped`: the delivery line quantity is shipped by the supplier
-* `Delivered`: the delivery line quantity is delivered at the buyer
+The logistics status can be one of:
+
+- `Open`: No quantity or only partial quantity has been Produced, ReadyToShip, Shipped or Delivered
+- `Produced`: The full delivery line quantity has been produced by the supplier
+- `ReadyToShip`: The full delivery line quantity is ready for shipment by the supplier
+- `Shipped`: The full delivery line quantity has been shipped by the supplier
+- `Delivered`: The full delivery line quantity has been delivered to the buyer

@@ -5,67 +5,57 @@ description: >-
 
 # Send a delivery schedule
 
-## Delivery schedule versus single delivery
+## Delivery methods overview
 
-Tradecloud works with a delivery schedule per order line.
-Each delivery line in a schedule consists of a position, delivery date and a quantity.
+Tradecloud supports two delivery methods for order lines:
 
-Some ERP systems like SAP work natively with multiple delivery lines per order line.
-Use the [delivery schedule](#delivery-schedule) in this case.
+1. **[Delivery schedule](#delivery-schedule)** — multiple scheduled deliveries per order line
+2. **[Single delivery](#single-delivery)** — one scheduled delivery per order line
 
-Other ERP systems can only work with only one delivery per order line.
-Use the [single delivery](#single-delivery) in this case.
+Each delivery contains a position number, delivery date, and quantity.
 
-Sending a single delivery per order line is only available for buyers at this moment.
+Some ERP systems like SAP natively support multiple deliveries per order line, while others only support one delivery per order line.
 
 ## Delivery schedule
 
-Use the field `lines.deliverySchedule` to issue the delivery schedule of this order line.
+Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint with the delivery schedule specified in the `lines.deliverySchedule` field.
 
-Provide at least one or multiple delivery schedule lines. The total number of delivery lines is limited to 100 lines per order line.
-
-Use the [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute) endpoint.
+You can include multiple delivery lines, up to a maximum of 100 lines per order line.
 
 ### `deliverySchedule` fields
 
-* `position`: the mandatory position in the delivery schedule. Not to be confused with the `lines.position`.
+- `position`: Position number in the delivery schedule (distinct from `lines.position`)
 
 {% hint style="warning" %}
-The `position` must be unique within the delivery schedule and never change. Never renumber or re-use a `position`.
+The `position` must be unique within the delivery schedule and should never change. Never renumber or reuse a `position` value.
 {% endhint %}
 
-* `date`: the requested delivery date of this delivery schedule position. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the requested quantity of this delivery schedule position. Quantity has a decimal `1234.56` format with any number of digits.
-* `status`: The [logistics status](#logistics-status) of this delivery line according to the buyer.
-* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
+- `date`: Requested delivery date (ISO 8601 format `yyyy-MM-dd`)
+- `quantity`: Requested quantity (decimal format, e.g. `1234.56`)
+- `status`: [Logistics status](#logistics-status) of this delivery line
+- `transportMode`: Required mode of transport for goods delivery. We recommend using [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) codes.
 
 ## Single delivery
 
-Use the field `lines.scheduledDelivery` to issue the scheduled delivery of this order line.
+Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint with delivery details in the `lines.scheduledDelivery` field.
 
-Provide only one single `scheduledDelivery` per order line. The total number of `scheduledDelivery`'s is limited to 100 deliveries per item number.
-
-Use the [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute) endpoint.
+Provide only one `scheduledDelivery` per order line, with a maximum of 100 deliveries per `originalPosition` across all order lines.
 
 {% hint style="info" %}
-Tradecloud represents order lines having the same item, prices and terms as one order line having a delivery schedule.
-
-Tradecloud will merge `scheduledDelivery`'s of order lines with the same item, prices and terms into one order line having a delivery schedule.
-
-The `lines.position` will be taken as `deliverySchedule.position`.
+When order lines contain an `originalPosition` reference, Tradecloud automatically merges their `scheduledDelivery` and `actualDelivery` properties into the delivery schedule and history of the line with the matching position number.
 {% endhint %}
 
 ### `scheduledDelivery` fields
 
-* `date`: the requested delivery date of this order line. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-* `quantity`: the requested quantity of this order line. Quantity has a decimal `1234.56` format with any number of digits.
-* `status`: The [logistics status](#logistics-status) of this scheduled delivery according to the buyer.
-* `transportMode`: The Mode of Transport used for the delivery of goods as required by the buyer. [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) is advised for Codes for Modes of Transport.
+- `date`: Requested delivery date (ISO 8601 format `yyyy-MM-dd`)
+- `quantity`: Requested quantity (decimal format, e.g. `1234.56`)
+- `status`: [Logistics status](#logistics-status) of this scheduled delivery
+- `transportMode`: Required mode of transport for goods delivery. We recommend using [UNECE.org Recommendation 19](https://tfig.unece.org/contents/recommendation-19.htm) codes.
 
 ## Logistics status
 
-The logistics status is one of:
+The logistics status can be one of:
 
-* `ReadyToShip`: full quantity ready to be shipped by the supplier
-* `Shipped`: full quantity shipped by the supplier
-* `Delivered`: full quantity delivered at the buyer
+- `ReadyToShip`: The full delivery line quantity is ready for shipment by the supplier
+- `Shipped`: The full delivery line quantity has been shipped by the supplier
+- `Delivered`: The full delivery line quantity has been delivered to the buyer
