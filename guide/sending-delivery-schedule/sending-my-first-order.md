@@ -1,6 +1,6 @@
 # Option A: Sending a Delivery Schedule per order line
 
-This page explains how to request deliveries for order lines by means of a Delivery Schedule. A Delivery Schedule can contain 0, 1 or multiple requested deliveries for a single order line.
+This page explains how to request deliveries for order lines by means of a Delivery Schedule. A Delivery Schedule can contain 1 or multiple requested deliveries for a single order line.
 
 ### Sending the order
 
