@@ -1,11 +1,11 @@
-# Sending your first order
+# 2. Sending your first order
 
 Sending an order with only minimal data to Tradecloud is quite simple:
 
 1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order`
 2. Set the HTTP Method to `POST`
 3. Provide a **Basic Authentication** header, which contains the [username and password](getting-started.md#2-getting-an-integration-account) of the [integration account](setup-integration-account.md).
-4. Provide the request body below. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](setup-network-connections.md) for a test supplier.
+4. Provide the request body below. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you [provided](setup-integration-account.md) for a test supplier.
 
 
 {% tabs %}

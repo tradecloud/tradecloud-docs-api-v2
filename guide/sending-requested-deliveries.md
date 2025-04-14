@@ -1,4 +1,4 @@
-# Sending Requested Deliveries
+# 3. Sending requested Deliveries
 
 Tradecloud supports two delivery methods for order lines:
 
