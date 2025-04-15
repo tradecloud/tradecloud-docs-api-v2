@@ -87,10 +87,10 @@ Set the request MIME-type to `application/xml`
 			<date>2026-01-31</date>
 			<quantity>5</quantity>
 		</deliveryScheduleLine>
-        <deliveryScheduleLine>
-            <date>2026-02-07</date>
-            <quantity>10</quantity>
-        </deliveryScheduleLine>
+		<deliveryScheduleLine>
+			<date>2026-02-07</date>
+			<quantity>10</quantity>
+		</deliveryScheduleLine>
 		<prices>
 			<netPrice>
 				<priceInTransactionCurrency>
