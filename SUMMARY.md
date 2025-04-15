@@ -27,6 +27,12 @@
   * [Encryption](security/encryption.md)
   * [Document storage](security/documents.md)
 
+## Guide
+* [1. Getting an Account](guide/setup-integration-account.md)
+* [2. Sending your first order](guide/sending-my-first-order.md)
+  * [Option A: Sending a Delivery Schedule per order line](guide/sending-delivery-schedule/sending-my-first-order.md)
+  * [Option B: Sending a Single Delivery per order line](guide/sending-single-delivery/sending-my-first-order.md)
+
 ## Processes
 
 * [Forecasts](forecast/README.md)
