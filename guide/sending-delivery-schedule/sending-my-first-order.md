@@ -7,7 +7,7 @@ This page explains how to send your first order with a Delivery Schedule. A Deli
 1. Set the URL to `https://api.accp.tradecloud1.com/v2/api-connector/order`
 2. Set the HTTP Method to `POST`
 3. Provide a **Basic Authentication** header, which contains the [username and password](../setup-integration-account.md) of the integration account.
-4. Provide the JSON below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](#configure-the-supplier-account-number) for a test supplier.
+4. Provide the JSON below as the request body. Make sure you replace `{{supplierAccountNumber}}` with the supplier account number you have [configured](../setup-integration-account.md) for a test supplier.
 
 
 {% tabs %}
