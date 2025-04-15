@@ -4,7 +4,7 @@ In order to get an Integration account and a test supplier:
 
 1. Send an email to [Tradecloud Support](../support.md) including:
    * 2 email addresses:
-     * **An integration email address**: This should be a non-personal email address on a company domain like `tradecloud@company.com`. The email address must have an mailbox to receive an invite email.
+     * **An integration email address**: This should be a non-personal email address on a company domain like `tradecloud@company.com`. The email address must have a mailbox to receive an invite email.
      * **A buyer email address**: This can be a personal email address on a company domain like `firstname.lastname@company.com`. This email will be used to log into the Web Portal.
    * Your company name
    * For a test supplier:
