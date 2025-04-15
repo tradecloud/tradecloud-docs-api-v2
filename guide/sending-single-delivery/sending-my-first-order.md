@@ -1,6 +1,6 @@
 # Option B: Sending a Single Delivery per order line
 
-This page explains how to request deliveries for order lines by means of a Single Delivery per order line.
+This page explains how to send your first order with a Single Delivery per order line.
 
 ### Sending the order
 

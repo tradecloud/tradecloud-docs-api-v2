@@ -1,6 +1,6 @@
 # 1. Getting an Integration Account
 
-In order to get an Integration account and a fake test supplier:
+In order to get an Integration account and a test supplier:
 
 1. Send an email to [Tradecloud Support](../support.md) including:
    * 2 email addresses:
@@ -8,7 +8,7 @@ In order to get an Integration account and a fake test supplier:
      * **A buyer email address**: This can be a personal email address on a company domain like `firstname.lastname@company.com`. This email will be used to log into the Web Portal.
    * Your company name
    * For a test supplier:
-     * The legal company name of a supplier
+     * The company name of a supplier
      * The account or relation number that the supplier has in your ERP.
      
      In order to develop the integration, you only need to provide this information for one arbitrary supplier in your ERP.

@@ -1,6 +1,6 @@
 # Option A: Sending a Delivery Schedule per order line
 
-This page explains how to request deliveries for order lines by means of a Delivery Schedule. A Delivery Schedule can contain 1 or multiple requested deliveries for a single order line.
+This page explains how to send your first order with a Delivery Schedule. A Delivery Schedule can contain 1 or multiple requested deliveries for a single order line.
 
 ### Sending the order
 
@@ -35,16 +35,6 @@ Set the request body MIME-type to `application/json`.
         "name": "Round tube 60x45",
         "purchaseUnitOfMeasureIso": "PCE"
       },
-      "prices": {
-        "netPrice": {
-          "priceInTransactionCurrency": {
-            "value": 1234.56,
-            "currencyIso": "EUR"
-          }
-        },
-        "priceUnitOfMeasureIso": "PCE",
-        "priceUnitQuantity": 100
-      },
       "deliverySchedule": [
         {
           "date": "2026-01-31",
@@ -54,7 +44,17 @@ Set the request body MIME-type to `application/json`.
           "date": "2026-02-07",
           "quantity": 10
         }
-      ]
+      ],
+      "prices": {
+        "netPrice": {
+          "priceInTransactionCurrency": {
+            "value": 1234.56,
+            "currencyIso": "EUR"
+          }
+        },
+        "priceUnitOfMeasureIso": "PCE",
+        "priceUnitQuantity": 100
+      }
     }
   ]
 }
