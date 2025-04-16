@@ -13,7 +13,7 @@ Tradecloud has two environments available for customers:
 
 There is one production environment a.k.a. LIVE environment. The latest features will be made available by the Tradecloud continuous delivery process.
 
-It has an availability Service Level Objective of 95% per month.
+The production environment is subject to a platform Service Level Agreement (SLA) guaranteeing 99.5% uptime, measured on an annual basis. This applies on Dutch working days, during office hours from 09:00 to 18:00 CE(S)T.
 
 #### Documentation
 
@@ -37,13 +37,13 @@ Maintenance can be planned on working days from 19:00 to 23:00 UTC \(20:00 to 00
 
 Please subscribe to the status updates using the blue button on the top right of the [Tradecloud status page](http://status.tradecloud1.com).
 
-## Acceptance test environment
+## Acceptance-testing environment
 
-There is one [acceptance test environment](https://api.accp.tradecloud1.com).
+There is one [acceptance-testing environment](https://api.accp.tradecloud1.com).
 
 Buyers and suppliers can test new features and develop and test their Tradecloud API integration. The latest features will be made available by the Tradecloud continuous delivery process.
 
-It has an availability Service Level Objective of 90% per month.
+The acceptance-testing environment is not covered by a platform availability SLA.
 
 #### Documentation
 
