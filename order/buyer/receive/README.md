@@ -12,8 +12,8 @@ Tradecloud sends purchase order responses to buyers when order events are trigge
 
 You must choose between two methods to receive order responses:
 
-- **Webhook API (Push)**: Tradecloud pushes responses to your system
-- **Polling API (Pull)**: Your system periodically checks for new responses
+- **Webhook API (Push)**: Tradecloud pushes order events to your system.
+- **Polling API (Pull)**: Your system periodically checks for order updates.
 
 For details on choosing between these methods:
 
@@ -40,14 +40,20 @@ If you're using single delivery format, please see:
 
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
+The webhook body contains:
+
 - `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
 - `orderEvent`: Contains the actual order event
 
 ### Using the polling API
 
-Use the [POST poll](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint.
+Use the [POST poll orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint.
 
-- `order`: Contains the actual order in its current state
+The polling response body contains:
+
+- `data`: Contains the actual orders in its current state
+- `total`: The total no. of matching orders, independent of paging.
+- `lastUpdatedAt`: Store the `lastUpdatedAt` value to use as `lastUpdatedAfter` in subsequent requests.
 
 ## Response structure
 
