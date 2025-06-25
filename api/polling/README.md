@@ -26,8 +26,9 @@ Set up a scheduled process to fetch all orders or shipments that have been creat
 #### Polling best practices
 
 - Use a consistent polling interval (typically 5 minutes)
-- Include the `lastUpdatedAt` from previous poll response as the `lastUpdatedAfter` filter
-- Set `limit=100` (maximum allowed value) to control response size
+- Include the `lastUpdatedAt` timestamp from previous poll response as the `lastUpdatedAfter` filter
+  - **Do not use the current time** (system clock) for `lastUpdatedAfter`
+- Set `limit=100` (the maximum allowed value) to control response size
 - Handle pagination when needed:
   - If response contains `total` > 100, not all updates were returned
   - Either decrease the polling period (recommended) or use `offset` parameter for paging
@@ -52,6 +53,42 @@ GET /v2/order-search/poll
   "limit": 100
 }
 ```
+
+#### Buyer: filter on Confirmed orders
+
+Optionally, the buyer can filter on Confirmed orders and ignore orders with other statuses.
+
+```http
+GET /v2/order-search/poll
+
+{
+  "filters": {
+    "processStatus": ["Confirmed"],
+    "lastUpdatedAfter": "2025-04-23T10:01:53.812Z"
+  },
+  "limit": 100
+}
+```
+
+The buyer will only receive confirmed orders when **all lines are confirmed**. The buyer may still receive order lines with different process or logistics statuses, such as Cancelled or Delivered. The status fields in the response can be used to filter order lines accordingly.
+
+#### Suppliers: filter on Issued orders
+
+Optionally, the supplier can filter on Issued orders and ignore orders with other statuses.
+
+```http
+GET /v2/order-search/poll
+
+{
+  "filters": {
+    "processStatus": ["Issued"],
+    "lastUpdatedAfter": "2025-04-23T10:01:53.812Z"
+  },
+  "limit": 100
+}
+```
+
+The supplier may still receive **Issued orders that have been updated** by the buyer. Check if the order already exists and either ignore the update or update the existing order.
 
 ### Step 2: Process retrieved data
 
@@ -96,8 +133,9 @@ Your poll results may include outdated data in case of a request. See [Polling E
 
 When working with order endpoints:
 
+- The supplier must check if the order already exists and either ignore the update or update the existing order
 - Use `data.lines.lastUpdatedAt` to identify which specific lines changed since the `lastUpdatedAfter` time you provided.
-- Filter by status using `data.lines.status` fields:
+- Filter by order and line status using `data.status` and `data.lines.status` fields:
   - `processStatus`
   - `inProgressStatus`
   - `logisticsStatus`
@@ -119,7 +157,9 @@ When the poll response is empty, keep using the same timestamp until you get res
 #### Implementation tips
 
 - The timestamp has format `YYYY-MM-DDThh:mm:ss.SSSZ` (ISO 8601)
-- Store this in **persistent storage** (database, file system, etc.)
-- Your storage solution must survive application restarts or crashes
+- The `Z` timezone indicator must be persisted and applied in the next polling request
+- Persisting **the complete timestamp as a string** is recommended to avoid timezone conversion issues
+- Store this in **persistent storage** (database or file system)
+- Your storage solution **must survive application restarts or crashes**
 - If the response contains no data, reuse your current `lastUpdatedAfter` value
-- For first-time polling, use a historical date to fetch existing records
+- For first-time polling, use a well chosen historical date to fetch or skip existing orders
