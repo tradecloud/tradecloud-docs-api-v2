@@ -14,17 +14,17 @@ The Tradecloud API provides two data formats:
 - **JSON**: The default format for all API endpoints
 - **tXML**: A proprietary XML format available for specific endpoints
 
-Both formats contain identical data structures and functionality - tXML is a 1-on-1 translation of the JSON format.
+Both formats contain identical data structures and functionality - tXML is a one-to-one mapping of the JSON format.
 
 ## When to use each format
 
-### Use JSON when:
+### Use JSON when
 
 - Building new modern integrations (recommended)
 - Implementing REST API clients
 - You need smaller payload sizes
 
-### Use tXML when:
+### Use tXML when
 
 - Integrating with legacy systems that require XML
 - Working with enterprise middleware that requires XML

@@ -13,9 +13,9 @@ The polling API offers an alternative to the webhook API for retrieving order or
 
 The polling pattern consists of three essential steps:
 
-1. **Fetch** - Retrieve orders or shipments changed since the last poll
-2. **Process** - Handle the retrieved new or updated data
-3. **Persist** - Store the latest timestamp for the next polling cycle
+1. **Fetch** - Retrieve orders or shipments changed since the last poll.
+2. **Process** - Handle the retrieved new or updated data.
+3. **Persist** - Store the latest timestamp for the next polling cycle.
 
 ## Implementation steps
 
@@ -26,12 +26,12 @@ Set up a scheduled process to fetch all orders or shipments that have been creat
 #### Polling best practices
 
 - Use a consistent polling interval (typically 5 minutes)
-- Include the `lastUpdatedAt` timestamp from previous poll response as the `lastUpdatedAfter` filter
-  - **Do not use the current time** (system clock) for `lastUpdatedAfter`
-- Set `limit=100` (the maximum allowed value) to control response size
+- Include the `lastUpdatedAt` timestamp from previous poll response as the `lastUpdatedAfter` filter.
+  - **Do not use the current time** (system clock) for `lastUpdatedAfter` – clock skew or availability issues can cause you to miss updates.
+- Set `limit=100` (the maximum allowed value) to control response size.
 - Handle pagination when needed:
-  - If response contains `total` > 100, not all updates were returned
-  - Either decrease the polling period (recommended) or use `offset` parameter for paging
+  - If response contains `total` > 100, not all updates were returned.
+  - Either decrease the polling period (recommended) or use `offset` parameter for paging.
 
 #### Available endpoints
 
@@ -72,7 +72,8 @@ GET /v2/order-search/poll
 }
 ```
 
-The buyer will only receive confirmed orders when **all lines are confirmed**. The buyer may still receive order lines with different process or logistics statuses, such as Cancelled or Delivered. The status fields in the response can be used to filter order lines accordingly.
+- The buyer receives an order only when **all lines are confirmed** at order level.  
+- Individual order lines can still contain different process or logistics statuses (for example, *Cancelled* or *Delivered*). Use the line-level status fields to filter these lines as required.
 
 #### Suppliers: filter on Issued orders
 
@@ -137,9 +138,9 @@ Your poll results may include outdated data in case of a request. See [Polling E
 
 When working with order endpoints:
 
-- The supplier must check if the order already exists and either ignore the update or update the existing order
-- Use `data.lines.lastUpdatedAt` to identify which specific lines changed since the `lastUpdatedAfter` time you provided.
-- Filter by order and line status using `data.status` and `data.lines.status` fields:
+- The supplier must check whether the order already exists and either ignore the update or update the existing order.
+- Use `data.lines.lastUpdatedAt` to identify which specific lines have changed since the `lastUpdatedAfter` time you provided.
+- Filter by order- and line-level status using `data.status` and `data.lines.status` fields:
   - `processStatus`
   - `inProgressStatus`
   - `logisticsStatus`
@@ -160,10 +161,9 @@ When the poll response is empty, keep using the same timestamp until you get res
 
 #### Implementation tips
 
-- The timestamp has format `YYYY-MM-DDThh:mm:ss.SSSZ` (ISO 8601)
-- The `Z` timezone indicator must be persisted and applied in the next polling request
-- Persisting **the complete timestamp as a string** is recommended to avoid timezone conversion issues
-- Store this in **persistent storage** (database or file system)
-- Your storage solution **must survive application restarts or crashes**
-- If the response contains no data, reuse your current `lastUpdatedAfter` value
-- For first-time polling, use a well chosen historical date to fetch or skip existing orders
+- The `Z` timezone indicator must be persisted and sent with the next polling request.
+- Persist **the complete timestamp string** to prevent timezone conversion issues.
+- Store it in **durable storage** (database or file system).
+- Your storage solution **must survive application restarts or crashes**.
+- If the response contains no data, reuse the current `lastUpdatedAfter` value.
+- For first-time polling, use a well-chosen historical date to retrieve or skip existing orders.
