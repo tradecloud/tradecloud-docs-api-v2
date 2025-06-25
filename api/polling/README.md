@@ -63,7 +63,9 @@ GET /v2/order-search/poll
 
 {
   "filters": {
-    "processStatus": ["Confirmed"],
+    "status": {
+      "processStatus": ["Confirmed"]
+    },
     "lastUpdatedAfter": "2025-04-23T10:01:53.812Z"
   },
   "limit": 100
@@ -81,7 +83,9 @@ GET /v2/order-search/poll
 
 {
   "filters": {
-    "processStatus": ["Issued"],
+    "status": {
+      "processStatus": ["Issued"]
+    },
     "lastUpdatedAfter": "2025-04-23T10:01:53.812Z"
   },
   "limit": 100
