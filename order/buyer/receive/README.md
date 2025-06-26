@@ -44,6 +44,7 @@ The webhook body contains:
 
 - `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
 - `orderEvent`: Contains the actual order event
+- `meta`: The message meta information, see [Message meta information](#message-meta-information)
 
 ### Using the polling API
 
@@ -52,7 +53,7 @@ Use the [POST poll orders](https://swagger-ui.accp.tradecloud1.com/?url=https://
 The polling response body contains:
 
 - `data`: Contains the actual orders in its current state
-- `total`: The total no. of matching orders, independent of paging.
+- `total`: The total no. of matching orders, regardless of paging.
 - `lastUpdatedAt`: Store the `lastUpdatedAt` value to use as `lastUpdatedAfter` in subsequent requests.
 
 ## Response structure
@@ -354,3 +355,14 @@ The supplier may check, change and add item details if they are not correct or i
 * `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that identify dangerous goods, hazardous substances and articles in the framework of international transport.
 * `serialNumber`: is an unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
 * `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer
+
+## Message meta information
+
+- `messageId`: The Tradecloud identifier of this message
+- `source`: Includes meta information about the source of this message:
+
+  - `traceId`: The Tradecloud trace identifier of this message. All related messages in a flow will have the same traceId
+  - `userId`: The Tradecloud user identifier which triggered the first message in a flow
+  - `companyId`: The Tradecloud company identifier which triggered the first message in a flow
+
+- `createdDateTime`: Date and time with time zone when this message was created

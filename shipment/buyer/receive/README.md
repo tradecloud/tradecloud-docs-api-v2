@@ -10,7 +10,7 @@ Tradecloud sends shipment events to buyers when a shipment event is triggered.
 The shipment module is under development. The API and documentation may change.
 {% endhint %}
 
-### Choose your API method
+## Choose your API method
 
 You must choose between two methods to receive shipment events:
 
@@ -29,7 +29,7 @@ Use the [POST shipment webhook](https://swagger-ui.accp.tradecloud1.com/?url=htt
 
 The webhook body contains:
 
-- `eventName`: The shipment event name, currently:
+- `eventName`: The shipment event name, currently
   - `ShipmentIssuedBySupplier`
   - `ShipmentReissuedBySupplier`
   - `ShipmentApprovedByBuyer`
@@ -48,7 +48,7 @@ Use the [POST poll shipments](https://swagger-ui.accp.tradecloud1.com/?url=https
 The polling response body contains:
 
 - `data`: The actual shipment states
-- `total`: The total number of matching shipments, independent of paging
+- `total`: The total number of matching shipments, regardless of paging
 - `lastUpdatedAt`: Store the `lastUpdatedAt` value to use as `lastUpdatedAfter` in subsequent requests
 
 ## Shipment state
@@ -235,7 +235,7 @@ Estimated start and end date/times indicate the scheduled time window of arrival
   - `PlaceOfDestination` (used with CPT, CIP)
   - `FinalDestination` (used with DAP, DPU, DDP)
 
-- `id`: The required identifier for the location, in context of `idSchema`
+- `id`: The required identifier for the location, in context of `idScheme`
 - `idScheme`: Scheme providing context to the location identifier, like [GLN](https://www.gs1.org/standards/id-keys/gln)
 - `names`: One or more location names. It is recommended to provide at least one name
 - `addressLines`: One or more location address lines
