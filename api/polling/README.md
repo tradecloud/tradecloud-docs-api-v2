@@ -27,7 +27,7 @@ Set up a scheduled process to fetch all orders or shipments that have been creat
 
 - Use a consistent polling interval (typically 5 minutes)
 - Include the `lastUpdatedAt` timestamp from previous poll response as the `lastUpdatedAfter` filter.
-  - **Do not use the current time** (system clock) for `lastUpdatedAfter` – clock skew or availability issues can cause you to miss updates.
+  - **Do not use the system clock time** for `lastUpdatedAfter` – clock skew or availability issues can cause you to miss updates.
 - Set `limit=100` (the maximum allowed value) to control response size.
 - Handle pagination when needed:
   - If response contains `total` > 100, not all updates were returned.
