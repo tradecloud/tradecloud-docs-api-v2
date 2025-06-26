@@ -5,7 +5,7 @@ description: >-
 
 # JSON versus XML
 
-The Tradecloud API supports both JSON and XML formats to accommodate different integration requirements and legacy systems. This guide helps you understand the differences and choose the appropriate format for your implementation.
+The Tradecloud API supports both JSON and XML formats to support different integration requirements. This guide explains how to choose the appropriate format for your implementation.
 
 ## Overview
 
