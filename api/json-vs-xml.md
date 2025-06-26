@@ -20,25 +20,17 @@ Both formats contain identical data structures and functionality - tXML is a one
 
 ### Use JSON when
 
-- Building new modern integrations (recommended)
+- Building new modern integrations
 - Implementing REST API clients
-- You need smaller payload sizes
 
 ### Use tXML when
 
-- Integrating with legacy systems that require XML
+- Integrating with ERP systems that require XML
 - Working with enterprise middleware that requires XML
-- Your existing infrastructure is XML-based
 
 ## JSON Format
 
 JSON is the **default and recommended format** for all Tradecloud API endpoints.
-
-### Advantages
-
-- Smaller payload size & faster parsing
-- Better human readability
-- Widely supported across programming languages
 
 ### Implementation
 
@@ -71,43 +63,15 @@ The following API endpoints support tXML format:
 
 To use tXML format, set the `Content-Type` header to `application/xml` in your HTTP requests.
 
-### Viewing tXML Examples
+For detailed tXML structure and examples, see the [XML body format documentation](requests.md#xml-body).
+
+#### Viewing tXML Examples
 
 You can view tXML examples in the Swagger UI documentation:
 
 1. Open the endpoint in Swagger UI
 2. In the "Parameter content type" dropdown, select "application/xml"
 3. The "Example Value" section will show the tXML structure
-
-#### API Endpoints
-
-- [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
-- [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute)
-
-![Select order API XML content type](../.gitbook/assets/select-order-api-xml-content-type.png)
-
-[Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute)
-
-![Select order response API XML content type](../.gitbook/assets/select-order-response-api-xml-content-type.png)
-
-#### Webhook Endpoints
-
-[Order Webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost)
-
-![Select order webhook XML content type](../.gitbook/assets/select-order-webhook-xml-content-type.png)
-
-For detailed tXML structure and examples, see the [XML body format documentation](requests.md#xml-body).
-
-## Format Compatibility
-
-Both JSON and tXML formats:
-
-- Contain identical data structures
-- Support the same business logic
-- Provide the same validation rules
-- Return equivalent responses
-
-You can switch between formats without losing functionality, making it easy to migrate from one format to another as your integration requirements evolve.
 
 ## Getting Additional tXML Support
 
