@@ -31,7 +31,7 @@ Set up a scheduled process to fetch all orders or shipments that have been creat
 - Set `limit=100` (the maximum allowed value) to control response size.
 - Handle pagination when needed:
   - If response contains `total` > 100, not all updates were returned.
-  - Either decrease the polling period (recommended) or use `offset` parameter for paging.
+  - Either decrease the polling period (recommended) or use the `offset` parameter for paging.
 
 #### Available endpoints
 
@@ -93,7 +93,8 @@ GET /v2/order-search/poll
 }
 ```
 
-The supplier may still receive **Issued orders that have been updated** by the buyer. Check if the order already exists and either ignore the update or update the existing order.
+- The supplier may still receive **Issued orders that have been updated** by the buyer.
+- If you are a supplier, check if the purchase order already exists in your ERP system and either ignore the update or update the existing order.
 
 ### Step 2: Process retrieved data
 
@@ -131,14 +132,14 @@ Implement logic to handle the fetched new or updated orders or shipments.
 ```
 
 {% hint style="warning" %}
-Your poll results may include outdated data in case of a request. See [Polling Echo Handling](echo.md) for managing outdated data.
+Your poll results may include outdated data in case of an echo from a recent request. See [Polling Echo Handling](echo.md) for managing outdated data.
 {% endhint %}
 
 #### Order processing tips
 
 When working with order endpoints:
 
-- The supplier must check whether the order already exists and either ignore the update or update the existing order.
+- The supplier must check whether the purchase order already exists in their ERP system and either ignore the update or update the existing order.
 - Use `data.lines.lastUpdatedAt` to identify which specific lines have changed since the `lastUpdatedAfter` time you provided.
 - Filter by order- and line-level status using `data.status` and `data.lines.status` fields:
   - `processStatus`
@@ -148,7 +149,7 @@ When working with order endpoints:
 
 #### Shipment processing tips
 
-When working with shipment endpoint:
+When working with the shipment endpoint:
 
 - Use `data.lines.meta.lastUpdatedAt` to identify changed shipment lines since the `lastUpdatedAfter` time you provided.
 - Filter by `data.status` to focus on relevant shipment statuses

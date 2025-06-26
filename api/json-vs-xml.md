@@ -75,7 +75,7 @@ To use tXML format, set the `Content-Type` header to `application/xml` in your H
 
 You can view tXML examples in the Swagger UI documentation:
 
-1. Navigate to the desired endpoint in the API documentation
+1. Open the endpoint in Swagger UI
 2. In the "Parameter content type" dropdown, select "application/xml"
 3. The "Example Value" section will show the tXML structure
 
