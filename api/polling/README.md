@@ -162,7 +162,7 @@ When the poll response is empty, keep using the same timestamp until you get res
 
 #### Implementation tips
 
-- The `Z` timezone indicator must be persisted and sent with the next polling request.
+- The timestamp has format `YYYY-MM-DDThh:mm:ss.SSSZ` (ISO 8601). Persist the full timestamp, including the  `Z` timezone indicator, and send it back with the next polling request.
 - Persist **the complete timestamp string** to prevent timezone conversion issues.
 - Store it in **durable storage** (database or file system).
 - Your storage solution **must survive application restarts or crashes**.
