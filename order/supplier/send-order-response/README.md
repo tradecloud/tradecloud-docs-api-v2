@@ -73,7 +73,7 @@ The `buyerAccountNumber` should be set in the Tradecloud connection in the porta
 
 ## Lines
 
-- `lines`: a purchase order response contains one or multiple lines. A purchase order line contains at least the position and delivery schedule. It is structured as a JSON element in the `lines` JSON array.
+- `lines`: a purchase order response contains one or multiple lines. A purchase order line contains at least the position. It is structured as a JSON element in the `lines` JSON array.
   - `purchaseOrderLinePosition`: the line position within the purchase order.
 
 {% hint style="warning" %}
@@ -135,6 +135,10 @@ The supplier may check, change, and add item details if they are not correct or 
       - `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
   - `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
   - `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items).
+
+{% hint style="info" %}
+Fields `priceUnitOfMeasureIso` and `priceUnitQuantity` will be copied from the buyer order line, when left empty by the supplier.
+{% endhint %}
 
 ### Responded charge lines
 
