@@ -62,7 +62,6 @@
     * [Send order response](order/supplier/send-order-response/README.md)
       * [Attach a document to an order response](order/supplier/send-order-response/attach-document.md)
     * [Reopen an order](order/supplier/reopen.md)
-    * [Cancel an order](order/supplier/cancel.md)
 * [Shipments](shipment/README.md)
   * [Supplier shipment process](shipment/supplier/README.md)
     * [Send despatch advice](shipment/supplier/send-despatch-advice.md)
