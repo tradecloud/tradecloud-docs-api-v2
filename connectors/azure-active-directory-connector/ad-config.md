@@ -13,7 +13,7 @@ Only the users you allow (using an AD conditional access policy) are synced to T
 A new Active Directory user is automatically created in your Tradecloud company.
 
 {% hint style="info" %}
-The Azure AD Connector is an add-on. Contact sales@tradecloud1.com for info.
+The Azure AD Connector is an add-on. Contact [sales@tradecloud1.com](sales@tradecloud1.com) for info.
 {% endhint %}
 
 ## Configure Azure AD for authentication
@@ -53,7 +53,7 @@ While setting up your token configuration, add the following claims:
 | given_name  | Provides the first or "given" name of the user, as set on the user object                                                                              | ID         |
 | upn         | An identifier for the user that can be used with the username_hint parameter; not a durable identifier for the user and should not be used to key data | ID         |
 
-![Token Configuration](../.gitbook/assets/image%20%288%29.png)
+![Claims](../.gitbook/assets/azure-claims.png)
 
 ### Add permissions
 
@@ -67,26 +67,24 @@ While setting up your permissions, configure the following settings:
 
 | Permission Section    | Permission        | Description                                             |
 | :-------------------- | :---------------- | :------------------------------------------------------ |
-| Delegated permissions | email<br/>profile | View users' email address<br/>View users' basic profile |
-
-![Permissions](../.gitbook/assets/image (8).png)
+| Delegated permissions | email profile     | View users' email address, View users' basic profile    |
 
 ### Set Redirect URI
 
 Select the option to set Redirect URI:
 
-![Redirect URI Option](../.gitbook/assets/image (7).png)
+![Redirect URI Option](../.gitbook/assets/azure-select-redirect.png)
 
 Select the platform as Single page application:
 
-![Platform Selection](../.gitbook/assets/image (6).png)
+![Platform Selection](../.gitbook/assets/azure-select-spa.png)
 
 Set the Redirect URI value to [https://portal.tradecloud1.com/msal-callback/login](https://portal.tradecloud1.com/msal-callback/login) and save:
 
-![Redirect URI Configuration](../.gitbook/assets/image%20%2810%29.png)
+![Redirect URI Configuration](../.gitbook/assets/azure-spa-redirect.png)
 
 ### Send credentials to Tradecloud
 
 Send client ID and tenant ID to Tradecloud so that one of the engineers can configure SSO for you.
 
-![Client and Tenant IDs](../.gitbook/assets/image (2).png)
+![Client and Tenant IDs](../.gitbook/assets/azure-ids.png)
