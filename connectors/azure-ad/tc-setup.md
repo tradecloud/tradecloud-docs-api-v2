@@ -12,13 +12,13 @@ This configuration is performed by Tradecloud support team. Please provide the r
 
 ## Overview
 
-After configuring Azure AD (as described in [AD Configuration](ad-config.md)), Tradecloud needs to be configured to recognize and authenticate users from your Azure AD tenant. This involves setting up both frontend and backend configurations.
+After configuring Azure AD (as described in [Azure AD Setup](ad-setup.md)), Tradecloud needs to be configured to recognize and authenticate users from your Azure AD tenant. This involves setting up both frontend and backend configurations.
 
 ## Prerequisites
 
 Before requesting Tradecloud configuration, ensure you have:
 
-- ✅ Completed the [Azure AD Configuration](ad-config.md) steps
+- ✅ Completed the [Azure AD Setup](ad-setup.md) steps
 - ✅ Your Azure AD **Tenant ID** (available in Azure Portal > Azure Active Directory > Properties)
 - ✅ Your Azure AD **Client ID** (from the registered application)
 - ✅ Your **Tradecloud Company ID** (provided by Tradecloud support)
@@ -107,13 +107,6 @@ sso {
 - **companyId**: Tradecloud company ID (UUID) where users will be created
 - **tenantId**: Azure AD tenant ID for JWT token validation
 
-## Security Considerations
-
-- 🔒 **Tenant Validation**: JWT tokens are validated against the specified tenant ID
-- 🔒 **Domain Restriction**: Only users from configured domains can authenticate
-- 🔒 **Company Isolation**: Users are automatically assigned to the correct Tradecloud company
-- 🔒 **Token Validation**: All Azure AD tokens are cryptographically verified
-
 ## Testing the Configuration
 
 After configuration is complete, test the integration:
@@ -134,14 +127,3 @@ After configuration is complete, test the integration:
 | Authentication fails            | Invalid tenant/client ID  | Double-check Azure AD credentials         |
 | User created in wrong company   | Incorrect company mapping | Verify backend domain mapping             |
 | Token validation errors         | Tenant ID mismatch        | Ensure backend tenant ID matches Azure AD |
-
-### Getting Help
-
-If you encounter issues:
-
-1. **Check** that all prerequisite steps are completed
-2. **Verify** the information provided matches your Azure AD configuration
-3. **Contact** Tradecloud support with:
-   - Error messages or screenshots
-   - User email address experiencing issues
-   - Timestamp of the authentication attempt

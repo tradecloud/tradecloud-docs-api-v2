@@ -53,7 +53,7 @@ While setting up your token configuration, add the following claims:
 | given_name  | Provides the first or "given" name of the user, as set on the user object                                                                              | ID         |
 | upn         | An identifier for the user that can be used with the username_hint parameter; not a durable identifier for the user and should not be used to key data | ID         |
 
-![Claims](../.gitbook/assets/azure-claims.png)
+![Claims](../../.gitbook/assets/azure-claims.png)
 
 ### Add permissions
 
@@ -73,18 +73,18 @@ While setting up your permissions, configure the following settings:
 
 Select the option to set Redirect URI:
 
-![Redirect URI Option](../.gitbook/assets/azure-select-redirect.png)
+![Redirect URI Option](../../.gitbook/assets/azure-select-redirect.png)
 
 Select the platform as Single page application:
 
-![Platform Selection](../.gitbook/assets/azure-select-spa.png)
+![Platform Selection](../../.gitbook/assets/azure-select-spa.png)
 
 Set the Redirect URI value to [https://portal.tradecloud1.com/msal-callback/login](https://portal.tradecloud1.com/msal-callback/login) and save:
 
-![Redirect URI Configuration](../.gitbook/assets/azure-spa-redirect.png)
+![Redirect URI Configuration](../../.gitbook/assets/azure-spa-redirect.png)
 
 ### Send credentials to Tradecloud
 
 Send client ID and tenant ID to Tradecloud so that one of the engineers can configure SSO for you.
 
-![Client and Tenant IDs](../.gitbook/assets/azure-ids.png)
+![Client and Tenant IDs](../../.gitbook/assets/azure-ids.png)
