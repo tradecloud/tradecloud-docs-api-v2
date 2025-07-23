@@ -54,7 +54,7 @@ All messages comply with UN/EDIFACT D.96A specifications:
 
 ## Availability
 
-The EDIFACT FTP Connector is available through our certified partner **Supplydrive**, providing:
+The EDIFACT FTP Connector is available through our partner **Supplydrive**, providing:
 
 - **Implementation expertise** for UN/EDIFACT D.96A standard
 - **Message mapping and validation** services

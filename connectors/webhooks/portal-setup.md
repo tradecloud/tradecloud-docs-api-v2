@@ -1,114 +1,145 @@
-# Configure your webhooks in the Tradecloud One portal
+---
+description: Configure webhook notifications in the Tradecloud portal for your organization
+---
 
-## Select one or more webhooks
+# Portal Configuration
 
-A company admin can configure one or more webhooks in your company settings on the [Tradecloud One platform](http://portal.tradecloud1.com):
+Configure your webhook integrations in the Tradecloud portal to enable real-time event delivery to your systems.
 
-![Webhook Settings](../.gitbook/assets/webhook-settings.png)
+## Accessing Webhook Settings
 
-- Select **My company** in the menu below your avatar.
-- The **Settings** tab in the Company menu should be selected.
-- Configure one or more **Webhook Integration**s below.
-
-## Orders Webhook Integration
-
-Enable the Order Webhook Integration if you want to receive a webhook trigger when an order has been issued or changed:
-
-![Order Events](../.gitbook/assets/webhook-order-events.png)
-
-A default set of order events will be enabled. The actual set you want to select wil be dependent on the capabilities of your integration and ERP system and your order process requirements. You can find a list of events here:
-
-{% page-ref page="order-events.md" %}
-
-### Order Delivery Schedule
-
-![Order Delivery Schedule](../.gitbook/assets/webhook-order-delivery-schedule.png)
-
-You can configure the way the delivery schedule is included in the body of a webhook POST request. You can choose between:
-
-- Multiple delivery lines per order line. This will result in an `orderEvent` in the POST request body.
-- Only one delivery line per order line. This will result in a `singleDeliveryOrderEvent` in the POST request body.
-
-See [the API manual](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) to read about the delivery schedule versus the single delivery per order line.
-
-## Order Documents Webhook Integration
-
-Enable the Order Documents Webhook Integration if you want to receive a webhook trigger when an order document has been attached:
-
-![Order Documents Events](../.gitbook/assets/webhook-order-documents-events.png)
-
-You may choose whether you want to receive events for documents added by the buyer of an order, the suppplier, or both. You can find a list of events here:
-
-{% page-ref page="order-documents-events.md" %}
-
-## Shipments Webhook Integration
-
-Enable the Shipment Webhook Integration if you want to receive a webhook trigger when a shipment has been issued or changed:
-
-![Shipment Events](../.gitbook/assets/webhook-shipment-events.png)
-
-A default set of shipments events will be enabled. The actual set you want to select wil be dependent on the capabilities of your integration and ERP system and your shipment process requirements. You can find a list of events here:
-
-{% page-ref page="shipment-events.md" %}
-
-## Method and URL
-
-Configure the webhook method and endpoint URL:
-
-![Webhook method and URL](../.gitbook/assets/webhook-url.png)
-
-- Select **POST** as HTTP method.
-- Enter your webhook endpoint URL:
-  - The URL must start with **https://**
+1. **Log in** to the [Tradecloud portal](https://portal.tradecloud1.com)
+2. **Navigate** to **My Company** (under your avatar menu)  
+3. **Select** the **Settings** tab
+4. **Locate** the **Webhook Integration** section
 
 {% hint style="info" %}
-Only `POST` is supported as HTTP method.
+**Admin Access Required**: Only company administrators can configure webhook settings.
 {% endhint %}
 
-## Credentials
+## Order Events Configuration
 
-Finally, configure the credentials. Choose either Basic authentication, Bearer token or OAuth.
+Enable order webhook integration to receive notifications when orders are created, updated, or changed.
 
-### Basic authentication
+### Event Selection
 
-Tradecloud supports [Basic authentication](https://swagger.io/docs/specification/authentication/basic-authentication), where the client sends a HTTPS request with the `Authorization` header that contains the word `Basic` followed by a space and a base64-encoded string username:password.
+Configure which order events trigger webhook notifications:
 
-Published as [RFC 7617 "The 'Basic' HTTP Authentication Scheme"](https://datatracker.ietf.org/doc/html/rfc7617)
+![Order Events Configuration](../../.gitbook/assets/webhook-order-events.png)
 
-![Webhook basic authentication](../.gitbook/assets/webhook-basic-auth.png)
+**Customization**: Select events based on your integration capabilities and business process requirements. See [complete event list](order-events.md) for all available options.
 
-Fill in username and password, as provided by your webhook configuration, and save the settings.
+### Delivery Schedule Mode
 
-### Bearer token
+Choose how order deliveries are structured in webhook payloads:
 
-Tradecloud supports [Bearer authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/), where the client sends a HTTPS request with the `Authorization` header that contains word `Bearer` followed by a space and the static token.
+![Delivery Schedule Configuration](../../.gitbook/assets/webhook-order-delivery-schedule.png)
 
-Published as [RFC 6750 "The OAuth 2.0 Authorization Framework: Bearer Token Usage"](https://datatracker.ietf.org/doc/html/rfc6750)
+| Mode | Payload Field | Use Case |
+|------|---------------|----------|
+| **Multiple Deliveries** | `orderEvent` | Complex delivery schedules with multiple dates per line |
+| **Single Delivery** | `singleDeliveryOrderEvent` | Simple orders with one delivery per order line |
 
-![Webhook bearer token](../.gitbook/assets/webhook-bearer-token.png)
+**Learn More**: [Delivery Schedule vs Single Delivery](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) documentation.
 
-Fill in the token, as provided by your webhook configuration, and save the settings.
+## Document Events Configuration
 
-### OAuth
+Enable document webhook integration to receive notifications when order documents are attached or updated.
 
-Tradecloud supports the Oauth 2.0 Client Credentials Grant, where the client sends a HTTPS form request with:
+![Document Events Configuration](../../.gitbook/assets/webhook-order-documents-events.png)
 
-- `grant_type` with value `client_credentials`
-- `client_id`, `client_secret` and `scope`
+**Event Sources:**
 
-Published as the [RFC 6749 "Oauth 2.0 Client Credentials Grant"](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4)
+- **Buyer Documents** - Documents added by order buyers
+- **Supplier Documents** - Documents added by order suppliers  
+- **Both** - All document events regardless of source
 
-![Webhook Oauth](../.gitbook/assets/webhook-oauth.png)
+See [document events reference](order-documents-events.md) for complete event details.
 
-Fill in the fields:
+## Shipment Events Configuration
 
-- `authentication URL`: the OAuth 2.0 token endpoint including your `Directory (tenant) ID`, for example `https://login.microsoftonline.com/<Tenant ID>/oauth2/v2.0/token`
-- `client ID`: the `Application (client) ID` of your webhook client app as configured in Ms Azure AD
-- `client Secret`: the `Client Secret Value` of your webhook client app as configured in Ms Azure AD
-- `scope`: the scope granted to the webhook client app, for example containing the webhook endpoint `https://<webhook endpoint>/.default`.
+Enable shipment webhook integration to receive notifications about despatch advice and delivery updates.
 
-## Testing
+![Shipment Events Configuration](../.gitbook/assets/webhook-shipment-events.png)
 
-You can test webhook triggers using [webhook.site](https://webhook.site)
+Customize event selection based on your logistics processes. See [shipment events reference](shipment-events.md) for all available events.
 
-Use a bogus username and password when testing against webhook site.
+## Endpoint Configuration
+
+Configure your webhook endpoint URL and HTTP method:
+
+![Webhook URL Configuration](../.gitbook/assets/webhook-url.png)
+
+### Requirements
+
+- **Method**: POST (only supported HTTP method)
+- **URL**: Must start with `https://` (HTTP not supported)
+- **Accessibility**: Endpoint must be publicly accessible from internet
+
+**Example**: `https://api.yourcompany.com/webhooks/tradecloud`
+
+## Authentication Setup
+
+Configure secure authentication for webhook requests. Choose from three supported methods:
+
+### Basic Authentication
+
+![Basic Authentication Setup](../.gitbook/assets/webhook-basic-auth.png)
+
+**Configuration:**
+
+- **Standard**: [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617) compliant
+- **Username**: Webhook service username
+- **Password**: Webhook service password  
+- **Header**: `Authorization: Basic <base64(username:password)>`
+
+### Bearer Token
+
+![Bearer Token Setup](../.gitbook/assets/webhook-bearer-token.png)
+
+**Configuration:**
+
+- **Standard**: [RFC 6750](https://datatracker.ietf.org/doc/html/rfc6750) compliant
+- **Token**: Static authentication token
+- **Header**: `Authorization: Bearer <token>`
+
+### OAuth 2.0 Client Credentials
+
+![OAuth Configuration](../.gitbook/assets/webhook-oauth.png)
+
+**Configuration Fields:**
+
+- **Authentication URL**: OAuth token endpoint  
+  Example: `https://login.microsoftonline.com/<tenant-id>/oauth2/v2.0/token`
+- **Client ID**: Application (client) ID from your OAuth provider
+- **Client Secret**: Client secret value from your OAuth provider  
+- **Scope**: Granted scope for webhook access
+  Example: `https://your-webhook-endpoint/.default`
+
+**Standard**: [RFC 6749 Section 4.4](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) compliant.
+
+## Testing Configuration
+
+### Development Testing
+
+Use [webhook.site](https://webhook.site) for initial configuration testing:
+
+1. **Generate test URL** at webhook.site
+2. **Configure test webhook** with the generated URL  
+3. **Use placeholder credentials** (webhook.site doesn't validate auth)
+4. **Trigger test events** to validate payload delivery
+5. **Inspect payloads** in webhook.site interface
+
+### Integration Testing  
+
+1. **Configure test endpoint** in Tradecloud acceptance environment portal
+2. **Trigger test events** through sample transactions  
+3. **Validate event processing** and response handling
+4. **Test error scenarios** with various HTTP status codes
+
+### Production Validation
+
+1. **Configure production endpoint** in Tradecloud production environment portal
+2. **Perform test transactions** to trigger events
+3. **Validate event processing** in your system
+4. **Monitor webhook logs** for delivery confirmation

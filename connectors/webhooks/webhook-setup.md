@@ -1,49 +1,121 @@
 ---
-description: Setting up the webhook at the customer side
+description: Technical requirements and implementation guide for webhook endpoints
 ---
 
-# Setting up the webhook
+# Webhook Endpoint Setup
 
-To receive a webhook trigger you will need:
+This guide covers the technical requirements for implementing your webhook endpoint to receive real-time events from Tradecloud.
 
-- A simple web service reachable from the internet, which listens to some URL.
-- The web service must support **SSL** only and you will need a SSL certificate.
-- The web service must be configured to use **TLS v1.2** or **v1.3**.
-- Self-signed certificates are NOT supported.
-- The web service must support either  **basic authentication**, **static bearer token** or **OAuth 2.0 Client Credentials Grant**.
-- The webservice must support the **POST** HTTP method and be able to parse the request body in **JSON** or **tXML**
+## Technical Requirements
+
+### Infrastructure Requirements
+
+Your webhook endpoint must meet these mandatory requirements:
+
+| Requirement | Details |
+|-------------|---------|
+| **Protocol** | HTTPS only (HTTP not supported) |
+| **TLS Version** | TLS 1.2 or 1.3 minimum |
+| **SSL Certificate** | Valid certificate from recognized CA (no self-signed) |
+| **HTTP Method** | POST method support |
+| **Content Types** | JSON and/or tXML parsing capability |
+| **Internet Access** | Publicly accessible from Tradecloud servers |
 
 {% hint style="info" %}
-You can test the security level of your certificate at [SSL Labs](https://www.ssllabs.com/ssltest/)
+**Certificate Validation**: Test your SSL configuration at [SSL Labs](https://www.ssllabs.com/ssltest/) to ensure compatibility.
 {% endhint %}
 
-## Setting up the order webhook
+### Authentication Support
 
-Your webhook must implement the [order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost):
+Your webhook must implement **one** of these authentication methods:
 
-- Use the `orderEvent` field when working with a delivery schedule with multiple deliveries per order line.
-- Use the `singleDeliveryOrderEvent` field when with working with a single delivery per order line.
-- Use the `orderDocumentsEvent` field when receiving order documents.
+#### Basic Authentication
 
-See [the API manual](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) to read about the delivery schedule versus the single delivery per order line.
+- **Standard**: [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617)
+- **Header**: `Authorization: Basic <base64(username:password)>`
+- **Use Case**: Simple integrations with static credentials
+
+#### Bearer Token
+
+- **Standard**: [RFC 6750](https://datatracker.ietf.org/doc/html/rfc6750)  
+- **Header**: `Authorization: Bearer <token>`
+- **Use Case**: API key-based authentication
+
+#### OAuth 2.0 Client Credentials
+
+- **Standard**: [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4)
+- **Grant Type**: `client_credentials`
+- **Use Case**: Enterprise integrations with token refresh
+
+## Webhook Implementation
+
+### Order Events
+
+Implement the [Order Webhook API](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) to receive order-related events.
+
+**Event Types Available:**
+
+- `orderEvent` - Multi-delivery order lines (delivery schedule mode)
+- `singleDeliveryOrderEvent` - Single delivery per order line  
+- `orderDocumentsEvent` - Document attachments and updates
 
 {% hint style="warning" %}
-An `orderEvent` or `singleDeliveryOrderEvent` will **only** contain the order lines **affected** by the event.
+**Important**: Order events contain **only the affected order lines**, not the complete order. Process incrementally based on the event data.
 {% endhint %}
 
-When using the `orderDocumentsEvent` field, you must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
+### Shipment Events
 
-## Setting up the shipment webhook
+Implement the [Shipment Webhook API](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost) to receive shipment notifications.
 
-Your webhook must implement the [shipment webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost): 
+**Event Characteristics:**
+
+- Contains **all shipment lines and documents**  
+- Filter changes using `lastUpdatedAt` timestamps
+- Process documents via download API when needed
 
 {% hint style="warning" %}
-THe shipment even will contain **all** the lines and documents.
-You can filter new/changed lines and documents based on the `lastUpdatedAt` fields.
+**Performance Tip**: Use `lastUpdatedAt` fields to identify new or changed items rather than processing the entire shipment.
 {% endhint %}
 
-When using a `documents` field, you must [download the document](https://docs.tradecloud1.com/api/processes/shipment/buyer/receive/download-document) as the document content is not embedded in the event itself.
+### Document Processing
 
-## Next: configure the webhook
+When receiving document events:
 
-{% page-ref page="configure-the-webhook.md" %}
+1. **Extract Document ID** - Get `objectId` from the event
+2. **Download Content** - Use appropriate download API:
+   - [Order documents](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document)
+   - [Shipment documents](https://docs.tradecloud1.com/api/processes/shipment/buyer/receive/download-document)
+3. **Process File** - Handle the downloaded content in your system
+
+## Response Handling
+
+Your webhook must return appropriate HTTP status codes:
+
+| Status Code | Meaning | Tradecloud Action |
+|-------------|---------|-------------------|
+| **2xx**  | Success | Event marked as delivered |
+| **4xx**  | Client Error | No retry |
+| **500**  | Server Error | No retry |
+| **>500** | Server Error | Retry with exponential backoff |
+
+### Recommended Response Codes
+
+- `200 OK` - Event processed successfully
+- `202 Accepted` - Event queued for processing  
+- `400 Bad Request` - Invalid event data
+- `401 Unauthorized` - Authentication failed
+- `500 Internal Server Error` - Event processing error
+- `502 Bad Gateway` - upstream ERP system temporary unavailability
+- `503 Service Unavailable` - Temporary unavailability
+
+## Testing Your Webhook
+
+### Development Testing
+
+Use [webhook.site](https://webhook.site) for initial testing and payload inspection.
+
+## Next Steps
+
+Once your webhook endpoint is implemented:
+
+**[Configure webhook settings](portal-setup.md)** in the Tradecloud portal to enable event delivery.
