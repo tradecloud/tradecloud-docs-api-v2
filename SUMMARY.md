@@ -26,8 +26,13 @@
   * [Authorization](security/authorization.md)
   * [Encryption](security/encryption.md)
   * [Document storage](security/documents.md)
+* [Connectors](connectors/README.md)
+  * [Webhooks](connectors/webhooks/README.md)
+  * [FTP](connectors/ftp/README.md)
+  * [Azure AD](connectors/azure-ad)
 
 ## Guide
+
 * [1. Getting an Account](guide/setup-integration-account.md)
 * [2. Sending your first order](guide/sending-my-first-order.md)
   * [Option A: Sending a Delivery Schedule per order line](guide/sending-delivery-schedule/sending-my-first-order.md)
