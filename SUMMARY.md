@@ -28,8 +28,17 @@
   * [Document storage](security/documents.md)
 * [Connectors](connectors/README.md)
   * [Webhooks](connectors/webhooks/README.md)
+    * [Portal Setup](connectors/webhooks/portal-setup.md)
+    * [Webhook Setup](connectors/webhooks/webhook-setup.md)
+    * [Order Events](connectors/webhooks/order-events.md)
+    * [Order Document Events](connectors/webhooks/order-document-events.md)
+    * [Shipment Events](connectors/webhooks/shipment-events.md)
   * [FTP](connectors/ftp/README.md)
+    * [CSV](connectors/ftp/csv.md)
+    * [Edifact](connectors/ftp/edifact.md)
   * [Azure AD](connectors/azure-ad)
+    * [AD Setup](connectors/azure-ad/ad-setup.md)
+    * [TC Setup](connectors/azure-ad/tc-setup.md)
 
 ## Guide
 

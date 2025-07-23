@@ -10,13 +10,11 @@ These connectors are **additions to the API connector**, providing specialized i
 - **File-based integration** through FTP connectors  
 - **Single Sign-On authentication** through Azure Active Directory
 
-The webhook connectors work **in conjunction with the API** to push messages to customers when orders, shipments, or documents are created or updated, eliminating the need for continuous polling.
-
 ## Connector Types
 
 ### 🔗 Webhook Connector
 
-The Webhook Connector enables real-time push notifications from Tradecloud to your systems. When an order or shipment is created or updated, Tradecloud automatically triggers your webhook endpoint with the relevant data.
+The [webhook connectors](webhooks/README.md) work **in conjunction with the API** to push real-time messages to your systems when orders, shipments, or documents are created or updated, eliminating the need for continuous polling.
 
 **Key Features:**
 
@@ -32,7 +30,7 @@ For choosing between webhook and polling approaches, see: [Webhook vs Polling](.
 
 ### 📁 FTP Connectors
 
-FTP Connectors provide file-based integration using secure SFTP protocols, supporting structured data formats for batch processing scenarios.
+The [FTP Connectors](ftp/README.md) provide file-based integration using secure SFTP protocols, supporting structured data formats for batch processing scenarios.
 
 **Available FTP Connectors:**
 
@@ -50,14 +48,14 @@ FTP Connectors provide file-based integration using secure SFTP protocols, suppo
 
 ### 🔐 Azure Active Directory Connector
 
-The Azure AD Connector provides Single Sign-On (SSO) integration, allowing your organization's users to access Tradecloud using their existing corporate credentials.
+The [Azure AD Connector](azure-ad/README.md) provides Single Sign-On (SSO) integration, allowing your organization's users to access Tradecloud using their existing corporate credentials.
 
 **Key Features:**
 
 - Single Sign-On with Azure AD credentials
-- Automatic user provisioning and synchronization
+- Automatic user provisioning
 - Centralized access control through Azure AD policies
-- Enhanced security with existing organizational policies
+- Enhanced security with existing organizational policies like multi-factor authentication
 - Reduced IT management overhead
 
 **Best for:** Organizations using Microsoft Azure AD for identity management and requiring SSO capabilities.

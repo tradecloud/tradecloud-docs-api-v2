@@ -1,8 +1,3 @@
----
-description: >-
-  The Azure Active Directory Connector provides Single Sign-On (SSO) access for your organization's users, automatically syncing permitted users to Tradecloud while maintaining your existing security policies.
----
-
 # Azure Active Directory Connector
 
 The Azure Active Directory Connector enables seamless Single Sign-On (SSO) integration between your organization's Azure AD and Tradecloud, allowing your users to access Tradecloud using their existing corporate credentials.
@@ -41,13 +36,13 @@ The Azure AD Connector is an add-on feature. Contact [sales@tradecloud1.com](mai
 
 The setup process involves configuring your Azure AD environment to work with Tradecloud. This includes registering Tradecloud as an application, configuring permissions, and setting up token claims.
 
-{% page-ref page="ad-config.md" %}
+{% page-ref page="ad-setup.md" %}
 
 ### For Tradecloud Support
 
 Tradecloud engineers will configure the backend systems to accept and process Azure AD authentication tokens from your organization.
 
-{% page-ref page="tradecloud-config.md" %}
+{% page-ref page="tc-setup.md" %}
 
 ## Security Considerations
 
@@ -62,7 +57,3 @@ For technical assistance with the Azure AD Connector setup:
 
 - Contact Tradecloud support through [support@tradecloud1.com](mailto:support@tradecloud1.com)
 - For sales inquiries, email [sales@tradecloud1.com](mailto:sales@tradecloud1.com)
-
-{% hint style="warning" %}
-Changes to your Azure AD configuration may affect user access to Tradecloud. Always test configuration changes in the acceptance environment before applying to production.
-{% endhint %}
