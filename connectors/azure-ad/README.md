@@ -49,7 +49,7 @@ Tradecloud engineers will configure the backend systems to accept and process Az
 - Only users permitted by your Azure AD conditional access policies will be synchronized to Tradecloud
 - User access can be revoked immediately by removing permissions in Azure AD
 - All authentication flows use industry-standard OAuth 2.0 and OpenID Connect protocols
-- No sensitive user data is stored outside of your Azure AD environment
+- No sensitive user data is stored outside your Azure AD environment
 
 ## Support
 

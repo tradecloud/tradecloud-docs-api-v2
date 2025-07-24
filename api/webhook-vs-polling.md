@@ -32,28 +32,28 @@ By using the [Shipment Webhook](https://swagger-ui.accp.tradecloud1.com/?url=htt
 * `eventName`: The event name summarizes what has happened.
 * `shipment`: The actual shipment.
 
-Use the webhook when:
+Choose webhooks when:
 
-* You want to receive real-time order or shipment events.
-* You want to receive the order event or shipment event content.
-* You only want to receive order or shipment events of a specific type.
-* You **only** need to receive the order lines that are **changed**, not all the lines of the order.
-* You want to use XML instead of JSON.
+* Receive real-time order or shipment events.
+* Receive the full event payload.
+* Filter on specific event types only.
+* Receive **only** the lines that are **changed**, not the entire order.
+* Optionally use XML instead of JSON.
 
 {% hint style="info" %}
 Pros:
 
 * Real-time, receive the order or shipment event within a second.
 * Order or shipment event content included.
-* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
-* You can choose to use XML instead of JSON.
-* You do not have to build or configure the polling pattern.
+* Can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
+* Can choose to use XML instead of JSON.
+* No need to build or configure the polling pattern.
 
 Cons:
 
-* You need to build or configure a webhook at your side.
-* You need to publish the webhook on the Internet \(web server and firewall required\).
-* You need to obtain and configure a public SSL certificate.
+* Need to build or configure a webhook at your side.
+* Need to publish the webhook on the Internet \(web server and firewall required\).
+* Need to obtain and configure a public SSL certificate.
 {% endhint %}
 
 ### Webhook Response
@@ -102,15 +102,15 @@ The polling pattern is most suitable for companies with low-volume orders, and n
 Pros:
 
 * No webhook needed: no web server, firewall or SSL certificate needed.
-* You can use the single delivery per order line feature.
+* Can use the single delivery per order line feature.
 
 Cons:
 
 * Not real-time, a polling period is typically 5 mins.
-* You need to build or configure a periodic polling pattern at your side.
-* You cannot filter on which order or shipment events to act on, you will receive any order or shipment change, including echoed changes from your ERP system.
-* You cannot see what order or shipment event happened, multiple events may have happened.
-* You cannot choose XML, but must use JSON.
+* Need to build or configure a periodic polling pattern at your side.
+* Cannot filter on which order or shipment events to act on, will receive any order or shipment change, including echoed changes from your ERP system.
+* Cannot see what order or shipment event happened, multiple events may have happened.
+* Cannot choose XML, but must use JSON.
 {% endhint %}
 
 For polling usage see:

@@ -20,7 +20,7 @@ The Azure AD Connector is an add-on. Contact [sales@tradecloud1.com](sales@trade
 
 To allow users to log in using a Azure AD account, you must register Tradecloud as an application in the Microsoft Azure portal.
 
-To register your app with Azure AD, see Microsoft's Quickstart: Register an application with the Microsoft identity platform.
+To register your app with Azure AD, see Microsoft's [Quickstart: Register an application with the Microsoft identity platform](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 During registration, configure the following settings:
 

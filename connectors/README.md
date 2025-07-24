@@ -14,7 +14,7 @@ These connectors are **additions to the API connector**, providing specialized i
 
 ### 🔗 Webhook Connector
 
-The [webhook connectors](webhooks/README.md) work **in conjunction with the API** to push real-time messages to your systems when orders, shipments, or documents are created or updated, eliminating the need for continuous polling.
+The [webhook connectors](webhooks/README.md) work **alongside the API** to push real-time messages to your systems when orders, shipments, or documents are created or updated, eliminating the need for continuous polling.
 
 **Key Features:**
 

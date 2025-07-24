@@ -38,8 +38,8 @@ The buyer either approves or rejects the proposal.
 | OrderEvent                            | Webhook Configuration                                        |
 | --------------------------------------| ------------------------------------------------------------ |
 | `OrderChangesProposedBySupplier`      | Order changes are proposed by the supplier                   |
-| `OrderChangesProposalApprovedByBuyer` | By order changes that were proposed by the supplier are approved by the buyer |
-| `OrderChangesProposalRejectedByBuyer` | By order changes that were proposed by the supplier are rejected by the buyer |
+| `OrderChangesProposalApprovedByBuyer` | Order changes proposed by the supplier are approved by the buyer |
+| `OrderChangesProposalRejectedByBuyer` | Order changes proposed by the supplier are rejected by the buyer |
 
 ## Order updated by supplier
 

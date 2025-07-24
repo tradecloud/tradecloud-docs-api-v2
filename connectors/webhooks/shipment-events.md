@@ -26,8 +26,8 @@ The buyer or supplier can attach a document to the shipment.
 
 | ShipmentEvent                        | Webhook Configuration |
 | ------------------------------------ | --------------------- |
-| `ShipmentDocumentAttachedByBuyer`    | Document(s) are attached to te shipment by the buyer |
-| `ShipmentDocumentAttachedBySupplier` | Document(s) are attached to te shipment by the supplier |
+| `ShipmentDocumentAttachedByBuyer`    | Document(s) are attached to the shipment by the buyer |
+| `ShipmentDocumentAttachedBySupplier` | Document(s) are attached to the shipment by the supplier |
 
 ## Maintenance
 

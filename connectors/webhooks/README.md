@@ -21,7 +21,7 @@ Tradecloud sends HTTP `POST` requests to your webhook endpoint containing:
 Choose between two data formats for your webhook:
 
 - **JSON** - Standard REST API format for modern integrations
-- **tXML** - Structured XML format for legacy systems
+- **tXML (Tradecloud XML)** - Structured XML format for legacy systems
 
 ### Document Handling
 
