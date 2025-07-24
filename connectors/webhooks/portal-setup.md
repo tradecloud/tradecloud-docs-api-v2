@@ -60,7 +60,7 @@ See [document events reference](order-documents-events.md) for complete event de
 
 Enable shipment webhook integration to receive notifications about despatch advice and delivery updates.
 
-![Shipment Events Configuration](../.gitbook/assets/webhook-shipment-events.png)
+![Shipment Events Configuration](../../.gitbook/assets/webhook-shipment-events.png)
 
 Customize event selection based on your logistics processes. See [shipment events reference](shipment-events.md) for all available events.
 
@@ -68,7 +68,7 @@ Customize event selection based on your logistics processes. See [shipment event
 
 Configure your webhook endpoint URL and HTTP method:
 
-![Webhook URL Configuration](../.gitbook/assets/webhook-url.png)
+![Webhook URL Configuration](../../.gitbook/assets/webhook-url.png)
 
 ### Requirements
 
@@ -84,7 +84,7 @@ Configure secure authentication for webhook requests. Choose from three supporte
 
 ### Basic Authentication
 
-![Basic Authentication Setup](../.gitbook/assets/webhook-basic-auth.png)
+![Basic Authentication Setup](../../.gitbook/assets/webhook-basic-auth.png)
 
 **Configuration:**
 
@@ -95,7 +95,7 @@ Configure secure authentication for webhook requests. Choose from three supporte
 
 ### Bearer Token
 
-![Bearer Token Setup](../.gitbook/assets/webhook-bearer-token.png)
+![Bearer Token Setup](../../.gitbook/assets/webhook-bearer-token.png)
 
 **Configuration:**
 
@@ -105,7 +105,7 @@ Configure secure authentication for webhook requests. Choose from three supporte
 
 ### OAuth 2.0 Client Credentials
 
-![OAuth Configuration](../.gitbook/assets/webhook-oauth.png)
+![OAuth Configuration](../../.gitbook/assets/webhook-oauth.png)
 
 **Configuration Fields:**
 
