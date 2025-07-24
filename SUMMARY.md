@@ -26,8 +26,22 @@
   * [Authorization](security/authorization.md)
   * [Encryption](security/encryption.md)
   * [Document storage](security/documents.md)
+* [Connectors](connectors/README.md)
+  * [Webhooks](connectors/webhooks/README.md)
+    * [Portal Setup](connectors/webhooks/portal-setup.md)
+    * [Webhook Setup](connectors/webhooks/webhook-setup.md)
+    * [Order Events](connectors/webhooks/order-events.md)
+    * [Order Document Events](connectors/webhooks/order-documents-events.md)
+    * [Shipment Events](connectors/webhooks/shipment-events.md)
+  * [FTP](connectors/ftp/README.md)
+    * [CSV](connectors/ftp/csv.md)
+    * [EDIFACT](connectors/ftp/edifact.md)
+  * [Azure AD](connectors/azure-ad)
+    * [AD Setup](connectors/azure-ad/ad-setup.md)
+    * [TC Setup](connectors/azure-ad/tc-setup.md)
 
 ## Guide
+
 * [1. Getting an Account](guide/setup-integration-account.md)
 * [2. Sending your first order](guide/sending-my-first-order.md)
   * [Option A: Sending a Delivery Schedule per order line](guide/sending-delivery-schedule/sending-my-first-order.md)

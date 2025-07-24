@@ -1,22 +1,22 @@
 ---
 description: >-
-  Choose between the webhook API or polling API to receive an order, order response or shipment message
+  Choose between the webhook or polling APIs to receive an order, order response or shipment message
 ---
 
 # Webhook versus polling
 
 To receive an order, order response or shipment message you can use either:
 
-* The [Webhook Connector](https://tradecloud.gitbook.io/connectors/webhook-connector).
+* The [Webhooks](../connectors/webhooks/README.md).
 * The polling pattern.
 
 ## The Webhook Connector
 
-When an order or shipment has been changed at Tradecloud, we will trigger your webhook realtime.
+When an order or shipment has been changed at Tradecloud, we will trigger your webhook real-time.
 
-The webhook is most suitable for companies with real time, high volume orders and having a web server or integration platform, firewall and SSL certificate available.
+The webhook is most suitable for companies with real-time, high-volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
-We will send a `POST` request to your webhook containing the order or shipment content.  See the [Webhook Connector Documentation](https://tradecloud.gitbook.io/connectors/webhook-connector) for more information.
+We will send a `POST` request to your webhook containing the order or shipment content. See the [Webhooks](../connectors/webhooks/README.md) documentation for more information.
 
 ### `POST` Request Content
 
@@ -32,28 +32,28 @@ By using the [Shipment Webhook](https://swagger-ui.accp.tradecloud1.com/?url=htt
 * `eventName`: The event name summarizes what has happened.
 * `shipment`: The actual shipment.
 
-Use the webhook when:
+Choose webhooks when:
 
-* You want to receive real time order or shipment events.
-* You want to receive the order event or shipment event content.
-* You only want to receive order or shipment events of a specific type.
-* You **only** need to receive the order lines that are **changed**, not all the lines of the order.
-* You want to use XML instead of JSON.
+* Receive real-time order or shipment events.
+* Receive the full event payload.
+* Filter on specific event types only.
+* Receive **only** the lines that are **changed**, not the entire order.
+* Optionally use XML instead of JSON.
 
 {% hint style="info" %}
-Pro's:
+Pros:
 
-* Real time, receive the order or shipment event within a second.
+* Real-time, receive the order or shipment event within a second.
 * Order or shipment event content included.
-* You can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
-* You can choose to use XML instead of JSON.
-* You do not have to build or configure the polling pattern.
+* Can filter on which order or shipment events to receive, in the order & shipment webhook settings in your company settings or filter events yourself in your integration.
+* Can choose to use XML instead of JSON.
+* No need to build or configure the polling pattern.
 
-Con's:
+Cons:
 
-* You need to build or configure a webhook at your side.
-* You need to publish the webhook on the Internet \(webserver and firewall required\).
-* You need to obtain and configure a public SSL certificate.
+* Need to build or configure a webhook at your side.
+* Need to publish the webhook on the Internet \(web server and firewall required\).
+* Need to obtain and configure a public SSL certificate.
 {% endhint %}
 
 ### Webhook Response
@@ -69,8 +69,8 @@ Commonly used success responses are:
 * `202` - Accepted: Your webhook has verified that the incoming request can be processed and has queued it for processing.
 
 **`4xx` - Client error response**  
-Tradecloud considers the event as not successfully processed, but resending the same request is expected to result in the same error.
-The request will not be retried, the DevOps team will be alerted to investigate the issue.  
+Tradecloud considers the event as not successfully processed, but the request will not be retried, as resending the same request is expected to result in the same error.
+
 Commonly used client error responses are:
 
 * `400` - Bad Request: Your webhook found a **functional** error during the processing of the incoming request.
@@ -79,10 +79,13 @@ Commonly used client error responses are:
 * `404` - Not Found: The requested resource, such as the related order, could not be found.
 
 **`5xx` - Server error response**  
-Tradecloud considers the event not successfully processed due to an error in the webhook. Tradecloud will indefinitely retry the request with exponential back-off. The DevOps team is alerted to monitor the issue.  
+Tradecloud considers the event not successfully processed due to an error in the webhook.
+
+Tradecloud will not retry `500` Internal Server Errors, as this code is often used in case of a **functional** error, and resending the same request is expected to result in the same error. Tradecloud will indefinitely retry the request with exponential back-off for other server error codes (>500).
+
 Commonly used server error responses are:
 
-* `500` - Internal Server Error: A technical error occurred in the webhook.
+* `500` - Internal Server Error: An error occurred in the webhook.
 * `502` - Bad Gateway: The upstream ERP system is not available.
 * `503` - Service Unavailable: The webhook is currently not available.
 * `504` - Gateway Timeout: There was a timeout when connecting to the upstream ERP system.
@@ -93,21 +96,21 @@ The polling pattern is an alternative to the webhook pattern and can be used to 
 
 Periodically, typically each 5 minutes, check if there are new or updated orders or shipments by using the last updated date time stamp of the last fetched order or shipment.
 
-The polling pattern is most suitable for companies with low volume orders, and not willing to invest in a web server, firewall and SSL certificate.
+The polling pattern is most suitable for companies with low-volume orders, and not willing to invest in a web server, firewall and SSL certificate.
 
 {% hint style="info" %}
-Pro's:
+Pros:
 
 * No webhook needed: no web server, firewall or SSL certificate needed.
-* You can use the single delivery per order line feature.
+* Can use the single delivery per order line feature.
 
-Con's:
+Cons:
 
-* Not real time, a polling period is typically 5 mins.
-* You need to build or configure a periodic polling pattern at your side.
-* You cannot filter on which order or shipment events to act on, you will receive any order or shipment change, including echoed changes from your ERP system.
-* You cannot see what order or shipment event happened, multiple events may have happened.
-* You cannot choose XML, but must use JSON.
+* Not real-time, a polling period is typically 5 mins.
+* Need to build or configure a periodic polling pattern at your side.
+* Cannot filter on which order or shipment events to act on, will receive any order or shipment change, including echoed changes from your ERP system.
+* Cannot see what order or shipment event happened, multiple events may have happened.
+* Cannot choose XML, but must use JSON.
 {% endhint %}
 
 For polling usage see:
