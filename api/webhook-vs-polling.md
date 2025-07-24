@@ -16,7 +16,7 @@ When an order or shipment has been changed at Tradecloud, we will trigger your w
 
 The webhook is most suitable for companies with real-time, high-volume orders and having a web server or integration platform, firewall and SSL certificate available.
 
-We will send a `POST` request to your webhook containing the order or shipment content.  See the [Webhooks](../connectors/webhooks/README.md) documentation for more information.
+We will send a `POST` request to your webhook containing the order or shipment content. See the [Webhooks](../connectors/webhooks/README.md) documentation for more information.
 
 ### `POST` Request Content
 

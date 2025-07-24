@@ -38,6 +38,8 @@ If you're using single delivery format, please see:
 
 ### Using the webhook API
 
+See the [Webhooks](../../../connectors/webhooks/README.md) documentation how to set up the webhook API.
+
 Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost) endpoint.
 
 The webhook body contains:
@@ -47,6 +49,8 @@ The webhook body contains:
 - `meta`: The message meta information, see [Message meta information](#message-meta-information)
 
 ### Using the polling API
+
+See the [Polling](../../../api/polling/README.md) documentation how to set up polling.
 
 Use the [POST poll orders](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-search/specs.yaml#/order-search/pollOrdersRoute) endpoint.
 
