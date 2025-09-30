@@ -4,81 +4,145 @@ description: How to send a purchase order response to your buyer.
 
 # Send order response
 
-As a supplier, you can send either a **new or updated** purchase order response to your buyer.
+As a supplier, you can send a purchase order response to your buyer.
 
 {% hint style="warning" %}
-The order response should only contain **order lines** that are **new or changed**. Sending an unchanged order line could trigger an unexpected line status change in Tradecloud.
+Each order response **must** contain **one or more order lines**.
+
+The order response should only contain **order lines** that are **new or changed**.
 {% endhint %}
 
 ## Order process
 
-After sending an order response to Tradecloud, the order lines **process status may change**:
+After sending an order response, the order line process status may change based on the current status:
 
-When the order line has process status `Issued`:
+### Status: Issued
 
-- When `indicators.accepted` is set, the process status will become `Confirmed`
-- When `indicators.rejected` is set, the process status will become `Rejected`
-- When the supplier **responded** `delivery schedule` and `prices` are **equal** to the buyer **requested** `delivery schedule` and `prices`, the process status will become `Confirmed`
-- When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices`, the process status will become `InProgress` and a **proposal** task for the buyer will be created.
+The order line will become:
 
-When the order line has process status `InProgress`:
+- `Confirmed` if:
+  - The `accepted` indicator is set, OR
+  - Responded delivery schedule and prices match the requested values
+- `Rejected` if the `rejected` indicator is set
+- `InProgress` if responded values differ from requested values (creates a proposal task for the buyer)
 
-- When `indicators.accepted` is set, the process status will become `Confirmed`
-- When `indicators.rejected` is set, the process status will become `Rejected`
-- When the supplier **responded** `delivery schedule` and `prices` are **equal** to the buyer **requested** `delivery schedule` and `prices`, the process status will become `Confirmed`
-- When the **responded** `delivery schedule` and `prices` are **NOT** equal to the **requested** `delivery schedule` and `prices`, the process status will stay `InProgress`.
+### Status: InProgress
 
-When the order line has process status `Confirmed`:
+The order line will become:
 
-- When the supplier **responded** `delivery schedule` and `prices` are **NOT** equal to the **confirmed** `delivery schedule` and `prices`, the process status will become `InProgress` and a **reopen request** task for the buyer will be created.
-- When the **responded** `delivery schedule` and `prices` are **equal** to the **confirmed** `delivery schedule` and `prices`, the process status will stay `Confirmed`
+- `Confirmed` if:
+  - The `accepted` indicator is set, OR
+  - Responded delivery schedule and prices match the requested values
+- `Rejected` if the `rejected` indicator is set
+- Stays `InProgress` if responded values still differ from requested values
 
-When the order line already has process status `Rejected`, the process status will **NOT** change.
+### Status: Confirmed
 
-When the order line already has process status `Completed`, the process status will **NOT** change.
+The order line will:
 
-When the order line already has process status `Cancelled`, the process status will **NOT** change.
+- Become `InProgress` if responded values differ from confirmed values (creates a reopen request task for the buyer)
+- Stay `Confirmed` if responded values match the confirmed values
+
+### Status: Completed or Cancelled
+
+The process status will **not** change.
 
 ## Endpoint
 
 Use the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint to send an order response to Tradecloud.
 
-{% hint style="info" %}
-When sending an order response, the provided buyer account number and purchase order number will be verified.
-{% endhint %}
+HTTP status code **200** or **202** means the order response was successfully verified or queued. 
 
-## Order
+Processing typically takes less than a second, after which:
 
-- `companyId`: the optional Tradecloud company identifier. You only need to provide a companyId when your integration user account has multiple company authorizations.
-- `buyerAccountNumber`: the buyer account number as known in your ERP system.
+- The provided buyer account number and purchase order number have been verified.
+- The order response appears in the portal.
+- The response is forwarded to the buyer's ERP integration.
 
-{% hint style="warning" %}
-The `buyerAccountNumber` should be set in the Tradecloud connection in the portal, after the connection request has been accepted by the other party.
-{% endhint %}
+## Order fields
 
-- `purchaseOrderNumber`: the purchase order number as sent by the buyer.
-- `contact.email`: the supplier employee responsible for this order. The user with this email address should be active in Tradecloud.
+### Required fields
 
-{% hint style="warning" %}
-`buyerAccountNumber` and `contact.email` should be unique within your company and never change. Never renumber or reuse numbers or codes.
-{% endhint %}
+- `buyerAccountNumber`: your buyer's account number as known in your ERP system
+  - Must be set in in the Tradecloud portal after the connection is accepted
+  - Must be unique within your company
+- `purchaseOrderNumber`: the purchase order number sent by the buyer
+- `lines`: Each order response must contain one or more lines:
 
-### Other order fields
+### Optional fields
 
-- `description`: a free format additional description of this order.
-- `indicators.accepted`: explicitly **accept** the order as is; the responded lines `delivery schedule` and `prices` will be ignored.
-- `indicators.rejected`: explicitly **reject** the order; the responded lines `delivery schedule` and `prices` will be ignored.
-- `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
-- `notes`: are simple custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
+- `companyId`: Tradecloud company identifier (only needed if your integration user has multiple company authorizations)
+- `contact.email`: email of the supplier employee responsible for this order
+  - The user must be active in Tradecloud
+- `description`: additional description of this order
+- `indicators.accepted`: accept responded order lines as-is (its delivery schedule and prices will be ignored)
+- `indicators.rejected`: reject responded order lines (its delivery schedule and prices will be ignored)
+- `properties`: key-value custom fields (use `\n` for new lines)
+- `notes`: simple text notes (use `\n` for new lines)
 
-## Lines
+## Line fields
 
-- `lines`: a purchase order response contains one or multiple lines. A purchase order line contains at least the position. It is structured as a JSON element in the `lines` JSON array.
-  - `purchaseOrderLinePosition`: the line position within the purchase order.
+- `purchaseOrderLinePosition`: **required** - must match the position sent by the buyer
 
-{% hint style="warning" %}
-The supplier must echo the `purchaseOrderLinePosition` as sent by the buyer.
-{% endhint %}
+### Responded delivery schedule
+
+At least one delivery schedule line is required:
+
+- `position`: optional position in the delivery schedule
+  - Echo the `position` from the buyer, OR leave empty
+  - For new split delivery lines: omit the position (buyer will assign it)
+  - If empty: preserve the original order and append new lines at the end
+- `date`: delivery date in ISO 8601 format (`yyyy-MM-dd`)
+  - Can be left empty if unknown
+  - Provide a `reason` if different from the requested date
+- `quantity`: delivery quantity in decimal format (e.g., `1234.56`)
+  - Can be left empty if unknown
+  - Provide a `reason` if different from the requested quantity
+
+### Responded prices
+
+**Recommended:** Use `netPrice` for simplicity, or use `grossPrice` + `discountPercentage`.
+
+- `netPrice` OR `grossPrice` + `discountPercentage`:
+  - `priceInTransactionCurrency`: **required**
+    - `value`: decimal format (e.g., `1234.56`)
+    - `currencyIso`: 3-letter ISO 4217 code (e.g., `EUR`, `USD`, `CNY`)
+  - `priceInBaseCurrency`: optional
+    - `value`: decimal format (e.g., `1234.56`)
+    - `currencyIso`: 3-letter ISO 4217 code
+- `priceUnitOfMeasureIso`: price unit (ISO 80000-1) - copied from buyer if empty
+- `priceUnitQuantity`: quantity at which price applies (typically `1` or `100`) - copied from buyer if empty
+
+### Responded charge lines
+
+Additional costs independent of order line prices (e.g., transport, packing, inspection):
+
+- `position`: identifier for the charge line
+  - Echo the `position` from the buyer, OR
+  - Omit for new charge lines (buyer will assign it)
+- `chargeTypeCode`: **required** - charge reason code ([UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/))
+- `chargeDescription`: **required** - text description (e.g., "Transport costs")
+- `quantity`: **required** - quantity for this charge
+- `price`: **required**
+  - `priceInTransactionCurrency`: **required**
+    - `value`: decimal format (e.g., `1234.56`)
+    - `currencyIso`: 3-letter ISO 4217 code (e.g., `EUR`, `USD`, `CNY`)
+  - `priceInBaseCurrency`: optional
+    - `value`: decimal format
+    - `currencyIso`: 3-letter ISO 4217 code
+- `priceUnitOfMeasureIso`: price unit (ISO 80000-1)
+
+### Other line fields
+
+- `description`: additional description of this line
+- `indicators.accepted`: accept the line as-is (delivery schedule, prices, and header indicators ignored)
+- `indicators.rejected`: reject the line (delivery schedule, prices, and header indicators ignored)
+- `reason`: explanation when:
+  - The line is rejected
+  - Responded values differ from requested or confirmed values
+  - Sending a [reopen request](../reopen.md)
+- `properties`: key-value custom fields (use `\n` for new lines)
+- `notes`: simple text notes (use `\n` for new lines)
 
 ### Item
 
@@ -89,98 +153,17 @@ If you need this feature, send a request to support.
 
 ### Item Details
 
-- `lines.itemDetails`: detailed part information changed by the supplier.
+You can check, change, or add item details if the buyer's information is incorrect or incomplete:
 
-{% hint style="info" %}
-The buyer may send item details to inform the supplier about part information.  
-The supplier may check, change, and add item details if they are not correct or incomplete.
-{% endhint %}
+- `countryOfOriginCodeIso2`: ISO 3166-1 alpha-2 country code of origin
+- `combinedNomenclatureCode`: goods classification code for customs and trade statistics
+- `netWeight`: net weight of one item
+- `netWeightUnitOfMeasureIso`: net weight unit (ISO 80000-1)
+- `dangerousGoodsCodeUnece`: UN number for dangerous goods (4-digit)
+- `serialNumber`: unique sequential identifier for the item
+- `batchNumber`: identification number for a quantity/lot from a manufacturer
 
-- `countryOfOriginCodeIso2`: The ISO 3166-1 alpha-2 country code of manufacture, production, or growth where an article or product comes from.
-- `combinedNomenclatureCode`: A tool for classifying goods, set up to meet the requirements both of the Common Customs Tariff and of the EU's external trade statistics.
-- `netWeight`: Net weight of one item.
-- `netWeightUnitOfMeasureIso`: Net weight unit according to ISO 80000-1.
-- `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that identify dangerous goods, hazardous substances and articles in the framework of international transport.
-- `serialNumber`: is a unique identifier assigned incrementally or sequentially to an item, to uniquely identify it.
-- `batchNumber`: is an identification number assigned to a particular quantity or lot of material from a single manufacturer.
+## Order response metadata
 
-### Responded delivery schedule
-
-- `lines.deliverySchedule`: the responded delivery schedule. At least one delivery schedule line must be provided.
-  - `position`: an optional position in the delivery schedule, distinct from `line.position`.
-
-{% hint style="warning" %}
-
-- The supplier must either echo the `position` as received from the buyer or leave it empty.
-- When sending a new split delivery line, do not provide a `position`; the buyer will assign it.
-- If `position` is left empty, the supplier must preserve the order of the original delivery schedule sent by the buyer.
-- Any new split delivery line should be appended to the end of the delivery schedule.
-  {% endhint %}
-
-- `lines.deliverySchedule`:
-  - `date`: the responded delivery date of this delivery schedule position. If the delivery date is yet unknown, leave this date empty. If the date is not equal to the requested date, when possible provide a `reason`, see below. Date has ISO 8601 date `yyyy-MM-dd` format. See also [Standards](../../api/standards.md).
-  - `quantity`: the responded quantity of this delivery schedule position. If the quantity that can be delivered is yet unknown, leave this quantity empty. If the quantity is not equal to the requested quantity, when possible provide a `reason`, see below. Quantity has a decimal `1234.56` format with any number of digits.
-
-### Responded prices
-
-- `lines.prices`: the responded price. It is advised to provide only `netPrice` for its simplicity, or alternatively `grossPrice` together with `discountPercentage`.
-  - `grossPrice`: the gross price. Used together with `discountPercentage`.
-  - `discountPercentage`: the discount percentage. Used together with `grossPrice`.
-  - `netPrice`: the net price.
-    - `priceInTransactionCurrency`: at least provide a price in the transaction currency, like `CNY` in China.
-      - `value`: the price value has a decimal `1234.56` format with any number of digits.
-      - `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-    - `priceInBaseCurrency`: optionally provide a price in your base currency, like `EUR` in the EU.
-      - `value`: the price value has a decimal `1234.56` format with any number of digits.
-      - `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
-  - `priceUnitOfMeasureIso`: the price unit according to ISO 80000-1. The purchase unit and price unit may be different.
-  - `priceUnitQuantity`: the item quantity at which the price applies. Typically this is 1 (unit price) or 100 (the price applies to 100 items).
-
-{% hint style="info" %}
-Fields `priceUnitOfMeasureIso` and `priceUnitQuantity` will be copied from the buyer order line, when left empty by the supplier.
-{% endhint %}
-
-### Responded charge lines
-
-- `lines.chargeLines`: the requested additional cost lines of an order line, independent of the order line prices, like transport, packing, administration, inspection and certification costs.
-  - `position`: the position used to identify a charge line.
-
-{% hint style="warning" %}
-
-- The supplier must echo the `position` as received from the buyer.
-- When sending a new charge line, do not provide a `position`; the buyer will assign it.
-  {% endhint %}
-
-- `lines.chargeLines`:
-  - `chargeTypeCode`: the mandatory charge reason code according to [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
-  - `chargeDescription`: a mandatory free text description, like "Transport costs".
-  - `quantity`: the mandatory quantity of this charge line.
-  - `price`: the mandatory price of this charge line.
-    - `priceInTransactionCurrency`: the mandatory price in the transaction currency of the supplier, like `CNY` in China.
-      - `value`: the price value has a decimal `1234.56` format with any number of digits.
-      - `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`, `USD` and `CNY`.
-    - `priceInBaseCurrency`: the optional price in your base currency, like `EUR` in the EU.
-      - `value`: the price value has a decimal `1234.56` format with any number of digits.
-      - `currencyIso`: the 3-letter currency code according to ISO 4217, like `EUR`.
-  - `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1 which applies to the charge line price.
-
-#### Other line fields
-
-- `description`: a free format additional description of this line.
-- `indicators.accepted`: explicitly **accept** the order line as is; the responded `delivery schedule` and `prices` will be ignored.
-- `indicators.rejected`: explicitly **reject** the order line; the responded `delivery schedule` and `prices` will be ignored. When possible, provide the `reason`, see below.
-- `properties`: are key-value based custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line in the value.
-- `notes`: are simple custom fields. You can use as many as needed, but too many will clutter the portal. Use `\n` for a new line.
-- `reason`: optional reason in case:
-  - the order line is **rejected**
-  - the **responded** `delivery schedule` and `prices` are **NOT** **equal** to the **requested** or **confirmed** `delivery schedule` and `prices`
-  - a [**reopen** request](../reopen.md)
-
-## Order response meta data
-
-- `erpResponseDateTime`: Date and time the order was responded from your ERP system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`. See also [Standards](../../api/standards.md).
-- `erpRespondedBy`: the user email or user name as known in your ERP system who responded this order.
-
-## Response
-
-When the `/api-connector/order-response` API method returns HTTP status code 200, the order response was successfully queued for processing by Tradecloud. Processing usually takes less than a second, after which the order response is available in the portal and is forwarded to the buyer ERP integration.
+- `erpResponseDateTime`: date/time the order was responded in your ERP (ISO 8601 format: `yyyy-MM-ddThh:mm:ss`)
+- `erpRespondedBy`: email or username of the person who responded to this order in your ERP

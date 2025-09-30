@@ -2,7 +2,7 @@
 description: 'EDIFACT, CSV and custom file formats over secure SFTP server hosted by Tradecloud'
 ---
 
-# FTP Connectors
+# SFTP Connectors
 
 Tradecloud provides secure file-based integration through SFTP connectors, enabling seamless data exchange using industry-standard file formats for organizations that prefer batch processing or have legacy systems.
 
@@ -10,8 +10,8 @@ Tradecloud provides secure file-based integration through SFTP connectors, enabl
 
 | Connector | Format | Use Case |
 |-----------|--------|----------|
-| **[CSV FTP Connector](csv.md)** | RFC 4180 CSV | Custom CSV formats for flexible data exchange |
-| **[EDIFACT FTP Connector](edifact.md)** | UN/EDIFACT D.96A | Standardized EDI messaging for supply chain |
+| **[CSV SFTP Connector](csv.md)** | RFC 4180 CSV | Custom CSV formats for flexible data exchange |
+| **[EDIFACT SFTP Connector](edifact.md)** | UN/EDIFACT D.96A | Standardized EDI messaging for supply chain |
 
 ## Connection Details
 
