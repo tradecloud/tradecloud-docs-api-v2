@@ -1,5 +1,5 @@
 ---
-description: 'Custom CSV file integration using RFC 4180 format over secure FTP'
+description: 'Custom CSV file integration using RFC 4180 format over secure SFTP'
 ---
 
 # CSV SFTP Connector
@@ -52,7 +52,7 @@ Each CSV implementation is **custom-designed** to match your specific:
 
 ## Availability
 
-The CSV FTP Connector is available through our partner **Supplydrive**, who provides:
+The CSV SFTP Connector is available through our partner **Supplydrive**, who provides:
 
 - Custom CSV format design and mapping
 - Implementation and testing support  

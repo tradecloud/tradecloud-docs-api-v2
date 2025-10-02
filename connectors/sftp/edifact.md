@@ -1,5 +1,5 @@
 ---
-description: 'UN/EDIFACT D.96A standard messaging over secure FTP for supply chain integration'
+description: 'UN/EDIFACT D.96A standard messaging over secure SFTP for supply chain integration'
 ---
 
 # EDIFACT SFTP Connector
@@ -54,7 +54,7 @@ All messages comply with UN/EDIFACT D.96A specifications:
 
 ## Availability
 
-The EDIFACT FTP Connector is available through our partner **Supplydrive**, providing:
+The EDIFACT SFTP Connector is available through our partner **Supplydrive**, providing:
 
 - **Implementation expertise** for UN/EDIFACT D.96A standard
 - **Message mapping and validation** services

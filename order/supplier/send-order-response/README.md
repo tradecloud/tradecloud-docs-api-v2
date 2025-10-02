@@ -64,7 +64,7 @@ Processing typically takes less than a second, after which:
 ### Required order fields
 
 - `buyerAccountNumber`: your buyer's account number as known in your ERP system
-  - Must be set in in the Tradecloud portal after the connection is accepted
+  - Must be set in the Tradecloud portal after the connection is accepted
   - Must be unique within your company
 - `purchaseOrderNumber`: the purchase order number sent by the buyer
 - `lines`: Each order response must contain one or more lines
