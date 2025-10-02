@@ -16,7 +16,7 @@ When you are going to connect your ERP to Tradecloud One, you have to make some 
 
 ### Connector or API Integration?
 
-- [ ] **Should I buy a Connector or build an API integration?**
+[ ] **Should I buy a Connector or build an API integration?**
 
 This mainly depends on your ERP system.
 
@@ -26,7 +26,7 @@ They are battle-tested by our customers and will speed up your onboarding onto t
 If your ERP is not compatible with one of these connectors, it is possible to build an integration with our [JSON/XML API](#checklist-api-integration-design).
 This will require in-depth knowledge about your [ERP](#checklist-erp-design) and a partner or in-house software developer that has experience with web-based [API integrations](#checklist-api-integration-design).
 
-**Tradecloud One Connectors*-  
+#### Tradecloud One Connectors
 
 Together with our partners, Tradecloud offers the following connectors.
 
@@ -51,9 +51,10 @@ Generic Connectors:
 
 ### Middleware or 1-1 connection?
 
-- [ ] **Should I buy or build middleware or build a 1-1 connection?**
+[ ] **Should I buy or build middleware or build a 1-1 connection?**
 
-**Using Message-oriented Middleware*-  
+#### Using Message-oriented Middleware
+
 You will need message-oriented middleware if one of the following applies:
 
 - You have multiple business systems, like ERP, WMS and PLM systems, that have to integrate with Tradecloud One
@@ -66,28 +67,29 @@ Examples of message-oriented middleware that some of our customers use are:
 
 Be aware you still have to build and maintain message flows & data transformations and install and configure the middleware components.
 
-**Using a 1-1 connection*-  
+#### Using a 1-1 connection
+
 If you have only one ERP system and are planning to connect to Tradecloud only, building a 1-1 connection without message-oriented middleware will suffice.
 
 Some Tradecloud customers build 1-1 connections using the tools provided by the ERP system. Be aware that these tools may be limited, and may miss for example a HTTP client or server, or security or data transformation features.
 
 ### Required team members
 
-- [ ] **Which team members do I need?**
+[ ] **Which team members do I need?**
 
 - When using a **Tradecloud One Connector**, in most cases a partner consultant will install, configure and maintain the Connector for you.
 - When using **message-oriented middleware**, you will need an integration consultant with ERP knowledge to build and maintain the message flows & data transformations and install & configure the middleware components.
 - When building an **API integration**, you will need developers and a tester, both with ERP knowledge, to build and maintain the message flows & data transformations and install & configure the components.
 
-**In all cases*- you will need a cloud or system engineer, to configure a firewall, configure SSL, install and configure a web server or Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) components.
+**In all cases** you will need a cloud or system engineer, to configure a firewall, configure SSL, install and configure a web server or Microsoft [Azure Integration Services](https://azure.microsoft.com/en-us/products/category/integration) components.
 
 ### Message flows
 
-- [ ] **Which message flows should I build?**
+[ ] **Which message flows should I build?**
 
 This depends on the Tradecloud One modules that are agreed upon in the contract with Tradecloud.
 
-Within each module, there are several **message flows*- possible dependent on the buyer or supplier role. The more flows are implemented, the less manual work remains. Whether a flow can be implemented depends on:
+Within each module, there are several **message flows** possible dependent on the buyer or supplier role. The more flows are implemented, the less manual work remains. Whether a flow can be implemented depends on:
 
 - The process flow in your business
 - The capabilities of your ERP system
@@ -118,52 +120,55 @@ This part of the checklist is not applicable if you use a [Tradecloud One Connec
 
 Before starting the actual implementation, you need to verify the capabilities and requirements of your ERP system for an integration.
 
-- [ ] **Use a _delivery schedule_ or _single delivery_ per order line?*-  
+[ ] **Use a _delivery schedule_ or _single delivery_ per order line?**  
 
-  **Delivery schedule vs. single delivery:**
+**Delivery schedule vs. single delivery:**
   
-  - **Delivery schedule**: Multiple scheduled deliveries per order line (default method)
-    - Best for ERP systems that natively support multiple deliveries per order line (e.g., SAP)
-    - Provides more flexibility for complex delivery arrangements
-    - Maintains all scheduled deliveries within a single order line
+- **Delivery schedule**: Multiple scheduled deliveries per order line (default method)
+  - Best for ERP systems that natively support multiple deliveries per order line (e.g., SAP)
+  - Provides more flexibility for complex delivery arrangements
+  - Maintains all scheduled deliveries within a single order line
+
+- **Single delivery**: One scheduled delivery per order line
+  - Best for ERP systems that only support one scheduled delivery date/quantity per order line
+  - Tradecloud will automatically split delivery schedules into separate order lines in the communication with your ERP system
+  - Each split line maintains a reference to the original line via `originalPosition`
   
-  - **Single delivery**: One scheduled delivery per order line
-    - Best for ERP systems that only support one scheduled delivery date/quantity per order line
-    - Tradecloud will automatically split delivery schedules into separate order lines in the communication with your ERP system
-    - Each split line maintains a reference to the original line via `originalPosition`
-  
-  Choose based on your ERP system's capabilities and your business requirements.
-  
-  {% page-ref page="order/buyer/issue/delivery-schedule.md" %}
+Choose based on your ERP system's capabilities and your business requirements.
 
-- [ ] **Can your ERP system handle split order lines?*-  
+{% page-ref page="order/buyer/issue/delivery-schedule.md" %}
 
-  When a supplier splits an order line (e.g., it cannot deliver 10 pieces on date X, but it can deliver 6 on date X and 4 on date Y):
+[ ] **Can your ERP system handle split order lines?**  
 
-  - **Delivery schedule**: Multiple scheduled deliveries per order line (default method)
-    - Tradecloud creates new order delivery lines with empty `position` values
-    - Your ERP system must:
-      1. Assign new unique position identifiers to these split delivery lines
-      2. Update the delivery lines in Tradecloud with these new positions
+When a supplier splits an order line (e.g., it cannot deliver 10 pieces on date X, but it can deliver 6 on date X and 4 on date Y):
 
-  - **Single delivery**: One scheduled delivery per order line
-    - Tradecloud creates new order lines with empty `position` values
-    - These new lines include an `originalPosition` reference to the original line
-    - Your ERP system must:
-      1. Assign new unique position identifiers to these split order lines
-      2. Maintain the relationship to the original line via the `originalPosition` value in your ERP
-      3. Update the lines in Tradecloud with these new positions and their `originalPosition`
-  
-  {% page-ref page="api/delivery-schedule.md" %}
+- **Delivery schedule**: Multiple scheduled deliveries per order line (default method)
+  - Tradecloud creates new order delivery lines with empty `position` values
+  - Your ERP system must:
+    1. Assign new unique position identifiers to these split delivery lines
+    2. Update the delivery lines in Tradecloud with these new positions
 
-- [ ] **Receive only _changed_ or _all_ order/shipment lines?*-  
-  When order updates are sent from Tradecloud One to your ERP, what does your ERP require?  
-  Does your ERP expect only new and updated lines, or does it always expect all lines of an order in an order/order response and all shipment lines in a shipment message?
+- **Single delivery**: One scheduled delivery per order line
+  - Tradecloud creates new order lines with empty `position` values
+  - These new lines include an `originalPosition` reference to the original line
+  - Your ERP system must:
+    1. Assign new unique position identifiers to these split order lines
+    2. Maintain the relationship to the original line via the `originalPosition` value in your ERP
+    3. Update the lines in Tradecloud with these new positions and their `originalPosition`
 
-**Order/response*-  
+{% page-ref page="api/delivery-schedule.md" %}
+
+[ ] **Receive only _changed_ or _all_ order/shipment lines?**  
+
+When order updates are sent from Tradecloud One to your ERP, what does your ERP require?  
+Does your ERP expect only new and updated lines, or does it always expect all lines of an order in an order/order response and all shipment lines in a shipment message?
+
+### Order/response
+
 Tradecloud sends only touched lines in an order/response message. When your ERP needs all order/response lines, you may fetch the complete order or alternatively use order polling.
 
-**Shipment*-  
+### Shipment
+
 Tradecloud sends always all lines in a shipment message. If you only need the touched shipment lines, you may filter out lines based on the 'lastUpdatedAt' field, see:  
 {% page-ref page="shipment/buyer/receive/README.md#shipment-line-meta-information" %}  
 
@@ -175,30 +180,38 @@ This part of the checklist is not applicable if you use a [Tradecloud One Connec
 
 When starting to build and integration with the Tradecloud One API, make sure to check the following:
 
-- [ ] **Use [Basic](api/standards.md#basic-http-authentication) or [JWT](api/standards.md#jwt) authentication?*-  
-  Your integration must either use Basic Authentication or authentication based on a JWT token:
-  {% page-ref page="security/authentication.md" %}
-- [ ] **Use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?*-  
-  By default, Tradecloud works with JSON but some API endpoints also work with XML and more will be added on request:
-  {% page-ref page="api/json-vs-xml.md" %}
-- [ ] **Use _webhooks_ or _polling_?*-  
-  Depending on the capabilities of your integration, you may choose for using Webhooks or Polling:
-  {% page-ref page="api/webhook-vs-polling.md" %}
-- [ ] **If using webhooks, use _Basic_, _Bearer Token_ or  _OAuth_ authentication?*-  
-  In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication, a static Bearer token, or OAuth 2.0 Client Credentials Grant.
-- [ ] **Use Ip source filtering?*-  
-  When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as a webhook does not use MFA or SSO. You may find the Tradecloud egress ip addresses here:  
-  {% page-ref page="api/environments.md#source-ip-addresses" %}
-- [ ] **Are you forward compatible?*-  
-  Your integration must follow the forward compatibility rules:  
-  {% page-ref page="api/compatibility.md" %}
-- [ ] **Do you have a test environment?*-  
-  Tradecloud provides a test environment which you may use to develop and test against:  
-  {% page-ref page="api/environments.md#acceptance-test-environment" %} 
-- [ ] **Usage rules*-  
-  There are [rules and limits](api/rules.md) which you may want to check. 
-- [ ] **Tools*-  
-  There are [tools](api/tools/README.md) which you may want to use. Let [support](support.md) know if you need some example.
+[ ] **Use [Basic](api/standards.md#basic-http-authentication) or [JWT](api/standards.md#jwt) authentication?**  
+Your integration must either use Basic Authentication or authentication based on a JWT token:
+{% page-ref page="security/authentication.md" %}
+
+[ ] **Use [JSON](api/standards.md#json) or [XML](api/standards.md#xml)?**  
+By default, Tradecloud works with JSON but some API endpoints also work with XML and more will be added on request:
+{% page-ref page="api/json-vs-xml.md" %}
+
+[ ] **Use _webhooks_ or _polling_?**  
+Depending on the capabilities of your integration, you may choose for using Webhooks or Polling:
+{% page-ref page="api/webhook-vs-polling.md" %}
+
+[ ] **If using webhooks, use _Basic_, _Bearer Token_ or  _OAuth_ authentication?**  
+In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication, a static Bearer token, or OAuth 2.0 Client Credentials Grant.
+
+[ ] **Use Ip source filtering?**  
+When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as a webhook does not use MFA or SSO. You may find the Tradecloud egress ip addresses here:  
+{% page-ref page="api/environments.md#source-ip-addresses" %}
+
+[ ] **Are you forward compatible?**  
+Your integration must follow the forward compatibility rules:  
+{% page-ref page="api/compatibility.md" %}
+
+[ ] **Do you have a test environment?**  
+Tradecloud provides a test environment which you may use to develop and test against:  
+{% page-ref page="api/environments.md#acceptance-test-environment" %} 
+
+[ ] **Usage rules**  
+There are [rules and limits](api/rules.md) which you may want to check. 
+
+[ ] **Tools**  
+There are [tools](api/tools/README.md) which you may want to use. Let [support](support.md) know if you need some example.
 
 ### Support
 
