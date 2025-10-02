@@ -38,16 +38,16 @@ ERP-specific connectors:
 - Infor LN Connector _(by [Xibis](https://xibis.nl/))_
 - Isah API Connector _(by [Tambien](https://tambien.nl))_
 - Isah [SCI](https://help.isah.com/r511/#/home/71601/1043/isah) Connector _(by [Isah](https://isah.com))_
-- Microsoft Dynamics 365 Business Central [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/microsoft-dynamics-bc/connectivity-studio) 
+- Microsoft Dynamics 365 Business Central [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/microsoft-dynamics-bc/connectivity-studio)
 - Microsoft Dynamics 365 Finance & Operations [Connectivity Studio _(by To-Increase)_](https://www.to-increase.com/business-integration/connectivity-studio)
-- SAP SOAP Connector - for single SAP ERP instances
+- SAP SOAP Connector - for single SAP ERP instances _(by Tradecloud)_
 - Slim4 Forecast Connector _(by [Slimstock](https://www.slimstock.com))_
 
 Generic Connectors:
 
 - [CSV Connector](connectors/sftp/csv.md) by [Supply Drive](https://supplydrive.cloud/)
 - [Edifact Connector](connectors/sftp/edifact.md) by [Supply Drive](https://supplydrive.cloud/)
-- [SCSN](https://smart-connected.nl) Connector by [Supply Drive](https://supplydrive.cloud/))
+- [SCSN](https://smart-connected.nl) Connector by [Supply Drive](https://supplydrive.cloud/)
 
 ### Middleware or 1-1 connection?
 
@@ -115,7 +115,7 @@ For more information about the available message flows for suppliers, check out:
 ## Checklist ERP Design
 
 {% hint style="info" %}
-This part of the checklist is not applicable if you use a [Tradecloud One Connectors](#connector-or-api-integration)
+This part of the checklist is not applicable if you use one of the [Tradecloud One Connectors](#connector-or-api-integration)
 {% endhint %}
 
 Before starting the actual implementation, you need to verify the capabilities and requirements of your ERP system for an integration.
@@ -175,7 +175,7 @@ Tradecloud sends always all lines in a shipment message. If you only need the to
 ## Checklist API Integration Design
 
 {% hint style="info" %}
-This part of the checklist is not applicable if you use a [Tradecloud One Connectors](#connector-or-api-integration)
+This part of the checklist is not applicable if you use one of the [Tradecloud One Connectors](#connector-or-api-integration)
 {% endhint %}
 
 When starting to build and integration with the Tradecloud One API, make sure to check the following:

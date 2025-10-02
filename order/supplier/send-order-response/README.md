@@ -61,28 +61,35 @@ Processing typically takes less than a second, after which:
 
 ## Order fields
 
-### Required fields
+### Required order fields
 
 - `buyerAccountNumber`: your buyer's account number as known in your ERP system
   - Must be set in in the Tradecloud portal after the connection is accepted
   - Must be unique within your company
 - `purchaseOrderNumber`: the purchase order number sent by the buyer
-- `lines`: Each order response must contain one or more lines:
+- `lines`: Each order response must contain one or more lines
 
-### Optional fields
+### Optional order fields
 
-- `companyId`: Tradecloud company identifier (only needed if your integration user has multiple company authorizations)
+- `companyId`: Tradecloud company identifier
+  - Only needed if your integration user has multiple company authorizations
 - `contact.email`: email of the supplier employee responsible for this order
   - The user must be active in Tradecloud
 - `description`: additional description of this order
-- `indicators.accepted`: accept responded order lines as-is (its delivery schedule and prices will be ignored)
-- `indicators.rejected`: reject responded order lines (its delivery schedule and prices will be ignored)
-- `properties`: key-value custom fields (use `\n` for new lines)
-- `notes`: simple text notes (use `\n` for new lines)
+- `indicators.accepted`: accept responded order lines as-is
+  - Its delivery schedule and prices will be ignored
+- `indicators.rejected`: reject responded order lines
+  - Its delivery schedule and prices will be ignored
+- `properties`: key-value custom fields
+  - use `\n` for new lines
+- `notes`: simple text notes
+  - use `\n` for new lines
 
-## Line fields
+## Required line fields
 
-- `purchaseOrderLinePosition`: **required** - must match the position sent by the buyer
+- `purchaseOrderLinePosition`: must match the position sent by the buyer
+
+## Optional line fields
 
 ### Responded delivery schedule
 
@@ -90,8 +97,10 @@ At least one delivery schedule line is required:
 
 - `position`: optional position in the delivery schedule
   - Echo the `position` from the buyer, OR leave empty
-  - For new split delivery lines: omit the position (buyer will assign it)
-  - If empty: preserve the original order and append new lines at the end
+  - For new split delivery lines:
+    - Leave the position empty - the buyer will assign it
+    - Append new delivery lines at the end
+    - Provide a `reason`
 - `date`: delivery date in ISO 8601 format (`yyyy-MM-dd`)
   - Can be left empty if unknown
   - Provide a `reason` if different from the requested date
@@ -119,7 +128,7 @@ Additional costs independent of order line prices (e.g., transport, packing, ins
 
 - `position`: identifier for the charge line
   - Echo the `position` from the buyer, OR
-  - Omit for new charge lines (buyer will assign it)
+  - Omit for new charge lines - the buyer will assign it
 - `chargeTypeCode`: **required** - charge reason code ([UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/))
 - `chargeDescription`: **required** - text description (e.g., "Transport costs")
 - `quantity`: **required** - quantity for this charge
@@ -135,14 +144,18 @@ Additional costs independent of order line prices (e.g., transport, packing, ins
 ### Other line fields
 
 - `description`: additional description of this line
-- `indicators.accepted`: accept the line as-is (delivery schedule, prices, and header indicators ignored)
-- `indicators.rejected`: reject the line (delivery schedule, prices, and header indicators ignored)
+- `indicators.accepted`: accept the line as-is
+  - Delivery schedule, prices, and header indicators are ignored
+- `indicators.rejected`: reject the line
+  - Delivery schedule, prices, and header indicators are ignored
 - `reason`: explanation when:
   - The line is rejected
   - Responded values differ from requested or confirmed values
-  - Sending a [reopen request](../reopen.md)
-- `properties`: key-value custom fields (use `\n` for new lines)
-- `notes`: simple text notes (use `\n` for new lines)
+  - Splitting in the delivery schedule
+- `properties`: key-value custom fields
+  - use `\n` for new lines
+- `notes`: simple text notes
+  - use `\n` for new lines
 
 ### Item
 
