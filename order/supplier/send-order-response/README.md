@@ -14,6 +14,12 @@ The order response should only contain **order lines** that are **new or changed
 
 ## Order process
 
+As a supplier, you have three possible ways to respond to an order:
+
+1. **Detailed response**: Send an order response with lines containing their position, confirmed delivery schedule, prices, and optionally charge lines
+2. **Line-level acceptance**: Send an order response with lines containing their position and line-level accept or reject indicators
+3. **Header-level acceptance**: Send an order response with header-level accept or reject indicators, and lines containing only their positions
+
 After sending an order response, the order line process status may change based on the current status:
 
 ### Status: Issued
@@ -51,7 +57,7 @@ The process status will **not** change.
 
 Use the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint to send an order response to Tradecloud.
 
-HTTP status code **200** or **202** means the order response was successfully verified or queued. 
+HTTP status code **200** or **202** means the order response was successfully verified or queued.
 
 Processing typically takes less than a second, after which:
 
@@ -76,10 +82,12 @@ Processing typically takes less than a second, after which:
 - `contact.email`: email of the supplier employee responsible for this order
   - The user must be active in Tradecloud
 - `description`: additional description of this order
-- `indicators.accepted`: accept responded order lines as-is
-  - Its delivery schedule and prices will be ignored
+- `indicators.accepted`: accept responded order lines as-is.
+  - Order lines with positions are required.
+  - Its delivery schedule, prices and, charge lines will be ignored
 - `indicators.rejected`: reject responded order lines
-  - Its delivery schedule and prices will be ignored
+  - Order lines with positions are required.
+  - Its delivery schedule, prices and, charge lines will be ignored
 - `properties`: key-value custom fields
   - use `\n` for new lines
 - `notes`: simple text notes
@@ -145,9 +153,9 @@ Additional costs independent of order line prices (e.g., transport, packing, ins
 
 - `description`: additional description of this line
 - `indicators.accepted`: accept the line as-is
-  - Delivery schedule, prices, and header indicators are ignored
+  - Delivery schedule, prices, charge lines, and header indicators are ignored
 - `indicators.rejected`: reject the line
-  - Delivery schedule, prices, and header indicators are ignored
+  - Delivery schedule, prices, charge lines, and header indicators are ignored
 - `reason`: explanation when:
   - The line is rejected
   - Responded values differ from requested or confirmed values
