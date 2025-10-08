@@ -2,9 +2,9 @@
 description: 'Custom CSV file integration using RFC 4180 format over secure SFTP'
 ---
 
-# CSV FTP Connector
+# CSV SFTP Connector
 
-The CSV FTP Connector enables flexible data exchange using custom CSV (Comma-Separated Values) formats, ideal for organizations with specific data structure requirements or legacy systems that work best with tabular data.
+The CSV SFTP Connector enables flexible data exchange using custom CSV (Comma-Separated Values) formats, ideal for organizations with specific data structure requirements or legacy systems that work best with tabular data.
 
 ## Overview
 
@@ -52,7 +52,7 @@ Each CSV implementation is **custom-designed** to match your specific:
 
 ## Availability
 
-The CSV FTP Connector is available through our partner **Supplydrive**, who provides:
+The CSV SFTP Connector is available through our partner **Supplydrive**, who provides:
 
 - Custom CSV format design and mapping
 - Implementation and testing support  
