@@ -82,12 +82,14 @@ Processing typically takes less than a second, after which:
 - `contact.email`: email of the supplier employee responsible for this order
   - The user must be active in Tradecloud
 - `description`: additional description of this order
-- `indicators.accepted`: accept responded order lines as-is.
+- `indicators.accepted`: accept all lines in this response as‑is.
   - Order lines with positions are required.
-  - Its delivery schedule, prices and, charge lines will be ignored
-- `indicators.rejected`: reject responded order lines
+  - Delivery schedule, prices, and charge lines will be ignored for these lines
+  - Line‑level indicators override this header indicator when present
+- `indicators.rejected`: reject all lines in this response
   - Order lines with positions are required.
-  - Its delivery schedule, prices and, charge lines will be ignored
+  - Delivery schedule, prices, and charge lines will be ignored for these lines
+  - Line‑level indicators override this header indicator when present
 - `properties`: key-value custom fields
   - use `\n` for new lines
 - `notes`: simple text notes
@@ -127,8 +129,10 @@ At least one delivery schedule line is required:
   - `priceInBaseCurrency`: optional
     - `value`: decimal format (e.g., `1234.56`)
     - `currencyIso`: 3-letter ISO 4217 code
-- `priceUnitOfMeasureIso`: price unit (ISO 80000-1) - copied from buyer if empty
-- `priceUnitQuantity`: quantity at which price applies (typically `1` or `100`) - copied from buyer if empty
+- `priceUnitOfMeasureIso`: price unit
+  - Copied from buyer if empty
+- `priceUnitQuantity`: quantity at which price applies (typically `1` or `100`)
+  - Copied from buyer if empty
 
 ### Responded charge lines
 
@@ -147,7 +151,7 @@ Additional costs independent of order line prices (e.g., transport, packing, ins
   - `priceInBaseCurrency`: optional
     - `value`: decimal format
     - `currencyIso`: 3-letter ISO 4217 code
-- `priceUnitOfMeasureIso`: price unit (ISO 80000-1)
+- `priceUnitOfMeasureIso`: price unit
 
 ### Other line fields
 
@@ -179,12 +183,12 @@ You can check, change, or add item details if the buyer's information is incorre
 - `countryOfOriginCodeIso2`: ISO 3166-1 alpha-2 country code of origin
 - `combinedNomenclatureCode`: goods classification code for customs and trade statistics
 - `netWeight`: net weight of one item
-- `netWeightUnitOfMeasureIso`: net weight unit (ISO 80000-1)
+- `netWeightUnitOfMeasureIso`: net weight unit
 - `dangerousGoodsCodeUnece`: UN number for dangerous goods (4-digit)
 - `serialNumber`: unique sequential identifier for the item
 - `batchNumber`: identification number for a quantity/lot from a manufacturer
 
 ## Order response metadata
 
-- `erpResponseDateTime`: date/time the order was responded in your ERP (ISO 8601 format: `yyyy-MM-ddThh:mm:ss`)
+- `erpResponseDateTime`: date/time the order was responded in your ERP (ISO 8601 format: `yyyy-MM-ddTHH:mm:ss`)
 - `erpRespondedBy`: email or username of the person who responded to this order in your ERP
