@@ -7,7 +7,7 @@ When using the order webhook, you can configure and receive the following order 
 The buyer can issue, reissue before confirmation or update order lines.
 
 - **Issued**: The buyer issued a new order or issued additional lines within an existing order
-- **Reissued** The buyer updated issued lines
+- **Reissued**: The buyer updated issued lines
 - **Updated**: The buyer updated confirmed lines. If confirmed delivery schedules or prices are updated, this triggers a [reopen request](#order-reopen-request-by-buyer).
 
 | OrderEvent                  | Webhook Configuration                                                                 |
@@ -88,7 +88,7 @@ The supplier can request an alternative delivery schedule or prices after confir
 
 ## Order reconfirmation request by buyer
 
-The buyer can request to reconfirm order lines. The supplier can reconfirm the order lines or submit a [reopen request](#order-reopen-request-by-supplier)
+The buyer can request to reconfirm order lines. The supplier can reconfirm the order lines or submit a [reopen request](#order-reopen-request-by-supplier).
 
 - **Requested**: The buyer requested to reconfirm order lines.
 - **Reconfirmed**: The supplier reconfirmed the order lines
@@ -127,7 +127,7 @@ The buyer can complete order lines and revert the completion of order lines.
 Both buyer and supplier can update the logistics process.
 
 - **Open**: The buyer or supplier marked order lines as open again, being previously shipped or delivered.
-- **Shipped**: The buyer marked order lines as shipped by the supplier
+- **Shipped**: The buyer marked order lines as shipped.
 - **Delivered**: The buyer or supplier marked order lines as delivered at the buyer.
 - **Updated**: The buyer or supplier updated the delivery line logistics fields.
 
