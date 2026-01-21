@@ -141,6 +141,20 @@ Both buyer and supplier can update the logistics process.
 | `OrderLinesDeliveryScheduleLogisticsUpdatedByBuyer`    | Delivery schedule logistics fields are updated by the buyer    |
 | `OrderLinesDeliveryScheduleLogisticsUpdatedBySupplier` | Delivery schedule logistics fields are updated by the supplier |
 
+## Order lines shipment reschedule
+
+When a shipment is issued or reissued by the supplier, the order module needs to be informed about this. If the shipment line quantity matches the delivery line quantity, the delivery schedule status is set to "Ready To Ship". However, if the quantities differ, a supplier shipment reschedule request is created in the order line, triggering a reschedule request event. The buyer can then approve or reject this request.
+
+- **Requested**: The supplier requested to reschedule order lines due to shipment quantity differences.
+- **Approved**: The buyer approved the shipment reschedule request.
+- **Rejected**: The buyer rejected the shipment reschedule request.
+
+| OrderEvent                                         | Webhook Configuration                                                      |
+| -------------------------------------------------- | -------------------------------------------------------------------------- |
+| `OrderLinesShipmentRescheduleRequestedBySupplier`  | Order lines shipment reschedule is requested by the supplier               |
+| `OrderLinesShipmentRescheduleApprovedByBuyer`      | Order lines shipment reschedule request is approved by the buyer           |
+| `OrderLinesShipmentRescheduleRejectedByBuyer`      | Order lines shipment reschedule request is rejected by the buyer           |
+
 ## Order contacts
 
 - **Reassigned**: The buyer or supplier reassigned their order contact.
