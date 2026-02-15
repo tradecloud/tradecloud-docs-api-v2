@@ -44,7 +44,7 @@ Use the [POST order webhook](https://swagger-ui.accp.tradecloud1.com/?url=https:
 
 The webhook body contains:
 
-- `eventName`: Contains the [order event name](https://docs.tradecloud1.com/connectors/webhook-connector/order-events)
+- `eventName`: Contains the [Order event name](../../../connectors/webhooks/order-events.md)
 - `orderEvent`: Contains the actual order event
 - `meta`: The message meta information, see [Message meta information](#message-meta-information)
 

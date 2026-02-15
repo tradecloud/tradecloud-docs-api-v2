@@ -29,15 +29,7 @@ Use the [POST shipment webhook](https://swagger-ui.accp.tradecloud1.com/?url=htt
 
 The webhook body contains:
 
-- `eventName`: The shipment event name, currently
-  - `ShipmentIssuedBySupplier`
-  - `ShipmentReissuedBySupplier`
-  - `ShipmentApprovedByBuyer`
-  - `ShipmentRejectedByBuyer`
-  - `ShipmentHeaderUpdatedBySupplier`
-  - `ShipmentDocumentAttachedByBuyer`
-  - `ShipmentDocumentAttachedBySupplier`
-  - `ShipmentResentByBuyer`
+- `eventName`: Contains the [Shipment event name](../../../connectors/webhooks/shipment-events.md)
 - `shipment`: The actual shipment state
 - `meta`: The message meta information, see [Message meta information](#message-meta-information)
 
