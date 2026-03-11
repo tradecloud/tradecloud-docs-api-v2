@@ -141,7 +141,7 @@ When working with order endpoints:
 
 - The supplier must check whether the purchase order already exists in their ERP system and either ignore the update or update the existing order.
 - Use `data.lines.lastUpdatedAt` to identify which specific lines have changed since the `lastUpdatedAfter` time you provided.
-- Filter by order- and line-level status using `data.status` and `data.lines.status` fields:
+- Filter by order- and line-level status using `data.status` and `data.lines.status` fields. See [Order and line status](../../order/status.md) for the complete list of values:
   - `processStatus`
   - `inProgressStatus`
   - `logisticsStatus`

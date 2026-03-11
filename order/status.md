@@ -60,12 +60,16 @@ The line in progress status is a more fine-grained status when an order line `pr
 
 #### Reopen requests
 
-* `OpenBuyerReopenRequest`: There is an open reopen request from the buyer.
-* `OpenSupplierReopenRequest`: There is an open reopen request from the supplier.
+* `OpenBuyerReopenRequest`: There is an open reopen request (confirm different schedule/prices) from the buyer.
+* `OpenSupplierReopenRequest`: There is an open reopen request (confirm different schedule/prices) from the supplier.
+
+#### Reconfirmation request
+
+* `OpenBuyerReconfirmationRequest`: There is an open reconfirmation request (reconfirm the same schedule & prices) from the buyer.
 
 #### Reschedule request
 
-* `OpenSupplierShipmentRescheduleRequest`: There is an open reschedule request due to a shipment.
+* `OpenSupplierShipmentRescheduleRequest`: There is an open reschedule request (confirm different schedule) due to a shipment.
 * `ApprovedDeliverySchedule`: The delivery schedule has been approved after a reschedule request.
 * `RejectedDeliverySchedule`: The delivery schedule has been rejected after a reschedule request.
 
@@ -80,7 +84,7 @@ The line logistics status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the line quantity is produced by the supplier
-* `ReadyToShip`: the line quantity ready to be shipped by the supplier
+* `ReadyToShip`: the line quantity is ready to be shipped by the supplier
 * `Shipped`: the line quantity shipped by the supplier
 * `Delivered`: the line quantity delivered at the buyer
 * `Cancelled`: the line is cancelled by the buyer

@@ -13,6 +13,6 @@ In this case the fields `lines.deliverySchedule`, `lines.prices` and `lines.char
 
 This can be solved by ignoring the order or response update in your polling integration when there is an open request:
 
-* When you do not process open requests at all: ignore the order/response update when [`lines.status.ProcessStatus`](../../order/buyer/receive/README.md#line-process-status) is `InProgress`.
-* When you are a buyer and and you process supplier requests: ignore the response update when [`lines.status.inProgressStatus`](../../order/buyer/receive/README.md#line-in-progress-status) is `OpenBuyerReopenRequest`.
-* When you are a supplier and and you process buyer requests: ignore the order update when [`lines.status.inProgressStatus`](../../order/supplier/receive/README.md#line-in-progress-status) is either `OpenSupplierProposal` or `OpenSupplierReopenRequest`.
+* When you do not process open requests at all: ignore the order/response update when [`lines.status.processStatus`](../../order/status.md#line-process-status) is `InProgress`.
+* When you are a buyer and you process supplier requests: ignore the response update when [`lines.status.inProgressStatus`](../../order/status.md#line-in-progress-status) is `OpenBuyerReopenRequest`.
+* When you are a supplier and you process buyer requests: ignore the order update when [`lines.status.inProgressStatus`](../../order/status.md#line-in-progress-status) is either `OpenSupplierProposal` or `OpenSupplierReopenRequest`.

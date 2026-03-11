@@ -18,7 +18,7 @@ When working with the single delivery per order line feature, these indicators b
 `confirmed`: all goods of this order or line are confirmed by the supplier, according to the buyer.
 
 {% hint style="info" %}
-The order or line must have process status `Issued` and will become `Confirmed`.
+The order or line must have [process status](../../status.md#line-process-status) `Issued` and will become `Confirmed`.
 This indicator is only intended for onboarding or migration of order lines which are already confirmed.
 {% endhint %}
 
@@ -27,8 +27,8 @@ This indicator is only intended for onboarding or migration of order lines which
 `requestReconfirmation`: the supplier is requested to reconfirm the order line. The supplier either reconfirms the order line with requested values or alternatively does a reopen request with different values.
 
 {% hint style="info" %}
-The order or line must have process status `Confirmed` and will become `InProgress`.
-The `inProgressStatus` will become `OpenBuyerReconfirmationRequest`
+The order or line must have [process status](../../status.md#line-process-status) `Confirmed` and will become `InProgress`.
+The [`inProgressStatus`](../../status.md#line-in-progress-status) will become `OpenBuyerReconfirmationRequest`
 {% endhint %}
 
 ### Shipped by supplier
@@ -36,7 +36,7 @@ The `inProgressStatus` will become `OpenBuyerReconfirmationRequest`
 `shipped`: all goods of this order or line are completely shipped by the supplier, according to the buyer.
 
 {% hint style="info" %}
-The order or line having logistics status `Open`, `Produced`, `ReadyToShip`  will become `Shipped`.
+The order or line having [logistics status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip` will become `Shipped`.
 {% endhint %}
 
 ### Delivered at buyer
@@ -44,7 +44,7 @@ The order or line having logistics status `Open`, `Produced`, `ReadyToShip`  wil
 `delivered`: all goods of the order or line are completely delivered at the buyer.
 
 {% hint style="info" %}
-The order or line having logistics status `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`.
+The order or line having [logistics status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`.
 {% endhint %}
 
 ### Completed at buyer
