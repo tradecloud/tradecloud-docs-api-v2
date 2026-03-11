@@ -152,22 +152,7 @@ The order status is the aggregation of all the lines statuses. See [Order status
 * `prices`: the requested alternative prices
 * `chargeLines`: the requested alternative charge lines, see [Charge lines](#charge-lines)
 * `reason`: the reason of this request given by the supplier
-* `status`: the [Request status](./#request-status).
-
-##### Request status
-
-{% hint style="info" %}
-The request status is one of:
-
-* `Open`: Requested by one party. To be approved or rejected by the other party.
-* `Approved`: The request is approved by the other party.
-* `Rejected`: The request is rejected by the other party.
-* `Closed`: The request is closed because it is not relevant anymore.
-{% endhint %}
-
-{% hint style="warning" %}
-If the request status is `Open` the other party must approve or reject it.
-{% endhint %}
+* `status`: the [Request status](../../status.md#request-status).
 
 ### Confirmed line
 
@@ -211,21 +196,11 @@ The `lines.deliveryScheduleIncludingRequests` field **does include any open supp
 
 These additional logistics fields are only available in the order line level delivery schedule:
 
-* `lines.deliverySchedule[IncludingRequests].status`: the optional delivery line's [Scheduled delivery logistics status](#scheduled-delivery-logistics-status).
+* `lines.deliverySchedule[IncludingRequests].status`: the optional delivery line's [Scheduled delivery logistics status](../../status.md#scheduled-delivery-logistics-status).
 * `lines.deliverySchedule[IncludingRequests].etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 * `lines.deliverySchedule[IncludingRequests].eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 
-##### Scheduled delivery logistics status
-
-{% hint style="info" %}
-The delivery line logistics status is one of:
-
-* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
-* `Produced`: the delivery line quantity is produced by the supplier
-* `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
-* `Shipped`: the delivery line quantity is shipped by the supplier
-* `Delivered`: the delivery line quantity is delivered at the buyer
-{% endhint %}
+See [Scheduled delivery logistics status](../../status.md#scheduled-delivery-logistics-status) for the complete list of values.
 
 ### Prices
 

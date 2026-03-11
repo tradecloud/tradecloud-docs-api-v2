@@ -4,7 +4,7 @@ description: Order and line status reference
 
 # Order and line status
 
-This page consolidates all order-level and line-level status values used in Tradecloud orders.
+This page consolidates all order-level, line-level, and related status values used in Tradecloud orders.
 
 ## Order status
 
@@ -88,3 +88,22 @@ The line logistics status is one of:
 * `Shipped`: the line quantity shipped by the supplier
 * `Delivered`: the line quantity delivered at the buyer
 * `Cancelled`: the line is cancelled by the buyer
+
+## Scheduled delivery logistics status
+
+The delivery line logistics status applies to individual scheduled deliveries within an order line's delivery schedule. The status is one of:
+
+* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
+* `Produced`: the delivery line quantity is produced by the supplier
+* `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
+* `Shipped`: the delivery line quantity is shipped by the supplier
+* `Delivered`: the delivery line quantity is delivered at the buyer
+
+## Request status
+
+The request status applies to all requests (supplier or buyer). The status is one of:
+
+* `Open`: Requested by one party. To be approved or rejected by the other party.
+* `Approved`: The request is approved by the other party.
+* `Rejected`: The request is rejected by the other party.
+* `Closed`: The request is closed because it is not relevant anymore.

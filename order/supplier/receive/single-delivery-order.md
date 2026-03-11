@@ -147,21 +147,9 @@ When using `singleDeliveryOrderEvent` one single delivery per order line is used
 
 These additional logistics fields are only available in the status line scheduled delivery:
 
-* `lines.statusLine.scheduledDelivery[InclRequests].status`: the optional delivery line's [Scheduled delivery logistics status](#scheduled-delivery-logistics-status).
+* `lines.statusLine.scheduledDelivery[InclRequests].status`: the optional delivery line's [Scheduled delivery logistics status](../../status.md#scheduled-delivery-logistics-status).
 * `lines.statusLine.scheduledDelivery[InclRequests].etd`: The optional logistics Estimated Time of Departure \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
 * `lines.statusLine.scheduledDelivery[InclRequests].eta`: The optional logistics Estimated Time of Arrival \(local date without time zone\). Date has ISO 8601 date `yyyy-MM-dd` format.
-
-##### Scheduled delivery logistics status
-
-{% hint style="info" %}
-The delivery line logistics status is one of:
-
-* `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
-* `Produced`: the delivery line quantity is produced by the supplier
-* `ReadyToShip`: the delivery line quantity is ready to be shipped by the supplier
-* `Shipped`: the delivery line quantity is shipped by the supplier
-* `Delivered`: the delivery line quantity is delivered at the buyer
-{% endhint %}
 
 #### Prices
 
