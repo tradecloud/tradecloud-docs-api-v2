@@ -8,7 +8,7 @@ This page consolidates all order-level, line-level, and related status values us
 
 ## Order status
 
-The order status is the aggregation of all the lines statuses.
+The order status is the aggregation of all lines status values.
 
 ### Order process status
 
