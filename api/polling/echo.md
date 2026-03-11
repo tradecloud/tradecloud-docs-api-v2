@@ -5,14 +5,33 @@ description: >-
 
 # Handle echoed changes when using polling
 
-An order update or order response can result in an **open request**, where the other party is asked to approve changes. 
+## The problem
 
-In this case, there is a functional consideration that requires careful attention, if your ERP system **does not make a distinction between `requested` versus `confirmed` fields**:
+When your ERP system sends an order update or order response that results in an **open request** (e.g. a proposal, reopen or reschedule request), the other party must first approve or reject the change. Until that happens, the `lines.deliverySchedule`, `lines.prices` and `lines.chargeLines` fields keep returning the **previous** issued or confirmed values — not the values you just sent.
 
-In this case the fields `lines.deliverySchedule`, `lines.prices` and `lines.chargeLines` will still contain the issued or confirmed values, and not the changed values just sent by your ERP system. In the next polling request, when these old values are processed by your ERP system, they may revert the changed values in your ERP system.
+On the next poll, your integration receives these old values. If your ERP system **does not distinguish between `requested` and `confirmed` fields**, it may overwrite the change it just submitted with the stale values from the poll response, effectively reverting your own update.
 
-This can be solved by ignoring the order or response update in your polling integration when there is an open request:
+## The solution
 
-* When you do not process open requests at all: ignore the order/response update when [`lines.status.processStatus`](../../order/status.md#line-process-status) is `InProgress`.
-* When you are a buyer and you process supplier requests: ignore the response update when [`lines.status.inProgressStatus`](../../order/status.md#line-in-progress-status) is `OpenBuyerReopenRequest`.
-* When you are a supplier and you process buyer requests: ignore the order update when [`lines.status.inProgressStatus`](../../order/status.md#line-in-progress-status) is either `OpenSupplierProposal` or `OpenSupplierReopenRequest`.
+Skip processing a polled order line whenever it has an open request that originated from your side. Use the [`lines.status.processStatus`](../../order/status.md#line-process-status) or [`lines.status.inProgressStatus`](../../order/status.md#line-in-progress-status) fields to detect this.
+
+### Option 1: Ignore all in-progress lines
+
+If your integration does not process open requests at all, ignore any order line where `lines.status.processStatus` is `InProgress`.
+
+### Option 2: Ignore only your own open requests
+
+If your integration does process incoming requests from the other party, only skip the lines where **you** are the requesting party:
+
+**Buyer integration** — ignore the response update when `lines.status.inProgressStatus` is one of:
+
+* `OpenBuyerReopenRequest`
+* `OpenBuyerReconfirmationRequest`
+
+**Supplier integration** — ignore the order update when `lines.status.inProgressStatus` is one of:
+
+* `OpenSupplierProposal`
+* `OpenSupplierReopenRequest`
+* `OpenSupplierShipmentRescheduleRequest`
+
+See [Line in Progress status](../../order/status.md#line-in-progress-status) for the complete list of in-progress status values.
