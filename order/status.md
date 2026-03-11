@@ -85,8 +85,8 @@ The line logistics status is one of:
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the line quantity is produced by the supplier
 * `ReadyToShip`: the line quantity is ready to be shipped by the supplier
-* `Shipped`: the line quantity shipped by the supplier
-* `Delivered`: the line quantity delivered at the buyer
+* `Shipped`: the line quantity is shipped by the supplier
+* `Delivered`: the line quantity is delivered at the buyer
 * `Cancelled`: the line is cancelled by the buyer
 
 ## Scheduled delivery logistics status
