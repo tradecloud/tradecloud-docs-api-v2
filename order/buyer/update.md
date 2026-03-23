@@ -15,6 +15,7 @@ Most supplier ERP integrations do not have the capability to automatically proce
 * If an order line has order process status `Issued` or `In Progress` and it is updated, it will keep the same status.
 * If the line has status `Rejected` \(by supplier\) and it is reissued, it will become `In Progress`.
 * If the line has status `Confirmed` and it is reopened, it will become `In Progress`.
+* If the line is `In Progress` with an open buyer reopen request and your update makes the **requested** delivery schedule, prices and charge lines **equal** to the **confirmed** values again, Tradecloud **reverts** that reopen request — see [Revert a reopen request](reopen.md#revert-a-reopen-request).
 * In case of any other status like `Completed` or `Cancelled` the order update will be ignored.
 
 ### Endpoints
