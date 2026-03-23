@@ -38,7 +38,8 @@ The order line will become:
 
 - `Confirmed` if:
   - The `accepted` indicator is set, OR
-  - Responded delivery schedule and prices match the requested values
+  - Responded delivery schedule and prices match the requested values, OR
+  - The line has an open supplier reopen request and responded values match the **confirmed** values again (reverts the reopen) — see [Revert a reopen request](../reopen.md#revert-a-reopen-request)
 - `Rejected` if the `rejected` indicator is set
 - Stays `InProgress` if responded values still differ from requested values
 

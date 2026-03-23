@@ -78,13 +78,15 @@ The buyer can request an alternative delivery schedule or prices after confirmat
 The supplier can request an alternative delivery schedule or prices after confirmation. The buyer then approves or rejects the request.
 
 - **Requested**: The supplier requested to reopen confirmed order lines.
+- **Reverted**: The supplier reverted their reopen request.
 - **Approved or rejected**: The buyer approved or rejected the reopen request.
 
-| OrderEvent                               | Webhook Configuration                            |
-| ---------------------------------------- | ------------------------------------------------ |
-| `OrderLinesReopenRequestedBySupplier`    | Order lines reopen is requested by the supplier  |
-| `OrderLinesReopenRequestApprovedByBuyer` | Supplier reopen request is approved by the buyer |
-| `OrderLinesReopenRequestRejectedByBuyer` | Supplier reopen request is rejected by the buyer |
+| OrderEvent                                  | Webhook Configuration                            |
+| ------------------------------------------- | ------------------------------------------------ |
+| `OrderLinesReopenRequestedBySupplier`       | Order lines reopen is requested by the supplier  |
+| `OrderLinesReopenRequestRevertedBySupplier` | Supplier reopen request is reverted by the supplier |
+| `OrderLinesReopenRequestApprovedByBuyer`    | Supplier reopen request is approved by the buyer |
+| `OrderLinesReopenRequestRejectedByBuyer`    | Supplier reopen request is rejected by the buyer |
 
 ## Order reconfirmation request by buyer
 
