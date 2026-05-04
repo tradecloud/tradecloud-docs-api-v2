@@ -9,18 +9,23 @@ As a supplier, you can send a purchase order response to your buyer.
 {% hint style="warning" %}
 Each order response **must** contain **one or more order lines**.
 
-The order response should only contain **order lines** that are **new or changed**.
+The order response should only contain **order lines** that are **new or
+changed**.
 {% endhint %}
 
 ## Order process
 
 As a supplier, you have three possible ways to respond to an order:
 
-1. **Detailed response**: Send an order response with lines containing their position, confirmed delivery schedule, prices, and optionally charge lines
-2. **Line-level acceptance**: Send an order response with lines containing their position and line-level accept or reject indicators
-3. **Header-level acceptance**: Send an order response with header-level accept or reject indicators, and lines containing only their positions
+1. **Detailed response**: Send an order response with lines containing their
+   position, confirmed delivery schedule, and prices
+2. **Line-level acceptance**: Send an order response with lines containing
+   their position and line-level accept or reject indicators
+3. **Header-level acceptance**: Send an order response with header-level accept
+   or reject indicators, and lines containing only their positions
 
-After sending an order response, the order line process status may change based on the current status:
+After sending an order response, the order line process status may change based
+on the current status:
 
 ### Status: Issued
 
@@ -30,7 +35,8 @@ The order line will become:
   - The `accepted` indicator is set, OR
   - Responded delivery schedule and prices match the requested values
 - `Rejected` if the `rejected` indicator is set
-- `InProgress` if responded values differ from requested values (creates a proposal task for the buyer)
+- `InProgress` if responded values differ from requested values (creates a
+  proposal task for the buyer)
 
 ### Status: InProgress
 
@@ -39,7 +45,9 @@ The order line will become:
 - `Confirmed` if:
   - The `accepted` indicator is set, OR
   - Responded delivery schedule and prices match the requested values, OR
-  - The line has an open supplier reopen request and responded values match the **confirmed** values again (reverts the reopen) — see [Revert a reopen request](../reopen.md#revert-a-reopen-request)
+  - The line has an open supplier reopen request and responded values match the
+    **confirmed** values again (reverts the reopen) — see [Revert a reopen
+    request](../reopen.md#revert-a-reopen-request)
 - `Rejected` if the `rejected` indicator is set
 - Stays `InProgress` if responded values still differ from requested values
 
@@ -47,7 +55,8 @@ The order line will become:
 
 The order line will:
 
-- Become `InProgress` if responded values differ from confirmed values (creates a reopen request task for the buyer)
+- Become `InProgress` if responded values differ from confirmed values
+  (creates a reopen request task for the buyer)
 - Stay `Confirmed` if responded values match the confirmed values
 
 ### Status: Completed or Cancelled
@@ -56,9 +65,11 @@ The process status will **not** change.
 
 ## Endpoint
 
+<!-- markdownlint-disable-next-line MD013 -->
 Use the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint to send an order response to Tradecloud.
 
-HTTP status code **200** or **202** means the order response was successfully verified or queued.
+HTTP status code **200** or **202** means the order response was successfully
+verified or queued.
 
 Processing typically takes less than a second, after which:
 
@@ -85,11 +96,11 @@ Processing typically takes less than a second, after which:
 - `description`: additional description of this order
 - `indicators.accepted`: accept all lines in this response as‑is.
   - Order lines with positions are required.
-  - Delivery schedule, prices, and charge lines will be ignored for these lines
+  - Delivery schedule and prices will be ignored for these lines
   - Line‑level indicators override this header indicator when present
 - `indicators.rejected`: reject all lines in this response
   - Order lines with positions are required.
-  - Delivery schedule, prices, and charge lines will be ignored for these lines
+  - Delivery schedule and prices will be ignored for these lines
   - Line‑level indicators override this header indicator when present
 - `properties`: key-value custom fields
   - use `\n` for new lines
@@ -121,7 +132,8 @@ At least one delivery schedule line is required:
 
 ### Responded prices
 
-**Recommended:** Use `netPrice` for simplicity, or use `grossPrice` + `discountPercentage`.
+**Recommended:** Use `netPrice` for simplicity, or use `grossPrice` +
+`discountPercentage`.
 
 - `netPrice` OR `grossPrice` + `discountPercentage`:
   - `priceInTransactionCurrency`: **required**
@@ -137,12 +149,19 @@ At least one delivery schedule line is required:
 
 ### Responded charge lines
 
-Additional costs independent of order line prices (e.g., transport, packing, inspection):
+{% hint style="warning" %}
+**Deprecated.** Charge lines (`chargeLines`) are deprecated. The following is
+retained for existing integrations only.
+{% endhint %}
+
+Additional costs independent of order line prices (e.g., transport, packing,
+inspection):
 
 - `position`: identifier for the charge line
   - Echo the `position` from the buyer, OR
   - Omit for new charge lines - the buyer will assign it
-- `chargeTypeCode`: **required** - charge reason code ([UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/))
+- `chargeTypeCode`: **required** - charge reason code
+  ([UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/))
 - `chargeDescription`: **required** - text description (e.g., "Transport costs")
 - `quantity`: **required** - quantity for this charge
 - `price`: **required**
@@ -158,9 +177,9 @@ Additional costs independent of order line prices (e.g., transport, packing, ins
 
 - `description`: additional description of this line
 - `indicators.accepted`: accept the line as-is
-  - Delivery schedule, prices, charge lines, and header indicators are ignored
+  - Delivery schedule, prices, and header indicators are ignored
 - `indicators.rejected`: reject the line
-  - Delivery schedule, prices, charge lines, and header indicators are ignored
+  - Delivery schedule, prices, and header indicators are ignored
 - `reason`: explanation when:
   - The line is rejected
   - Responded values differ from requested or confirmed values
@@ -179,10 +198,12 @@ If you need this feature, send a request to support.
 
 ### Item Details
 
-You can check, change, or add item details if the buyer's information is incorrect or incomplete:
+You can check, change, or add item details if the buyer's information is
+incorrect or incomplete:
 
 - `countryOfOriginCodeIso2`: ISO 3166-1 alpha-2 country code of origin
-- `combinedNomenclatureCode`: goods classification code for customs and trade statistics
+- `combinedNomenclatureCode`: goods classification code for customs and trade
+  statistics
 - `netWeight`: net weight of one item
 - `netWeightUnitOfMeasureIso`: net weight unit
 - `dangerousGoodsCodeUnece`: UN number for dangerous goods (4-digit)
@@ -191,5 +212,7 @@ You can check, change, or add item details if the buyer's information is incorre
 
 ## Order response metadata
 
-- `erpResponseDateTime`: date/time the order was responded in your ERP (ISO 8601 format: `yyyy-MM-ddTHH:mm:ss`)
-- `erpRespondedBy`: email or username of the person who responded to this order in your ERP
+- `erpResponseDateTime`: date/time the order was responded in your ERP (ISO 8601
+  format: `yyyy-MM-ddTHH:mm:ss`)
+- `erpRespondedBy`: email or username of the person who responded to this order
+  in your ERP
