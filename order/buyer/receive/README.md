@@ -322,8 +322,8 @@ process, in progress and logistics status values.
 ### Charge lines
 
 {% hint style="warning" %}
-**Deprecated.** Charge lines (`chargeLines`) are deprecated. The following is
-retained for existing integrations only.
+**Deprecated.** Charge lines (`chargeLines`) are deprecated. Superseded by `lineType`
+`Charge` and line-level pricing, see [Order line type](../../line-type.md).
 {% endhint %}
 
 ### Item details
@@ -355,7 +355,6 @@ buyer merged with the changed or added item details by the supplier.
 
 - `messageId`: The Tradecloud identifier of this message
 - `source`: Includes meta information about the source of this message:
-
   - `traceId`: The Tradecloud trace identifier of this message. All related
     messages in a flow will have the same traceId
   - `userId`: The Tradecloud user identifier which triggered the first message

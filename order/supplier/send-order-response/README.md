@@ -65,7 +65,6 @@ The process status will **not** change.
 
 ## Endpoint
 
-<!-- markdownlint-disable-next-line MD013 -->
 Use the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint to send an order response to Tradecloud.
 
 HTTP status code **200** or **202** means the order response was successfully
@@ -150,28 +149,9 @@ At least one delivery schedule line is required:
 ### Responded charge lines
 
 {% hint style="warning" %}
-**Deprecated.** Charge lines (`chargeLines`) are deprecated. The following is
-retained for existing integrations only.
+**Deprecated.** Charge lines (`chargeLines`) are deprecated. Superseded by
+`lineType` `Charge` and line-level pricing, see [Order line type](../../line-type.md).
 {% endhint %}
-
-Additional costs independent of order line prices (e.g., transport, packing,
-inspection):
-
-- `position`: identifier for the charge line
-  - Echo the `position` from the buyer, OR
-  - Omit for new charge lines - the buyer will assign it
-- `chargeTypeCode`: **required** - charge reason code
-  ([UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/))
-- `chargeDescription`: **required** - text description (e.g., "Transport costs")
-- `quantity`: **required** - quantity for this charge
-- `price`: **required**
-  - `priceInTransactionCurrency`: **required**
-    - `value`: decimal format (e.g., `1234.56`)
-    - `currencyIso`: 3-letter ISO 4217 code (e.g., `EUR`, `USD`, `CNY`)
-  - `priceInBaseCurrency`: optional
-    - `value`: decimal format
-    - `currencyIso`: 3-letter ISO 4217 code
-- `priceUnitOfMeasureIso`: price unit
 
 ### Other line fields
 

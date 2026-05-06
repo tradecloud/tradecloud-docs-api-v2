@@ -184,8 +184,7 @@ The order status is the aggregation of all the lines statuses. See
   `Charge`. See the [UNCL7161 code list](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/).
 
 {% hint style="info" %}
-See [Order line type](../../line-type.md) for a full overview (introduced with
-[TC-10879](https://tradecloud.atlassian.net/browse/TC-10879)).
+See [Order line type](../../line-type.md) for a full overview.
 {% endhint %}
 
 #### Item
@@ -357,7 +356,8 @@ process, in progress and logistics status values.
 ### Charge lines
 
 {% hint style="warning" %}
-**Deprecated.** Charge lines (`chargeLines`) are deprecated.
+**Deprecated.** Charge lines (`chargeLines`) are deprecated. Superseded by `lineType`
+`Charge` and line-level pricing, see [Order line type](../../line-type.md).
 {% endhint %}
 
 ### Item details

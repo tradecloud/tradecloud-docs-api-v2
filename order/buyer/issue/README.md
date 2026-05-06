@@ -122,6 +122,8 @@ lines is limited to 500 lines per order. It is structured as a JSON element in
 the `lines` JSON array.
 
 - `position`: the required line position identifier within the purchase order
+- `originalPosition`: optional position referencing the original order line when
+  the line has been split (single delivery endpoints only)
 - `row`: the optional row label for this position. Only use a row when there is
   a distinction between position and row in your ERP system. Do NOT use row as
   identifier.
@@ -140,8 +142,7 @@ renumber or re-use `position` numbers.
   `Charge`. See the [UNCL7161 code list](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/).
 
 {% hint style="info" %}
-See [Order line type](../../line-type.md) for a full overview (introduced with
-[TC-10879](https://tradecloud.atlassian.net/browse/TC-10879)).
+See [Order line type](../../line-type.md) for a full overview.
 {% endhint %}
 
 ### Item
@@ -238,41 +239,8 @@ its simplicity, used by most buyers, or alternatively `grossPrice` together with
 ### Requested charge lines
 
 {% hint style="warning" %}
-**Deprecated.** Charge lines (`chargeLines`) are deprecated. Prefer `lineType`
-`Charge` and line-level pricing — see [Order line type](../../line-type.md). The
-following is retained for existing integrations only.
-{% endhint %}
-
-`lines.chargeLines`: the requested additional cost lines of an order line,
-independent of the order line prices, like transport, packing, administration,
-inspection and certification costs.
-
-- `position`: the position used to identify a charge line.
-- `chargeTypeCode`: the mandatory charge reason code according to
-  [UNCL7161](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/)
-- `chargeDescription`: a mandatory free text description, like "Transport
-  costs".
-- `quantity`: the mandatory quantity of this charge line.
-- `price`: the mandatory price of this charge line.
-  - `priceInTransactionCurrency`: the mandatory price in the transaction
-    currency of the supplier, like `CNY` in China.
-    - `value`: the price value has a decimal `1234.56` format with any number
-      of digits.
-    - `currencyIso`: the 3-letter currency code according to ISO 4217, like
-      `EUR`, `USD` and `CNY`.
-  - `priceInBaseCurrency`: the optional price in your base currency, like `EUR`
-    in the EU.
-    - `value`: the price value has a decimal `1234.56` format with any number
-      of digits.
-    - `currencyIso`: the 3-letter currency code according to ISO 4217, like
-      `EUR`.
-- `priceUnitOfMeasureIso`: the 3-letter price unit according to ISO 80000-1
-  which applies to the charge line price.
-
-{% hint style="warning" %}
-**Deprecated.** The single delivery variant, where charge lines are spread over
-multiple order lines having the same item, prices and terms, and each only one
-charge line, is not supported. Send a support request if you need it.
+**Deprecated.** Charge lines (`chargeLines`) are deprecated. Superseded by `lineType`
+`Charge` and line-level pricing, see [Order line type](../../line-type.md).
 {% endhint %}
 
 ### Other line fields
@@ -282,7 +250,7 @@ charge line, is not supported. Send a support request if you need it.
   - `contractNumber`: the agreed framework contract number
   - `contractPosition`: the related position within the framework contract
 - `projectNumber`: Your project number reference
-- `productionNumber`:  Your production number reference
+- `productionNumber`: Your production number reference
 - `salesOrderNumber`: Your sales order reference \(not be confused with the
   supplier sales order number\)
 - `indicators`: various line level indicators, see:

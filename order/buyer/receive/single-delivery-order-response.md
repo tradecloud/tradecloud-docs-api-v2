@@ -113,8 +113,8 @@ new order](../issue/#lines)
 - `position`: the line position within the purchase order. The position is
   unique and immutable within the order. Position is empty in case of a newly
   split line.
-- `originalPosition`: The original position when `position` is empty in case of
-  a split line.
+- `originalPosition`: optional position referencing the original order line when
+  the line has been split
 
 ### Supplier line
 

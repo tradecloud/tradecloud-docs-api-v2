@@ -119,6 +119,8 @@ The order status is the aggregation of all the lines statuses. See
 `buyerLine` contains the buyer order line fields:
 
 - `position`: the line position within the purchase order
+- `originalPosition`: optional position referencing the original order line when
+  the line has been split
 - `lineType`: `Item`, `Service`, or `Charge` — **always present** when you
   receive the order. If the buyer omitted `lineType` when issuing, the value is
   **`Item`**.
