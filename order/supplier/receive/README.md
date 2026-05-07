@@ -124,6 +124,9 @@ The order status is the aggregation of all the lines statuses. See
 `lines` contains one or more order lines:
 
 - `id`: the Tradecloud line identifier.
+- `lineType`: one of `Item`, `Service`, or `Charge`. See [Order line type](../../line-type.md)
+- `chargeReasonCode`: optional UNCL7161 code when the buyer set a charge
+  reason on the line
 - `buyerLine`: the buyer part of the order line, see [Buyer line](#buyer-line)
   below.
 - `supplierLine`: the supplier part of the order line, see [Supplier
@@ -152,9 +155,6 @@ The order status is the aggregation of all the lines statuses. See
 `buyerLine` contains the buyer order line fields:
 
 - `position`: the line position within the purchase order
-- `lineType`: one of `Item`, `Service`, or `Charge`
-- `chargeReasonCode`: optional — UNCL7161 code when the buyer set a charge
-  reason on the line
 - `description`: a free format additional description of this line
 - `item`: the item (or article, goods) to be delivered, see [Item](#item)
 - `requests`: the buyer can request different delivery schedule and prices
@@ -175,17 +175,6 @@ The order status is the aggregation of all the lines statuses. See
 - `documents`: contain meta data and link of attached documents, see:
 
 {% page-ref page="download-document.md" %}
-
-### Line type and charge reason code
-
-- `lineType`: classifies the line as `Item`, `Service`, or `Charge`.
-- `chargeReasonCode`: optional — UNCL7161 charge or allowance reason code on the
-  line (for example `FC` for freight). Typically used together with `lineType`
-  `Charge`. See the [UNCL7161 code list](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/).
-
-{% hint style="info" %}
-See [Order line type](../../line-type.md) for a full overview.
-{% endhint %}
 
 #### Item
 

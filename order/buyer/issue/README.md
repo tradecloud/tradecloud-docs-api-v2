@@ -137,7 +137,7 @@ renumber or re-use `position` numbers.
 
 - `lineType`: classifies the line as `Item`, `Service`, or `Charge`. When
   omitted, the line is treated as `Item` (backward compatible).
-- `chargeReasonCode`: optional — UNCL7161 charge or allowance reason code on the
+- `chargeReasonCode`: optional UNCL7161 charge or allowance reason code on the
   line (for example `FC` for freight). Typically used together with `lineType`
   `Charge`. See the [UNCL7161 code list](https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL7161/).
 

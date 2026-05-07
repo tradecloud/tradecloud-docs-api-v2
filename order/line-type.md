@@ -23,13 +23,6 @@ line), instead of treating everything implicitly as merchandise.
 Omitting `lineType` is **backward compatible** when **sending** an order: those
 lines behave like **`Item`**, so existing integrations need no change.
 
-## When suppliers receive an order
-
-On webhook and poll payloads, each **`buyerLine`** includes **`lineType`**:
-`Item`, `Service`, or `Charge`. If the buyer did not send `lineType` on issue,
-you still receive **`Item`**. **`chargeReasonCode`** is present when the buyer
-provided one.
-
 ## `chargeReasonCode` on the line
 
 For **`Charge`** lines you can send an optional **`chargeReasonCode`** on the
@@ -45,13 +38,12 @@ Tradecloud does not necessarily require `chargeReasonCode` whenever `lineType`
 is `Charge`; enforce any business rules in your own ERP if needed.
 {% endhint %}
 
-## Relation to nested `chargeLines`
+## Relation to deprecated `chargeLines`
 
 Older integrations could attach extra costs with a nested **`chargeLines`**
 array on a line. That model is **deprecated** for new work: model a separate
 order line with `lineType` **`Charge`**, line-level pricing, and optionally
-`chargeReasonCode`. Legacy documentation for `chargeLines` remains for those
-integrations.
+`chargeReasonCode`.
 
 ## Portal behaviour for charge lines
 

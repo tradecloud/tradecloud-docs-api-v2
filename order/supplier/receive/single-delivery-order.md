@@ -96,6 +96,9 @@ The order status is the aggregation of all the lines statuses. See
 `lines` contains one or more order lines:
 
 - `id`: the Tradecloud line identifier
+- `lineType`: one of `Item`, `Service`, or `Charge`. See [Order line type](../../line-type.md)
+- `chargeReasonCode`: optional UNCL7161 code when the buyer set a charge
+  reason on the line
 - `buyerLine`: the buyer part of the order line, see [Buyer line](#buyer-line).
 - `supplierLine`: the supplier part of the order line, see [Supplier
   line](#supplier-line).
@@ -121,11 +124,6 @@ The order status is the aggregation of all the lines statuses. See
 - `position`: the line position within the purchase order
 - `originalPosition`: optional position referencing the original order line when
   the line has been split
-- `lineType`: `Item`, `Service`, or `Charge` — **always present** when you
-  receive the order. If the buyer omitted `lineType` when issuing, the value is
-  **`Item`**.
-- `chargeReasonCode`: optional — UNCL7161 code when the buyer set a charge
-  reason on the line
 - `description`: a free format additional description of this line
 - `item`: the item (or article, goods) to be delivered, see [Item](#item)
 - `requests`: the buyer can request different delivery schedule and prices.
@@ -148,10 +146,6 @@ The order status is the aggregation of all the lines statuses. See
 - `documents`: contain meta data and link of attached documents, see:
 
 {% page-ref page="download-document.md" %}
-
-{% hint style="info" %}
-See [Order line type](../../line-type.md).
-{% endhint %}
 
 #### Item
 
