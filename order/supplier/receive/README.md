@@ -73,7 +73,7 @@ The order header contains:
 - `indicators.deliveryOverdue` is true when at least one order line is overdue.
 - `status.processStatus`: is the aggregate of all lines [Order process status](../../status.md#order-process-status).
 - `status.logisticsStatus`: is the aggregate of all lines [Order logistics status](../../status.md#order-logistics-status).
-- `version`: the  Tradecloud order version number.
+- `version`: the Tradecloud order version number.
 - `eventDates`: some key order event date/times.
 - `meta`: meta information, including source and trace info, about this
   message.
@@ -209,7 +209,7 @@ prices compared to the confirmed order line.
 - `prices`: the requested alternative prices
 - `chargeLines` **(deprecated)**: the requested alternative charge lines, see
   [Charge lines](#charge-lines)
-- `reason`: the reason of this request given by the supplier
+- `reason`: the reason of this request given by the buyer
 - `status`: the [Request status](../../status.md#request-status).
 
 ### Supplier line
@@ -345,8 +345,9 @@ process, in progress and logistics status values.
 ### Charge lines
 
 {% hint style="warning" %}
-**Deprecated.** Charge lines (`chargeLines`) are deprecated. Superseded by `lineType`
-`Charge` and line-level pricing, see [Order line type](../../line-type.md).
+**Deprecated.** Charge lines (`chargeLines`) are deprecated. Superseded by
+`lineType = Charge` and line-level pricing, see
+[Order line type](../../line-type.md).
 {% endhint %}
 
 ### Item details
@@ -369,7 +370,7 @@ buyer merged with the changed or added item details by the supplier.
 - `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that
   identify dangerous goods, hazardous substances and articles in the framework
   of international transport.
-- `serialNumber`: is an unique identifier assigned incrementally or sequentially
+- `serialNumber`: is a unique identifier assigned incrementally or sequentially
   to an item, to uniquely identify it.
 - `batchNumber`: is an identification number assigned to a particular quantity
   or lot of material from a single manufacturer
