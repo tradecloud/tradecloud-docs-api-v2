@@ -76,7 +76,7 @@ The order header contains:
 - `version`: the  Tradecloud order version number.
 - `eventDates`: some key order event date/times.
 - `meta`: meta information, including source and trace info, about this
-  messsage.
+  message.
 - `lastUpdatedAt`: is the latest date time the order has been changed, useful
   for polling orders.
 
@@ -87,10 +87,10 @@ The order header contains:
 - `companyId`: the buyer's Tradecloud company identifier.
 - `supplierAccountNumber`: your account number as known in the buyer's ERP
   system.
-- `description`: a free format additional description of this order added by the
+- `description`: a free-format additional description of this order added by the
   buyer.
 - `contact`: the buyer employee responsible for this order.
-- `properties`: are key-value based custom fields, added by the buyer.
+- `properties`: are key-value-based custom fields, added by the buyer.
 - `notes`: are simple custom fields, added by the buyer.
 - `labels`: value-added services labels on order level.
 - `documents`: contain meta data, objectId or url, of attached documents by the
@@ -142,7 +142,7 @@ The order status is the aggregation of all the lines statuses. See
   buyer requests, see [Prices](#prices).
 - `indicators.deliveryOverdue` is true when the order line is overdue.
 - `status.processStatus`: the order line's [Line process status](../../status.md#line-process-status).
-- `status.inProgressStatus` the order line's [Line in progress status](../../status.md#line-in-progress-status).
+- `status.inProgressStatus`: the order line's [Line in progress status](../../status.md#line-in-progress-status).
 - `status.logisticsStatus`: the order line's [Line logistics status](../../status.md#line-logistics-status).
 - `eventDates`: some key line event date/times.
 - `mergedItemDetails`: detailed part information provided by both buyer and
@@ -155,7 +155,7 @@ The order status is the aggregation of all the lines statuses. See
 `buyerLine` contains the buyer order line fields:
 
 - `position`: the line position within the purchase order
-- `description`: a free format additional description of this line
+- `description`: a free-format additional description of this line
 - `item`: the item (or article, goods) to be delivered, see [Item](#item)
 - `requests`: the buyer can request different delivery schedule and prices
 - `terms`: the line terms as agreed with your buyer
@@ -168,7 +168,7 @@ The order status is the aggregation of all the lines statuses. See
 - `indicators.noDeliveryExpected`: No goods are expected to be delivered to the
   buyer, for example a service, fee or text line.
 - `indicators.delivered`: All goods are delivered at the buyer.
-- `properties`: are key-value based custom fields. `\n` may be used for a new
+- `properties`: are key-value-based custom fields. `\n` may be used for a new
   line in the value.
 - `notes`: are simple custom fields. `\n` may be used for a new line.
 - `labels`: value-added services labels on line level.

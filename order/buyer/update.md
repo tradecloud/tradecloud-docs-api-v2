@@ -110,5 +110,5 @@ Additional indicators may be set in an order update:
 - `erpLastChangeDateTime`: Date and time the order was updated in your ERP
   system. `DateTime` has ISO 8601 local date/time format `yyyy-MM-ddThh:mm:ss`.
   See also [Standards](../api/standards.md).
-- `erpLastChangedBy`: he user email or user name as known in your ERP system who
+- `erpLastChangedBy`: the user email or user name as known in your ERP system who
   updated this order

@@ -50,7 +50,7 @@ The order header contains:
   logistics status](../../status.md#order-logistics-status).
 - `version`: the Tradecloud order version number
 - `eventDates`: some key order event date/times
-- `meta`: meta information, including source and trace info, about this messsage
+- `meta`: meta information, including source and trace info, about this message
 - `lastUpdatedAt`: is the latest date time the order has been changed.
 
 ### Buyer order
@@ -95,11 +95,11 @@ The order status is the aggregation of all the lines statuses. See
   line](#supplier-line).
 - `confirmedLine`: the order line as agreed between buyer and supplier.
 - `statusLine`: the order line values representing the current `Issued`,
-  `Confirmed` or `InProgess` status, see [Status line](#status-line).
+  `Confirmed` or `InProgress` status, see [Status line](#status-line).
 - `indicators.deliveryOverdue` is true when the order line is overdue.
 - `status.processStatus`: the order line's [Line process
   status](../../status.md#line-process-status).
-- `status.inProgressStatus` the order line's [Line in progress
+- `status.inProgressStatus`: the order line's [Line in progress
   status](../../status.md#line-in-progress-status).
 - `status.logisticsStatus`: the order line's [Line logistics
   status](../../status.md#line-logistics-status).

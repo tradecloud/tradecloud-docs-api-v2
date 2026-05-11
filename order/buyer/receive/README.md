@@ -87,7 +87,7 @@ The order header contains:
   status](../../status.md#order-logistics-status).
 - `version`: the Tradecloud order version number
 - `eventDates`: some key order event date/times
-- `meta`: meta information, including source and trace info, about this messsage
+- `meta`: meta information, including source and trace info, about this message
 - `lastUpdatedAt`: is the latest date time the order has been changed, useful
   for polling orders.
 
@@ -106,10 +106,10 @@ The order header contains:
 - `companyId`: the supplier's Tradecloud company identifier.
 - `buyerAccountNumber`: your account number as known in the supplier's ERP
   system.
-- `description`: a free format additional description of this order by the
+- `description`: a free-format additional description of this order by the
   supplier.
 - `contact`: the supplier employee responsible for this order.
-- `properties`: are key-value based custom fields, added by the supplier.
+- `properties`: are key-value-based custom fields, added by the supplier.
 - `notes`: are simple custom fields, added by the supplier.
 - `documents`: contain meta data and link of attached documents by the supplier.
 
@@ -142,7 +142,7 @@ The order status is the aggregation of all the lines statuses. See
 - `indicators.deliveryOverdue` is true when the order line is overdue.
 - `status.processStatus`: the order line's [Line process
   status](../../status.md#line-process-status).
-- `status.inProgressStatus` the order line's [Line in progress
+- `status.inProgressStatus`: the order line's [Line in progress
   status](../../status.md#line-in-progress-status).
 - `status.logisticsStatus`: the order line's [Line logistics
   status](../../status.md#line-logistics-status).
@@ -166,11 +166,11 @@ new order](../issue/#lines)
 - `salesOrderNumber`: the sales order number as known in the supplier's ERP
   system
 - `salesOrderPosition`: the position within the supplier's sales order
-- `description`: a free format additional description of this line by the
+- `description`: a free-format additional description of this line by the
   supplier
 - `requests`: the supplier can request different delivery schedule and prices,
   see below
-- `properties`: are key-value based custom fields, added by the supplier
+- `properties`: are key-value-based custom fields, added by the supplier
 - `notes`: are simple custom fields, added by the supplier
 - `documents`: contain meta data, objectId or url, of attached documents by the
   supplier.

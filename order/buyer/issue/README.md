@@ -100,10 +100,10 @@ The optional buyer, buyer accounting or supplier company party:
 
 {% page-ref page="indicators.md" %}
 
-- `properties`: are key-value based custom fields. You can user as many as
+- `properties`: are key-value based custom fields. You can use as many as
   needed, but too many will clutter the portal. Use `\n` for a new line in the
   value.
-- `notes`: are simple custom fields. You can user as many as needed, but too
+- `notes`: are simple custom fields. You can use as many as needed, but too
   many will clutter the portal. Use `\n` for a new line.
 - `labels`: value-added services labels on order level. Please note the
   practicable number of labels is dependent on the supplier.
@@ -274,7 +274,7 @@ When your order process requires the buyer to always approve every line:
 
 {% page-ref page="attach-document.md" %}
 
-- `notes`: are simple custom fields.You can use as many as needed, but too many
+- `notes`: are simple custom fields. You can use as many as needed, but too many
   will clutter the portal. Use `\n` for a new line.
 - `labels`: value-added services labels on line level. Please note the
   practicable number of labels is dependent on the supplier.
@@ -291,5 +291,5 @@ When your order process requires the buyer to always approve every line:
 
 When the `/api-connector/order` API method returns HTTP status code 200, the
 order was successfully queued for processing by Tradecloud. Processing takes
-usually less then a second, after which the order is available in the portal and
+usually less than a second, after which the order is available in the portal and
 is forwarded to the supplier ERP integration.
