@@ -72,7 +72,7 @@ Tradecloud supports a sub set of the [RFC 6838 Media Type Specifications](https:
 
 Published as [RFC 6749 "The OAuth 2.0 Authorization Framework"](https://datatracker.ietf.org/doc/html/rfc6749)
 
-The [Oauth 2.0 Client Credentials Grant](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) is supported by the order webhooks only (and not by the API v2 or shipment webhook at this moment).
+The [Oauth 2.0 Client Credentials Grant](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) is supported by the order webhooks only (and not by the API v2 or shipment webhook at this moment). Order webhook OAuth uses the Microsoft Identity Platform (MSAL4J) — it is not a general-purpose OAuth 2.0 client for other identity providers.
 
 ## OpenAPI
 

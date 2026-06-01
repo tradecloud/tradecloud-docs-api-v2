@@ -193,7 +193,7 @@ Depending on the capabilities of your integration, you may choose for using Webh
 {% page-ref page="api/webhook-vs-polling.md" %}
 
 [ ] **If using webhooks, use _Basic_, _Bearer Token_ or  _OAuth_ authentication?**  
-In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication, a static Bearer token, or OAuth 2.0 Client Credentials Grant.
+In the Tradecloud One webportal, you can configure your webhooks to use either Basic Authentication, a static Bearer token, or OAuth 2.0 Client Credentials Grant. OAuth is available for order webhooks only and uses the Microsoft Identity Platform (MSAL4J), not a general-purpose OAuth 2.0 client.
 
 [ ] **Use Ip source filtering?**  
 When using webhooks, you might consider to add ip source filtering to your firewall as additional security, as a webhook does not use MFA or SSO. You may find the Tradecloud egress ip addresses here:  
