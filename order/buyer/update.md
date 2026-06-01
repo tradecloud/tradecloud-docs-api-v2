@@ -60,6 +60,18 @@ The actual delivery history may be added in an order update when your ERP system
 supports a delivery schedule natively. These will be used to calculate the line
 `Overdue` indicator.
 
+The actual delivery history is matched against the delivery schedule **by date and
+quantity**, not by delivery line position. `deliveryHistory.position` and
+`deliverySchedule.position` do not have to use the same values.
+
+{% hint style="info" %}
+For **stock items with delivery tolerances**, you may additionally set
+`indicators.delivered` on the line to mark it delivered when the received
+quantity is within tolerance. Unlike the delivery history, the delivered
+indicator is applied by **order line or delivery line position**. See
+[Delivered indicator](receive-goods.md#delivered-indicator).
+{% endhint %}
+
 - `lines.deliveryHistory`: the historical actual delivery schedule. Provide
   zero, one or multiple delivery history lines. Provide all delivery history
   lines in an update. The total number of delivery history lines is limited to

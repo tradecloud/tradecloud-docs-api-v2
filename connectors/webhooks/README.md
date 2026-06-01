@@ -40,7 +40,7 @@ Your webhook endpoint must support:
 
 - **HTTPS with valid SSL certificate** (TLS 1.2 or 1.3)
 - **POST method** with JSON or tXML request body parsing
-- **Authentication** (Basic Auth, Bearer Token, or OAuth 2.0)
+- **Authentication** (Basic Auth, Bearer Token, or OAuth 2.0 — Microsoft Identity Platform, order webhooks only)
 - **HTTP status codes** for proper response handling
 
 ## Quick Start

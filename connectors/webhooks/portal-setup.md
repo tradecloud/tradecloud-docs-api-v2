@@ -103,20 +103,34 @@ Configure secure authentication for webhook requests. Choose from three supporte
 - **Token**: Static authentication token
 - **Header**: `Authorization: Bearer <token>`
 
-### OAuth 2.0 Client Credentials
+### OAuth 2.0 (Microsoft Identity Platform)
+
+Order webhook OAuth authentication uses the [Microsoft Identity Platform](https://learn.microsoft.com/entra/identity-platform/) via [MSAL4J](https://learn.microsoft.com/entra/msal/java/). It is **not** a general-purpose OAuth 2.0 client — custom OAuth extensions required by other security token services are not supported. Use **Basic Authentication** or a **Bearer Token** if your webhook endpoint is protected by a non-Microsoft identity provider.
 
 ![OAuth Configuration](../../.gitbook/assets/webhook-oauth.png)
 
 **Configuration Fields:**
 
-- **Authentication URL**: OAuth token endpoint  
+- **Authentication URL**: Microsoft token endpoint (authority URL)  
   Example: `https://login.microsoftonline.com/<tenant-id>/oauth2/v2.0/token`
-- **Client ID**: Application (client) ID from your OAuth provider
-- **Client Secret**: Client secret value from your OAuth provider  
+- **Client ID**: Application (client) ID from your Microsoft Entra app registration
+- **Client Secret**: Client secret from your Microsoft Entra app registration  
 - **Scope**: Granted scope for webhook access
   Example: `https://your-webhook-endpoint/.default`
 
-**Standard**: [RFC 6749 Section 4.4](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) compliant.
+**Supported authority types** (determined from the authentication URL path):
+
+| Authority | URL pattern | Example |
+|-----------|-------------|---------|
+| Microsoft Entra ID (Azure AD) | Default | `https://login.microsoftonline.com/{tenant}` |
+| ADFS | Path contains `adfs` | `https://adfs.contoso.com/adfs` |
+| Azure AD B2C | Path contains `tfp` | `https://{tenant}.b2clogin.com/{tenant}.onmicrosoft.com/{policy}` |
+
+Grant type: [OAuth 2.0 Client Credentials](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) (RFC 6749 Section 4.4).
+
+{% hint style="warning" %}
+OAuth for order webhooks is available for **order events** and **order document events** only. Shipment webhooks do not support OAuth — use Basic Auth or Bearer Token instead.
+{% endhint %}
 
 ## Testing Configuration
 

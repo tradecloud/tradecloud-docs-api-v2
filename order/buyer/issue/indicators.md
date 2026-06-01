@@ -47,6 +47,12 @@ The order or line having [logistics status](../../status.md#line-logistics-statu
 The order or line having [logistics status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`.
 {% endhint %}
 
+{% hint style="info" %}
+This indicator is designed for stock items (`lineType` `Item`) where your ERP uses delivery tolerances and a receipt within tolerance counts as delivered. You may set `delivered` on top of the [actual delivery history](../receive-goods.md#actual-delivery-history) for this purpose. Do not use it outside this tolerance use case.
+
+The delivered indicator is applied by **order line or delivery line position**, whereas the actual delivery history is matched by **date and quantity**.
+{% endhint %}
+
 ### Completed at buyer
 
 `completed`: the order or line is completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.

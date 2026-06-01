@@ -41,11 +41,12 @@ Your webhook must implement **one** of these authentication methods:
 - **Header**: `Authorization: Bearer <token>`
 - **Use Case**: API key-based authentication
 
-#### OAuth 2.0 Client Credentials
+#### OAuth 2.0 (Microsoft Identity Platform, order webhooks only)
 
-- **Standard**: [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4)
-- **Grant Type**: `client_credentials`
-- **Use Case**: Enterprise integrations with token refresh
+- **Scope**: [Microsoft Identity Platform](https://learn.microsoft.com/entra/identity-platform/) only (Microsoft Entra ID, ADFS, Azure AD B2C) via MSAL4J — not a general-purpose OAuth 2.0 client
+- **Grant Type**: `client_credentials` ([RFC 6749 Section 4.4](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4))
+- **Use Case**: Webhook endpoints protected by Microsoft Entra ID (e.g. Azure API Management)
+- **Configuration**: See [Portal Configuration — OAuth](portal-setup.md#oauth-20-microsoft-identity-platform)
 
 ## Webhook Implementation
 
