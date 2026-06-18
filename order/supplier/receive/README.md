@@ -183,8 +183,9 @@ The order status is the aggregation of all the lines statuses. See
 - `number`: the item code or number as known in the buyer ERP system.
 - `revision`: the revision (or version) of this item number
 - `name`: the item short name
-- `purchaseUnitOfMeasureIso`: the purchase unit according to ISO 80000-1, a
-  typical example is `PCE`
+- `purchaseUnitOfMeasureIso`: the purchase unit of measure, passed through as-is.
+  No standard is enforced; UN/ECE Recommendation N°20 is recommended if you want
+  a standard. A typical example is `PCE`
 - `supplierItemNumber`: the item code or number as known at the supplier.
 
 {% hint style="warning" %}
@@ -325,9 +326,10 @@ values are returned, dependent on the line and request status.
       of digits.
     - `currencyIso`: the 3-letter currency code according to ISO 4217, like
       `EUR`.
-- `lines.prices[IncludingRequests].priceUnitOfMeasureIso`: the 3-letter price
-  unit according to ISO 80000-1. The purchase unit and price unit may be
-  different.
+- `lines.prices[IncludingRequests].priceUnitOfMeasureIso`: the price unit of
+  measure, passed through as-is. No standard is enforced; UN/ECE Recommendation
+  N°20 is recommended if you want a standard. The purchase unit and price unit
+  may be different.
 - `lines.prices[IncludingRequests].priceUnitQuantity`: the item quantity at
   which the price applies. Typically this is 1 \(unit price\) or 100 \(the price
   applies to 100 items\)
@@ -366,7 +368,9 @@ buyer merged with the changed or added item details by the supplier.
   requirements both of the Common Customs Tariff and of the EU's external trade
   statistics.
 - `netWeight`: Net weight of one item.
-- `netWeightUnitOfMeasureIso`: Net weight unit according to ISO 80000-1.
+- `netWeightUnitOfMeasureIso`: Net weight unit of measure, passed through as-is.
+  No standard is enforced; UN/ECE Recommendation N°20 is recommended if you want
+  a standard.
 - `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that
   identify dangerous goods, hazardous substances and articles in the framework
   of international transport.
