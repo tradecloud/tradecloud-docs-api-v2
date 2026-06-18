@@ -113,7 +113,7 @@ arrival:
   * `PlaceOfDestination` (used with CPT, CIP)
   * `FinalDestination` (used with DAP, DPU, DDP)
 
-* `id`: the required identifier for the location, in context of `idSchema`
+* `id`: the required identifier for the location, in context of `idScheme`
 * `idScheme`: scheme, providing context to the location identifier. For example
   GLN
 * `names`: one or more location names. It is recommended to provide at least one
