@@ -72,8 +72,32 @@ GET /v2/order-search/poll
 }
 ```
 
-- The buyer receives an order only when **all lines are confirmed** at order level.  
-- Individual order lines can still contain different process or logistics statuses (for example, *Cancelled* or *Delivered*). Use the line-level status fields to filter these lines as required.
+- The `Confirmed` process status is set at **order level** only when every order line has been confirmed by the supplier.
+- An order with even one unconfirmed line will not appear in these results yet.
+- Individual order lines can still have a different status (for example, `Cancelled` or `Completed`). Your integration must filter client-side: only process lines where `data.lines.status.processStatus` equals `Confirmed`.
+
+#### Buyer: receive confirmed lines as soon as possible
+
+To process confirmed order lines without waiting for the entire order to reach `Confirmed`, filter on **both `Confirmed` and `InProgress`**:
+
+```http
+GET /v2/order-search/poll
+
+{
+  "filters": {
+    "status": {
+      "processStatus": ["Confirmed", "InProgress"]
+    },
+    "lastUpdatedAfter": "2025-04-23T10:01:53.812Z"
+  },
+  "limit": 100
+}
+```
+
+- An order moves to `InProgress` as soon as the supplier confirms the first line, before all lines are confirmed.
+- Confirmed lines therefore become available in your poll results earlier, you do not have to wait for the full order to be confirmed.
+- These orders will also contain lines that are **not yet confirmed**. Your integration must filter client-side: only process lines where `data.lines.status.processStatus` equals `Confirmed`.
+
 
 #### Suppliers: filter on Issued orders
 
