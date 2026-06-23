@@ -192,8 +192,8 @@ incorrect or incomplete:
   statistics
 - `netWeight`: net weight of one item
 - `netWeightUnitOfMeasureIso`: net weight unit of measure, passed through as-is.
-  No standard is enforced; UN/ECE Recommendation N°20 is recommended if you want
-  a standard
+  Mandatory when netWeight is provided. No standard is enforced; UN/ECE
+  Recommendation N°20 is recommended if you want a standard
 - `dangerousGoodsCodeUnece`: UN number for dangerous goods (4-digit)
 - `serialNumber`: unique sequential identifier for the item
 - `batchNumber`: identification number for a quantity/lot from a manufacturer

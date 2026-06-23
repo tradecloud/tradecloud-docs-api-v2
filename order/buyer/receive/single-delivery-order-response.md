@@ -239,8 +239,8 @@ buyer merged with the changed or added item details by the supplier.
   statistics.
 - `netWeight`: Net weight of one item.
 - `netWeightUnitOfMeasureIso`: Net weight unit of measure, passed through as-is.
-  No standard is enforced; UN/ECE Recommendation N°20 is recommended if you want
-  a standard.
+  Mandatory when netWeight is provided. No standard is enforced; UN/ECE
+  Recommendation N°20 is recommended if you want a standard.
 - `dangerousGoodsCodeUnece`: UN numbers or UN IDs are four-digit numbers that
   identify dangerous goods, hazardous substances and articles in the framework
   of international transport.
