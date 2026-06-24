@@ -65,14 +65,17 @@ The process status will **not** change.
 
 ## Endpoint
 
-Use the [Send order response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute) endpoint to send an order response to Tradecloud.
+Use the [Send order
+response](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/supplier-endpoints/sendOrderResponseBySupplierRoute)
+endpoint to send an order response to Tradecloud.
 
 HTTP status code **200** or **202** means the order response was successfully
 verified or queued.
 
 Processing typically takes less than a second, after which:
 
-- The provided buyer account number and purchase order number have been verified.
+- The provided buyer account number and purchase order number have been
+  verified.
 - The order response appears in the portal.
 - The response is forwarded to the buyer's ERP integration.
 
@@ -141,7 +144,9 @@ At least one delivery schedule line is required:
   - `priceInBaseCurrency`: optional
     - `value`: decimal format (e.g., `1234.56`)
     - `currencyIso`: 3-letter ISO 4217 code
-- `priceUnitOfMeasureIso`: price unit
+- `priceUnitOfMeasureIso`: price unit of measure, passed through as-is. No
+  standard is enforced; UN/ECE Recommendation N°20 is recommended if you want a
+  standard
   - Copied from buyer if empty
 - `priceUnitQuantity`: quantity at which price applies (typically `1` or `100`)
   - Copied from buyer if empty
@@ -150,7 +155,8 @@ At least one delivery schedule line is required:
 
 {% hint style="warning" %}
 **Deprecated.** Charge lines (`chargeLines`) are deprecated. Superseded by
-`lineType` `Charge` and line-level pricing, see [Order line type](../../line-type.md).
+`lineType` `Charge` and line-level pricing, see [Order line
+type](../../line-type.md).
 {% endhint %}
 
 ### Other line fields
@@ -185,7 +191,9 @@ incorrect or incomplete:
 - `combinedNomenclatureCode`: goods classification code for customs and trade
   statistics
 - `netWeight`: net weight of one item
-- `netWeightUnitOfMeasureIso`: net weight unit
+- `netWeightUnitOfMeasureIso`: net weight unit of measure, passed through as-is.
+  Mandatory when netWeight is provided. No standard is enforced; UN/ECE
+  Recommendation N°20 is recommended if you want a standard
 - `dangerousGoodsCodeUnece`: UN number for dangerous goods (4-digit)
 - `serialNumber`: unique sequential identifier for the item
 - `batchNumber`: identification number for a quantity/lot from a manufacturer
