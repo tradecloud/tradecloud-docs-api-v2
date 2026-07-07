@@ -4,7 +4,9 @@ description: 'UN/EDIFACT D.96A standard messaging over secure SFTP for supply ch
 
 # EDIFACT SFTP Connector
 
-The EDIFACT SFTP Connector provides standardized Electronic Data Interchange (EDI) messaging using the internationally recognized UN/EDIFACT D.96A format, ensuring seamless interoperability with trading partners worldwide.
+The EDIFACT SFTP Connector provides standardized Electronic Data Interchange
+(EDI) messaging using the internationally recognized UN/EDIFACT D.96A format,
+ensuring seamless interoperability with trading partners worldwide.
 
 ## Overview
 
@@ -18,7 +20,7 @@ Ideal for organizations that require:
 ## Technical Specifications
 
 | Specification | Details |
-|---------------|---------|
+| --------------- | --------- |
 | **EDI Standard** | [UN/EDIFACT D.96A](https://unece.org/DAM/trade/untdid/d96a/d96a.zip) |
 | **Character Set** | UNOC (ISO 8859-1) |
 | **Transport Protocol** | [SFTP](https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13) |
@@ -29,7 +31,7 @@ Ideal for organizations that require:
 The EDIFACT connector supports essential supply chain documents:
 
 | Message Type | EDI Code | Purpose |
-|--------------|----------|---------|
+| -------------- | ---------- | --------- |
 | **Purchase Orders** | `ORDERS` | New purchase orders and requirements |
 | **Order Changes** | `ORDCHG` | Modifications to existing orders |
 | **Order Responses** | `ORDRSP` | Supplier confirmations and acknowledgments |
@@ -41,7 +43,7 @@ The EDIFACT connector supports essential supply chain documents:
 All messages comply with UN/EDIFACT D.96A specifications:
 
 - **Message structure** follows standard segment definitions
-- **Data elements** use standard codes and formats  
+- **Data elements** use standard codes and formats
 - **Validation rules** ensure data integrity and compliance
 - **Documentation** available in [official UN/EDIFACT D.96A package](https://unece.org/DAM/trade/untdid/d96a/d96a.zip)
 
@@ -66,5 +68,5 @@ The EDIFACT SFTP Connector is available through our partner **Supplydrive**, pro
 1. **Evaluate Readiness** - Assess your EDI requirements and system capabilities
 2. **Partner Consultation** - Contact Supplydrive for implementation planning
 3. **Message Design** - Configure EDIFACT message types and trading partner setup
-4. **Testing Phase** - Validate message exchange in acceptance environment  
+4. **Testing Phase** - Validate message exchange in acceptance environment
 5. **Production Deployment** - Go live with monitoring and ongoing support
