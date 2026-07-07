@@ -4,7 +4,9 @@ description: 'Custom CSV file integration using RFC 4180 format over secure SFTP
 
 # CSV SFTP Connector
 
-The CSV SFTP Connector enables flexible data exchange using custom CSV (Comma-Separated Values) formats, ideal for organizations with specific data structure requirements or legacy systems that work best with tabular data.
+The CSV SFTP Connector enables flexible data exchange using custom CSV
+(Comma-Separated Values) formats, ideal for organizations with specific data
+structure requirements or legacy systems that work best with tabular data.
 
 ## Overview
 
@@ -18,8 +20,8 @@ Perfect for businesses that need:
 ## Technical Specifications
 
 | Specification | Details |
-|---------------|---------|
-| **Data Format** | [RFC 4180](https://tools.ietf.org/html/rfc4180) Compliant CSV |
+| --------------- | --------- |
+| **Data Format** | [RFC 4180](https://tools.ietf.org/html/rfc4180)-compliant CSV |
 | **Character Encoding** | UTF-8 |
 | **Field Delimiter** | Comma (`,`) |
 | **Text Qualifier** | Double quote (`"`) |
@@ -30,7 +32,7 @@ Perfect for businesses that need:
 The CSV connector supports all core business documents:
 
 - **Orders** - Purchase orders and order updates
-- **Order Responses** - Supplier confirmations and modifications  
+- **Order Responses** - Supplier confirmations and modifications
 - **Despatch Advice** - Shipment notifications with tracking details
 - **Receipt Advice** - Goods receipt confirmations from buyers
 
@@ -45,7 +47,9 @@ Each CSV implementation is **custom-designed** to match your specific:
 
 ## Connection Details
 
-- **Transport Protocol**: [SFTP](https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13) (SSH File Transfer Protocol)
+- **Transport Protocol**:
+  [SFTP](https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13)
+  (SSH File Transfer Protocol)
 - **Server Location**: Tradecloud-hosted secure SFTP server
 - **Client Requirements**: SFTP client software and outbound internet access
 - **Security**: Encryption for all file transfers
@@ -55,7 +59,7 @@ Each CSV implementation is **custom-designed** to match your specific:
 The CSV SFTP Connector is available through our partner **Supplydrive**, who provides:
 
 - Custom CSV format design and mapping
-- Implementation and testing support  
+- Implementation and testing support
 - Ongoing maintenance and support
 - Integration expertise and best practices
 
