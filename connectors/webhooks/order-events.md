@@ -140,6 +140,8 @@ Both buyer and supplier can update the logistics process.
 | `OrderLinesShippedByBuyer`                             | Order lines are marked as shipped by the buyer                 |
 | `OrderLinesMarkedAsDeliveredByBuyer`                   | Order lines are marked as delivered by the buyer               |
 | `OrderLinesMarkedAsDeliveredBySupplier`                | Order lines are marked as delivered by the supplier            |
+| `OrderLinesDeliveryHistoryAppendedByBuyer`             | Order lines delivery history is appended by the buyer          |
+| `OrderLinesDeliveryHistorySetByBuyer`                  | Order lines delivery history is replaced by the buyer          |
 | `OrderLinesDeliveryScheduleLogisticsUpdatedByBuyer`    | Delivery schedule logistics fields are updated by the buyer    |
 | `OrderLinesDeliveryScheduleLogisticsUpdatedBySupplier` | Delivery schedule logistics fields are updated by the supplier |
 
