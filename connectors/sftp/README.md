@@ -42,7 +42,7 @@ Each customer has a dedicated folder structure for organized file management:
 
 ```shell
 📁 /order                    # Incoming orders
-📁 /order_change             # Order modifications
+📁 /order_change             # Order updates
 📁 /order_response           # Order confirmations
 📁 /despatch_advice          # Shipment notifications
 📁 /receipt_advice           # Goods receipt confirmations
