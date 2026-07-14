@@ -15,7 +15,7 @@ The delivery history contains the actual physical deliveries. With the actual de
 
 The actual delivery history is matched against the planned delivery schedule **by date and quantity**, not by delivery line position — `deliveryHistory.position` and `deliverySchedule.position` do not have to use the same values.
 
-There are two ways to send the delivery history to Tradecloud:
+There are three ways to send the delivery history to Tradecloud:
 
 ### Send the delivery history by updating an order using the `/order` endpoint
 
@@ -35,6 +35,21 @@ Before adding a delivery to an order, the order must have been sent to Tradeclou
 
 {% hint style="warning" %}
 The `/order/deliveries` endpoint is not supported when using the single delivery feature.
+Let [support](../support.md) know when you need this endpoint for single delivery.
+{% endhint %}
+
+### Replace the delivery history using the `/api-connector/order/deliveryHistory` endpoint
+
+Replace the delivery history for one or multiple existing order lines using the [Send order delivery history](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderDeliveryHistoryByBuyer) endpoint. Unlike `/order/deliveries`, which appends deliveries, this endpoint replaces the delivery history per order line with the deliveries in the request.
+
+Only the lines present in the request are affected; lines not included are left untouched. To clear the delivery history of a line, send that line with an empty `deliveryHistory` array. As with the other methods, the delivery history is matched against the planned delivery schedule by date and quantity.
+
+{% hint style="warning" %}
+Before replacing the delivery history of an order, the order must have been sent to Tradecloud first.
+{% endhint %}
+
+{% hint style="warning" %}
+The `/order/deliveryHistory` endpoint is not supported when using the single delivery feature.
 Let [support](../support.md) know when you need this endpoint for single delivery.
 {% endhint %}
 
