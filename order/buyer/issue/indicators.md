@@ -57,18 +57,28 @@ The delivered indicator is applied by **order line or delivery line position**, 
 
 `completed`: the order or line is completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.
 
-- `Issued`, `In progress`, `Rejected` and `Confirmed` lines will become `Completed`.
+- `true` on `Issued`, `In progress`, `Rejected` and `Confirmed` lines will become `Completed`.
 - `Cancelled` lines cannot be completed.
-- `Completed` lines cannot be completed again.
+- `Completed` lines cannot be completed again with `true`.
+- Explicit **line-level** `completed=false` on a `Completed` line **reverts** completion. See [Revert completion](../complete.md#revert-completion).
+- Order-header-level `completed=false` does **not** revert lines.
 - Completing has precedence over cancelling at the same time.
 
 ### Cancelled by buyer
 
 `cancelled`: the order or line is cancelled by the buyer.
 
-- `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately.
+- `true` on `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately.
 - `Completed` lines cannot be cancelled.
-- `Cancelled` lines cannot be cancelled again.
+- `Cancelled` lines cannot be cancelled again with `true`.
+- Explicit **line-level** `cancelled=false` on a `Cancelled` line **reverts** cancellation. See [Revert cancellation](../cancel.md#revert-cancellation).
+- Order-header-level `cancelled=false` does **not** revert lines.
+
+{% hint style="warning" %}
+Reverting Completed or Cancelled lines requires a **full order update**
+(`/order` or `/order/single-delivery`) with the line-level indicator set to
+`false`. The `/order/indicators` endpoint does **not** support reverting.
+{% endhint %}
 
 ## Order only indicators
 
@@ -119,6 +129,6 @@ When using the single delivery per order line feature, Tradecloud manages relate
 | `requestReconfirmation` | When set on the primary or any related split line the primary order line will open a reconfirmation request |
 | `shipped` | When the primary or any related split lines is shipped; the corresponding delivery line will become shipped |
 | `delivered` | When the primary or any related split lines is delivered; the corresponding delivery line will become delivered |
-| `completed`| When all primary and related split lines are completed; the primary order line will become completed |
-| `cancelled`| When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule |
+| `completed`| When all primary and related split lines are completed; the primary order line will become completed. Explicit line-level `false` on a Completed line reverts completion (full order update only) |
+| `cancelled`| When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule. Explicit line-level `false` on a Cancelled line reverts cancellation (full order update only) |
 | `proposeWhenAccepted` | When set on the primary or any related split line; the primary order line will open a proposal request when accepted |

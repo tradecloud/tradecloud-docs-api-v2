@@ -1,4 +1,4 @@
----
+ ---
 description: How to request the supplier to cancel an order or line
 ---
 
@@ -55,3 +55,29 @@ If you provide a `cancelled` indicator on order level, **ALL** the lines in the 
 
 If you also provide a `cancelled` indicator on line level, it has **precedence** over the order level `cancelled` indicator.
 {% endhint %}
+
+## Revert cancellation
+
+You can revert a `Cancelled` order line by sending a **full order update** with
+an explicit **line-level** `indicators.cancelled=false`.
+
+Applicable endpoints:
+
+- [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
+- [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute)
+
+{% hint style="warning" %}
+Order-header-level `cancelled=false` does **not** revert lines. The
+`/order/indicators` endpoint does **not** support reverting.
+{% endhint %}
+
+Resulting [process status](../status.md#line-process-status):
+
+| Situation | Result |
+| --- | --- |
+| No confirmed line | `InProgress` with [`inProgressStatus`](../status.md#line-in-progress-status) `RevertedCancelledLine` |
+| Confirmed line, unchanged agreed prices, delivery schedule and charge lines | `Confirmed` |
+| Confirmed line, changed agreed prices, delivery schedule or charge lines | `InProgress` with `OpenBuyerReopenRequest`; the confirmed agreement stays unchanged until the supplier approves — see [Reopen an order](reopen.md) |
+
+Webhook subscribers receive
+[`CancelledOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-cancelled-by-buyer).

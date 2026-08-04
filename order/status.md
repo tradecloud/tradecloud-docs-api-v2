@@ -75,8 +75,24 @@ The line in progress status is a more fine-grained status when an order line `pr
 
 #### Completed or cancelled line reversion
 
-* `RevertedCompletedLine`: The completion of this line was reverted.
-* `RevertedCancelledLine`: The cancellation of this line was reverted.
+These `inProgressStatus` values apply when a buyer reverts a Completed or
+Cancelled line via a full order update with explicit line-level
+`completed=false` or `cancelled=false` (not via `/order/indicators`). See
+[Revert completion](buyer/complete.md#revert-completion) and
+[Revert cancellation](buyer/cancel.md#revert-cancellation).
+
+* `RevertedCompletedLine`: The completion of this line was reverted and the
+  line has no confirmed agreement. Process status is `InProgress`.
+* `RevertedCancelledLine`: The cancellation of this line was reverted and the
+  line has no confirmed agreement. Process status is `InProgress`.
+
+When the reverted line **has** a confirmed agreement:
+
+* unchanged agreed prices, delivery schedule and charge lines → process status
+  `Confirmed` (no `inProgressStatus`)
+* changed agreed prices, delivery schedule or charge lines → process status
+  `InProgress` with `OpenBuyerReopenRequest` (see reopen requests above); the
+  confirmed agreement stays unchanged until the supplier approves
 
 ### Line logistics status
 

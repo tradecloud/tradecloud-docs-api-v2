@@ -25,8 +25,37 @@ order will have a longer human response time.
   makes the **requested** delivery schedule and prices **equal** to the
   **confirmed** values again, Tradecloud **reverts** that reopen request — see
   [Revert a reopen request](reopen.md#revert-a-reopen-request).
-- In case of any other status like `Completed` or `Cancelled` the order update
-  will be ignored.
+- If the line is `Completed`, the update is ignored unless you explicitly set
+  line-level `indicators.completed` to `false`, which reverts completion — see
+  [Revert completion](complete.md#revert-completion).
+- If the line is `Cancelled`, the update is ignored unless you explicitly set
+  line-level `indicators.cancelled` to `false`, which reverts cancellation — see
+  [Revert cancellation](cancel.md#revert-cancellation).
+
+### Reverting a Completed or Cancelled line
+
+Reverting requires a **full order update** (`/order` or `/order/single-delivery`)
+with an **explicit** line-level indicator:
+
+- `indicators.completed=false` on a `Completed` line reverts completion
+- `indicators.cancelled=false` on a `Cancelled` line reverts cancellation
+
+Order-header-level `false` does **not** revert lines. The
+[`/order/indicators`](issue/indicators.md) endpoint does **not** support
+reverting.
+
+Resulting [process status](../status.md#line-process-status) after a revert:
+
+| Situation | Result |
+| --- | --- |
+| No confirmed line | `InProgress` with [`inProgressStatus`](../status.md#line-in-progress-status) `RevertedCompletedLine` or `RevertedCancelledLine` |
+| Confirmed line, unchanged agreed prices, delivery schedule and charge lines | `Confirmed` |
+| Confirmed line, changed agreed prices, delivery schedule or charge lines | `InProgress` with `OpenBuyerReopenRequest`; the confirmed agreement stays unchanged until the supplier approves — see [Reopen an order](reopen.md) |
+
+Webhook events:
+[`CompletedOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-completed-by-buyer)
+and
+[`CancelledOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-cancelled-by-buyer).
 
 ### Endpoints
 

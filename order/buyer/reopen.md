@@ -53,8 +53,27 @@ The supplier has to **approve** the reopen request before Tradecloud accepts a
 {% endhint %}
 
 {% hint style="warning" %}
-You cannot reopen a `Completed` or `Cancelled` line.
+There is no direct reopen for a `Completed` or `Cancelled` line. First
+[revert completion](complete.md#revert-completion) or
+[revert cancellation](cancel.md#revert-cancellation) with a full order update.
 {% endhint %}
+
+### Reopen after reverting a Completed or Cancelled line
+
+When you revert a previously **confirmed** Completed or Cancelled line and the
+update also **changes** agreed prices, delivery schedule or charge lines,
+Tradecloud creates a buyer reopen request instead of applying the new agreement
+immediately:
+
+- process status becomes `InProgress` with
+  [`inProgressStatus`](../status.md#line-in-progress-status)
+  `OpenBuyerReopenRequest`
+- the existing confirmed agreement stays unchanged until the supplier
+  **approves** the reopen request
+- the changed values are stored in the open buyer reopen request
+
+If the reverting update leaves agreed prices, delivery schedule and charge lines
+unchanged, the line returns to `Confirmed` and no reopen request is created.
 
 {% hint style="info" %}
 An order line with process status `Confirmed` becomes `InProgress` when a reopen

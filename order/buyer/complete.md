@@ -45,3 +45,29 @@ If you provide a `completed` indicator on order level, **ALL** the lines in the 
 
 If you also provide a `completed` indicator on line level, it has **precedence** over the order level `completed` indicator.
 {% endhint %}
+
+## Revert completion
+
+You can revert a `Completed` order line by sending a **full order update** with
+an explicit **line-level** `indicators.completed=false`.
+
+Applicable endpoints:
+
+* [Send order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
+* [Send single delivery order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute)
+
+{% hint style="warning" %}
+Order-header-level `completed=false` does **not** revert lines. The
+`/order/indicators` endpoint does **not** support reverting.
+{% endhint %}
+
+Resulting [process status](../status.md#line-process-status):
+
+| Situation | Result |
+| --- | --- |
+| No confirmed line | `InProgress` with [`inProgressStatus`](../status.md#line-in-progress-status) `RevertedCompletedLine` |
+| Confirmed line, unchanged agreed prices, delivery schedule and charge lines | `Confirmed` |
+| Confirmed line, changed agreed prices, delivery schedule or charge lines | `InProgress` with `OpenBuyerReopenRequest`; the confirmed agreement stays unchanged until the supplier approves — see [Reopen an order](reopen.md) |
+
+Webhook subscribers receive
+[`CompletedOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-completed-by-buyer).
