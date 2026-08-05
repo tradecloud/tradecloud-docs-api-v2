@@ -69,5 +69,9 @@ Resulting [process status](../status.md#line-process-status):
 | Confirmed line, unchanged agreed prices, delivery schedule and charge lines | `Confirmed` |
 | Confirmed line, changed agreed prices, delivery schedule or charge lines | `InProgress` with `OpenBuyerReopenRequest`; the confirmed agreement stays unchanged until the supplier approves — see [Reopen an order](reopen.md) |
 
+Logistics status is recalculated from the delivery schedule (typically `Open` when no
+deliveries remain). `completedAt` is cleared; `confirmedAt` is unchanged when a confirmed
+agreement existed.
+
 Webhook subscribers receive
 [`CompletedOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-completed-by-buyer).
