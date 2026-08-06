@@ -75,7 +75,7 @@ Resulting [process status](../status.md#line-process-status):
 
 | Situation | Result |
 | --- | --- |
-| No confirmed line | `InProgress` with [`inProgressStatus`](../status.md#line-in-progress-status) `RevertedCancelledLine` |
+| No confirmed line | `Issued` (supplier must confirm) |
 | Confirmed line, unchanged agreed prices, delivery schedule and charge lines | `Confirmed` |
 | Confirmed line, changed agreed prices, delivery schedule or charge lines | `InProgress` with `OpenBuyerReopenRequest`; the confirmed agreement stays unchanged until the supplier approves — see [Reopen an order](reopen.md) |
 

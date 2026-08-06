@@ -48,7 +48,8 @@ Resulting [process status](../status.md#line-process-status) after a revert:
 
 | Situation | Result |
 | --- | --- |
-| No confirmed line | `InProgress` with [`inProgressStatus`](../status.md#line-in-progress-status) `RevertedCompletedLine` or `RevertedCancelledLine` |
+| No confirmed line (`completed=false`) | `InProgress` with [`inProgressStatus`](../status.md#line-in-progress-status) `RevertedCompletedLine` |
+| No confirmed line (`cancelled=false`) | `Issued` (supplier must confirm) |
 | Confirmed line, unchanged agreed prices, delivery schedule and charge lines | `Confirmed` |
 | Confirmed line, changed agreed prices, delivery schedule or charge lines | `InProgress` with `OpenBuyerReopenRequest`; the confirmed agreement stays unchanged until the supplier approves — see [Reopen an order](reopen.md) |
 

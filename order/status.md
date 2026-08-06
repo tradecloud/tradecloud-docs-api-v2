@@ -83,10 +83,21 @@ Cancelled line via a full order update with explicit line-level
 
 * `RevertedCompletedLine`: The completion of this line was reverted and the
   line has no confirmed agreement. Process status is `InProgress`.
-* `RevertedCancelledLine`: The cancellation of this line was reverted and the
-  line has no confirmed agreement. Process status is `InProgress`.
+* `RevertedCancelledLine`: Legacy sub-status from older cancel-revert behaviour.
+  New cancel reverts of a line without a confirmed agreement use process status
+  `Issued` instead (see below).
 
-When the reverted line **has** a confirmed agreement:
+When a **cancelled** line is reverted:
+
+* no confirmed agreement → process status `Issued` (supplier must confirm)
+* confirmed agreement, unchanged agreed prices, delivery schedule and charge lines
+  → process status `Confirmed` (no `inProgressStatus`)
+* confirmed agreement, changed agreed prices, delivery schedule or charge lines
+  → process status `InProgress` with `OpenBuyerReopenRequest` (see reopen
+  requests above); the confirmed agreement stays unchanged until the supplier
+  approves
+
+When a **completed** line is reverted and **has** a confirmed agreement:
 
 * unchanged agreed prices, delivery schedule and charge lines → process status
   `Confirmed` (no `inProgressStatus`)
