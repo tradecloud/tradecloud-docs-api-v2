@@ -73,7 +73,11 @@ immediately:
 - the changed values are stored in the open buyer reopen request
 
 If the reverting update leaves agreed prices, delivery schedule and charge lines
-unchanged, the line returns to `Confirmed` and no reopen request is created.
+unchanged, no reopen request is created:
+
+- **Completed** line → process status `Confirmed` (see [Revert completion](complete.md#revert-completion))
+- **Cancelled** line → process status `Issued` so the supplier must reconfirm
+  (see [Revert cancellation](cancel.md#revert-cancellation))
 
 {% hint style="info" %}
 An order line with process status `Confirmed` becomes `InProgress` when a reopen

@@ -50,7 +50,8 @@ Resulting [process status](../status.md#line-process-status) after a revert:
 | --- | --- |
 | No confirmed line (`completed=false`) | `InProgress` with [`inProgressStatus`](../status.md#line-in-progress-status) `RevertedCompletedLine` |
 | No confirmed line (`cancelled=false`) | `Issued` (supplier must confirm) |
-| Confirmed line, unchanged agreed prices, delivery schedule and charge lines | `Confirmed` |
+| Confirmed line, unchanged agreed prices, delivery schedule and charge lines (`completed=false`) | `Confirmed` |
+| Confirmed line, unchanged agreed prices, delivery schedule and charge lines (`cancelled=false`) | `Issued` (supplier must reconfirm; `confirmedLine` / `confirmedAt` kept) |
 | Confirmed line, changed agreed prices, delivery schedule or charge lines | `InProgress` with `OpenBuyerReopenRequest`; the confirmed agreement stays unchanged until the supplier approves — see [Reopen an order](reopen.md) |
 
 Logistics status is recalculated from the delivery schedule. `cancelledAt` or `completedAt` is
