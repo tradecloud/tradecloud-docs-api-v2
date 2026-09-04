@@ -74,6 +74,14 @@ The order header contains:
 - `properties`: are key-value based custom fields, added by the supplier.
 - `notes`: are simple custom fields, added by the supplier.
 - `documents`: contain meta data and link of attached documents by the supplier.
+  - `meta`: optional meta information about the document, set by Tradecloud
+    - `addedAt`: ISO date and time with timezone when the document was first
+      attached to the order. Not present for documents attached before this
+      field was introduced.
+    - `lastUpdatedAt`: ISO date and time with timezone when the document was
+      last re-attached with changed values. Not bumped when re-attached with
+      identical values. Not present if the document was never updated, or was
+      attached before this field was introduced.
 
 {% page-ref page="download-document.md" %}
 
@@ -135,6 +143,14 @@ new order](../issue/#lines)
 - `notes`: are simple custom fields, added by the supplier
 - `documents`: contain meta data, objectId or url, of attached documents by the
   supplier.
+  - `meta`: optional meta information about the document, set by Tradecloud
+    - `addedAt`: ISO date and time with timezone when the document was first
+      attached to the order line. Not present for documents attached before
+      this field was introduced.
+    - `lastUpdatedAt`: ISO date and time with timezone when the document was
+      last re-attached with changed values. Not bumped when re-attached with
+      identical values. Not present if the document was never updated, or was
+      attached before this field was introduced.
 
 {% page-ref page="download-document.md" %}
 
