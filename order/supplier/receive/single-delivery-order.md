@@ -73,8 +73,9 @@ The order header contains:
       field was introduced.
     - `lastUpdatedAt`: ISO date and time with timezone when the document was
       last re-attached with changed values. Not bumped when re-attached with
-      identical values. Not present if the document was never updated, or was
-      attached before this field was introduced.
+      identical values, so it equals `addedAt` for a document that has never
+      changed. Not present for documents attached before this field was
+      introduced.
 
 {% page-ref page="download-document.md" %}
 
@@ -158,8 +159,9 @@ The order status is the aggregation of all the lines statuses. See
       this field was introduced.
     - `lastUpdatedAt`: ISO date and time with timezone when the document was
       last re-attached with changed values. Not bumped when re-attached with
-      identical values. Not present if the document was never updated, or was
-      attached before this field was introduced.
+      identical values, so it equals `addedAt` for a document that has never
+      changed. Not present for documents attached before this field was
+      introduced.
 
 {% page-ref page="download-document.md" %}
 
