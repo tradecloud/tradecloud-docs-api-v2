@@ -97,12 +97,12 @@ The order header contains:
   buyer. See:
   - `meta`: optional meta information about the document, set by Tradecloud
     - `addedAt`: ISO date and time with timezone when the document was first
-      attached to the order. Not present for documents attached before this
-      field was introduced.
+      added to the order, whether sent with the order or attached separately.
+      Not present for documents added before this field was introduced.
     - `lastUpdatedAt`: ISO date and time with timezone when the document was
-      last re-attached with changed values. Not bumped when re-attached with
+      last sent again with changed values. Not bumped when sent again with
       identical values, so it equals `addedAt` for a document that has never
-      changed. Not present for documents attached before this field was
+      changed. Not present for documents added before this field was
       introduced.
 
 {% page-ref page="download-document.md" %}
@@ -184,12 +184,13 @@ The order status is the aggregation of all the lines statuses. See
 - `documents`: contain meta data and link of attached documents, see:
   - `meta`: optional meta information about the document, set by Tradecloud
     - `addedAt`: ISO date and time with timezone when the document was first
-      attached to the order line. Not present for documents attached before
-      this field was introduced.
+      added to the order line, whether sent with the order or attached
+      separately. Not present for documents added before this field was
+      introduced.
     - `lastUpdatedAt`: ISO date and time with timezone when the document was
-      last re-attached with changed values. Not bumped when re-attached with
+      last sent again with changed values. Not bumped when sent again with
       identical values, so it equals `addedAt` for a document that has never
-      changed. Not present for documents attached before this field was
+      changed. Not present for documents added before this field was
       introduced.
 
 {% page-ref page="download-document.md" %}
