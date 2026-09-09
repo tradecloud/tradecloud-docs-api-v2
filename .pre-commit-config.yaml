@@ -1,0 +1,23 @@
+# markdownlint-cli needs a modern Node; prek's default is too old for its
+# use of the RegExp `v` flag, so pin the node hook toolchain here.
+default_language_version:
+  node: 22.x
+
+repos:
+  # Various basic checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-executables-have-shebangs
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+        args:
+          - --markdown-linebreak-ext=md
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.49.1
+    hooks:
+      - id: markdownlint
