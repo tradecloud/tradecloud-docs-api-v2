@@ -27,3 +27,7 @@ hosting tool (GitBook or equivalent).
 - Public-facing -- review changes for clarity and accuracy.
 - Align with `tradecloud-sdk-dotnet` and the API surface in
   `tradecloud-microservices`.
+
+## Rejected Findings
+
+None yet.
