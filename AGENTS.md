@@ -39,7 +39,8 @@ hosting tool (GitBook or equivalent).
   never invent a number; `TC-10000` only when the change is explicitly
   untracked.
 - Open the pull request as a draft, let the AI reviewers run, disposition
-  every finding, then mark it ready for review. The flow is in
+  every finding (fix it, resolve it with a reason, or record it under
+  Rejected Findings), then mark it ready for review. The flow is in
   tradecloud-docs-devops, `development/cd-process/reviewing/`.
 
 ## Rejected Findings
