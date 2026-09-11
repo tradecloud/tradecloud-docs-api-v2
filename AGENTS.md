@@ -36,8 +36,7 @@ hosting tool (GitBook or equivalent).
   repository's own checklists. Keep it proportional to the change; do not
   list files, the diff shows where.
 - The first line is the Jira ticket. Ask for it when it is not known and
-  never invent a number; `TC-10000` only when the change is explicitly
-  untracked.
+  never invent or assume a number.
 - Open the pull request as a draft, let the AI reviewers run, disposition
   every finding (fix it, resolve it with a reason, or record it under
   Rejected Findings), then mark it ready for review. The flow is in
