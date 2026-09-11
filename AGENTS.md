@@ -39,8 +39,8 @@ hosting tool (GitBook or equivalent).
   never invent or assume a number.
 - Open the pull request as a draft, let the AI reviewers run, disposition
   every finding (fix it, resolve it with a reason, or record it under
-  Rejected Findings), then mark it ready for review. The flow is in
-  tradecloud-docs-devops, `development/cd-process/reviewing/`.
+  Rejected Findings), then mark it ready for review. The full flow:
+  <https://github.com/tradecloud/tradecloud-docs-devops/blob/master/development/cd-process/reviewing/ai-assisted-contributions.md>
 
 ## Rejected Findings
 
