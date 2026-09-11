@@ -28,6 +28,20 @@ hosting tool (GitBook or equivalent).
 - Align with `tradecloud-sdk-dotnet` and the API surface in
   `tradecloud-microservices`.
 
+## Pull requests
+
+- The description follows `.github/PULL_REQUEST_TEMPLATE.md`: Intent (why,
+  and what is different afterwards), AI assistance (what the tool did, what
+  the human did), optional Verification (only what CI cannot tell), then the
+  repository's own checklists. Keep it proportional to the change; do not
+  list files, the diff shows where.
+- The first line is the Jira ticket. Ask for it when it is not known and
+  never invent a number; `TC-10000` only when the change is explicitly
+  untracked.
+- Open the pull request as a draft, let the AI reviewers run, disposition
+  every finding, then mark it ready for review. The flow is in
+  tradecloud-docs-devops, `development/cd-process/reviewing/`.
+
 ## Rejected Findings
 
 None yet.
