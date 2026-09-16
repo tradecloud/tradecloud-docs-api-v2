@@ -22,9 +22,9 @@ become `In Progress`.
 - If the line has status `Confirmed` and it is reopened, it will become `In
 Progress`.
 - If the line is `In Progress` with an open buyer reopen request and your update
-makes the **requested** delivery schedule and prices **equal** to the
-**confirmed** values again, Tradecloud **reverts** that reopen request — see
-[Revert a reopen request](reopen.md#revert-a-reopen-request).
+makes the **requested** delivery schedule, prices and charge lines **equal** to
+the **confirmed** values again, Tradecloud **reverts** that reopen request —
+see [Revert a reopen request](reopen.md#revert-a-reopen-request).
 - If the line has status `Completed` and the line-level indicator
 `completed=false` is set explicitly, the completion is reverted. See [Revert
 completion](complete.md#revert-completion).

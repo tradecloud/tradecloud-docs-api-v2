@@ -68,7 +68,7 @@ The line in progress status is a more fine-grained status when an order line
 #### Reconfirmation request
 
 * `OpenBuyerReconfirmationRequest`: There is an open reconfirmation request
-  (reconfirm the same schedule & prices) from the buyer. This also results from
+  (reconfirm the same agreed data) from the buyer. This also results from
   reverting the cancellation of a previously confirmed line whose agreed data is
   unchanged.
 
