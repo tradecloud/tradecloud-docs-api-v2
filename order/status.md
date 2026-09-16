@@ -4,7 +4,8 @@ description: Order and line status reference
 
 # Order and line status
 
-This page consolidates all order-level, line-level, and related status values used in Tradecloud orders.
+This page consolidates all order-level, line-level, and related status values
+used in Tradecloud orders.
 
 ## Order status
 
@@ -47,7 +48,8 @@ The line process status is one of:
 
 ### Line in Progress status
 
-The line in progress status is a more fine-grained status when an order line `processStatus` is `InProgress` and is one of:
+The line in progress status is a more fine-grained status when an order line
+`processStatus` is `InProgress` and is one of:
 
 #### Supplier proposal
 
@@ -65,7 +67,10 @@ The line in progress status is a more fine-grained status when an order line `pr
 
 #### Reconfirmation request
 
-* `OpenBuyerReconfirmationRequest`: There is an open reconfirmation request (reconfirm the same schedule & prices) from the buyer.
+* `OpenBuyerReconfirmationRequest`: There is an open reconfirmation request
+  (reconfirm the same schedule & prices) from the buyer. This also results from
+  reverting the cancellation of a previously confirmed line whose agreed data is
+  unchanged.
 
 #### Reschedule request
 
@@ -73,10 +78,9 @@ The line in progress status is a more fine-grained status when an order line `pr
 * `ApprovedDeliverySchedule`: The delivery schedule has been approved after a reschedule request.
 * `RejectedDeliverySchedule`: The delivery schedule has been rejected after a reschedule request.
 
-#### Completed or cancelled line reversion
+#### Completed line reversion
 
 * `RevertedCompletedLine`: The completion of this line was reverted.
-* `RevertedCancelledLine`: The cancellation of this line was reverted.
 
 ### Line logistics status
 
@@ -91,7 +95,8 @@ The line logistics status is one of:
 
 ## Scheduled delivery logistics status
 
-The delivery line logistics status applies to individual scheduled deliveries within an order line's delivery schedule. The status is one of:
+The delivery line logistics status applies to individual scheduled deliveries
+within an order line's delivery schedule. The status is one of:
 
 * `Open`: no or partial quantity Produced, ReadyToShip, Shipped or Delivered
 * `Produced`: the delivery line quantity is produced by the supplier
@@ -101,7 +106,8 @@ The delivery line logistics status applies to individual scheduled deliveries wi
 
 ## Request status
 
-The request status applies to all requests (supplier or buyer). The status is one of:
+The request status applies to all requests (supplier or buyer). The status is
+one of:
 
 * `Open`: Requested by one party. To be approved or rejected by the other party.
 * `Approved`: The request is approved by the other party.

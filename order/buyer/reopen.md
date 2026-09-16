@@ -27,8 +27,8 @@ as creating a reopen: new requested values that still differ from confirmed).
 
 ## Revert a reopen request
 
-You can **withdraw** an open reopen request **without** waiting for the
-supplier to approve or reject it.
+You can **withdraw** an open reopen request **without** waiting for the supplier
+to approve or reject it.
 
 Send an order update where the **requested** `delivery schedule` and `prices`
 are **equal** to the **confirmed** `delivery schedule` and `prices` — i.e. you
@@ -53,7 +53,12 @@ The supplier has to **approve** the reopen request before Tradecloud accepts a
 {% endhint %}
 
 {% hint style="warning" %}
-You cannot reopen a `Completed` or `Cancelled` line.
+You cannot reopen a `Completed` or `Cancelled` line directly. Reverting a
+previously confirmed line with changed agreed prices, delivery schedule or
+charge lines does create a buyer reopen request: set `completed=false` or
+`cancelled=false` on the line in a full order update. See [Revert
+completion](complete.md#revert-completion) and [Revert
+cancellation](cancel.md#revert-cancellation).
 {% endhint %}
 
 {% hint style="info" %}

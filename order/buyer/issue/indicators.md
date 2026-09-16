@@ -6,61 +6,93 @@ description: How to use order and line indicators as a buyer
 
 ## Order & line indicators
 
-You can set indicators on both order and line levels.
-Line indicators have precedence over \(overrule\) order indicators.
+You can set indicators on both order and line levels. Line indicators have
+precedence over \(overrule\) order indicators.
 
 {% hint style="warning" %}
-When working with the single delivery per order line feature, these indicators behave slightly different, check the [single delivery order line behavior](#single-delivery-order-line-behavior).
+When working with the single delivery per order line feature, these indicators
+behave slightly different, check the [single delivery order line
+behavior](#single-delivery-order-line-behavior).
 {% endhint %}
 
 ### Confirmed by buyer
 
-`confirmed`: all goods of this order or line are confirmed by the supplier, according to the buyer.
+`confirmed`: all goods of this order or line are confirmed by the supplier,
+according to the buyer.
 
 {% hint style="info" %}
-The order or line must have [process status](../../status.md#line-process-status) `Issued` and will become `Confirmed`.
-This indicator is only intended for onboarding or migration of order lines which are already confirmed.
+The order or line must have [process
+status](../../status.md#line-process-status) `Issued` and will become
+`Confirmed`. This indicator is only intended for onboarding or migration of
+order lines which are already confirmed.
 {% endhint %}
 
 ### Reconfirmation request by buyer
 
-`requestReconfirmation`: the supplier is requested to reconfirm the order line. The supplier either reconfirms the order line with requested values or alternatively does a reopen request with different values.
+`requestReconfirmation`: the supplier is requested to reconfirm the order line.
+The supplier either reconfirms the order line with requested values or
+alternatively does a reopen request with different values.
 
 {% hint style="info" %}
-The order or line must have [process status](../../status.md#line-process-status) `Confirmed` and will become `InProgress`.
-The [`inProgressStatus`](../../status.md#line-in-progress-status) will become `OpenBuyerReconfirmationRequest`
+The order or line must have [process
+status](../../status.md#line-process-status) `Confirmed` and will become
+`InProgress`. The [`inProgressStatus`](../../status.md#line-in-progress-status)
+will become `OpenBuyerReconfirmationRequest`
 {% endhint %}
 
 ### Shipped by supplier
 
-`shipped`: all goods of this order or line are completely shipped by the supplier, according to the buyer.
+`shipped`: all goods of this order or line are completely shipped by the
+supplier, according to the buyer.
 
 {% hint style="info" %}
-The order or line having [logistics status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip` will become `Shipped`.
+The order or line having [logistics
+status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip`
+will become `Shipped`.
 {% endhint %}
 
 ### Delivered at buyer
 
-`delivered`: all goods of the order or line are completely delivered at the buyer.
+`delivered`: all goods of the order or line are completely delivered at the
+buyer.
 
 {% hint style="info" %}
-The order or line having [logistics status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip` or `Shipped` will become `Delivered`.
+The order or line having [logistics
+status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip`
+or `Shipped` will become `Delivered`.
 {% endhint %}
 
 {% hint style="info" %}
-This indicator is designed for stock items (`lineType` `Item`) where your ERP uses delivery tolerances and a receipt within tolerance counts as delivered. You may set `delivered` on top of the [actual delivery history](../receive-goods.md#actual-delivery-history) for this purpose. Do not use it outside this tolerance use case.
+This indicator is designed for stock items (`lineType` `Item`) where your ERP
+uses delivery tolerances and a receipt within tolerance counts as delivered. You
+may set `delivered` on top of the [actual delivery
+history](../receive-goods.md#actual-delivery-history) for this purpose. Do not
+use it outside this tolerance use case.
 
-The delivered indicator is applied by **order line or delivery line position**, whereas the actual delivery history is matched by **date and quantity**.
+The delivered indicator is applied by **order line or delivery line position**,
+whereas the actual delivery history is matched by **date and quantity**.
 {% endhint %}
 
 ### Completed at buyer
 
-`completed`: the order or line is completed at the buyer. Usually this indicator is set when the invoice is received and approved by buyer.
+`completed`: the order or line is completed at the buyer. Usually this indicator
+is set when the invoice is received and approved by buyer.
 
 - `Issued`, `In progress`, `Rejected` and `Confirmed` lines will become `Completed`.
 - `Cancelled` lines cannot be completed.
 - `Completed` lines cannot be completed again.
 - Completing has precedence over cancelling at the same time.
+
+An explicit line-level `completed=false` in a full order update reverts the
+completion of a `Completed` line. See [Revert
+completion](../complete.md#revert-completion).
+
+{% hint style="info" %}
+Omitting the `completed` indicator leaves the line unchanged and is not the same
+as sending `false`. Reverting is only supported by a full order update; the
+`/order/indicators` endpoint does not support it, and a `false` on order level
+does not revert.
+{% endhint %}
 
 ### Cancelled by buyer
 
@@ -70,15 +102,28 @@ The delivered indicator is applied by **order line or delivery line position**, 
 - `Completed` lines cannot be cancelled.
 - `Cancelled` lines cannot be cancelled again.
 
+An explicit line-level `cancelled=false` in a full order update reverts the
+cancellation of a `Cancelled` line. See [Revert
+cancellation](../cancel.md#revert-cancellation).
+
+{% hint style="info" %}
+Omitting the `cancelled` indicator leaves the line unchanged and is not the same
+as sending `false`. Reverting is only supported by a full order update; the
+`/order/indicators` endpoint does not support it, and a `false` on order level
+does not revert.
+{% endhint %}
+
 ## Order only indicators
 
 ### Auto confirm
 
-`autoConfirm`: If this flag is set to true then the order lines will be automatically confirmed in case of a supplier proposal or reopen request.
+`autoConfirm`: If this flag is set to true then the order lines will be
+automatically confirmed in case of a supplier proposal or reopen request.
 
 ### Cancel line when missing
 
-`cancelLineWhenMissing`: If this flag set to true and existing order lines positions are not present among incoming lines then they will be cancelled.
+`cancelLineWhenMissing`: If this flag set to true and existing order lines
+positions are not present among incoming lines then they will be cancelled.
 
 - `Issued`, `In Progress`, `Rejected` and `Confirmed` lines will become `Cancelled` immediately.
 - `Completed` lines cannot be cancelled.
@@ -94,21 +139,25 @@ The delivered indicator is applied by **order line or delivery line position**, 
 
 ### Propose when accepted
 
-`proposeWhenAccepted`: If this flag is set to true then this line becomes automatically a supplier proposal in case the supplier the accepts a line.
+`proposeWhenAccepted`: If this flag is set to true then this line becomes
+automatically a supplier proposal in case the supplier the accepts a line.
 
 {% page-ref page="propose-when-accepted.md" %}
 
 ## Single delivery order line behavior
 
 {% hint style="warning" %}
-The `/order/indicators` endpoint is not supported when using the single delivery feature.
-Let [support](../support.md) know when you need this endpoint for single delivery.
+The `/order/indicators` endpoint is not supported when using the single delivery
+feature. Let [support](../support.md) know when you need this endpoint for
+single delivery.
 {% endhint %}
 
 {% hint style="info" %}
 **How indicators work with single delivery per order line:**
 
-When using the single delivery per order line feature, Tradecloud manages related lines through the `originalPosition` reference. This affects how indicators behave:
+When using the single delivery per order line feature, Tradecloud manages
+related lines through the `originalPosition` reference. This affects how
+indicators behave:
 {% endhint %}
 
 ### Indicator behaviors
