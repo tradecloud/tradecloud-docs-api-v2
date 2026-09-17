@@ -83,10 +83,12 @@ The line in progress status is a more fine-grained status when an order line
 #### Completed or cancelled line reversion
 
 * `RevertedCompletedLine`: The completion of this line was reverted.
-* `RevertedCancelledLine`: Legacy status from an older support revert of a
-  cancelled line. New cancel-reverts use `Issued`,
-  `OpenBuyerReconfirmationRequest` or `OpenBuyerReopenRequest` instead. See
-  [Revert cancellation](buyer/cancel.md#revert-cancellation).
+* `RevertedCancelledLine`: Legacy in-progress status from an older support
+  revert of a cancelled line. New cancel-reverts do not set this status. A
+  never-confirmed line returns to process status `Issued` (no in-progress
+  status). A previously confirmed line becomes `InProgress` with
+  `OpenBuyerReconfirmationRequest` or `OpenBuyerReopenRequest`. See [Revert
+  cancellation](buyer/cancel.md#revert-cancellation).
 
 ### Line logistics status
 

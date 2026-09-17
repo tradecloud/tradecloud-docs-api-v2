@@ -35,9 +35,9 @@ The supplier can accept, reject, or [propose an alternative](#order-proposal-by-
 
 ## Order proposal by supplier
 
-The supplier can propose an alternative delivery schedule or prices. The buyer then approves or rejects the proposal.
+The supplier can propose an alternative delivery schedule, prices or charge lines. The buyer then approves or rejects the proposal.
 
-- **Propose**: The supplier proposed an alternative delivery schedule or prices.
+- **Propose**: The supplier proposed an alternative delivery schedule, prices or charge lines.
 - **Approve or reject**: The buyer approved or rejected the proposal.
 
 | OrderEvent                            | Webhook Configuration                                            |
@@ -50,12 +50,12 @@ The supplier can propose an alternative delivery schedule or prices. The buyer t
 
 The supplier can update existing order lines. If delivery schedule, prices or charge lines are updated, this triggers either a [proposal](#order-proposal-by-supplier) or [reopen request](#order-reopen-request-by-supplier).
 
-- **Updated**: The supplier updated fields other than prices & delivery schedules.
+- **Updated**: The supplier updated fields other than prices, delivery schedules and charge lines.
 - **Changed**: The supplier updated item details as requested by the buyer.
 
 | OrderEvent                     | Webhook Configuration                                                                    |
 | ------------------------------ | ---------------------------------------------------------------------------------------- |
-| `OrderLinesUpdatedBySupplier`  | Order and line fields other than prices & delivery schedules are updated by the supplier |
+| `OrderLinesUpdatedBySupplier`  | Order and line fields other than prices, delivery schedules and charge lines are updated by the supplier |
 | `OrderLinesItemDetailsChanged` | Order lines item details are changed by the supplier                                     |
 
 ## Order reopen request by buyer
