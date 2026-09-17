@@ -79,11 +79,10 @@ over the order level `cancelled` indicator.
 ## Revert cancellation
 
 Revert the cancellation of a `Cancelled` line by setting the line-level
-indicator `cancelled=false` in a full order update, using the [Send
-order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
-or [Send single delivery
-order](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute)
-endpoint.
+indicator `cancelled=false` on the
+[`/order`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendOrderByBuyerRoute)
+endpoint (or
+[`/order/single-delivery`](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/api-connector/specs.yaml#/buyer-endpoints/sendSingleDeliveryOrderByBuyerRoute)).
 
 {% hint style="info" %}
 Only an explicit `false` on line level reverts. Omitting the `cancelled`

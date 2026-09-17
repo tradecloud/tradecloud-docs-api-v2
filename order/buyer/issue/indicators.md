@@ -83,15 +83,15 @@ is set when the invoice is received and approved by buyer.
 - `Completed` lines cannot be completed again.
 - Completing has precedence over cancelling at the same time.
 
-An explicit line-level `completed=false` in a full order update reverts the
-completion of a `Completed` line. See [Revert
-completion](../complete.md#revert-completion).
+An explicit line-level `completed=false` on the `/order` endpoint (or
+`/order/single-delivery`) reverts the completion of a `Completed` line. See
+[Revert completion](../complete.md#revert-completion).
 
 {% hint style="info" %}
 Omitting the `completed` indicator leaves the line unchanged and is not the same
-as sending `false`. Reverting is only supported by a full order update; the
-`/order/indicators` endpoint does not support it, and a `false` on order level
-does not revert.
+as sending `false`. Reverting is only supported by the `/order` endpoint (or
+`/order/single-delivery`); the `/order/indicators` endpoint does not support
+it, and a `false` on order level does not revert.
 {% endhint %}
 
 ### Cancelled by buyer
@@ -102,15 +102,15 @@ does not revert.
 - `Completed` lines cannot be cancelled.
 - `Cancelled` lines cannot be cancelled again.
 
-An explicit line-level `cancelled=false` in a full order update reverts the
-cancellation of a `Cancelled` line. See [Revert
-cancellation](../cancel.md#revert-cancellation).
+An explicit line-level `cancelled=false` on the `/order` endpoint (or
+`/order/single-delivery`) reverts the cancellation of a `Cancelled` line. See
+[Revert cancellation](../cancel.md#revert-cancellation).
 
 {% hint style="info" %}
 Omitting the `cancelled` indicator leaves the line unchanged and is not the same
-as sending `false`. Reverting is only supported by a full order update; the
-`/order/indicators` endpoint does not support it, and a `false` on order level
-does not revert.
+as sending `false`. Reverting is only supported by the `/order` endpoint (or
+`/order/single-delivery`); the `/order/indicators` endpoint does not support
+it, and a `false` on order level does not revert.
 {% endhint %}
 
 ## Order only indicators
@@ -163,11 +163,11 @@ indicators behave:
 ### Indicator behaviors
 
 | Indicator | Behavior with single delivery |
-|-----------|-------------------------------|
+| ----------- | ------------------------------- |
 | `confirmed` | When all primary and related split lines are confirmed; the primary order line will become confirmed |
 | `requestReconfirmation` | When set on the primary or any related split line the primary order line will open a reconfirmation request |
 | `shipped` | When the primary or any related split lines is shipped; the corresponding delivery line will become shipped |
 | `delivered` | When the primary or any related split lines is delivered; the corresponding delivery line will become delivered |
-| `completed`| When all primary and related split lines are completed; the primary order line will become completed |
-| `cancelled`| When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule |
+| `completed` | When all primary and related split lines are completed; the primary order line will become completed |
+| `cancelled` | When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule |
 | `proposeWhenAccepted` | When set on the primary or any related split line; the primary order line will open a proposal request when accepted |

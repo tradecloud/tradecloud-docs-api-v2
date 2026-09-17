@@ -55,7 +55,8 @@ The supplier has to **approve** the reopen request before Tradecloud accepts a
 You cannot reopen a `Completed` or `Cancelled` line directly. Reverting a
 previously confirmed line with changed agreed prices, delivery schedule or
 charge lines does create a buyer reopen request: set `completed=false` or
-`cancelled=false` on the line in a full order update. See [Revert
+`cancelled=false` on the line using the `/order` endpoint (or
+`/order/single-delivery`). See [Revert
 completion](complete.md#revert-completion) and [Revert
 cancellation](cancel.md#revert-cancellation).
 {% endhint %}
