@@ -11,10 +11,9 @@ supplier can **approve**, **reject** or **answer with a proposal**.
 
 ## When a reopen request is created
 
-When you **reissue** an order line and the **requested** `delivery schedule` and
-`prices` are **not equal** to the **confirmed** `delivery schedule` and
-`prices`, Tradecloud automatically creates a reopen workflow task for the
-supplier.
+When you **reissue** an order line and the **requested** `delivery schedule`,
+`prices` or `charge lines` are **not equal** to the **confirmed** values,
+Tradecloud automatically creates a reopen workflow task for the supplier.
 
 When possible, provide the buyer line `reason` field.
 
@@ -27,12 +26,12 @@ as creating a reopen: new requested values that still differ from confirmed).
 
 ## Revert a reopen request
 
-You can **withdraw** an open reopen request **without** waiting for the
-supplier to approve or reject it.
+You can **withdraw** an open reopen request **without** waiting for the supplier
+to approve or reject it.
 
-Send an order update where the **requested** `delivery schedule` and `prices`
-are **equal** to the **confirmed** `delivery schedule` and `prices` — i.e. you
-align your request with what was already agreed before the reopen.
+Send an order update where the **requested** `delivery schedule`, `prices` and
+`charge lines` are **equal** to the **confirmed** values: you align your
+request with what was already agreed before the reopen.
 
 In that case there is nothing left to negotiate: Tradecloud **reverts** the
 reopen workflow instead of keeping the line in negotiation. The line can return
@@ -53,7 +52,13 @@ The supplier has to **approve** the reopen request before Tradecloud accepts a
 {% endhint %}
 
 {% hint style="warning" %}
-You cannot reopen a `Completed` or `Cancelled` line.
+You cannot reopen a `Completed` or `Cancelled` line directly. Reverting a
+previously confirmed line with changed agreed prices, delivery schedule or
+charge lines does create a buyer reopen request: set `completed=false` or
+`cancelled=false` on the line using the `/order` endpoint (or
+`/order/single-delivery`). See [Revert
+completion](complete.md#revert-completion) and [Revert
+cancellation](cancel.md#revert-cancellation).
 {% endhint %}
 
 {% hint style="info" %}
