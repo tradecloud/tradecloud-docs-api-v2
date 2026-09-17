@@ -62,8 +62,10 @@ The line in progress status is a more fine-grained status when an order line
 
 #### Reopen requests
 
-* `OpenBuyerReopenRequest`: There is an open reopen request (confirm different schedule/prices) from the buyer.
-* `OpenSupplierReopenRequest`: There is an open reopen request (confirm different schedule/prices) from the supplier.
+* `OpenBuyerReopenRequest`: There is an open reopen request (confirm different
+  delivery schedule, prices or charge lines) from the buyer.
+* `OpenSupplierReopenRequest`: There is an open reopen request (confirm
+  different delivery schedule, prices or charge lines) from the supplier.
 
 #### Reconfirmation request
 
@@ -78,9 +80,13 @@ The line in progress status is a more fine-grained status when an order line
 * `ApprovedDeliverySchedule`: The delivery schedule has been approved after a reschedule request.
 * `RejectedDeliverySchedule`: The delivery schedule has been rejected after a reschedule request.
 
-#### Completed line reversion
+#### Completed or cancelled line reversion
 
 * `RevertedCompletedLine`: The completion of this line was reverted.
+* `RevertedCancelledLine`: Legacy status from an older support revert of a
+  cancelled line. New cancel-reverts use `Issued`,
+  `OpenBuyerReconfirmationRequest` or `OpenBuyerReopenRequest` instead. See
+  [Revert cancellation](buyer/cancel.md#revert-cancellation).
 
 ### Line logistics status
 

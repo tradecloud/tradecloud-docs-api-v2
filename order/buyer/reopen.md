@@ -30,7 +30,7 @@ You can **withdraw** an open reopen request **without** waiting for the supplier
 to approve or reject it.
 
 Send an order update where the **requested** `delivery schedule`, `prices` and
-`charge lines` are **equal** to the **confirmed** values — i.e. you align your
+`charge lines` are **equal** to the **confirmed** values: you align your
 request with what was already agreed before the reopen.
 
 In that case there is nothing left to negotiate: Tradecloud **reverts** the

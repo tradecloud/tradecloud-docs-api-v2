@@ -107,14 +107,6 @@ the line was agreed with the supplier before:
   `InProgress` with `OpenBuyerReopenRequest` and the confirmed values stay in
   place until the supplier approves. See [Reopen an order](reopen.md).
 
-{% hint style="warning" %}
-**Single delivery behavior:**
-
-When using the single delivery per order line feature, reverting does not
-restore a line that was removed from the parent's delivery schedule when it was
-cancelled.
-{% endhint %}
-
 Webhook subscribers receive
 [`CancelledOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-cancelled-by-buyer),
 or

@@ -8,7 +8,7 @@ The buyer can issue, reissue before confirmation or update order lines.
 
 - **Issued**: The buyer issued a new order or issued additional lines within an existing order
 - **Reissued**: The buyer updated issued lines
-- **Updated**: The buyer updated confirmed lines. If confirmed delivery schedules or prices are updated, this triggers a [reopen request](#order-reopen-request-by-buyer).
+- **Updated**: The buyer updated confirmed lines. If confirmed delivery schedules, prices or charge lines are updated, this triggers a [reopen request](#order-reopen-request-by-buyer).
 
 | OrderEvent                  | Webhook Configuration                                                                 |
 | --------------------------- | ------------------------------------------------------------------------------------- |
@@ -48,7 +48,7 @@ The supplier can propose an alternative delivery schedule or prices. The buyer t
 
 ## Order updated by supplier
 
-The supplier can update existing order lines. If delivery schedule or prices are updated, this triggers either a [proposal](#order-proposal-by-supplier) or [reopen request](#order-reopen-request-by-supplier).
+The supplier can update existing order lines. If delivery schedule, prices or charge lines are updated, this triggers either a [proposal](#order-proposal-by-supplier) or [reopen request](#order-reopen-request-by-supplier).
 
 - **Updated**: The supplier updated fields other than prices & delivery schedules.
 - **Changed**: The supplier updated item details as requested by the buyer.
@@ -60,7 +60,7 @@ The supplier can update existing order lines. If delivery schedule or prices are
 
 ## Order reopen request by buyer
 
-The buyer can request an alternative delivery schedule or prices after confirmation. The supplier then approves or rejects the request.
+The buyer can request an alternative delivery schedule, prices or charge lines after confirmation. The supplier then approves or rejects the request.
 
 - **Requested**: The buyer requested to reopen confirmed order lines.
 - **Reverted**: The buyer reverted their reopen request.
@@ -75,7 +75,7 @@ The buyer can request an alternative delivery schedule or prices after confirmat
 
 ## Order reopen request by supplier
 
-The supplier can request an alternative delivery schedule or prices after confirmation. The buyer then approves or rejects the request.
+The supplier can request an alternative delivery schedule, prices or charge lines after confirmation. The buyer then approves or rejects the request.
 
 - **Requested**: The supplier requested to reopen confirmed order lines.
 - **Reverted**: The supplier reverted their reopen request.
