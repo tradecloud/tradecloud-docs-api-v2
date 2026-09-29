@@ -61,8 +61,25 @@ Implement the [Order Webhook API](https://swagger-ui.accp.tradecloud1.com/?url=h
 - `orderDocumentsEvent` - Document attachments and updates
 
 {% hint style="warning" %}
-**Important**: Order events contain **only the affected order lines**, not the complete order. Process incrementally based on the event data.
+**Important**: By default, order events contain **only the affected order
+lines**, not the complete order. Process incrementally based on the event data,
+or choose **All order lines** in the
+[portal configuration](portal-setup.md#order-lines) to receive every line of
+the order in each event.
 {% endhint %}
+
+#### Order version
+
+Every JSON order event carries `version`, the Tradecloud order version after
+the event. Use it to discard an event that arrives after one you already
+processed:
+
+- Discard an event only when its `version` is **lower** than the highest
+  version you processed for that order.
+- An event with the **same** `version` is not a duplicate: some changes, such
+  as line updates, do not raise the version. Process it.
+- `version` orders events; it does not tell a new order from a changed one.
+  Use `eventName` for that.
 
 ### Shipment Events
 

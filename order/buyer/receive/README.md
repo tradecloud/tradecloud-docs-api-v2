@@ -85,7 +85,8 @@ The order header contains:
   status](../../status.md#order-process-status).
 - `status.logisticsStatus`: is the aggregate of all lines [Order logistics
   status](../../status.md#order-logistics-status).
-- `version`: the Tradecloud order version number
+- `version`: the Tradecloud order version number, see
+  [Order version](../../../connectors/webhooks/webhook-setup.md#order-version).
 - `eventDates`: some key order event date/times
 - `meta`: meta information, including source and trace info, about this message
 - `lastUpdatedAt`: is the latest date time the order has been changed, useful
