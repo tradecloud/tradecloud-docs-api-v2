@@ -75,6 +75,13 @@ indicator leaves the line unchanged and is not the same as sending `false`. A
 does not support reverting.
 {% endhint %}
 
+{% hint style="warning" %}
+**Single delivery behavior:**
+
+A `completed=false` on the primary or on any related split line reverts the
+completion of the primary order line.
+{% endhint %}
+
 The resulting status depends on whether the line was agreed with the supplier
 before:
 

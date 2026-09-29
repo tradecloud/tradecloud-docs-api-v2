@@ -91,6 +91,15 @@ indicator leaves the line unchanged and is not the same as sending `false`. A
 does not support reverting.
 {% endhint %}
 
+{% hint style="warning" %}
+**Single delivery behavior:**
+
+Every primary and related split line must carry `cancelled=false` to revert the
+cancellation of the primary order line. When some lines carry `true` or omit
+the indicator, the primary order line stays `Cancelled`. Unlike reverting a
+completion, a single split line with `false` is not enough.
+{% endhint %}
+
 Unlike reverting a completion, reverting a cancellation always asks the supplier
 to act before the line is agreed again. The resulting status depends on whether
 the line was agreed with the supplier before:

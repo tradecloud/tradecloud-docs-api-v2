@@ -168,6 +168,6 @@ indicators behave:
 | `requestReconfirmation` | When set on the primary or any related split line the primary order line will open a reconfirmation request |
 | `shipped` | When the primary or any related split lines is shipped; the corresponding delivery line will become shipped |
 | `delivered` | When the primary or any related split lines is delivered; the corresponding delivery line will become delivered |
-| `completed` | When all primary and related split lines are completed; the primary order line will become completed |
-| `cancelled` | When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule |
+| `completed` | When all primary and related split lines are completed; the primary order line will become completed. When the primary or any related split line is set to `false`; the completion of the primary order line is reverted |
+| `cancelled` | When all primary and related split lines are cancelled; the primary order line will become cancelled. When an individual order line is cancelled; Tradecloud will remove the split line from the orginal line's delivery schedule. When all primary and related split lines are set to `false`; the cancellation of the primary order line is reverted |
 | `proposeWhenAccepted` | When set on the primary or any related split line; the primary order line will open a proposal request when accepted |
