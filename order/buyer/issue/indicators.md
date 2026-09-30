@@ -38,7 +38,7 @@ The [`inProgressStatus`](../../status.md#line-in-progress-status) will become `O
 {% hint style="info" %}
 The order or line having [logistics status](../../status.md#line-logistics-status) `Open`, `Produced`, `ReadyToShip` will become `Shipped`.
 
-Marking an order line as shipped marks all its delivery schedule lines as shipped, including delivery schedule lines without a position. Delivery schedule lines that are already `Delivered` or `Cancelled` keep their status.
+Marking an order line as shipped marks all its delivery schedule lines as shipped, including delivery schedule lines without a position. Delivery schedule lines that are already `Delivered` keep their status.
 {% endhint %}
 
 ### Delivered at buyer
