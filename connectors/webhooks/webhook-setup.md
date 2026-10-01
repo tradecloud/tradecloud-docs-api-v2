@@ -78,6 +78,9 @@ processed:
   version you processed for that order.
 - An event with the **same** `version` is not a duplicate: some changes, such
   as line updates, do not raise the version. Process it.
+- `version` does not identify a delivery. A retry delivers the same event
+  again, with the same `version` and the same `meta.messageId`. Use
+  `meta.messageId` to recognise an event you already processed.
 - `version` orders events; it does not tell a new order from a changed one.
   Use `eventName` for that.
 
