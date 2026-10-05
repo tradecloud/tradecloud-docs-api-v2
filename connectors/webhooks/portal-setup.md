@@ -74,8 +74,8 @@ is sent, not as the event left it:
   event is a change.
 - Compare the per-line `lastUpdatedAt` to find the lines that changed.
 
-See [Order version](webhook-setup.md#order-version) for handling payloads that
-arrive after a newer one.
+See [Order version](webhook-setup.md#order-version) for what `version` means and
+how to recognise a retried event.
 
 ## Document Events Configuration
 
