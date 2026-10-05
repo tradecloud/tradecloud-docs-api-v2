@@ -72,14 +72,21 @@ the order in each event.
 
 Every JSON order event carries `version`, the Tradecloud order version after
 the event. Tradecloud delivers the events of an order one at a time, in the
-order they happened, so you do not need `version` to discard older events:
+order they happened:
 
 - Some changes, such as line updates, do not raise the version, so two events
   can carry the same `version` and still differ.
-- A retry delivers the same event again, with the same `meta.messageId`.
-  Deduplicate on `meta.messageId`. With **All order lines**, a retry reads the
-  order again, so it can carry a higher `version` and more recent lines; a
-  change made in between is still delivered as its own later event.
+- If your system accepts webhooks and processes them later, and that
+  processing can finish out of order, use `version` to recognise an older
+  event: only a **lower** `version` is older. An equal one can still carry a
+  change.
+- A retry delivers the same event again, with the same `meta.messageId`. Use
+  `meta.messageId` to avoid repeating the side effects of an event you already
+  processed.
+- With **All order lines**, a retry reads the order again, so it can carry a
+  higher `version` and more recent lines, including changes from events you did
+  not select, which send no webhook of their own. The payload is the complete
+  order, so apply its lines even when you recognise the `meta.messageId`.
 - `version` does not tell a new order from a changed one. Use `eventName` for
   that.
 
