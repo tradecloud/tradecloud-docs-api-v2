@@ -111,9 +111,12 @@ the line was agreed with the supplier before:
   `InProgress` with [in progress
   status](../status.md#line-in-progress-status) `OpenBuyerReconfirmationRequest`.
 - If the line was confirmed and the agreed prices, delivery schedule or charge
-  lines changed, a buyer reopen request is created. The line becomes
-  `InProgress` with `OpenBuyerReopenRequest` and the confirmed values stay in
-  place until the supplier approves. See [Reopen an order](reopen.md).
+  lines changed, and the line has no open shipment reschedule request, a buyer
+  reopen request is created. The line becomes `InProgress` with
+  `OpenBuyerReopenRequest` and the confirmed values stay in place until the
+  supplier approves. See [Reopen an order](reopen.md). An open shipment
+  reschedule request leaves the line `Cancelled`. Reconfirming an unchanged
+  agreement is unaffected.
 
 Webhook subscribers receive
 [`CancelledOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-cancelled-by-buyer),

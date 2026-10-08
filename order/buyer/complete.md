@@ -86,16 +86,19 @@ The resulting status depends on whether the line was agreed with the supplier
 before:
 
 * If the line was never confirmed, it becomes `InProgress` with [in progress
-  status](../status.md#line-in-progress-status) `RevertedCompletedLine`.
+  status](../status.md#line-in-progress-status) `RevertedCompletedLine` and the
+  supplier is asked to confirm it.
 * If the line was confirmed and the agreed prices, delivery schedule and charge
-  lines are unchanged, it returns to `Confirmed`.
+  lines are unchanged, it returns to `Confirmed`. This creates no supplier
+  task.
 * If the line was confirmed and the agreed prices, delivery schedule or charge
-  lines changed, a buyer reopen request is created. The line becomes
-  `InProgress` with `OpenBuyerReopenRequest` and the confirmed values stay in
-  place until the supplier approves. See [Reopen an order](reopen.md).
+  lines changed, and the line has no open shipment reschedule request, a buyer
+  reopen request is created. The line becomes `InProgress` with
+  `OpenBuyerReopenRequest` and the confirmed values stay in place until the
+  supplier approves. See [Reopen an order](reopen.md). An open shipment
+  reschedule request rejects the order update, so the line stays `Completed`.
 
-Reverting completion does not create a task for the supplier. Webhook
-subscribers receive
+Webhook subscribers receive
 [`CompletedOrderLinesRevertedByBuyer`](../../../connectors/webhooks/order-events.md#order-lines-completed-by-buyer),
 or
 [`OrderLinesReopenRequestedByBuyer`](../../../connectors/webhooks/order-events.md#order-reopen-request-by-buyer)
