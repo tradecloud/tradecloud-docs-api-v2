@@ -64,7 +64,7 @@ The delivered indicator marks an order or line as delivered, regardless of the a
 - Do **not** use the delivered indicator outside this tolerance use case. When you can report exact received quantities and dates, the actual delivery history alone is sufficient and preferred, as it is more precise about partial deliveries.
 {% endhint %}
 
-When an order or line is received, it can be marked as delivered by setting `indicators.delivered` on either order or line level. Unlike the actual delivery history (matched by date and quantity), the delivered indicator is applied by **order line or delivery line position**. Marking an order line as delivered marks all its delivery schedule lines as delivered, including delivery schedule lines without a position. A later order update that changes neither the delivery schedule nor the total quantity of the actual delivery history keeps the line delivered.
+When an order or line is received, it can be marked as delivered by setting `indicators.delivered` on either order or line level. Unlike the actual delivery history (matched by date and quantity), the delivered indicator is applied by **order line or delivery line position**. When set on the order line, all its delivery schedule lines become delivered, including delivery schedule lines without a position. A [logistics status](issue/delivery-schedule.md#logistics-status) sent per delivery schedule line (`deliverySchedule.status`) is matched by position, so delivery schedule lines without a position are not changed by it. A later order update that changes neither the delivery schedule nor the total quantity of the actual delivery history keeps the line delivered.
 
 {% hint style="warning" %}
 **Single delivery behavior:**

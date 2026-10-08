@@ -68,7 +68,12 @@ quantity**, not by delivery line position. `deliveryHistory.position` and
 For **stock items with delivery tolerances**, you may additionally set
 `indicators.delivered` on the line to mark it delivered when the received
 quantity is within tolerance. Unlike the delivery history, the delivered
-indicator is applied by **order line or delivery line position**: marking an order line as delivered marks all its delivery schedule lines as delivered, including delivery schedule lines without a position. See
+indicator is applied by **order line or delivery line position**. When set on
+the order line, all its delivery schedule lines become delivered, including
+delivery schedule lines without a position. A
+[logistics status](issue/delivery-schedule.md#logistics-status) sent per
+delivery schedule line (`deliverySchedule.status`) is matched by position, so
+delivery schedule lines without a position are not changed by it. See
 [Delivered indicator](receive-goods.md#delivered-indicator).
 {% endhint %}
 

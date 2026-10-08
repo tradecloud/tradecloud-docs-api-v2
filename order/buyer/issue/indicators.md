@@ -52,7 +52,7 @@ The order or line having [logistics status](../../status.md#line-logistics-statu
 {% hint style="info" %}
 This indicator is designed for stock items (`lineType` `Item`) where your ERP uses delivery tolerances and a receipt within tolerance counts as delivered. You may set `delivered` on top of the [actual delivery history](../receive-goods.md#actual-delivery-history) for this purpose. Do not use it outside this tolerance use case.
 
-The delivered indicator is applied by **order line or delivery line position**, whereas the actual delivery history is matched by **date and quantity**. Marking an order line as delivered marks all its delivery schedule lines as delivered, including delivery schedule lines without a position.
+The delivered indicator is applied by **order line or delivery line position**, whereas the actual delivery history is matched by **date and quantity**. When set on the order line, all its delivery schedule lines become delivered, including delivery schedule lines without a position. A [logistics status](delivery-schedule.md#logistics-status) sent per delivery schedule line (`deliverySchedule.status`) is matched by position, so delivery schedule lines without a position are not changed by it.
 {% endhint %}
 
 ### Completed at buyer
