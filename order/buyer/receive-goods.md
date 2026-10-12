@@ -79,7 +79,7 @@ The existing order or line can be marked as delivered by setting `indicators.del
 {% page-ref page="update.md" %}
 
 {% hint style="info" %}
-If you provide a `delivered` indicator on order level, **ONLY** the lines provided in this order message will be marked as delivered.
+If you provide a `delivered` indicator on order level, **ONLY** the lines provided in this order message will be marked as delivered. A line that is already delivered is not marked again by the order level indicator, so it can go back to `Open` when the update recalculates it from its actual delivery history; set `lines.indicators.delivered` on that line to keep it delivered.
 
 If you also provide a `delivered` indicator on line level, it has **precedence** over the order level `delivered` indicator.
 {% endhint %}
