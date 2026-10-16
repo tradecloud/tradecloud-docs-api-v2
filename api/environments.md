@@ -73,6 +73,7 @@ Production environment:
 
 * 35.204.224.107
 * 34.90.20.233
+* 51.158.172.210
 
 Any changes will be announced at least 5 working days ahead on the [Tradecloud status page](http://status.tradecloud1.com).
 

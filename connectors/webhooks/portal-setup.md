@@ -42,6 +42,41 @@ Choose how order deliveries are structured in webhook payloads:
 
 **Learn More**: [Delivery Schedule vs Single Delivery](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) documentation.
 
+### Order Lines
+
+Choose which order lines a POST JSON webhook payload carries:
+
+| Option                       | Payload `lines`                 |
+| ---------------------------- | ------------------------------- |
+| **Only changed order lines** | The lines affected by the event |
+| **All order lines**          | Every line of the order         |
+
+**Only changed order lines** is the default. With **All order lines**,
+`lines` holds every line of the order, including cancelled and completed
+lines, in buyer position order. Choose it when your system needs the complete
+order in every message.
+
+This option is independent of the Delivery Schedule Mode: all four
+combinations are valid. It applies to the POST method with the JSON format
+only; a GET webhook and a tXML payload are not affected.
+
+With **All order lines**, the payload is the order as it is when the webhook
+is sent, not as the event left it:
+
+- It can show changes made by events you did not select in Event Selection.
+  Selecting events decides when you receive a webhook, not what the order in
+  it contains.
+- The order line `reason` is absent. The order-level `reason` of the event is
+  still present.
+- `eventName` still tells which event triggered the webhook. Use it, not
+  `lastUpdatedAt` or `version`, to decide whether an order is new or changed:
+  `OrderIssuedByBuyer` and `OrderResentBySupplier` are new orders, every other
+  event is a change.
+- Compare the per-line `lastUpdatedAt` to find the lines that changed.
+
+See [Order version](webhook-setup.md#order-version) for what `version` means and
+how to recognise a retried event.
+
 ## Document Events Configuration
 
 Enable document webhook integration to receive notifications when order documents are attached or updated.

@@ -61,8 +61,34 @@ Implement the [Order Webhook API](https://swagger-ui.accp.tradecloud1.com/?url=h
 - `orderDocumentsEvent` - Document attachments and updates
 
 {% hint style="warning" %}
-**Important**: Order events contain **only the affected order lines**, not the complete order. Process incrementally based on the event data.
+**Important**: By default, order events contain **only the affected order
+lines**, not the complete order. Process incrementally based on the event data,
+or choose **All order lines** in the
+[portal configuration](portal-setup.md#order-lines) to receive every line of
+the order in each event.
 {% endhint %}
+
+#### Order version
+
+Every JSON order event carries `version`, the Tradecloud order version after
+the event. Tradecloud delivers the events of an order one at a time, in the
+order they happened:
+
+- Some changes, such as line updates, do not raise the version, so two events
+  can carry the same `version` and still differ.
+- If your system accepts webhooks and processes them later, and that
+  processing can finish out of order, use `version` to recognise an older
+  event: only a **lower** `version` is older. An equal one can still carry a
+  change.
+- A retry delivers the same event again, with the same `meta.messageId`. Use
+  `meta.messageId` to avoid repeating the side effects of an event you already
+  processed.
+- With **All order lines**, a retry reads the order again, so it can carry a
+  higher `version` and more recent lines, including changes from events you did
+  not select, which send no webhook of their own. The payload is the complete
+  order, so apply its lines even when you recognise the `meta.messageId`.
+- `version` does not tell a new order from a changed one. Use `eventName` for
+  that.
 
 ### Shipment Events
 
