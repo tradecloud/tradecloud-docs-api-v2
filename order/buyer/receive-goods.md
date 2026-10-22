@@ -64,7 +64,7 @@ The delivered indicator marks an order or line as delivered, regardless of the a
 - Do **not** use the delivered indicator outside this tolerance use case. When you can report exact received quantities and dates, the actual delivery history alone is sufficient and preferred, as it is more precise about partial deliveries.
 {% endhint %}
 
-When an order or line is received, it can be marked as delivered by setting `indicators.delivered` on either order or line level. Unlike the actual delivery history (matched by date and quantity), the delivered indicator is applied by **order line or delivery line position**.
+When an order or line is received, it can be marked as delivered by setting `indicators.delivered` on either order or line level. Unlike the actual delivery history (matched by date and quantity), the delivered indicator is applied by **order line or delivery line position**. When set on the order line, all its delivery schedule lines become delivered, including delivery schedule lines without a position. A [logistics status](issue/delivery-schedule.md#logistics-status) sent per delivery schedule line (`deliverySchedule.status`) is matched by position, so delivery schedule lines without a position are not changed by it. When the line has an actual delivery history, a later order update recalculates its delivery schedule line statuses from that history. The line then goes back to logistics status `Open`, unless the actual delivery history covers its full quantity. To keep the line delivered, set `lines.indicators.delivered` again in that update; the order level `indicators.delivered` does not keep a line that is already delivered.
 
 {% hint style="warning" %}
 **Single delivery behavior:**
@@ -79,7 +79,7 @@ The existing order or line can be marked as delivered by setting `indicators.del
 {% page-ref page="update.md" %}
 
 {% hint style="info" %}
-If you provide a `delivered` indicator on order level, **ONLY** the lines provided in this order message will be marked as delivered.
+If you provide a `delivered` indicator on order level, **ONLY** the lines provided in this order message will be marked as delivered. A line that is already delivered is not marked again by the order level indicator, so it can go back to `Open` when the update recalculates it from its actual delivery history; set `lines.indicators.delivered` on that line to keep it delivered.
 
 If you also provide a `delivered` indicator on line level, it has **precedence** over the order level `delivered` indicator.
 {% endhint %}
